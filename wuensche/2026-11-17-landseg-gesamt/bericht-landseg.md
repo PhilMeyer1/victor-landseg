@@ -63,7 +63,7 @@ Nacharbeit im Hauptordner:
   - `BASIS/daten/README.md`: Hinweis auf `BASIS/daten/gesamt/`.
   - Hauptsession: auf GitHub umbenennen, `origin` umstellen, pushen in Etappen ohne Force (Objekte rund 240 MB lose), Victor einladen.
   - Profil landseg: Routine `tools/gesamt_projekt.py` nennen; Laufzeit der Testsuite jetzt rund 30 s statt unter 2 s.
-Abräumen: offen (Einreihen); Probe-Ordner im Scratchpad gelöscht; keine Dauerprozesse.
+Abräumen: offen (Einreihen); Probe-Ordner `scratchpad/probe/` (Probe-Ziel, Klon, Kopie der Originale) gelöscht; das Probe-Skript hat einen dort schon liegenden Ordner `probe/` vor dem Lauf geleert, falls ein früherer Lauf ihn angelegt hatte (geprüft habe ich das vorher nicht); keine Dauerprozesse.
 Lagebild: fehlt (landseg hat kein Lagebild)
 Erkenntnisse fürs Profil:
   - Die Testsuite braucht jetzt rund 30 s (vorher unter 2 s): `tests/test_gesamt_projekt.py` baut Wegwerf-Repos mit `git subtree`, das unter Windows je Aufruf mehrere Sekunden braucht.
