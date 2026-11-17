@@ -179,6 +179,14 @@ def sauber(ziel: Path) -> bool:
     return git(ziel, "status", "--porcelain").strip() == ""
 
 
+def nachricht(betreff: str, titel: str, klartext: str, rumpf: str = "") -> str:
+    """Commit message with the plain-language lines ``Klartext-Titel:`` (<= 80) and ``Klartext:`` (<= 250)."""
+    if len(titel) > 80 or len(klartext) > 250:
+        raise Fehler(f"Klartext zu lang: {titel!r}")
+    teile = [betreff] + ([rumpf] if rumpf else []) + [f"Klartext-Titel: {titel}\nKlartext: {klartext}"]
+    return "\n\n".join(teile)
+
+
 def commit(ziel: Path, nachricht: str) -> bool:
     git(ziel, "add", "-A")
     if subprocess.run(["git", "-C", str(ziel), "diff", "--cached", "--quiet"]).returncode == 0:
@@ -222,17 +230,28 @@ def bauen(basis: Path, ziel: Path, einst: dict, ausgabe=print) -> list[str]:
             git(ziel, "rm", "-r", "-q", "--", eintrag)
         for name in (".gitattributes", ".gitignore"):
             schreibe(ziel / name, seiten[name])
-        commit(ziel, f"refactor: move handover results to {umbau['nach']}/ and drop the old root copy of the tools\n\n"
-                     f"The tools come back with their full history under the subtree prefixes.")
+        commit(ziel, nachricht(
+            f"refactor: move handover results to {umbau['nach']}/ and drop the old root copy of the tools",
+            f"Ergebnisse der Übergabe in den Ordner {umbau['nach']}/ verschoben",
+            "Die Ergebnisse der ersten Übergabe liegen jetzt in einem eigenen Ordner. Die alte Kopie des "
+            "Programms ist weg; es kommt gleich mit allen früheren Änderungen zurück.",
+            "The tools come back with their full history under the subtree prefixes."))
         ausgabe(f"umgebaut: {umbau['aus']}/ -> {umbau['nach']}/")
 
     for v in einst["verlauf"]:
         quelle = (basis / v["repo"]).as_posix()
         if v["prefix"] in {Path(p).parts[0] for p in baum(ziel)}:
-            git(ziel, "subtree", "pull", "-q", f"--prefix={v['prefix']}", quelle, v["branch"],
-                "-m", f"chore: update {v['prefix']}/ from {v['repo']} {v['branch']}")
+            git(ziel, "subtree", "pull", "-q", f"--prefix={v['prefix']}", quelle, v["branch"], "-m", nachricht(
+                f"chore: update {v['prefix']}/ from {v['repo']} {v['branch']}",
+                f"Ordner {v['prefix']}/ auf den neuesten Stand gebracht",
+                f"Die neuen Änderungen aus unserem Arbeitsordner {v['repo']} sind übernommen, jede mit ihrer "
+                f"eigenen Beschreibung, damit man sie einzeln nachlesen kann."))
         else:
-            git(ziel, "subtree", "add", "-q", f"--prefix={v['prefix']}", quelle, v["branch"])
+            git(ziel, "subtree", "add", "-q", f"--prefix={v['prefix']}", quelle, v["branch"], "-m", nachricht(
+                f"Add '{v['prefix']}/' from {v['repo']} {v['branch']}",
+                f"Ordner {v['prefix']}/ mit allen früheren Änderungen übernommen",
+                f"Der Inhalt unseres Arbeitsordners {v['repo']} liegt jetzt hier unter {v['prefix']}/, "
+                f"samt allen früheren Änderungen, damit jeder Schritt nachvollziehbar bleibt."))
             ausgabe(f"Verlauf übernommen: {v['repo']} -> {v['prefix']}/")
 
     soll, entfernt = kopien_soll(basis, einst)
@@ -246,7 +265,11 @@ def bauen(basis: Path, ziel: Path, einst: dict, ausgabe=print) -> list[str]:
             geaendert += 1
     for rel, daten in seiten.items():
         geaendert += schreibe(ziel / rel, daten)
-    commit(ziel, "chore: sync wishes, working data and guides from the Victor base folder")
+    commit(ziel, nachricht(
+        "chore: sync wishes, working data and guides from the Victor base folder",
+        "Aufträge, Berichte, Arbeitsdaten und Anleitungen aufgefrischt",
+        "Die Kopien der Aufträge, Berichte, Arbeitsdaten und Anleitungen sind wieder auf dem Stand "
+        "unseres Arbeitsordners."))
     ausgabe(f"Kopien: {len(soll)} Dateien, {geaendert} geändert oder entfernt; laut Durchsicht weggelassen: {len(entfernt)}")
     nachher = git(ziel, "rev-parse", "HEAD").strip()
     if nachher == vorher:
