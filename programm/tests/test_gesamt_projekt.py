@@ -2,6 +2,7 @@ import hashlib
 import importlib.util
 import io
 import os
+import re
 import subprocess
 import tempfile
 import unittest
@@ -80,6 +81,17 @@ class GesamtProjektTest(unittest.TestCase):
         git(alt, "remote", "add", "origin", "https://beispiel.invalid/landseg-t0.git")
         return basis
 
+    def klartext_in_neuen_commits(self, ziel: Path, bereich: str):
+        shas = git(ziel, "rev-list", "--first-parent", bereich).split()
+        self.assertTrue(shas, bereich)
+        for sha in shas:
+            text = git(ziel, "log", "-1", "--format=%B", sha)
+            titel = re.findall(r"^Klartext-Titel: (.+)$", text, re.M)
+            klartext = re.findall(r"^Klartext: (.+)$", text, re.M)
+            self.assertEqual((len(titel), len(klartext)), (1, 1), text)
+            self.assertLessEqual(len(titel[0]), 80, text)
+            self.assertLessEqual(len(klartext[0]), 250, text)
+
     def test_bauen_ist_wiederholbar_und_bringt_neue_commits_mit_verlauf(self):
         basis, ziel = self.basis(), self.ort / "gesamt" / "victor-landseg"
         alt = git(basis / "daten/landseg/uebergabe/landseg-t0", "rev-parse", "HEAD").strip()
@@ -97,6 +109,8 @@ class GesamtProjektTest(unittest.TestCase):
         self.assertEqual((ziel / "wuensche/2026-01-01-a.md").read_bytes(), b"# Wunsch\r\nZeile mit CRLF\r\n")
         self.assertIn(hashlib.sha256(b"abc").hexdigest(), (ziel / "daten/luftbilder/README.md").read_text(encoding="utf-8"))
         commits = git(ziel, "rev-list", "--count", "HEAD").strip()
+        self.klartext_in_neuen_commits(ziel, f"{alt}..HEAD")
+        self.assertIn("Add 'programm/' from landseg main", git(ziel, "log", "--oneline", "--", "programm"))
 
         code, text = ausfuehren("bauen", "--basis", str(basis), "--ziel", str(ziel))
         self.assertEqual(code, 0, text)
@@ -107,12 +121,14 @@ class GesamtProjektTest(unittest.TestCase):
         git(basis / "landseg", "add", "-A")
         git(basis / "landseg", "commit", "-q", "-m", "feat: neu")
         neu = git(basis / "landseg", "rev-parse", "HEAD").strip()
+        stand = git(ziel, "rev-parse", "HEAD").strip()
         code, text = ausfuehren("bauen", "--basis", str(basis), "--ziel", str(ziel))
         self.assertEqual(code, 0, text)
         self.assertEqual((ziel / "programm/neu.py").read_bytes(), b"x = 1\n")
         self.assertEqual(git(ziel, "merge-base", "--is-ancestor", neu, "HEAD"), "")
         self.assertIn(f"{neu[:7]} feat: neu", git(ziel, "log", "--oneline", "--abbrev=7"))
         self.assertIn("chore: update programm/ from landseg main", git(ziel, "log", "--oneline", "--", "programm"))
+        self.klartext_in_neuen_commits(ziel, f"{stand}..HEAD")
 
         code, text = ausfuehren("pruefen", "--basis", str(basis), "--ziel", str(ziel))
         self.assertIn("fehlend 0, abweichend 0, fremd 0", text)
