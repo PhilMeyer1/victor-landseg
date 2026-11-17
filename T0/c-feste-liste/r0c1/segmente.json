@@ -1,0 +1,5933 @@
+{
+ "schema": "landseg-segmente/1",
+ "verlauf": [
+  {
+   "zeit": "2026-11-17T16:59:22+00:00",
+   "bearbeiter": "vorstufe",
+   "op": "vorstufe",
+   "konfig": "efd5251383c0"
+  }
+ ],
+ "vorstufe": {
+  "teilkachel": "r0c1",
+  "bild": "r0c1.png",
+  "konfig": "efd5251383c0",
+  "sam3": "70eb88e22347",
+  "modell": "facebook/sam3",
+  "erstellt": "2026-11-17T16:59:22+00:00",
+  "messung": {
+   "segmente": 234,
+   "segmente_im_kern": 147,
+   "superpixel": 2553,
+   "instanzen": 127,
+   "segmente_instanz": 137,
+   "sicher_nein": 146,
+   "anteil_sicher_nein": 0.6239,
+   "flaeche_sicher_nein": 0.4801,
+   "kandidaten": {
+    "klasse_unsicher": 146,
+    "nicht_zusammenhaengend": 12,
+    "grenze_ohne_bildkante": 166
+   },
+   "im_siedlung_ja": 50,
+   "hoehe": 628,
+   "breite": 628,
+   "laufzeit_s": {
+    "sam3": 40.77,
+    "verschmelzen": 0.3,
+    "gesamt": 41.09
+   }
+  },
+  "pruefen": {
+   "ok": true,
+   "hoehe": 628,
+   "breite": 628,
+   "bildpunkte": 394384,
+   "ohne_segment": 0,
+   "segmentzahl": 234,
+   "nicht_zusammenhaengend": [],
+   "maengel": []
+  }
+ },
+ "stand": "Fassung C, Urteil Runde 0 (Karte der Vorstufe, Klassen aus urteil/r0c1/urteil.json)",
+ "segmente": [
+  {
+   "id": 200001,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.413
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 251,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200002,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.705
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 423,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200003,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.617
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 2258,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200004,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.919
+   },
+   "instanz": {
+    "text": "house",
+    "eingerastet": true
+   },
+   "flaeche": 2388,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200005,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.454,
+    "abstand": 0.132
+   },
+   "flaeche": 310,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200006,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.608,
+    "abstand": 0.164
+   },
+   "flaeche": 548,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200007,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.378,
+    "abstand": 0.122
+   },
+   "flaeche": 122,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200008,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.421,
+    "abstand": 0.233
+   },
+   "flaeche": 124,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200009,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.551
+   },
+   "instanz": {
+    "text": "house",
+    "eingerastet": true
+   },
+   "flaeche": 561,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200010,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.608
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 805,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200011,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.494
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 431,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200012,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.927
+   },
+   "instanz": {
+    "text": "house",
+    "eingerastet": true
+   },
+   "flaeche": 2030,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200013,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.494
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 2605,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Grasstreifen am Nordrand der Straße, im Kern nur ein kleines Stück am oberen Rand",
+   "viertel": "v2",
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200014,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.413
+   },
+   "instanz": {
+    "text": "road",
+    "eingerastet": true
+   },
+   "flaeche": 886,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200015,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.227,
+    "abstand": 0.05
+   },
+   "flaeche": 156,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200016,
+   "klasse": "2.1",
+   "grob": "2",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.625
+   },
+   "instanz": {
+    "text": "crop field",
+    "eingerastet": true
+   },
+   "flaeche": 1363,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200017,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.417,
+    "abstand": 0.146
+   },
+   "flaeche": 1036,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200018,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.389,
+    "abstand": 0.12
+   },
+   "flaeche": 170,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200019,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.757
+   },
+   "instanz": {
+    "text": "paved path",
+    "eingerastet": true
+   },
+   "flaeche": 10952,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Helle Wohnstraße (Fortsetzung der asphaltierten Straße 200093 nach Osten) mit Einfahrten",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Durchgehende Straße zwischen den Häusern bei 433/80, Teil der Hauptstraße in T0: Straße statt befestigter Weg",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "1.2.2",
+   "klasse_vorschlag": "1.2.1"
+  },
+  {
+   "id": 200020,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.534,
+    "abstand": 0.259
+   },
+   "flaeche": 93,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200021,
+   "klasse": "1.1.2",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.441
+   },
+   "instanz": {
+    "text": "shed",
+    "eingerastet": true
+   },
+   "flaeche": 718,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200022,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.401
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 2875,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200023,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.362,
+    "abstand": 0.187
+   },
+   "flaeche": 342,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200024,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.493
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 281,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200025,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.474,
+    "abstand": 0.333
+   },
+   "flaeche": 564,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.4",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200026,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.377,
+    "abstand": 0.242
+   },
+   "flaeche": 145,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200027,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.471
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 2956,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Dunkles Kronendach nördlich der Straße am linken Viertelrand, eine große oder zwei Kronen",
+   "viertel": "v2",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200028,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.619
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 196,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200029,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.341,
+    "abstand": 0.163
+   },
+   "flaeche": 878,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.4",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200030,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.429,
+    "abstand": 0.217
+   },
+   "flaeche": 279,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200031,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.607,
+    "abstand": 0.229
+   },
+   "flaeche": 124,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200032,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.695
+   },
+   "instanz": {
+    "text": "house",
+    "eingerastet": true
+   },
+   "flaeche": 131,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200033,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.452
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 177,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200034,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.698,
+    "abstand": 0.319
+   },
+   "flaeche": 81,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200035,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.679,
+    "abstand": 0.536
+   },
+   "flaeche": 114,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200036,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.606,
+    "abstand": 0.096
+   },
+   "flaeche": 866,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Dunkle Baumkrone am oberen Kernrand, größter Teil im Kontextrand",
+   "viertel": "v1",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200037,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.927
+   },
+   "instanz": {
+    "text": "house",
+    "eingerastet": true
+   },
+   "flaeche": 3509,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200038,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.657,
+    "abstand": 0.209
+   },
+   "flaeche": 403,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.4",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200039,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.709,
+    "abstand": 0.216
+   },
+   "flaeche": 117,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200040,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.054,
+    "abstand": 0.017
+   },
+   "flaeche": 78,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200041,
+   "klasse": "1.1.2",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.45
+   },
+   "instanz": {
+    "text": "shed",
+    "eingerastet": true
+   },
+   "flaeche": 451,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200042,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.433,
+    "abstand": 0.312
+   },
+   "flaeche": 78,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200043,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.358,
+    "abstand": 0.156
+   },
+   "flaeche": 11828,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Großes Sammelsegment im Garten nördlich der Straße: Rasen, Sträucher, ein dunkles Flachdach, helle Terrassen und der Sandplatz am Pool, kein Wald",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "fremdes",
+     "text": "Dunkelgraues Flachdach eines Gartenhauses bzw. Carports bei 90/110 (etwa x 77–102, y 99–122), als 1.1.2 abtrennen",
+     "flaeche_px": 500
+    },
+    {
+     "nr": 2,
+     "art": "fremdes",
+     "text": "Helle Terrassen- bzw. Pflasterflächen westlich des roten Hauses bei 115/100 und 126/118, als 1.2.4 abtrennen",
+     "flaeche_px": 200
+    },
+    {
+     "nr": 3,
+     "art": "fremdes",
+     "text": "Kleines weißes Gartenhäuschen bzw. Gewächshaus bei 216/107, als 1.1.2 abtrennen",
+     "flaeche_px": 80
+    },
+    {
+     "nr": 4,
+     "art": "fremdes",
+     "text": "Heller Sand- bzw. Kiesplatz mit kleinen Nadelbäumen um den Pool bei 255/95 (x 240–275, y 64–108), eigenes Segment",
+     "flaeche_px": 900
+    },
+    {
+     "nr": 5,
+     "art": "klasse",
+     "text": "Rest ist Hausgarten mit Rasen und Gehölzen (bei 100/130), kein geschlossener Wald; Rasenstücke als 3.1 trennen, Rest 4.2",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200044,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.879,
+    "abstand": 0.582
+   },
+   "flaeche": 119,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200045,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.758
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 3842,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Großes dunkles Kronendach östlich des Pools, vermutlich zwei bis drei Bäume",
+   "viertel": "v1",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200046,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.569,
+    "abstand": 0.356
+   },
+   "flaeche": 201,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200047,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.702
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 947,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Schlagschatten am oberen Kernrand über dem Haus 200054",
+   "viertel": "v2",
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200048,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 5118,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200049,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.477,
+    "abstand": 0.355
+   },
+   "flaeche": 72,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200050,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.623,
+    "abstand": 0.107
+   },
+   "flaeche": 205,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200051,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.447,
+    "abstand": 0.145
+   },
+   "flaeche": 794,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Gras- und Gehölzsaum am Nordrand der Straße mit einem weißen Gegenstand (Fahrzeug oder Tonne)",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "fremdes",
+     "text": "Weißer Gegenstand am Straßenrand bei 371/81 liegt in diesem Segment; zur Straße 200019 nehmen",
+     "flaeche_px": 60
+    },
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Schmaler Saum aus Gras und Strauch bei 372/70, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200052,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.792,
+    "abstand": 0.3
+   },
+   "flaeche": 933,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schattenstreifen nördlich des roten Dachs, im Schatten dunkle Hecke bzw. Gehölz erkennbar",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Im Schatten ist Gehölz erkennbar (bei 126/67), Klasse der Fortsetzung nach U2 statt 0.2",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200053,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.395,
+    "abstand": 0.167
+   },
+   "flaeche": 139,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200054,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.958
+   },
+   "instanz": {
+    "text": "building",
+    "eingerastet": true
+   },
+   "flaeche": 7574,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Graues Flachdach eines Wohnhauses",
+   "viertel": "v2",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200055,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.45
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 227,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Schlagschatten am oberen Kernrand nördlich des Hauses 200054",
+   "viertel": "v2",
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200056,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.614,
+    "abstand": 0.222
+   },
+   "flaeche": 80,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200057,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.437,
+    "abstand": 0.332
+   },
+   "flaeche": 107,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schmaler Streifen am Nordrand des roten Dachs 200060 am oberen Kernrand, Teil desselben Dachs",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Randstück des Dachs von 200060 am oberen Kernrand (bei 187/65), mit 200060 verschmelzen",
+     "flaeche_px": 42
+    }
+   ],
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200058,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.563,
+    "abstand": 0.058
+   },
+   "flaeche": 621,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Gartenecke oben links mit Sträuchern, Heckenstücken und Rasen, keine einzelne Krone erkennbar",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere kleine Gehölze und Rasenstücke statt einer Baumkrone (bei 75/76); Elternklasse Gehölz außerhalb Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200059,
+   "klasse": "1.3",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.319,
+    "abstand": 0.195
+   },
+   "flaeche": 130,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.3.3",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Helle beige Terrassen- bzw. Sandfläche nordwestlich des Aufstellpools, kein Wasser",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helle Fläche ohne Wasser neben dem Pool (bei 225/74): Holzdeck, Platten oder Sand, kein Schwimmbecken",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "1.3.3",
+   "klasse_vorschlag": "1.3"
+  },
+  {
+   "id": 200060,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.948
+   },
+   "instanz": {
+    "text": "house",
+    "eingerastet": true
+   },
+   "flaeche": 3688,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Rotes Walmdach eines Wohnhauses, Grenze liegt auf der Dachkante",
+   "viertel": "v1",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200061,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.451,
+    "abstand": 0.088
+   },
+   "flaeche": 117,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Randstück der hellen Straße am oberen Kernrand",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Straßenrand bei 395/67 mit der Straße 200019 verschmelzen",
+     "flaeche_px": 90
+    }
+   ],
+   "klasse_heute": "1.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200062,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.702
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 352,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Schlagschatten des Hauses 200054 zwischen Straße und Haus, Untergrund nicht erkennbar",
+   "viertel": "v2",
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200063,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.84
+   },
+   "instanz": {
+    "text": "road",
+    "eingerastet": true
+   },
+   "flaeche": 142,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Bordstein bzw. Randstück der Straße vor dem Schatten 200062",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Straßenrand bei 464/82 mit 200019 verschmelzen",
+     "flaeche_px": 142
+    }
+   ],
+   "klasse_heute": "1.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200064,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.571,
+    "abstand": 0.033
+   },
+   "flaeche": 119,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Kleines helleres Gehölz bzw. Strauch neben dem Busch 200066",
+   "viertel": "v1",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200065,
+   "klasse": "1.3.3",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.624
+   },
+   "instanz": {
+    "text": "swimming pool",
+    "eingerastet": true
+   },
+   "flaeche": 334,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.3.3",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Wasserfläche des runden Aufstellpools",
+   "viertel": "v1",
+   "klasse_heute": "1.3.3",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200066,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.557,
+    "abstand": 0.039
+   },
+   "flaeche": 323,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.4",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Kompakter dunkler Strauch oder kleiner Baum westlich des Pools",
+   "viertel": "v1",
+   "klasse_heute": "4.2.4",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200067,
+   "klasse": "1.3.3",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.516,
+    "abstand": 0.29
+   },
+   "flaeche": 94,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.3.3",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Heller Rand bzw. Wand des runden Aufstellpools",
+   "viertel": "v1",
+   "klasse_heute": "1.3.3",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200068,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.689,
+    "abstand": 0.097
+   },
+   "flaeche": 96,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Randstück der Straße an der Einfahrt zwischen den Häusern",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Straßenrand bei 451/86 mit 200019 verschmelzen",
+     "flaeche_px": 96
+    }
+   ],
+   "klasse_heute": "1.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200069,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.309,
+    "abstand": 0.272
+   },
+   "flaeche": 115,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Dunkler Streifen an der Westseite des roten Hauses, wohl die schräg sichtbare Hauswand im Schatten",
+   "viertel": "v1",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200070,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.555
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 759,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Schlagschatten des Hauses 200074 auf dem Vorgarten, nur am Rand etwas Strauch erkennbar",
+   "viertel": "v2",
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200071,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.427,
+    "abstand": 0.277
+   },
+   "flaeche": 210,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Hellgraue gepflasterte Zuwegung an der Westecke des Hauses 200054",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hellgraue glatte Fläche bei 469/96 zwischen Baum und Dach: Weg bzw. Hoffläche, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "1.2.4"
+  },
+  {
+   "id": 200072,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.578
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 1843,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Dunkle Baumkrone(n) zwischen den Häusern 200074 und 200054",
+   "viertel": "v2",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200073,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.84
+   },
+   "instanz": {
+    "text": "road",
+    "eingerastet": true
+   },
+   "flaeche": 138,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Randstück der hellen Straße an der Einfahrt vor dem Haus 200074",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Straßenrand bei 377/100 mit 200019 verschmelzen",
+     "flaeche_px": 138
+    }
+   ],
+   "klasse_heute": "1.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200074,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.963
+   },
+   "instanz": {
+    "text": "building",
+    "eingerastet": true
+   },
+   "flaeche": 7666,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Großes graues Flachdach eines Wohnhauses mit Lichtkuppel und Kaminen",
+   "viertel": "v2",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200075,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.543,
+    "abstand": 0.059
+   },
+   "flaeche": 1884,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.4",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Band aus Gartensträuchern und Beeten zwischen rotem Haus und Straße",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Gleichartige Gartengehölze westlich und südlich bei 140/140 liegen in 200043; Grenze ohne Bildkante",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.2.4",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200076,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.701
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 660,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Bläulich-grüne Baumkrone (wohl Nadelbaum) vor dem Haus 200074",
+   "viertel": "v2",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200077,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.735,
+    "abstand": 0.252
+   },
+   "flaeche": 135,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Kleiner Schattenfleck zwischen Baum 200076 und Schatten 200070",
+   "viertel": "v2",
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200078,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.498,
+    "abstand": 0.422
+   },
+   "flaeche": 549,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schmaler Rasen- bzw. Gartenstreifen an der Ostseite des Hauses 200074",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hellgrüner Streifen ohne Kronentextur bei 453/140 zwischen Haus und Baum, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1"
+  },
+  {
+   "id": 200079,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.297,
+    "abstand": 0.095
+   },
+   "flaeche": 163,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schmaler Randstreifen am Nordrand der hellen Straße 200019 (Bankett, Bordstein)",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Randstreifen der Straße bei 258/120 mit 200019 verschmelzen; 200019 selbst ist Straße 1.2.1 (Urteil v2)",
+     "flaeche_px": 163
+    }
+   ],
+   "klasse_heute": "1.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200080,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.526
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 1194,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Dunkle Baumkrone am linken Kernrand",
+   "viertel": "v1",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200081,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.485,
+    "abstand": 0.335
+   },
+   "flaeche": 1110,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Grasböschung mit einzelnen Sträuchern zwischen heller Straße und Garten",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heller Grasstreifen mit Büschen bei 301/136, kein Wald; Krautsaum bzw. Böschung",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200082,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.432,
+    "abstand": 0.361
+   },
+   "flaeche": 104,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Hellgrauer kleiner Streifen an der Südkante des roten Dachs, Dachrand, Wand oder Terrasse",
+   "viertel": "v1",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200083,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.484
+   },
+   "instanz": {
+    "text": "crop field",
+    "eingerastet": true
+   },
+   "flaeche": 3429,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Gartenrasen hinter dem Haus 200054 mit Tisch, Stühlen und Gartenmöbeln",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gleichmäßiger Rasen mit Sitzgruppe bei 543/166, kein Acker",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "2.1",
+   "klasse_vorschlag": "3.1"
+  },
+  {
+   "id": 200084,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.714
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 658,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200085,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.496,
+    "abstand": 0.302
+   },
+   "flaeche": 822,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.4",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Graue versiegelte Zufahrt bzw. Hoffläche nördlich der Straße",
+   "viertel": "v1",
+   "klasse_heute": "1.2.4",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200086,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.827,
+    "abstand": 0.344
+   },
+   "flaeche": 402,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Schlagschatten nordwestlich des Hauses 200074, auch im Kontrastbild ohne Struktur",
+   "viertel": "v2",
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200087,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.551,
+    "abstand": 0.32
+   },
+   "flaeche": 152,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleine helle Stelle mit Gartenmöbeln bzw. Platten am Rand des Rasens",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helle Platten bzw. Sitzplatz bei 545/139 am Rasen, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "1.2.4"
+  },
+  {
+   "id": 200088,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.426
+   },
+   "instanz": {
+    "text": "bush",
+    "eingerastet": true
+   },
+   "flaeche": 85,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.4",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Kleiner dunkler Strauch neben dem Rasenstreifen 200078",
+   "viertel": "v2",
+   "klasse_heute": "4.2.4",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200089,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.624,
+    "abstand": 0.109
+   },
+   "flaeche": 184,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Südrand der hellen Straße mit weißer Leitschiene bzw. Zaun",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Straßenrand mit weißer Leitschiene bei 280/140 gehört zur Straße 200019 (dort 1.2.1 vorgeschlagen)",
+     "flaeche_px": 184
+    }
+   ],
+   "klasse_heute": "1.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200090,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 186,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleine Gartensträucher zwischen Baum 200072 und Strauch 200096",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kleinkroniges Gehölz bei 484/147, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.4"
+  },
+  {
+   "id": 200091,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.552,
+    "abstand": 0.36
+   },
+   "flaeche": 196,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Hellgraue Terrasse mit weißem rundem Gegenstand an der Südwestecke des Hauses 200054",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Flache graue Fläche vor der Hauswand bei 512/150, eher Terrasse als Dach; Gebäudeteil nicht ausgeschlossen",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": "1.2.4"
+  },
+  {
+   "id": 200092,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 18137,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Großer Garten südlich der Häuser: Gartenbäume, Sträucher, Stauden und Rasenstücke",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gartengehölze mit Lücken, Beeten und Rasen bei 279/270; kein geschlossener Waldbestand",
+     "flaeche_px": null
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Rasen- und Krautflächen im Garten (z. B. bei 265/290) als 3.1 abtrennen",
+     "flaeche_px": null
+    },
+    {
+     "nr": 3,
+     "art": "sonstiges",
+     "text": "Segment reicht über drei Viertel (x 107–362); die Gärten verschiedener Grundstücke sind nicht getrennt (bei 330/250)",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200093,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.62
+   },
+   "instanz": {
+    "text": "paved path",
+    "eingerastet": true
+   },
+   "flaeche": 3849,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Asphaltierte Wohnstraße, setzt sich nach Osten als helle Straße 200019 fort",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Durchgehende Straße mit Markierung bei 140/163 (Fortsetzung der Hauptstraße in T0): Straße statt Weg",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "1.2.2",
+   "klasse_vorschlag": "1.2.1"
+  },
+  {
+   "id": 200094,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.413
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 607,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Runde dunkle Baumkrone (dunkellaubiger Baum) am Straßenrand",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Deutliche runde Krone mit Kronentextur bei 227/157, kein Schatten",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200095,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.573,
+    "abstand": 0.17
+   },
+   "flaeche": 117,
+   "im_kern": false,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200096,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.566
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 1072,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Gelbgrüner Strauch bzw. kleiner Baum südwestlich des Hauses 200054",
+   "viertel": "v2",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200097,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.819
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 713,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Baumkronen südöstlich des dunklen Baums",
+   "viertel": "v1",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200098,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.407
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 353,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schatten des Hauses 200102 auf Hecke bzw. Gehölz",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Im Kontrastbild Gehölztextur im Schatten bei 274/161 (U2)",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200099,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.255,
+    "abstand": 0.086
+   },
+   "flaeche": 114,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Winziger Rest am linken Kernrand am Straßenrand",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "zu_klein",
+     "text": "Nur 4 Kernbildpunkte bei 64/154; mit 200100 bzw. 200080 verschmelzen",
+     "flaeche_px": 4
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200100,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.522,
+    "abstand": 0.114
+   },
+   "flaeche": 161,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Nordrand der Straße links mit Bankett",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Straßenrand bei 67/158 mit der Straße 200093 verschmelzen",
+     "flaeche_px": 151
+    }
+   ],
+   "klasse_heute": "1.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200101,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.343,
+    "abstand": 0.054
+   },
+   "flaeche": 259,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.2.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200102,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.957
+   },
+   "instanz": {
+    "text": "house",
+    "eingerastet": true
+   },
+   "flaeche": 6484,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Graues Walmdach eines Wohnhauses mit Dachfenster",
+   "viertel": "v1",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200103,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 27892,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Großes Sammelsegment im Garten: Bäume, Sträucher, Rasenstücke, ein Gartenweg, eine Erdstelle und ein weißes Gartengerät; reicht bis an den Acker in v4",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hausgarten mit Gehölzen, Lücken und Rasen bei 475/253, kein geschlossener Wald",
+     "flaeche_px": null
+    },
+    {
+     "nr": 2,
+     "art": "fremdes",
+     "text": "Heller Gartenweg diagonal bei 430/260 (etwa von 425/245 bis 440/280), als 1.2.2 bzw. 6.6 abtrennen",
+     "flaeche_px": 80
+    },
+    {
+     "nr": 3,
+     "art": "fremdes",
+     "text": "Braune offene Erdstelle bzw. Kompost bei 410/260 (x 402–422, y 252–268)",
+     "flaeche_px": 250
+    },
+    {
+     "nr": 4,
+     "art": "fremdes",
+     "text": "Weißes Gartengerät bzw. Pergola bei 505/250",
+     "flaeche_px": 60
+    },
+    {
+     "nr": 5,
+     "art": "trennen",
+     "text": "Rasenfläche am Ostrand bei 545/260 (x 527–563, y 232–285) als 3.1 abtrennen",
+     "flaeche_px": 1500
+    },
+    {
+     "nr": 6,
+     "art": "sonstiges",
+     "text": "Segment reicht über v2 und v4 bis y 526 an den Acker (bei 560/400); Gehölzstreifen am Acker und Hausgarten sind nicht getrennt",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200104,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.861
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 3927,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Gartenrasen südlich des Hauses 200074",
+   "viertel": "v2",
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200105,
+   "klasse": "1.2.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.407
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 181,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schatten der Garage auf der Straße",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Schatten bei 166/169 liegt auf der Straße; nach U2 mit 200093 verschmelzen",
+     "flaeche_px": 181
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "1.2.1"
+  },
+  {
+   "id": 200106,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.419
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 1638,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200107,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.5
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 1934,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Gartengehölze mit mehreren Kronen und Sträuchern südlich der Straße",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere Kronen und Sträucher bei 107/191, keine Einzelkrone; Baumgruppe oder Elternklasse 4.2",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200108,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.46,
+    "abstand": 0.374
+   },
+   "flaeche": 280,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Gartensträucher zwischen Garage und Straßenknick",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kleine Sträucher bei 186/178, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.4"
+  },
+  {
+   "id": 200109,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.229,
+    "abstand": 0.175
+   },
+   "flaeche": 105,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Weiße Gartenmöbel bzw. Gegenstände am rechten Kernrand",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "zu_klein",
+     "text": "16 Kernbildpunkte weißer Gegenstände bei 562/175 im Rasen; dem Rasen 200083 zuschlagen (U4)",
+     "flaeche_px": 16
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1"
+  },
+  {
+   "id": 200110,
+   "klasse": "1.1.2",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.568
+   },
+   "instanz": {
+    "text": "shed",
+    "eingerastet": true
+   },
+   "flaeche": 726,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Graues Flachdach einer Garage bzw. eines Anbaus",
+   "viertel": "v1",
+   "klasse_heute": "1.1.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200111,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.218,
+    "abstand": 0.116
+   },
+   "flaeche": 448,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Helle betonierte Zufahrt bzw. Vorplatz südlich der Straße",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helle glatte Fläche mit harten Kanten bei 139/184: versiegelte Hoffläche, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "1.2.4"
+  },
+  {
+   "id": 200112,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.433
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 355,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Schlagschatten nördlich des Hauses 200102, auch im Kontrastbild ohne erkennbaren Untergrund",
+   "viertel": "v1",
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200113,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.837
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 142,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Winziges Rasenstück am rechten Kernrand",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "22 Kernbildpunkte Rasen bei 561/182 mit 200083 verschmelzen",
+     "flaeche_px": 22
+    }
+   ],
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200114,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.656,
+    "abstand": 0.151
+   },
+   "flaeche": 74,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200115,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.557,
+    "abstand": 0.411
+   },
+   "flaeche": 116,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Kleiner heller Vorbau bzw. Terrasse an der Südwestecke des Hauses 200074",
+   "viertel": "v2",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200116,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 4881,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Dunkle Gartengehölze am linken Kernrand",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Zwei getrennte Teile im Kern; das kleine Stück bei 70/185 (51 px) dem Nachbarn 200107 zuschlagen",
+     "flaeche_px": 51
+    },
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Gehölzstreifen zwischen Gärten bei 73/288, kein geschlossener Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200117,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.447
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 283,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schlagschatten zwischen Vorplatz 200111 und Haus 200126",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten auf dem Boden bei 148/197; Fortsetzung wohl der Vorplatz 200111 (U2)",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "1.2.4"
+  },
+  {
+   "id": 200118,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.611
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 702,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Dunkle, ovale Baumkrone (wohl Nadelbaum), im Kontrastbild mit Kronentextur",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Krone mit Textur und Form bei 510/196, kein Schatten",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200119,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.837
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 121,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines Rasenstück zwischen Baum 200118 und Rasen 200083",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Rasen bei 530/187 mit dem Rasen 200083 verschmelzen",
+     "flaeche_px": 121
+    }
+   ],
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200120,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.55,
+    "abstand": 0.403
+   },
+   "flaeche": 1165,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200121,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.574,
+    "abstand": 0.479
+   },
+   "flaeche": 308,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Heller Gartenstreifen mit hellen Steinen bzw. Weg westlich des Hauses 200102",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten mit hellen Flecken bei 195/217, kein Wald; ob Weg, Beet oder Strauch, ist nicht erkennbar",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200122,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.684
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 942,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Baumkrone mit rötlichem Laub am linken Kernrand",
+   "viertel": "v1",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200123,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.659
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 621,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Gelbgrüne bogenförmige Hecke bzw. Strauchreihe südlich des Baums 200118",
+   "viertel": "v2",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200124,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.446
+   },
+   "instanz": {
+    "text": "shed",
+    "eingerastet": true
+   },
+   "flaeche": 1476,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200125,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.523
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 1476,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Große dunkle Baumkrone (dunkellaubig oder Nadelbaum) südwestlich des Hauses 200074",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Im Kontrastbild runde Krone mit Textur bei 353/223, kein Schatten",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200126,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.494
+   },
+   "instanz": {
+    "text": "shed",
+    "eingerastet": true
+   },
+   "flaeche": 5411,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Großes graues Dach eines Wohnhauses",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Dach etwa 19 × 14 m bei 125/235: Hauptgebäude, kein Schuppen",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "1.1.2",
+   "klasse_vorschlag": "1.1.1"
+  },
+  {
+   "id": 200127,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.644,
+    "abstand": 0.396
+   },
+   "flaeche": 105,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Kleine helle Fläche an der Südecke des Hauses 200074, Terrasse oder Stufe",
+   "viertel": "v2",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200128,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.51
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 770,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Rasenstreifen östlich des Hauses 200126",
+   "viertel": "v1",
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200129,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.733,
+    "abstand": 0.315
+   },
+   "flaeche": 138,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines hellgrünes Stück zwischen Haus und Rasen",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Rasen bei 380/222 mit 200104 verschmelzen, kein Wald",
+     "flaeche_px": 138
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1"
+  },
+  {
+   "id": 200130,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.514,
+    "abstand": 0.453
+   },
+   "flaeche": 194,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Schräg sichtbare Westwand des Hauses 200102 mit weißem Geländer bzw. Treppe",
+   "viertel": "v1",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200131,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 188,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Halbschattiger Saum zwischen Baum 200125 und Rasen 200104",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Rasen im Halbschatten bei 379/233; mit 200104 verschmelzen, kein Wald",
+     "flaeche_px": 188
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1"
+  },
+  {
+   "id": 200132,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.621
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 780,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Bläulich-graue Baumkrone (wohl Nadelbaum) am linken Kernrand",
+   "viertel": "v1",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200133,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.644,
+    "abstand": 0.366
+   },
+   "flaeche": 143,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Dunkler Streifen an der Westseite des Hauses 200126, wohl schräg sichtbare Wand bzw. Schatten",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Streifen entlang der Dachkante bei 68/243 wie 200069 und 200130: Gebäude oder Schatten, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "1.1.1"
+  },
+  {
+   "id": 200134,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.499
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 5092,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Großes Kronendach südwestlich im Viertel, eine sehr große Krone oder mehrere Bäume",
+   "viertel": "v2",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200135,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.516
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 1997,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200136,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.763,
+    "abstand": 0.455
+   },
+   "flaeche": 89,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleiner dunkler Strauch am Südrand des Rasens neben einer braunen Erdstelle",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kleiner Strauch bei 418/246, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.4"
+  },
+  {
+   "id": 200137,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.582,
+    "abstand": 0.451
+   },
+   "flaeche": 82,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines Gartenstück an der Südwestecke des Hauses 200102",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "82 px Gartengrün bei 221/260 mit dem umgebenden Garten 200092 verschmelzen",
+     "flaeche_px": 82
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200138,
+   "klasse": "1.1.1",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.904
+   },
+   "instanz": {
+    "text": "house",
+    "eingerastet": true
+   },
+   "flaeche": 536,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Niedriger Anbau mit blaugrauem Dach südlich des Hauses 200126",
+   "viertel": "v1",
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200139,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.594
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 3911,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Großes Kronendach nordwestlich im Viertel, eine große Krone oder zwei Bäume",
+   "viertel": "v3",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200140,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.711
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 4667,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Rasen bzw. Wiese südlich des Gartens mit hellen, abgenutzten Stellen",
+   "viertel": "v4",
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200141,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.469
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 2873,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Baumkrone(n) nördlich des Pools, Teil des Gartengehölzes",
+   "viertel": "v3",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200142,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.479
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 1158,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Dunkle Baumkrone am rechten Kernrand, im Kontrastbild mit Textur",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Krone mit Textur bei 553/298, kein Schatten",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200143,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.898
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 7361,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Großer Gartenrasen westlich der Bäume, mit einem kleinen weißen Gegenstand",
+   "viertel": "v4",
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200144,
+   "klasse": "1.2.2",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.575,
+    "abstand": 0.524
+   },
+   "flaeche": 94,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schmaler heller Gartenweg (Kies oder Platten) nach Süden",
+   "viertel": "v1",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heller schmaler Streifen bei 255/305, setzt sich in 200149 fort: Gartenweg, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "1.2.2"
+  },
+  {
+   "id": 200145,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.845
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 4081,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Rotlaubige Baumkrone (wohl Blutbuche) am linken Kernrand, größter Teil im Kontextrand",
+   "viertel": "v3",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200146,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 102,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines Randstück der Krone 200134 am unteren Viertelrand",
+   "viertel": "v2",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gehölzrand bei 344/309 mit der Krone 200134 verschmelzen",
+     "flaeche_px": 102
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200147,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.711
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 509,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Rasenstück am unteren Viertelrand",
+   "viertel": "v2",
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200148,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.455
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 1468,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Runde dunkle Baumkrone am oberen Viertelrand",
+   "viertel": "v4",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200149,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.491
+   },
+   "instanz": {
+    "text": "sports field",
+    "eingerastet": true
+   },
+   "flaeche": 156,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.3.4",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Grünlicher Streifen am Ende des Gartenwegs 200144, Weg verläuft hier im Rasen",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grüner Streifen ohne künstlichen Belag bei 258/318; eher Rasen (mit 200143 verschmelzen) oder Fortsetzung des Gartenwegs, kein Spielplatz",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "1.3.4",
+   "klasse_vorschlag": "3.1"
+  },
+  {
+   "id": 200150,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 150,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines Randstück der Krone 200134 am oberen Viertelrand",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Kronenrand bei 401/318 mit dem Baum 200134 verschmelzen, kein eigener Wald",
+     "flaeche_px": 150
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200151,
+   "klasse": "2.1",
+   "grob": "2",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.555
+   },
+   "instanz": {
+    "text": "crop field",
+    "eingerastet": true
+   },
+   "flaeche": 3936,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "2.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200152,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 240,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleiner Strauch bzw. kleine Krone am Rand des Rasens 200143 neben dem Baum 200153",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Einzelner kleiner Gehölzfleck bei 355/328 im Garten, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.4"
+  },
+  {
+   "id": 200153,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.467
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 2247,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Baumkrone(n) zwischen den Rasenflächen 200143 und 200140",
+   "viertel": "v4",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200154,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.454
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 1262,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schattenzone zwischen den Kronen 200139 und 200158, im Kontrastbild schwache Gehölztextur",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Im Schatten bei 120/362 setzt sich das Gehölz fort (U2), nicht 0.2",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200155,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 342,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines Gehölzstück zwischen Blutbuche 200145, Baum 200139 und Gehölz 200167",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gartengehölz bei 80/353, kein geschlossener Wald; mit 200167 verschmelzen möglich",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200156,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 76,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines Kronenstück zwischen den Bäumen 200141 und 200158",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "76 px Krone bei 174/347 mit dem Baum 200141 verschmelzen, kein eigener Wald",
+     "flaeche_px": 76
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200157,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.558,
+    "abstand": 0.292
+   },
+   "flaeche": 244,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Rasenstreifen nördlich des Pools, Fortsetzung des Rasens 200143",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Hellgrüner Rasen bei 244/348 mit dem Rasen 200143 verschmelzen, kein Wald",
+     "flaeche_px": 244
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1"
+  },
+  {
+   "id": 200158,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.628
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 4320,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Große Baumkrone mitten im Gehölzstreifen über dem Feld",
+   "viertel": "v3",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200159,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.189,
+    "abstand": 0.075
+   },
+   "flaeche": 359,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Heller Plattenbelag bzw. Holzdeck westlich des Pools",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helle flache Beckenumrandung bei 229/360 ohne Dachform: Terrasse, kein Hauptgebäude",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": "1.2.4"
+  },
+  {
+   "id": 200160,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.448
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 2424,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Dunkle große Baumkrone westlich des Pools am Feldrand",
+   "viertel": "v3",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200161,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 1434,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200162,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 93,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines Kronenstück zwischen den Bäumen 200141, 200158 und 200160",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "93 px Krone bei 200/351 mit dem Baum 200160 verschmelzen",
+     "flaeche_px": 93
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200163,
+   "klasse": "1.3.3",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.535
+   },
+   "instanz": {
+    "text": "swimming pool",
+    "eingerastet": true
+   },
+   "flaeche": 987,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.3.3",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Rechteckiges Schwimmbecken im Garten",
+   "viertel": "v3",
+   "klasse_heute": "1.3.3",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200164,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.421
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 243,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Dunkles längliches Gehölzband (Hecke bzw. Strauchreihe) am Feldrand",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Längliche dunkle Gehölzform mit Textur bei 484/364 neben dem Baum 200166; Gehölz nach U2, nicht 0.2",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200165,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.541
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 3299,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Großes dunkles Kronendach an der Ecke des Feldes, eine große Krone oder mehrere Bäume",
+   "viertel": "v4",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200166,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.534
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 500,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Runde dunkle Baumkrone am Feldrand",
+   "viertel": "v4",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200167,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.444
+   },
+   "instanz": {
+    "text": "bush",
+    "eingerastet": true
+   },
+   "flaeche": 3768,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.4",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kronendach von Bäumen am linken Kernrand über dem Feld, grobe Kronentextur",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grobe Kronentextur wie bei den Nachbarbäumen bei 86/382; eher Bäume als niedriges Gebüsch",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.2.4",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200168,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 115,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200169,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.486,
+    "abstand": 0.354
+   },
+   "flaeche": 214,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Grasiger Saum am Nordostrand des Feldes",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grünlicher Randstreifen bei 533/364 zwischen Feld und Gehölz, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200170,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.892
+   },
+   "instanz": {
+    "text": "dirt path",
+    "eingerastet": true
+   },
+   "flaeche": 78035,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "6.6",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Große gemähte Fläche mit gebogenen Heuschwaden (Mahdspuren), von Gärten, Gehölz und Wiese umgeben",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helle Schwaden mit grünlichen Streifen dazwischen, die der Feldform folgen, bei 479/479: gemähte Wiese bzw. Feld, kein unbefestigter Weg; Getreidestoppel (2.2) nicht ganz ausgeschlossen",
+     "flaeche_px": null
+    },
+    {
+     "nr": 2,
+     "art": "sonstiges",
+     "text": "Am Südrand bei 150/505 liegt ein heller, weißlicher Randstreifen (Feldrain bzw. trockener Boden) im Segment; als 3.4 abtrennen möglich",
+     "flaeche_px": 900
+    },
+    {
+     "nr": 3,
+     "art": "sonstiges",
+     "text": "Viele kleine Randstücke (v3: 200184, 200183, 200188, 200187, 200191, 200195, 200196, 200199, 200200, 200202; v4: 200175, 200186) gehören zu dieser Fläche (bei 230/429)",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "6.6",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200171,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.441,
+    "abstand": 0.303
+   },
+   "flaeche": 3700,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Grasstreifen zwischen Garten und Feld mit Heckenzeile, Zaun und einem hellen Kasten",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Überwiegend Gras mit niedriger Heckenzeile bei 301/402, kein Wald",
+     "flaeche_px": null
+    },
+    {
+     "nr": 2,
+     "art": "fremdes",
+     "text": "Heller rechteckiger Kasten bzw. Frühbeet bei 240/399 (etwa x 233–248, y 396–402), eigenes Segment",
+     "flaeche_px": 80
+    },
+    {
+     "nr": 3,
+     "art": "trennen",
+     "text": "Heckenzeile entlang der Gartengrenze bei 300/390 als 4.2.3 abtrennen",
+     "flaeche_px": 300
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200172,
+   "klasse": "4.2.4",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.59,
+    "abstand": 0.236
+   },
+   "flaeche": 91,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleiner dunkler Strauch an der Ostecke des Pools",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Dunkle kleine Krone bei 284/369, kein Rasen",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": "4.2.4"
+  },
+  {
+   "id": 200173,
+   "klasse": "3.3",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 648,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Lücke im Gehölzstreifen mit niedrigerem Bewuchs und etwas offenem Boden",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hellere Lücke zwischen den Kronen bei 113/403, kein geschlossener Wald; Ruderalflur oder Saum",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.3"
+  },
+  {
+   "id": 200174,
+   "klasse": "1.2.4",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.57
+   },
+   "instanz": {
+    "text": "building",
+    "eingerastet": true
+   },
+   "flaeche": 663,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Terrasse südlich des Pools mit Liegen und Gartenmöbeln",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Belag mit weißen Möbeln bei 263/383, keine Dachfläche erkennbar; Überdachung nicht ganz ausgeschlossen",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "1.1.1",
+   "klasse_vorschlag": "1.2.4"
+  },
+  {
+   "id": 200175,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.681,
+    "abstand": 0.08
+   },
+   "flaeche": 112,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleiner Randzipfel des Feldes am Gehölzrand",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Heller Feldrand bei 486/377 mit der Fläche 200170 verschmelzen, kein Acker mit Bewuchs",
+     "flaeche_px": 112
+    }
+   ],
+   "klasse_heute": "2.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200176,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 303,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Strauchiger Saum zwischen Baum 200165, Rasen 200143 und Grasstreifen 200171",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Niedrigeres Gehölz bei 376/378, kein geschlossener Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200177,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.453
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 107,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200178,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.523,
+    "abstand": 0.219
+   },
+   "flaeche": 119,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200179,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.412,
+    "abstand": 0.168
+   },
+   "flaeche": 72,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Grasiger Saum am Feldrand unter dem Baum 200165",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grünlicher Randstreifen bei 440/401, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200180,
+   "klasse": "1.1.2",
+   "grob": "1",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.444
+   },
+   "instanz": {
+    "text": "shed",
+    "eingerastet": true
+   },
+   "flaeche": 367,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.1.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Langes graues Flachdach bzw. Abdeckung südlich der Poolterrasse (Schuppen, Unterstand oder Hochbeet)",
+   "viertel": "v3",
+   "klasse_heute": "1.1.2",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200181,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.542,
+    "abstand": 0.301
+   },
+   "flaeche": 88,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Schmaler grasiger Saum am Feldrand unter dem Baum 200158",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grasstreifen bei 187/409, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200182,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.495,
+    "abstand": 0.139
+   },
+   "flaeche": 154,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "6.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Grünlich-graue Stelle am Nordrand des Feldes im Grasstreifen",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Stelle bei 362/413 gehört zum Grasstreifen 200171 bzw. Feldrand; keine Abbruchkante, kein offener Boden",
+     "flaeche_px": 154
+    }
+   ],
+   "klasse_heute": "6.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200183,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.621,
+    "abstand": 0.214
+   },
+   "flaeche": 119,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "6.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Helle Stelle am oberen Feldrand, gleiche Bedeckung wie der Feld",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Heller Feldrand bei 117/415 mit dem Feld 200170 verschmelzen",
+     "flaeche_px": 119
+    }
+   ],
+   "klasse_heute": "6.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200184,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.665,
+    "abstand": 0.144
+   },
+   "flaeche": 128,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "6.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Helle Stelle am oberen Feldrand, gleiche Bedeckung wie der Feld",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Heller Feldrand bei 91/416 mit dem Feld 200170 verschmelzen; keine Abbruchkante erkennbar",
+     "flaeche_px": 128
+    }
+   ],
+   "klasse_heute": "6.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200185,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.544,
+    "abstand": 0.111
+   },
+   "flaeche": 102,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Grasiger Saum am linken Kernrand zwischen Gehölz und Feld",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grasstreifen bei 71/421 am Feldrand, kein Wald",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200186,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.492,
+    "abstand": 0.183
+   },
+   "flaeche": 91,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Feldrand unter dem Baum 200165",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Heller Feldrand bei 407/421 mit 200170 verschmelzen, kein Wald",
+     "flaeche_px": 91
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200187,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.679,
+    "abstand": 0.093
+   },
+   "flaeche": 109,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Randstück des Felds unter dem Baum 200160",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Feldrand bei 230/429 mit dem Feld 200170 verschmelzen",
+     "flaeche_px": 109
+    }
+   ],
+   "klasse_heute": "2.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200188,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.674,
+    "abstand": 0.092
+   },
+   "flaeche": 88,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Randstück des Felds unter dem Baum 200160",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Feldrand bei 213/430 mit dem Feld 200170 verschmelzen",
+     "flaeche_px": 88
+    }
+   ],
+   "klasse_heute": "2.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200189,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.627
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 20278,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Grüne Wiese mit höherem Gras südlich des Felds",
+   "viertel": "v3",
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200190,
+   "klasse": "2.1",
+   "grob": "2",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.941
+   },
+   "instanz": {
+    "text": "crop field",
+    "eingerastet": true
+   },
+   "flaeche": 102,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200191,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.829,
+    "abstand": 0.112
+   },
+   "flaeche": 205,
+   "im_kern": true,
+   "im_siedlung": "ja",
+   "klasse_vorstufe": "2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Heller Randstreifen des Felds über dem Baum 200193",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Feldrand bei 225/497 mit dem Feld 200170 verschmelzen",
+     "flaeche_px": 205
+    }
+   ],
+   "klasse_heute": "2.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200192,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.511,
+    "abstand": 0.066
+   },
+   "flaeche": 85,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200193,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.811
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 2001,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Dunkle Baumkronen am Südrand des Felds, zwei bis drei Bäume",
+   "viertel": "v3",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200194,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 131,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200195,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.603
+   },
+   "instanz": {
+    "text": "vineyard",
+    "eingerastet": true
+   },
+   "flaeche": 115,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "2.4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Heller Randzipfel des Felds",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Feldrand bei 258/511 mit 200170 verschmelzen; kein Weingarten, keine Zeilen",
+     "flaeche_px": 115
+    }
+   ],
+   "klasse_heute": "2.4.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200196,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.961
+   },
+   "instanz": {
+    "text": "bare field",
+    "eingerastet": true
+   },
+   "flaeche": 195,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "2.2",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Heller Randstreifen am Südrand des Felds (Feldrain mit trockenem Gras bzw. Boden)",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Teil des hellen Streifens bei 191/517, der sonst im Feld 200170 liegt; damit verschmelzen",
+     "flaeche_px": 195
+    }
+   ],
+   "klasse_heute": "2.2",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200197,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.515
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 2647,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Dunkle Baumkrone am Feldrand unten rechts im Viertel",
+   "viertel": "v3",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200198,
+   "klasse": "0.2",
+   "grob": "0",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 482,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200199,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 128,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Heller Randstreifen am Südrand des Felds neben dem Baum 200193",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Fortsetzung des hellen Feldrands bei 199/522; mit 200170 verschmelzen, kein Wald",
+     "flaeche_px": 128
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200200,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 93,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Helles Stück zwischen den Bäumen am Feldrand",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Heller Feldrand bei 257/524 mit 200170 verschmelzen, kein Wald",
+     "flaeche_px": 93
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200201,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.521
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 4470,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200202,
+   "klasse": "3.1.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.585,
+    "abstand": 0.246
+   },
+   "flaeche": 106,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Helles Stück am Feldrand zwischen den Bäumen 200193 und 200197",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Heller Feldrand bei 265/525 mit 200170 verschmelzen, kein Wald",
+     "flaeche_px": 106
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "3.1.1"
+  },
+  {
+   "id": 200203,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.708,
+    "abstand": 0.103
+   },
+   "flaeche": 269,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Heller grasiger Saum am Südwestrand des Feldes neben dem Baum 200197",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Feldrain zwischen Feld und Gehölz bei 327/544; als Saum statt flächiger Wiese",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200204,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 248,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Randstück der Krone 200193",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Dunkle Krone bei 260/541 mit 200193 verschmelzen",
+     "flaeche_px": 248
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200205,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 118,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Randstück der Krone 200193",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Dunkle Krone bei 221/542 mit 200193 verschmelzen",
+     "flaeche_px": 118
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200206,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.499
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 3884,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "sauber",
+   "was_ist_es": "Baumkrone am unteren Kernrand, größter Teil im Kontextrand",
+   "viertel": "v4",
+   "klasse_heute": "4.2.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200207,
+   "klasse": "4.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.587
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 6838,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Dunkle Kronen am unteren Kernrand, im Kontrastbild mit Kronentextur",
+   "viertel": "v3",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronentextur bei 157/557 (Gehölz, U2), nicht 0.2",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "0.2",
+   "klasse_vorschlag": "4.2"
+  },
+  {
+   "id": 200208,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 114,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Kleines Randstück der Krone 200206",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Dunkle Krone bei 337/556 mit 200206 verschmelzen, kein eigener Wald",
+     "flaeche_px": 114
+    }
+   ],
+   "klasse_heute": "4.1",
+   "klasse_vorschlag": "4.2.1"
+  },
+  {
+   "id": 200209,
+   "klasse": "3.4",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.654,
+    "abstand": 0.127
+   },
+   "flaeche": 115,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "urteil": "nicht_sauber",
+   "was_ist_es": "Heller Saum am Südrand des Feldes",
+   "viertel": "v4",
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heller Feldrain bei 362/560 zwischen Feld und Wiese; Saum statt Wiese",
+     "flaeche_px": null
+    }
+   ],
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": "3.4"
+  },
+  {
+   "id": 200210,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 108,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200211,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "ja",
+   "sicherheit": {
+    "wert": 0.627
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 5316,
+   "im_kern": true,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "urteil": "sauber",
+   "was_ist_es": "Wiese am unteren Kernrand, im Kern nur ein kleines Stück",
+   "viertel": "v4",
+   "klasse_heute": "3.1",
+   "klasse_vorschlag": null
+  },
+  {
+   "id": 200212,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.785
+   },
+   "instanz": {
+    "text": "grassland",
+    "eingerastet": true
+   },
+   "flaeche": 169,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200213,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.674,
+    "abstand": 0.134
+   },
+   "flaeche": 189,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200214,
+   "klasse": "3.5",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 104,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200215,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.667,
+    "abstand": 0.07
+   },
+   "flaeche": 149,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200216,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.838
+   },
+   "instanz": {
+    "text": "sports field",
+    "eingerastet": true
+   },
+   "flaeche": 129,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.3.4",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200217,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.906
+   },
+   "instanz": {
+    "text": "fallow field",
+    "eingerastet": true
+   },
+   "flaeche": 215,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "2.3",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200218,
+   "klasse": "4.2.1",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.549
+   },
+   "instanz": {
+    "text": "shadow",
+    "eingerastet": true
+   },
+   "flaeche": 777,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "0.2",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200219,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.785
+   },
+   "instanz": {
+    "text": "grassland",
+    "eingerastet": true
+   },
+   "flaeche": 117,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200220,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.393,
+    "abstand": 0.109
+   },
+   "flaeche": 198,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200221,
+   "klasse": "3.5",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 2496,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200222,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 145,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200223,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.597,
+    "abstand": 0.085
+   },
+   "flaeche": 377,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200224,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.961
+   },
+   "instanz": {
+    "text": "bare field",
+    "eingerastet": true
+   },
+   "flaeche": 281,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "2.2",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200225,
+   "klasse": "3.5",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.663,
+    "abstand": 0.132
+   },
+   "flaeche": 215,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200226,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.838
+   },
+   "instanz": {
+    "text": "sports field",
+    "eingerastet": true
+   },
+   "flaeche": 123,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "1.3.4",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200227,
+   "klasse": "3.1",
+   "grob": "3",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.555,
+    "abstand": 0.167
+   },
+   "flaeche": 122,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200228,
+   "klasse": "3.5",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 163,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200229,
+   "klasse": "4.2.2",
+   "grob": "4",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 93,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200230,
+   "klasse": "3.5",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.617
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 454,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200231,
+   "klasse": "4.1",
+   "grob": "4",
+   "herkunft": "semantik",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.448,
+    "abstand": 0.31
+   },
+   "flaeche": 677,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200232,
+   "klasse": "3.5",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.617
+   },
+   "instanz": {
+    "text": "tree",
+    "eingerastet": true
+   },
+   "flaeche": 166,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.2.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200233,
+   "klasse": "3.5",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.627
+   },
+   "instanz": {
+    "text": "lawn",
+    "eingerastet": true
+   },
+   "flaeche": 224,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "3.1",
+   "sicher_vorstufe": "ja",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  },
+  {
+   "id": 200234,
+   "klasse": "3.5",
+   "grob": "3",
+   "herkunft": "sam3-instanz",
+   "sicher": "nein",
+   "sicherheit": {
+    "wert": 0.519
+   },
+   "instanz": {
+    "text": "forest",
+    "eingerastet": true
+   },
+   "flaeche": 119,
+   "im_kern": false,
+   "im_siedlung": "nein",
+   "klasse_vorstufe": "4.1",
+   "sicher_vorstufe": "nein",
+   "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+   "urteil": "kontextrand"
+  }
+ ]
+}

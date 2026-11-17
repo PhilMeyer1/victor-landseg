@@ -1,0 +1,167 @@
+{
+ "schema": "landseg-kategorien/1",
+ "teilkachel": "r1c0",
+ "title": "Eigene gestufte Kategorien, Fassung A, Teilkachel r1c0",
+ "classes": [
+  {
+   "code": "1",
+   "name": "Gehölz",
+   "parent": null,
+   "level": 1,
+   "color": "#1b5e20",
+   "image_cue": "Baum- und Strauchkronen: körnige, schattige Textur, dunkelgrün"
+  },
+  {
+   "code": "1.1",
+   "name": "Wald, geschlossenes Kronendach",
+   "parent": "1",
+   "level": 2,
+   "color": "#2e7d32",
+   "image_cue": "zusammenhängende Kronen ohne Bodensicht über mehr als ca. 0,1 ha"
+  },
+  {
+   "code": "1.1.1",
+   "name": "Kronendach besonnt",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#388e3c",
+   "image_cue": "geschlossene, besonnte Laubkronen, rundliche Kronenballen mit hellen Rändern"
+  },
+  {
+   "code": "1.1.2",
+   "name": "Kronendach beschattet / dunkler Bestand",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#0d3b1e",
+   "image_cue": "großflächig sehr dunkle Stelle im Bestand mit schwacher Kronentextur: Schlagschatten höherer Bäume oder dunkle Baumart"
+  },
+  {
+   "code": "1.1.3",
+   "name": "auffällige Einzelkrone im Bestand",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#8d6e63",
+   "image_cue": "einzelne Krone mit abweichender Färbung (braun/rötlich) innerhalb des Bestands"
+  },
+  {
+   "code": "1.2",
+   "name": "Einzelbaum, freistehend",
+   "parent": "1",
+   "level": 2,
+   "color": "#66bb6a",
+   "image_cue": "einzelne geschlossene Krone mit Schlagschatten, ringsum Offenland"
+  },
+  {
+   "code": "1.3",
+   "name": "Baumgruppe, freistehend",
+   "parent": "1",
+   "level": 2,
+   "color": "#43a047",
+   "image_cue": "wenige verbundene Kronen, außerhalb des Waldes, ringsum Offenland"
+  },
+  {
+   "code": "1.4",
+   "name": "Gebüsch / Strauchgruppe",
+   "parent": "1",
+   "level": 2,
+   "color": "#9ccc65",
+   "image_cue": "kleine, niedrige Gehölzflecken ohne klare Baumkrone, kurzer Schatten"
+  },
+  {
+   "code": "2",
+   "name": "Krautige Vegetation",
+   "parent": null,
+   "level": 1,
+   "color": "#c0ca33",
+   "image_cue": "Gras- und Krautdecke ohne Gehölz, feine gleichmäßige Textur"
+  },
+  {
+   "code": "2.1",
+   "name": "Wiese / Grünland",
+   "parent": "2",
+   "level": 2,
+   "color": "#d4e157",
+   "image_cue": "große, gleichmäßig grüne Grasfläche, teils mit hellen Tritt- oder Fahrspuren"
+  },
+  {
+   "code": "2.2",
+   "name": "Lichtung / Krautflur im Gehölz",
+   "parent": "2",
+   "level": 2,
+   "color": "#fff176",
+   "image_cue": "helle Gras-/Krautfläche, vom Gehölz umschlossen, rauer als die Wiese"
+  },
+  {
+   "code": "2.3",
+   "name": "Saum / verbuschende Krautflur",
+   "parent": "2",
+   "level": 2,
+   "color": "#aed581",
+   "image_cue": "raue Kraut- und Grasflur zwischen Wiese und Wald mit vielen kleinen Gebüschen und hellen Flecken"
+  },
+  {
+   "code": "3",
+   "name": "Vegetationsarme Flächen",
+   "parent": null,
+   "level": 1,
+   "color": "#bcaaa4",
+   "image_cue": "Boden oder trockene Pflanzenreste sichtbar, beige bis braun"
+  },
+  {
+   "code": "3.1",
+   "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+   "parent": "3",
+   "level": 2,
+   "color": "#d7ccc8",
+   "image_cue": "beige bis bräunliche Flecken und Streifen in der Wiese oder am Gehölzrand"
+  },
+  {
+   "code": "3.2",
+   "name": "Acker, abgeerntet (Stoppel)",
+   "parent": "3",
+   "level": 2,
+   "color": "#efebe9",
+   "image_cue": "hellbeige Fläche mit parallelen Bearbeitungsspuren (nur Kontextrand oben rechts)"
+  },
+  {
+   "code": "4",
+   "name": "Wege",
+   "parent": null,
+   "level": 1,
+   "color": "#ff7043",
+   "image_cue": "linienhafte helle Streifen"
+  },
+  {
+   "code": "4.1",
+   "name": "Trampelpfad, unbefestigt",
+   "parent": "4",
+   "level": 2,
+   "color": "#ff8a65",
+   "image_cue": "schmale (1 bis 3 px) helle Linie durch Gras oder Gehölz"
+  },
+  {
+   "code": "5",
+   "name": "Siedlung / Gärten",
+   "parent": null,
+   "level": 1,
+   "color": "#ab47bc",
+   "image_cue": "Dächer, Hartflächen, kleinteilige Gärten"
+  },
+  {
+   "code": "5.1",
+   "name": "Gebäude und befestigte Flächen (Kleingarten)",
+   "parent": "5",
+   "level": 2,
+   "color": "#e040fb",
+   "image_cue": "graue, rote oder weiße Dächer, Wege, Becken, Pavillons"
+  },
+  {
+   "code": "5.2",
+   "name": "Gartenfläche (Rasen, Beete)",
+   "parent": "5",
+   "level": 2,
+   "color": "#ce93d8",
+   "image_cue": "kleinteilige Grün- und Beetflächen zwischen Gartenhäusern"
+  }
+ ]
+}

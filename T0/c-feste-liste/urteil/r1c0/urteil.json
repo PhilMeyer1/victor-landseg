@@ -1,0 +1,1580 @@
+{
+ "schema": "landseg-urteil-teilkachel/1",
+ "fassung": "C",
+ "teilkachel": "r1c0",
+ "zusammengefuehrt": "mechanisch aus den vier Viertel-Abgaben (Teil 3 landseg-test-t0)",
+ "kategorien": "c-feste-liste/kategorien-c.json",
+ "klasse_regel": "klasse = klasse_vorschlag, sonst klasse_heute",
+ "kernsegmente": 52,
+ "eintraege": 52,
+ "zahlen": {
+  "nicht_sauber": 48,
+  "sicher_nein": 33,
+  "klassenwechsel": 39,
+  "je_viertel": {
+   "v1": 21,
+   "v2": 9,
+   "v3": 14,
+   "v4": 8
+  }
+ },
+ "viertel": [
+  {
+   "viertel": "v1",
+   "bearbeiter": "urt-c-r1c0-v1",
+   "quelle": "c-feste-liste/urteil/r1c0/v1/urteil.json",
+   "segmente": 21,
+   "bilder_angesehen": {
+    "uebersicht": [
+     "T0.png",
+     "ganz/r1c0/ganz_nummern.jpg",
+     "ganz/r1c0/ganz_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v1/uebersicht_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v1/uebersicht_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v1/uebersicht_vorschlag.jpg",
+     "c-feste-liste/viertel/r1c0/v1/uebersicht_kontrast.jpg"
+    ],
+    "nah": [
+     "c-feste-liste/viertel/r1c0/v1/nah1_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v1/nah2_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v1/nah3_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v1/nah3_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v1/nah4_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v1/nah4_roh.jpg",
+     "c-feste-liste/urteil/r1c0/v1/nah_1.jpg",
+     "c-feste-liste/urteil/r1c0/v1/nah_2.jpg"
+    ]
+   }
+  },
+  {
+   "viertel": "v2",
+   "bearbeiter": "urt-c-r1c0-v2",
+   "quelle": "c-feste-liste/urteil/r1c0/v2/urteil.json",
+   "segmente": 9,
+   "bilder_angesehen": {
+    "uebersicht": [
+     "T0.png",
+     "ganz/r1c0/ganz_nummern.jpg",
+     "ganz/r1c0/ganz_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v2/uebersicht_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v2/uebersicht_roh.jpg"
+    ],
+    "nah": [
+     "c-feste-liste/viertel/r1c0/v2/nah1_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v2/nah1_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v2/nah2_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v2/nah2_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v2/nah3_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v2/nah4_nummern.jpg",
+     "c-feste-liste/urteil/r1c0/v2/nah_1.jpg"
+    ]
+   }
+  },
+  {
+   "viertel": "v3",
+   "bearbeiter": "urt-c-r1c0-v3",
+   "quelle": "c-feste-liste/urteil/r1c0/v3/urteil.json",
+   "segmente": 14,
+   "bilder_angesehen": {
+    "uebersicht": [
+     "T0.png",
+     "ganz/r1c0/ganz_nummern.jpg",
+     "ganz/r1c0/ganz_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v3/uebersicht_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v3/uebersicht_roh.jpg"
+    ],
+    "nah": [
+     "c-feste-liste/viertel/r1c0/v3/nah1_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v3/nah1_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v3/nah2_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg",
+     "c-feste-liste/urteil/r1c0/v3/nah_1.jpg",
+     "c-feste-liste/viertel/r1c0/v3/nah4_nummern.jpg"
+    ]
+   }
+  },
+  {
+   "viertel": "v4",
+   "bearbeiter": "urt-c-r1c0-v4",
+   "quelle": "c-feste-liste/urteil/r1c0/v4/urteil.json",
+   "segmente": 8,
+   "bilder_angesehen": {
+    "uebersicht": [
+     "T0.png",
+     "ganz/r1c0/ganz_nummern.jpg",
+     "ganz/r1c0/ganz_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v4/uebersicht_nummern.jpg",
+     "c-feste-liste/viertel/r1c0/v4/uebersicht_roh.jpg"
+    ],
+    "nah": [
+     "c-feste-liste/viertel/r1c0/v4/nah1_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v4/nah4_roh.jpg",
+     "c-feste-liste/viertel/r1c0/v4/nah4_nummern.jpg"
+    ]
+   }
+  }
+ ],
+ "segmente": [
+  {
+   "id": 300001,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Nördlicher Teil der großen Hangwiese, gleichmäßige Grasdecke mit einzelnen kleinen Büschen; kein Sportplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein künstlicher Belag, Grasdecke wie 300019 (186/91).",
+     "flaeche_px": 7060
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Grenze zu 300019 als Stufenlinie ohne Bildkante; beide sind dieselbe Wiese (130/95).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300015,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiese mit einzelnen kleinen Büschen im Nordosten des Viertels, zwischen Baumkronen 300027 und dem oberen Rand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Klasse stimmt; Grenzen zu 300021, 300024, 300025 ohne Bildkante, dieselbe Wiese (295/86).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300016,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Etwas dunklere Grasfläche am oberen Kernrand, Struktur erkennbar, kein Schatten ohne Grund; Fortsetzung der Wiese 300001.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Klasse 0.2 falsch, Grasstruktur sichtbar; Wiese wie 300001, evtl. höherer Bewuchs (147/67).",
+     "flaeche_px": 77
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Ohne Bildkante zu 300001; mit ihm verschmelzen (150/70).",
+     "flaeche_px": 77
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/urteil/r1c0/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300018,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Schmaler Zipfel Wiese am oberen Kernrand, gleiche Grasdecke wie 300001; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Acker, keine Parzelle oder Fahrgassen; Wiese (220/67).",
+     "flaeche_px": 88
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Ohne Bildkante zu 300001 und 300021; verschmelzen (222/70).",
+     "flaeche_px": 88
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300019,
+   "klasse_heute": "2.2",
+   "was_ist_es": "Große Hangwiese mit hellen Streifen und Flecken aus trockenem bzw. liegendem Gras (Mahd- oder Schwadenreste); grüne Grasdecke, keine Furchen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein gepflügter Acker: durchgehend grüne Grasdecke, helle Streifen sind trockenes Gras (121/162).",
+     "flaeche_px": 25781
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Grenze zu 300001 ohne Bildkante; zusammen eine Wiese (150/105).",
+     "flaeche_px": null
+    },
+    {
+     "nr": 3,
+     "art": "grenze",
+     "text": "Südgrenze zu 300038 nur teilweise auf Bildkante (Übergang Wiese zu Gras mit Büschen), Strecke geschätzt (150/300).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah3_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300021,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Wiesenstück zwischen 300001 und 300015 mit einzelnen kleinen Büschen; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grasdecke, keine Ackerstruktur (265/95).",
+     "flaeche_px": 1427
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Gerade Grenzen zu 300001 und 300015 ohne Bildkante; verschmelzen (253/110).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300024,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Kleines Wiesenstück am Ostrand des Viertels, Gras; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras, keine Ackerstruktur (306/103).",
+     "flaeche_px": 132
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Ohne Bildkante zu 300015; verschmelzen (304/100).",
+     "flaeche_px": 132
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300025,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Kleines Wiesenstück im Grasband, kein Spielplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein künstlicher Belag, Gras (271/113).",
+     "flaeche_px": 156
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Grenzen ohne Bildkante, mit 300021/300015 verschmelzen (273/110).",
+     "flaeche_px": 156
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300026,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große dunkle Baumkrone (ein Baum oder kleine Gruppe) mit Kronentextur am Rand der Wiese, unten an Gebüsch/Wald 300008 anschließend.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronenstruktur klar sichtbar, kein Schatten ohne Grund; Gehölz, Einzelbaum oder Baumgruppe nicht sicher trennbar (215/135).",
+     "flaeche_px": 2470
+    },
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Unterer Rand gegen 300008 ohne klare Bildkante; ob die Krone zum Wald 300008 gehört, offen (225/165).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2"
+  },
+  {
+   "id": 300027,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Längliche dunkle Kronen hoher Bäume mit Schlagschatten am Westrand des Waldes 300008.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronen und Schatten von Bäumen mit erkennbarem Grund, keine 0.2 (300/164).",
+     "flaeche_px": 2040
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Gehört vermutlich zum Waldrand 300008; Verschmelzen oder eigene Baumgruppe 4.2.2 offen (305/175).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300028,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Wiesenstreifen direkt am Ostrand der Krone 300026, Gras mit etwas Kronensaum.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Überwiegend Gras, kein geschlossener Wald; Kronenrand von 300026 nur am Westsaum (247/124).",
+     "flaeche_px": 257
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit der Wiese 300001/300021 verschmelzen, Westrand auf den Kronenrand von 300026 legen (240/125).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300032,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Wiesenstück im Grasband zwischen den Kronen 300026 und 300027.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Klasse stimmt; Kästchengrenzen ohne Bildkante, mit 300021/300037 verschmelzen (269/138).",
+     "flaeche_px": 173
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300033,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Wiesenstück am Westrand der Krone 300027, überwiegend Gras.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Überwiegend Gras, Kronensaum von 300027 nur am Ostrand (281/146).",
+     "flaeche_px": 129
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300037 verschmelzen, Ostrand auf Kronenrand 300027 legen (285/146).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300036,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Wiesenstück unter dem Grasband am Rand der Krone 300026.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Klasse stimmt; Grenzen ohne Bildkante, mit 300037 verschmelzen (258/151).",
+     "flaeche_px": 145
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300037,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Wiesenstück im Grasband zwischen den Kronen 300026 und 300027; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras, keine Ackerstruktur (271/156).",
+     "flaeche_px": 596
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300032, 300036, 300039, 300033 zu einem Wiesenband verschmelzen (268/158).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300039,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Wiesenstück am Südende des Grasbands, Übergang zu Gebüsch 300008.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Klasse stimmt; Kästchengrenze zu 300037 ohne Bildkante, verschmelzen (270/172).",
+     "flaeche_px": 136
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/urteil/r1c0/v1/nah_1.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah2_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300041,
+   "klasse_heute": "6.1",
+   "was_ist_es": "Helles Muster aus trockenem bzw. liegendem Gras in der Wiese (Ringe und Streifen), dazwischen grünes Gras; kein offener Boden mit Abbruchkante.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gleiches Muster wie die hellen Streifen in 300019 unten links, die dort Wiese sind; einheitlich Wiese (191/220).",
+     "flaeche_px": 1662
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah4_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300044,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleine Gras- und Krautfläche am Waldrand von 300008, oben an 300038 angrenzend.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Zackige Grenze zu 300038 ohne Bildkante; gleiche Grasfläche, verschmelzen (261/236).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah4_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300045,
+   "klasse_heute": "6.1",
+   "was_ist_es": "Schräger beige-brauner Streifen mit kleinen dunklen Büschen oder Stümpfen, klar gegen das Gras abgesetzt; offener Boden (Rinne/Abbruch) oder abgestorbene Krautflur.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah4_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v1/uebersicht_kontrast.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "6.1"
+  },
+  {
+   "id": 300046,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Kleines Grasstück zwischen dem hellen Muster 300041 und dem braunen Streifen 300045.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein künstlicher Belag, Gras (210/255).",
+     "flaeche_px": 132
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit der Wiese 300019 verschmelzen (207/255).",
+     "flaeche_px": 132
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah4_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300047,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Kleines Grasstück am Westrand des braunen Streifens 300045.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein künstlicher Belag, Gras (183/293).",
+     "flaeche_px": 134
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit der Wiese 300019 bzw. 300038 verschmelzen (180/291).",
+     "flaeche_px": 134
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah3_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300008,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Großer Laub- und Mischwald im Osten und Süden der Teilkachel; enthält im Viertel v2 eine offene Graslichtung und Gras-/Gebüschsäume.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "fremdes",
+     "text": "Offene Graslichtung mit zwei Pfaden etwa x 440–560, y 130–205 liegt im Wald; abtrennen als Grünland 3.1 (oder 3.5) (525/175).",
+     "flaeche_px": 5500
+    },
+    {
+     "nr": 2,
+     "art": "fremdes",
+     "text": "Gras- und Krautsaum mit hellem Fleck am Westrand, an 300030 und 300015 anschließend, abtrennen als 3.1 (325/150).",
+     "flaeche_px": 400
+    },
+    {
+     "nr": 3,
+     "art": "fremdes",
+     "text": "Gras- und Gebüschfläche östlich des braunen Streifens 300045 (Viertel v1/v3), x 230–275, y 180–235: niedrige Gebüsch- und Jungwuchskronen mit hellem Fleck, eher 4.2.4 als geschlossener Wald, nicht sicher (250/205).",
+     "flaeche_px": 1500
+    },
+    {
+     "nr": 4,
+     "art": "verschmelzen",
+     "text": "Die Schatten-Segmente 300017, 300022, 300023, 300042 (und in v3/v4 300048, 300060, 300063 u. a.) sind derselbe Wald; mit 300008 verschmelzen (449/216).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/urteil/r1c0/v2/nah_1.jpg",
+    "c-feste-liste/viertel/r1c0/v2/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300013,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grasfläche mit hellem Pfad in der oberen rechten Ecke des Kerns, Fortsetzung der offenen Hangwiese nach Norden.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v2/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v2/nah2_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300017,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Kronenbereich hoher Bäume oben rechts, Einzelkronen im Schatten erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronen im Schatten erkennbar, nach U2 Wald (528/104).",
+     "flaeche_px": 3902
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen (510/110).",
+     "flaeche_px": 3902
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v2/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v2/nah2_nummern.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300022,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Krone bzw. beschatteter Kronenbereich am Westrand des Waldes, Struktur noch erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im Wald mit erkennbarer Fortsetzung (Kronen), nach U2 Wald statt 0.2 (330/104).",
+     "flaeche_px": 593
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen (332/110).",
+     "flaeche_px": 593
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v2/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v2/nah1_nummern.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300023,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Langes dunkles Band im Wald (Nord-Süd), tief beschattete Kronen, vielleicht über einer Geländerinne; Kronenstruktur stellenweise sichtbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im Wald, Kronen an den Rändern sichtbar; nach U2 Wald (390/137).",
+     "flaeche_px": 4952
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen; ob darunter eine Rinne oder ein Bach liegt, ist nicht erkennbar (380/200).",
+     "flaeche_px": 4952
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v2/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v2/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v2/uebersicht_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300029,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Heller unbefestigter Pfad, der von Norden in die Waldlichtung führt.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v2/nah2_nummern.jpg",
+    "c-feste-liste/urteil/r1c0/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "6.6"
+  },
+  {
+   "id": 300030,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines helles Gras- und Krautstück am Westrand des Viertels, Saum zwischen Wiese 300015 und Wald 300008.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Fast rechteckige Grenzen ohne Bildkante; das Grasstück setzt sich nach Süden in 300008 fort (helle Stelle bei (325/150)) und gehört zur Wiese 300015 (319/137).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v2/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v2/nah1_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300031,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rundlicher, etwas hellerer grüner Fleck mitten im Gehölz; Kronentextur, wahrscheinlich hellbelaubter Strauch oder Baum, keine Wiese.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronentextur statt feiner Grastextur, rundum Wald; vermutlich Teil des Bestands 300008 (352/139).",
+     "flaeche_px": 230
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v2/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v2/uebersicht_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300042,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große sehr dunkle Fläche im dichten Wald südöstlich der Lichtung; Kronen nur schwach erkennbar, Fortsetzung des Waldes.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Beschatteter Wald mit schwach sichtbaren Kronen, nach U2 Wald statt 0.2 (533/257).",
+     "flaeche_px": 10528
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen (510/240).",
+     "flaeche_px": 10528
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v2/uebersicht_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300038,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Grasfläche mit vielen verstreuten Büschen und einzelnen hellen Flecken zwischen der Hangwiese und dem Wald; kein Sportplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein künstlicher Belag: Gras mit eingestreuten Büschen, verbuschendes Grünland (132/346).",
+     "flaeche_px": 21077
+    },
+    {
+     "nr": 2,
+     "art": "fremdes",
+     "text": "Zwei helle beige Flecken (offener Boden, Holz- oder Streuhaufen) im Gras, je etwa 10 × 12 px (112/350).",
+     "flaeche_px": 250
+    },
+    {
+     "nr": 3,
+     "art": "verschmelzen",
+     "text": "Kleine Stücke 300058, 300056, 300055, 300052, 300054 und 300050 sind dieselbe Fläche; verschmelzen (200/385).",
+     "flaeche_px": null
+    },
+    {
+     "nr": 4,
+     "art": "grenze",
+     "text": "Nordgrenze zu Wiese 300019 nur teils auf sichtbarem Übergang, Strecke geschätzt (150/312).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c0/v3/nah_1.jpg",
+    "c-feste-liste/viertel/r1c0/v1/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.5"
+  },
+  {
+   "id": 300043,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Winziger Zipfel des Waldes am linken Kernrand, Übergang vom Grasland in den dunklen Waldstreifen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah1_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300049,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dunkler Busch mit Schatten im verbuschten Grasland.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Krone mit Schatten, kein Gras; Gehölz (Busch oder kleiner Baum) (197/329).",
+     "flaeche_px": 236
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah2_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2"
+  },
+  {
+   "id": 300050,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Grasstück zwischen den Büschen von 300051.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gras wie die Umgebung 300038, keine Bildkante zur Umgebung; verschmelzen (254/330).",
+     "flaeche_px": 147
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah2_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 300051,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hufeisenförmiges Segment aus zwei dunklen Büschen und dem Gras dazwischen, um das Grasstück 300050 herum.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein geschlossener Wald, sondern Büsche im Grasland; Gehölz außerhalb Wald (243/340).",
+     "flaeche_px": 476
+    },
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Bogen im Süden enthält Gras zwischen den Büschen; Grenze auf die Kronenränder legen, Gras zu 300038 (250/348).",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah2_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2"
+  },
+  {
+   "id": 300052,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Kleines Gras- und Buschstück am Ostrand des verbuschten Graslands; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Ackerstruktur, Gras mit Büschen (288/355).",
+     "flaeche_px": 165
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300038 verschmelzen (286/352).",
+     "flaeche_px": 165
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.5"
+  },
+  {
+   "id": 300053,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Waldstreifen am linken Kernrand, Kronen im Schatten schwach erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Beschatteter Wald mit erkennbaren Kronen, nach U2 Wald (79/417).",
+     "flaeche_px": 2132
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen (85/420).",
+     "flaeche_px": 2132
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/uebersicht_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300054,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Grasstück mit Büschen am Ostrand des Viertels vor dem Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Grenze zu 300052 und 300038 ohne Bildkante; verschmelzen (303/362).",
+     "flaeche_px": 199
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.5"
+  },
+  {
+   "id": 300055,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gras- und Buschsaum am Waldrand südlich von 300038.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Grenze zu 300038 ohne Bildkante, gleiche Bedeckung; verschmelzen (232/392).",
+     "flaeche_px": 959
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.5"
+  },
+  {
+   "id": 300056,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gras- und Buschsaum am Südrand des verbuschten Graslands, vor dem Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Zackige Grenze zu 300038 ohne Bildkante, gleiche Bedeckung; verschmelzen (157/386).",
+     "flaeche_px": 949
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah1_nummern.jpg",
+    "c-feste-liste/urteil/r1c0/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.5"
+  },
+  {
+   "id": 300058,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Kleines Gras- und Buschstück am Westrand des verbuschten Graslands; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Ackerstruktur, Gras mit Busch wie 300038 (106/375).",
+     "flaeche_px": 115
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300038 verschmelzen (104/373).",
+     "flaeche_px": 115
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/urteil/r1c0/v3/nah_1.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah1_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.5"
+  },
+  {
+   "id": 300060,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große dunkle Fläche im Wald östlich von 300061, reicht nach v4; Kronen im Schatten mit Lichtflecken.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Vorstufe sagt sicher, aber Kronen und Lichtflecken sind sichtbar; nach U2 Wald statt 0.2 (277/427).",
+     "flaeche_px": 10987
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen (290/440).",
+     "flaeche_px": 10987
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah4_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300061,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große dunkle Fläche im Wald südlich des Graslands; Kronen im Schatten mit einzelnen Lichtflecken.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im Wald mit erkennbarer Fortsetzung, nach U2 Wald (189/446).",
+     "flaeche_px": 6930
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300060, 300073 und Wald 300008 verschmelzen (200/460).",
+     "flaeche_px": 6930
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah4_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300073,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Kleines Stück am Südrand des Schattens 300061, Übergang zu sonnigen Kronen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Wald im Halbschatten, kein Schatten ohne Grund (209/485).",
+     "flaeche_px": 268
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Gerade senkrechte Westgrenze zu 300061 ohne Bildkante; mit 300061 bzw. 300008 verschmelzen (205/485).",
+     "flaeche_px": 268
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v3/nah4_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300048,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Beschatteter Kronenbereich im Wald oben links im Viertel, Kronen mit Lichtflecken erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im geschlossenen Wald mit erkennbarer Fortsetzung, nach U2 Wald statt 0.2 (357/337).",
+     "flaeche_px": 4533
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen (360/335).",
+     "flaeche_px": 4533
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v4/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v4/uebersicht_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300059,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Kleiner Schattenfleck zwischen Kronen unter 300042.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten zwischen Kronen, nach U2 Wald (533/382).",
+     "flaeche_px": 152
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300008 verschmelzen (531/380).",
+     "flaeche_px": 152
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v4/uebersicht_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300063,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Hakenförmiger beschatteter Bereich im Kronendach mitten im Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im Kronendach, Kronen schwach sichtbar, nach U2 Wald (480/419).",
+     "flaeche_px": 3909
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300008 verschmelzen (470/420).",
+     "flaeche_px": 3909
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v4/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300072,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Beschatteter Kronenbereich am rechten Kernrand nahe den Kleingärten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im Wald mit Lichtflecken auf Kronen, nach U2 Wald (534/511).",
+     "flaeche_px": 3266
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300008 verschmelzen (530/505).",
+     "flaeche_px": 3266
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v4/nah4_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300076,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Beschatteter Kronenbereich im Süden des Viertels, um die kleinen Stücke 300079 und 300080.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im Wald mit Kronenstruktur, nach U2 Wald (503/544).",
+     "flaeche_px": 1719
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300079, 300080 und 300008 verschmelzen (495/545).",
+     "flaeche_px": 1719
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v4/nah4_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300077,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Beschatteter Kronenbereich am unteren Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im Wald, Kronen schwach sichtbar, nach U2 Wald (445/550).",
+     "flaeche_px": 954
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300008 verschmelzen (440/545).",
+     "flaeche_px": 954
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c0/v4/uebersicht_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300079,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Kleines etwas helleres Kronenstück im Schatten 300076.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronenstück im Halbschatten, kein Schatten ohne Grund (532/548).",
+     "flaeche_px": 140
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300080 und 300076 verschmelzen (533/546).",
+     "flaeche_px": 140
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v4/nah4_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.1"
+  },
+  {
+   "id": 300080,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Kleines sonnenbeschienenes Kronenstück im Schatten 300076.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Klasse stimmt; als eigenes Segment ohne Sinn, mit 300076/300008 zum Wald verschmelzen (523/553).",
+     "flaeche_px": 144
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c0/v4/nah4_roh.jpg",
+    "c-feste-liste/viertel/r1c0/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.1"
+  }
+ ],
+ "naht": [
+  {
+   "id": 300016,
+   "seite": "oben",
+   "text": "Klasse 0.2 → 3.1 reicht bis an den oberen Kernrand; Fortsetzung in r0c0 prüfen.",
+   "viertel": "v1"
+  },
+  {
+   "id": 300018,
+   "seite": "oben",
+   "text": "Klasse 2.1 → 3.1 am oberen Kernrand; das Segment setzt sich in r0c0 fort und muss dort dieselbe Klasse bekommen.",
+   "viertel": "v1"
+  },
+  {
+   "id": 300001,
+   "seite": "oben",
+   "text": "Klasse 1.3.4 → 3.1 am oberen Kernrand; Fortsetzung in r0c0 (laut Vorstufe auch links im Kontextrand) gleich setzen.",
+   "viertel": "v1"
+  },
+  {
+   "id": 300019,
+   "seite": "links",
+   "text": "Klasse 2.2 → 3.1 reicht an den linken Bildrand des Ausschnitts (Kontextrand außerhalb T0).",
+   "viertel": "v1"
+  },
+  {
+   "id": 300042,
+   "seite": "rechts",
+   "text": "Klasse 0.2 → 4.1 reicht an den rechten Kernrand; Fortsetzung in r1c1 gleich setzen.",
+   "viertel": "v2"
+  },
+  {
+   "id": 300017,
+   "seite": "oben",
+   "text": "Klasse 0.2 → 4.1 nahe dem oberen Kernrand; falls das Segment in r0c0/r0c1 weiterläuft, dort gleich setzen.",
+   "viertel": "v2"
+  },
+  {
+   "id": 300008,
+   "seite": "rechts",
+   "text": "Abtrennen der Lichtung bei x 440–560 reicht nahe an den rechten Kernrand (x 563); Fortsetzung in r1c1 prüfen.",
+   "viertel": "v2"
+  },
+  {
+   "id": 300053,
+   "seite": "links",
+   "text": "Klasse 0.2 → 4.1 am linken Rand des Ausschnitts (Kontextrand außerhalb T0).",
+   "viertel": "v3"
+  },
+  {
+   "id": 300072,
+   "seite": "rechts",
+   "text": "Klasse 0.2 → 4.1 reicht an den rechten Kernrand; Fortsetzung in r1c1 gleich setzen.",
+   "viertel": "v4"
+  },
+  {
+   "id": 300077,
+   "seite": "unten",
+   "text": "Klasse 0.2 → 4.1 reicht an den unteren Kernrand (Rand des Ausschnitts T0).",
+   "viertel": "v4"
+  },
+  {
+   "id": 300076,
+   "seite": "unten",
+   "text": "Klasse 0.2 → 4.1 am unteren Kernrand (Rand des Ausschnitts T0).",
+   "viertel": "v4"
+  }
+ ],
+ "unsicher": [
+  "v1: 300026: Gehölz 4.2 statt 4.2.1/4.2.2, weil Einzelbaum oder Gruppe nicht trennbar; ob die Krone zum Wald 300008 gehört, offen.",
+  "v1: 300027: 4.1 als Teil des Waldrands 300008 vermutet; könnte auch Baumgruppe 4.2.2 sein.",
+  "v1: 300041: helles Muster als trockenes Gras gedeutet (Wiese); offener Boden ist an hellsten Stellen nicht ganz auszuschließen.",
+  "v1: 300045: offener Boden 6.1 belassen; abgestorbene Krautflur 3.3 wäre die Alternative.",
+  "v1: 300016: dunkler Fleck als Gras gedeutet; dichter niedriger Busch (4.2.4) möglich.",
+  "v1: 300038 (Nachbarviertel v3): wird im Auftrag v3 geurteilt.",
+  "v2: 300008: Grenze der Lichtung nur nach Augenschein geschätzt; Klasse der Lichtung 3.1 oder 3.5 (einzelne Büsche).",
+  "v2: 300031: hellgrüne Krone oder kleine Graslücke nicht sicher trennbar.",
+  "v2: 300023: dunkles Band könnte eine beschattete Rinne mit Bach sein; aus dem Bild nicht entscheidbar.",
+  "v2: 300015 und 300024 (Viertel v1): westlich an 300030 anschließend, dort geurteilt.",
+  "v3: 300038 und die Saumstücke: verbuschendes Grünland 3.5 gewählt; ob 3.1 mit Büschen als Einzelsegmenten (G4-ähnlich) oder 3.3 Ruderalflur besser passt, offen.",
+  "v3: 300008 (Viertel v2 geurteilt): enthält in v3 einen hellbraunen Fleck (offener Boden oder Totholz) bei (132/390) und eine hellere Gebüschzunge x 92–135, y 385–450.",
+  "v3: Schattenflächen 300053, 300061, 300060, 300073: Wald nach U2; einzelne Kronen unter dem Schatten sind nicht abgrenzbar.",
+  "v4: Alle Schattenflächen in v4 nach U2 als Wald 4.1; Laub- oder Mischwald (4.1.1/4.1.3) wäre an den sonnigen Kronen möglich, unter Schatten nicht.",
+  "v4: 300008 (Viertel v2 geurteilt): in v4 durchgehend geschlossener Laubwald, dort keine Mängel gesehen."
+ ],
+ "nicht_geprueft": [
+  "v1: nah1_roh.jpg und uebersicht_gitter.jpg nicht eigens angesehen (Inhalt in uebersicht_roh und nah1_nummern enthalten); Werkzeug kante nicht benutzt, Grenzen nur nach Augenschein.",
+  "v2: uebersicht_vorschlag.jpg, uebersicht_maengel.jpg, uebersicht_kontrast.jpg, uebersicht_gitter.jpg, nah3_nummern.jpg und nah4_roh.jpg nicht eigens angesehen; Werkzeug kante nicht benutzt.",
+  "v3: nah3_roh, nah3_nummern und nah4_roh (Wald im Süden) sowie uebersicht_vorschlag/maengel/kontrast/gitter nicht eigens angesehen; der Waldteil wurde in uebersicht_roh und nah4_nummern beurteilt. Werkzeug kante nicht benutzt.",
+  "v4: nah1_nummern, nah2_*, nah3_* sowie uebersicht_vorschlag/maengel/kontrast/gitter nicht eigens angesehen; reiner Wald, beurteilt in uebersicht_roh, nah1_roh und nah4. Werkzeug kante nicht benutzt."
+ ],
+ "offen": [
+  "v1: 300026: Klasse fein (Einzelbaum oder Baumgruppe) und Zugehörigkeit zum Wald 300008; klären mit Höhenmodell oder Blick schräg.",
+  "v1: 300045: offener Boden oder trockene Krautflur; klären mit Geländebegehung oder zweitem Bildflug.",
+  "v1: Viele kleine Wiesenstücke (300021, 300025, 300032, 300036, 300037, 300039, 300024, 300015, 300018) sind eine Fläche; Verschmelzen ist Sache der Umsetzung.",
+  "v2: 300008: genaue Grenze und Klasse der Graslichtung (x 440–560, y 130–205); klären mit kante oder Nutzer-Blick.",
+  "v2: 300023: Rinne oder Bach unter dem Schatten; klären mit Höhenmodell.",
+  "v3: 300038: Klasse 3.5 gegen 3.1/3.3; klären mit Regel, ob verstreute Büsche einzeln segmentiert werden sollen.",
+  "v3: 300038: helle Flecken bei (112/350) und (155/352) – offener Boden, Holz- oder Streuhaufen; klären mit Blick vor Ort oder höher aufgelöstem Bild."
+ ]
+}

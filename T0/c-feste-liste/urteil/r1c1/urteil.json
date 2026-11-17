@@ -1,0 +1,6689 @@
+{
+ "schema": "landseg-urteil-teilkachel/1",
+ "fassung": "C",
+ "teilkachel": "r1c1",
+ "zusammengefuehrt": "mechanisch aus den vier Viertel-Abgaben (Teil 3 landseg-test-t0)",
+ "kategorien": "c-feste-liste/kategorien-c.json",
+ "klasse_regel": "klasse = klasse_vorschlag, sonst klasse_heute",
+ "kernsegmente": 301,
+ "eintraege": 301,
+ "zahlen": {
+  "nicht_sauber": 181,
+  "sicher_nein": 245,
+  "klassenwechsel": 168,
+  "je_viertel": {
+   "v1": 44,
+   "v2": 52,
+   "v3": 93,
+   "v4": 112
+  }
+ },
+ "viertel": [
+  {
+   "viertel": "v1",
+   "bearbeiter": "urt-c-r1c1-v1",
+   "quelle": "c-feste-liste/urteil/r1c1/v1/urteil.json",
+   "segmente": 44,
+   "bilder_angesehen": {
+    "uebersicht": [
+     "T0.png",
+     "ganz/r1c1/ganz_nummern.jpg",
+     "ganz/r1c1/ganz_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v1/uebersicht_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v1/uebersicht_vorschlag.jpg",
+     "c-feste-liste/viertel/r1c1/v1/uebersicht_maengel.jpg",
+     "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg"
+    ],
+    "nah": [
+     "c-feste-liste/viertel/r1c1/v1/nah1_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v1/nah2_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v1/nah1_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v1/nah2_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+     "c-feste-liste/urteil/r1c1/v1/nah_1.jpg",
+     "c-feste-liste/urteil/r1c1/v1/nah_2.jpg",
+     "c-feste-liste/urteil/r1c1/v1/nah_3.jpg",
+     "c-feste-liste/urteil/r1c1/v1/nah_4.jpg",
+     "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+    ]
+   }
+  },
+  {
+   "viertel": "v2",
+   "bearbeiter": "urt-c-r1c1-v2",
+   "quelle": "c-feste-liste/urteil/r1c1/v2/urteil.json",
+   "segmente": 52,
+   "bilder_angesehen": {
+    "uebersicht": [
+     "T0.png",
+     "ganz/r1c1/ganz_nummern.jpg",
+     "ganz/r1c1/ganz_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v2/uebersicht_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v2/uebersicht_vorschlag.jpg",
+     "c-feste-liste/viertel/r1c1/v2/uebersicht_maengel.jpg",
+     "c-feste-liste/viertel/r1c1/v2/uebersicht_kontrast.jpg"
+    ],
+    "nah": [
+     "c-feste-liste/viertel/r1c1/v2/nah1_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v2/nah2_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v2/nah1_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg",
+     "c-feste-liste/urteil/r1c1/v2/nah_1.jpg",
+     "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+    ]
+   }
+  },
+  {
+   "viertel": "v3",
+   "bearbeiter": "urt-c-r1c1-v3",
+   "quelle": "c-feste-liste/urteil/r1c1/v3/urteil.json",
+   "segmente": 93,
+   "bilder_angesehen": {
+    "uebersicht": [
+     "T0.png",
+     "ganz/r1c1/ganz_nummern.jpg",
+     "ganz/r1c1/ganz_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v3/uebersicht_vorschlag.jpg"
+    ],
+    "nah": [
+     "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+     "c-feste-liste/urteil/r1c1/v3/nah_1.jpg",
+     "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+    ]
+   }
+  },
+  {
+   "viertel": "v4",
+   "bearbeiter": "urt-c-r1c1-v4",
+   "quelle": "c-feste-liste/urteil/r1c1/v4/urteil.json",
+   "segmente": 112,
+   "bilder_angesehen": {
+    "uebersicht": [
+     "T0.png",
+     "ganz/r1c1/ganz_nummern.jpg",
+     "ganz/r1c1/ganz_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v4/uebersicht_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v4/uebersicht_vorschlag.jpg"
+    ],
+    "nah": [
+     "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+     "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg",
+     "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+    ]
+   }
+  }
+ ],
+ "segmente": [
+  {
+   "id": 400001,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Ein einzelner Bildpunkt des Waldes links im Kontextrand, der gerade noch in den Kern reicht.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_nummern.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400011,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Kronenrand am oberen Kernrand, schließt an den Baum 19 an.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gehölzkrone im Schatten statt Klasse 0.2 bei (303/72); gehört vermutlich zu Baum 400019.",
+     "flaeche_px": 609
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_roh.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400017,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Überwachsener Trampelpfad am linken Kernrand, oben als heller Streifen sichtbar, unten kaum noch vom Gras zu trennen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "6.6"
+  },
+  {
+   "id": 400018,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große dunkle Gehölzgruppe (mehrere Kronen) im oberen Hang; dunkle Kronenfläche im Schatten des Nordhangs; im Kontrast (nah_5) Kronentextur mit Lichtpunkten sichtbar, also Gehölz und kein Schatten ohne Grund (U2).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronen einer Baum-/Strauchgruppe statt Schatten ohne Grund, Mitte bei (190/95); Teil nordwestlich der Kronen kann Schlagschatten auf Wiese sein.",
+     "flaeche_px": 5308
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400026,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Kleine runde dunkle Krone mitten in der verbuschten Wiese; dunkle Kronenfläche im Schatten des Nordhangs; im Kontrast (nah_5) Kronentextur mit Lichtpunkten sichtbar, also Gehölz und kein Schatten ohne Grund (U2).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Einzelner Baum/Strauch statt Schatten bei (159/119).",
+     "flaeche_px": 334
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400031,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Gehölzgruppe rechts neben 33; dunkle Kronenfläche im Schatten des Nordhangs; im Kontrast (nah_5) Kronentextur mit Lichtpunkten sichtbar, also Gehölz und kein Schatten ohne Grund (U2).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Baumgruppe statt Schatten bei (184/164).",
+     "flaeche_px": 1163
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400033,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Gehölzgruppe links unterhalb der Wiese; dunkle Kronenfläche im Schatten des Nordhangs; im Kontrast (nah_5) Kronentextur mit Lichtpunkten sichtbar, also Gehölz und kein Schatten ohne Grund (U2).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Baumgruppe statt Schatten bei (126/160).",
+     "flaeche_px": 2127
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400035,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Zwei parallele dunkle Gehölzreihen (Hecken oder Strauchreihen auf Hangterrassen) mit Gras dazwischen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein geschlossener Wald, sondern lineare Strauch-/Heckenreihen bei (300/182).",
+     "flaeche_px": 1811
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Grasstreifen zwischen den Reihen bei (320/200) gehört zu Wiese 400043.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_4.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.3"
+  },
+  {
+   "id": 400036,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkle Ecke nördlich des Gebäudes 40: Schlagschatten der Mauer bzw. Gebäudeecke auf Gras, dazu ein kleines helles Teil.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Wald: Schatten auf der Wiese bei (262/175), nach U2 Klasse der Fortsetzung (Wiese 2 / 37).",
+     "flaeche_px": 181
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_4.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400037,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Garten-Grasfläche östlich von 40 hinter einer Mauer, mit einem grauen Schuppen- oder Abstellplatz am Südrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Grauer Schuppen/Abstellplatz bei (274/212), etwa 15 × 25 Bildpunkte, als eigenes Segment 1.1.2 oder 1.3 abtrennen.",
+     "flaeche_px": 300
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_4.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400040,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Gebäude am Oberrand der Gartenanlage: helles Holzdach mit dunklem Dachteil rechts, Schlagschatten nach Nordwesten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400044,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Lohfarbener Streifen südwestlich von 40 mit Schatten an der Nordseite: Dach eines Anbaus oder Terrassenweg, nicht sicher.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400045,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Helle Grasfläche zwischen den Gehölzreihen 35 und dem Baum 54.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Wald bei (306/198).",
+     "flaeche_px": 126
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_4.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400046,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Terrassierter Gebäudekomplex am Hang: langes graues Dach (Glashaus oder Schuppen), Mauern, Stufen und Terrassenflächen; keine Erdbewegung oder Maschinen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Baustelle erkennbar; Mauern und Terrassen bei (189/222) eher sonstige künstliche Fläche.",
+     "flaeche_px": 1962
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Langes graues Dach bei (205/236), etwa 60 × 8 Bildpunkte, als eigenes Gebäude 1.1 abtrennen.",
+     "flaeche_px": 450
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.3"
+  },
+  {
+   "id": 400047,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkler Streifen zwischen Terrassenmauer und Grasfläche 37: Mauerschatten und Sträucher.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Wald: Strauchstreifen bzw. Schatten an der Mauer bei (259/206).",
+     "flaeche_px": 128
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_4.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400049,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Krone am Waldrand oberhalb der Gärten, schließt an den Wald 34 an; dunkle Kronenfläche im Schatten des Nordhangs; im Kontrast (nah_5) Kronentextur mit Lichtpunkten sichtbar, also Gehölz und kein Schatten ohne Grund (U2).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gehört zum Waldrand 400034 bei (131/227), Klasse 4.1; ob eigener Baum (4.2.1) ist nicht sicher.",
+     "flaeche_px": 1228
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400052,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Waldrand am linken Kernrand, im Kontrast Kronentextur; gehört zum Wald 34 und 50.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Teil des Waldes 400034 bei (79/256), Klasse 4.1 statt Schatten.",
+     "flaeche_px": 1991
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400054,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baum- oder Strauchkrone am Ostrand des Viertels.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_4.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400055,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Kleiner dunkler Fleck an der Nordwestecke des Gebäudekomplexes, wohl Strauch mit Schatten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch statt Wald bei (177/210).",
+     "flaeche_px": 81
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400059,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Helleres Gebüsch und Gras zwischen dem dunklen Baum 49 und dem Gebäudekomplex.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Niedriges Gebüsch mit Gras statt geschlossenem Wald bei (160/237).",
+     "flaeche_px": 445
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_5.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400060,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Graubraunes Band zwischen zwei Mauern mit Punkten (Schotter- oder Plattenterrasse), unten ein Streifen Rasen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Oberer Teil bei (220/218) ist Schotter-/Plattenterrasse, kein Gras.",
+     "flaeche_px": 300
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Rasenstreifen am Südrand bei (225/229) zu Rasen 400063 geben.",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.3.1"
+  },
+  {
+   "id": 400061,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Mittelgrüne Fläche westlich der Krone 54, eher Gras mit Kronenrand als eigener Baum.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine eigene Krone erkennbar bei (295/220), Rand der Krone 54 und Gras.",
+     "flaeche_px": 171
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_4.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400063,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gepflegter Rasen der Gartenparzelle mit einem kleinen runden Beet.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400077,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Sehr dunkler, schmaler Streifen westlich des Schuppens 87: Schlagschatten von Gebäude und Mauer, kein eigenes Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Hauptgebäude: Schatten bei (171/243), darunter vermutlich Weg oder Mauerfuß; nach U2 grobe Klasse der bebauten Umgebung.",
+     "flaeche_px": 198
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1"
+  },
+  {
+   "id": 400078,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Runder hellrosa Gegenstand (Pavillon oder abgedeckter Behälter) mit einem Pflasterstreifen nach Norden.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Pflasterstreifen nördlich bei (212/242) gehört zu 400046, nicht zum runden Objekt bei (210/256).",
+     "flaeche_px": 120
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400081,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkle Fläche nördlich des Schuppens 87, dunkles Flachdach oder Schlagschatten, im Bild nicht zu trennen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400083,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schlagschatten des Schuppens 89 auf dem Rasen nordwestlich davon.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Schatten auf Rasen bei (290/246), nach U2 zur Fortsetzung (Rasen 400063/400067).",
+     "flaeche_px": 146
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400087,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit dunkelgrauem Dach (zwei Dachflächen), größtes Gebäude dieser Parzelle.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_1.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400088,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkelgrüne Fläche mit grauen Stellen zwischen 89 und dem roten Dach 93, kein Dach erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Sträucher statt Hauptgebäude bei (309/258).",
+     "flaeche_px": 242
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400089,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit mauvefarbenem Satteldach, Schatten an der Westseite.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400090,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Langer Rasenstreifen südlich des Gebäudekomplexes bis in v3, mit mehreren dunklen Sträuchern.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Strauchgruppe bei (221/276) als 4.2.4 abtrennen.",
+     "flaeche_px": 120
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Strauch bei (233/274) als 4.2.4 abtrennen.",
+     "flaeche_px": 80
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400094,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Hof- und Terrassenfläche unten im Gebäudekomplex: Pflaster, Mauern, ein weißer runder Gegenstand (Schirm oder Behälter), kleine Anbauten; keine Baustelle erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hoffläche/Terrasse statt Baustelle bei (206/286).",
+     "flaeche_px": 1374
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400097,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Schmaler dunkler Streifen am Westrand der Gärten: Hecke oder Zaun mit Schatten am Hangfuß.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Linearer Streifen bei (171/285), Hecke statt Wald.",
+     "flaeche_px": 193
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.3"
+  },
+  {
+   "id": 400098,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleines dunkles Dach mit umgebenden hellen Pflaster- und Mauerflächen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Segment umfasst außer dem Dach bei (190/282) auch Pflasterstreifen bei (180/266); diese zu 400094.",
+     "flaeche_px": 200
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400102,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dunkle Sträucher zwischen den Gartenhäusern 89 und 93.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauchfläche statt Wiese bei (304/281).",
+     "flaeche_px": 213
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400103,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Helle Pflaster- und Wegflächen um das Gartenhäuschen 104 mit weißen Gartenwegen und kleinen Beeten, kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Pflaster/Hoffläche statt Wald bei (250/289); helle Fläche, Mittelwert der Farbe deutlich heller als Gehölz.",
+     "flaeche_px": 814
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Weiße Gartenwege bei (240/305) könnten als 1.2.2 getrennt werden.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400104,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner Pavillon oder Laube mit rosa Dachteil auf der Pflasterfläche.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rund 6 m² groß bei (264/281): Nebengebäude/Laube statt Hauptgebäude.",
+     "flaeche_px": 142
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400109,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Grasstreifen mit Schatten am Südende des Gartenhauses 89, kein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Gebäude bei (291/290).",
+     "flaeche_px": 122
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400116,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Graue Pflasterfläche südöstlich des Pavillons, gleich hell wie 103.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gehört zur Pflasterfläche 400103 bei (277/288).",
+     "flaeche_px": 91
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400119,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Heller Fleck auf dem diagonalen Trittsteinweg südlich von 89.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Weg aus Trittplatten statt Wiese bei (297/290).",
+     "flaeche_px": 88
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "1.2.2"
+  },
+  {
+   "id": 400120,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen der Gartenparzelle südlich von 89 bis an den Rand von v3.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400121,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Dunkler Strauch am Rand eines weißen Gartenwegs.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch statt Baustelle bei (233/298).",
+     "flaeche_px": 229
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400125,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Grasstreifen mit Sträuchern unterhalb der Hoffläche 94.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Wald: Gras mit einzelnen Sträuchern bei (203/307).",
+     "flaeche_px": 222
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_2.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400127,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Runde dunkle Baumkrone mit Schatten im Rasen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v1/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v1/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v1/nah_3.jpg"
+   ],
+   "viertel": "v1",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400002,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Großer Hang zwischen Feld und Gärten: hohes, ungleichmäßiges Gras mit vielen kleinen Sträuchern, nicht gemäht.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Verbuschende Fläche statt gleichmäßiger Wiese, z. B. bei (477/181) und (200/110) mit verstreuten Büschen.",
+     "flaeche_px": 45060
+    },
+    {
+     "nr": 2,
+     "art": "fremd",
+     "text": "Pfadstück bei (522/112) gehört zu 400028.",
+     "flaeche_px": 60
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg",
+    "ganz/r1c1/ganz_nummern.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.5"
+  },
+  {
+   "id": 400006,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Unterrand des großen Feldes mit gebogenen Schwaden und hellem trockenem Randstreifen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400019,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große dunkle Krone bzw. kleine Baumgruppe links oben, etwa 8 × 16 m, unten lichter.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere Kronen bei (335/115), eher Baumgruppe als Einzelbaum.",
+     "flaeche_px": 3377
+    },
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Hellerer Teil unten links bei (320/137) ist eher Gras/Gebüsch als Krone.",
+     "flaeche_px": 300
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400020,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Schmaler Grasstreifen am Unterrand des abgeernteten bzw. gemähten Feldes.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400021,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Länglich dunkle Krone südöstlich von 19, glatt und sehr dunkel; ein Schatten läge nach Nordwesten, nicht hier.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Baumkrone (wohl Nadelbaum) statt Schatten ohne Grund bei (386/113).",
+     "flaeche_px": 904
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah1_nummern.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400022,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Heller, fast kahler Fleck im trockenen Randstreifen des Feldes, kein erkennbarer Weg.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gleiches helles Band wie der Feldrand 400006 bei (472/94); kein Fahrspurmuster.",
+     "flaeche_px": 108
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400024,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleiner Grasfleck im Randstreifen des Feldes.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400028,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Obere Fortsetzung des Pfades 29 bergauf Richtung Feld.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "fehlt",
+     "text": "Helles Pfadstück bei (522/112) liegt noch in der Wiese 400002 und gehört zum Pfad.",
+     "flaeche_px": 60
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "6.6"
+  },
+  {
+   "id": 400029,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Heller Trampelpfad quer über den Hang, im ganzen Ausschnitt T0 bis zum Feld zu verfolgen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "6.6"
+  },
+  {
+   "id": 400038,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Baumgruppe rechts im Hang, im Kontrast mit Kronentextur; setzt sich in den Rand fort.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Baumgruppe statt Schatten ohne Grund bei (544/198).",
+     "flaeche_px": 1876
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_kontrast.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400042,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone am rechten Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400043,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Terrassierte Gartenparzelle mit Grasstreifen und kahlen Linien am oberen Gartenrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400048,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Kleiner Gehölzrest am rechten Kernrand, Hauptteil im Kontextrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400051,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hellgrüner Grasfleck am Hangfuß, gleich wie die Wiese darüber.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gras statt Wald bei (400/206), gehört zu 400002.",
+     "flaeche_px": 151
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.5"
+  },
+  {
+   "id": 400053,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gartenecke mit blauer Plane über einem Gegenstand, dunklem Schatten und weißen Mauerstücken, kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Wald: künstliche Fläche mit Plane und Mauern bei (345/228).",
+     "flaeche_px": 682
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Blaue Plane bzw. abgedecktes Objekt bei (335/223) als eigenes Segment.",
+     "flaeche_px": 120
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.3"
+  },
+  {
+   "id": 400056,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gras zwischen weißen Mauer- und Wegstücken am oberen Gartenrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400057,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Strauch- oder Baumkrone am oberen Gartenrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400058,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Langes Band am oberen Gartenrand: Hecke und Sträucher am Zaun, dazu ein heller Kies- oder Hofplatz und Wegstücke.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein geschlossener Wald; überwiegend Sträucher und Gartenbewuchs bei (450/218).",
+     "flaeche_px": 2369
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Heller Kies-/Hofplatz bei (420/235) als 1.3.1 abtrennen.",
+     "flaeche_px": 300
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400062,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kleines Stück Strauchrand zwischen der Krone 54 (v1) und dem Platz 53.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Rand der Krone 400054 bei (320/222), kein eigener Baum.",
+     "flaeche_px": 102
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400064,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Sträucher und Bäume um den Schuppen 73 am Fuß der Baumgruppe 38.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gebüsch statt geschlossenem Wald bei (532/230).",
+     "flaeche_px": 732
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400065,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hellgrüner Grasfleck oberhalb des Glashauses 71.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gras statt Wald bei (505/222), gehört zu 400002.",
+     "flaeche_px": 153
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.5"
+  },
+  {
+   "id": 400068,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner Schuppen mit dunkelgrauem Dach neben dem Gartenhaus 74, dazu graue Bodenfläche.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Graue Bodenfläche westlich des Daches bei (330/238) gehört nicht zum Gebäude.",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400071,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Hell durchscheinendes rechteckiges Dach mit Streifen, wohl Glashaus, darüber ein weißer Rahmen (Frühbeet).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Glashaus statt Wohngebäude bei (498/237).",
+     "flaeche_px": 689
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.3"
+  },
+  {
+   "id": 400073,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Hellgrauer kleiner Dachteil mit weißem Rand nördlich des Gartenhauses 86.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Anbau oder Schuppen statt Hauptgebäude bei (546/240).",
+     "flaeche_px": 163
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400074,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Kleines Gartenhaus mit rotbraunem Dach, etwa 11 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400075,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenstreifen am rechten Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400076,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkles, langgestrecktes Objekt mit weißen Teilen, wohl niedriger Schuppen oder Kompostplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kleines Nebengebäude statt Hauptgebäude bei (431/244), 7 m².",
+     "flaeche_px": 175
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400079,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen einer Gartenparzelle.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400082,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner Schuppen mit hellgrauem Wellblechdach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rund 7 m² bei (451/242): Nebengebäude.",
+     "flaeche_px": 184
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400084,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Graues Kleinobjekt mit Gartenfläche zwischen 82 und 71.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Höchstens ein kleiner Schuppen bei (473/246), kein Hauptgebäude.",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400085,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dichter Gartenbewuchs (Beet) östlich des Glashauses.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gartenbeet mit Bewuchs statt Wald bei (514/245).",
+     "flaeche_px": 126
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "2.1"
+  },
+  {
+   "id": 400086,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotem Dach.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400091,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gartenparzelle: oben ein dicht bewachsenes Beet, unten Rasen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Beet bei (495/255) als 2.1 vom Rasen trennen, Grenze am hellen Weg (etwa y 262).",
+     "flaeche_px": 600
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400092,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Kleiner heller Gartenfleck nördlich des Hauses 93.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras/Beet statt Wald bei (333/253).",
+     "flaeche_px": 93
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400093,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotem Walmdach und heller Terrasse im Süden und Osten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Helle Terrasse bei (322/286) als 1.2.4 vom Dach trennen.",
+     "flaeche_px": 350
+    },
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Rund 25 m² Dach, größtes Haus der Parzelle: eher Hauptgebäude.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400095,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große dunkle Krone (etwa 8 × 11 m) mitten in den Gärten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400096,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Helle Pflaster- und Terrassenfläche östlich von 93 mit kleinem rundem Gegenstand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Pflaster statt Wald bei (355/270), Fläche deutlich hell.",
+     "flaeche_px": 575
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400099,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Runde dunkle Baumkrone im Rasen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_1.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400100,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche nördlich des Hauses 110: Hausschatten auf Rasen bzw. Strauch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten mit erkennbarer Fortsetzung bei (531/274); nach U2 Rasen.",
+     "flaeche_px": 532
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400105,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Rasen mit einem langen weißen Objekt (Frühbeet oder Folientunnel) und einzelnen Sträuchern.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Krone erkennbar, überwiegend Gras bei (476/294).",
+     "flaeche_px": 500
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Langes weißes Objekt bei (490/296) als 1.1.3 abtrennen.",
+     "flaeche_px": 80
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400106,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkler Streifen westlich des Hauses 110: Hausschatten auf Gras und Sträuchern.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Wald bei (513/283); nach U2 Gras der Umgebung.",
+     "flaeche_px": 219
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400107,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gartenfläche südlich von 93 mit Gras und Wegstücken.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400110,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotem Satteldach.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400112,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Runder hellrosa Gegenstand im Rasen, kleines Planschbecken oder Trampolin.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Künstlicher runder Gegenstand statt Wald bei (557/285).",
+     "flaeche_px": 158
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.3"
+  },
+  {
+   "id": 400114,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenstück zwischen 107 und 118.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400115,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkler Streifen an der Westseite des Hauses 117: Schlagschatten auf Gras.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (379/298); nach U2 Rasen wie 400067.",
+     "flaeche_px": 166
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400117,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotbraunem Satteldach, etwa 27 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400118,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hellgraues rechteckiges Objekt, kleines Dach oder Platte.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kleiner Schuppen statt Wald bei (372/292).",
+     "flaeche_px": 136
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v2/nah_2.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400122,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Kleine dunkle Krone im Rasen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Einzelner Baum/Strauch statt Wald bei (433/299).",
+     "flaeche_px": 124
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400124,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Orange-helle Fläche an der Südostecke des Hauses 110: Terrasse oder Holzdeck.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse statt Gebäude bei (550/303).",
+     "flaeche_px": 102
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400126,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Hellbraunes Rechteck mit dunklen Trennlinien, eher Gartenbeete mit offener Erde als ein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Beet ohne Bewuchs statt Gebäude bei (476/308).",
+     "flaeche_px": 495
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah4_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "2.2"
+  },
+  {
+   "id": 400130,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Graublaues Kleinobjekt östlich von 117 (Plane, kleines Becken oder Dach).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Hauptgebäude erkennbar bei (404/309).",
+     "flaeche_px": 128
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v2/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v2/nah3_roh.jpg"
+   ],
+   "viertel": "v2",
+   "klasse": "1.3"
+  },
+  {
+   "id": 400034,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Geschlossener Laubwald am Westhang, reicht über v1 und den linken Kernrand; enthält in v1 eine graue Rechteckfläche.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Graue rechteckige Fläche (Plane, kleines Dach oder Teich) bei (107/215) im Wald als eigenes Segment, Klasse nicht sicher (1.3 oder 5.2).",
+     "flaeche_px": 250
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400111,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen um den Baum 127 am Oberrand von v3/v4.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400133,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gras mit hellem Wegstück nördlich des Hauses 151.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400137,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone am Oberrand von v3.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400140,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gartenfläche mit kleinen weißen Gegenständen und einem Rahmen, kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten/Rasen statt Wald bei (200/330).",
+     "flaeche_px": 390
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400141,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Hellgrüner Saum an der Krone 137, eher Gras als eigener Baum.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine eigene Krone bei (242/325).",
+     "flaeche_px": 113
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400143,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Grasstreifen mit einem dunklen Strauch am oberen Rand von v3.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Einzelner Strauch mit Gras statt Wald bei (168/328).",
+     "flaeche_px": 228
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400144,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Langer diagonaler Grasweg zwischen den Parzellen mit einer schmalen dunklen Kante.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400146,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen um das Haus 151 mit einem braunen Beet im Süden.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Braunes Beet bei (300/384) als 2.2 abtrennen.",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400148,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkle Fläche nordwestlich des Hauses 151: Schlagschatten auf Gras.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (281/332); nach U2 Gras.",
+     "flaeche_px": 132
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400151,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rosabraunem Satteldach, etwa 29 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400154,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone nördlich des Hauses 160.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400158,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkler Streifen nördlich des roten Hauses 160: Schlagschatten des Hauses.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (185/344); nach U2 Rasen wie 400090.",
+     "flaeche_px": 116
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400160,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotem Dach und hellerem Anbau links, etwa 23 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400161,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Schmaler Gartenstreifen zwischen den Kronen 154 und 167.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten/Gras statt Wald bei (220/355).",
+     "flaeche_px": 117
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400162,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gehölzzipfel am Waldrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400164,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Gras und Strauch im Hausschatten westlich von 160, kein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Gebäude bei (174/358).",
+     "flaeche_px": 147
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400166,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Sträucher und Gras zwischen Waldrand und Haus 160.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400167,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400169,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkle Sträucher und weiße Mauerkante an der Ostseite des Hauses 160.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Sträucher statt Gebäude bei (211/363).",
+     "flaeche_px": 228
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400175,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gartenrasen mit einzelnen Sträuchern südwestlich des Hauses 160.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400177,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Großer Terrassengarten: vier Steinterrassen mit Beeten, darunter gepflasterter Hof mit zwei Sonnenschirmen, Hausteil und Becken; keine Baustelle.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Baustelle; die Terrassen bei (150/410) sind Gartenbeete mit Bewuchs zwischen Steinmauern.",
+     "flaeche_px": 4000
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Gepflasterter Hof um Becken und Schirme bei (95/470) als 1.2.4 abtrennen.",
+     "flaeche_px": 2500
+    },
+    {
+     "nr": 3,
+     "art": "fremd",
+     "text": "Hellrosa Dachteil bei (135/446) gehört zum Gebäude 400227.",
+     "flaeche_px": 250
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_vorschlag.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "2.1"
+  },
+  {
+   "id": 400178,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große Krone, links dunkel, rechts heller; ein oder zwei Bäume.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400185,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gras zwischen Wald und Terrassengarten mit einem hellen Trampelpfad.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Wald bei (130/380).",
+     "flaeche_px": 232
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Heller Pfad bei (137/373) als 6.6.",
+     "flaeche_px": 40
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400186,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Hellgrüne Fläche am Rand der Krone 178, eher Rasen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Krone erkennbar bei (243/378).",
+     "flaeche_px": 125
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400189,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Garten östlich von 210 mit Sträuchern und einem grauen Rahmenobjekt (Frühbeet oder Hochbeet).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Sträucher im Garten statt geschlossenem Wald bei (300/420).",
+     "flaeche_px": 1700
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Graues Rahmenobjekt bei (288/398) als eigenes Segment (1.3 oder 2.1).",
+     "flaeche_px": 250
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400193,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Langgestreckter dunkler Strauchstreifen (kurze Hecke).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Lineare Hecke statt Einzelbaum bei (181/386).",
+     "flaeche_px": 177
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.3"
+  },
+  {
+   "id": 400199,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Großer Rasen einer Parzelle.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400200,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone westlich des Hauses 210.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400201,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Rand der Krone 200 mit etwas Gras.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400203,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Strauchkrone am oberen Ende der Terrassen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch/Baum statt Schatten ohne Grund bei (123/403).",
+     "flaeche_px": 122
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400206,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Kleiner Gehölzrand am Wald.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400210,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Großes Gartenhaus mit zweiteiligem braunem Dach, etwa 39 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400216,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Große unregelmäßige Gartenfläche mit Gras, kleinen Beeten und Wegstücken.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400220,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gras mit kleinen weißen Gartenmöbeln.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400223,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Haus mit grauem Satteldach am Westrand des Terrassengartens, etwa 22 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400224,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gras mit einzelnem Strauch südwestlich von 210.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Wald bei (260/428).",
+     "flaeche_px": 162
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400225,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkler Fleck an der Nordwestecke des Hauses 223, Hausschatten am Waldrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah1_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400227,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Gebäude mit rosa Dach; ein zweiter, hellerer rosa Dachteil östlich davon liegt noch in 177.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "fehlt",
+     "text": "Hellrosa Dachteil bei (135/446) gehört zum Gebäude (heute in 400177).",
+     "flaeche_px": 250
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400228,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gras mit weißen Gegenständen neben 220, kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras/Garten statt Wald bei (197/438).",
+     "flaeche_px": 156
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400229,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkler Strauch an der Südseite des Hauses 210.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch statt Gebäude bei (281/436).",
+     "flaeche_px": 93
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah2_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400230,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Teil einer hohen dunklen Hecke entlang der Parzellengrenze, mit Schatten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hecke statt Gebäude bei (184/447).",
+     "flaeche_px": 197
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.3"
+  },
+  {
+   "id": 400231,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner weißer Bau oder Unterstand westlich von 223, etwa 3,5 m².",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Nebengebäude statt Hauptgebäude bei (89/440).",
+     "flaeche_px": 88
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400232,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Diagonales Band aus Garten, Grasweg und Strauchreihen entlang des Erdwegs 280; überwiegend grün, kein Asphalt.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grasweg/Garten statt versiegelter Straße bei (330/480); mittlere Farbe grün (86/103/83).",
+     "flaeche_px": 3108
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Reihen dunkler Sträucher bei (285/465) als 4.2.4 abtrennen.",
+     "flaeche_px": 400
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400237,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit dunkelbraunem Dach, etwa 25 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400240,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grasstreifen entlang der hohen Hecke, links die Hecke selbst.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Heckenteil bei (172/468) als 4.2.3 abtrennen, zusammen mit 400230.",
+     "flaeche_px": 120
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400241,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gehölzrand am Wald westlich des Hofes.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400243,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helle Terrasse mit weißen Gegenständen an der Ostseite von 237.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse/Pflaster statt Gebäude bei (213/466).",
+     "flaeche_px": 280
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400244,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Runde dunkle Krone östlich von 237.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400248,
+   "klasse_heute": "5.2",
+   "was_ist_es": "Rundes Gartenbeet mit Ringweg und daneben ein kleines türkises Becken; nur das Becken ist Wasser.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rundes Beet/Rasen bei (110/472) ist kein Stillgewässer.",
+     "flaeche_px": 600
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Türkises Becken bei (132/466) als 1.3.3 Schwimmbecken abtrennen.",
+     "flaeche_px": 70
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400249,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenstück östlich des Beckens.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400253,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hellgraue Weg- und Pflasterfläche nördlich von 268.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Pflaster statt Wald bei (255/476).",
+     "flaeche_px": 272
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400261,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen südöstlich des Beckens.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_2.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400262,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Dunkler Strauch südlich des Hauses 237.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400267,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkler Strauch südöstlich von 237.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch statt Wald bei (223/481).",
+     "flaeche_px": 130
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400268,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Sehr helle Terrassenfläche an der Nordostseite von 272.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse statt Baustelle bei (257/486).",
+     "flaeche_px": 244
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400269,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Grasige Gartenfläche südlich von 237, keine Baustelle.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Baustelle bei (205/483).",
+     "flaeche_px": 241
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400270,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Heller Rasen einer Parzelle mit Wegspuren.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400271,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Strauchreihe und Gras am oberen Ende des Erdwegs.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400272,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit grauem Dach, etwa 22 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400275,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Sträucher entlang des Erdwegs mit kleinem grauem Schuppen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gebüsch statt Wald bei (291/495).",
+     "flaeche_px": 286
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400280,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Brauner Erdweg diagonal durch die Gärten; am unteren Ende ein kahles Beet.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Kahles Beet bei (324/541) als 2.2 vom Weg trennen.",
+     "flaeche_px": 200
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "6.6"
+  },
+  {
+   "id": 400287,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen mit weißem Schirm und einem kleinen hellblauen Becken.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Kleines hellblaues Becken bei (291/536) als 1.3.3 abtrennen.",
+     "flaeche_px": 50
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400288,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkle Sträucher und kleine Bäume südlich des Hofes am Waldrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gebüsch statt geschlossenem Wald bei (107/508).",
+     "flaeche_px": 292
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400289,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Dunkle Strauchreihe am Grasweg.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400291,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grasstreifen nördlich des Hauses 308.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400292,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Grasweg mit heller Fahr- bzw. Trittspur zwischen den Parzellen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "6.6",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Unbefestigter Weg statt Asphaltstraße bei (170/515).",
+     "flaeche_px": 797
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "6.6"
+  },
+  {
+   "id": 400297,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400298,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Kopf eines schmalen hellen Plattenwegs zwischen den Parzellen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schmaler befestigter Gartenweg, keine Straße, bei (105/525).",
+     "flaeche_px": 251
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.2.2"
+  },
+  {
+   "id": 400302,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Langes weißes Objekt, wohl kleiner Folientunnel oder Frühbeet.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Weißer künstlicher Gegenstand statt Wald bei (244/522).",
+     "flaeche_px": 79
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.3"
+  },
+  {
+   "id": 400303,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Hausschatten nördlich von 308 mit einem kleinen dunkelroten Dachteil.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Schattenteil bei (128/521) gehört zum Gras 400291, nur der Dachteil bei (124/529) zum Gebäude.",
+     "flaeche_px": 250
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1"
+  },
+  {
+   "id": 400304,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Strauch am Rand des Graswegs.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400305,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Sträucher am Rand des schmalen Plattenwegs.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch statt Wald bei (102/530).",
+     "flaeche_px": 123
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400308,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit grauem Dach, etwa 28 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400309,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen einer Parzelle südlich des Graswegs.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400311,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Grüner Grasweg am Südrand mit dunklen Kanten, keine Asphaltstraße.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grasweg statt versiegelter Straße bei (250/540); Farbe grün.",
+     "flaeche_px": 1051
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400313,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kleines helles Objekt (Platte oder Gartenmöbel) am Haus 308.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Baum erkennbar bei (151/530).",
+     "flaeche_px": 88
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.3"
+  },
+  {
+   "id": 400314,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große dunkle Baumkrone südlich des Graswegs.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400315,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenstück zwischen 297 und dem Grasweg.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400316,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Gartenstreifen mit Weg westlich des Hauses 308, keine Baustelle.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten/Gras statt Baustelle bei (108/543).",
+     "flaeche_px": 253
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400318,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schlagschatten des hellen Baums 325 auf dem Grasweg.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten mit erkennbarer Fortsetzung bei (214/543); nach U2 Gras wie 400311.",
+     "flaeche_px": 323
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400323,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gras mit kleinen Sträuchern am Südostrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400324,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Heller Fleck aus niedrigem Bewuchs neben dem Weg.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Niedriger Bewuchs statt Wald bei (305/541).",
+     "flaeche_px": 85
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400325,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Hellgrüne, sonnenbeschienene Baumkrone.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400328,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Schmaler Kronenrand am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400329,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Gartenparzelle mit Hochbeeten, Rahmen und Plattenwegen am unteren Kernrand, keine Baustelle.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gartenbeete mit Wegen statt Baustelle bei (270/558).",
+     "flaeche_px": 597
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "2.1"
+  },
+  {
+   "id": 400331,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gehölzrand und Garten am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.1"
+  },
+  {
+   "id": 400332,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Grünes Stück am unteren Kernrand neben 308, kein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Gebäude bei (124/558).",
+     "flaeche_px": 62
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400337,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Helles Wegstück am unteren Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Befestigter Gartenweg statt Baustelle bei (113/558).",
+     "flaeche_px": 76
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_roh.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.2.2"
+  },
+  {
+   "id": 400342,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Weißes längliches Kleinobjekt (Frühbeet oder kleiner Schuppen).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Höchstens ein kleiner Nebenbau bei (262/560).",
+     "flaeche_px": 94
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_roh.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400346,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grasstück am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400347,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Winziges Grasstück am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah4_nummern.jpg",
+    "c-feste-liste/urteil/r1c1/v3/nah_1.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400348,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kronenrand am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v3/nah3_nummern.jpg"
+   ],
+   "viertel": "v3",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400067,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Sehr großes Segment über alle Gärten: Rasen mehrerer Parzellen, Graswege mit Heckenkanten, Beete, Blumenrondell und Kleinteile.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Beetparzelle mit Gemüse bei (455/490) als 2.1 abtrennen.",
+     "flaeche_px": 1200
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Rundes Blumenbeet bei (408/458) abtrennen (2.1).",
+     "flaeche_px": 150
+    },
+    {
+     "nr": 3,
+     "art": "trennen",
+     "text": "Grasweg mit dunklen Heckenkanten bei (450/465) als eigene Segmente (3.1 Weg, 4.2.3 Hecken).",
+     "flaeche_px": 1500
+    },
+    {
+     "nr": 4,
+     "art": "sonstiges",
+     "text": "Die Rasen der einzelnen Parzellen sind durch Wege und Zäune getrennt und sollten eigene Segmente sein, z. B. bei (520/370).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400128,
+   "klasse_heute": "1.2.4",
+   "was_ist_es": "Gemüseparzelle mit rechteckigen Beeten aus offener Erde, einzelnen Pflanzen und schmalen Wegen; kein versiegelter Platz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gartenbeete mit offener Erde statt versiegelter Platz bei (340/320).",
+     "flaeche_px": 794
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "2.2"
+  },
+  {
+   "id": 400129,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenstreifen am rechten Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400131,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hellgrüner Gartenfleck am Oberrand von v4.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Wald bei (449/314).",
+     "flaeche_px": 187
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400132,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Sträucher und kleine Bäume am rechten Kernrand oben.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gebüsch statt geschlossenem Wald bei (550/330).",
+     "flaeche_px": 464
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400134,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Heller Weg- und Beetstreifen am Ostrand der Gemüseparzelle.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gehört zur Beetfläche 400128 bei (355/322).",
+     "flaeche_px": 145
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "2.2"
+  },
+  {
+   "id": 400135,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helles graues Kleinobjekt südöstlich des Hauses 117, wohl kleiner Schuppen oder Abdeckung.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rund 4 m² bei (395/320): Nebengebäude.",
+     "flaeche_px": 104
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400136,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schatten an der Westseite des Hauses 145 und Ecke der hellen Terrasse.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse/Schatten statt Gebäude bei (435/330).",
+     "flaeche_px": 280
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400139,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dicht mit Sträuchern und kleinen Bäumen bewachsene Parzelle, mehrere Kronen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere Kronen bei (385/340), eher Baumgruppe/Gebüsch als Einzelbaum.",
+     "flaeche_px": 1461
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400142,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Heller Streifen am Rand der Gemüseparzelle 128, Beete und Weg.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gehört zur Beetfläche 400128 bei (330/335).",
+     "flaeche_px": 329
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "2.2"
+  },
+  {
+   "id": 400145,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit hellgrauem Dach, dazu die weiße Terrasse im Süden.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Weiße Terrasse bei (440/345) als 1.2.4 vom Dach trennen.",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400147,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotbraunem Dach, etwa 22 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400150,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkler Abschnitt der Hecke bzw. Heckenschatten nordwestlich des Schuppens 157.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heckenlinie statt Gebäude bei (350/340).",
+     "flaeche_px": 173
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.3"
+  },
+  {
+   "id": 400152,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen einer Parzelle mit hellem geschwungenem Weg.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400153,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helle Terrasse mit Rahmen an der Süd- und Westseite des Hauses 147, kein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse/Pflaster statt Gebäude bei (505/350).",
+     "flaeche_px": 512
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400155,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Winziger dunkler Rand am Dach des Schuppens 157.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Dachrand von 400157 bei (360/340).",
+     "flaeche_px": 23
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400156,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Vier Bildpunkte am Dachrand von 157.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "zu_klein",
+     "text": "Splitter unter der Erkennbarkeitsgrenze bei (367/338); mit Nachbar 400139 verschmelzen.",
+     "flaeche_px": 4
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400157,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Kleiner Schuppen mit dunkelgrauem Dach, etwa 8 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400159,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenstreifen am rechten Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400163,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkle Hecke mit Schatten zwischen Schuppen 157 und Haus 174.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hecke statt Wald bei (347/356).",
+     "flaeche_px": 182
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.3"
+  },
+  {
+   "id": 400165,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Krone bzw. Strauchgruppe im Rasen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400168,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkle Sträucher zwischen 157 und 174.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gebüsch statt Gebäude bei (360/362).",
+     "flaeche_px": 226
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400171,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Teil der dunklen Hecke am Grasweg.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hecke statt Gras bei (342/368).",
+     "flaeche_px": 90
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.3"
+  },
+  {
+   "id": 400172,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schatten nordwestlich der Häuser 181/192 auf Gras.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten mit Fortsetzung bei (545/372); nach U2 Rasen.",
+     "flaeche_px": 220
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400173,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Kleiner Grasfleck nördlich des weißen Schuppens 179.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Wald bei (377/367).",
+     "flaeche_px": 92
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400174,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit dunkelgrauem Schieferdach, etwa 26 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400176,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkelgrauer Dachteil direkt östlich des weißen Schuppens, wohl Anbau.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kleiner Anbau statt Hauptgebäude bei (390/378).",
+     "flaeche_px": 219
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400179,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner Schuppen mit weißem Dach, etwa 7 m².",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Nebengebäude statt Hauptgebäude bei (383/375).",
+     "flaeche_px": 185
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400180,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Krone bzw. Strauchgruppe im Rasen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400181,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Grauer Dachteil nördlich von 192, Teil desselben Gebäudes.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400183,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkle Hecke entlang des Graswegs.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hecke statt Wald bei (338/377).",
+     "flaeche_px": 137
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.3"
+  },
+  {
+   "id": 400187,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große dunkle Gehölzfläche aus mehreren Kronen mitten in den Gärten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere Kronen bei (425/440), Baumgruppe statt Einzelbaum.",
+     "flaeche_px": 2289
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400188,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Zwei Bildpunkte eines Segments aus dem Kontextrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400190,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Gras und Schatten westlich des Hauses 174, kein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Gebäude bei (340/387).",
+     "flaeche_px": 122
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400191,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schatten nordwestlich des Hauses 196.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (480/384); nach U2 Rasen.",
+     "flaeche_px": 106
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400192,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotem Satteldach, schließt an den grauen Dachteil 181 an.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400194,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkler Strauch an der Südostecke des Hauses 174.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch statt Gebäude bei (368/389).",
+     "flaeche_px": 118
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400195,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schatten an der Westseite des Hauses 192.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (536/389).",
+     "flaeche_px": 76
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400196,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotem Walmdach, etwa 28 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400197,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schlagschatten an der Westseite des Hauses 196 auf Gras.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten mit Fortsetzung bei (466/393); nach U2 Rasen.",
+     "flaeche_px": 85
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400198,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Grünes Stück des Graswegs, keine Straße.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grasweg statt versiegelter Straße bei (338/396).",
+     "flaeche_px": 147
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400202,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Weiße und graue Gartengegenstände (Möbel oder Kleinbau).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Künstliche Gegenstände statt Wald bei (513/403).",
+     "flaeche_px": 202
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.3"
+  },
+  {
+   "id": 400204,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schatten westlich der Häuser 211 und 192.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (526/405).",
+     "flaeche_px": 184
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400205,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schatten und dunkle Gegenstände nördlich des Schuppens 212.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (395/400).",
+     "flaeche_px": 220
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400208,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner Schattenrand nördlich des Schuppens 212.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (400/406).",
+     "flaeche_px": 45
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400209,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Grau-beige Terrasse bzw. Kiesfläche südwestlich des Hauses 196.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse statt Gebäude bei (465/412).",
+     "flaeche_px": 314
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400211,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Kleiner Schuppen mit rotem Dach, etwa 13 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400212,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Kleiner Schuppen mit grauem Dach.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400213,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Sträucher und ein weißes Kleinteil südöstlich von 192 am Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gebüsch statt Gebäude bei (553/415).",
+     "flaeche_px": 215
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400215,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner Schattenrand südwestlich des Schuppens 212.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (397/417).",
+     "flaeche_px": 36
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400217,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Vier Bildpunkte am rechten Kernrand, Hauptteil im Kontextrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400219,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400221,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Acht Bildpunkte am rechten Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400222,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen einer Parzelle.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah2_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400226,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dichte Gartenfläche mit Gras und Sträuchern nördlich von 238.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah1_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400233,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kronenrand am rechten Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400234,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schatten nordwestlich des Schuppens 239.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Klasse 0.2 bei (465/445); nach U2 Rasen.",
+     "flaeche_px": 159
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400235,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hellgrauer Schuppen mit dunklem Garten westlich davon.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schuppendach bei (520/450) statt Wald.",
+     "flaeche_px": 450
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Dunkler Gartenteil bei (505/452) als 4.2.4 abtrennen.",
+     "flaeche_px": 200
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400236,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schatten an der Nordwestecke des Hauses 238.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (336/447).",
+     "flaeche_px": 85
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400238,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit rotem Dach und hellgrauen Randstreifen, etwa 31 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400239,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner Schuppen mit grauem Dach, etwa 13 m².",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Nebengebäude statt Hauptgebäude bei (472/456).",
+     "flaeche_px": 319
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400245,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen mit einem dunklen Strauch.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400246,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Gras östlich des Schuppens 239.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Gebäude bei (482/461).",
+     "flaeche_px": 94
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400250,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helle Ecke östlich von 238, Terrasse.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse statt Gebäude bei (365/463).",
+     "flaeche_px": 76
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400251,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit grauem, zweifarbigem Dach, etwa 25 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400252,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gartengrün östlich von 254.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten/Gras statt Wald bei (400/472).",
+     "flaeche_px": 181
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400254,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Sehr dunkler Fleck nördlich von 264: Strauch mit Schatten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch statt Wald bei (382/470).",
+     "flaeche_px": 94
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.4"
+  },
+  {
+   "id": 400255,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schatten westlich des Hauses 260.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten statt Gebäude bei (550/474).",
+     "flaeche_px": 139
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400256,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Orangefarbenes flaches Quadrat westlich von 238: kleines Dach oder Fliesenterrasse.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400258,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helle Pflasterfläche um den orangefarbenen Bau 256.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Pflaster statt Gebäude bei (322/480).",
+     "flaeche_px": 96
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400259,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen und Garten südlich von 238.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400260,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit grau-violettem Dach am rechten Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400263,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkler Streifen an der Südseite von 238, Dachrand oder überdachter Vorplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gehört zum Gebäude 400238 bei (342/475).",
+     "flaeche_px": 111
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400264,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit grau-violettem Dach und hellerem Anbau links, etwa 21 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400273,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große Gehölzfläche aus mehreren Kronen mit einem weißen Gegenstand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere Kronen bei (500/505), Baumgruppe.",
+     "flaeche_px": 1510
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400274,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Strauch- oder Baumkrone.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400276,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Gras im Schatten westlich des Hauses 264.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras/Schatten statt Gebäude bei (375/491).",
+     "flaeche_px": 119
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400277,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Hellgrüne Fläche am Rand der Krone 273, eher Gras.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Krone erkennbar bei (520/495).",
+     "flaeche_px": 156
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400278,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Graugrüne Gartenfläche südlich des Schuppens 281, kein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten statt Gebäude bei (336/505).",
+     "flaeche_px": 224
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400279,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Garten mit Rasen und Pflanzen entlang des Graswegs.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten statt Wald bei (540/498).",
+     "flaeche_px": 542
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400281,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Kleiner Schuppen mit hellgrauem Dach.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400282,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Garten mit Sträuchern, Gras und kleinen Gegenständen östlich von 264.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten statt geschlossenem Wald bei (414/510).",
+     "flaeche_px": 795
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400286,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gartenfläche mit weißem Gegenstand nördlich von 301.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten statt Wald bei (473/513).",
+     "flaeche_px": 374
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400290,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grasweg und Rasen mit dunkler Heckenkante.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400293,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kleiner dunkler Strauch.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400294,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grasstück neben dem Erdweg.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400295,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gras und niedriger Bewuchs nördlich der Krone 299.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras statt Wald bei (347/518).",
+     "flaeche_px": 312
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400296,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Gartenfläche mit Wegen und Sträuchern um den hellen Platz 300.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten statt Gebäude bei (445/515).",
+     "flaeche_px": 490
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400299,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große dunkle Gehölzfläche (zwei bis drei Kronen) im Süden.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere Kronen bei (380/540), Baumgruppe.",
+     "flaeche_px": 2476
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.2"
+  },
+  {
+   "id": 400300,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Hell-beige unregelmäßige Fläche ohne Dachstruktur, wohl Kies- oder Sandplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kies-/Sandfläche statt Gebäude bei (435/528).",
+     "flaeche_px": 257
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.3.1"
+  },
+  {
+   "id": 400301,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Garten um den Schuppen 312 mit dessen Schatten und weißen Gegenständen, kein Hauptgebäude.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten/Schatten statt Gebäude bei (485/540).",
+     "flaeche_px": 730
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400307,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit grauem Dach, etwa 17 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400310,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Garten mit Rasen, Wegen und Kleinteilen am rechten unteren Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten statt geschlossenem Wald bei (530/530).",
+     "flaeche_px": 1023
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400312,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Kleiner Schuppen mit rotem Dach, etwa 10 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400317,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Garten mit Wegen und hellen Kleinteilen am unteren Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten statt Wald bei (420/545).",
+     "flaeche_px": 446
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400319,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helle Terrasse mit Gegenständen östlich des Hauses 322.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse statt Gebäude bei (540/550).",
+     "flaeche_px": 271
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400321,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Grüne Kronen zwischen 301 und 322.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400322,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Gartenhaus mit grauem Dach, etwa 24 m².",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.2"
+  },
+  {
+   "id": 400326,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenstück im Garten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400327,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Weiße Terrasse bzw. Platten südlich des Hauses 307.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Terrasse statt Gebäude bei (448/550).",
+     "flaeche_px": 137
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400330,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Sträucher südlich von 307.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400333,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kleine Krone am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400334,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Grünes Gartenstück am unteren Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Garten statt Wald bei (444/557).",
+     "flaeche_px": 155
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400335,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400339,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helle Platten südlich des Hauses 322 am unteren Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Pflaster statt Gebäude bei (512/559).",
+     "flaeche_px": 77
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.2.4"
+  },
+  {
+   "id": 400340,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner Rand am weißen Folientunnel 343.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gehört zu 400343 bei (427/559).",
+     "flaeche_px": 26
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.3"
+  },
+  {
+   "id": 400341,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kronenrand am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400343,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Weiß-bläulich glänzendes längliches Dach, wohl Glashaus oder Folientunnel, am unteren Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Glashaus/Folientunnel statt Schuppen bei (436/560).",
+     "flaeche_px": 79
+    }
+   ],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_roh.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.3"
+  },
+  {
+   "id": 400344,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kronenrand am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  },
+  {
+   "id": 400345,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Ein Bildpunkt in der rechten unteren Kernecke, Segment liegt sonst im Kontextrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "1.1.1"
+  },
+  {
+   "id": 400349,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Fünf Bildpunkte Gras am unteren Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah3_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "3.1"
+  },
+  {
+   "id": 400350,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Zwölf Bildpunkte Kronenrand an der rechten unteren Ecke.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "c-feste-liste/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "c-feste-liste/viertel/r1c1/v4/nah4_nummern.jpg"
+   ],
+   "viertel": "v4",
+   "klasse": "4.2.1"
+  }
+ ],
+ "naht": [
+  {
+   "id": 400018,
+   "seite": "oben",
+   "text": "Vorschlag 4.2.2 statt 0.2 reicht an den oberen Kernrand; die Nachbar-Teilkachel r0c1 muss dieselbe Klasse tragen.",
+   "viertel": "v1"
+  },
+  {
+   "id": 400011,
+   "seite": "oben",
+   "text": "Vorschlag 4.2.2 statt 0.2 reicht an den oberen Kernrand (r0c1).",
+   "viertel": "v1"
+  },
+  {
+   "id": 400052,
+   "seite": "links",
+   "text": "Vorschlag 4.1 statt 0.2 reicht an den linken Kernrand (r1c0); dort ebenfalls Wald.",
+   "viertel": "v1"
+  },
+  {
+   "id": 400017,
+   "seite": "oben",
+   "text": "Pfad läuft über den oberen Kernrand weiter; Klasse 6.6 auf beiden Seiten gleich halten.",
+   "viertel": "v1"
+  },
+  {
+   "id": 400002,
+   "seite": "oben",
+   "text": "Vorschlag 3.5 statt 3.1 reicht an den oberen Kernrand (r0c1) und links über v1 an den linken Rand (r1c0); dort gleiche Klasse.",
+   "viertel": "v2"
+  },
+  {
+   "id": 400019,
+   "seite": "oben",
+   "text": "Vorschlag 4.2.2 statt 4.2.1 reicht an den oberen Kernrand (r0c1).",
+   "viertel": "v2"
+  },
+  {
+   "id": 400038,
+   "seite": "rechts",
+   "text": "Vorschlag 4.2.2 statt 0.2 reicht an den rechten Kernrand (r1c2 bzw. Kontext).",
+   "viertel": "v2"
+  },
+  {
+   "id": 400112,
+   "seite": "rechts",
+   "text": "Vorschlag 1.3 statt 4.1 am rechten Kernrand.",
+   "viertel": "v2"
+  },
+  {
+   "id": 400006,
+   "seite": "oben",
+   "text": "Feld setzt sich nach oben fort; ob Wiese (3.1) oder abgeerntetes Getreidefeld (2.2) ist, muss für beide Teilkacheln gleich entschieden werden.",
+   "viertel": "v2"
+  },
+  {
+   "id": 400329,
+   "seite": "unten",
+   "text": "Vorschlag 2.1 statt 1.3.2 reicht an den unteren Kernrand (r2c1 bzw. Kontext).",
+   "viertel": "v3"
+  },
+  {
+   "id": 400337,
+   "seite": "unten",
+   "text": "Vorschlag 1.2.2 statt 1.3.2 am unteren Kernrand.",
+   "viertel": "v3"
+  },
+  {
+   "id": 400332,
+   "seite": "unten",
+   "text": "Vorschlag 3.1 statt 1.1.1 am unteren Kernrand.",
+   "viertel": "v3"
+  },
+  {
+   "id": 400342,
+   "seite": "unten",
+   "text": "Vorschlag 1.1.2 statt 1.1.1 am unteren Kernrand.",
+   "viertel": "v3"
+  },
+  {
+   "id": 400232,
+   "seite": "unten",
+   "text": "Vorschlag 3.1 statt 1.2.1 reicht an den unteren Kernrand; der Weg setzt sich nach unten fort.",
+   "viertel": "v3"
+  },
+  {
+   "id": 400132,
+   "seite": "rechts",
+   "text": "Vorschlag 4.2.4 statt 4.1 reicht an den rechten Kernrand.",
+   "viertel": "v4"
+  },
+  {
+   "id": 400213,
+   "seite": "rechts",
+   "text": "Vorschlag 4.2.4 statt 1.1.1 reicht an den rechten Kernrand.",
+   "viertel": "v4"
+  },
+  {
+   "id": 400310,
+   "seite": "rechts",
+   "text": "Vorschlag 3.1 statt 4.1 reicht an den rechten und unteren Kernrand.",
+   "viertel": "v4"
+  },
+  {
+   "id": 400317,
+   "seite": "unten",
+   "text": "Vorschlag 3.1 statt 4.1 am unteren Kernrand.",
+   "viertel": "v4"
+  },
+  {
+   "id": 400334,
+   "seite": "unten",
+   "text": "Vorschlag 3.1 statt 4.1 am unteren Kernrand.",
+   "viertel": "v4"
+  },
+  {
+   "id": 400339,
+   "seite": "unten",
+   "text": "Vorschlag 1.2.4 statt 1.1.1 am unteren Kernrand.",
+   "viertel": "v4"
+  },
+  {
+   "id": 400343,
+   "seite": "unten",
+   "text": "Vorschlag 1.1.3 statt 1.1.2 am unteren Kernrand; 400340 dazu.",
+   "viertel": "v4"
+  }
+ ],
+ "unsicher": [
+  "v1: 400002 (v2, Wiese 3.1): im ganzen Hang verbuscht, eher 3.5 Verbuschende Fläche als gemähte Wiese.",
+  "v1: 400034 (v3, Wald): enthält bei etwa (105/220) eine graue rechteckige Fläche (Plane, kleines Dach oder Teich?), sollte abgetrennt werden.",
+  "v1: 400067 (v2, Rasen): nimmt den Schatten 400083 auf, wenn dieser verschmolzen wird.",
+  "v2: 400067 (v4, Rasen): nimmt bei Verschmelzung die Schatten 400115, 400100, 400106 auf.",
+  "v2: 400111 (Rand/v1-v4): Rasen um Baum 127; nicht geurteilt.",
+  "v3: 400067 (v4, Rasen): großes Rasensegment östlich von 232, nimmt mehrere Schatten auf.",
+  "v3: 400090 (v1): Rasen nördlich von 158 nimmt den Schatten 400158 auf.",
+  "v4: 400232 (v3): das diagonale Band westlich von 67 ist ein Grasweg, kein Asphalt (in v3 so beurteilt).",
+  "v4: 400117 (v2) und 400151 (v3): Gartenhäuser am Oberrand von v4, dort beurteilt."
+ ],
+ "nicht_geprueft": [
+  "v4: Für v4 keine eigenen Nahansichten erstellt; die vier vorbereiteten Nahansichten (6fach) reichten für die Urteile, feine Grenzen der Kleinteile (unter 50 Bildpunkte) nicht bildpunktgenau geprüft."
+ ],
+ "offen": [
+  "v1: Haupt- oder Nebengebäude (1.1.1/1.1.2) ist bei den Gartenhäusern der Kleingartenanlage (87, 89, 40, 81) im Bild nicht sicher zu entscheiden; Elternklasse 1.1 wäre sicher, daher sicher: false.",
+  "v1: 400044: Dach eines Anbaus oder lohfarbener Terrassenweg nicht entscheidbar; ein Blick von schräg oder ein Höhenmodell würde es klären.",
+  "v1: Die dunklen Kronenflächen 18, 31, 33, 26, 49: Anteil Schlagschatten auf Wiese an der Nordwestseite nicht sicher abgrenzbar; Klasse Gehölz für den Kern sicher, die genaue Grenze nicht.",
+  "v1: Im Ergebnisordner liegen Dateien, die nicht von mir stammen (angelegt etwa 19:25–19:27 Uhr von einem anderen Bearbeiter, vermutlich ein abgebrochener früherer Lauf): flaechen.py, kontrast_1.jpg, kontrast_1_roh.jpg, kontrast_2.jpg, kontrast_2_roh.jpg, nah_1_roh.jpg, nah_2_roh.jpg, nah_3_roh.jpg, nah_4_roh.jpg, nah_5_roh.jpg, nah_6.jpg, nah_7.jpg, nah_8.jpg, nah_9.jpg, stat.py, zoom.py. Ich habe sie weder angesehen noch verwendet noch gelöscht; gleichnamige eigene Nahansichten (nah_<n>.jpg aus NAH_EIGEN) haben dessen Dateien überschrieben, falls es sie gab.",
+  "v2: 400006: Das große Feld oben zeigt strohfarbene gebogene Schwaden; gemähte Wiese (3.1.1) oder abgeerntetes Getreidefeld (2.2) ist im Bild nicht sicher zu trennen; Bewirtschaftungsdaten (INVEKOS) würden es klären.",
+  "v2: Haupt- oder Nebengebäude bei den Gartenhäusern (86, 110, 117, 93): im Bild nicht sicher, daher sicher: false.",
+  "v2: 400071: Glashaus oder helles Dach; ein Schrägbild würde es klären.",
+  "v2: Im Ergebnisordner liegen Dateien, die nicht von mir stammen (angelegt etwa 19:25–19:27 Uhr von einem anderen Bearbeiter, vermutlich ein abgebrochener früherer Lauf): nah_3.jpg, nah_4.jpg, nah_5.jpg, nah_6.jpg, nah_7.jpg, nah_8.jpg, werkzeug.py. Ich habe sie weder angesehen noch verwendet noch gelöscht; gleichnamige eigene Nahansichten (nah_<n>.jpg aus NAH_EIGEN) haben dessen Dateien überschrieben, falls es sie gab.",
+  "v3: 400177: Ob die Terrassen Gartenbeete (2.1) oder Rasen/Stauden (3.1) tragen, ist bei 0,2 m nicht sicher; die Steinmauern selbst sind schmal (2–3 Bildpunkte).",
+  "v3: Haupt- oder Nebengebäude bei den Gartenhäusern (151, 160, 223, 237, 272, 308): im Bild nicht sicher, daher sicher: false.",
+  "v3: 400034: Graue Fläche im Wald bei (107/215): Plane, Dach oder Teich nicht entscheidbar.",
+  "v3: Im Ergebnisordner liegen Dateien, die nicht von mir stammen (angelegt etwa 19:25–19:27 Uhr von einem anderen Bearbeiter, vermutlich ein abgebrochener früherer Lauf): info.py, nah_3.jpg, nah_4.jpg, nah_5.jpg, nah_6.jpg, nah_7.jpg, nah_8.jpg, punkt.py. Ich habe sie weder angesehen noch verwendet noch gelöscht; gleichnamige eigene Nahansichten (nah_<n>.jpg aus NAH_EIGEN) haben dessen Dateien überschrieben, falls es sie gab.",
+  "v4: 400067: Wie fein die Rasen der einzelnen Parzellen getrennt werden sollen (je Parzelle ein Segment oder ein Rasensegment), ist eine Methodenfrage; ich habe nur die Trennung von Beeten und Heckenkanten verlangt.",
+  "v4: Haupt- oder Nebengebäude bei den Gartenhäusern (147, 174, 192, 196, 238, 251, 264, 307, 322): im Bild nicht sicher, daher sicher: false.",
+  "v4: 400300: Kies-/Sandplatz oder sehr helles Flachdach; ein Schrägbild würde es klären.",
+  "v4: 400256: orangefarbenes Quadrat ist kleines Dach oder Fliesenterrasse, nicht entscheidbar.",
+  "v4: Im Ergebnisordner liegen Dateien, die nicht von mir stammen (angelegt etwa 19:25–19:27 Uhr von einem anderen Bearbeiter, vermutlich ein abgebrochener früherer Lauf): nah_1.jpg, nah_2.jpg, nah_3.jpg, nah_4.jpg, nah_5.jpg, nah_6.jpg, nah_7.jpg. Ich habe sie weder angesehen noch verwendet noch gelöscht; gleichnamige eigene Nahansichten (nah_<n>.jpg aus NAH_EIGEN) haben dessen Dateien überschrieben, falls es sie gab."
+ ]
+}
