@@ -1,0 +1,30 @@
+{
+  "beschreibung": "W3 ansicht: welche Standardbilder entstehen, Fenster und Vergrößerung je Segment, Gitter, Kontrast, Farben. Längen in Bildpunkten der Teilkachel.",
+  "teilkachel_arten": ["roh", "umriss", "maengel", "vorschlag", "kontrast", "gitter"],
+  "segment_arten": ["roh", "umriss", "maengel", "vorschlag", "nah", "kontrast", "gitter"],
+  "segment_rand": 24,
+  "segment_mindestfenster": 64,
+  "nah_zielgroesse": 512,
+  "nah_hoechstfaktor": 8,
+  "gitter_stufen": [5, 10, 20, 25, 50, 100, 200],
+  "gitter_linien_ziel": 8,
+  "kontrast": {"clip": 3.0, "kacheln": 8},
+  "vorschlag_deckkraft": 0.45,
+  "vorschlag_beschriftung_ab": 150,
+  "maengel_abdunkeln": 0.55,
+  "maengel_deckkraft": 0.6,
+  "farben": {
+    "grenze": "#ffff00",
+    "segment": "#ff00ff",
+    "kern": "#ffffff",
+    "gitter": "#00ffff",
+    "luecke": "#ff0000",
+    "nicht_zusammenhaengend": "#ff8000",
+    "ohne_eintrag": "#a000ff",
+    "zu_klein": "#ff00ff",
+    "unsicher": "#00c8ff",
+    "kandidat": "#ffffff",
+    "geschaetzt": "#ff0000",
+    "ohne_klasse": "#808080"
+  }
+}
