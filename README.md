@@ -13,6 +13,8 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `tools/pruefe_kategorien.py` | Prüfskript für `kategorien.json` (nur Python-Standardbibliothek) |
 | `landseg/` | Python-Paket mit den Werkzeugen, ein Modul je Werkzeug; Befehlszeile `python -m landseg <befehl>` |
 | `landseg/kacheln.py` | W1 `kacheln`: Arbeitsausschnitt aus einem Luftbild, Teilkacheln (Kern + Kontextrand), Manifest mit Georeferenz |
+| `landseg/vorstufe.py`, `landseg/sam3.py` | W2 `vorstufe`: lückenlose Vorbelegung einer Teilkachel (Superpixel, SAM 3 mit Text je Kategorie, Semantik-argmax), mit Sicherheit je Segment und Kandidatenliste |
+| `vorstufe.json` | Einstellungen der Vorstufe: Superpixel-Größe, SAM-3-Modell und -Schwellen, Texte je Kategorie, Schwellen für `sicher` und die Kandidaten |
 | `landseg/eingriff.py` | W5 `eingriff`: Bearbeiten der Label-Karte (verschmelzen, teilen, Grenze verschieben, Klasse setzen, Polygon zuweisen), immer lückenlos, mit Verlauf |
 | `landseg/pruefen.py` | W6 `pruefen`: Wächter der Lückenlosigkeit (H × W ohne 0, Zusammenhang je Segment, gültige Klassen) |
 | `landseg/zusammentragen.py` | W7 `zusammentragen`: Abgaben der Teilkacheln (je Teilkachel die letzte Runde, nur der Kern) zur Label-Karte des Ausschnitts; Einheiten, Klassen des Nutzers und offene Fragen aus einem JSON-Auftrag |
@@ -22,7 +24,7 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `landseg/kategorien.py`, `landseg/dateien.py` | Kategorienliste laden; Lesen und Schreiben von Label-Karte, `segmente.json`, Manifest |
 | `tests/` | Tests (Python-Standardmodul `unittest`, synthetische Bilder und Label-Karten) |
 
-Die übrigen Werkzeuge (Vorstufe, Ansicht, Kante, Prüfseite) folgen.
+Die übrigen Werkzeuge (Ansicht, Kante, Prüfseite) folgen.
 
 ## Umgebung
 
@@ -38,6 +40,12 @@ unten kurz `PY`. Aufruf immer im Repo-Ordner, damit Python das Paket `landseg` f
 - **`segmente.json`**: je Segment `id`, `klasse` (Code aus `kategorien.json`, feinste sichere Ebene),
   `grob` (Ebene-1-Klasse), dazu Felder wie `herkunft`; unter `verlauf` jeder Eingriff mit Zeit und
   Bearbeiter.
+- **Sicherheit** (`sicher: ja | nein` in `segmente.json`, von der Vorstufe): ob der Klassenvorschlag
+  die Schwellen aus `vorstufe.json` erreicht; `nein` heißt „Klasse prüfen“, nicht „falsch“.
+- **Kandidatenliste** (`kandidaten.json`, von der Vorstufe): Stellen, die das Urteil zuerst ansehen
+  soll: `klasse_unsicher`, `grenze_ohne_bildkante` (zwei Segmente grenzen dort aneinander, wo das
+  Bild kaum eine Kante zeigt), `nicht_zusammenhaengend` (ein Fund von SAM 3 zerfiel in mehrere
+  Segmente), `zu_klein`.
 - **Manifest** (`manifest.json`, von `kacheln`): Quelle, Ausschnitt, Raster und je Teilkachel Bild,
   Kern, Kontext und Lage. Alle Pfade relativ zum Ordner des Manifests. Koordinaten in Bildpunkten:
   `kern` und `kontext` relativ zum Ausschnitt, `kern_im_bild` relativ zum Bild der Teilkachel;
@@ -65,6 +73,35 @@ Ergebnis: `T0.png` (ganzer Ausschnitt), `teilkacheln/r<zeile>c<spalte>.png` (Ker
 aus dem Originalbild, nur am Bildrand abgeschnitten) und `manifest.json`. Die Kerngröße ist frei
 (`--kern 250` ergibt 16 Teilkacheln); geht sie nicht auf, sind die letzten Kerne kleiner. Ein
 vorhandenes Manifest wird nur mit `--ueberschreiben` ersetzt.
+
+### vorstufe
+
+Braucht die GPU (SAM 3, Modell `facebook/sam3` aus dem Zwischenspeicher von Hugging Face). Ist sie
+belegt, den Befehl später wiederholen; auf der CPU rechnet die Vorstufe nicht.
+
+```
+PY -m landseg vorstufe --manifest ../daten/landseg/T0/kern500/manifest.json --teilkachel r0c0
+```
+
+Ohne `--teilkachel` laufen alle Teilkacheln des Manifests: SAM 3 Teilkachel nach Teilkachel auf der
+GPU, die übrigen Schritte gleichzeitig. Ablauf je Teilkachel: (a) Superpixel (SLIC), (b) SAM 3 mit
+den Texten je Kategorie aus `vorstufe.json` liefert Funde (Instanzen), (c) dazu je Bildpunkt einen
+Wert je Kategorie (Semantikkopf mal „Presence“), (d) Funde rasten auf Superpixel ein (kleinste
+zuerst), übrige Superpixel bekommen die Kategorie mit dem höchsten Wert und verbinden sich mit
+gleichartigen Nachbarn, (e) `pruefen`. Jede Stelle gehört so zu genau einem zusammenhängenden
+Segment.
+
+Ausgabe unter `vorstufe/<teilkachel>/` neben dem Manifest: `labels.tif`, `segmente.json` (je
+Segment `id`, `klasse`, `grob`, `herkunft` `sam3-instanz` oder `semantik`, `sicher`, `sicherheit`,
+`flaeche`, `im_kern`; unter `vorstufe` die Messung), `kandidaten.json` und `sam3_roh.npz` (Rohwerte
+von SAM 3). Je Teilkachel eine Messzeile: Segmente (davon im Kern), Anteil `sicher: nein` nach Zahl
+und Fläche, Kandidaten, Befund von `pruefen`, Laufzeit. Die Segment-IDs sind im ganzen Ausschnitt
+eindeutig (Nummer der Teilkachel × `id_block` + laufende Nummer).
+
+Eine fertige Teilkachel mit denselben Einstellungen wird übersprungen; `--neu` rechnet sie neu und
+nimmt dabei die gespeicherten Rohwerte, solange die SAM-3-Einstellungen und Texte gleich sind (dann
+ohne GPU). `--bild <png> --ziel <ordner>` rechnet ein einzelnes Bild, `--konfig` nimmt andere
+Einstellungen.
 
 ### pruefen
 

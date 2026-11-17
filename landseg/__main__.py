@@ -1,7 +1,7 @@
 """Befehlszeile: ``python -m landseg <befehl> ...`` (im Repo-Ordner).
 
-Befehle: ``kacheln`` (W1), ``eingriff`` (W5), ``pruefen`` (W6), ``zusammentragen`` (W7), ``naht``
-(Nahtregel allein). Exit-Code 0 = ok, 1 = Befund, Nahtverstoß oder Eingriff abgelehnt, 2 = Aufruf-
+Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``eingriff`` (W5), ``pruefen`` (W6), ``zusammentragen`` (W7),
+``naht`` (Nahtregel allein). Exit-Code 0 = ok, 1 = Befund, Nahtverstoß oder Eingriff abgelehnt, 2 = Aufruf-
 oder Lesefehler.
 """
 
@@ -18,6 +18,7 @@ from . import dateien, kategorien, naht
 from .eingriff import Bearbeitung, EingriffFehler
 from .kacheln import KachelFehler, kacheln
 from .pruefen import pruefen
+from .vorstufe import Auftrag, VorstufeFehler, auftraege_aus_manifest, konfig_laden, vorstufe
 from .zusammentragen import ZusammenFehler, lese_auftrag, zusammentragen
 
 
@@ -50,6 +51,26 @@ def befehl_kacheln(a) -> int:
     print(f"{len(manifest['teilkacheln'])} Teilkacheln ({r['zeilen']} × {r['spalten']}, "
           f"Kern {r['kern']}, Rand {r['rand']}) -> {Path(a.ziel) / 'manifest.json'}")
     return 0
+
+
+def befehl_vorstufe(a) -> int:
+    kat = kategorien.laden(a.kategorien)
+    konfig = konfig_laden(a.konfig, kat)
+    if a.manifest:
+        if a.ziel:
+            raise VorstufeFehler("--ziel nur mit --bild (mit --manifest: Ordner vorstufe/ daneben)")
+        auftraege = auftraege_aus_manifest(a.manifest, konfig, a.teilkachel)
+    else:
+        if not a.ziel or a.teilkachel:
+            raise VorstufeFehler("--bild braucht --ziel und kennt keine --teilkachel")
+        auftraege = [Auftrag(name=Path(a.bild).stem, bild=Path(a.bild), ziel=Path(a.ziel))]
+
+    def modell_laden():
+        from .sam3 import Sam3Vorschlag
+        return Sam3Vorschlag(konfig["sam3"], geraet=a.geraet)
+
+    ergebnisse = vorstufe(auftraege, konfig, kat, modell_laden=modell_laden, neu=a.neu)
+    return 0 if all(e["ok"] for e in ergebnisse) else 1
 
 
 def befehl_pruefen(a) -> int:
@@ -133,6 +154,18 @@ def parser() -> argparse.ArgumentParser:
     k.add_argument("--ueberschreiben", action="store_true")
     k.set_defaults(fn=befehl_kacheln)
 
+    v = befehle.add_parser("vorstufe", help="W2: lückenlose Vorbelegung (Superpixel, SAM 3, GPU)")
+    quelle = v.add_mutually_exclusive_group(required=True)
+    quelle.add_argument("--manifest", help="manifest.json von kacheln; Ausgabe in vorstufe/<id>/")
+    quelle.add_argument("--bild", help="einzelnes Bild statt Teilkacheln (dann --ziel)")
+    v.add_argument("--teilkachel", action="append", help="ID aus dem Manifest, mehrfach; Standard alle")
+    v.add_argument("--ziel", help="Ausgabeordner (nur mit --bild)")
+    v.add_argument("--konfig", help="Einstellungen (Standard: vorstufe.json des Repos)")
+    v.add_argument("--kategorien", help="kategorien.json (Standard: die des Repos)")
+    v.add_argument("--geraet", default="cuda", help="Torch-Gerät für SAM 3 (Standard cuda)")
+    v.add_argument("--neu", action="store_true", help="auch fertige Teilkacheln neu rechnen")
+    v.set_defaults(fn=befehl_vorstufe)
+
     pr = befehle.add_parser("pruefen", help="W6: Label-Karte prüfen")
     pr.add_argument("--labels", required=True, help="Label-Karte (.tif uint32 oder .npy)")
     pr.add_argument("--segmente", help="segmente.json (dann auch Klassen prüfen)")
@@ -195,7 +228,7 @@ def main(argv: list[str] | None = None) -> int:
     a = parser().parse_args(argv)
     try:
         return a.fn(a)
-    except (KachelFehler, ZusammenFehler, ValueError, OSError, KeyError) as fehler:
+    except (KachelFehler, VorstufeFehler, ZusammenFehler, ValueError, OSError, KeyError) as fehler:
         print(f"Fehler: {fehler}", file=sys.stderr)
         return 2
 
