@@ -13,8 +13,8 @@ Usage (paths in Windows form ``C:/...``):
 images. It commits in ``--ziel`` only when something changed (a second run without changes adds no
 commit). ``pruefen`` checks completeness against the sources (with ``--basis``), forbidden paths,
 file sizes (warning from 50 MB, error from 100 MB, working tree and history), Git LFS, line-ending
-settings, the paths named in README.md and, with ``--luftbilder``, the original images by size and
-SHA-256. ``durchsicht`` searches every tracked text file for secrets, e-mail addresses, other areas,
+settings, that README.md, ANLEITUNG.md and CLAUDE.md exist and every path they name is there and,
+with ``--luftbilder``, the original images by size and SHA-256. ``durchsicht`` searches every tracked text file for secrets, e-mail addresses, other areas,
 internals of the wish system and paths with an account name; each finding needs a rule in the
 settings (keep with reason or removed from the copy), otherwise exit 1. Secrets always fail.
 
@@ -306,13 +306,19 @@ def groessen(ziel: Path, warnung_mb: float, grenze_mb: float) -> tuple[list, lis
     return warnungen, zu_gross, groesste
 
 
-def readme_pfade(ziel: Path, wurzeln: list[str]) -> tuple[int, list[str]]:
-    text = (ziel / "README.md").read_text(encoding="utf-8") if (ziel / "README.md").is_file() else ""
+def seiten_pfade(ziel: Path, seite: str, wurzeln: list[str], ohne: list[str]) -> tuple[int, list[str]]:
+    """Paths a page names in backticks or links (first folder in ``wurzeln``) and those missing.
+
+    Commands in the guide run in ``programm/``: a leading ``../`` counts from the project folder.
+    Paths matching ``ohne`` (original images, delivered separately) are not checked.
+    """
+    text = (ziel / seite).read_text(encoding="utf-8")
     kandidaten = re.findall(r"`([^`\s]+)`", text) + re.findall(r"\]\(([^)\s]+)\)", text)
     pfade = set()
     for k in kandidaten:
-        k = k.split("#", 1)[0].rstrip("/")
-        if not k or any(z in k for z in "<>*{}$"):
+        k = k.split("#", 1)[0].rstrip("/").replace("\\", "/")
+        k = k[3:] if k.startswith("../") else k
+        if not k or any(z in k for z in "<>*{}$") or passt(k, ohne):
             continue
         if k.split("/", 1)[0] in wurzeln:
             pfade.add(k)
@@ -419,15 +425,17 @@ def pruefen(ziel: Path, einst: dict, basis: Path | None = None, luftbilder: Path
     ausgabe(f"Zeilenenden: .gitattributes `* -text` {'ja' if ohne_umwandlung else 'NEIN'}; core.autocrlf {autocrlf}")
     fehler |= not ohne_umwandlung and autocrlf != "false"
 
-    anzahl, fehlen = readme_pfade(ziel, einst["readme_wurzeln"])
-    if not (ziel / "README.md").is_file():
-        ausgabe("README-Pfade: README.md fehlt")
-        fehler = True
-    elif fehlen:
-        ausgabe(f"README-Pfade: {len(fehlen)} von {anzahl} fehlen" + "".join(f"\n  fehlt: {p}" for p in fehlen))
-        fehler = True
-    else:
-        ausgabe(f"README-Pfade: alle vorhanden ({anzahl})")
+    for seite in einst["pfad_seiten"]:
+        if not (ziel / seite).is_file():
+            ausgabe(f"Pfade in {seite}: {seite} fehlt")
+            fehler = True
+            continue
+        anzahl, fehlen = seiten_pfade(ziel, seite, einst["readme_wurzeln"], einst.get("pfade_ohne", []))
+        if fehlen:
+            ausgabe(f"Pfade in {seite}: {len(fehlen)} von {anzahl} fehlen" + "".join(f"\n  fehlt: {p}" for p in fehlen))
+            fehler = True
+        else:
+            ausgabe(f"Pfade in {seite}: alle vorhanden ({anzahl})")
 
     if luftbilder is None:
         ausgabe("Luftbilder nicht geprüft (ohne --luftbilder)")
@@ -571,7 +579,7 @@ def main(argv: list[str] | None = None) -> int:
     b = befehle.add_parser("bauen", help="Gesamt-Ordner anlegen oder aktualisieren (committet dort)")
     b.add_argument("--basis", required=True, help="Basisordner Victor (Quelle)")
     b.add_argument("--ziel", required=True, help="Gesamt-Ordner (Git-Repo)")
-    p = befehle.add_parser("pruefen", help="Vollständigkeit, Größen, Pfade im README, Luftbilder")
+    p = befehle.add_parser("pruefen", help="Vollständigkeit, Größen, Pfade in README, ANLEITUNG und CLAUDE.md, Luftbilder")
     p.add_argument("--basis", help="Basisordner Victor; ohne: keine Prüfung der Vollständigkeit")
     p.add_argument("--ziel", required=True)
     p.add_argument("--luftbilder", help="Ordner mit den Original-Luftbildern (Größe und SHA-256)")
