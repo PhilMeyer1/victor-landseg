@@ -64,13 +64,14 @@ unten kurz `PY`. Aufruf immer im Repo-Ordner, damit Python das Paket `landseg` f
 
 ## Erster Durchgang: von T0 bis zur Übersichtsseite
 
-Im Repo-Ordner, `PY` wie unter „Umgebung“; alle Ergebnisse landen unter `daten/landseg/T0/kern500/`.
+Im Repo-Ordner, `PY` wie unter „Umgebung“. `<ausschnitt>` steht für den Ergebnisordner des
+Ausschnitts außerhalb des Repos (hier `../daten/landseg/T0/<lauf>`); alle Ergebnisse landen dort.
 
 ```
-PY -m landseg kacheln --bild ../daten/luftbilder/orthofoto-aktuell/0009626524_100_Orthophoto_aktuell_5236-56.tif    --x 2000 --y 2400 --breite 1000 --hoehe 1000 --kern 500 --rand 64 --name T0 --ziel ../daten/landseg/T0/kern500
-PY -B -m landseg vorstufe --manifest ../daten/landseg/T0/kern500/manifest.json --teilkachel r0c0
-PY -m landseg pruefen --labels ../daten/landseg/T0/kern500/vorstufe/r0c0/labels.tif    --segmente ../daten/landseg/T0/kern500/vorstufe/r0c0/segmente.json --bild ../daten/landseg/T0/kern500/teilkacheln/r0c0.png
-PY -B -m landseg seite --manifest ../daten/landseg/T0/kern500/manifest.json --ziel ../daten/landseg/T0/kern500/seite/T0.html --oeffnen
+PY -m landseg kacheln --bild ../daten/luftbilder/orthofoto-aktuell/0009626524_100_Orthophoto_aktuell_5236-56.tif    --x 2000 --y 2400 --breite 1000 --hoehe 1000 --kern 500 --rand 64 --name T0 --ziel <ausschnitt>
+PY -B -m landseg vorstufe --manifest <ausschnitt>/manifest.json --teilkachel r0c0
+PY -m landseg pruefen --labels <ausschnitt>/vorstufe/r0c0/labels.tif    --segmente <ausschnitt>/vorstufe/r0c0/segmente.json --bild <ausschnitt>/teilkacheln/r0c0.png
+PY -B -m landseg seite --manifest <ausschnitt>/manifest.json --ziel <ausschnitt>/seite/T0.html --oeffnen
 ```
 
 1. `kacheln` schneidet das Testfenster in vier Teilkacheln (siehe unten).
@@ -81,12 +82,21 @@ PY -B -m landseg seite --manifest ../daten/landseg/T0/kern500/manifest.json --zi
    `T0.html` selbst doppelklicken). Teilkacheln ohne Daten erscheinen leer, Fassungen ohne Daten
    ausgegraut.
 
-Die Seite zeigt je Fassung ein Ergebnis. Welche Fassungen es gibt und wo ihre Daten liegen, steht
-unter `fassungen` in `einstellungen/seite.json`: A „Feste Kategorienliste“ liest `vorstufe/`, B
-„Kategorien frei“ `fassung-b/`, C „Alles frei“ `fassung-c/` (je neben dem Manifest, darin
-`<teilkachel>/labels.tif`, `segmente.json` und für B und C eine eigene `kategorien.json`). Liegt
-das Ergebnis woanders (etwa die korrigierte Fassung A), nennt eine eigene Datei mit dem Schlüssel
-`fassungen` die Ordner: `seite … --einstellungen <datei.json>`.
+Die Seite zeigt je Fassung ein Ergebnis. Welche Fassungen es gibt, in welcher Reihenfolge und wo
+ihre Daten liegen, steht unter `fassungen` in `einstellungen/seite.json`; die Seite öffnet mit der
+ersten Fassung mit Daten:
+
+| Kennung | Name | Ordner neben dem Manifest | Kategorienliste |
+|---|---|---|---|
+| A | Alles frei | `a-alles-frei/` | eigene, `a-alles-frei/kategorien-a.json` |
+| B | Kategorien frei | `b-kategorien-frei/` | eigene, `b-kategorien-frei/kategorien-b.json` |
+| C | Feste Kategorienliste | `c-feste-liste/` | die Liste des Aufrufs (`--kategorien`, Standard `kategorien.json` des Repos) |
+
+In jedem Ordner liegt je Teilkachel `<teilkachel>/labels.tif` und `segmente.json`. Nach der
+Vorstufe hat noch keine Fassung Daten: Die Vorstufe ist der Ausgang von B und C (Kopie von
+`vorstufe/<teilkachel>/` nach `c-feste-liste/<teilkachel>/`, dann das Urteil), oder man zeigt sie
+mit einer eigenen Fassungsliste. Liegt ein Ergebnis woanders, nennt eine eigene Datei mit dem
+Schlüssel `fassungen` die Ordner: `seite … --einstellungen <datei.json>`.
 
 ## Befehle
 
@@ -100,7 +110,7 @@ Kern 500 und Kontextrand 64:
 
 ```
 PY -m landseg kacheln --bild ../daten/luftbilder/orthofoto-aktuell/0009626524_100_Orthophoto_aktuell_5236-56.tif \
-   --x 2000 --y 2400 --breite 1000 --hoehe 1000 --kern 500 --rand 64 --name T0 --ziel ../daten/landseg/T0/kern500
+   --x 2000 --y 2400 --breite 1000 --hoehe 1000 --kern 500 --rand 64 --name T0 --ziel <ausschnitt>
 ```
 
 Ergebnis: `T0.png` (ganzer Ausschnitt), `teilkacheln/r<zeile>c<spalte>.png` (Kern plus Rand, Rand
@@ -114,7 +124,7 @@ Braucht die GPU (SAM 3, Modell `facebook/sam3` aus dem Zwischenspeicher von Hugg
 belegt, den Befehl später wiederholen; auf der CPU rechnet die Vorstufe nicht.
 
 ```
-PY -m landseg vorstufe --manifest ../daten/landseg/T0/kern500/manifest.json --teilkachel r0c0
+PY -m landseg vorstufe --manifest <ausschnitt>/manifest.json --teilkachel r0c0
 ```
 
 Ohne `--teilkachel` laufen alle Teilkacheln des Manifests: SAM 3 Teilkachel nach Teilkachel auf der
@@ -140,7 +150,7 @@ Einstellungen.
 ### ansicht
 
 ```
-PY -m landseg ansicht --manifest ../daten/landseg/T0/kern500/manifest.json --teilkachel r0c0    --labels <labels.tif> --segmente <segmente.json> --ziel ../daten/landseg/T0/kern500/ansicht/r0c0
+PY -m landseg ansicht --manifest <ausschnitt>/manifest.json --teilkachel r0c0    --labels <labels.tif> --segmente <segmente.json> --ziel <ausschnitt>/ansicht/r0c0
 ```
 
 Schreibt `teilkachel/<art>.png` (roh, umriss, maengel, vorschlag, kontrast, gitter) und je Segment

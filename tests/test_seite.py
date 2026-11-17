@@ -61,21 +61,22 @@ class SeiteTest(unittest.TestCase):
                 {"id": ids[t["id"]], "klasse": klasse[t["id"]], "grob": klasse[t["id"]].split(".")[0], "sicher": "nein"}],
                 "verlauf": [{"nr": 1, "op": "klasse", "bearbeiter": "test", "parameter": {"id": ids[t["id"]]}}]})
 
-    def vorstufe(self, **kw):
-        self.stand(self.t / "vorstufe", {"r0c0": 1001, "r0c1": 2001}, {"r0c0": "1.1", "r0c1": "3.1.1"}, **kw)
+    def feste_liste(self, **kw):
+        """Fassung C (feste Kategorienliste): Klassen aus der Liste des Aufrufs, eine Naht ohne Bildkante."""
+        self.stand(self.t / "c-feste-liste", {"r0c0": 1001, "r0c1": 2001}, {"r0c0": "1.1", "r0c1": "3.1.1"}, **kw)
 
     def fassung_b(self, mit_liste: bool = True):
         """Freie Fassung B mit eigener, zweistufiger Kategorienliste und einem Segment über beide Teilkacheln."""
-        ordner = self.t / "fassung-b"
+        ordner = self.t / "b-kategorien-frei"
         self.stand(ordner, {"r0c0": 7, "r0c1": 7}, {"r0c0": "w.1", "r0c1": "w.1"})
         if mit_liste:
-            dateien.schreibe_json(ordner / "kategorien.json", {"classes": [
+            dateien.schreibe_json(ordner / "kategorien-b.json", {"classes": [
                 {"code": "w", "name": "Wasser frei", "parent": None, "level": 1, "color": "#2060ff"},
                 {"code": "w.1", "name": "Teich frei", "parent": "w", "level": 2, "color": "#40a0ff"}]})
         return ordner
 
     def test_fassungen_mit_eigener_liste(self):
-        self.vorstufe()
+        self.feste_liste()
         self.fassung_b()
         ziel = self.t / "seite" / "TX.html"
         erg = seite(self.t / "manifest.json", ziel, self.kat)
@@ -87,16 +88,16 @@ class SeiteTest(unittest.TestCase):
         self.assertEqual([t["id"] for t in d["teilkacheln"]], ["r0c0", "r0c1"])
         self.assertNotIn("nachher", json.dumps(d))
         a, b, c = d["fassungen"]
-        self.assertEqual([a["kennung"], b["kennung"], c["kennung"]], ["A", "B", "C"])
-        self.assertEqual([a["vorhanden"], b["vorhanden"], c["vorhanden"]], [True, True, False])
-        self.assertEqual(c["name"], "Alles frei")
-        self.assertTrue(c["beschreibung"])
-        self.assertNotIn("kategorien", c)
-        # A: Klassen aus der Liste des Aufrufs; verschiedene IDs an der Kerngrenze ohne Bildkante -> Nahtverstoß
-        self.assertEqual({k["code"] for k in a["kategorien"]}, set(self.kat.klassen))
-        self.assertEqual([e["klassen"] for e in a["ebenen"]], [3, 3, 3])  # Blätter zählen auf feineren Ebenen mit
-        self.assertEqual(a["ebenen"][0]["name"], "grob")
-        links = a["teilkacheln"]["r0c0"]
+        self.assertEqual([(f["kennung"], f["name"]) for f in (a, b, c)],
+                         [("A", "Alles frei"), ("B", "Kategorien frei"), ("C", "Feste Kategorienliste")])
+        self.assertEqual([a["vorhanden"], b["vorhanden"], c["vorhanden"]], [False, True, True])
+        self.assertTrue(a["beschreibung"])
+        self.assertNotIn("kategorien", a)
+        # C: Klassen aus der Liste des Aufrufs; verschiedene IDs an der Kerngrenze ohne Bildkante -> Nahtverstoß
+        self.assertEqual({k["code"] for k in c["kategorien"]}, set(self.kat.klassen))
+        self.assertEqual([e["klassen"] for e in c["ebenen"]], [3, 3, 3])  # Blätter zählen auf feineren Ebenen mit
+        self.assertEqual(c["ebenen"][0]["name"], "grob")
+        links = c["teilkacheln"]["r0c0"]
         self.assertEqual(len(links["naht"]), 1)
         kx = d["teilkacheln"][0]["kontext"]["x"]
         self.assertEqual(links["naht"][0]["von"][0], self.manifest["teilkacheln"][1]["kern"]["x"] - kx)
@@ -109,23 +110,23 @@ class SeiteTest(unittest.TestCase):
         self.assertEqual([(k["code"], k["name"], k["color"]) for k in b["kategorien"]],
                          [("w", "Wasser frei", "#2060ff"), ("w.1", "Teich frei", "#40a0ff")])
         self.assertEqual([(e["name"], e["klassen"]) for e in b["ebenen"]], [("grob", 1), ("mittel", 1)])
-        self.assertTrue(b["kategorien_quelle"].endswith("fassung-b/kategorien.json"))
+        self.assertTrue(b["kategorien_quelle"].endswith("b-kategorien-frei/kategorien-b.json"))
         self.assertTrue(b["teilkacheln"]["r0c0"]["pruefen"]["ok"])
         self.assertTrue((ids_aus_png(b["gesamt"]) == 7).all())
         self.assertEqual([(f["kennung"], f["vorhanden"], f.get("naht")) for f in erg["fassungen"]],
-                         [("A", True, 1), ("B", True, 0), ("C", False, None)])
+                         [("A", False, None), ("B", True, 0), ("C", True, 1)])
 
     def test_luecke(self):
-        self.vorstufe(luecke=True)
+        self.feste_liste(luecke=True)
         d = seite_daten(self.t / "manifest.json", self.kat)
-        befund = d["fassungen"][0]["teilkacheln"]["r0c0"]["pruefen"]
+        befund = d["fassungen"][2]["teilkacheln"]["r0c0"]["pruefen"]
         self.assertFalse(befund["ok"])
         self.assertEqual(befund["ohne_segment"], 4)
 
     def test_fehlende_teilkachel_naht_nicht_geprueft(self):
-        self.vorstufe()
-        (self.t / "vorstufe" / "r0c1" / "labels.tif").unlink()
-        a = seite_daten(self.t / "manifest.json", self.kat)["fassungen"][0]
+        self.feste_liste()
+        (self.t / "c-feste-liste" / "r0c1" / "labels.tif").unlink()
+        a = seite_daten(self.t / "manifest.json", self.kat)["fassungen"][2]
         self.assertIsNone(a["teilkacheln"]["r0c1"])
         self.assertIsNone(a["naht"])
         self.assertIsNone(a["gesamt"])
@@ -134,15 +135,15 @@ class SeiteTest(unittest.TestCase):
         b = self.fassung_b()
         werte = {**einstellungen.laden("seite"), "fassungen": [
             {"kennung": "A", "name": "fest", "ordner": "vorstufe"},
-            {"kennung": "P", "name": "Probe", "beschreibung": "nur Probe", "ordner": str(b), "kategorien": "kategorien.json"}]}
+            {"kennung": "P", "name": "Probe", "beschreibung": "nur Probe", "ordner": str(b), "kategorien": "kategorien-b.json"}]}
         d = seite_daten(self.t / "manifest.json", self.kat, werte=werte)
         self.assertEqual([(f["kennung"], f["vorhanden"]) for f in d["fassungen"]], [("A", False), ("P", True)])
         self.assertEqual(d["fassungen"][1]["beschreibung"], "nur Probe")
 
     def test_einbettung_sicher(self):
-        self.vorstufe()
+        self.feste_liste()
         kommentare = self.ordner / "k.json"
-        kommentare.write_text(json.dumps({"kommentare": [{"nr": 1, "fassung": "A", "teilkachel": "r0c0", "segment": 1001,
+        kommentare.write_text(json.dumps({"kommentare": [{"nr": 1, "fassung": "C", "teilkachel": "r0c0", "segment": 1001,
                                                           "text": "</script><b>x</b>"}]}), encoding="utf-8")
         ziel = self.ordner / "s.html"
         seite(self.t / "manifest.json", ziel, self.kat, kommentare=kommentare)
@@ -153,7 +154,7 @@ class SeiteTest(unittest.TestCase):
     def test_fehler(self):
         with self.assertRaises(SeiteFehler):
             seite_daten(self.t / "manifest.json", self.kat)  # keine Fassung mit Daten
-        self.vorstufe()
+        self.feste_liste()
         with self.assertRaises(SeiteFehler):
             seite(self.t / "manifest.json", self.ordner / "s.txt", self.kat)
         self.fassung_b(mit_liste=False)
@@ -169,8 +170,11 @@ class SeiteTest(unittest.TestCase):
             labels_als_rgb(np.array([[2 ** 24]], np.uint32))
 
     def test_einstellungen_und_befehl(self):
-        self.assertEqual([f["kennung"] for f in einstellungen.laden("seite")["fassungen"]], ["A", "B", "C"])
-        self.vorstufe()
+        # Reihenfolge der Umschalter = Reihenfolge der Liste; die Seite öffnet mit der ersten (A Alles frei)
+        self.assertEqual([(f["kennung"], f["name"], f["ordner"]) for f in einstellungen.laden("seite")["fassungen"]],
+                         [("A", "Alles frei", "a-alles-frei"), ("B", "Kategorien frei", "b-kategorien-frei"),
+                          ("C", "Feste Kategorienliste", "c-feste-liste")])
+        self.feste_liste()
         ziel = self.ordner / "aus" / "s.html"
         puffer = io.StringIO()
         with redirect_stdout(puffer):
@@ -179,8 +183,9 @@ class SeiteTest(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertTrue(ziel.exists())
         text = puffer.getvalue()
-        self.assertIn("Fassung A (Feste Kategorienliste): r0c0 1 Segmente, pruefen ok; r0c1 1 Segmente, pruefen ok; "
+        self.assertIn("Fassung C (Feste Kategorienliste): r0c0 1 Segmente, pruefen ok; r0c1 1 Segmente, pruefen ok; "
                       "Nahtverstöße 1", text)
+        self.assertIn("Fassung A (Alles frei): keine Daten", text)
         self.assertIn("Fassung B (Kategorien frei): keine Daten", text)
         self.assertEqual(main(["seite", "--manifest", str(self.t / "manifest.json"), "--ziel", str(self.ordner / "x.txt")]), 2)
 

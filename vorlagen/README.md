@@ -22,13 +22,13 @@ Die Vorlagen enthalten keine Pfade dieses Rechners und keinen Einzelfall: Alles 
 |---|---|---|
 | `{{PY}}` | Python-Interpreter mit numpy, Pillow, OpenCV, scipy, tifffile (README, „Umgebung“) | Python des venv |
 | `{{REPO}}` | Ordner des Repos landseg; Befehle `{{PY}} -m landseg …` laufen dort | Ordner des Repos |
-| `{{DATEN}}` | Ordner des Ausschnitts mit `manifest.json` (eingefrorener Stand, nur lesen) | `…/daten/landseg/T0/kern500` |
+| `{{DATEN}}` | Ordner des Ausschnitts mit `manifest.json` (eingefrorener Stand, nur lesen) | `…/daten/landseg/T0/<lauf>` |
 | `{{TEILKACHEL}}` | Kennung der Teilkachel aus dem Manifest | `r0c1` |
 | `{{LABELS}}` | Label-Karte, von der der Agent ausgeht (relativ zu `{{DATEN}}`) | `vorstufe/r0c1/labels.tif` |
 | `{{SEGMENTE}}` | `segmente.json` dazu (relativ zu `{{DATEN}}`) | `vorstufe/r0c1/segmente.json` |
 | `{{URTEIL}}` | bestätigtes `urteil.json` der Teilkachel (relativ zu `{{DATEN}}`) | `urteil/r0c1/urteil.json` |
 | `{{ABWEICHUNGEN}}` | was der Nutzer an den Vorlagen anders will, wörtlich, sonst „keine“ | „Segment 17 ist Rain, nicht Weg“ |
-| `{{ERGEBNIS}}` | eigener Ergebnisordner des Agents (leer, nur er schreibt dort) | `…/T0/kern500/umsetzen/r0c1` |
+| `{{ERGEBNIS}}` | eigener Ergebnisordner des Agents (leer, nur er schreibt dort) | `…/T0/<lauf>/umsetzen/r0c1` |
 | `{{BEARBEITER}}` | Name des Agents im Verlauf der Eingriffe | `ums-r0c1` |
 | `{{RUNDE}}` | Nummer der Runde, die der Agent abgibt (Umsetzen 0, Korrektur und Naht ab 1) | `1` |
 | `{{KOMMENTARE}}` | Kommentare des Nutzers für diesen Agent, wörtlich mit Kennung | `K3: „Hecke reicht bis zum Weg“` |

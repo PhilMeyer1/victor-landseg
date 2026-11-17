@@ -1,15 +1,15 @@
 {
-  "beschreibung": "W8 seite: Voreinstellungen, Fassungen und Farben der Übersichtsseite. Längen in Bildpunkten der Teilkachel, Deckkraft 0 bis 1. fassungen: je Fassung kennung, name, beschreibung, ordner (relativ zum Ordner des Manifests, darin <teilkachel>/labels.tif und segmente.json) und kategorien (eigene Kategorienliste im Format von kategorien.json, relativ zum Ordner der Fassung; null = die Liste des Aufrufs, Standard kategorien.json des Repos). Eine Fassung ohne Daten erscheint ausgegraut.",
+  "beschreibung": "W8 seite: Voreinstellungen, Fassungen und Farben der Übersichtsseite. Längen in Bildpunkten der Teilkachel, Deckkraft 0 bis 1. fassungen: je Fassung kennung, name, beschreibung, ordner (relativ zum Ordner des Manifests, darin <teilkachel>/labels.tif und segmente.json) und kategorien (eigene Kategorienliste im Format von kategorien.json, relativ zum Ordner der Fassung; null = die Liste des Aufrufs, Standard kategorien.json des Repos). Reihenfolge der Liste = Reihenfolge der Umschalter; die Seite öffnet mit der ersten Fassung. Eine Fassung ohne Daten erscheint ausgegraut.",
   "fassungen": [
-    {"kennung": "A", "name": "Feste Kategorienliste",
-     "beschreibung": "Flächen nach der festen Kategorienliste des Projekts (geordnet nach Bedeckung).",
-     "ordner": "vorstufe", "kategorien": null},
+    {"kennung": "A", "name": "Alles frei",
+     "beschreibung": "Eigene Kategorien, eigene Grenzen und eigene Arbeitsweise der KI je Teilkachel, ohne feste Regeln; Liste danach zusammengelegt.",
+     "ordner": "a-alles-frei", "kategorien": "kategorien-a.json"},
     {"kennung": "B", "name": "Kategorien frei",
-     "beschreibung": "Die KI benennt und stuft die Flächen selbst, sonst gleiche Arbeitsweise wie A.",
-     "ordner": "fassung-b", "kategorien": "kategorien.json"},
-    {"kennung": "C", "name": "Alles frei",
-     "beschreibung": "Eigene Kategorien und eigene Arbeitsweise der KI, ohne feste Regeln.",
-     "ordner": "fassung-c", "kategorien": "kategorien.json"}
+     "beschreibung": "Die KI benennt und stuft die Flächen selbst, sonst gleiche Arbeitsweise wie C (Grenzen der Vorstufe, Urteil Segment für Segment).",
+     "ordner": "b-kategorien-frei", "kategorien": "kategorien-b.json"},
+    {"kennung": "C", "name": "Feste Kategorienliste",
+     "beschreibung": "Flächen nach der festen Kategorienliste des Projekts (geordnet nach Bedeckung), Urteil der KI Segment für Segment auf den Grenzen der Vorstufe.",
+     "ordner": "c-feste-liste", "kategorien": null}
   ],
   "ebenen_namen": {"1": "grob", "2": "mittel", "3": "fein"},
   "start_ebene": 3,
