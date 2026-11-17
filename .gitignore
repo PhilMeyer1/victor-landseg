@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .venv/
+# Original-Luftbilder kommen getrennt; hier nur ihre Beschreibung versionieren
+/daten/luftbilder/*
+!/daten/luftbilder/README.md
+# eigene Rechnungen nach der Anleitung
+/arbeit/
