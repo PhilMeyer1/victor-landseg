@@ -4,7 +4,8 @@ Usage: python -I tools/pruefe_kategorien.py kategorien.json
 
 Checks: required fields, unique codes, code/level/parent consistency, every parent present,
 level-1 codes 0..6, valid and pairwise distinct colours with a minimum CIELAB distance,
-bw values, mapping lists, counts per level and leaves, rules G1..G5 / U1..U5, status notes.
+bw values, mapping lists, counts per level and leaves, rules G1..G5 / U1..U5, status notes,
+the Bericht-48 rule (field "bericht48" of a rule: existing classes, target on level 1).
 Prints the counts and "ok" (exit 0) or the list of errors (exit 1).
 """
 
@@ -131,6 +132,23 @@ def check(doc):
     for prefix, nums in numbers.items():
         if sorted(nums) != list(range(1, len(nums) + 1)):
             errors.append(f"{prefix} rules not numbered 1..n without gaps: {sorted(nums)}")
+    b48 = [r for r in rules if isinstance(r, dict) and "bericht48" in r]
+    if len(b48) != 1:
+        errors.append(f"expected exactly one rule with field 'bericht48', found {len(b48)}")
+    else:
+        regel = b48[0]["bericht48"]
+        auswahl = regel.get("im_siedlung_klassen") if isinstance(regel, dict) else None
+        ziel = regel.get("im_siedlung_ziel") if isinstance(regel, dict) else None
+        if not isinstance(auswahl, list) or not auswahl:
+            errors.append("bericht48.im_siedlung_klassen missing or empty")
+            auswahl = []
+        for code in auswahl:
+            if code not in codes:
+                errors.append(f"bericht48.im_siedlung_klassen: class {code!r} not present")
+        if ziel not in codes or codes[ziel]["level"] != 1:
+            errors.append(f"bericht48.im_siedlung_ziel {ziel!r} is not a level-1 class")
+        elif ziel in auswahl:
+            errors.append("bericht48.im_siedlung_ziel must not be one of im_siedlung_klassen")
     counts["rules_g"] = len(numbers["G"])
     counts["rules_u"] = len(numbers["U"])
 

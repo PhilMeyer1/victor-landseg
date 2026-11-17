@@ -8,13 +8,13 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 
 | Pfad | Was |
 |---|---|
-| `kategorien.json` | Kategorienliste, maschinenlesbar: 7 grobe Klassen (Codes 0 bis 6), 25 auf Ebene 2, 46 feinste Klassen; je Klasse Code, Name, Elternklasse, Ebene, Farbe, SW-Kennzeichen und Abbildungen auf CORINE, CLC+, FLAIR, DKM und Bericht 48; dazu die Regeln G1–G5 und U1–U5 und die Abweichungen A1–A4 |
+| `kategorien.json` | Kategorienliste, maschinenlesbar: 7 grobe Klassen (Codes 0 bis 6), 25 auf Ebene 2, 43 feinste Klassen; je Klasse Code, Name, Elternklasse, Ebene, Farbe, SW-Kennzeichen und Abbildungen auf CORINE, CLC+, FLAIR, DKM und Bericht 48; dazu die Regeln G1–G5 und U1–U5 und die Abweichungen A1–A4 |
 | `KATEGORIEN.md` | Erklärung der Kategorienliste in Alltagssprache: Aufbau, Klassentabelle, Regeln, Abweichungen von Bericht 48, was noch ungesichert ist |
 | `tools/pruefe_kategorien.py` | Prüfskript für `kategorien.json` (nur Python-Standardbibliothek) |
 | `landseg/` | Python-Paket mit den Werkzeugen, ein Modul je Werkzeug; Befehlszeile `python -m landseg <befehl>` |
 | `landseg/kacheln.py` | W1 `kacheln`: Arbeitsausschnitt aus einem Luftbild, Teilkacheln (Kern + Kontextrand), Manifest mit Georeferenz |
 | `landseg/vorstufe.py`, `landseg/sam3.py` | W2 `vorstufe`: lückenlose Vorbelegung einer Teilkachel (Superpixel, SAM 3 mit Text je Kategorie, Semantik-argmax), mit Sicherheit je Segment und Kandidatenliste |
-| `vorstufe.json` | Einstellungen der Vorstufe: Superpixel-Größe, SAM-3-Modell und -Schwellen, Texte je Kategorie, Schwellen für `sicher` und die Kandidaten |
+| `vorstufe.json` | Einstellungen der Vorstufe: Superpixel-Größe, SAM-3-Modell und -Schwellen, Texte je Kategorie, Schwellen für `sicher` und die Kandidaten, Siedlungszone für `im_siedlung` (Abschnitt `siedlung`) |
 | `landseg/ansicht.py` | W3 `ansicht`: Standardbilder je Teilkachel und je Segment (roh, umriss, maengel, vorschlag, nah, kontrast, gitter) mit Verzeichnis `ansicht.json` |
 | `landseg/kante.py` | W4 `kante`: Grenze zweier Nachbarsegmente im engen Band auf die Bildkante einrasten; Strecken ohne Bildkante bleiben stehen und werden als „geschätzt“ gemeldet |
 | `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
@@ -45,6 +45,11 @@ unten kurz `PY`. Aufruf immer im Repo-Ordner, damit Python das Paket `landseg` f
   Bearbeiter.
 - **Sicherheit** (`sicher: ja | nein` in `segmente.json`, von der Vorstufe): ob der Klassenvorschlag
   die Schwellen aus `vorstufe.json` erreicht; `nein` heißt „Klasse prüfen“, nicht „falsch“.
+- **Im Siedlungsgebiet** (`im_siedlung: ja | nein` in `segmente.json`, von der Vorstufe): ob ein
+  Segment aus Acker, Grünland oder Gehölz außerhalb Wald überwiegend nahe an Gebäuden und befestigten
+  Flächen liegt (Abschnitt `siedlung` in `vorstufe.json`). Merkmal, keine Klasse; ein Klassenwechsel
+  ändert es nicht. Für Auswertungen nach Bericht 48 macht `bericht48_klasse` in
+  `landseg/kategorien.py` daraus „1 Versiegelt / bebaut“ (`KATEGORIEN.md`, „Siedlungsgebiet und Bericht 48“).
 - **Kandidatenliste** (`kandidaten.json`, von der Vorstufe): Stellen, die das Urteil zuerst ansehen
   soll: `klasse_unsicher`, `grenze_ohne_bildkante` (zwei Segmente grenzen dort aneinander, wo das
   Bild kaum eine Kante zeigt), `nicht_zusammenhaengend` (ein Fund von SAM 3 zerfiel in mehrere
@@ -96,7 +101,7 @@ Segment.
 
 Ausgabe unter `vorstufe/<teilkachel>/` neben dem Manifest: `labels.tif`, `segmente.json` (je
 Segment `id`, `klasse`, `grob`, `herkunft` `sam3-instanz` oder `semantik`, `sicher`, `sicherheit`,
-`flaeche`, `im_kern`; unter `vorstufe` die Messung), `kandidaten.json` und `sam3_roh.npz` (Rohwerte
+`flaeche`, `im_kern`, `im_siedlung`; unter `vorstufe` die Messung), `kandidaten.json` und `sam3_roh.npz` (Rohwerte
 von SAM 3). Je Teilkachel eine Messzeile: Segmente (davon im Kern), Anteil `sicher: nein` nach Zahl
 und Fläche, Kandidaten, Befund von `pruefen`, Laufzeit. Die Segment-IDs sind im ganzen Ausschnitt
 eindeutig (Nummer der Teilkachel × `id_block` + laufende Nummer).
@@ -242,7 +247,7 @@ Im Repo-Ordner, mit dem Python des Stitcher-venv (dort nichts installieren) oder
 C:/Users/Phil/Developement/websites/nai/stitcher/.venv/Scripts/python.exe -I tools/pruefe_kategorien.py kategorien.json
 ```
 
-Ausgabe: die Zahlen je Ebene (`7/25/46`), die Zahl der Regeln (`5 G, 5 U`), der kleinste
+Ausgabe: die Zahlen je Ebene (`7/25/43`), die Zahl der Regeln (`5 G, 5 U`), der kleinste
 Farbabstand und am Ende `ok`. Bei einem Fehler nennt das Skript die Stelle und endet mit Code 1.
 
 ## Daten

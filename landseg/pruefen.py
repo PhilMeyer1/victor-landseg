@@ -2,7 +2,7 @@
 
 Geprüft wird: Form H × W (wenn erwartet), kein Bildpunkt mit ID 0, jede ID ein zusammenhängendes
 Gebiet (4er-Nachbarschaft), und mit ``segmente.json`` und Kategorienliste: jede ID der Karte hat
-genau einen Eintrag mit gültiger Klasse, kein Eintrag ohne Bildpunkte, ``grob`` passt zur Klasse.
+genau einen Eintrag mit gültiger Klasse, kein Eintrag ohne Bildpunkte, ``grob`` passt zur Klasse, ``im_siedlung`` ist ``ja``, ``nein`` oder fehlt.
 Optional: Mindestfläche je Segment.
 """
 
@@ -152,6 +152,10 @@ def _pruefe_segmente(befund: Befund, ids_karte: set[int], segmente: dict,
         if not kategorien.gueltig(klasse):
             befund.maengel.append(f"Klasse: Segment {sid} hat ungültige Klasse {klasse!r}")
             continue
+        if eintrag.get("im_siedlung", "nein") not in ("ja", "nein"):
+            befund.maengel.append(
+                f"Schema: Segment {sid} im_siedlung {eintrag['im_siedlung']!r}, erwartet 'ja' oder 'nein'"
+            )
         grob = eintrag.get("grob")
         if grob is not None and grob != kategorien.grob(klasse):
             befund.maengel.append(

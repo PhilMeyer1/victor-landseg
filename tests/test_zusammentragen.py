@@ -195,6 +195,17 @@ class ZusammentragenTest(unittest.TestCase):
             self.assertEqual(main(["naht", "--manifest", str(manifest), "--labels", str(labels), "--json"]), 1)
         self.assertEqual(json.loads(aus.getvalue())["verstoesse"][0]["ids"], [3, 7])
 
+    def test_nutzerklasse_behaelt_im_siedlung(self):
+        for einheit in self.einheiten:
+            pfad = self.ordner / "aus" / einheit["segmente"]
+            daten = dateien.lese_json(pfad)
+            for s in daten["segmente"]:
+                if s["id"] == 3:
+                    s["im_siedlung"] = "ja"
+            dateien.schreibe_json(pfad, daten)
+        ergebnis = zusammentragen(self.auftrag(nutzerklassen=[{"id": 3, "klasse": "3.1"}]), self.kat)
+        segment = next(s for s in ergebnis.segmente["segmente"] if s["id"] == 3)
+        self.assertEqual((segment["klasse"], segment["im_siedlung"]), ("3.1", "ja"))
 
 if __name__ == "__main__":
     unittest.main()

@@ -9,11 +9,12 @@ c. SAM-3-Semantikkopf mal Presence je Text, Klassenwert = bester Text der Klasse
 d. Verschmelzen: Instanzen rasten auf Superpixel ein (Mehrheit der Superpixel-Fläche in der Maske),
    übrige Superpixel bekommen die argmax-Klasse ihres Mittels und verbinden sich mit gleichklassigen
    Nachbarn. Jedes zusammenhängende Gebiet gleicher Herkunft wird ein Segment, also ist die Karte
-   lückenlos und jedes Segment zusammenhängend (per Konstruktion).
+   lückenlos und jedes Segment zusammenhängend (per Konstruktion). Danach, rein aus der fertigen
+   Karte, das Merkmal ``im_siedlung`` je Segment (Abschnitt ``siedlung`` in ``vorstufe.json``).
 e. ``pruefen``: H × W, kein 0, Zusammenhang, Klassen gültig.
 
 Ausgabe je Teilkachel: ``labels.tif`` (uint32), ``segmente.json`` (ID, Klasse fein/grob, Herkunft,
-Sicherheit), ``kandidaten.json`` (Klasse unsicher, Grenze ohne Bildkante, nicht zusammenhängend, zu
+Sicherheit, im Siedlungsgebiet), ``kandidaten.json`` (Klasse unsicher, Grenze ohne Bildkante, nicht zusammenhängend, zu
 klein) und ``sam3_roh.npz`` (Rohwerte von SAM 3; ein neuer Lauf mit gleichen SAM-3-Einstellungen
 braucht keine GPU).
 
@@ -70,9 +71,10 @@ def konfig_laden(pfad: str | Path | None, kat: Kategorien) -> dict:
     if konfig.get("schema") != KONFIG_SCHEMA:
         raise VorstufeFehler(f"{pfad}: schema {konfig.get('schema')!r}, erwartet {KONFIG_SCHEMA!r}")
     for teil in ("uebersegmentierung", "sam3", "verschmelzen", "sicherheit", "kandidaten",
-                 "prompts", "id_block"):
+                 "siedlung", "prompts", "id_block"):
         if teil not in konfig:
             raise VorstufeFehler(f"{pfad}: Abschnitt {teil!r} fehlt")
+    _siedlung_pruefen(konfig["siedlung"], pfad, kat)
     gesehen = set()
     for eintrag in konfig["prompts"]:
         klasse, texte = eintrag.get("klasse"), eintrag.get("texte")
@@ -87,6 +89,20 @@ def konfig_laden(pfad: str | Path | None, kat: Kategorien) -> dict:
         raise VorstufeFehler(f"{pfad}: keine prompts")
     konfig["_pfad"] = str(pfad)
     return konfig
+
+
+def _siedlung_pruefen(einst: dict, pfad: Path, kat: Kategorien) -> None:
+    zone = einst.get("zone_klassen")
+    if not isinstance(zone, list) or not zone:
+        raise VorstufeFehler(f"{pfad}: siedlung.zone_klassen fehlt oder ist leer")
+    for klasse in zone:
+        if not kat.gueltig(klasse):
+            raise VorstufeFehler(f"{pfad}: siedlung.zone_klassen: Klasse {klasse!r} fehlt in {kat.pfad.name}")
+    for schluessel, unten, oben in (("puffer_m", 0.0, None), ("anteil", 0.0, 1.0), ("bildpunkt_m", 0.0, None)):
+        wert = einst.get(schluessel)
+        if (not isinstance(wert, (int, float)) or isinstance(wert, bool) or wert < unten
+                or (oben is not None and wert > oben) or (schluessel != "puffer_m" and wert <= 0)):
+            raise VorstufeFehler(f"{pfad}: siedlung.{schluessel} {wert!r} ungültig")
 
 
 def fingerabdruck(daten) -> str:
@@ -204,6 +220,45 @@ def grenzen(labels: np.ndarray, staerke: np.ndarray) -> list[tuple[int, int, int
             for p, n, s in zip(paare, laenge, summe)]
 
 
+def bildpunkt_aus_transform(transform: dict | None) -> float | None:
+    """Kantenlänge eines Bildpunkts in Metern aus ``X = a·x + b·y + c``, ``Y = d·x + e·y + f``."""
+    if not transform:
+        return None
+    flaeche = abs(transform["a"] * transform["e"] - transform["b"] * transform["d"])
+    return float(np.sqrt(flaeche)) if flaeche > 0 else None
+
+
+def siedlung_merkmal(labels: np.ndarray, segmente: list[dict], einst: dict, kat: Kategorien,
+                     bildpunkt_m: float | None = None) -> int:
+    """Setzt ``im_siedlung: ja | nein`` je Segment aus der fertigen Karte; Rückgabe: Zahl ``ja``.
+
+    Siedlungszone = Segmente der ``zone_klassen`` um ``puffer_m`` aufgeweitet (Abstandstransformation).
+    ``ja`` bekommt ein Segment, dessen Klasse ``kat.siedlung_moeglich`` ist und von dessen Fläche
+    mindestens ``anteil`` in der Zone liegt; alle anderen ``nein``.
+    """
+    if not segmente:
+        return 0
+    ids = np.array([int(e["id"]) for e in segmente], np.int64)
+    ordnung = np.argsort(ids)
+    nr = ordnung[np.searchsorted(ids[ordnung], labels.astype(np.int64))]  # Index je Bildpunkt
+    zone_seg = np.array([kat.unter(e["klasse"], einst["zone_klassen"]) for e in segmente])
+    zone = zone_seg[nr]
+    if zone.any():
+        meter = bildpunkt_m or float(einst["bildpunkt_m"])
+        radius = float(einst["puffer_m"]) / meter
+        zone = ndimage.distance_transform_edt(~zone) <= radius
+    n = len(segmente)
+    drin = np.bincount(nr[zone], minlength=n)
+    flaeche = np.bincount(nr.ravel(), minlength=n)
+    ja = 0
+    for i, eintrag in enumerate(segmente):
+        im = (kat.siedlung_moeglich(eintrag["klasse"]) and flaeche[i] > 0
+              and drin[i] >= float(einst["anteil"]) * flaeche[i])
+        eintrag["im_siedlung"] = "ja" if im else "nein"
+        ja += bool(im)
+    return ja
+
+
 @dataclass
 class Ergebnis:
     labels: np.ndarray
@@ -213,8 +268,12 @@ class Ergebnis:
 
 
 def verschmelzen(bild: np.ndarray, sp: np.ndarray, roh: Roh, konfig: dict, kat: Kategorien,
-                 id_start: int = 0, kern: dict | None = None) -> Ergebnis:
-    """Schritt d: Superpixel + Rohwerte -> lückenlose Label-Karte, Segmente, Kandidaten."""
+                 id_start: int = 0, kern: dict | None = None,
+                 bildpunkt_m: float | None = None) -> Ergebnis:
+    """Schritt d: Superpixel + Rohwerte -> lückenlose Label-Karte, Segmente, Kandidaten.
+
+    ``bildpunkt_m``: Bildpunktgröße für den Puffer der Siedlungszone (sonst ``siedlung.bildpunkt_m``).
+    """
     h, w = sp.shape
     if roh.werte.shape[1:] != (h, w):
         raise VorstufeFehler(f"Rohwerte {roh.werte.shape[1:]} passen nicht zum Bild {h} × {w}")
@@ -333,6 +392,7 @@ def verschmelzen(bild: np.ndarray, sp: np.ndarray, roh: Roh, konfig: dict, kat: 
                                "laenge_px": laenge, "staerke": round(staerke, 4),
                                "grund": f"mittlere Kantenstärke {staerke:.3f} < {kd['kante_min']}"})
 
+    im_siedlung_ja = siedlung_merkmal(labels, segmente, konfig["siedlung"], kat, bildpunkt_m)
     nein = [e for e in segmente if e["sicher"] == "nein"]
     arten: dict[str, int] = {}
     for k in kandidaten:
@@ -347,6 +407,7 @@ def verschmelzen(bild: np.ndarray, sp: np.ndarray, roh: Roh, konfig: dict, kat: 
         "anteil_sicher_nein": round(len(nein) / n, 4) if n else 0.0,
         "flaeche_sicher_nein": round(sum(e["flaeche"] for e in nein) / (h * w), 4),
         "kandidaten": arten,
+        "im_siedlung_ja": im_siedlung_ja,
     }
     daten = {"schema": dateien.SEGMENTE_SCHEMA, "segmente": segmente, "verlauf": []}
     return Ergebnis(labels=labels, segmente=daten, kandidaten=kandidaten, messung=messung)
@@ -363,6 +424,7 @@ class Auftrag:
     ziel: Path  # Ordner der Ausgaben
     id_start: int = 0
     kern: dict | None = None
+    bildpunkt_m: float | None = None  # aus dem transform der Teilkachel
 
 
 def auftraege_aus_manifest(manifest_pfad: str | Path, konfig: dict,
@@ -382,7 +444,8 @@ def auftraege_aus_manifest(manifest_pfad: str | Path, konfig: dict,
         auftraege.append(Auftrag(name=t["id"], bild=ordner / t["bild"],
                                  ziel=ordner / "vorstufe" / t["id"],
                                  id_start=nr * int(konfig["id_block"]),
-                                 kern=t.get("kern_im_bild")))
+                                 kern=t.get("kern_im_bild"),
+                                 bildpunkt_m=bildpunkt_aus_transform(t.get("transform"))))
     return auftraege
 
 
@@ -418,7 +481,8 @@ def vorstufe(auftraege: list[Auftrag], konfig: dict, kat: Kategorien, modell_lad
                            t_start: float, sam3_s: float) -> dict:
         sp = sp_zukunft.result()
         t0 = time.perf_counter()
-        erg = verschmelzen(bild, sp, roh, konfig, kat, id_start=auftrag.id_start, kern=auftrag.kern)
+        erg = verschmelzen(bild, sp, roh, konfig, kat, id_start=auftrag.id_start, kern=auftrag.kern,
+                           bildpunkt_m=auftrag.bildpunkt_m)
         befund = pruefen(erg.labels, erg.segmente, kat, form=bild.shape[:2])
         erg.messung.update(hoehe=int(bild.shape[0]), breite=int(bild.shape[1]))
         sekunden = time.perf_counter() - t_start

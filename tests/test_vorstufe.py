@@ -15,7 +15,8 @@ from landseg.kacheln import kacheln
 from landseg.pruefen import pruefen
 from landseg.sam3 import entdoppeln, fenster
 from landseg.vorstufe import (Instanz, Roh, VorstufeFehler, auftraege_aus_manifest, grenzen,
-                              konfig_laden, uebersegmentierung, verschmelzen, vorstufe)
+                              bildpunkt_aus_transform, konfig_laden, siedlung_merkmal,
+                              uebersegmentierung, verschmelzen, vorstufe)
 
 KAT = kategorien.laden()
 
@@ -250,6 +251,80 @@ class AblaufTest(unittest.TestCase):
         self.assertEqual(code, 2)
         self.assertIn("r9c9", fehler.getvalue())
 
+
+
+class SiedlungTest(unittest.TestCase):
+    """Merkmal im_siedlung aus der fertigen Karte und Abbildung der Suchtexte auf Klassen."""
+
+    def setUp(self):
+        self.konfig = konfig_laden(None, KAT)
+
+    @staticmethod
+    def karte():
+        """100 × 100: Haus oben links, Wiese und Baum daneben, Weg daneben, Wiese weit weg."""
+        labels = np.full((100, 100), 4, np.uint32)  # 4: übrige Wiese
+        labels[0:10, 0:10] = 1  # Haus
+        labels[0:20, 10:25] = 2  # Wiese neben dem Haus
+        labels[:, 60:] = 3  # Wiese fern (mindestens 50 Bildpunkte vom Haus)
+        labels[10:20, 0:10] = 5  # unbefestigter Weg neben dem Haus
+        labels[20:25, 0:10] = 6  # Gartenbaum neben dem Haus
+        segmente = [{"id": 1, "klasse": "1.1.1"}, {"id": 2, "klasse": "3.1"}, {"id": 3, "klasse": "3.1"},
+                    {"id": 4, "klasse": "3.1"}, {"id": 5, "klasse": "6.6"}, {"id": 6, "klasse": "4.2.1"}]
+        return labels, segmente
+
+    def test_wiese_neben_haus_ja_fern_nein_haus_nein(self):
+        labels, segmente = self.karte()
+        self.assertEqual(self.konfig["siedlung"]["puffer_m"], 20)
+        ja = siedlung_merkmal(labels, segmente, self.konfig["siedlung"], KAT, bildpunkt_m=1.0)
+        merkmal = {e["id"]: e["im_siedlung"] for e in segmente}
+        self.assertEqual(merkmal, {1: "nein", 2: "ja", 3: "nein", 4: "nein", 5: "nein", 6: "ja"})
+        self.assertEqual(ja, 2)
+
+    def test_puffer_in_metern_ueber_bildpunktgroesse(self):
+        labels, segmente = self.karte()
+        einst = dict(self.konfig["siedlung"], bildpunkt_m=0.2)  # 20 m = 100 Bildpunkte
+        siedlung_merkmal(labels, segmente, einst, KAT)
+        self.assertEqual({e["id"]: e["im_siedlung"] for e in segmente}[3], "ja")
+        self.assertAlmostEqual(bildpunkt_aus_transform({"a": 0.2, "b": 0.0, "c": 5.0, "d": 0.0,
+                                                        "e": -0.2, "f": 9.0}), 0.2)
+        self.assertIsNone(bildpunkt_aus_transform(None))
+
+    def test_ohne_siedlungszone_alles_nein(self):
+        labels, segmente = self.karte()
+        segmente[0]["klasse"] = "3.1"
+        self.assertEqual(siedlung_merkmal(labels, segmente, self.konfig["siedlung"], KAT, 1.0), 0)
+        self.assertEqual({e["im_siedlung"] for e in segmente}, {"nein"})
+
+    def test_verschmelzen_setzt_merkmal_je_segment(self):
+        konfig = test_konfig()
+        bild = test_bild()
+        sp = uebersegmentierung(bild, konfig["uebersegmentierung"])
+        roh = FalschesModell().berechne(bild, [e["klasse"] for e in konfig["prompts"]], [])
+        erg = verschmelzen(bild, sp, roh, konfig, KAT, bildpunkt_m=0.2)
+        nach_klasse = {e["klasse"]: e["im_siedlung"] for e in erg.segmente["segmente"]}
+        self.assertEqual(nach_klasse, {"1.1.1": "nein", "2.1": "ja", "3.1": "ja"})
+        self.assertEqual(erg.messung["im_siedlung_ja"], 2)
+        befund = pruefen(erg.labels, erg.segmente, KAT, form=(60, 80))
+        self.assertTrue(befund.ok, befund.maengel)
+
+    def test_konfig_siedlung_ungueltig_scheitert(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            daten = json.loads(Path(self.konfig["_pfad"]).read_text(encoding="utf-8"))
+            daten["siedlung"]["anteil"] = 1.5
+            pfad = Path(tmp) / "v.json"
+            pfad.write_text(json.dumps(daten), encoding="utf-8")
+            with self.assertRaises(VorstufeFehler):
+                konfig_laden(pfad, KAT)
+
+    def test_suchtexte_nach_bedeckung(self):
+        klasse_je_text = {t: e["klasse"] for e in self.konfig["prompts"] for t in e["texte"]}
+        erwartet = {"lawn": ("3.1", "3"), "meadow": ("3.1", "3"), "vegetable garden": ("2.1", "2"),
+                    "dirt path": ("6.6", "6"), "dirt road": ("6.6", "6"), "tree": ("4.2.1", "4"),
+                    "hedge": ("4.2.3", "4"), "bush": ("4.2.4", "4")}
+        for text, (klasse, grob) in erwartet.items():
+            self.assertEqual((klasse_je_text[text], KAT.grob(klasse_je_text[text])), (klasse, grob), text)
+        for klasse in klasse_je_text.values():
+            self.assertFalse(KAT.unter(klasse, ("1.4", "1.2.3")), klasse)
 
 if __name__ == "__main__":
     unittest.main()

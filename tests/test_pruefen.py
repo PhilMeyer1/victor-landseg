@@ -107,5 +107,24 @@ class PruefenTest(unittest.TestCase):
         np.testing.assert_array_equal(gelesen, karte)
 
 
+
+class PruefenKategorienDesReposTest(unittest.TestCase):
+    def test_alte_codes_und_falsches_merkmal_gemeldet(self):
+        kat = kategorien.laden()
+        karte, segmente = beispiel_karte()
+        self.assertTrue(pruefen(karte, segmente, kat).ok)
+        for alt in ("1.4", "1.4.1", "1.4.2", "1.4.3", "1.2.3"):
+            daten = copy.deepcopy(segmente)
+            daten["segmente"][1].update(klasse=alt, grob="1")
+            befund = pruefen(karte, daten, kat)
+            self.assertIn(f"Klasse: Segment 2 hat ungültige Klasse {alt!r}", befund.maengel)
+        daten = copy.deepcopy(segmente)
+        daten["segmente"][1]["im_siedlung"] = "ja"
+        self.assertTrue(pruefen(karte, daten, kat).ok)
+        daten["segmente"][1]["im_siedlung"] = "vielleicht"
+        befund = pruefen(karte, daten, kat)
+        self.assertFalse(befund.ok)
+        self.assertTrue(any("im_siedlung" in m for m in befund.maengel), befund.maengel)
+
 if __name__ == "__main__":
     unittest.main()

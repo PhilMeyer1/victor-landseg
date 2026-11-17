@@ -204,5 +204,17 @@ class EingriffTest(unittest.TestCase):
             self.assertEqual(main(basis + ["klasse", "--id", "4", "--klasse", "1"]), 0)
 
 
+
+class MerkmalTest(unittest.TestCase):
+    def test_klasse_setzen_behaelt_im_siedlung(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            kat = beispiel_kategorien(Path(tmp))
+            karte, segmente = beispiel_karte()
+            segmente["segmente"][2]["im_siedlung"] = "ja"
+            arbeit = Bearbeitung(karte, segmente, kat, "test")
+            arbeit.klasse_setzen(3, "3.1")
+            eintrag = {s["id"]: s for s in arbeit.segmente["segmente"]}[3]
+            self.assertEqual((eintrag["klasse"], eintrag["im_siedlung"]), ("3.1", "ja"))
+
 if __name__ == "__main__":
     unittest.main()

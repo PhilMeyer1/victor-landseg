@@ -10,7 +10,7 @@
   "counts": {
     "level_1": 7,
     "level_2": 25,
-    "leaves": 46,
+    "leaves": 43,
     "rules_g": 5,
     "rules_u": 5
   },
@@ -291,31 +291,6 @@
       }
     },
     {
-      "code": "1.2.3",
-      "name": "Weg, unbefestigt (Feld-, Wald-, Schotterweg)",
-      "parent": "1.2",
-      "level": 3,
-      "color": "#e12db7",
-      "image_cue": "Fahrspuren, Mittelstreifen",
-      "bw": "eing.",
-      "mappings": {
-        "corine": [],
-        "clc_plus": [
-          "9"
-        ],
-        "flair": [
-          "2 pervious"
-        ],
-        "dkm": [
-          "Forststraßen",
-          "Verkehrsrandflächen"
-        ],
-        "bericht48": []
-      },
-      "deviation": "A3",
-      "deviation_note": "Nicht versiegelt; steht nach Entscheidung F5 trotzdem unter Verkehrsfläche."
-    },
-    {
       "code": "1.2.4",
       "name": "Platz / Parkplatz / Hoffläche versiegelt",
       "parent": "1.2",
@@ -490,121 +465,6 @@
           "Freizeitflächen"
         ],
         "bericht48": []
-      }
-    },
-    {
-      "code": "1.4",
-      "name": "Siedlungsgrün (Hausgärten, Parks, Friedhöfe)",
-      "parent": "1",
-      "level": 2,
-      "color": "#6f2049",
-      "image_cue": "Grünfläche innerhalb bebauter Grundstücke",
-      "bw": "eing.",
-      "mappings": {
-        "corine": [
-          "1.4.1"
-        ],
-        "clc_plus": [
-          "6",
-          "2",
-          "3"
-        ],
-        "flair": [
-          "2",
-          "10"
-        ],
-        "dkm": [
-          "Gärten",
-          "Freizeitflächen",
-          "Friedhöfe"
-        ],
-        "bericht48": [
-          "Hausgärten „als Teil der Siedlung“"
-        ]
-      }
-    },
-    {
-      "code": "1.4.1",
-      "name": "Rasen / krautiges Siedlungsgrün",
-      "parent": "1.4",
-      "level": 3,
-      "color": "#ed215b",
-      "image_cue": "fein, gleichmäßig, im Grundstück",
-      "bw": "eing.",
-      "mappings": {
-        "corine": [
-          "1.4.1"
-        ],
-        "clc_plus": [
-          "6"
-        ],
-        "flair": [
-          "2 pervious",
-          "10"
-        ],
-        "dkm": [
-          "Gärten"
-        ],
-        "bericht48": [
-          "Hausgärten"
-        ]
-      }
-    },
-    {
-      "code": "1.4.2",
-      "name": "Gartenbeet / Hausgemüsegarten",
-      "parent": "1.4",
-      "level": 3,
-      "color": "#84230b",
-      "image_cue": "kleine Streifen, offener Boden",
-      "bw": "eing.",
-      "mappings": {
-        "corine": [
-          "1.4.1"
-        ],
-        "clc_plus": [
-          "7",
-          "9"
-        ],
-        "flair": [
-          "2"
-        ],
-        "dkm": [
-          "Gärten"
-        ],
-        "bericht48": [
-          "Hausgärten"
-        ]
-      }
-    },
-    {
-      "code": "1.4.3",
-      "name": "Gehölz im Siedlungsbereich (Gartenbaum, Strauch)",
-      "parent": "1.4",
-      "level": 3,
-      "color": "#f37075",
-      "image_cue": "Krone im Grundstück",
-      "bw": "eing.",
-      "mappings": {
-        "corine": [
-          "1.4.1"
-        ],
-        "clc_plus": [
-          "2",
-          "3",
-          "5"
-        ],
-        "flair": [
-          "6",
-          "7",
-          "8"
-        ],
-        "dkm": [
-          "Gärten"
-        ],
-        "bericht48": [
-          "Hausgärten"
-        ]
       }
     },
     {
@@ -1636,6 +1496,29 @@
         "bericht48": []
       },
       "bw_note": "Verwechslung mit Überstrahlung"
+    },
+    {
+      "code": "6.6",
+      "name": "Weg, unbefestigt (Feld-, Wald-, Schotterweg)",
+      "parent": "6",
+      "level": 2,
+      "color": "#a0522d",
+      "image_cue": "Fahrspuren, Mittelstreifen",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "2 pervious"
+        ],
+        "dkm": [
+          "Forststraßen",
+          "Verkehrsrandflächen"
+        ],
+        "bericht48": []
+      }
     }
   ],
   "rules": [
@@ -1643,8 +1526,16 @@
       "id": "G1",
       "kind": "grundsatz",
       "title": "Bedeckung vor Nutzung",
-      "text": "Das Segment-Label beschreibt, was in der Draufsicht zu sehen ist (CLC+, FLAIR, LUCAS LC, EAGLE LCC). Nutzung, die das Bild nicht zeigt (Wiese vs. Weide, Kulturart, Brache-Status, Widmung), kommt in eine getrennte Attributschicht aus Fremddaten (INVEKOS, DKM) — EAGLE LUA, LUCAS LU, LISA LN (B6, B7, B11). Ausnahme nach Bericht 48: Hausgärten/Siedlungsgrün werden der Siedlung zugeordnet (Kontext ist im Bild sichtbar: Grundstück mit Haus).",
-      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:87 (Quellen: CLC+, FLAIR, LUCAS, EAGLE, LISA; Bericht 48)"
+      "text": "Das Segment-Label beschreibt, was in der Draufsicht zu sehen ist (CLC+, FLAIR, LUCAS LC, EAGLE LCC). Nutzung, die das Bild nicht zeigt (Wiese vs. Weide, Kulturart, Brache-Status, Widmung), kommt in eine getrennte Attributschicht aus Fremddaten (INVEKOS, DKM) — EAGLE LUA, LUCAS LU, LISA LN (B6, B7, B11). Auch Siedlungsgrün ist keine Klasse: Rasen zählt zu Grünland (3.1), Gartenbaum, Strauch und Hecke zu Gehölz (4.2), Gartenbeet zu Acker (2.1/2.2). Ob ein Segment im Siedlungsgebiet liegt, trägt es als Merkmal `im_siedlung: ja|nein`; für Auswertungen nach Bericht 48 zählen Segmente der Klassen unter `bericht48.im_siedlung_klassen` mit `im_siedlung: ja` als `bericht48.im_siedlung_ziel` (Hausgärten „als Teil der Siedlung führen“, Bericht 48).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:87 (Quellen: CLC+, FLAIR, LUCAS, EAGLE, LISA; Bericht 48); Entscheidung „Landschafts-Kategorien: Bedeckung statt Nutzung“ (2026-11-17)",
+      "bericht48": {
+        "im_siedlung_klassen": [
+          "2",
+          "3",
+          "4.2"
+        ],
+        "im_siedlung_ziel": "1"
+      }
     },
     {
       "id": "G2",
@@ -1743,13 +1634,12 @@
     {
       "id": "A3",
       "classes": [
-        "1.2.3",
         "1.3.1"
       ],
       "decisions": [
         "F5"
       ],
-      "text": "Unbefestigte Wege (1.2.3) und künstliche Schotterflächen (1.3.1) stehen unter „Versiegelt/bebaut“, obwohl nicht versiegelt (Nutzung Verkehr dominiert). Entschieden: unbefestigte Wege zählen zur Verkehrsfläche (F5).",
+      "text": "Künstliche Schotterflächen (1.3.1) stehen unter „Versiegelt/bebaut“, obwohl nicht versiegelt (Nutzung Verkehr/Lager dominiert). Unbefestigte Wege stehen dagegen nach Bedeckung unter Offener Boden (6.6); das ersetzt für sie die Zuordnung „Verkehrsfläche“ aus F5.",
       "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:165"
     },
     {

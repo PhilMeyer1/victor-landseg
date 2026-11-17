@@ -40,6 +40,16 @@
     "_kante_min": "mittlere Gradientstärke (Grauwert 0..1, Sobel / 8) entlang einer gemeinsamen Grenze; darunter: Grenze ohne Bildkante",
     "kante_min_laenge_px": 10
   },
+  "siedlung": {
+    "zone_klassen": ["1.1", "1.2.1", "1.2.2", "1.2.4"],
+    "_zone_klassen": "Siedlungszone: Segmente dieser Klassen (samt Unterklassen; Gebäude, befestigte Verkehrs- und Hofflächen), um puffer_m aufgeweitet. Bahn (1.2.5) und sonstige künstliche Flächen (1.3) zählen nicht",
+    "puffer_m": 20,
+    "_puffer_m": "Aufweitung der Zone in Metern, umgerechnet über die Bildpunktgröße der Teilkachel (transform im Manifest). 20 m ≈ Tiefe eines Hausgartens hinter Haus oder Hof; am Test T0 nicht abgestimmt",
+    "anteil": 0.5,
+    "_anteil": "im_siedlung: ja, wenn mindestens dieser Anteil der Fläche des Segments in der aufgeweiteten Zone liegt (überwiegend); nur für Klassen aus kategorien.json, Regel G1, bericht48.im_siedlung_klassen (Acker, Grünland, Gehölz außerhalb Wald); alle anderen nein. Am Test T0 nicht abgestimmt",
+    "bildpunkt_m": 0.2,
+    "_bildpunkt_m": "Bildpunktgröße in Metern, nur wenn die Teilkachel keine Georeferenz hat (Bild ohne Manifest); sonst gilt der transform"
+  },
   "id_block": 100000,
   "_id_block": "Segment-IDs einer Teilkachel: Nummer im Manifest (ab 1) × id_block + laufende Nummer; so sind die IDs im ganzen Ausschnitt eindeutig. Ohne Manifest: laufende Nummer.",
   "arbeiter": 4,
@@ -50,21 +60,18 @@
     {"klasse": "1.1.3", "texte": ["greenhouse"]},
     {"klasse": "1.2.1", "texte": ["road"]},
     {"klasse": "1.2.2", "texte": ["paved path"]},
-    {"klasse": "1.2.3", "texte": ["dirt path", "dirt road"]},
     {"klasse": "1.2.4", "texte": ["parking lot", "paved yard"]},
     {"klasse": "1.2.5", "texte": ["railway"]},
     {"klasse": "1.3.1", "texte": ["gravel area"]},
     {"klasse": "1.3.2", "texte": ["construction site"]},
     {"klasse": "1.3.3", "texte": ["swimming pool"]},
     {"klasse": "1.3.4", "texte": ["sports field"]},
-    {"klasse": "1.4.1", "texte": ["lawn"]},
-    {"klasse": "1.4.2", "texte": ["vegetable garden"]},
-    {"klasse": "2.1", "texte": ["crop field"]},
+    {"klasse": "2.1", "texte": ["crop field", "vegetable garden"]},
     {"klasse": "2.2", "texte": ["plowed field", "bare field"]},
     {"klasse": "2.3", "texte": ["fallow field"]},
     {"klasse": "2.4.1", "texte": ["vineyard"]},
     {"klasse": "2.4.2", "texte": ["orchard"]},
-    {"klasse": "3.1", "texte": ["meadow", "grassland"]},
+    {"klasse": "3.1", "texte": ["meadow", "grassland", "lawn"]},
     {"klasse": "3.4", "texte": ["grass strip"]},
     {"klasse": "4.1", "texte": ["forest"]},
     {"klasse": "4.2.1", "texte": ["tree"]},
@@ -75,6 +82,7 @@
     {"klasse": "5.2", "texte": ["pond", "lake"]},
     {"klasse": "5.3", "texte": ["reeds"]},
     {"klasse": "6.1", "texte": ["bare soil"]},
+    {"klasse": "6.6", "texte": ["dirt path", "dirt road"]},
     {"klasse": "0.2", "texte": ["shadow"]}
   ]
 }
