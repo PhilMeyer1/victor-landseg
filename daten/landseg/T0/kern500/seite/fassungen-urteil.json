@@ -1,0 +1,15 @@
+{
+ "fassungen": [
+  {"kennung": "A", "name": "Feste Kategorienliste",
+   "beschreibung": "Urteil der KI je Segment nach der festen Kategorienliste (Grenzen noch wie Vorstufe; Vorschläge zu Grenzen stehen beim Segment unter punkte).",
+   "ordner": "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil-stand", "kategorien": null},
+  {"kennung": "B", "name": "Kategorien frei",
+   "beschreibung": "Die KI benennt und stuft die Flächen selbst, sonst gleiche Arbeitsweise wie A (Grenzen noch wie Vorstufe).",
+   "ordner": "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/urteil-stand",
+   "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/kategorien-b.json"},
+  {"kennung": "C", "name": "Alles frei",
+   "beschreibung": "Eigene Kategorien, eigene Grenzen und eigene Arbeitsweise der KI je Teilkachel, Liste danach zusammengelegt.",
+   "ordner": "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-c/stand",
+   "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-c/kategorien-c.json"}
+ ]
+}

@@ -1,0 +1,33 @@
+/* Platz c: Vorher und Nachher nebeneinander, Steuerung in einer Leiste darunter */
+.c-seite { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; height: 100%; min-width: 0; }
+.c-kopf { display: flex; align-items: center; gap: 18px; padding: 8px 14px; background: var(--flaeche); border-bottom: 1px solid var(--linie); }
+.c-kopf nav { display: flex; gap: 2px; }
+.c-kopf a { text-decoration: none; color: var(--text-leise); padding: 4px 10px; border-radius: var(--radius); }
+.c-kopf a:hover { color: var(--text); background: var(--grau-2); }
+.c-kopf a[aria-current="page"] { color: var(--text); background: var(--grau-3); }
+.c-rechts { margin-left: auto; }
+
+.c-paar, .c-uebersicht { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2px; min-height: 0; background: var(--linie); }
+.c-tafel { margin: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); min-width: 0; min-height: 0; background: var(--grund); }
+.c-tafel figcaption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 6px 12px; background: var(--detail); border-bottom: 1px solid var(--linie); font-size: var(--gr-klein); }
+.c-tafel figcaption b { font-size: var(--gr-text); }
+.c-tafel figcaption span { color: var(--text-leise); }
+.c-tafel figcaption .c-ok { color: var(--ok); }
+.c-tafel figcaption .c-warn { color: var(--warn); }
+.c-bild { width: 100%; height: 100%; min-height: 0; cursor: crosshair; touch-action: none; }
+
+.c-leiste { display: grid; gap: 8px; padding: 10px 14px; background: var(--flaeche); border-top: 1px solid var(--linie); min-width: 0; }
+.c-zeile { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; min-width: 0; }
+.c-gruppe { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+.c-etikett { color: var(--text-leise); font-size: var(--gr-mini); text-transform: uppercase; letter-spacing: .06em; margin-right: 4px; }
+.c-unten { align-items: stretch; flex-wrap: nowrap; }
+.c-detail { flex: 1 1 0; min-width: 0; display: flex; gap: 8px; align-items: stretch; }
+.c-karte { display: flex; flex-direction: column; gap: 2px; padding: 6px 10px; background: var(--detail); border: 1px solid var(--linie); border-radius: var(--radius); font-size: var(--gr-klein); min-width: 0; text-decoration: none; }
+.c-karte span { color: var(--text-leise); }
+.c-karte b { font-size: var(--gr-klein); }
+.c-punkt { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; }
+.c-leise { color: var(--text-leise); align-self: center; }
+.c-komm { flex: 0 0 380px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 6px; }
+.c-komm textarea { grid-row: 1 / span 2; min-height: 0; }
+.c-liste { padding: 20px 24px; max-width: 720px; overflow: auto; height: 100%; }
+.c-liste p { margin: 12px 0; }

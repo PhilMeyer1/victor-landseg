@@ -1,0 +1,19 @@
+# Beleg AK3 (landseg-werkzeuge-2), T0-Teilkachel r0c0 (Kern 500, Rand 64), Ausgaben unter C:/Users/Phil/AppData/Local/Temp/claude/27e54e3b8399faf6/a2bf01d3-627c-4b06-8b57-51f25ab5229e/scratchpad/t0
+
+## GPU-Lauf (SAM 3, erste Fassung des Verschmelzens), Auszug
+r0c0: 628 × 628, Segmente 524 (im Kern 285), sicher: nein 402 (76.7 %, Fläche 14.5 %), Kandidaten: grenze_ohne_bildkante 179, klasse_unsicher 402, nicht_zusammenhaengend 30, zu_klein 359; pruefen ok; 46.4 s
+
+## Endstand: PY -B -m landseg vorstufe --manifest <t0>/manifest.json --teilkachel r0c0 --neu (Rohwerte des GPU-Laufs, gleiche SAM-3-Einstellungen)
+r0c0: 628 × 628, Segmente 228 (im Kern 154), sicher: nein 162 (71.0 %, Fläche 70.4 %), Kandidaten: grenze_ohne_bildkante 214, klasse_unsicher 162, nicht_zusammenhaengend 13; pruefen ok; 0.6 s
+exit 0
+
+## PY -B -m landseg pruefen --labels <r0c0>/labels.tif --segmente <r0c0>/segmente.json --bild <t0>/teilkacheln/r0c0.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 228, nicht zusammenhängend: 0
+ok
+exit 0
+
+## Messung aus segmente.json
+{"segmente": 228, "segmente_im_kern": 154, "superpixel": 2568, "instanzen": 116, "segmente_instanz": 130, "sicher_nein": 162, "anteil_sicher_nein": 0.7105, "flaeche_sicher_nein": 0.7038, "kandidaten": {"klasse_unsicher": 162, "nicht_zusammenhaengend": 13, "grenze_ohne_bildkante": 214}, "hoehe": 628, "breite": 628, "laufzeit_s": {"sam3": 0.16, "verschmelzen": 0.28, "gesamt": 0.55}}
+{"id": 100001, "klasse": "3.1", "grob": "3", "herkunft": "semantik", "sicher": "nein", "sicherheit": {"wert": 0.499, "abstand": 0.129}, "flaeche": 664, "im_kern": false}
+389 {"art": "klasse_unsicher", "ids": [100001], "grund": "Semantik: Wert 0.499 (mind. 0.5), Abstand 0.129 (mind. 0.15)"}

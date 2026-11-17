@@ -1,0 +1,93 @@
+{
+  "schema": "landseg-ansicht/1",
+  "quelle": {
+    "manifest": "C:\\Users\\Phil\\AppData\\Local\\Temp\\claude\\27e54e3b8399faf6\\a2bf01d3-627c-4b06-8b57-51f25ab5229e\\scratchpad\\probe\\T0\\manifest.json",
+    "teilkachel": "r0c0",
+    "bild": "C:\\Users\\Phil\\AppData\\Local\\Temp\\claude\\27e54e3b8399faf6\\a2bf01d3-627c-4b06-8b57-51f25ab5229e\\scratchpad\\probe\\T0\\teilkacheln\\r0c0.png",
+    "labels": "C:/Users/Phil/AppData/Local/Temp/claude/27e54e3b8399faf6/a2bf01d3-627c-4b06-8b57-51f25ab5229e/scratchpad/probe/r0c0/labels-kante.tif",
+    "segmente": "C:/Users/Phil/AppData/Local/Temp/claude/27e54e3b8399faf6/a2bf01d3-627c-4b06-8b57-51f25ab5229e/scratchpad/probe/r0c0/segmente-kante.json"
+  },
+  "koordinaten": "x_teilkachel = fenster.x + x_bild // faktor; im Gitterbild vorher 40 px links und 16 px oben abziehen; im Mängelbild steht die Legende unten",
+  "teilkachel": {
+    "fenster": {
+      "x": 0,
+      "y": 0,
+      "breite": 628,
+      "hoehe": 628,
+      "faktor": 1
+    },
+    "bilder": {
+      "roh": "teilkachel/roh.png",
+      "umriss": "teilkachel/umriss.png",
+      "maengel": "teilkachel/maengel.png",
+      "vorschlag": "teilkachel/vorschlag.png",
+      "kontrast": "teilkachel/kontrast.png",
+      "gitter": "teilkachel/gitter.png"
+    }
+  },
+  "maengel": {
+    "luecke_bildpunkte": 0,
+    "nicht_zusammenhaengend": [],
+    "ohne_eintrag": [],
+    "zu_klein": [],
+    "unsicher": [
+      7,
+      14,
+      21,
+      28,
+      35,
+      42,
+      49
+    ],
+    "kandidaten": [],
+    "geschaetzt_strecken": 3,
+    "geschaetzt_bildpunkte": 61
+  },
+  "segmente": [
+    {
+      "id": 44,
+      "klasse": "0",
+      "flaeche": 9183,
+      "maengel": [],
+      "fenster": {
+        "x": 134,
+        "y": 482,
+        "breite": 163,
+        "hoehe": 146,
+        "faktor": 3
+      },
+      "bilder": {
+        "roh": "segmente/44/roh.png",
+        "umriss": "segmente/44/umriss.png",
+        "maengel": "segmente/44/maengel.png",
+        "vorschlag": "segmente/44/vorschlag.png",
+        "nah": "segmente/44/nah.png",
+        "kontrast": "segmente/44/kontrast.png",
+        "gitter": "segmente/44/gitter.png"
+      }
+    },
+    {
+      "id": 46,
+      "klasse": "0",
+      "flaeche": 7126,
+      "maengel": [],
+      "fenster": {
+        "x": 60,
+        "y": 506,
+        "breite": 151,
+        "hoehe": 122,
+        "faktor": 3
+      },
+      "bilder": {
+        "roh": "segmente/46/roh.png",
+        "umriss": "segmente/46/umriss.png",
+        "maengel": "segmente/46/maengel.png",
+        "vorschlag": "segmente/46/vorschlag.png",
+        "nah": "segmente/46/nah.png",
+        "kontrast": "segmente/46/kontrast.png",
+        "gitter": "segmente/46/gitter.png"
+      }
+    }
+  ],
+  "bilderzahl": 20
+}

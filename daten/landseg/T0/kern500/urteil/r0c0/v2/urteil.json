@@ -1,0 +1,1407 @@
+{
+ "teilkachel": "r0c0",
+ "viertel": "v2",
+ "bearbeiter": "urt-a-r0c0-v2",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r0c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r0c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/uebersicht_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/uebersicht_vorschlag.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_4.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 100063,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Dunkles Band unter dem Streifen 52 (Fortsetzung von 66): Schatten bzw. Stirnseite einer Mauer zur Zufahrt, keine Fahrbahn.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Dunkles Band (318/82) ohne Asphalt, Schatten mit erkennbarer Fortsetzung; nicht Straße.",
+     "flaeche_px": 150
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100014 verschmelzen wie 66; ist es die Mauerstirn, gehört es zu 52 (318/82).",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_4.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100046,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Drei runde Sträucher und etwas Pflaster zwischen Gebäude 13 und Streifen 52.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_4.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100014,
+   "klasse_heute": "1.2.4",
+   "was_ist_es": "Große helle Zufahrt bzw. Hoffläche aus Beton nördlich der Straße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_4.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100065,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkles Band am geschwungenen Westrand des Gartens 47: niedrige Hecke mit ihrem Schatten auf der Zufahrt.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heckenstreifen um den Garten (380/95), nach U2 keine 0.2.",
+     "flaeche_px": 160
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Bildet mit den Heckenteilen 100058 und 100050 eine Hecke (380/95).",
+     "flaeche_px": 160
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_4.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100058,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Fortsetzung des dunklen Heckenstreifens am Nordrand des Gartens.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heckenstreifen mit Schatten (398/72), keine 0.2.",
+     "flaeche_px": 90
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100065 verschmelzen (398/72).",
+     "flaeche_px": 90
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 100047,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Gemähter Rasen des Hausgartens nördlich der Straße mit Gartenhaus, Spielgeräten und Hochbeet; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rasen im Hausgarten (404/96), kein Acker; nach Bedeckung 3.1.",
+     "flaeche_px": 3019
+    },
+    {
+     "nr": 2,
+     "art": "fehlt",
+     "text": "Graues Gartenhaus nicht abgetrennt (Klasse 1.1.2) bei (437/110).",
+     "flaeche_px": 110
+    },
+    {
+     "nr": 3,
+     "art": "sonstiges",
+     "text": "Dunkler Fleck (433/100) ist der Schatten des Gartenhauses auf dem Rasen und bleibt Rasen.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100050,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dunkles Stück am oberen Kernrand: Teil des Heckenstreifens um den Garten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Dunkel wie 58 und 65 (412/66), kein Rasen.",
+     "flaeche_px": 48
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100058 verschmelzen (412/66).",
+     "flaeche_px": 48
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100057,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Holzrahmen mit hellem, körnigem Inhalt im Garten: Sandkasten oder Hochbeet, kein Rasen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Holzrahmen mit Sand bzw. Erde (428/75), kein Rasen; Sandkasten (1.3.4) oder Gartenbeet (2.2) nicht sicher.",
+     "flaeche_px": 270
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100031,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schatten des Hauses 33 auf dem Boden an dessen Nordwestecke; im Kern nur ein kleiner Zipfel.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schlagschatten des Hauses (447/66); nach U2 Klasse der Fortsetzung, vermutlich Hoffläche.",
+     "flaeche_px": 44
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100033,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Wohnhaus mit grauem Satteldach nordöstlich der Straße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100036,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Winziger Rasenzipfel am oberen Kernrand neben der Dachecke.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100053,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helles, unregelmäßiges Stück an der Nordostecke des Daches 33: Dachrand, Treppe oder Pflaster, nicht klar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100040,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Sträucher am rechten Kernrand, setzen sich nach r0c1 fort.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100092,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Grasstück am Straßenrand am Westende der Hecke 97, gleiche Farbe wie die Fläche 56.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras (318/140), kein Wald.",
+     "flaeche_px": 124
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100056 verschmelzen (318/140).",
+     "flaeche_px": 124
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100059,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Asphaltierte Straße durch das Viertel.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100087,
+   "klasse_heute": "1.2.2",
+   "was_ist_es": "Grauer Bordstein bzw. Randstück zwischen Straße und Garten an der Ecke der Zufahrt.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100070,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Südteil des Hausgartens: Rasen mit Spielgeräten, weißen Gegenständen und Sträuchern am Rand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "fehlt",
+     "text": "Heckenstreifen am geschwungenen Südwestrand (390/120) nicht abgetrennt (Klasse 4.2.3).",
+     "flaeche_px": 120
+    },
+    {
+     "nr": 2,
+     "art": "sonstiges",
+     "text": "Weiße Spielgeräte und Bank (400/134, 418/122) unter der Erkennbarkeitsgrenze im Rasen belassen.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100093,
+   "klasse_heute": "3.4",
+   "was_ist_es": "Grasstreifen zwischen Garten und Straße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100076,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Rasenstück im Garten zwischen 70 und Baum 73; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rasen (436/124), kein Acker.",
+     "flaeche_px": 175
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100070 verschmelzen (436/124).",
+     "flaeche_px": 175
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100071,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Stelle zwischen Gartenhaus, Baum 73 und Hauswand: Schatten des Hauses 33 auf Rasen und Strauch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten mit Fortsetzung Rasen (452/114); nach U2 keine 0.2.",
+     "flaeche_px": 174
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100047 verschmelzen (452/114).",
+     "flaeche_px": 174
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100073,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kleiner Baum oder großer Strauch im Garten (etwa 6 m Krone).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100089,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Sträucher entlang der Straße im Garten, mit kleinem Frühbeetrahmen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100082,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Rotbraune, gerundete Fläche unter der Dachtraufe: eher rotlaubiger Strauch als Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Blatttextur in Rotbraun (507/126), kein Gebäude erkennbar; kleines Dach nicht ganz auszuschließen.",
+     "flaeche_px": 179
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100091,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Hellgrüne Baumkrone im Garten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100078,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Mischfläche aus Rasen, kleinem Strauch und weißem Gartengegenstand zwischen Dach und Baum 91; keine Baumkrone.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine geschlossene Krone (525/122), eher Strauch mit Rasen.",
+     "flaeche_px": 296
+    },
+    {
+     "nr": 2,
+     "art": "sonstiges",
+     "text": "Weißer Gegenstand (533/127) unter der Erkennbarkeitsgrenze.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100077,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große dunkle Baumkrone am rechten Kernrand, reicht nach r0c1.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100074,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Helle Stelle mit Gartenmöbeln und Rasen am Rand von 61; keine Krone.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rasen mit hellen Gegenständen (556/114), kein Baum.",
+     "flaeche_px": 100
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100061 verschmelzen (556/114).",
+     "flaeche_px": 100
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100061,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen hinter Haus 33 mit Gartenmöbeln.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100097,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkles, schmales Band am Westrand des Grundstücks: Hecke mit ihrem Schatten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Durchgehende Heckenlinie (325/170), nach U2 keine 0.2.",
+     "flaeche_px": 237
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Bildet mit 100116 eine durchgehende Hecke (325/185).",
+     "flaeche_px": 237
+    },
+    {
+     "nr": 3,
+     "art": "sonstiges",
+     "text": "Der westliche Schattenteil auf der Wiese gehört nach U2 eigentlich zu 56; die Kante Hecke/Schatten ist im Bild nicht zu sehen (322/165).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100098,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Dichte Gruppe aus Sträuchern und kleinen Bäumen zwischen Hecke und Garagenvorplatz.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100094,
+   "klasse_heute": "1.2.2",
+   "was_ist_es": "Graue Rampe bzw. Weg von der Straße an der Strauchgruppe vorbei zum Vorplatz.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100101,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Kleines helles Betonstück am Eck des Vorplatzes 102.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heller Beton wie 102 (380/164), keine Fahrbahn.",
+     "flaeche_px": 89
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100102 verschmelzen (380/164).",
+     "flaeche_px": 89
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100102,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Heller Betonvorplatz vor dem Haus 113 an der Straße; kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Glatte, helle Betonfläche (395/178), grober Fehler: Wald statt Hoffläche.",
+     "flaeche_px": 1483
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100111,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Beschatteter Streifen zwischen Vorplatz 102 und Nordwand des Hauses; kein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten des Hauses (410/191) mit Fortsetzung Vorplatz; kein Gebäude.",
+     "flaeche_px": 216
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100102 verschmelzen (410/191).",
+     "flaeche_px": 216
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100104,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Heller Pflasterstreifen am Südrand der Straße mit kleinem rundem Busch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gehsteig bzw. Randstreifen (432/174), nicht Fahrbahn.",
+     "flaeche_px": 158
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100107 zu einem Randstreifen verschmelzen (432/174).",
+     "flaeche_px": 158
+    },
+    {
+     "nr": 3,
+     "art": "fehlt",
+     "text": "Kleiner runder Busch (Klasse 4.2.4) bei (434/178).",
+     "flaeche_px": 50
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100105,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Heller Bordstein bzw. Pflasterstreifen am Straßenrand; kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.2",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Sehr hell und glatt (450/180), grober Fehler: Wald.",
+     "flaeche_px": 126
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100107 verschmelzen (450/180).",
+     "flaeche_px": 126
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100095,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Grüner Rasenstreifen zwischen Gartensträuchern und Straße; keine Fahrbahn.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grüner Saum (470/153), Farbe wie 93 und 100.",
+     "flaeche_px": 520
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100093 verschmelzen (470/153).",
+     "flaeche_px": 520
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100107,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Heller Pflaster- bzw. Bordsteinstreifen am Südrand der Straße vor dem Haus.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gehsteig bzw. Randstreifen (478/181), nicht Fahrbahn.",
+     "flaeche_px": 157
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100106,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Beschatteter Streifen zwischen Gehsteig und Nordwand des Hauses mit Pflanzen und weißer Bank.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten des Hauses (500/190) auf Rasen bzw. Beet; nach U2 Klasse der Umgebung statt 0.2.",
+     "flaeche_px": 1027
+    },
+    {
+     "nr": 2,
+     "art": "sonstiges",
+     "text": "Ob dort Rasen, Beet oder niedrige Hecke wächst, ist im Schatten nicht zu entscheiden (470/188).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100100,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grünstreifen an der Straße unter Baum 91.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Wegrand-Streifen (525/160) wie 93.",
+     "flaeche_px": 80
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100095 verschmelzen (525/160).",
+     "flaeche_px": 80
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100108,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hellgrünes Rasenstück an der Nordostecke des Hauses mit einem Strauch am Rand; kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rasen (525/190), kein Wald.",
+     "flaeche_px": 440
+    },
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Strauch am Ostrand (545/195) gehört zu 114.",
+     "flaeche_px": 60
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100096,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Dunkles Stück zwischen den Kronen 91 und 77, gehört zur Krone 77.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100077 verschmelzen (547/151).",
+     "flaeche_px": 99
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100099,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Grünstreifen am Nordrand der Straße am rechten Kernrand; keine Fahrbahn.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grüner Saum (554/158) wie 100.",
+     "flaeche_px": 173
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100100 verschmelzen (554/158).",
+     "flaeche_px": 173
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100109,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Strauch im Schatten an der Straße am rechten Kernrand neben Baum 114.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gehölz im Schatten (555/185), keine 0.2.",
+     "flaeche_px": 164
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100116,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Fortsetzung der dunklen Hecke am Westrand des Grundstücks.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heckenlinie (322/230), keine 0.2.",
+     "flaeche_px": 624
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100097 verschmelzen (322/230).",
+     "flaeche_px": 624
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg"
+   ]
+  },
+  {
+   "id": 100117,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schatten des Hauses an seiner Westwand zwischen Strauchgruppe 98 und Rasen 120.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten mit Fortsetzung Rasen bzw. Strauch (378/212); keine 0.2.",
+     "flaeche_px": 147
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100120 verschmelzen (378/215).",
+     "flaeche_px": 147
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_5.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100113,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Flachdachhaus mit dunklem und hellem Dachteil, dazu die gepflasterte Terrasse im Süden mit rundem Sitzplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Gepflasterte Terrasse mit runder Mulde südlich des Daches (445/258) abtrennen (Klasse 1.2.4).",
+     "flaeche_px": 1500
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100115,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche östlich des Hauses im Schatten der Bäume 114 und 121, mit schwacher Kronentextur.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronentextur im Nordteil (538/215); nach U2 Gehölz statt 0.2.",
+     "flaeche_px": 1064
+    },
+    {
+     "nr": 2,
+     "art": "sonstiges",
+     "text": "Unter dem Schatten kann auch Rasen liegen (535/240); Elternklasse gewählt.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100114,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Baumkrone an der Straße östlich des Hauses.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100121,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Blaugraue, große Krone (etwa 6 × 9 m), vermutlich Nadelbaum; größer als ein Strauch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Krone eines Baums (556/248), kein niedriges Gebüsch.",
+     "flaeche_px": 681
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100110,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Winziger Zipfel einer Baumkrone am rechten Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Teil der Krone 103 bzw. 114 (562/211), kein Wald.",
+     "flaeche_px": 14
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100124,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasen um einen runden weißen Deckel (Schacht oder Zisterne) im Garten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "fehlt",
+     "text": "Runder weißer Deckel (334/270) nicht abgetrennt (Klasse 1.3).",
+     "flaeche_px": 50
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Rasenrest mit 100120 verschmelzen, keine Kante (338/280).",
+     "flaeche_px": 313
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100119,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Mischstück am Südwestrand des Gartens: grüner Heckenkopf entlang 116, graues Mauer- bzw. Wegstück und ein Strauch; kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Wald; überwiegend Gras bzw. Heckenkopf (325/240).",
+     "flaeche_px": 1493
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Graues Mauer- bzw. Wegstück (338/296) abtrennen (Klasse 1.2.2).",
+     "flaeche_px": 200
+    },
+    {
+     "nr": 3,
+     "art": "trennen",
+     "text": "Strauch (358/292) abtrennen (Klasse 4.2.4).",
+     "flaeche_px": 250
+    },
+    {
+     "nr": 4,
+     "art": "sonstiges",
+     "text": "Der grüne Streifen längs der Hecke (325/240) ist Heckenkopf oder Rasen; zu 116 oder 120.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100120,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gemähter Rasen des Gartens südlich und westlich des Hauses.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg"
+   ]
+  },
+  {
+   "id": 100133,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkler Kronenrand des Baums 135 am Südrand des Gartens.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100135 verschmelzen (370/299), kein Wald.",
+     "flaeche_px": 133
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100131,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenbuckel am Südrand des Gartens.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100120 verschmelzen, keine Kante (389/291).",
+     "flaeche_px": 147
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100134,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Dunkelgrüner Strauch am Südrand neben Krone 135; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Strauch (408/300), kein Acker; ob Teil der Krone 135, ist nicht sicher.",
+     "flaeche_px": 400
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100132,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Heller Grasstreifen am Zaun am Südrand des Gartens.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100120 verschmelzen (428/297); der helle Zaunsockel ist unter der Erkennbarkeitsgrenze.",
+     "flaeche_px": 138
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100129,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Rechteckiges Schwimmbecken mit weißem Rand und grauer Abdeckung; Ostende von Baumkronen überdeckt; kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Becken mit Rand (465/292), grober Fehler: Wald.",
+     "flaeche_px": 1209
+    },
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Ostende (495/292) ist überhängende Krone und gehört zu 127.",
+     "flaeche_px": 200
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100127,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Baumkrone im Schatten südöstlich des Beckens, setzt sich in die rote Krone 136 fort.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronentextur sichtbar (527/288), Gehölz statt 0.2.",
+     "flaeche_px": 1598
+    },
+    {
+     "nr": 2,
+     "art": "sonstiges",
+     "text": "Ob es dieselbe Krone wie 136 ist, ist nicht sicher (535/310).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100122,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Grüne, strauchige Fläche östlich des Hauses zwischen Wand und Bäumen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Sträucher bzw. verbuschter Rasen (529/261), kein geschlossener Wald.",
+     "flaeche_px": 1167
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100139,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Weißer Südrand des Beckens mit einem schmalen Rasensaum.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.3.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Weißer Beckenrand (470/303), kaum Rasen.",
+     "flaeche_px": 135
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100129 verschmelzen (470/303).",
+     "flaeche_px": 135
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v2/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v2/nah4_nummern.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 100099,
+   "seite": "rechts",
+   "text": "Grünstreifen an der Straße, Vorschlag 3.4 statt 1.2.1; die Klasse muss in r0c1 gleich gesetzt werden."
+  },
+  {
+   "id": 100109,
+   "seite": "rechts",
+   "text": "Strauch im Schatten, Vorschlag 4.2.4 statt 0.2; gilt auch für den Teil in r0c1."
+  },
+  {
+   "id": 100110,
+   "seite": "rechts",
+   "text": "Kronenzipfel, Vorschlag 4.2.1 statt 4.1; Hauptteil liegt in r0c1."
+  },
+  {
+   "id": 100121,
+   "seite": "rechts",
+   "text": "Baumkrone, Vorschlag 4.2.1 statt 4.2.4; gilt auch für den Teil in r0c1."
+  },
+  {
+   "id": 100122,
+   "seite": "rechts",
+   "text": "Strauchige Fläche, Vorschlag 4.2.4 statt 4.1; gilt auch für den Teil in r0c1."
+  },
+  {
+   "id": 100074,
+   "seite": "rechts",
+   "text": "Rasen mit Gartenmöbeln, Vorschlag 3.1 statt 4.2.1."
+  }
+ ],
+ "unsicher": [
+  "100135 (v4): Krone am Südrand des Gartens nimmt nach Vorschlag 133 auf, eventuell auch 134.",
+  "100136 (v4): rote Krone, wahrscheinlich dieselbe Baumgruppe wie 127.",
+  "100013 (Kontextrand): weißes Gebäude mit Solardach oben links, unauffällig.",
+  "100014: nimmt nach Vorschlag 31, 63, 66 und 68 auf.",
+  "100056 (v1): nimmt nach Vorschlag 92 auf; Schattenanteil von 97/116 auf der Wiese gehört nach U2 zu 56."
+ ],
+ "nicht_geprueft": [
+  "Rohbilder nah1_roh bis nah4_roh, uebersicht_kontrast.jpg und uebersicht_gitter.jpg nicht eigens angesehen; eigene Nah- und Kontrastbilder deckten die Stellen ab.",
+  "Werkzeug kante (W4) nicht benutzt; Grenzen nach Augenschein.",
+  "Gegenseite der Naht in r0c1 nicht angesehen."
+ ],
+ "offen": [
+  "100057: Sandkasten (1.3.4) oder Hochbeet (2.2)? Vorschlag Elternklasse 1.3.",
+  "100053: helles Stück an der Dachecke von 33 (Dachrand, Treppe, Pflaster?) – Klasse 1.1.1 belassen, aber unsicher.",
+  "100082: rotlaubiger Strauch oder kleines Dach?",
+  "100106 und 100115: was unter dem Schatten liegt (Rasen, Beet, Strauch), ist nicht zu sehen.",
+  "100129: abgedecktes Schwimmbecken oder andere Anlage (Teich, Beet)? Vorschlag 1.3.3.",
+  "100097/100116: Anteil Hecke gegen Schatten auf der Wiese nicht trennbar."
+ ]
+}

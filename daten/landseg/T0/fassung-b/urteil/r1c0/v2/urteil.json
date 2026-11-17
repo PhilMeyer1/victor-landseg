@@ -1,0 +1,422 @@
+{
+ "teilkachel": "r1c0",
+ "viertel": "v2",
+ "bearbeiter": "urt-b-r1c0-v2",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_kontrast.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah3_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah4_roh.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v2\\nah_1.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v2\\kontrast_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/urteil/r1c0/v1/nah_2.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 300013,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Krautige Fläche am Nordostrand des Waldes, der Kernteil nur eine kleine Ecke oben rechts; Grenze zu 17 auf der dunklen Kronenkante.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300030,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Helles, fein strukturiertes Stück am Waldrand rechts vom Wiesenstreifen in v1; setzt wohl die Wiese (24, 21) fort, könnte aber auch eine beleuchtete Randkrone sein.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "mit dem Wiesenstreifen 21/24 in v1 verschmelzen, falls Wiese; sonst mit Wald 8 (318/136)",
+     "flaeche_px": 176
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/urteil/r1c0/v1/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300022,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche am Waldrand mit erkennbarer Kronenstruktur: beschattete Kronen oder ein dunkler Nadelbaum.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Wald",
+    "fein": "Wald beschattet"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Kronen erkennbar, kein Schatten ohne Grund (333/104)",
+     "flaeche_px": 593
+    },
+    {
+     "nr": 3,
+     "art": "verschmelzen",
+     "text": "eher mit Wald 8 verschmelzen, falls kein eigener Nadelbaum (336/112)",
+     "flaeche_px": 593
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_roh.jpg"
+   ]
+  },
+  {
+   "id": 300031,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Hell beleuchtete, runde Baumkrone im Waldrand, keine Wiese.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Wald",
+    "fein": "Wald"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 4,
+     "art": "klasse",
+     "text": "Baumkrone, keine Wiese (352/139)",
+     "flaeche_px": 230
+    },
+    {
+     "nr": 5,
+     "art": "verschmelzen",
+     "text": "mit Wald 8 verschmelzen (355/143)",
+     "flaeche_px": 230
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_roh.jpg"
+   ]
+  },
+  {
+   "id": 300023,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Langes, sehr dunkles Band von Nord nach Süd mitten im Wald, kaum Struktur: Schatten in einer Kronenlücke oder Rinne; Grund nicht erkennbar, Umgebung Wald.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 300017,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Kronenbereich oben rechts mit gut erkennbaren einzelnen Kronen: beschatteter oder dunkler Waldteil; reicht nach oben aus dem Kern.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Wald",
+    "fein": "Wald beschattet"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 6,
+     "art": "klasse",
+     "text": "Kronen erkennbar, kein Schatten ohne Grund (528/104)",
+     "flaeche_px": 3902
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300029,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Schmaler, heller Pfad von Nord nach Süd durch den Wald; das Segment ist breiter als der Pfad und endet, wo der Pfad nach Osten abbiegt.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Weg",
+    "mittel": "Pfad",
+    "fein": "Trampelpfad"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 7,
+     "art": "grenze",
+     "text": "Segment etwa 9 Bildpunkte breit, der Pfad nur 3 bis 4; Säume beidseits gehören zum Nachbarn (492/165)",
+     "flaeche_px": null
+    },
+    {
+     "nr": 8,
+     "art": "fehlt",
+     "text": "Fortsetzung des Pfads nach Osten (x 508–564, y 185–205) liegt in Wald 8 (540/194)",
+     "flaeche_px": 300
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah4_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v2\\nah_1.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v2\\kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 300008,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Wald",
+    "fein": "Wald"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 9,
+     "art": "trennen",
+     "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+     "flaeche_px": 3000
+    },
+    {
+     "nr": 10,
+     "art": "fehlt",
+     "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+     "flaeche_px": 80
+    },
+    {
+     "nr": 11,
+     "art": "sonstiges",
+     "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+     "flaeche_px": 100
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah4_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v2\\nah_1.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v2\\kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 300042,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große, sehr dunkle Fläche unten rechts mit nur schwacher Kronenstruktur: Schatten auf dem Wald; reicht nach rechts aus dem Kern und nach v4.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v2/nah4_roh.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 300013,
+   "seite": "oben",
+   "text": "Segment liegt größtenteils in r0c1/r1c1 außerhalb des Kerns; Klasse Saum/Grünland auf beiden Seiten gleich halten."
+  },
+  {
+   "id": 300017,
+   "seite": "oben",
+   "text": "Dunkler Waldteil reicht nach r0c0; dort gleiche Klasse (Wald, beschattet)."
+  },
+  {
+   "id": 300042,
+   "seite": "rechts",
+   "text": "Schattenfläche reicht nach r1c1; Klasse auf beiden Seiten gleich, Grenze dort auf der Dunkelkante."
+  },
+  {
+   "id": 300008,
+   "seite": "rechts",
+   "text": "Lichtung und Pfad östlich von 29 setzen sich nach r1c1 fort; der Schnitt muss dort an derselben Stelle ankommen."
+  }
+ ],
+ "unsicher": [
+  "300027 (v1): dunkles Band am linken Viertelrand, Krone oder Schlagschatten; in v1 geurteilt.",
+  "300048 (v4): dunkle Fläche unten am Viertelrand, Schatten auf Wald wie 42.",
+  "Heller, gelbgrüner Streifen in Wald 8 bei x 437–445, y 145–200: zugewachsener Pfad oder helle Kronen, nicht entscheidbar."
+ ],
+ "nicht_geprueft": [
+  "Werkzeug kante nicht benutzt; Grenzen nur nach Sicht beurteilt.",
+  "Teile von 8 in v3 und v4 nur in der Teilkachel-Übersicht angesehen, nicht in den Nahansichten dieser Viertel (dort in den Aufträgen v3 und v4 angesehen)."
+ ],
+ "offen": [
+  "23, 42 und 17: ob die dunklen Flächen Schlagschatten auf dem Wald oder dunkle Nadelbäume sind; eine Höhenkarte oder ein zweites Luftbild mit anderem Sonnenstand würde es klären.",
+  "30: Wiese oder beleuchtete Randkrone; Grenze zur Wiese in v1 ohne Bildkante.",
+  "Lichtung östlich von 29: ob krautige Fläche (Saum) oder junger, niedriger Aufwuchs; Höhenkarte würde es klären."
+ ],
+ "klassen_frei": [
+  {
+   "name": "Grünland",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "niedrige, krautige Vegetation ohne Kronen und Schatten von Gehölzen"
+  },
+  {
+   "name": "Gehölz",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Baum- oder Strauchkronen mit runder Kronenstruktur und Eigenschatten"
+  },
+  {
+   "name": "Weg",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "schmale, helle, linienhafte Fläche ohne Bewuchs"
+  },
+  {
+   "name": "Schatten",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "sehr dunkle Fläche, in der der Grund nicht erkennbar ist"
+  },
+  {
+   "name": "Saum",
+   "ebene": "mittel",
+   "eltern": "Grünland",
+   "merkmal": "grobe, unruhige Kraut- und Hochstaudenvegetation am Waldrand"
+  },
+  {
+   "name": "Wiese",
+   "ebene": "mittel",
+   "eltern": "Grünland",
+   "merkmal": "gleichmäßig feine, hellgrüne Grasstruktur"
+  },
+  {
+   "name": "Wald",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "geschlossenes Kronendach aus vielen Kronen"
+  },
+  {
+   "name": "Pfad",
+   "ebene": "mittel",
+   "eltern": "Weg",
+   "merkmal": "unbefestigter Weg unter 2 m Breite"
+  },
+  {
+   "name": "Schatten auf Gehölz",
+   "ebene": "mittel",
+   "eltern": "Schatten",
+   "merkmal": "dunkle Fläche inmitten von Gehölz"
+  },
+  {
+   "name": "Saum",
+   "ebene": "fein",
+   "eltern": "Saum",
+   "merkmal": "wie mittlere Ebene"
+  },
+  {
+   "name": "Wiese",
+   "ebene": "fein",
+   "eltern": "Wiese",
+   "merkmal": "wie mittlere Ebene"
+  },
+  {
+   "name": "Wald",
+   "ebene": "fein",
+   "eltern": "Wald",
+   "merkmal": "Kronendach mit Laubbaumkronen verschiedener Grüntöne, nicht feiner bestimmbar"
+  },
+  {
+   "name": "Wald beschattet",
+   "ebene": "fein",
+   "eltern": "Wald",
+   "merkmal": "dunkles Kronendach, einzelne Kronen noch erkennbar"
+  },
+  {
+   "name": "Trampelpfad",
+   "ebene": "fein",
+   "eltern": "Pfad",
+   "merkmal": "heller, gewundener Streifen von 3 bis 4 Bildpunkten Breite"
+  },
+  {
+   "name": "Schatten auf Wald",
+   "ebene": "fein",
+   "eltern": "Schatten auf Gehölz",
+   "merkmal": "fast strukturlos dunkle Fläche, ringsum Wald"
+  }
+ ]
+}

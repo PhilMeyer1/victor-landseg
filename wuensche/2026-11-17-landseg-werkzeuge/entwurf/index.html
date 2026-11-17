@@ -1,0 +1,406 @@
+<!doctype html>
+<!-- Vergleichsrahmen des Wunsch-Systems (Vorlage, nicht ändern: kommt aus plugins/wunsch/skills/wunsch/assets/entwurf/
+     und wird bei jedem `entwurf.py anlegen` erneuert). Inhalt kommt aus rahmen.js (erzeugt aus rahmen.json). -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entwürfe</title>
+<style>
+  :root {
+    --grund: #f3f4f6; --flaeche: #ffffff; --linie: #e2e5e9; --text: #1d2125; --leise: #646c76;
+    --akzent: #2457d6; --akzent-grund: rgba(36, 87, 214, .10); --warn: #b45309; --schatten: 0 1px 2px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.06);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --grund: #15171a; --flaeche: #1d2024; --linie: #2d3137; --text: #e5e7ea; --leise: #9aa2ac;
+      --akzent: #86a8ff; --akzent-grund: rgba(134, 168, 255, .14); --warn: #f0a24b; --schatten: 0 1px 2px rgba(0,0,0,.4);
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--grund); color: var(--text); font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: flex; flex-direction: column; overflow: hidden; }
+  button, select { font: inherit; color: inherit; }
+  kbd { font: 600 11px/1 ui-monospace, "Cascadia Mono", Consolas, monospace; padding: 2px 5px; border-radius: 4px;
+    border: 1px solid var(--linie); background: var(--grund); color: var(--leise); }
+
+  .leiste { display: flex; align-items: center; gap: 14px; min-height: 48px; padding: 6px 14px; background: var(--flaeche);
+    border-bottom: 1px solid var(--linie); flex-wrap: wrap; }
+  .titel { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
+  .titel strong { font-size: 14px; white-space: nowrap; }
+  .titel span { color: var(--leise); white-space: nowrap; }
+  .reiter { display: flex; gap: 4px; flex-wrap: wrap; flex: 1; min-width: 0; }
+  .reiter button { display: inline-flex; align-items: center; gap: 7px; max-width: 230px; padding: 5px 10px; border: 1px solid transparent;
+    border-radius: 7px; background: transparent; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .reiter button:hover { background: var(--grund); }
+  .reiter button[aria-pressed="true"] { background: var(--akzent-grund); border-color: var(--akzent); color: var(--akzent); }
+  .reiter button[aria-pressed="true"] kbd { color: var(--akzent); border-color: var(--akzent); }
+  .reiter .seite { font-size: 10px; font-weight: 700; color: var(--akzent); }
+  .schalter { display: flex; align-items: center; gap: 8px; }
+  .gruppe { display: inline-flex; border: 1px solid var(--linie); border-radius: 7px; overflow: hidden; }
+  .gruppe button { padding: 5px 10px; border: 0; background: transparent; cursor: pointer; }
+  .gruppe button + button { border-left: 1px solid var(--linie); }
+  .gruppe button[aria-pressed="true"] { background: var(--akzent-grund); color: var(--akzent); font-weight: 600; }
+  .knopf { padding: 5px 10px; border: 1px solid var(--linie); border-radius: 7px; background: transparent; cursor: pointer; }
+  .knopf[aria-pressed="true"] { color: var(--akzent); border-color: var(--akzent); background: var(--akzent-grund); }
+
+  #buehne { position: relative; flex: 1; min-height: 0; }
+  .platz { position: absolute; display: none; flex-direction: column; gap: 6px; }
+  .platz.sichtbar { display: flex; }
+  .kopf { display: flex; align-items: center; gap: 8px; height: 26px; min-width: 0; color: var(--leise); }
+  .kopf b { color: var(--text); white-space: nowrap; }
+  .kopf .idee { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .kopf select { display: none; padding: 2px 4px; border: 1px solid var(--linie); border-radius: 6px; background: var(--flaeche); }
+  body[data-modus="nebeneinander"] .kopf select { display: inline-block; }
+  body[data-modus="nebeneinander"] .kopf b { display: none; }
+  .kopf .marke { display: none; font-size: 11px; font-weight: 600; color: var(--warn); white-space: nowrap; }
+  .platz[data-verbunden="nein"] .kopf .marke { display: inline; }
+  body[data-modus="nebeneinander"] .platz.aktiv .fenster { outline: 2px solid var(--akzent); outline-offset: 2px; }
+  .fenster { position: relative; flex: 1; min-height: 0; overflow: hidden; border-radius: 6px; }
+  .fenster iframe { position: absolute; top: 0; left: 0; border: 0; background: #fff; transform-origin: 0 0; box-shadow: var(--schatten); }
+  body[data-geraet="handy"] .fenster iframe { border-radius: 22px; box-shadow: 0 0 0 7px #2b2f35, var(--schatten); }
+  .decke { position: absolute; inset: 0; display: none; border: 0; background: transparent; cursor: zoom-in; }
+  body[data-modus="alle"] .decke { display: block; }
+  body[data-modus="alle"] .decke:hover { background: var(--akzent-grund); }
+  .bildfenster { overflow: auto; background: var(--flaeche); box-shadow: var(--schatten); }
+  .bildfenster figure { margin: 0 0 16px; }
+  .bildfenster figcaption { padding: 8px 12px; color: var(--leise); }
+  .bildfenster img { display: block; max-width: 100%; height: auto; }
+
+  .hilfe { position: fixed; right: 14px; top: 56px; z-index: 5; min-width: 260px; padding: 12px 14px; border: 1px solid var(--linie);
+    border-radius: 10px; background: var(--flaeche); box-shadow: var(--schatten); }
+  .hilfe[hidden] { display: none; }
+  .hilfe dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; }
+  .hilfe dd { margin: 0; color: var(--leise); }
+  .leer { position: absolute; inset: 0; display: grid; place-items: center; color: var(--leise); }
+</style>
+<script src="rahmen.js"></script>
+</head>
+<body data-modus="einzeln" data-geraet="desktop">
+<header class="leiste">
+  <div class="titel"><strong id="titel">Entwürfe</strong><span id="info"></span></div>
+  <nav class="reiter" id="reiter" aria-label="Entwürfe"></nav>
+  <div class="schalter">
+    <div class="gruppe" role="group" aria-label="Ansicht">
+      <button data-modus="einzeln" title="Ein Entwurf (E)">Einzeln</button>
+      <button data-modus="nebeneinander" title="Zwei nebeneinander (N)">Nebeneinander</button>
+      <button data-modus="alle" title="Alle verkleinert (0)">Alle</button>
+    </div>
+    <div class="gruppe" role="group" aria-label="Gerät">
+      <button data-geraet="desktop" title="Desktop (D)">Desktop</button>
+      <button data-geraet="handy" title="Handy (H)">Handy</button>
+    </div>
+    <button class="knopf" id="mit" title="Navigation läuft in allen Entwürfen mit (M)">Mitlaufen</button>
+    <button class="knopf" id="hilfeknopf" title="Tasten (?)" aria-expanded="false">?</button>
+  </div>
+</header>
+<main id="buehne"></main>
+<aside class="hilfe" id="hilfe" hidden>
+  <dl>
+    <dt><kbd>1</kbd>–<kbd>5</kbd></dt><dd>Entwurf zeigen</dd>
+    <dt><kbd>0</kbd></dt><dd>alle verkleinert</dd>
+    <dt><kbd>N</kbd></dt><dd>zwei nebeneinander</dd>
+    <dt><kbd>E</kbd> <kbd>Esc</kbd></dt><dd>ein Entwurf</dd>
+    <dt><kbd>D</kbd> <kbd>H</kbd></dt><dd>Desktop, Handy</dd>
+    <dt><kbd>M</kbd></dt><dd>Mitlaufen an/aus</dd>
+    <dt><kbd>V</kbd></dt><dd>Vorbild (heute)</dd>
+  </dl>
+</aside>
+<script>
+(function () {
+  'use strict'
+  var R = window.RAHMEN || {}
+  var ENTWUERFE = Array.isArray(R.entwuerfe) ? R.entwuerfe.slice(0, 5) : []
+  var BREITE = { desktop: (R.breiten && R.breiten.desktop) || 1280, handy: (R.breiten && R.breiten.handy) || 390 }
+  var HANDY_HOEHE = 844
+  var START = '/' + String(R.start || '/').replace(/^#?\/*/, '')
+  var buehne = document.getElementById('buehne')
+  var body = document.body
+
+  // Einträge: die Entwürfe (Taste 1–5) und, wenn erfasst, das Vorbild (Taste V).
+  var eintraege = ENTWUERFE.map(function (e, i) {
+    return { id: e.platz, nr: String(i + 1), name: e.name || ('Entwurf ' + (i + 1)), idee: e.idee || '', art: 'entwurf' }
+  })
+  if (Array.isArray(R.vorbild) && R.vorbild.length) eintraege.push({ id: 'v', nr: 'V', name: 'Vorbild (heute)', idee: '', art: 'bild', bilder: R.vorbild })
+  var nachId = {}
+  eintraege.forEach(function (e) { nachId[e.id] = e })
+
+  var z = { modus: 'einzeln', aktiv: '', links: '', rechts: '', seite: 'links', geraet: 'desktop', mit: true }
+  var routen = {}
+
+  document.getElementById('titel').textContent = R.titel || 'Entwürfe'
+  document.title = 'Entwürfe · ' + (R.titel || '')
+  document.getElementById('info').textContent = [R.wunsch, R.runde ? 'Runde ' + R.runde : '', R.stufe, R.datum].filter(Boolean).join(' · ')
+
+  if (!eintraege.length) {
+    var leer = document.createElement('div')
+    leer.className = 'leer'
+    leer.textContent = 'rahmen.js nennt noch keine Entwürfe'
+    buehne.appendChild(leer)
+  }
+
+  // Plätze bauen: je Eintrag ein Bereich mit Kopf und Fenster; jeder Entwurf behält sein iframe (Zustand bleibt).
+  eintraege.forEach(function (e) {
+    var p = document.createElement('section')
+    p.className = 'platz'
+    p.setAttribute('data-id', e.id)
+    var kopf = document.createElement('div')
+    kopf.className = 'kopf'
+    var wahl = document.createElement('select')
+    wahl.setAttribute('aria-label', 'Entwurf in dieser Hälfte')
+    eintraege.forEach(function (x) {
+      var o = document.createElement('option')
+      o.value = x.id
+      o.textContent = x.nr + '  ' + x.name
+      wahl.appendChild(o)
+    })
+    wahl.value = e.id
+    wahl.addEventListener('change', function () { tausche(p, wahl.value) })
+    var b = document.createElement('b')
+    b.textContent = e.nr + ' · ' + e.name
+    var idee = document.createElement('span')
+    idee.className = 'idee'
+    idee.textContent = e.idee
+    var marke = document.createElement('span')
+    marke.className = 'marke'
+    marke.textContent = 'ohne Anschluss'
+    kopf.appendChild(wahl); kopf.appendChild(b); kopf.appendChild(idee); kopf.appendChild(marke)
+    kopf.addEventListener('mousedown', function () { if (z.modus === 'nebeneinander') { z.seite = p === platzVon(z.links) ? 'links' : 'rechts'; zeichne() } })
+    var fenster = document.createElement('div')
+    fenster.className = 'fenster'
+    if (e.art === 'bild') {
+      fenster.className += ' bildfenster'
+      e.bilder.forEach(function (bild) {
+        var f = document.createElement('figure')
+        var img = document.createElement('img')
+        img.src = bild.bild
+        img.alt = bild.titel || 'Vorbild'
+        var c = document.createElement('figcaption')
+        c.textContent = bild.titel || ''
+        f.appendChild(c); f.appendChild(img); fenster.appendChild(f)
+      })
+    } else {
+      var ifr = document.createElement('iframe')
+      ifr.title = 'Entwurf ' + e.nr + ': ' + e.name
+      ifr.src = e.id + '/index.html#' + START
+      fenster.appendChild(ifr)
+      e.frame = ifr
+      p.setAttribute('data-verbunden', 'wartet')
+      setTimeout(function () { if (p.getAttribute('data-verbunden') === 'wartet') p.setAttribute('data-verbunden', 'nein') }, 5000)
+    }
+    var decke = document.createElement('button')
+    decke.className = 'decke'
+    decke.setAttribute('aria-label', e.name + ' öffnen')
+    decke.addEventListener('click', function () { z.modus = 'einzeln'; z.aktiv = e.id; zeichne() })
+    fenster.appendChild(decke)
+    p.appendChild(kopf)
+    p.appendChild(fenster)
+    buehne.appendChild(p)
+    e.platz = p
+    e.wahl = wahl
+  })
+
+  // Reiter oben
+  var reiter = document.getElementById('reiter')
+  eintraege.forEach(function (e) {
+    var b = document.createElement('button')
+    b.setAttribute('data-id', e.id)
+    b.title = e.idee || e.name
+    var k = document.createElement('kbd')
+    k.textContent = e.nr
+    var s = document.createElement('span')
+    s.textContent = e.name
+    var seite = document.createElement('span')
+    seite.className = 'seite'
+    b.appendChild(k); b.appendChild(s); b.appendChild(seite)
+    b.addEventListener('click', function () { waehle(e.id) })
+    reiter.appendChild(b)
+    e.reiter = b
+  })
+
+  function platzVon(id) { return nachId[id] ? nachId[id].platz : null }
+  function erste(ohne) {
+    for (var i = 0; i < eintraege.length; i++) if (eintraege[i].id !== ohne && eintraege[i].art === 'entwurf') return eintraege[i].id
+    return eintraege.length ? eintraege[0].id : ''
+  }
+
+  function tausche(platz, neu) {
+    var alt = platz === platzVon(z.links) ? 'links' : 'rechts'
+    var andere = alt === 'links' ? 'rechts' : 'links'
+    if (z[andere] === neu) z[andere] = z[alt]
+    z[alt] = neu
+    z.seite = alt
+    zeichne()
+  }
+
+  function waehle(id) {
+    if (!nachId[id]) return
+    if (z.modus === 'nebeneinander') {
+      var andere = z.seite === 'links' ? 'rechts' : 'links'
+      if (z[andere] === id) z[andere] = z[z.seite]
+      z[z.seite] = id
+    } else {
+      z.modus = 'einzeln'
+      z.aktiv = id
+    }
+    zeichne()
+  }
+
+  function setzeModus(m) {
+    if (m === 'nebeneinander') {
+      if (!nachId[z.links]) z.links = z.aktiv || erste('')
+      if (!nachId[z.rechts] || z.rechts === z.links) z.rechts = erste(z.links)
+    }
+    z.modus = m
+    zeichne()
+  }
+
+  // Ein Fenster der Breite b (logische Pixel des Geräts) in den Platz w × h einpassen.
+  function passeEin(e, w, h) {
+    var ifr = e.frame
+    if (!ifr) return
+    var bw = BREITE[z.geraet]
+    var s, iw = bw, ih, x, y
+    if (z.geraet === 'handy') {
+      s = Math.min(1, (w - 16) / bw, (h - 16) / HANDY_HOEHE)
+      ih = HANDY_HOEHE
+      x = (w - bw * s) / 2
+      y = Math.max(8, (h - ih * s) / 2)
+    } else {
+      s = Math.min(1, w / bw)
+      ih = h / s
+      x = Math.max(0, (w - bw * s) / 2)
+      y = 0
+    }
+    ifr.style.width = iw + 'px'
+    ifr.style.height = ih + 'px'
+    ifr.style.transform = 'translate(' + Math.round(x) + 'px,' + Math.round(y) + 'px) scale(' + s.toFixed(4) + ')'
+  }
+
+  function lege(e, x, y, w, h) {
+    var p = e.platz
+    p.classList.add('sichtbar')
+    p.style.left = x + 'px'
+    p.style.top = y + 'px'
+    p.style.width = w + 'px'
+    p.style.height = h + 'px'
+    passeEin(e, w, h - 32)
+  }
+
+  function zeichne() {
+    var rand = 14, abstand = 14
+    var W = buehne.clientWidth - 2 * rand, H = buehne.clientHeight - 2 * rand
+    body.setAttribute('data-modus', z.modus)
+    body.setAttribute('data-geraet', z.geraet)
+    eintraege.forEach(function (e) { e.platz.classList.remove('sichtbar', 'aktiv') })
+    if (!nachId[z.aktiv]) z.aktiv = erste('')
+    var sichtbar = []
+    if (z.modus === 'einzeln') {
+      sichtbar = [z.aktiv]
+      if (nachId[z.aktiv]) lege(nachId[z.aktiv], rand, rand, W, H)
+    } else if (z.modus === 'nebeneinander') {
+      sichtbar = [z.links, z.rechts]
+      var halb = (W - abstand) / 2
+      if (nachId[z.links]) lege(nachId[z.links], rand, rand, halb, H)
+      if (nachId[z.rechts]) lege(nachId[z.rechts], rand + halb + abstand, rand, halb, H)
+      var aktiv = platzVon(z[z.seite])
+      if (aktiv) aktiv.classList.add('aktiv')
+      if (nachId[z.links]) nachId[z.links].wahl.value = z.links
+      if (nachId[z.rechts]) nachId[z.rechts].wahl.value = z.rechts
+    } else {
+      var n = eintraege.length
+      var spalten = n <= 3 ? n : (n === 4 ? 2 : 3)
+      var zeilen = Math.ceil(n / spalten)
+      var cw = (W - abstand * (spalten - 1)) / spalten, ch = (H - abstand * (zeilen - 1)) / zeilen
+      eintraege.forEach(function (e, i) {
+        sichtbar.push(e.id)
+        lege(e, rand + (i % spalten) * (cw + abstand), rand + Math.floor(i / spalten) * (ch + abstand), cw, ch)
+      })
+    }
+    eintraege.forEach(function (e) {
+      var an = sichtbar.indexOf(e.id) >= 0
+      e.reiter.setAttribute('aria-pressed', an && z.modus !== 'alle' ? 'true' : 'false')
+      e.reiter.lastChild.textContent = z.modus === 'nebeneinander' ? (e.id === z.links ? 'L' : e.id === z.rechts ? 'R' : '') : ''
+    })
+    document.querySelectorAll('[data-modus]').forEach(function (b) { if (b.tagName === 'BUTTON') b.setAttribute('aria-pressed', b.getAttribute('data-modus') === z.modus) })
+    document.querySelectorAll('button[data-geraet]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-geraet') === z.geraet) })
+    document.getElementById('mit').setAttribute('aria-pressed', z.mit)
+    body.setAttribute('data-aktiv', z.modus === 'einzeln' ? z.aktiv : z.modus === 'nebeneinander' ? z.links + ',' + z.rechts : 'alle')
+    merke()
+  }
+
+  // Zustand im Hash der Seite, damit ein Neuladen dieselbe Ansicht zeigt.
+  function merke() {
+    var h = '#m=' + z.modus + '&a=' + z.aktiv + '&l=' + z.links + '&r=' + z.rechts + '&g=' + z.geraet + '&s=' + (z.mit ? 1 : 0)
+    try { history.replaceState(null, '', h) } catch (e) { /* file:// ohne Verlauf */ }
+  }
+  function lies() {
+    var q = {}
+    location.hash.replace(/^#/, '').split('&').forEach(function (t) { var kv = t.split('='); if (kv[0]) q[kv[0]] = decodeURIComponent(kv[1] || '') })
+    if (/^(einzeln|nebeneinander|alle)$/.test(q.m)) z.modus = q.m
+    if (nachId[q.a]) z.aktiv = q.a
+    if (nachId[q.l]) z.links = q.l
+    if (nachId[q.r]) z.rechts = q.r
+    if (q.g === 'handy' || q.g === 'desktop') z.geraet = q.g
+    if (q.s === '0') z.mit = false
+    if (z.modus === 'nebeneinander' && (!z.links || !z.rechts || z.links === z.rechts)) { z.links = z.aktiv || erste(''); z.rechts = erste(z.links) }
+  }
+
+  // Tasten: hier und aus den Entwürfen (der Anschluss reicht sie weiter).
+  function taste(k) {
+    if (/^[1-5]$/.test(k)) {
+      var e = eintraege.filter(function (x) { return x.nr === k })[0]
+      if (e) waehle(e.id)
+    } else if (k === '0') setzeModus(z.modus === 'alle' ? 'einzeln' : 'alle')
+    else if (k === 'n' || k === 'N') setzeModus(z.modus === 'nebeneinander' ? 'einzeln' : 'nebeneinander')
+    else if (k === 'e' || k === 'E' || k === 'Escape') { if (!hilfe.hidden) zeigeHilfe(false); else setzeModus('einzeln') }
+    else if (k === 'd' || k === 'D') { z.geraet = 'desktop'; zeichne() }
+    else if (k === 'h' || k === 'H') { z.geraet = 'handy'; zeichne() }
+    else if (k === 'm' || k === 'M') { z.mit = !z.mit; zeichne() }
+    else if ((k === 'v' || k === 'V') && nachId.v) waehle('v')
+    else if (k === '?') zeigeHilfe(hilfe.hidden)
+    else return false
+    return true
+  }
+  document.addEventListener('keydown', function (ev) {
+    if (ev.ctrlKey || ev.altKey || ev.metaKey) return
+    var t = ev.target && ev.target.tagName
+    if (t === 'INPUT' || t === 'SELECT' || t === 'TEXTAREA') return
+    if (taste(ev.key)) ev.preventDefault()
+  })
+
+  var hilfe = document.getElementById('hilfe')
+  var hilfeknopf = document.getElementById('hilfeknopf')
+  function zeigeHilfe(an) { hilfe.hidden = !an; hilfeknopf.setAttribute('aria-expanded', an) }
+  hilfeknopf.addEventListener('click', function () { zeigeHilfe(hilfe.hidden) })
+  document.getElementById('mit').addEventListener('click', function () { z.mit = !z.mit; zeichne() })
+  document.querySelectorAll('button[data-modus]').forEach(function (b) { b.addEventListener('click', function () { setzeModus(b.getAttribute('data-modus')) }) })
+  document.querySelectorAll('button[data-geraet]').forEach(function (b) { b.addEventListener('click', function () { z.geraet = b.getAttribute('data-geraet'); zeichne() }) })
+
+  // Nachrichten der Entwürfe: bereit, neue Route (Mitlaufen), Taste.
+  window.addEventListener('message', function (ev) {
+    var d = ev.data
+    if (!d || typeof d !== 'object' || !d.entwurf) return
+    var von = eintraege.filter(function (e) { return e.frame && e.frame.contentWindow === ev.source })[0]
+    if (!von) return
+    von.platz.setAttribute('data-verbunden', 'ja')
+    if (d.entwurf === 'taste') { taste(d.taste); return }
+    if (typeof d.pfad === 'string') routen[von.id] = d.pfad
+    if (d.entwurf === 'route' && !d.echo && z.mit) {
+      eintraege.forEach(function (e) {
+        if (e !== von && e.frame && routen[e.id] !== d.pfad) e.frame.contentWindow.postMessage({ entwurf: 'gehe', pfad: d.pfad }, '*')
+      })
+    }
+  })
+
+  window.addEventListener('resize', zeichne)
+  lies()
+  zeichne()
+  window.Vergleich = { zustand: function () { return JSON.parse(JSON.stringify(z)) }, routen: function () { return JSON.parse(JSON.stringify(routen)) }, taste: taste }
+})()
+</script>
+</body>
+</html>

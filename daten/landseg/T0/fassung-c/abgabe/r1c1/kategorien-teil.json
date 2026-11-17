@@ -1,0 +1,286 @@
+{
+ "schema": "landseg-kategorien/1",
+ "teilkachel": "r1c1",
+ "classes": [
+  {
+   "code": "1",
+   "name": "Gebäude und bauliche Anlagen",
+   "parent": null,
+   "level": 1,
+   "color": "#c0392b",
+   "image_cue": "Dachflächen, gerade Kanten, Schlagschatten nach Nordwest"
+  },
+  {
+   "code": "1.1",
+   "name": "Gebäude",
+   "parent": "1",
+   "level": 2,
+   "color": "#e74c3c",
+   "image_cue": "geschlossene Dachfläche mit First oder Flachdach"
+  },
+  {
+   "code": "1.1.1",
+   "name": "Gartenhaus / Laube (ab ca. 10 m²)",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#e6194b",
+   "image_cue": "Ziegel-, Blech- oder Pappdach, ab ca. 250 Bildpunkten"
+  },
+  {
+   "code": "1.1.2",
+   "name": "Schuppen / Kleinbau / Anbau",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#f58231",
+   "image_cue": "kleines Dach unter ca. 10 m² oder Anbau an ein Gartenhaus"
+  },
+  {
+   "code": "1.1.3",
+   "name": "Gewächshaus / Glas- oder Foliendach",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#fabed4",
+   "image_cue": "hell, durchscheinend, Sprossen oder Folienglanz"
+  },
+  {
+   "code": "1.2",
+   "name": "Sonstige bauliche Anlage",
+   "parent": "1",
+   "level": 2,
+   "color": "#911eb4",
+   "image_cue": "kein Dach, aber gebaut"
+  },
+  {
+   "code": "1.2.1",
+   "name": "Schwimmbecken / Planschbecken",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#42d4f4",
+   "image_cue": "türkis-blaue runde oder eckige Wasserfläche"
+  },
+  {
+   "code": "1.2.2",
+   "name": "Stützmauer / Terrassierung",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#9a6324",
+   "image_cue": "helle parallele Streifen am Hang mit Schattenkanten"
+  },
+  {
+   "code": "1.2.3",
+   "name": "Kleinobjekt (Schirm, Plane, Zelt)",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#f032e6",
+   "image_cue": "kleine sehr helle oder bunte Fläche, rund oder unregelmäßig"
+  },
+  {
+   "code": "2",
+   "name": "Wege und befestigte Flächen",
+   "parent": null,
+   "level": 1,
+   "color": "#7f7f7f",
+   "image_cue": "befahrene oder begangene Flächen"
+  },
+  {
+   "code": "2.1",
+   "name": "Befestigt",
+   "parent": "2",
+   "level": 2,
+   "color": "#a9a9a9",
+   "image_cue": "grau oder beige, glatt, ohne Pflanzentextur"
+  },
+  {
+   "code": "2.1.1",
+   "name": "Fahrweg (Asphalt, Schotter)",
+   "parent": "2.1",
+   "level": 3,
+   "color": "#5c5c5c",
+   "image_cue": "durchgehendes graues Band, breiter als 2,5 m"
+  },
+  {
+   "code": "2.1.2",
+   "name": "Gartenweg / Stufen / Platten",
+   "parent": "2.1",
+   "level": 3,
+   "color": "#c8c8c8",
+   "image_cue": "schmales helles Band zwischen Parzellen"
+  },
+  {
+   "code": "2.1.3",
+   "name": "Terrasse / Hof / Vorplatz",
+   "parent": "2.1",
+   "level": 3,
+   "color": "#dcbeff",
+   "image_cue": "helle Fläche direkt am Gartenhaus"
+  },
+  {
+   "code": "2.2",
+   "name": "Unbefestigt",
+   "parent": "2",
+   "level": 2,
+   "color": "#b5a27a",
+   "image_cue": "begangen, aber ohne Belag"
+  },
+  {
+   "code": "2.2.1",
+   "name": "Wiesenweg (begrünter Hauptweg)",
+   "parent": "2.2",
+   "level": 3,
+   "color": "#bfef45",
+   "image_cue": "gerades grünes Band mit Fahrspur- oder Randlinien zwischen Parzellenreihen"
+  },
+  {
+   "code": "2.2.2",
+   "name": "Trampelpfad / Erdweg",
+   "parent": "2.2",
+   "level": 3,
+   "color": "#aa6e28",
+   "image_cue": "schmale helle oder braune Spur in Wiese oder Garten"
+  },
+  {
+   "code": "3",
+   "name": "Acker",
+   "parent": null,
+   "level": 1,
+   "color": "#ffe119",
+   "image_cue": "große bewirtschaftete Fläche ohne Gras"
+  },
+  {
+   "code": "3.1",
+   "name": "Stoppelfeld (abgeerntet)",
+   "parent": "3",
+   "level": 2,
+   "color": "#ffd8b1",
+   "image_cue": "beige-braun mit parallelen Bearbeitungsstreifen"
+  },
+  {
+   "code": "4",
+   "name": "Grünland und Rasen",
+   "parent": null,
+   "level": 1,
+   "color": "#3cb44b",
+   "image_cue": "krautig, ohne Gehölz"
+  },
+  {
+   "code": "4.1",
+   "name": "Wiese am Hang (extensiv)",
+   "parent": "4",
+   "level": 2,
+   "color": "#7fc97f",
+   "image_cue": "ungleichmäßig grün, grob, außerhalb der Gärten"
+  },
+  {
+   "code": "4.2",
+   "name": "Gartenrasen",
+   "parent": "4",
+   "level": 2,
+   "color": "#aaffc3",
+   "image_cue": "gleichmäßig grün, kurz, innerhalb der Parzellen"
+  },
+  {
+   "code": "4.3",
+   "name": "Saum / Feldrain / Böschung",
+   "parent": "4",
+   "level": 2,
+   "color": "#b8e186",
+   "image_cue": "schmaler Streifen am Feld- oder Wegrand"
+  },
+  {
+   "code": "5",
+   "name": "Gartenbeete und Gartenflächen",
+   "parent": null,
+   "level": 1,
+   "color": "#808000",
+   "image_cue": "kleinteilig, bunt, Reihen"
+  },
+  {
+   "code": "5.1",
+   "name": "Gemüse- und Nutzbeete",
+   "parent": "5",
+   "level": 2,
+   "color": "#d2f53c",
+   "image_cue": "parallele Beetreihen, offener Boden zwischen Pflanzen"
+  },
+  {
+   "code": "5.2",
+   "name": "Gemischte Gartenfläche",
+   "parent": "5",
+   "level": 2,
+   "color": "#bcbd22",
+   "image_cue": "Mosaik aus Beet, Strauch, Rasen und Kleinkram, nicht weiter trennbar"
+  },
+  {
+   "code": "6",
+   "name": "Gehölze",
+   "parent": null,
+   "level": 1,
+   "color": "#1b5e20",
+   "image_cue": "Kronen mit Textur und Schatten"
+  },
+  {
+   "code": "6.1",
+   "name": "Wald (geschlossener Bestand)",
+   "parent": "6",
+   "level": 2,
+   "color": "#004d40",
+   "image_cue": "zusammenhängende Kronendecke, große Fläche, eigener Schatten"
+  },
+  {
+   "code": "6.2",
+   "name": "Baumgruppe / Feldgehölz",
+   "parent": "6",
+   "level": 2,
+   "color": "#2e7d32",
+   "image_cue": "mehrere Kronen verbunden, mit Schlagschatten"
+  },
+  {
+   "code": "6.3",
+   "name": "Einzelbaum",
+   "parent": "6",
+   "level": 2,
+   "color": "#00c853",
+   "image_cue": "einzelne runde Krone mit Schatten, ab ca. 12 m²"
+  },
+  {
+   "code": "6.4",
+   "name": "Hecke / Gehölzstreifen",
+   "parent": "6",
+   "level": 2,
+   "color": "#469990",
+   "image_cue": "schmales dunkles Band entlang einer Grenze"
+  },
+  {
+   "code": "6.5",
+   "name": "Strauch / Gebüsch",
+   "parent": "6",
+   "level": 2,
+   "color": "#66bb6a",
+   "image_cue": "kleine dunkle Krone unter ca. 12 m² oder Strauchgruppe"
+  },
+  {
+   "code": "6.6",
+   "name": "Schnittgut / Totholz",
+   "parent": "6",
+   "level": 2,
+   "color": "#8d6e63",
+   "image_cue": "graue Äste, Reisighaufen, liegende Stämme"
+  },
+  {
+   "code": "7",
+   "name": "Schatten / nicht bestimmbar",
+   "parent": null,
+   "level": 1,
+   "color": "#212121",
+   "image_cue": "Untergrund nicht erkennbar"
+  },
+  {
+   "code": "7.1",
+   "name": "Schlagschatten ohne erkennbaren Untergrund",
+   "parent": "7",
+   "level": 2,
+   "color": "#424242",
+   "image_cue": "sehr dunkel, an der Nordwestseite von Gebäuden oder Bäumen"
+  }
+ ]
+}

@@ -1,0 +1,382 @@
+{
+ "teilkachel": "r1c0",
+ "viertel": "v3",
+ "bearbeiter": "urt-a-r1c0-v3",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/uebersicht_roh.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah1_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r1c0/v3/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah4_nummern.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 300038,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Grasfläche mit vielen verstreuten Büschen und einzelnen hellen Flecken zwischen der Hangwiese und dem Wald; kein Sportplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein künstlicher Belag: Gras mit eingestreuten Büschen, verbuschendes Grünland (132/346).",
+     "flaeche_px": 21077
+    },
+    {
+     "nr": 2,
+     "art": "fremdes",
+     "text": "Zwei helle beige Flecken (offener Boden, Holz- oder Streuhaufen) im Gras, je etwa 10 × 12 px (112/350).",
+     "flaeche_px": 250
+    },
+    {
+     "nr": 3,
+     "art": "verschmelzen",
+     "text": "Kleine Stücke 300058, 300056, 300055, 300052, 300054 und 300050 sind dieselbe Fläche; verschmelzen (200/385).",
+     "flaeche_px": null
+    },
+    {
+     "nr": 4,
+     "art": "grenze",
+     "text": "Nordgrenze zu Wiese 300019 nur teils auf sichtbarem Übergang, Strecke geschätzt (150/312).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r1c0/v3/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v1/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 300049,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dunkler Busch mit Schatten im verbuschten Grasland.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Krone mit Schatten, kein Gras; Gehölz (Busch oder kleiner Baum) (197/329).",
+     "flaeche_px": 236
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300051,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hufeisenförmiges Segment aus zwei dunklen Büschen und dem Gras dazwischen, um das Grasstück 300050 herum.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein geschlossener Wald, sondern Büsche im Grasland; Gehölz außerhalb Wald (243/340).",
+     "flaeche_px": 476
+    },
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Bogen im Süden enthält Gras zwischen den Büschen; Grenze auf die Kronenränder legen, Gras zu 300038 (250/348).",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300050,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Grasstück zwischen den Büschen von 300051.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gras wie die Umgebung 300038, keine Bildkante zur Umgebung; verschmelzen (254/330).",
+     "flaeche_px": 147
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300043,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Winziger Zipfel des Waldes am linken Kernrand, Übergang vom Grasland in den dunklen Waldstreifen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah1_roh.jpg"
+   ]
+  },
+  {
+   "id": 300058,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Kleines Gras- und Buschstück am Westrand des verbuschten Graslands; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Ackerstruktur, Gras mit Busch wie 300038 (106/375).",
+     "flaeche_px": 115
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300038 verschmelzen (104/373).",
+     "flaeche_px": 115
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r1c0/v3/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah1_roh.jpg"
+   ]
+  },
+  {
+   "id": 300056,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gras- und Buschsaum am Südrand des verbuschten Graslands, vor dem Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Zackige Grenze zu 300038 ohne Bildkante, gleiche Bedeckung; verschmelzen (157/386).",
+     "flaeche_px": 949
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r1c0/v3/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 300055,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Gras- und Buschsaum am Waldrand südlich von 300038.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Grenze zu 300038 ohne Bildkante, gleiche Bedeckung; verschmelzen (232/392).",
+     "flaeche_px": 959
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300052,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Kleines Gras- und Buschstück am Ostrand des verbuschten Graslands; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Ackerstruktur, Gras mit Büschen (288/355).",
+     "flaeche_px": 165
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300038 verschmelzen (286/352).",
+     "flaeche_px": 165
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300054,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Grasstück mit Büschen am Ostrand des Viertels vor dem Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Grenze zu 300052 und 300038 ohne Bildkante; verschmelzen (303/362).",
+     "flaeche_px": 199
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300053,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Waldstreifen am linken Kernrand, Kronen im Schatten schwach erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Beschatteter Wald mit erkennbaren Kronen, nach U2 Wald (79/417).",
+     "flaeche_px": 2132
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen (85/420).",
+     "flaeche_px": 2132
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/uebersicht_roh.jpg"
+   ]
+  },
+  {
+   "id": 300061,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große dunkle Fläche im Wald südlich des Graslands; Kronen im Schatten mit einzelnen Lichtflecken.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten im Wald mit erkennbarer Fortsetzung, nach U2 Wald (189/446).",
+     "flaeche_px": 6930
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 300060, 300073 und Wald 300008 verschmelzen (200/460).",
+     "flaeche_px": 6930
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300060,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große dunkle Fläche im Wald östlich von 300061, reicht nach v4; Kronen im Schatten mit Lichtflecken.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Vorstufe sagt sicher, aber Kronen und Lichtflecken sind sichtbar; nach U2 Wald statt 0.2 (277/427).",
+     "flaeche_px": 10987
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit Wald 300008 verschmelzen (290/440).",
+     "flaeche_px": 10987
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300073,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Kleines Stück am Südrand des Schattens 300061, Übergang zu sonnigen Kronen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Wald im Halbschatten, kein Schatten ohne Grund (209/485).",
+     "flaeche_px": 268
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Gerade senkrechte Westgrenze zu 300061 ohne Bildkante; mit 300061 bzw. 300008 verschmelzen (205/485).",
+     "flaeche_px": 268
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r1c0/v3/nah4_nummern.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 300053,
+   "seite": "links",
+   "text": "Klasse 0.2 → 4.1 am linken Rand des Ausschnitts (Kontextrand außerhalb T0)."
+  }
+ ],
+ "unsicher": [
+  "300038 und die Saumstücke: verbuschendes Grünland 3.5 gewählt; ob 3.1 mit Büschen als Einzelsegmenten (G4-ähnlich) oder 3.3 Ruderalflur besser passt, offen.",
+  "300008 (Viertel v2 geurteilt): enthält in v3 einen hellbraunen Fleck (offener Boden oder Totholz) bei (132/390) und eine hellere Gebüschzunge x 92–135, y 385–450.",
+  "Schattenflächen 300053, 300061, 300060, 300073: Wald nach U2; einzelne Kronen unter dem Schatten sind nicht abgrenzbar."
+ ],
+ "nicht_geprueft": [
+  "nah3_roh, nah3_nummern und nah4_roh (Wald im Süden) sowie uebersicht_vorschlag/maengel/kontrast/gitter nicht eigens angesehen; der Waldteil wurde in uebersicht_roh und nah4_nummern beurteilt. Werkzeug kante nicht benutzt."
+ ],
+ "offen": [
+  "300038: Klasse 3.5 gegen 3.1/3.3; klären mit Regel, ob verstreute Büsche einzeln segmentiert werden sollen.",
+  "300038: helle Flecken bei (112/350) und (155/352) – offener Boden, Holz- oder Streuhaufen; klären mit Blick vor Ort oder höher aufgelöstem Bild."
+ ]
+}

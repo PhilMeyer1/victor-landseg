@@ -1,0 +1,886 @@
+{
+ "teilkachel": "r0c0",
+ "viertel": "v4",
+ "bearbeiter": "urt-a-r0c0-v4",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r0c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r0c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_vorschlag.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/nah_1.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 100146,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkles Randstück am Westrand der Baumgruppe 135.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronenrand (348/344), keine 0.2.",
+     "flaeche_px": 107
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100135 verschmelzen (348/344).",
+     "flaeche_px": 107
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100135,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Längliche Gehölzgruppe aus mehreren Kronen (etwa 13 × 20 m) zwischen Garten und Feld.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere Kronen mit eigenen Lichtpunkten (378/338, 385/370); keine einzelne Krone.",
+     "flaeche_px": 4748
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100148,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Kleiner runder Strauch am Ostrand der Gruppe 135 in der Wiese; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Runder Strauch (409/341), kein Acker; auch reines Gras möglich.",
+     "flaeche_px": 150
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100137,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Hellere Wiese bzw. Rasen unterhalb des Gartenzauns mit einer Reihe kleiner Sträucher.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "fehlt",
+     "text": "Kleiner dunkler Strauch nicht abgetrennt (Klasse 4.2.4) bei (440/322).",
+     "flaeche_px": 60
+    },
+    {
+     "nr": 2,
+     "art": "fehlt",
+     "text": "Weiterer kleiner Strauch (Klasse 4.2.4) bei (470/332).",
+     "flaeche_px": 40
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100141,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkles Randstück zwischen Rasen 137 und der roten Krone 136.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100136 verschmelzen (500/330); kein Wald.",
+     "flaeche_px": 91
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100136,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große rotlaubige Krone (Blutbuche) am rechten Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100153,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Grasstück zwischen Gruppe 135 und der Westspitze des Feldes; kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras wie 56 (362/378).",
+     "flaeche_px": 78
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100056 verschmelzen (362/378).",
+     "flaeche_px": 78
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100156,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Helle Nordwestecke des gemähten Feldes, gleiche Farbe und Schwaden wie 159; kein Weg erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Teil des Feldes (366/388), kein Weg.",
+     "flaeche_px": 135
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100159 verschmelzen (366/388).",
+     "flaeche_px": 135
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100154,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Grasstück am Nordrand des Feldes, gehört zur Wiese 143.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Wiese (414/380), kein Acker.",
+     "flaeche_px": 118
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100143 verschmelzen (414/380).",
+     "flaeche_px": 118
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100160,
+   "klasse_heute": "6.1",
+   "was_ist_es": "Schmaler Rand des Feldes mit Schwaden; keine offene Bodenstelle.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Feldrand (436/389), kein offener Boden.",
+     "flaeche_px": 78
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100159 verschmelzen (436/389).",
+     "flaeche_px": 78
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100143,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiese zwischen Gartenzaun, Gruppe 135 und Feld.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100158,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Grüner Saum am Nordrand des Feldes, gehört zur Wiese.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras (455/389), kein Acker.",
+     "flaeche_px": 200
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100143 verschmelzen (455/389).",
+     "flaeche_px": 200
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100152,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Heller Grasstreifen am Südrand der roten Krone 136.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras (517/365), kein Wald.",
+     "flaeche_px": 85
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100143 verschmelzen (517/365).",
+     "flaeche_px": 85
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100150,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler, beschatteter Kronenteil zwischen 136 und 149.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronentextur (531/370), keine 0.2.",
+     "flaeche_px": 220
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100149 verschmelzen (531/370).",
+     "flaeche_px": 220
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100149,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Dunkle Baumkronen am rechten Kernrand nördlich des Feldes, reichen nach r0c1.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hohe Kronen mit Lichtpunkten (550/376), eher Bäume als Gebüsch; Elternklasse.",
+     "flaeche_px": 1337
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100172,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiesenstück am linken Rand des Viertels zwischen der rauen Fläche 56 und der Wiese 175.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100167,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Westspitze des gemähten Feldes, grünlich-gelb.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100159 verschmelzen (352/416).",
+     "flaeche_px": 156
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100173,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Grüner Saum am Südrand des Feldes, gehört zur Wiese 175.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras (366/426), kein Acker.",
+     "flaeche_px": 86
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100175 verschmelzen (366/426).",
+     "flaeche_px": 86
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100174,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Grüner Saum am Südrand des Feldes; kein Weg erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras (385/428), kein Weg.",
+     "flaeche_px": 96
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100175 verschmelzen (385/428).",
+     "flaeche_px": 96
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100162,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Gelbgrüner Saum am Nordrand des Feldes.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Ungemähter Saum (480/399), eher Wiese.",
+     "flaeche_px": 75
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100143 verschmelzen (480/399).",
+     "flaeche_px": 75
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100164,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Gelbgrüner Saum am Nordrand des Feldes.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Ungemähter Saum (511/402), eher Wiese.",
+     "flaeche_px": 80
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100143 verschmelzen (511/402).",
+     "flaeche_px": 80
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100159,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Großes, vollständig abgeerntetes bzw. gemähtes Feld mit Schwaden in Hangrichtung, ohne grünen Bewuchs dazwischen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100163,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Gelbgrüner Saum am Nordrand des Feldes neben den Bäumen 149.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Ungemähter Saum (524/402), eher Wiese.",
+     "flaeche_px": 155
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100143 verschmelzen (524/402).",
+     "flaeche_px": 155
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100155,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Grüner Saum zwischen Bäumen 149 und Feld; kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gras bzw. Kronenrand (538/395), kein Wald.",
+     "flaeche_px": 238
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100143 verschmelzen (538/395); Ostrand kann zu 149 gehören.",
+     "flaeche_px": 238
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100170,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Gelblicher Rand des Feldes am rechten Kernrand; kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Feldrand (556/421), kein Wald.",
+     "flaeche_px": 88
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100159 verschmelzen (556/421).",
+     "flaeche_px": 88
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 100176,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiesenstück mit hellen Flecken am Nordwestrand der großen Krone 177.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100172 verschmelzen, keine Bildkante (322/455).",
+     "flaeche_px": 312
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100177,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Sehr große dunkle Gehölzfläche (etwa 19 × 23 m) aus dichten Kronen mit Lichtpunkten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronentextur (352/487), Gehölz statt 0.2.",
+     "flaeche_px": 5884
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100179,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dunkler Streifen am Nordostrand der Krone 177.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100177 verschmelzen (390/475); Kronenrand, keine Wiese.",
+     "flaeche_px": 195
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100187,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kleines dunkles Stück am Rand der Krone 177.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100177 verschmelzen (400/495).",
+     "flaeche_px": 73
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100183,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Graslücke zwischen den Kronen 177 und 185.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100175 verschmelzen, keine Bildkante (410/485).",
+     "flaeche_px": 340
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100191,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Gruppe hellerer Kronen südlich von 177 bis über den unteren Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Mehrere Kronen (410/548), keine einzelne.",
+     "flaeche_px": 2872
+    },
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Das abgetrennte Stück von 56 östlich davon (470/540) zeigt dieselbe Kronentextur und gehört zur Gehölzfläche.",
+     "flaeche_px": 2152
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100189,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Hellere Kronen zwischen 177, 185 und 191; kein Gras.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronentextur (420/510), keine Wiese.",
+     "flaeche_px": 389
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Mit 100191 verschmelzen (420/510).",
+     "flaeche_px": 389
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100185,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große dunkle Krone bzw. Kronengruppe südlich des Feldes.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronentextur (474/526), Gehölz statt 0.2.",
+     "flaeche_px": 3249
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100190,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Mitteldunkles Stück am Nordostrand der Krone 185.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100185 verschmelzen (494/508); Kronenrand.",
+     "flaeche_px": 124
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100196,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiesenstück am Rand der Krone 194.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100175 verschmelzen (531/545).",
+     "flaeche_px": 126
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100175,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiese zwischen Feld und Gehölzen, etwas rau, ohne Büsche.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100194,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Krone am unteren Kernrand, reicht weit nach r1c0.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100197,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiesenstück am unteren Kernrand neben Krone 194.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Mit 100175 verschmelzen (545/556).",
+     "flaeche_px": 112
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/viertel/r0c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/urteil/r0c0/v4/nah_1.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 100149,
+   "seite": "rechts",
+   "text": "Vorschlag 4.2 statt 4.2.4; der größere Teil liegt in r0c1 und muss dort gleich gesetzt werden."
+  },
+  {
+   "id": 100170,
+   "seite": "rechts",
+   "text": "Feldrand, Vorschlag mit 159 verschmelzen; reicht über den Kernrand."
+  },
+  {
+   "id": 100191,
+   "seite": "unten",
+   "text": "Vorschlag 4.2 statt 4.2.1; Teil in r1c0 gleich setzen."
+  },
+  {
+   "id": 100197,
+   "seite": "unten",
+   "text": "Wiesenstück, Vorschlag mit 175 verschmelzen; Teil in r1c0."
+  }
+ ],
+ "unsicher": [
+  "100056 (v1): abgetrenntes Teilstück in v4 (470/540) ist Gehölz, keine Wiese; im Urteil von v1 bei 56 nachgetragen.",
+  "100127 (v2): dunkle Krone, schließt an die rote Krone 136 an.",
+  "100134 und 100133 (v2): Strauch bzw. Kronenrand am Nordrand der Gruppe 135.",
+  "100172 und 100176: Wiesenstücke, ob sie zu 56 oder 175 gehören, ist ohne Bildkante nicht zu entscheiden."
+ ],
+ "nicht_geprueft": [
+  "Rohbilder nah1_roh bis nah4_roh, uebersicht_kontrast.jpg und uebersicht_gitter.jpg nicht eigens angesehen; eigenes Kontrastbild des Feldes und eigene Nahansicht der Gehölze im Süden.",
+  "Werkzeug kante (W4) nicht benutzt; Grenzen nach Augenschein.",
+  "Gegenseiten der Nähte in r0c1 und r1c0 nicht angesehen."
+ ],
+ "offen": [
+  "100159: Getreidestoppel mit Strohschwaden (Acker 2.1) oder gemähte Wiese mit Heuschwaden (3.1.1)? Zwischen den Schwaden ist kein Grün zu sehen; Klasse 2.1 belassen, Fremddaten (INVEKOS) klären.",
+  "Große dunkle Kronen (177, 185, 191, 135, 149): Einzelbaum, Baumgruppe oder Gebüsch ist ohne Höhe nicht sicher; Elternklasse 4.2.",
+  "100148: kleiner Strauch oder Grasbuckel?"
+ ]
+}

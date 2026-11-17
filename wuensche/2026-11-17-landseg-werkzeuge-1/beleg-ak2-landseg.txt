@@ -1,0 +1,39 @@
+Blattklassen: 46 verwendet: ['1.2.3', '1.4.1', '2.4.2', '3.5'] neu: 1.1.2
+1. verschmelzen: {"ziel": 2, "entfernt": [3]}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 3, nicht zusammenhängend: 0
+ok
+exit 0
+1. teilen: {"behalten": 1, "neu": [5]}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 4, nicht zusammenhängend: 0
+ok
+exit 0
+1. grenze_verschieben: {"bildpunkte": 4020, "entfernt": []}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 4, nicht zusammenhängend: 0
+ok
+exit 0
+1. klasse_setzen: {"alt": "3.5", "neu": "1.1.2"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 4, nicht zusammenhängend: 0
+ok
+exit 0
+1. polygon_zuweisen: {"ziel": 6, "bildpunkte": 2601, "entfernt": [], "aufgeteilt_neu": []}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 5, nicht zusammenhängend: 0
+ok
+exit 0
+abgelehnt, nichts geändert: Segmente [4, 2] sind nicht zusammenhängend benachbart
+exit (Gegenprobe nicht benachbart) 1
+abgelehnt, nichts geändert: Klasse '9.9.9' steht nicht in kategorien.json
+exit (Gegenprobe Klasse) 1
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 5, nicht zusammenhängend: 0
+ok
+exit pruefen 0
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 1
+Segmente: 5, nicht zusammenhängend: 0
+FEHLER: 1 Mängel
+- Lücke: 1 Bildpunkte ohne Segment (ID 0), Bereich x 10–10, y 10–10
+exit pruefen Gegenprobe Luecke 1

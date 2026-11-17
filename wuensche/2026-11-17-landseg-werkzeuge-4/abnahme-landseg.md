@@ -1,0 +1,1 @@
+abgenommen, keine Mängel-Kandidaten aus den Blickwinkeln wunschtext, verhalten; nicht geprüft: wunschtext: Tests und Naht-Schwelle an echten Daten nicht gefahren (Wunschtext führt nichts aus; Bericht meldet 48 Tests ok); Lagebild entfällt, da keines existiert.

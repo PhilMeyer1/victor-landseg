@@ -1,0 +1,524 @@
+{
+ "teilkachel": "r1c0",
+ "viertel": "v3",
+ "bearbeiter": "urt-b-r1c0-v3",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_kontrast.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah3_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah4_nummern.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_1.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_2.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\kontrast_1.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 300038,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Grobe Kraut- und Hochstaudenfläche zwischen Wiese 19 und Wald mit vielen kleinen Sträuchern und einzelnen hellen Fehlstellen; kein Belag.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Krautsaum mit Sträuchern, kein Sport- oder Spielplatz (132/346)",
+     "flaeche_px": 21077
+    },
+    {
+     "nr": 2,
+     "art": "fehlt",
+     "text": "heller, gerader Streifen (x 274–330, y 348–356): Pfad oder liegender Stamm, nicht abgetrennt (300/351)",
+     "flaeche_px": 200
+    },
+    {
+     "nr": 3,
+     "art": "sonstiges",
+     "text": "helle Fehlstellen (offener Boden oder Totholz) bei 118/352 und 156/352, je unter der Mindestfläche (118/352)",
+     "flaeche_px": 250
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_1.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\kontrast_1.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300049,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dunkler, kompakter Strauch oder kleiner Baum mit Eigenschatten im Saum.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Strauch"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 4,
+     "art": "klasse",
+     "text": "Gehölz, keine Wiese (197/330)",
+     "flaeche_px": 236
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300051,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hufeisenförmige Gruppe dunkler Sträucher im Saum, umschließt die helle Krautfläche 50.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Strauchgruppe"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 5,
+     "art": "klasse",
+     "text": "Strauchgruppe, kein geschlossener Wald (243/342)",
+     "flaeche_px": 476
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300050,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Helle Krautfläche innerhalb des Strauchrings 51, gleiche Vegetation wie der Saum 38.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 6,
+     "art": "verschmelzen",
+     "text": "mit Saum 38 verschmelzen, Grenze zu 38 ohne Bildkante (254/330)",
+     "flaeche_px": 147
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300043,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Nur 25 Bildpunkte am linken Kernrand; im Kern helle Krautvegetation wie 38, der Rest des Segments (Gehölz) liegt im Kontextrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 7,
+     "art": "zu_klein",
+     "text": "Kernteil unter der Mindestfläche; mit Saum 38 verschmelzen (66/362)",
+     "flaeche_px": 25
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_nummern.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300058,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Kleines, helles Krautstück am Waldrand, kein Acker.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 8,
+     "art": "klasse",
+     "text": "Krautsaum, kein Acker (106/375)",
+     "flaeche_px": 115
+    },
+    {
+     "nr": 9,
+     "art": "verschmelzen",
+     "text": "mit Saum 38 verschmelzen (108/378)",
+     "flaeche_px": 115
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300056,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Krautsaum mit Sträuchern am Waldrand, gleiche Vegetation wie 38; enthält eine bräunliche Fehlstelle am Westende.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 10,
+     "art": "verschmelzen",
+     "text": "Grenze zu 38 ohne Bildkante; mit 38 verschmelzen (160/386)",
+     "flaeche_px": 949
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300055,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Krautsaum am Rand der dunklen Fläche 60/61, gleiche Vegetation wie 38.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 11,
+     "art": "verschmelzen",
+     "text": "Grenze zu 38 ohne Bildkante; mit 38 verschmelzen (235/392)",
+     "flaeche_px": 959
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 300052,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Krautstück am Waldrand mit zwei hellen parallelen Strichen (Hochsitz, Bank oder Holz?) an der Westkante.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 12,
+     "art": "klasse",
+     "text": "Krautsaum, kein Acker (288/356)",
+     "flaeche_px": 165
+    },
+    {
+     "nr": 13,
+     "art": "verschmelzen",
+     "text": "mit Saum 38 verschmelzen (290/358)",
+     "flaeche_px": 165
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_1.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 300054,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Krautstück mit Sträuchern am rechten Viertelrand, Übergang zum Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 14,
+     "art": "verschmelzen",
+     "text": "mit Saum 38 verschmelzen, Grenzen ohne Bildkante (303/364)",
+     "flaeche_px": 199
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_1.jpg"
+   ]
+  },
+  {
+   "id": 300053,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Waldteil am linken Kernrand mit erkennbaren, bläulich beschatteten Kronen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Wald",
+    "fein": "Wald beschattet"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 15,
+     "art": "klasse",
+     "text": "Kronen erkennbar, kein Schatten ohne Grund (79/417)",
+     "flaeche_px": 2132
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v3\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300061,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große, fast strukturlose dunkle Fläche südlich des Saums: Schatten im Wald; Grund nicht erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 16,
+     "art": "verschmelzen",
+     "text": "Grenze zu 60 liegt mitten in gleich dunkler Fläche ohne Bildkante; 60 und 61 verschmelzen (222/440)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah3_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300060,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Fortsetzung der dunklen Fläche 61 nach Osten bis in v4: Schatten im Wald, nur vereinzelte Kronenlichter.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 17,
+     "art": "verschmelzen",
+     "text": "mit 61 verschmelzen (Grenze ohne Bildkante) (245/430)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300073,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Kleiner dunkler Zipfel am Südrand von 61, gleich dunkel wie 61.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 18,
+     "art": "verschmelzen",
+     "text": "mit 61 verschmelzen, Grenze ohne Bildkante (212/486)",
+     "flaeche_px": 268
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v3/nah4_nummern.jpg"
+   ]
+  }
+ ],
+ "naht": [],
+ "unsicher": [
+  "300008 (Wald, v2): zwischen 53 und 61 ist 8 hier ein heller Streifen aus jungen Bäumen oder Sträuchern; darin eine bräunliche Fehlstelle bei 120–145/382–395 (offener Boden), nicht abgetrennt.",
+  "300045 und 300047 (v1): heller Bodenstreifen reicht bis an den oberen Rand von v3.",
+  "300048 (v4): dunkle Fläche östlich des hellen Streifens bei 300/351."
+ ],
+ "nicht_geprueft": [
+  "Werkzeug kante nicht benutzt; Grenzen nur nach Sicht beurteilt.",
+  "nah3_roh und nah4_roh von v3 (südliche Hälfte, fast nur Wald 8 und Schatten) nicht angesehen; dort nur die Nummernbilder, die Übersicht und das Kontrastbild."
+ ],
+ "offen": [
+  "38 mit 50, 52, 54, 55, 56, 58: ob die Fläche ein Krautsaum mit Sträuchern oder schon junger Gehölzaufwuchs ist; eine Höhenkarte würde es klären.",
+  "Heller, gerader Streifen bei 274–330/348–356 mit zwei parallelen Strichen an der Westkante: Pfad, liegender Stamm oder Hochsitz; im Luftbild nicht entscheidbar.",
+  "60, 61, 73: Schlagschatten auf Wald oder auf Boden in einer Lücke; Grund nicht erkennbar."
+ ],
+ "klassen_frei": [
+  {
+   "name": "Grünland",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "niedrige, krautige Vegetation ohne Kronen und Schatten von Gehölzen"
+  },
+  {
+   "name": "Gehölz",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Baum- oder Strauchkronen mit runder Kronenstruktur und Eigenschatten"
+  },
+  {
+   "name": "Schatten",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "sehr dunkle Fläche, in der der Grund nicht erkennbar ist"
+  },
+  {
+   "name": "Saum",
+   "ebene": "mittel",
+   "eltern": "Grünland",
+   "merkmal": "grobe, unruhige Kraut- und Hochstaudenvegetation am Waldrand"
+  },
+  {
+   "name": "Gebüsch",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "kleine, dunkle Kronen mit kurzem Schatten, freistehend im Grünland"
+  },
+  {
+   "name": "Wald",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "geschlossenes Kronendach aus vielen Kronen"
+  },
+  {
+   "name": "Schatten auf Gehölz",
+   "ebene": "mittel",
+   "eltern": "Schatten",
+   "merkmal": "dunkle Fläche inmitten von Gehölz"
+  },
+  {
+   "name": "Saum verbuscht",
+   "ebene": "fein",
+   "eltern": "Saum",
+   "merkmal": "Krautsaum mit eingestreuten kleinen dunklen Sträuchern"
+  },
+  {
+   "name": "Strauchgruppe",
+   "ebene": "fein",
+   "eltern": "Gebüsch",
+   "merkmal": "mehrere zusammenhängende Strauchkronen"
+  },
+  {
+   "name": "Strauch",
+   "ebene": "fein",
+   "eltern": "Gebüsch",
+   "merkmal": "einzelne kompakte Strauch- oder Jungbaumkrone"
+  },
+  {
+   "name": "Wald beschattet",
+   "ebene": "fein",
+   "eltern": "Wald",
+   "merkmal": "dunkles Kronendach, einzelne Kronen noch erkennbar"
+  },
+  {
+   "name": "Schatten auf Wald",
+   "ebene": "fein",
+   "eltern": "Schatten auf Gehölz",
+   "merkmal": "fast strukturlos dunkle Fläche, ringsum Wald"
+  }
+ ]
+}

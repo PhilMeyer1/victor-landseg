@@ -1,0 +1,58 @@
+{
+ "viertel": "v4",
+ "ausgabe": "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/urteil/r1c0/v4",
+ "punkte": [
+  [
+   1,
+   545,
+   533,
+   "76: Grenze zu 72 liegt in durchgehend dunkler Fläche ohne Bildkante; 72 und 76 verschmelzen"
+  ],
+  [
+   2,
+   532,
+   548,
+   "79: beleuchtete Krone, kein Schatten"
+  ],
+  [
+   3,
+   528,
+   552,
+   "79: 79 und 80 sind eine Krone ohne Kante dazwischen; zusammenlegen, Klasse Wald"
+  ],
+  [
+   4,
+   548,
+   528,
+   "72: mit 76 verschmelzen, Grenze ohne Bildkante"
+  ],
+  [
+   5,
+   521,
+   554,
+   "80: mit 79 zu einer Krone verschmelzen"
+  ]
+ ],
+ "verschmelzen": {
+  "300079": 300080,
+  "300072": 300076
+ },
+ "namen": {
+  "300048": "Schatten auf Wald",
+  "300059": "Schatten",
+  "300063": "Schatten auf Wald",
+  "300076": "Schatten auf Wald",
+  "300077": "Schatten auf Wald",
+  "300080": "Wald"
+ },
+ "kontrast": [
+  [
+   1,
+   470,
+   460,
+   100,
+   110,
+   5
+  ]
+ ]
+}

@@ -1,0 +1,926 @@
+{
+ "schema": "landseg-kategorien/1",
+ "title": "Gestufte Kategorienliste T0, Fassung C (aus den vier freien Listen der Teilkacheln zusammengelegt)",
+ "date": "2026-11-17",
+ "source": "daten/landseg/T0/fassung-c/abgabe/*/kategorien-teil.json",
+ "counts": {
+  "level_1": 7,
+  "level_2": 18,
+  "leaves": 32,
+  "rules_g": 2,
+  "rules_u": 0
+ },
+ "status": {
+  "bw": "nicht beurteilt: freie Liste einer Vergleichsfassung; die SW-Spalte steht überall auf 'eing.' als Platzhalter und ist ungeprüft.",
+  "mappings": "keine Zuordnungen: freie Liste, gegen CORINE, CLC+, FLAIR, DKM und Bericht 48 nicht abgebildet (Listen leer); die Regel bericht48 ist eine Näherung des Umsetzers.",
+  "colors": "B: Farben der Vereinheitlichung; C: vom Umsetzer je Ebene-1-Klasse eine Farbfamilie, Mindestabstand prüft tools/pruefe_kategorien.py"
+ },
+ "bw_values": {
+  "ja": "erkennbar",
+  "eing.": "eingeschränkt",
+  "nein": "nicht erkennbar"
+ },
+ "classes": [
+  {
+   "code": "0",
+   "name": "Schatten / nicht bestimmbar",
+   "parent": null,
+   "level": 1,
+   "color": "#383838",
+   "image_cue": "dunkle Fläche ohne erkennbaren Untergrund",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "0.1",
+   "name": "Schlagschatten",
+   "parent": "0",
+   "level": 2,
+   "color": "#d1d1d1",
+   "image_cue": "dunkler Streifen neben Gebäude, Hecke oder Baum",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "0.1.1",
+   "name": "Schlagschatten von Gebäude",
+   "parent": "0.1",
+   "level": 3,
+   "color": "#808080",
+   "image_cue": "dunkler Streifen an der Schattenseite eines Hauses",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "0.1.2",
+   "name": "Schlagschatten von Gehölz",
+   "parent": "0.1",
+   "level": 3,
+   "color": "#a8a8a8",
+   "image_cue": "dunkler Streifen neben Baum oder Hecke",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1",
+   "name": "Gebäude und bauliche Anlagen",
+   "parent": null,
+   "level": 1,
+   "color": "#f90606",
+   "image_cue": "Dächer und Bauwerke mit geraden Kanten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1",
+   "name": "Gebäude",
+   "parent": "1",
+   "level": 2,
+   "color": "#fa429e",
+   "image_cue": "Dachfläche mit geraden Kanten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1.1",
+   "name": "Wohnhaus (Hauptgebäude)",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#fba856",
+   "image_cue": "größeres Dach, Kamine, Gauben",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1.2",
+   "name": "Nebengebäude / Anbau / Schuppen",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#810318",
+   "image_cue": "kleines Dach neben dem Haus, Garage, Schuppen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1.3",
+   "name": "Gartenhaus / Laube",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#fc929a",
+   "image_cue": "kleines Dach im Garten oder Kleingarten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1.4",
+   "name": "Gewächshaus / Glas- oder Foliendach",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#865727",
+   "image_cue": "helles, spiegelndes Dach",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.2",
+   "name": "Bauliche Anlagen und Objekte",
+   "parent": "1",
+   "level": 2,
+   "color": "#f90657",
+   "image_cue": "kleine Bauwerke und Gegenstände",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.2.1",
+   "name": "Schwimmbecken",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#962c61",
+   "image_cue": "türkise oder blaue Fläche mit Rand",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.2.2",
+   "name": "Mauer / Stützmauer / Einfassung",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#bd4205",
+   "image_cue": "schmale gerade Linie, oft mit Schatten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.2.3",
+   "name": "Kleinobjekt",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#ddb288",
+   "image_cue": "Fahrzeug, Möbel, Plane, Schirm, Gartenausstattung",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.2.4",
+   "name": "Holzhaufen / Schnittgut",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#571929",
+   "image_cue": "Haufen aus Holz oder Grünschnitt",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2",
+   "name": "Wege und befestigte Flächen",
+   "parent": null,
+   "level": 1,
+   "color": "#dfd920",
+   "image_cue": "glatte graue oder beige Flächen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.1",
+   "name": "Befestigt",
+   "parent": "2",
+   "level": 2,
+   "color": "#96932c",
+   "image_cue": "Asphalt, Beton, Pflaster, Schotter",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.1.1",
+   "name": "Straße / Fahrweg",
+   "parent": "2.1",
+   "level": 3,
+   "color": "#eeeb8b",
+   "image_cue": "breites graues Band",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.1.2",
+   "name": "Hof / Zufahrt / Terrasse / Vorplatz",
+   "parent": "2.1",
+   "level": 3,
+   "color": "#e75d55",
+   "image_cue": "befestigte Fläche am Haus",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.1.3",
+   "name": "Gartenweg / Stufen / Platten",
+   "parent": "2.1",
+   "level": 3,
+   "color": "#ac5356",
+   "image_cue": "schmaler befestigter Weg im Garten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.2",
+   "name": "Unbefestigt",
+   "parent": "2",
+   "level": 2,
+   "color": "#4c4a24",
+   "image_cue": "Erd- oder Graswege",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.2.1",
+   "name": "Wiesenweg",
+   "parent": "2.2",
+   "level": 3,
+   "color": "#cf7c59",
+   "image_cue": "begrünter Weg, Fahrspuren im Gras",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.2.2",
+   "name": "Trampelpfad / Erdweg",
+   "parent": "2.2",
+   "level": 3,
+   "color": "#cdaa1d",
+   "image_cue": "schmale helle Spur",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3",
+   "name": "Garten / Siedlungsgrün",
+   "parent": null,
+   "level": 1,
+   "color": "#7f20df",
+   "image_cue": "Gartenflächen in der Siedlung",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3.1",
+   "name": "Gartenrasen",
+   "parent": "3",
+   "level": 2,
+   "color": "#bd8bee",
+   "image_cue": "gleichmäßig kurzes Grün im Garten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3.2",
+   "name": "Gemischte Gartenfläche",
+   "parent": "3",
+   "level": 2,
+   "color": "#421174",
+   "image_cue": "Mosaik aus Rasen, Beeten und Sträuchern",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3.3",
+   "name": "Gemüse- und Nutzbeete",
+   "parent": "3",
+   "level": 2,
+   "color": "#df20cf",
+   "image_cue": "Reihen, offener Boden im Garten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4",
+   "name": "Krautige Vegetation",
+   "parent": null,
+   "level": 1,
+   "color": "#19e619",
+   "image_cue": "Wiese, Saum und Krautflur",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4.1",
+   "name": "Wiese / Grünland",
+   "parent": "4",
+   "level": 2,
+   "color": "#0f8a0f",
+   "image_cue": "Grasfläche außerhalb der Gärten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4.1.1",
+   "name": "Wiese ungemäht / langgrasig",
+   "parent": "4.1",
+   "level": 3,
+   "color": "#88f290",
+   "image_cue": "Halmstruktur, Altgras, Kräuter",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4.1.2",
+   "name": "Wiese niedrig",
+   "parent": "4.1",
+   "level": 3,
+   "color": "#a2ea3e",
+   "image_cue": "gleichmäßig kurze Wiese",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4.2",
+   "name": "Saum / Feldrain / Böschung",
+   "parent": "4",
+   "level": 2,
+   "color": "#a2d7a7",
+   "image_cue": "schmaler Grasstreifen am Rand",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4.3",
+   "name": "Verbuschte Wiese / Lichtung",
+   "parent": "4",
+   "level": 2,
+   "color": "#165a16",
+   "image_cue": "Krautflur mit Gebüsch oder im Gehölz",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "5",
+   "name": "Feld und offener Boden",
+   "parent": null,
+   "level": 1,
+   "color": "#f97706",
+   "image_cue": "Acker und vegetationsarme Flächen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "5.1",
+   "name": "Feld gemäht / abgeerntet",
+   "parent": "5",
+   "level": 2,
+   "color": "#7eaa18",
+   "image_cue": "beige Fläche mit Schwaden oder Stoppeln",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "5.2",
+   "name": "Offener Boden / vegetationsarm",
+   "parent": "5",
+   "level": 2,
+   "color": "#a96d04",
+   "image_cue": "Erde, Sand, Trockengras, lückiger Bewuchs",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6",
+   "name": "Gehölz",
+   "parent": null,
+   "level": 1,
+   "color": "#238b71",
+   "image_cue": "Kronen mit Textur und Schatten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.1",
+   "name": "Wald / geschlossener Bestand",
+   "parent": "6",
+   "level": 2,
+   "color": "#17d3a4",
+   "image_cue": "geschlossenes Kronendach",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.1.1",
+   "name": "Kronendach besonnt",
+   "parent": "6.1",
+   "level": 3,
+   "color": "#46a45e",
+   "image_cue": "helles Kronendach",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.1.2",
+   "name": "Kronendach beschattet",
+   "parent": "6.1",
+   "level": 3,
+   "color": "#17d356",
+   "image_cue": "dunkler Bestand",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.2",
+   "name": "Baumgruppe / Feldgehölz",
+   "parent": "6",
+   "level": 2,
+   "color": "#224f3c",
+   "image_cue": "mehrere zusammenhängende Kronen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.3",
+   "name": "Einzelbaum",
+   "parent": "6",
+   "level": 2,
+   "color": "#b6eddf",
+   "image_cue": "eine abgrenzbare Krone",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.3.1",
+   "name": "Laubbaum",
+   "parent": "6.3",
+   "level": 3,
+   "color": "#69bfa9",
+   "image_cue": "runde Laubkrone",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.3.2",
+   "name": "Laubbaum rotlaubig",
+   "parent": "6.3",
+   "level": 3,
+   "color": "#40c115",
+   "image_cue": "rotbraune Krone",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.3.3",
+   "name": "Nadelbaum / Konifere",
+   "parent": "6.3",
+   "level": 3,
+   "color": "#15c16b",
+   "image_cue": "spitze, dunkle Krone",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.4",
+   "name": "Hecke / Gehölzstreifen",
+   "parent": "6",
+   "level": 2,
+   "color": "#88f2b4",
+   "image_cue": "lineares Gehölz, geschnitten oder frei",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.5",
+   "name": "Strauch / Gebüsch",
+   "parent": "6",
+   "level": 2,
+   "color": "#8bc577",
+   "image_cue": "kleine Kronen, Gartengehölz",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  }
+ ],
+ "rules": [
+  {
+   "id": "G1",
+   "kind": "grundsatz",
+   "title": "Lückenlos",
+   "text": "Jeder Bildpunkt gehört zu genau einem Segment mit genau einer Klasse dieser Liste. Für eine Auswertung nach Bericht 48 zählen Segmente unter bericht48.im_siedlung_klassen mit im_siedlung: ja zu bericht48.im_siedlung_ziel (Näherung, ungeprüft).",
+   "source": "wuensche/entscheidungen.md 2026-11-17 (drei Fassungen, lückenlos in allen dreien)",
+   "bericht48": {
+    "im_siedlung_klassen": [
+     "3"
+    ],
+    "im_siedlung_ziel": "1"
+   }
+  },
+  {
+   "id": "G2",
+   "kind": "grundsatz",
+   "title": "Freie Arbeitsweise, Liste nachträglich vereinheitlicht",
+   "text": "Jede Teilkachel hat ein Agent frei bearbeitet (eigene Kategorien, eigene Arbeitsweise, Beschreibung in abgabe/<teilkachel>/arbeitsweise.md). Die vier eigenen Listen hat der Umsetzer von Teil 3 nach Namen und Merkmalen zu dieser Liste zusammengelegt; der ursprüngliche Code steht je Segment unter klasse_teil.",
+   "source": "daten/landseg/T0/fassung-c/abgabe/<teilkachel>/kategorien-teil.json"
+  }
+ ],
+ "abbildung_teilkacheln": {
+  "r0c0": {
+   "1": "1",
+   "1.1": "1.1",
+   "1.1.1": "1.1.1",
+   "1.1.2": "1.1.2",
+   "1.2": "2.1",
+   "1.2.1": "2.1.1",
+   "1.2.2": "2.1.2",
+   "1.2.3": "2.1.3",
+   "1.3": "1.2",
+   "1.3.1": "1.2.1",
+   "1.3.2": "1.2.2",
+   "2": "3",
+   "2.1": "3.1",
+   "2.2": "3.2",
+   "2.3": "6.4",
+   "2.4": "6.5",
+   "2.5": "1.2.3",
+   "3": "4",
+   "3.1": "4.1",
+   "3.1.1": "4.1.1",
+   "3.1.2": "4.1.2",
+   "3.1.3": "4.2",
+   "3.2": "5.1",
+   "3.3": "4.3",
+   "4": "6",
+   "4.1": "6.3",
+   "4.1.1": "6.3.1",
+   "4.2": "6.2",
+   "4.2.1": "6.2",
+   "4.3": "6.5",
+   "5": "0",
+   "5.1": "1.2.4",
+   "5.2": "0.1"
+  },
+  "r0c1": {
+   "1": "1",
+   "1.1": "1.1",
+   "1.1.1": "1.1.1",
+   "1.1.2": "1.1.2",
+   "1.2": "2.1",
+   "1.2.1": "2.1.1",
+   "1.2.2": "2.1.2",
+   "1.2.3": "2.1.3",
+   "1.3": "1.2",
+   "1.3.1": "1.2.1",
+   "1.3.2": "1.2.3",
+   "2": "5",
+   "2.1": "5.1",
+   "2.2": "4.2",
+   "3": "4",
+   "3.1": "3.1",
+   "3.2": "4.1.1",
+   "3.3": "5.2",
+   "4": "6",
+   "4.1": "6.3",
+   "4.1.1": "6.3.1",
+   "4.1.2": "6.3.2",
+   "4.1.3": "6.3.3",
+   "4.2": "6.2",
+   "4.3": "6.5",
+   "4.4": "3.2",
+   "5": "0",
+   "5.1": "0.1.1",
+   "5.2": "0.1.2"
+  },
+  "r1c0": {
+   "1": "6",
+   "1.1": "6.1",
+   "1.1.1": "6.1.1",
+   "1.1.2": "6.1.2",
+   "1.1.3": "6.1",
+   "1.2": "6.3",
+   "1.3": "6.2",
+   "1.4": "6.5",
+   "2": "4",
+   "2.1": "4.1",
+   "2.2": "4.3",
+   "2.3": "4.2",
+   "3": "5",
+   "3.1": "5.2",
+   "3.2": "5.1",
+   "4": "2",
+   "4.1": "2.2.2",
+   "5": "3",
+   "5.1": "1",
+   "5.2": "3.2"
+  },
+  "r1c1": {
+   "1": "1",
+   "1.1": "1.1",
+   "1.1.1": "1.1.3",
+   "1.1.2": "1.1.2",
+   "1.1.3": "1.1.4",
+   "1.2": "1.2",
+   "1.2.1": "1.2.1",
+   "1.2.2": "1.2.2",
+   "1.2.3": "1.2.3",
+   "2": "2",
+   "2.1": "2.1",
+   "2.1.1": "2.1.1",
+   "2.1.2": "2.1.3",
+   "2.1.3": "2.1.2",
+   "2.2": "2.2",
+   "2.2.1": "2.2.1",
+   "2.2.2": "2.2.2",
+   "3": "5",
+   "3.1": "5.1",
+   "4": "4",
+   "4.1": "4.1.1",
+   "4.2": "3.1",
+   "4.3": "4.2",
+   "5": "3",
+   "5.1": "3.3",
+   "5.2": "3.2",
+   "6": "6",
+   "6.1": "6.1",
+   "6.2": "6.2",
+   "6.3": "6.3",
+   "6.4": "6.4",
+   "6.5": "6.5",
+   "6.6": "1.2.4",
+   "7": "0",
+   "7.1": "0.1"
+  }
+ }
+}

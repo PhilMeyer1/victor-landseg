@@ -1,0 +1,932 @@
+{
+  "schema": "landseg-test-t0-viertelbilder/1",
+  "teilkachel": "r0c1",
+  "viertel": "v2",
+  "lage": "oben rechts",
+  "viertel_im_bild": {
+    "x": 314,
+    "y": 64,
+    "breite": 250,
+    "hoehe": 250
+  },
+  "kern_im_bild": {
+    "x": 64,
+    "y": 64,
+    "breite": 500,
+    "hoehe": 500
+  },
+  "koordinaten": "x_teilkachel = fenster.x + x_bild // faktor (im Gitterbild vorher 40 px links und 16 px oben abziehen; im Mängelbild steht die Legende unten)",
+  "nummer": "Nummer im Bild = ID mod 100000; weiß = Segment dieses Viertels, grau = Kernsegment eines Nachbarviertels, ohne Nummer = Kontextrand",
+  "bilder": {
+    "uebersicht_nummern.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 32,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_roh.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 32,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_vorschlag.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 32,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_maengel.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 32,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_kontrast.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 32,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_gitter.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 32,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3,
+        "rand_links": 40,
+        "rand_oben": 16
+      }
+    },
+    "nah1_roh.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 52,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah1_nummern.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 52,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_roh.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 52,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_nummern.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 52,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_roh.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 177,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_nummern.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 177,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_roh.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 177,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_nummern.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 177,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    }
+  },
+  "segmente": [
+    {
+      "id": 200027,
+      "nr": 27,
+      "klasse": "4.2.1",
+      "name": "Einzelbaum",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 1049,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        346,
+        76
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200051,
+      "nr": 51,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 365,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        372,
+        70
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200013,
+      "nr": 13,
+      "klasse": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 44,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        387,
+        66
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200061,
+      "nr": 61,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 90,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        395,
+        67
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200019,
+      "nr": 19,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 6037,
+      "anteil": 0.616,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        433,
+        80
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200068,
+      "nr": 68,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 96,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        451,
+        86
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200063,
+      "nr": 63,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 142,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        464,
+        82
+      ],
+      "kandidaten": [
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200071,
+      "nr": 71,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 210,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        469,
+        96
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200062,
+      "nr": 62,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 352,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        489,
+        73
+      ],
+      "kandidaten": [
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200055,
+      "nr": 55,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 153,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        499,
+        68
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200047,
+      "nr": 47,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 83,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        512,
+        67
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200086,
+      "nr": 86,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 402,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        354,
+        135
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200076,
+      "nr": 76,
+      "klasse": "4.2.1",
+      "name": "Einzelbaum",
+      "sicher": "ja",
+      "im_siedlung": "ja",
+      "kern_flaeche": 660,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        361,
+        117
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200073,
+      "nr": 73,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 138,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        377,
+        102
+      ],
+      "kandidaten": [
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200077,
+      "nr": 77,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 135,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        379,
+        111
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200070,
+      "nr": 70,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 759,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        396,
+        105
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200078,
+      "nr": 78,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 549,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        453,
+        140
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200088,
+      "nr": 88,
+      "klasse": "4.2.4",
+      "name": "Gebüsch / Strauchfläche",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 85,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        462,
+        141
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200072,
+      "nr": 72,
+      "klasse": "4.2.1",
+      "name": "Einzelbaum",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 1843,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        467,
+        121
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200090,
+      "nr": 90,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 186,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        484,
+        147
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200091,
+      "nr": 91,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 196,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        512,
+        149
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200054,
+      "nr": 54,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 5679,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        523,
+        104
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200087,
+      "nr": 87,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 152,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        545,
+        139
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200115,
+      "nr": 115,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 116,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        348,
+        185
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200074,
+      "nr": 74,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 7666,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        403,
+        152
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200096,
+      "nr": 96,
+      "klasse": "4.2.1",
+      "name": "Einzelbaum",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 1072,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        491,
+        163
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200118,
+      "nr": 118,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 702,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        510,
+        196
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200119,
+      "nr": 119,
+      "klasse": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "sicher": "ja",
+      "im_siedlung": "ja",
+      "kern_flaeche": 121,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        530,
+        187
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200083,
+      "nr": 83,
+      "klasse": "2.1",
+      "name": "Acker mit Bewuchs",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 2283,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        543,
+        166
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200113,
+      "nr": 113,
+      "klasse": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "sicher": "ja",
+      "im_siedlung": "ja",
+      "kern_flaeche": 22,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        561,
+        182
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200109,
+      "nr": 109,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 16,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        562,
+        175
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200125,
+      "nr": 125,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1476,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        353,
+        223
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200131,
+      "nr": 131,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 188,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        379,
+        233
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200127,
+      "nr": 127,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 105,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        380,
+        207
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200129,
+      "nr": 129,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 138,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        380,
+        222
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante"
+      ]
+    },
+    {
+      "id": 200104,
+      "nr": 104,
+      "klasse": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "sicher": "ja",
+      "im_siedlung": "ja",
+      "kern_flaeche": 3927,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        404,
+        221
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante"
+      ]
+    },
+    {
+      "id": 200136,
+      "nr": 136,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 89,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        418,
+        246
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200123,
+      "nr": 123,
+      "klasse": "4.2.1",
+      "name": "Einzelbaum",
+      "sicher": "ja",
+      "im_siedlung": "ja",
+      "kern_flaeche": 621,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        518,
+        224
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200134,
+      "nr": 134,
+      "klasse": "4.2.1",
+      "name": "Einzelbaum",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 5092,
+      "anteil": 0.904,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        375,
+        282
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200103,
+      "nr": 103,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 17188,
+      "anteil": 0.81,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        475,
+        253
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200142,
+      "nr": 142,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 604,
+      "anteil": 0.969,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        553,
+        298
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200146,
+      "nr": 146,
+      "klasse": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 102,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        344,
+        309
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200147,
+      "nr": 147,
+      "klasse": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 509,
+      "anteil": 0.705,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        512,
+        306
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "nicht_zusammenhaengend"
+      ]
+    }
+  ]
+}

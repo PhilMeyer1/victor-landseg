@@ -1,0 +1,1770 @@
+{
+  "schema": "landseg-kategorien/1",
+  "title": "Gestufte Kategorienliste für Landschafts-Segmente",
+  "date": "2026-11-17",
+  "source": [
+    "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:84-183",
+    "wuensche/2026-11-17-landseg-methode/gegenpruefung/e02.md",
+    "wuensche/entscheidungen.md (2026-11-17, F1-F7)"
+  ],
+  "counts": {
+    "level_1": 7,
+    "level_2": 25,
+    "leaves": 46,
+    "rules_g": 5,
+    "rules_u": 5
+  },
+  "status": {
+    "bw": "VERMUTUNG bis zum Test: Die SW-Spalte ist Expertenurteil aus Bericht 48 bzw. vermutet und noch nicht am Bild geprüft (Test T0 / historischer Ausschnitt).",
+    "mappings": "eigene Zuordnung, nicht gegen amtliche Tabellen geprüft (CORINE, CLC+, FLAIR, DKM; CORINE-Codes aus dem Gedächtnis der 44er-Liste). Bericht 48 nach dessen Klassenliste.",
+    "colors": "vom Umsetzer festgelegt: eine Farbfamilie je Ebene-1-Klasse, Klasse 0 grau; Mindestabstand prüft tools/pruefe_kategorien.py"
+  },
+  "bw_values": {
+    "ja": "auf Schwarz-Weiß 0,5-1 m sicher entscheidbar",
+    "eing.": "eingeschränkt, Rückfall auf die Elternklasse erwartet",
+    "nein": "nur in Farbe / 0,2 m entscheidbar"
+  },
+  "mapping_schemes": {
+    "corine": "CORINE Land Cover, Ebene 2/3",
+    "clc_plus": "CLC+ Backbone (11 Klassen, 255 = no data)",
+    "flair": "FLAIR #1 (19 Klassen)",
+    "dkm": "DKM, Nutzungen nach BANU-V",
+    "bericht48": "Bericht 48 (AridiBEE), Ebene 1/2"
+  },
+  "classes": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar (technisch)",
+      "parent": null,
+      "level": 1,
+      "color": "#808080",
+      "image_cue": "Bildfehler, Scanrand, Rahmenmarke, Wolke",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "255 no data"
+        ],
+        "flair": [
+          "19 other"
+        ],
+        "dkm": [],
+        "bericht48": []
+      },
+      "deviation": "A1",
+      "deviation_note": "In Auswertungen nach Bericht 48 ausgeblendet (no data wie CLC+ 255)."
+    },
+    {
+      "code": "0.1",
+      "name": "Bildfehler / Scanrand / Rahmenmarke / Kratzer",
+      "parent": "0",
+      "level": 2,
+      "color": "#383838",
+      "image_cue": "außerhalb Bildinhalt, Linien, Flecken",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "255"
+        ],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "parent": "0",
+      "level": 2,
+      "color": "#d9d9d9",
+      "image_cue": "weiß bzw. völlig schwarz, keine Struktur",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "255"
+        ],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1",
+      "name": "Versiegelt / bebaut (Siedlung und Verkehr)",
+      "parent": null,
+      "level": 1,
+      "color": "#bd2835",
+      "image_cue": "Form, harte Kanten",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "1.1",
+          "1.2"
+        ],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "1",
+          "3"
+        ],
+        "dkm": [
+          "Bauflächen",
+          "Sonstige 1–5"
+        ],
+        "bericht48": [
+          "Ebene 1"
+        ]
+      }
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2,
+      "color": "#eb21ed",
+      "image_cue": "Dach, Schlagschatten, rechteckig",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "1.1.x"
+        ],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "1 building"
+        ],
+        "dkm": [
+          "Gebäude"
+        ],
+        "bericht48": [
+          "Versiegelt/bebaut"
+        ]
+      }
+    },
+    {
+      "code": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "parent": "1.1",
+      "level": 3,
+      "color": "#e61382",
+      "image_cue": "groß, mit Zufahrt",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.1.x",
+          "1.2.1"
+        ],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "1"
+        ],
+        "dkm": [
+          "Gebäude"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "parent": "1.1",
+      "level": 3,
+      "color": "#d370f3",
+      "image_cue": "klein, oft im Garten oder Feld",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "1"
+        ],
+        "dkm": [
+          "Gebäude"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.1.3",
+      "name": "Gewächshaus / Folientunnel",
+      "parent": "1.1",
+      "level": 3,
+      "color": "#e63d13",
+      "image_cue": "hell, glänzend, Bögen",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "2.1.x"
+        ],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "18 greenhouse"
+        ],
+        "dkm": [
+          "Dauerkulturanlagen/Erwerbsgärten"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.2",
+      "name": "Verkehrsfläche",
+      "parent": "1",
+      "level": 2,
+      "color": "#f584cd",
+      "image_cue": "lang, gleich breit, verbunden",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "1.2.2"
+        ],
+        "clc_plus": [
+          "1",
+          "9"
+        ],
+        "flair": [
+          "3 impervious"
+        ],
+        "dkm": [
+          "Straßen-/Schienenverkehrsanlagen",
+          "Parkplätze"
+        ],
+        "bericht48": [
+          "Versiegelt/bebaut"
+        ]
+      }
+    },
+    {
+      "code": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "parent": "1.2",
+      "level": 3,
+      "color": "#f19daa",
+      "image_cue": "glatt, Markierung",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "1.2.2"
+        ],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "3"
+        ],
+        "dkm": [
+          "Straßenverkehrsanlagen"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "parent": "1.2",
+      "level": 3,
+      "color": "#d4aee0",
+      "image_cue": "schmal, glatt",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "3"
+        ],
+        "dkm": [
+          "Straßenverkehrsanlagen"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.2.3",
+      "name": "Weg, unbefestigt (Feld-, Wald-, Schotterweg)",
+      "parent": "1.2",
+      "level": 3,
+      "color": "#e12db7",
+      "image_cue": "Fahrspuren, Mittelstreifen",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "2 pervious"
+        ],
+        "dkm": [
+          "Forststraßen",
+          "Verkehrsrandflächen"
+        ],
+        "bericht48": []
+      },
+      "deviation": "A3",
+      "deviation_note": "Nicht versiegelt; steht nach Entscheidung F5 trotzdem unter Verkehrsfläche."
+    },
+    {
+      "code": "1.2.4",
+      "name": "Platz / Parkplatz / Hoffläche versiegelt",
+      "parent": "1.2",
+      "level": 3,
+      "color": "#ce5678",
+      "image_cue": "flächig, glatt",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "1.2.1"
+        ],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "3"
+        ],
+        "dkm": [
+          "Parkplätze",
+          "Gebäudenebenflächen"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.2.5",
+      "name": "Bahnkörper",
+      "parent": "1.2",
+      "level": 3,
+      "color": "#930fbf",
+      "image_cue": "Gleise, Schotterbett",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "1.2.2"
+        ],
+        "clc_plus": [
+          "1",
+          "9"
+        ],
+        "flair": [
+          "3"
+        ],
+        "dkm": [
+          "Schienenverkehrsanlagen"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.3",
+      "name": "Sonstige künstliche Fläche",
+      "parent": "1",
+      "level": 2,
+      "color": "#740b84",
+      "image_cue": null,
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.3",
+          "1.4"
+        ],
+        "clc_plus": [
+          "1",
+          "9"
+        ],
+        "flair": [
+          "2",
+          "3"
+        ],
+        "dkm": [
+          "Betriebsflächen",
+          "Freizeitflächen",
+          "Friedhöfe"
+        ],
+        "bericht48": [
+          "Versiegelt/bebaut"
+        ]
+      }
+    },
+    {
+      "code": "1.3.1",
+      "name": "Lager-, Schotter-, Kiesfläche (künstlich, unversiegelt)",
+      "parent": "1.3",
+      "level": 3,
+      "color": "#a21771",
+      "image_cue": "hell, körnig, ohne Bewuchs",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.2.1"
+        ],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "2"
+        ],
+        "dkm": [
+          "Betriebsflächen"
+        ],
+        "bericht48": []
+      },
+      "deviation": "A3",
+      "deviation_note": "Nicht versiegelt; steht unter Versiegelt/bebaut (Nutzung dominiert)."
+    },
+    {
+      "code": "1.3.2",
+      "name": "Baustelle",
+      "parent": "1.3",
+      "level": 3,
+      "color": "#572768",
+      "image_cue": "Erdbewegung, Maschinen",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.3.3"
+        ],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "4"
+        ],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.3.3",
+      "name": "Schwimmbecken",
+      "parent": "1.3",
+      "level": 3,
+      "color": "#840b2d",
+      "image_cue": "türkis bzw. glatt, scharfe Form",
+      "bw": "nein",
+      "mappings": {
+        "corine": [
+          "1.4.2"
+        ],
+        "clc_plus": [
+          "10"
+        ],
+        "flair": [
+          "13 swimming pool"
+        ],
+        "dkm": [
+          "Freizeitflächen"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.3.4",
+      "name": "Sport-, Spielplatz (künstlicher Belag)",
+      "parent": "1.3",
+      "level": 3,
+      "color": "#b370c9",
+      "image_cue": "Linien, Form",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.4.2"
+        ],
+        "clc_plus": [
+          "1"
+        ],
+        "flair": [
+          "3"
+        ],
+        "dkm": [
+          "Freizeitflächen"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.4",
+      "name": "Siedlungsgrün (Hausgärten, Parks, Friedhöfe)",
+      "parent": "1",
+      "level": 2,
+      "color": "#6f2049",
+      "image_cue": "Grünfläche innerhalb bebauter Grundstücke",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.4.1"
+        ],
+        "clc_plus": [
+          "6",
+          "2",
+          "3"
+        ],
+        "flair": [
+          "2",
+          "10"
+        ],
+        "dkm": [
+          "Gärten",
+          "Freizeitflächen",
+          "Friedhöfe"
+        ],
+        "bericht48": [
+          "Hausgärten „als Teil der Siedlung“"
+        ]
+      }
+    },
+    {
+      "code": "1.4.1",
+      "name": "Rasen / krautiges Siedlungsgrün",
+      "parent": "1.4",
+      "level": 3,
+      "color": "#ed215b",
+      "image_cue": "fein, gleichmäßig, im Grundstück",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.4.1"
+        ],
+        "clc_plus": [
+          "6"
+        ],
+        "flair": [
+          "2 pervious",
+          "10"
+        ],
+        "dkm": [
+          "Gärten"
+        ],
+        "bericht48": [
+          "Hausgärten"
+        ]
+      }
+    },
+    {
+      "code": "1.4.2",
+      "name": "Gartenbeet / Hausgemüsegarten",
+      "parent": "1.4",
+      "level": 3,
+      "color": "#84230b",
+      "image_cue": "kleine Streifen, offener Boden",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.4.1"
+        ],
+        "clc_plus": [
+          "7",
+          "9"
+        ],
+        "flair": [
+          "2"
+        ],
+        "dkm": [
+          "Gärten"
+        ],
+        "bericht48": [
+          "Hausgärten"
+        ]
+      }
+    },
+    {
+      "code": "1.4.3",
+      "name": "Gehölz im Siedlungsbereich (Gartenbaum, Strauch)",
+      "parent": "1.4",
+      "level": 3,
+      "color": "#f37075",
+      "image_cue": "Krone im Grundstück",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.4.1"
+        ],
+        "clc_plus": [
+          "2",
+          "3",
+          "5"
+        ],
+        "flair": [
+          "6",
+          "7",
+          "8"
+        ],
+        "dkm": [
+          "Gärten"
+        ],
+        "bericht48": [
+          "Hausgärten"
+        ]
+      }
+    },
+    {
+      "code": "2",
+      "name": "Acker (und Dauerkulturen)",
+      "parent": null,
+      "level": 1,
+      "color": "#eec72b",
+      "image_cue": "Parzellen, Bearbeitungsspuren",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "2.1",
+          "2.2"
+        ],
+        "clc_plus": [
+          "6",
+          "7",
+          "5"
+        ],
+        "flair": [
+          "9",
+          "11",
+          "12"
+        ],
+        "dkm": [
+          "Äcker/Wiesen/Weiden",
+          "Dauerkultur",
+          "Weingärten"
+        ],
+        "bericht48": [
+          "Ebene 1"
+        ]
+      }
+    },
+    {
+      "code": "2.1",
+      "name": "Acker mit Bewuchs",
+      "parent": "2",
+      "level": 2,
+      "color": "#a4771e",
+      "image_cue": "gleichmäßige Fläche, Fahrgassen",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "2.1.1"
+        ],
+        "clc_plus": [
+          "7"
+        ],
+        "flair": [
+          "11 agricultural land"
+        ],
+        "dkm": [
+          "Äcker/Wiesen/Weiden"
+        ],
+        "bericht48": [
+          "Acker"
+        ]
+      }
+    },
+    {
+      "code": "2.2",
+      "name": "Acker ohne Bewuchs (gepflügt, Saatbett)",
+      "parent": "2",
+      "level": 2,
+      "color": "#fdf8a5",
+      "image_cue": "Furchen, hell bzw. dunkel",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "2.1.1"
+        ],
+        "clc_plus": [
+          "7",
+          "9"
+        ],
+        "flair": [
+          "12 plowed land"
+        ],
+        "dkm": [
+          "Äcker/Wiesen/Weiden"
+        ],
+        "bericht48": [
+          "Acker"
+        ]
+      }
+    },
+    {
+      "code": "2.3",
+      "name": "Ackerbrache",
+      "parent": "2",
+      "level": 2,
+      "color": "#f9f914",
+      "image_cue": "unregelmäßiger Bewuchs auf Ackerschlag",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "2.1.1"
+        ],
+        "clc_plus": [
+          "7",
+          "6"
+        ],
+        "flair": [
+          "10",
+          "11"
+        ],
+        "dkm": [
+          "Äcker/Wiesen/Weiden"
+        ],
+        "bericht48": [
+          "Brache/Ödland"
+        ]
+      }
+    },
+    {
+      "code": "2.4",
+      "name": "Dauerkultur",
+      "parent": "2",
+      "level": 2,
+      "color": "#9b9b27",
+      "image_cue": "regelmäßige Zeilen/Raster",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "2.2"
+        ],
+        "clc_plus": [
+          "5"
+        ],
+        "flair": [
+          "9"
+        ],
+        "dkm": [
+          "Dauerkulturanlagen",
+          "Weingärten"
+        ],
+        "bericht48": [
+          "Weingarten",
+          "Streuobst"
+        ]
+      },
+      "deviation": "A4",
+      "deviation_note": "Dauerkulturen stehen unter Ebene 1 „Acker“ (Entscheidung F5)."
+    },
+    {
+      "code": "2.4.1",
+      "name": "Weingarten",
+      "parent": "2.4",
+      "level": 3,
+      "color": "#fbfb6f",
+      "image_cue": "Zeilentextur",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "2.2.1"
+        ],
+        "clc_plus": [
+          "5"
+        ],
+        "flair": [
+          "9 vineyard"
+        ],
+        "dkm": [
+          "Weingärten"
+        ],
+        "bericht48": [
+          "Weingarten"
+        ]
+      }
+    },
+    {
+      "code": "2.4.2",
+      "name": "Obstanlage (intensiv, Reihen)",
+      "parent": "2.4",
+      "level": 3,
+      "color": "#e19806",
+      "image_cue": "Bäume in dichtem Raster",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "2.2.2"
+        ],
+        "clc_plus": [
+          "3",
+          "5"
+        ],
+        "flair": [
+          "7"
+        ],
+        "dkm": [
+          "Dauerkulturanlagen"
+        ],
+        "bericht48": [
+          "Streuobst/Obstgarten"
+        ]
+      }
+    },
+    {
+      "code": "2.4.3",
+      "name": "Sonstige Dauerkultur (Beeren, Hopfen, Baumschule)",
+      "parent": "2.4",
+      "level": 3,
+      "color": "#e2cd63",
+      "image_cue": "Reihen, gemischt",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "2.2.x"
+        ],
+        "clc_plus": [
+          "5"
+        ],
+        "flair": [
+          "8",
+          "9"
+        ],
+        "dkm": [
+          "Dauerkulturanlagen"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "3",
+      "name": "Dauergrünland (krautig, nicht Acker)",
+      "parent": null,
+      "level": 1,
+      "color": "#9dd161",
+      "image_cue": "gleichmäßige, feine Textur",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "2.3",
+          "3.2"
+        ],
+        "clc_plus": [
+          "6"
+        ],
+        "flair": [
+          "10 herbaceous"
+        ],
+        "dkm": [
+          "Äcker/Wiesen/Weiden",
+          "Alpen"
+        ],
+        "bericht48": [
+          "Ebene 1"
+        ]
+      }
+    },
+    {
+      "code": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "parent": "3",
+      "level": 2,
+      "color": "#3de723",
+      "image_cue": "gleichmäßig, Mahdspuren bzw. Trittpfade",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "2.3.1"
+        ],
+        "clc_plus": [
+          "6"
+        ],
+        "flair": [
+          "10"
+        ],
+        "dkm": [
+          "Äcker/Wiesen/Weiden"
+        ],
+        "bericht48": [
+          "Dauergrünland",
+          "„Wiese vs. Weide schwierig“"
+        ]
+      }
+    },
+    {
+      "code": "3.1.1",
+      "name": "Wiese (Mahdspuren sichtbar)",
+      "parent": "3.1",
+      "level": 3,
+      "color": "#80ef6f",
+      "image_cue": "Schwaden, Mähstreifen",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "2.3.1"
+        ],
+        "clc_plus": [
+          "6"
+        ],
+        "flair": [
+          "10"
+        ],
+        "dkm": [],
+        "bericht48": [
+          "Wiese"
+        ]
+      }
+    },
+    {
+      "code": "3.1.2",
+      "name": "Weide (Trittpfade, Zäune, Tiere)",
+      "parent": "3.1",
+      "level": 3,
+      "color": "#4d9d3a",
+      "image_cue": "Pfade, Geilstellen",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "2.3.1"
+        ],
+        "clc_plus": [
+          "6"
+        ],
+        "flair": [
+          "10"
+        ],
+        "dkm": [
+          "Alpen (Almweide)"
+        ],
+        "bericht48": [
+          "Weide/Hutweide"
+        ]
+      }
+    },
+    {
+      "code": "3.2",
+      "name": "Trocken-/Magerrasen",
+      "parent": "3",
+      "level": 2,
+      "color": "#a1df19",
+      "image_cue": "fleckig, helle Stellen, lückig",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.2.1"
+        ],
+        "clc_plus": [
+          "6",
+          "9"
+        ],
+        "flair": [
+          "10"
+        ],
+        "dkm": [
+          "Äcker/Wiesen/Weiden",
+          "Vegetationsarme Flächen"
+        ],
+        "bericht48": [
+          "Trockenrasen „mittel“"
+        ]
+      }
+    },
+    {
+      "code": "3.3",
+      "name": "Grünlandbrache / Ruderalflur",
+      "parent": "3",
+      "level": 2,
+      "color": "#a5d19f",
+      "image_cue": "ungleichmäßig, hochwüchsig",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.2.x"
+        ],
+        "clc_plus": [
+          "6"
+        ],
+        "flair": [
+          "10"
+        ],
+        "dkm": [],
+        "bericht48": [
+          "Brache/Ödland"
+        ]
+      }
+    },
+    {
+      "code": "3.4",
+      "name": "Krautsaum linear (Feldrain, Wegrand, Böschung)",
+      "parent": "3",
+      "level": 2,
+      "color": "#47b521",
+      "image_cue": "schmaler Streifen zwischen Nutzungen",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "6"
+        ],
+        "flair": [
+          "10",
+          "2"
+        ],
+        "dkm": [
+          "Verkehrsrandflächen"
+        ],
+        "bericht48": [
+          "Feldraine „gut als Linien“"
+        ]
+      }
+    },
+    {
+      "code": "3.5",
+      "name": "Verbuschende Fläche (Grünland mit Gehölzanflug)",
+      "parent": "3",
+      "level": 2,
+      "color": "#749146",
+      "image_cue": "Gras mit verstreuten Büschen",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.2.4"
+        ],
+        "clc_plus": [
+          "6",
+          "5"
+        ],
+        "flair": [
+          "8",
+          "10"
+        ],
+        "dkm": [
+          "Verbuschte Flächen"
+        ],
+        "bericht48": [
+          "Verbuschung/Sukzession"
+        ]
+      }
+    },
+    {
+      "code": "4",
+      "name": "Wald und Gehölze",
+      "parent": null,
+      "level": 1,
+      "color": "#1d7239",
+      "image_cue": "grobe Kronentextur, dunkel",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "3.1"
+        ],
+        "clc_plus": [
+          "2",
+          "3",
+          "5"
+        ],
+        "flair": [
+          "6",
+          "7",
+          "8"
+        ],
+        "dkm": [
+          "Wald"
+        ],
+        "bericht48": [
+          "Ebene 1 „Wald“"
+        ]
+      },
+      "deviation": "A2",
+      "deviation_note": "Gehölze außerhalb Wald gehören hier dazu; für Bericht-48-Auswertungen Wald = 4.1, Gehölze = 4.2."
+    },
+    {
+      "code": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "parent": "4",
+      "level": 2,
+      "color": "#19e697",
+      "image_cue": "durchgehendes Kronendach",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "3.1"
+        ],
+        "clc_plus": [
+          "2",
+          "3"
+        ],
+        "flair": [
+          "6",
+          "7",
+          "16"
+        ],
+        "dkm": [
+          "Wälder"
+        ],
+        "bericht48": [
+          "Wald"
+        ]
+      }
+    },
+    {
+      "code": "4.1.1",
+      "name": "Laubwald",
+      "parent": "4.1",
+      "level": 3,
+      "color": "#103714",
+      "image_cue": "runde Kronen",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.1.1"
+        ],
+        "clc_plus": [
+          "3"
+        ],
+        "flair": [
+          "7 deciduous"
+        ],
+        "dkm": [
+          "Wälder"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4.1.2",
+      "name": "Nadelwald",
+      "parent": "4.1",
+      "level": 3,
+      "color": "#1e675b",
+      "image_cue": "spitze Kronen, dunkler",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.1.2"
+        ],
+        "clc_plus": [
+          "2"
+        ],
+        "flair": [
+          "6 coniferous"
+        ],
+        "dkm": [
+          "Wälder"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4.1.3",
+      "name": "Mischwald",
+      "parent": "4.1",
+      "level": 3,
+      "color": "#22af6f",
+      "image_cue": "beides",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.1.3"
+        ],
+        "clc_plus": [
+          "2",
+          "3"
+        ],
+        "flair": [
+          "16 mixed"
+        ],
+        "dkm": [
+          "Wälder"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4.1.4",
+      "name": "Kahlschlag / Jungwuchs / Schlagflur",
+      "parent": "4.1",
+      "level": 3,
+      "color": "#19e6c4",
+      "image_cue": "Lichtung im Wald, Stümpfe",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.2.4"
+        ],
+        "clc_plus": [
+          "5",
+          "6"
+        ],
+        "flair": [
+          "15 clear cut"
+        ],
+        "dkm": [
+          "Wälder"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4.2",
+      "name": "Gehölz außerhalb Wald",
+      "parent": "4",
+      "level": 2,
+      "color": "#13ae95",
+      "image_cue": "Krone(n) einzeln oder linear",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "3.2.4"
+        ],
+        "clc_plus": [
+          "3",
+          "5"
+        ],
+        "flair": [
+          "7",
+          "8",
+          "17"
+        ],
+        "dkm": [
+          "Verbuschte Flächen"
+        ],
+        "bericht48": [
+          "Hecken, Baumreihen, Feldgehölze",
+          "Streuobst"
+        ]
+      }
+    },
+    {
+      "code": "4.2.1",
+      "name": "Einzelbaum",
+      "parent": "4.2",
+      "level": 3,
+      "color": "#15bc58",
+      "image_cue": "eine Krone mit Schatten",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "3",
+          "2"
+        ],
+        "flair": [
+          "7"
+        ],
+        "dkm": [],
+        "bericht48": [
+          "Streuobst „Einzelbäume im Grünland“"
+        ]
+      }
+    },
+    {
+      "code": "4.2.2",
+      "name": "Baumgruppe / Feldgehölz",
+      "parent": "4.2",
+      "level": 3,
+      "color": "#4f926e",
+      "image_cue": "wenige Kronen, flächig",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "3"
+        ],
+        "flair": [
+          "7"
+        ],
+        "dkm": [],
+        "bericht48": [
+          "Feldgehölze"
+        ]
+      }
+    },
+    {
+      "code": "4.2.3",
+      "name": "Hecke / Baumreihe / Ufergehölz (linear)",
+      "parent": "4.2",
+      "level": 3,
+      "color": "#19e65c",
+      "image_cue": "Kronenband",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [
+          "3",
+          "5"
+        ],
+        "flair": [
+          "7",
+          "8"
+        ],
+        "dkm": [],
+        "bericht48": [
+          "Hecken, Baumreihen"
+        ]
+      }
+    },
+    {
+      "code": "4.2.4",
+      "name": "Gebüsch / Strauchfläche",
+      "parent": "4.2",
+      "level": 3,
+      "color": "#0c3c34",
+      "image_cue": "niedrig, kleinkronig",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.2.4"
+        ],
+        "clc_plus": [
+          "5"
+        ],
+        "flair": [
+          "8 brushwood"
+        ],
+        "dkm": [
+          "Verbuschte Flächen",
+          "Krummholzflächen"
+        ],
+        "bericht48": [
+          "Verbuschung"
+        ]
+      }
+    },
+    {
+      "code": "5",
+      "name": "Gewässer / Feuchtgebiet",
+      "parent": null,
+      "level": 1,
+      "color": "#1d64c9",
+      "image_cue": "sehr dunkel bzw. glatt",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "4.1",
+          "5.1"
+        ],
+        "clc_plus": [
+          "10"
+        ],
+        "flair": [
+          "5 water"
+        ],
+        "dkm": [
+          "Gewässer"
+        ],
+        "bericht48": [
+          "Ebene 1"
+        ]
+      }
+    },
+    {
+      "code": "5.1",
+      "name": "Fließgewässer",
+      "parent": "5",
+      "level": 2,
+      "color": "#0c0ced",
+      "image_cue": "lang, gewunden",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "5.1.1"
+        ],
+        "clc_plus": [
+          "10"
+        ],
+        "flair": [
+          "5"
+        ],
+        "dkm": [
+          "Fließende Gewässer"
+        ],
+        "bericht48": [
+          "Gewässer"
+        ]
+      }
+    },
+    {
+      "code": "5.1.1",
+      "name": "Fluss / Bach",
+      "parent": "5.1",
+      "level": 3,
+      "color": "#1b5b89",
+      "image_cue": "natürlich gewunden",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "5.1.1"
+        ],
+        "clc_plus": [
+          "10"
+        ],
+        "flair": [
+          "5"
+        ],
+        "dkm": [
+          "Fließende Gewässer"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.1.2",
+      "name": "Graben / Kanal",
+      "parent": "5.1",
+      "level": 3,
+      "color": "#80eef8",
+      "image_cue": "gerade",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "5.1.1"
+        ],
+        "clc_plus": [
+          "10"
+        ],
+        "flair": [
+          "5"
+        ],
+        "dkm": [
+          "Fließende Gewässer"
+        ],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.2",
+      "name": "Stillgewässer (See, Teich, Weiher)",
+      "parent": "5",
+      "level": 2,
+      "color": "#0cb5ed",
+      "image_cue": "glatt, Ufer",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "5.1.2"
+        ],
+        "clc_plus": [
+          "10"
+        ],
+        "flair": [
+          "5"
+        ],
+        "dkm": [
+          "Stehende Gewässer"
+        ],
+        "bericht48": [
+          "Gewässer"
+        ]
+      }
+    },
+    {
+      "code": "5.3",
+      "name": "Feuchtgebiet / Röhricht / Ufervegetation",
+      "parent": "5",
+      "level": 2,
+      "color": "#6558f6",
+      "image_cue": "dunkel, strukturiert, am Wasser",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "4.1.1"
+        ],
+        "clc_plus": [
+          "6",
+          "10"
+        ],
+        "flair": [
+          "10"
+        ],
+        "dkm": [
+          "Feuchtgebiete",
+          "Gewässerrandflächen"
+        ],
+        "bericht48": [
+          "Feuchtgebiet"
+        ]
+      }
+    },
+    {
+      "code": "6",
+      "name": "Offener Boden / Fels",
+      "parent": null,
+      "level": 1,
+      "color": "#d8b897",
+      "image_cue": "sehr hell",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "1.3",
+          "3.3"
+        ],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "4 bare soil"
+        ],
+        "dkm": [
+          "Sonstige 6, 9, 10"
+        ],
+        "bericht48": [
+          "Ebene 1"
+        ]
+      }
+    },
+    {
+      "code": "6.1",
+      "name": "Offene Sand-, Löss-, Lehmstelle (Abbruch, Hohlweg, Grube)",
+      "parent": "6",
+      "level": 2,
+      "color": "#763c23",
+      "image_cue": "sehr hell, klein, Kante",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.3.1",
+          "1.3.1"
+        ],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "4"
+        ],
+        "dkm": [
+          "Vegetationsarme Flächen"
+        ],
+        "bericht48": [
+          "„wichtigstes Nisthabitat“"
+        ]
+      }
+    },
+    {
+      "code": "6.2",
+      "name": "Abbau, Halde, Deponie",
+      "parent": "6",
+      "level": 2,
+      "color": "#db7a57",
+      "image_cue": "großflächig, Terrassen",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "1.3.1",
+          "1.3.2"
+        ],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "4"
+        ],
+        "dkm": [
+          "Abbauflächen, Halden, Deponien"
+        ],
+        "bericht48": [
+          "Offener Boden"
+        ]
+      }
+    },
+    {
+      "code": "6.3",
+      "name": "Fels / Geröll",
+      "parent": "6",
+      "level": 2,
+      "color": "#97784f",
+      "image_cue": "hell, grob strukturiert",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "3.3.2"
+        ],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "4"
+        ],
+        "dkm": [
+          "Fels- und Geröllflächen"
+        ],
+        "bericht48": [
+          "Fels"
+        ]
+      }
+    },
+    {
+      "code": "6.4",
+      "name": "Kies-/Sandbank (Gewässerufer, unbewachsen)",
+      "parent": "6",
+      "level": 2,
+      "color": "#e0b16c",
+      "image_cue": "hell, am Wasser",
+      "bw": "ja",
+      "mappings": {
+        "corine": [
+          "3.3.1"
+        ],
+        "clc_plus": [
+          "9"
+        ],
+        "flair": [
+          "4"
+        ],
+        "dkm": [
+          "Gewässerrandflächen"
+        ],
+        "bericht48": [
+          "Offener Boden"
+        ]
+      }
+    },
+    {
+      "code": "6.5",
+      "name": "Schnee / Eis / Gletscher",
+      "parent": "6",
+      "level": 2,
+      "color": "#6b5747",
+      "image_cue": "weiß, glatt",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "3.3.5"
+        ],
+        "clc_plus": [
+          "11"
+        ],
+        "flair": [
+          "14 snow"
+        ],
+        "dkm": [
+          "Gletscher"
+        ],
+        "bericht48": []
+      },
+      "bw_note": "Verwechslung mit Überstrahlung"
+    }
+  ],
+  "rules": [
+    {
+      "id": "G1",
+      "kind": "grundsatz",
+      "title": "Bedeckung vor Nutzung",
+      "text": "Das Segment-Label beschreibt, was in der Draufsicht zu sehen ist (CLC+, FLAIR, LUCAS LC, EAGLE LCC). Nutzung, die das Bild nicht zeigt (Wiese vs. Weide, Kulturart, Brache-Status, Widmung), kommt in eine getrennte Attributschicht aus Fremddaten (INVEKOS, DKM) — EAGLE LUA, LUCAS LU, LISA LN (B6, B7, B11). Ausnahme nach Bericht 48: Hausgärten/Siedlungsgrün werden der Siedlung zugeordnet (Kontext ist im Bild sichtbar: Grundstück mit Haus).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:87 (Quellen: CLC+, FLAIR, LUCAS, EAGLE, LISA; Bericht 48)"
+    },
+    {
+      "id": "G2",
+      "kind": "grundsatz",
+      "title": "Sichtbare oberste Schicht",
+      "text": "Baumkrone über Straße ist Baum; Verdecktes wird nicht geraten (wie Draufsicht-Schemata CLC+, FLAIR; vermutet für FLAIR, nicht in deren Regeln nachgelesen).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:88 (Quellen: CLC+, FLAIR)"
+    },
+    {
+      "id": "G3",
+      "kind": "grundsatz",
+      "title": "Keine harte Mindestfläche beim Segmentieren",
+      "text": "Keine harte Mindestfläche beim Segmentieren (CLC+: „no MMU“); untere Grenze ist die Erkennbarkeit, Richtwert 3 Bildpunkte Breite (0,6 m bei 0,2 m; 1,5–3 m bei historischen 0,5–1 m) — Vorschlag, vermutet. Die Mindestgrößen aus Bericht 48 (100–400 m², Linien ≥ 2 m) und DKM (200 m²) sind Auswertungsebenen, die aus den feinen Segmenten aggregiert werden (deckt F1 „empfohlen“).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:89 (Quellen: CLC+, Bericht 48, BANU-V); Entscheidung F1",
+      "correction": "DKM-Mindestflächen nach § 4 BANU-V (Gegenprüfung B10, wuensche/2026-11-17-landseg-methode/gegenpruefung/e02.md:23): Gebäude ab 20 m², streifenförmige Elemente ab 4 m Breite (befestigte Verkehrswege und fließende Gewässer auch darunter), Wald ab 10 m Breite und 1 000 m², Alpen/Fels/Geröll/vegetationsarme Flächen/Gletscher ab 2 000 m², übrige Nutzungen ab 200 m². „DKM 200 m²“ gilt nur für die übrigen Nutzungen."
+    },
+    {
+      "id": "G4",
+      "kind": "grundsatz",
+      "title": "Texturflächen statt Einzelreihen",
+      "text": "Weingarten, Obstanlage, Acker mit Fahrspuren sind je eine Fläche (Zeilen nicht einzeln); Streuobst dagegen = Einzelbäume als eigene Segmente in Grünland, zusammengefasst über ein Verbund-Attribut „Streuobstbestand“ (Vorschlag).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:90 (eigener Vorschlag)"
+    },
+    {
+      "id": "G5",
+      "kind": "grundsatz",
+      "title": "Jede Klasse ist ein gültiges Label",
+      "text": "Jede Klasse ist ein gültiges Label auf jeder Ebene (HILUCS-Prinzip „most appropriate and detailed level“, B13); das Trainingsziel kann so hierarchisch rechnen.",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:91 (Quelle: HILUCS, laut Gegenprüfung B13 unklar; gleichwertig ableitbar aus CLC+/LUCAS „most detailed class to be used“)"
+    },
+    {
+      "id": "U1",
+      "kind": "unklar",
+      "title": "Feinste sichere Klasse, sonst Elternklasse",
+      "text": "Feinste sicher entscheidbare Klasse; im Zweifel die Elternklasse (Ebene 2, notfalls Ebene 1) — Elternklassen sind gültige Labels (G5). Jedes Segment trägt dazu `sicher: ja|nein`.",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:169 (aus G5)"
+    },
+    {
+      "id": "U2",
+      "kind": "unklar",
+      "title": "Schatten ist keine Klasse",
+      "text": "Was im Schatten liegt, bekommt die Klasse der erkennbaren Fortsetzung (Straße läuft durch, Wiese setzt sich fort); geht das nicht, Elternklasse der Umgebung mit `sicher: nein`; Klasse 0.2 nur, wenn gar nichts erkennbar ist.",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:170 (eigener Vorschlag)"
+    },
+    {
+      "id": "U3",
+      "kind": "unklar",
+      "title": "Mischpixel an Kanten",
+      "text": "Grenze auf den Farb-/Helligkeitsumschlag (Stitcher-Einrasten, e05); ein Bildpunkt gehört der Klasse mit Mehrheit (CLC+: 50 %-Schwelle, B5).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:171 (Quellen: CLC+, Stitcher-Einrasten e05)",
+      "correction": "CLC+ nutzt keine schlichte Mehrheit, sondern eine 50 %-Schwelle mit Entscheidungsbaum und relativer Mehrheit; als Vorbild taugt es nur sinngemäß (Gegenprüfung B5, wuensche/2026-11-17-landseg-methode/gegenpruefung/e02.md:13)."
+    },
+    {
+      "id": "U4",
+      "kind": "unklar",
+      "title": "Unter der Erkennbarkeitsgrenze",
+      "text": "Unter Erkennbarkeitsgrenze (G3): Das Objekt fällt der umgebenden Klasse zu, nicht Klasse 0.",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:172 (aus G3)"
+    },
+    {
+      "id": "U5",
+      "kind": "unklar",
+      "title": "Nutzung ist kein Grund für Unsicherheit",
+      "text": "Ist nur die Nutzung unklar (Wiese oder Weide, Acker- oder Grünlandbrache), wird die Bedeckungsklasse der Ebene darüber genommen (3.1, 3.3) und die Nutzung bleibt Attribut `nutzung: unbekannt`, später aus INVEKOS/DKM füllbar.",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:173 (aus G1)"
+    }
+  ],
+  "deviations": [
+    {
+      "id": "A1",
+      "classes": [
+        "0",
+        "0.1",
+        "0.2"
+      ],
+      "decisions": [
+        "F2",
+        "F5"
+      ],
+      "text": "Klasse 0 „Nicht bestimmbar“ kommt hinzu, nur für Bildfehler, Scanrand, Wolke; Lückenlosigkeit verlangt ein Label auch dort. In Auswertungen nach Bericht 48 wird 0 ausgeblendet (no data wie CLC+ 255).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:163"
+    },
+    {
+      "id": "A2",
+      "classes": [
+        "4",
+        "4.2"
+      ],
+      "decisions": [
+        "F1",
+        "F2"
+      ],
+      "text": "Ebene 1 „Wald“ wird „Wald und Gehölze“: Hecken, Einzelbäume, Feldgehölze brauchen bei Lückenlosigkeit einen Platz in Ebene 1; ihr Bedeckungsbild ist das des Waldes (Krone). Für Bericht-48-Auswertungen gilt Wald = 4.1, Gehölze außerhalb Wald = 4.2 getrennt.",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:164"
+    },
+    {
+      "id": "A3",
+      "classes": [
+        "1.2.3",
+        "1.3.1"
+      ],
+      "decisions": [
+        "F5"
+      ],
+      "text": "Unbefestigte Wege (1.2.3) und künstliche Schotterflächen (1.3.1) stehen unter „Versiegelt/bebaut“, obwohl nicht versiegelt (Nutzung Verkehr dominiert). Entschieden: unbefestigte Wege zählen zur Verkehrsfläche (F5).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:165"
+    },
+    {
+      "id": "A4",
+      "classes": [
+        "2.4",
+        "2.4.1",
+        "2.4.2",
+        "2.4.3"
+      ],
+      "decisions": [
+        "F5"
+      ],
+      "text": "Dauerkulturen (Weingarten, Obstanlage) stehen unter „Acker“ als 2.4; Bericht 48 führt Weingarten nur in Ebene 2. Streuobst ist keine eigene Fläche, sondern Einzelbäume (4.2.1) in Grünland (3.1) mit Verbund-Attribut (G4). Entschieden: Weingärten und Obstanlagen zählen zu Acker (F5).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:166"
+    }
+  ]
+}

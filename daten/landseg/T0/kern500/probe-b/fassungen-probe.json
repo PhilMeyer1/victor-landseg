@@ -1,0 +1,13 @@
+{
+  "fassungen": [
+    {"kennung": "A", "name": "Feste Kategorienliste",
+     "beschreibung": "Flächen nach der festen Kategorienliste des Projekts (geordnet nach Bedeckung).",
+     "ordner": "vorstufe"},
+    {"kennung": "P", "name": "PROBE (alte Liste)",
+     "beschreibung": "Nur zum Ausprobieren des Umschalters, kein Ergebnis: die frühere Vorstufe mit der alten Kategorienliste nach Nutzung (Codes 1.4.x). Fassung B fehlt noch.",
+     "ordner": "probe-b", "kategorien": "kategorien.json"},
+    {"kennung": "C", "name": "Alles frei",
+     "beschreibung": "Eigene Kategorien und eigene Arbeitsweise der KI, ohne feste Regeln.",
+     "ordner": "fassung-c", "kategorien": "kategorien.json"}
+  ]
+}

@@ -1,0 +1,801 @@
+{
+ "teilkachel": "r1c0",
+ "viertel": "v1",
+ "bearbeiter": "urt-b-r1c0-v1",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_kontrast.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah1_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_roh.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_1.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\kontrast_1.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 300016,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Kernteil (6 Zeilen am oberen Kernrand) ist Wiese wie 1; der dunklere Fleck des Segments liegt oberhalb in r0c0.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kernteil ist Wiese, kein Schatten ohne Grund (140/67)",
+     "flaeche_px": 77
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Kernteil mit 1 verschmelzen, Grenze ohne Bildkante (150/68)",
+     "flaeche_px": 77
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah1_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_1.jpg"
+   ]
+  },
+  {
+   "id": 300001,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Oberer Teil der großen Wiese; gleiche feine Grasstruktur wie 19, kein Belag.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 3,
+     "art": "klasse",
+     "text": "Wiese, kein Sport- oder Spielplatz mit Kunstbelag (186/91)",
+     "flaeche_px": 7060
+    },
+    {
+     "nr": 4,
+     "art": "verschmelzen",
+     "text": "Treppengrenze zu 19 ohne Bildkante, beide eine Wiese (160/108)",
+     "flaeche_px": null
+    },
+    {
+     "nr": 5,
+     "art": "grenze",
+     "text": "senkrechte Gerade zu 21 ohne Bildkante (253/100)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_1.jpg"
+   ]
+  },
+  {
+   "id": 300018,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Schmales Stück am oberen Kernrand; im Kern Wiese, oben in r0c0 ein kleiner Strauch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 6,
+     "art": "verschmelzen",
+     "text": "Kernteil ist Wiese, mit der Wiese (15/1) verschmelzen (221/68)",
+     "flaeche_px": 88
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_1.jpg"
+   ]
+  },
+  {
+   "id": 300021,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Teil des Wiesenstreifens zwischen Baum 26 und Waldrand 27, etwas gröber als 1, mit einzelnen kleinen Sträuchern.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 7,
+     "art": "klasse",
+     "text": "Wiese, keine Acker- oder Reihenstruktur (265/95)",
+     "flaeche_px": 1427
+    },
+    {
+     "nr": 8,
+     "art": "verschmelzen",
+     "text": "mit 15, 24, 25, 28, 32, 33, 36, 37, 39 eine Fläche, Teilgrenzen ohne Bildkante (262/122)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300015,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiese am oberen Rand rechts, mit einem kleinen dunklen Strauch bei 281/93; reicht nach r0c0 und v2.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 9,
+     "art": "verschmelzen",
+     "text": "Grenzen zu 21, 24 und 18 ohne Bildkante; mit der Wiese verschmelzen (300/80)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_1.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300026,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle, dichte Krone eines großen Einzelbaums (etwa 13 m) am Wiesenrand, samt Schlagschatten nach Nordwesten; Krone im Kontrastbild klar strukturiert.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Einzelbaum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 10,
+     "art": "klasse",
+     "text": "Baumkrone mit erkennbarem Grund, kein Schatten ohne Grund (215/135)",
+     "flaeche_px": 2470
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300028,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Wiesenstück zwischen Baumkrone 26 und 21; kein Gehölz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 11,
+     "art": "klasse",
+     "text": "Wiese, kein Wald (247/128)",
+     "flaeche_px": 257
+    },
+    {
+     "nr": 12,
+     "art": "verschmelzen",
+     "text": "mit dem Wiesenstreifen 21 verschmelzen (249/135)",
+     "flaeche_px": 257
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300032,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Wiesenstück im Streifen; Klasse stimmt, Grenzen ohne Bildkante.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 13,
+     "art": "verschmelzen",
+     "text": "mit 21 verschmelzen, Grenzen ohne Bildkante (269/138)",
+     "flaeche_px": 173
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300025,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Kleines Wiesenstück im Streifen, kein Belag.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 14,
+     "art": "klasse",
+     "text": "Wiese, kein Sportplatz (271/113)",
+     "flaeche_px": 156
+    },
+    {
+     "nr": 15,
+     "art": "verschmelzen",
+     "text": "mit 21 verschmelzen (272/117)",
+     "flaeche_px": 156
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300033,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Helles Wiesenstück am Rand der dunklen Fläche 27, kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 16,
+     "art": "klasse",
+     "text": "Wiese, kein Wald (282/146)",
+     "flaeche_px": 129
+    },
+    {
+     "nr": 17,
+     "art": "verschmelzen",
+     "text": "mit 21 verschmelzen (284/145)",
+     "flaeche_px": 129
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300024,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Kleines Wiesenstück am rechten Viertelrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 18,
+     "art": "klasse",
+     "text": "Wiese, kein Acker (306/103)",
+     "flaeche_px": 132
+    },
+    {
+     "nr": 19,
+     "art": "verschmelzen",
+     "text": "mit 15 und 21 verschmelzen (308/101)",
+     "flaeche_px": 132
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300019,
+   "klasse_heute": "2.2",
+   "was_ist_es": "Große Wiese mit hellen, schräg verlaufenden Streifen und hellen Fehlstellen; feine Grasstruktur, keine Furchen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 20,
+     "art": "klasse",
+     "text": "Wiese, kein gepflügter Acker (121/162)",
+     "flaeche_px": 25781
+    },
+    {
+     "nr": 21,
+     "art": "fehlt",
+     "text": "helle lückige Stellen wie in 41 (x 95–170, y 255–312) nicht abgetrennt (130/285)",
+     "flaeche_px": 1800
+    },
+    {
+     "nr": 22,
+     "art": "grenze",
+     "text": "Grenze zum Saum 38 unten links nur ungefähr auf dem Helligkeitswechsel (105/300)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 300036,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Wiesenstück unten im Streifen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 23,
+     "art": "verschmelzen",
+     "text": "mit 21 verschmelzen, Grenzen ohne Bildkante (257/151)",
+     "flaeche_px": 145
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300039,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleines Wiesenstück am unteren Ende des Streifens, grenzt an den Wald 8.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 24,
+     "art": "verschmelzen",
+     "text": "mit 21 verschmelzen, Grenzen ohne Bildkante (270/172)",
+     "flaeche_px": 136
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300037,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Wiesenstück im unteren Streifen, keine Ackerstruktur.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 25,
+     "art": "klasse",
+     "text": "Wiese, kein Acker (271/158)",
+     "flaeche_px": 596
+    },
+    {
+     "nr": 26,
+     "art": "verschmelzen",
+     "text": "mit 21 verschmelzen (274/162)",
+     "flaeche_px": 596
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300027,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Langes dunkles Band am Waldrand: dunkle Kronen der Randbäume oder deren Schlagschatten nach Nordwesten auf den Saum; Gehölz in jedem Fall erkennbar.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Wald",
+    "fein": "Wald beschattet"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 27,
+     "art": "klasse",
+     "text": "Kronenstruktur erkennbar, kein Schatten ohne Grund (300/164)",
+     "flaeche_px": 2040
+    },
+    {
+     "nr": 28,
+     "art": "grenze",
+     "text": "rechte Grenze zum Wald 8 ohne klare Kante; eher mit 8 verschmelzen (318/182)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_nummern.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\nah_2.jpg"
+   ]
+  },
+  {
+   "id": 300041,
+   "klasse_heute": "6.1",
+   "was_ist_es": "Helle, beige Ringe und Flecken in der Wiese mit grünen Inseln: lückige, trockene Grasnarbe oder aufgewühlter Boden.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese lückig"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 29,
+     "art": "klasse",
+     "text": "überwiegend lückige Grasnarbe, kein offener Sand oder Lehm; Ursache unklar (191/222)",
+     "flaeche_px": 1662
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_nummern.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 300044,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grobe Krautvegetation unter dem Waldrand, wie der Saum 38.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Saum",
+    "fein": "Saum verbuscht"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 30,
+     "art": "verschmelzen",
+     "text": "gleiche Krautvegetation wie 38, Grenze unten ohne Bildkante; mit 38 verschmelzen (258/232)",
+     "flaeche_px": 298
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 300047,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Kleines Stück am Südende des hellen Streifens 45: heller Boden mit etwas Wiese.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Offenboden",
+    "mittel": "Rohboden",
+    "fein": "Erdstreifen"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 31,
+     "art": "verschmelzen",
+     "text": "heller Teil gehört zu 45, Wiesenrand zu 19; kein Sportplatz (184/296)",
+     "flaeche_px": 134
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300046,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Wiesenstück zwischen 41, 45 und 19, gleiche Grasnarbe wie 19.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 32,
+     "art": "klasse",
+     "text": "Wiese, kein Sportplatz (209/256)",
+     "flaeche_px": 132
+    },
+    {
+     "nr": 33,
+     "art": "verschmelzen",
+     "text": "mit 19 verschmelzen (207/262)",
+     "flaeche_px": 132
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 300045,
+   "klasse_heute": "6.1",
+   "was_ist_es": "Heller, rötlich-beiger Streifen von Nordost nach Südwest mit kleinen dunklen Sträuchern: offener oder vertrockneter Boden, vielleicht eine Rinne oder Aufschüttung.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Offenboden",
+    "mittel": "Rohboden",
+    "fein": "Erdstreifen"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 34,
+     "art": "klasse",
+     "text": "offener Boden wahrscheinlich, Art (Rinne, Aufschüttung, Streu) nicht erkennbar (220/268)",
+     "flaeche_px": 2046
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah4_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v1/nah3_nummern.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v1\\kontrast_1.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 300016,
+   "seite": "oben",
+   "text": "Kernteil ist Wiese (mit 1 verschmelzen); der dunklere Teil oberhalb in r0c0 ist dort zu entscheiden, die Klasse 0.2 trifft auch dort nicht sicher zu."
+  },
+  {
+   "id": 300018,
+   "seite": "oben",
+   "text": "Kernteil Wiese; das Segment reicht nach r0c0, dort mit kleinem Strauch."
+  },
+  {
+   "id": 300015,
+   "seite": "oben",
+   "text": "Wiese reicht nach r0c0; Klasse Wiese auf beiden Seiten gleich halten."
+  },
+  {
+   "id": 300001,
+   "seite": "oben",
+   "text": "Wiese reicht nach r0c0; Vorschlag Klasse Wiese gilt für das ganze Segment."
+  }
+ ],
+ "unsicher": [
+  "300008 (Wald, Viertel v2): am Rand zu v1 bei 243/202 ein heller Fleck im Kronendach (Lücke oder abgestorbener Baum), im Segment 8 enthalten.",
+  "300038 (Saum, Viertel v3): grenzt mit grober Krautvegetation an 19; die Klasse Sportplatz der Vorstufe trifft nicht zu.",
+  "300030 (Viertel v2): kleines helles Stück am Waldrand rechts von 24, Wiese oder Lichtung."
+ ],
+ "nicht_geprueft": [
+  "Werkzeug kante nicht benutzt; Grenzen nur nach Sicht in den Übersichts- und Nahansichten beurteilt.",
+  "Teile von 16, 18, 15 und 1 außerhalb des Kerns (r0c0) nur in der Übersicht angesehen."
+ ],
+ "offen": [
+  "Ob der Wiesenstreifen rechts von x 253 (21, 15, 25, 28, 32, 33, 36, 37, 39, 24) eine eigene, ungemähte oder verbrachte Fläche ist oder zur Wiese 1/19 gehört: Bild zeigt keine Kante, nur gröbere Struktur; ein Bild aus anderem Jahr oder Begehung würde es klären.",
+  "26 und 27: wie viel der dunklen Fläche Krone und wie viel Schlagschatten (nach Nordwesten) ist; eine Höhenkarte (Oberflächenmodell) würde die Grenze klären.",
+  "41 und 45: helle Stellen trockene Grasnarbe, Wühlstellen von Wildschweinen oder offener Boden; im Luftbild nicht unterscheidbar.",
+  "19: ob die übrigen hellen Fehlstellen (x 95–170, y 255–312) wie 41 abgetrennt werden sollen oder 41 in 19 aufgehen soll; einheitlich entscheiden."
+ ],
+ "klassen_frei": [
+  {
+   "name": "Grünland",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "niedrige, krautige Vegetation ohne Kronen und Schatten von Gehölzen"
+  },
+  {
+   "name": "Gehölz",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Baum- oder Strauchkronen mit runder Kronenstruktur und Eigenschatten"
+  },
+  {
+   "name": "Offenboden",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "helle, beige bis rötliche Fläche mit wenig oder keinem Grün"
+  },
+  {
+   "name": "Wiese",
+   "ebene": "mittel",
+   "eltern": "Grünland",
+   "merkmal": "gleichmäßig feine, hellgrüne Grasstruktur"
+  },
+  {
+   "name": "Saum",
+   "ebene": "mittel",
+   "eltern": "Grünland",
+   "merkmal": "grobe, unruhige Kraut- und Hochstaudenvegetation am Waldrand"
+  },
+  {
+   "name": "Einzelbaum",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "einzelne freistehende Krone mit eigenem Schlagschatten"
+  },
+  {
+   "name": "Wald",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "geschlossenes Kronendach aus vielen Kronen"
+  },
+  {
+   "name": "Rohboden",
+   "ebene": "mittel",
+   "eltern": "Offenboden",
+   "merkmal": "offener, heller Boden mit einzelnen Pflanzen"
+  },
+  {
+   "name": "Wiese",
+   "ebene": "fein",
+   "eltern": "Wiese",
+   "merkmal": "wie mittlere Ebene, nicht feiner unterscheidbar"
+  },
+  {
+   "name": "Wiese lückig",
+   "ebene": "fein",
+   "eltern": "Wiese",
+   "merkmal": "Wiese mit hellen beigen Ringen und Fehlstellen in der Grasnarbe"
+  },
+  {
+   "name": "Saum verbuscht",
+   "ebene": "fein",
+   "eltern": "Saum",
+   "merkmal": "Krautsaum mit eingestreuten kleinen dunklen Sträuchern"
+  },
+  {
+   "name": "Einzelbaum",
+   "ebene": "fein",
+   "eltern": "Einzelbaum",
+   "merkmal": "wie mittlere Ebene"
+  },
+  {
+   "name": "Wald beschattet",
+   "ebene": "fein",
+   "eltern": "Wald",
+   "merkmal": "sehr dunkles Kronendach oder Schlagschatten hoher Bäume auf dem Wald"
+  },
+  {
+   "name": "Erdstreifen",
+   "ebene": "fein",
+   "eltern": "Rohboden",
+   "merkmal": "schmaler, länglicher Streifen offenen Bodens"
+  }
+ ]
+}

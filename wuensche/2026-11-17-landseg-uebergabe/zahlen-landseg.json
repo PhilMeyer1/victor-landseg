@@ -1,0 +1,614 @@
+{
+ "A": {
+  "tk": {
+   "r0c0": {
+    "segmente": 128,
+    "im_kern": 85,
+    "kern_sicher_nein": 51
+   },
+   "r0c1": {
+    "segmente": 272,
+    "im_kern": 176,
+    "kern_sicher_nein": 109
+   },
+   "r1c0": {
+    "segmente": 64,
+    "im_kern": 35,
+    "kern_sicher_nein": 29
+   },
+   "r1c1": {
+    "segmente": 417,
+    "im_kern": 311,
+    "kern_sicher_nein": 112
+   }
+  },
+  "liste": {
+   "counts": {
+    "level_1": 7,
+    "level_2": 18,
+    "leaves": 32,
+    "rules_g": 2,
+    "rules_u": 0
+   },
+   "klassen": 47,
+   "je_ebene": {
+    "1": 7,
+    "2": 18,
+    "3": 22
+   }
+  },
+  "summe": {
+   "segmente": 881,
+   "im_kern": 607,
+   "kern_sicher_nein": 301
+  },
+  "klassen_im_kern_genutzt": 36,
+  "zusammen": {
+   "segmente": 607,
+   "naht_keys": [
+    "ok",
+    "ziel",
+    "einheiten",
+    "umbenannt",
+    "maengel",
+    "verstoesse",
+    "naht",
+    "klassen_konflikte",
+    "pruefen"
+   ],
+   "naht_verstoesse": 309
+  }
+ },
+ "B": {
+  "tk": {
+   "r0c0": {
+    "segmente": 206,
+    "im_kern": 141,
+    "kern_sicher_nein": 112,
+    "urteil": {
+     "kernsegmente": 141,
+     "eintraege": 141,
+     "nicht_sauber": 96,
+     "sicher_nein": 112,
+     "klassenwechsel": 0
+    },
+    "urteil_eintraege_nicht_sauber": 0,
+    "punkte_arten": {
+     "klasse": 44,
+     "verschmelzen": 57,
+     "fehlt": 6,
+     "sonstiges": 1,
+     "trennen": 3,
+     "grenze": 2
+    }
+   },
+   "r0c1": {
+    "segmente": 234,
+    "im_kern": 147,
+    "kern_sicher_nein": 89,
+    "urteil": {
+     "kernsegmente": 147,
+     "eintraege": 147,
+     "nicht_sauber": 88,
+     "sicher_nein": 89,
+     "klassenwechsel": 0
+    },
+    "urteil_eintraege_nicht_sauber": 0,
+    "punkte_arten": {
+     "trennen": 12,
+     "klasse": 55,
+     "verschmelzen": 30,
+     "sonstiges": 2
+    }
+   },
+   "r1c0": {
+    "segmente": 86,
+    "im_kern": 52,
+    "kern_sicher_nein": 28,
+    "urteil": {
+     "kernsegmente": 52,
+     "eintraege": 52,
+     "nicht_sauber": 45,
+     "sicher_nein": 28,
+     "klassenwechsel": 0
+    },
+    "urteil_eintraege_nicht_sauber": 0,
+    "punkte_arten": {
+     "klasse": 24,
+     "verschmelzen": 32,
+     "grenze": 4,
+     "fehlt": 4,
+     "trennen": 1,
+     "sonstiges": 2,
+     "zu_klein": 1
+    }
+   },
+   "r1c1": {
+    "segmente": 408,
+    "im_kern": 301,
+    "kern_sicher_nein": 168,
+    "urteil": {
+     "kernsegmente": 301,
+     "eintraege": 301,
+     "nicht_sauber": 176,
+     "sicher_nein": 168,
+     "klassenwechsel": 0
+    },
+    "urteil_eintraege_nicht_sauber": 0,
+    "punkte_arten": {
+     "zu_klein": 3,
+     "klasse": 144,
+     "grenze": 6,
+     "trennen": 23,
+     "fremdes": 20,
+     "verschmelzen": 7,
+     "sonstiges": 2,
+     "fehlt": 2
+    }
+   }
+  },
+  "liste": {
+   "counts": {
+    "level_1": 7,
+    "level_2": 21,
+    "leaves": 31,
+    "rules_g": 2,
+    "rules_u": 0
+   },
+   "klassen": 49,
+   "je_ebene": {
+    "1": 7,
+    "2": 21,
+    "3": 21
+   }
+  },
+  "summe": {
+   "segmente": 934,
+   "im_kern": 641,
+   "kern_sicher_nein": 397,
+   "nicht_sauber": 405,
+   "urteil_sicher_nein": 397,
+   "eintraege": 641
+  },
+  "klassen_im_kern_genutzt": 35
+ },
+ "C": {
+  "tk": {
+   "r0c0": {
+    "segmente": 206,
+    "im_kern": 141,
+    "kern_sicher_nein": 94,
+    "urteil": {
+     "kernsegmente": 141,
+     "eintraege": 141,
+     "nicht_sauber": 114,
+     "sicher_nein": 94,
+     "klassenwechsel": 99
+    },
+    "urteil_eintraege_nicht_sauber": 0,
+    "punkte_arten": {
+     "fehlt": 12,
+     "sonstiges": 12,
+     "klasse": 90,
+     "verschmelzen": 66,
+     "grenze": 9,
+     "zu_klein": 1,
+     "trennen": 5
+    }
+   },
+   "r0c1": {
+    "segmente": 234,
+    "im_kern": 147,
+    "kern_sicher_nein": 109,
+    "urteil": {
+     "kernsegmente": 147,
+     "eintraege": 147,
+     "nicht_sauber": 89,
+     "sicher_nein": 109,
+     "klassenwechsel": 77
+    },
+    "urteil_eintraege_nicht_sauber": 0,
+    "punkte_arten": {
+     "fremdes": 9,
+     "klasse": 51,
+     "verschmelzen": 35,
+     "grenze": 1,
+     "trennen": 4,
+     "sonstiges": 4,
+     "zu_klein": 2
+    }
+   },
+   "r1c0": {
+    "segmente": 86,
+    "im_kern": 52,
+    "kern_sicher_nein": 33,
+    "urteil": {
+     "kernsegmente": 52,
+     "eintraege": 52,
+     "nicht_sauber": 48,
+     "sicher_nein": 33,
+     "klassenwechsel": 39
+    },
+    "urteil_eintraege_nicht_sauber": 0,
+    "punkte_arten": {
+     "klasse": 36,
+     "verschmelzen": 42,
+     "grenze": 5,
+     "fremdes": 4
+    }
+   },
+   "r1c1": {
+    "segmente": 408,
+    "im_kern": 301,
+    "kern_sicher_nein": 245,
+    "urteil": {
+     "kernsegmente": 301,
+     "eintraege": 301,
+     "nicht_sauber": 181,
+     "sicher_nein": 245,
+     "klassenwechsel": 168
+    },
+    "urteil_eintraege_nicht_sauber": 0,
+    "punkte_arten": {
+     "klasse": 151,
+     "trennen": 27,
+     "verschmelzen": 13,
+     "grenze": 5,
+     "fremd": 2,
+     "fehlt": 2,
+     "sonstiges": 1,
+     "zu_klein": 1
+    }
+   }
+  },
+  "liste": {
+   "counts": {
+    "level_1": 7,
+    "level_2": 25,
+    "leaves": 43,
+    "rules_g": 5,
+    "rules_u": 5
+   },
+   "klassen": 58,
+   "je_ebene": {
+    "1": 7,
+    "2": 25,
+    "3": 26
+   }
+  },
+  "summe": {
+   "segmente": 934,
+   "im_kern": 641,
+   "kern_sicher_nein": 481,
+   "nicht_sauber": 432,
+   "urteil_sicher_nein": 481,
+   "eintraege": 641
+  },
+  "klassen_im_kern_genutzt": 27
+ },
+ "beispiel_urteil_segment": {
+  "id": 100010,
+  "klasse_heute": "1.1.1",
+  "was_ist_es": "Unterster Zipfel des roten Wohnhausdachs nördlich der Straße.",
+  "urteil": "sauber",
+  "klasse_vorschlag": null,
+  "sicher": true,
+  "punkte": [],
+  "bilder": [
+   "c-feste-liste/urteil/r0c0/v1/nah_2.jpg",
+   "c-feste-liste/urteil/r0c0/v1/kontrast_1.jpg"
+  ],
+  "viertel": "v1",
+  "klasse": "1.1.1"
+ },
+ "urteil_kopf_c": {
+  "schema": "landseg-urteil-teilkachel/1",
+  "fassung": "C",
+  "teilkachel": "r0c0",
+  "zusammengefuehrt": "mechanisch aus den vier Viertel-Abgaben (Teil 3 landseg-test-t0)",
+  "kategorien": "c-feste-liste/kategorien-c.json",
+  "klasse_regel": "klasse = klasse_vorschlag, sonst klasse_heute",
+  "kernsegmente": 141,
+  "eintraege": 141,
+  "zahlen": {
+   "nicht_sauber": 114,
+   "sicher_nein": 94,
+   "klassenwechsel": 99,
+   "je_viertel": {
+    "v1": 22,
+    "v2": 62,
+    "v3": 19,
+    "v4": 38
+   }
+  },
+  "naht": [
+   {
+    "id": 100099,
+    "seite": "rechts",
+    "text": "Grünstreifen an der Straße, Vorschlag 3.4 statt 1.2.1; die Klasse muss in r0c1 gleich gesetzt werden.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100109,
+    "seite": "rechts",
+    "text": "Strauch im Schatten, Vorschlag 4.2.4 statt 0.2; gilt auch für den Teil in r0c1.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100110,
+    "seite": "rechts",
+    "text": "Kronenzipfel, Vorschlag 4.2.1 statt 4.1; Hauptteil liegt in r0c1.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100121,
+    "seite": "rechts",
+    "text": "Baumkrone, Vorschlag 4.2.1 statt 4.2.4; gilt auch für den Teil in r0c1.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100122,
+    "seite": "rechts",
+    "text": "Strauchige Fläche, Vorschlag 4.2.4 statt 4.1; gilt auch für den Teil in r0c1.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100074,
+    "seite": "rechts",
+    "text": "Rasen mit Gartenmöbeln, Vorschlag 3.1 statt 4.2.1.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100195,
+    "seite": "unten",
+    "text": "Vorschlag 3.1 und Verschmelzen mit 166; ein kleiner Teil liegt jenseits des Kerns in r1c0 und muss dort gleich behandelt werden.",
+    "viertel": "v3"
+   },
+   {
+    "id": 100149,
+    "seite": "rechts",
+    "text": "Vorschlag 4.2 statt 4.2.4; der größere Teil liegt in r0c1 und muss dort gleich gesetzt werden.",
+    "viertel": "v4"
+   },
+   {
+    "id": 100170,
+    "seite": "rechts",
+    "text": "Feldrand, Vorschlag mit 159 verschmelzen; reicht über den Kernrand.",
+    "viertel": "v4"
+   },
+   {
+    "id": 100191,
+    "seite": "unten",
+    "text": "Vorschlag 4.2 statt 4.2.1; Teil in r1c0 gleich setzen.",
+    "viertel": "v4"
+   },
+   {
+    "id": 100197,
+    "seite": "unten",
+    "text": "Wiesenstück, Vorschlag mit 175 verschmelzen; Teil in r1c0.",
+    "viertel": "v4"
+   }
+  ],
+  "unsicher": [
+   "v1: 100059 (Straße, v2): Grenze zu 38 und 54 am oberen Kernrand liegt grob richtig; der Anfang der Fahrbahn bei (160/68) ist unscharf.",
+   "v1: 100014 (Zufahrt, v2): nimmt nach Vorschlag 66 und 68 auf.",
+   "v1: 100044 und 100041 (Kontextrand): Rasen bzw. Heckenschatten nördlich von 38, wirken plausibel.",
+   "v1: Klasse von 56 (3.5 gegen 3.3 gegen 3.1): Nutzung und Wuchshöhe sind im Bild nicht sicher; Vergleich mit Fremddaten sinnvoll.",
+   "v2: 100135 (v4): Krone am Südrand des Gartens nimmt nach Vorschlag 133 auf, eventuell auch 134.",
+   "v2: 100136 (v4): rote Krone, wahrscheinlich dieselbe Baumgruppe wie 127.",
+   "v2: 100013 (Kontextrand): weißes Gebäude mit Solardach oben links, unauffällig.",
+   "v2: 100014: nimmt nach Vorschlag 31, 63, 66 und 68 auf.",
+   "v2: 100056 (v1): nimmt nach Vorschlag 92 auf; Schattenanteil von 97/116 auf der Wiese gehört nach U2 zu 56.",
+   "v3: 100056 (v1): enthält in v3 weitere dunkle Gehölzflecken ohne eigenes Segment (163/336, 205/358, 230/499, 249/368, 293/552) und helle Trampelpfade (260/420, 280/500); im Urteil von v1 bei 56 nachgetragen.",
+   "v3: 100138 und 100125 (v1): dunkle Kronen wie die Kronen hier; in v1 als Gehölz vorgeschlagen.",
+   "v3: 100176 und 100177 (v4): Rand der großen Krone 177 am rechten Rand des Viertels.",
+   "v4: 100056 (v1): abgetrenntes Teilstück in v4 (470/540) ist Gehölz, keine Wiese; im Urteil von v1 bei 56 nachgetragen.",
+   "v4: 100127 (v2): dunkle Krone, schließt an die rote Krone 136 an.",
+   "v4: 100134 und 100133 (v2): Strauch bzw. Kronenrand am Nordrand der Gruppe 135.",
+   "v4: 100172 und 100176: Wiesenstücke, ob sie zu 56 oder 175 gehören, ist ohne Bildkante nicht zu entscheiden."
+  ],
+  "nicht_geprueft": [
+   "v1: Die vorbereiteten Rohbilder nah1_roh bis nah4_roh, uebersicht_kontrast.jpg und uebersicht_gitter.jpg habe ich nicht eigens angesehen; die Nummernbilder und eigene Nahansichten deckten die Stellen ab.",
+   "v1: Werkzeug kante (W4) nicht benutzt; Grenzen nur nach Augenschein beurteilt.",
+   "v2: Rohbilder nah1_roh bis nah4_roh, uebersicht_kontrast.jpg und uebersicht_gitter.jpg nicht eigens angesehen; eigene Nah- und Kontrastbilder deckten die Stellen ab.",
+   "v2: Werkzeug kante (W4) nicht benutzt; Grenzen nach Augenschein.",
+   "v2: Gegenseite der Naht in r0c1 nicht angesehen.",
+   "v3: Rohbilder nah1_roh bis nah4_roh, uebersicht_kontrast.jpg und uebersicht_gitter.jpg nicht eigens angesehen; eigenes Kontrastbild für die Kronen 125 bis 151.",
+   "v3: Werkzeug kante (W4) nicht benutzt; Grenzen nach Augenschein.",
+   "v3: Gegenseite der Naht in r1c0 nicht angesehen.",
+   "v4: Rohbilder nah1_roh bis nah4_roh, uebersicht_kontrast.jpg und uebersicht_gitter.jpg nicht eigens angesehen; eigenes Kontrastbild des Feldes und eigene Nahansicht der Gehölze im Süden.",
+   "v4: Werkzeug kante (W4) nicht benutzt; Grenzen nach Augenschein.",
+   "v4: Gegenseiten der Nähte in r0c1 und r1c0 nicht angesehen."
+  ],
+  "offen": [
+   "v1: 100056: Klasse 3.5 (verbuschend) oder 3.3 (Brache) statt 3.1 – im Bild nicht sicher zu entscheiden.",
+   "v1: 100086/80/81: Ein Holzhaufen hat keine eigene Klasse; 1.3.1 Lagerfläche ist der nächste Code.",
+   "v1: 100051: dunkler Strich unter der Dachtraufe Hecke (4.2.3) oder Schatten einer Mauer?",
+   "v1: 100052/66: befestigter Weg oder Mauer am Gartenrand; danach richtet sich die Klasse von 66.",
+   "v1: 100112: Baum oder Gebüsch.",
+   "v2: 100057: Sandkasten (1.3.4) oder Hochbeet (2.2)? Vorschlag Elternklasse 1.3.",
+   "v2: 100053: helles Stück an der Dachecke von 33 (Dachrand, Treppe, Pflaster?) – Klasse 1.1.1 belassen, aber unsicher.",
+   "v2: 100082: rotlaubiger Strauch oder kleines Dach?",
+   "v2: 100106 und 100115: was unter dem Schatten liegt (Rasen, Beet, Strauch), ist nicht zu sehen.",
+   "v2: 100129: abgedecktes Schwimmbecken oder andere Anlage (Teich, Beet)? Vorschlag 1.3.3.",
+   "v2: 100097/100116: Anteil Hecke gegen Schatten auf der Wiese nicht trennbar.",
+   "v3: Alle dunklen Kronen: Einzelbaum (4.2.1), Baumgruppe (4.2.2) oder Gebüsch (4.2.4) ist ohne Höhe nicht sicher; deshalb Elternklasse 4.2.",
+   "v3: 100193: gehört zur glatten Wiese 166 oder zur rauen Fläche 56?",
+   "v4: 100159: Getreidestoppel mit Strohschwaden (Acker 2.1) oder gemähte Wiese mit Heuschwaden (3.1.1)? Zwischen den Schwaden ist kein Grün zu sehen; Klasse 2.1 belassen, Fremddaten (INVEKOS) klären.",
+   "v4: Große dunkle Kronen (177, 185, 191, 135, 149): Einzelbaum, Baumgruppe oder Gebüsch ist ohne Höhe nicht sicher; Elternklasse 4.2.",
+   "v4: 100148: kleiner Strauch oder Grasbuckel?"
+  ]
+ },
+ "urteil_kopf_b": {
+  "schema": "landseg-urteil-teilkachel/1",
+  "fassung": "B",
+  "teilkachel": "r0c0",
+  "zusammengefuehrt": "mechanisch aus den vier Viertel-Abgaben (Teil 3 landseg-test-t0)",
+  "kategorien": "b-kategorien-frei/kategorien-b.json",
+  "klasse_regel": "klasse = Code aus b-kategorien-frei/vereinheitlichung/codes.json (vereinheitlichte freie Klasse); klasse_frei = Benennung des Viertels",
+  "kernsegmente": 141,
+  "eintraege": 141,
+  "zahlen": {
+   "nicht_sauber": 96,
+   "sicher_nein": 112,
+   "klassenwechsel": 0,
+   "je_viertel": {
+    "v1": 22,
+    "v2": 62,
+    "v3": 19,
+    "v4": 38
+   }
+  },
+  "naht": [
+   {
+    "id": 100109,
+    "seite": "rechts",
+    "text": "Krone reicht über die Kerngrenze; Klasse Einzelbaum statt Schatten muss auch in r0c1 gelten.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100127,
+    "seite": "rechts",
+    "text": "Kronen reichen bis an die Kerngrenze; Gehölz statt Schatten auch in r0c1.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100099,
+    "seite": "rechts",
+    "text": "Grünstreifen statt Straße läuft über die Kerngrenze weiter.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100121,
+    "seite": "rechts",
+    "text": "Nadelbaum statt Gebüsch; Krone berührt die Kerngrenze.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100110,
+    "seite": "rechts",
+    "text": "Nur 14 Bildpunkte im Kern, Hauptteil der Krone in r0c1.",
+    "viertel": "v2"
+   },
+   {
+    "id": 100166,
+    "seite": "unten",
+    "text": "Die Wiese läuft über die untere Kerngrenze nach r1c0 weiter; dort dieselbe Klasse.",
+    "viertel": "v3"
+   },
+   {
+    "id": 100195,
+    "seite": "unten",
+    "text": "Dunklere Grasstelle berührt die untere Kerngrenze; Grünland statt Schatten auch in r1c0.",
+    "viertel": "v3"
+   },
+   {
+    "id": 100159,
+    "seite": "rechts",
+    "text": "Das Heufeld läuft nach r0c1 weiter; Klasse Mähwiese mit Heu (sicher: false) muss dort gleich gelten.",
+    "viertel": "v4"
+   },
+   {
+    "id": 100149,
+    "seite": "rechts",
+    "text": "Baumgruppe statt Gebüsch; Kronen reichen über die Kerngrenze.",
+    "viertel": "v4"
+   },
+   {
+    "id": 100175,
+    "seite": "rechts",
+    "text": "Wiesenstreifen läuft über die Kerngrenze nach r0c1 weiter.",
+    "viertel": "v4"
+   },
+   {
+    "id": 100191,
+    "seite": "unten",
+    "text": "Baumgruppe statt Einzelbaum; Kronen reichen nach r1c0.",
+    "viertel": "v4"
+   },
+   {
+    "id": 100194,
+    "seite": "unten",
+    "text": "Krone reicht über die untere Kerngrenze.",
+    "viertel": "v4"
+   },
+   {
+    "id": 100197,
+    "seite": "unten",
+    "text": "Grassaum über der unteren Kerngrenze; soll in den Wiesenstreifen 100175 aufgehen.",
+    "viertel": "v4"
+   }
+  ],
+  "unsicher": [
+   "v1: 100059 (Straße, v2): Splitter 100054 am Straßenbeginn könnte zur Straße gehören.",
+   "v1: 100014 (helle Seitenstraße, v2): Schatten 100066 sollte in sie aufgehen.",
+   "v2: 100136 (v4): Blutbuche geht ohne klare Kante in 100127 über.",
+   "v2: 100135 (v4): Kronenrand 100133 sollte in sie aufgehen.",
+   "v2: 100056 (v1): hellerer Saum östlich der Grenzhecke 100116 könnte noch zur Hecke gehören.",
+   "v3: 100056 (v1): Der Teil in v3 ist dichtes Gebüsch mit Jungwuchs, keine Wiese; Trampelpfad schräg durch das Gebüsch nicht abgegrenzt (im Urteil v1 eingetragen).",
+   "v3: 100172, 100176, 100177 (v4): Kronen und Saum am Ostrand von v3 gehören zum Gehölz 100177.",
+   "v4: 100056 (v1): Teil in v4 links von 100135 ist Wiese, Teil am Unterrand von v4 liegt zwischen Kronen; Segment zerfällt in verschiedene Bedeckungen.",
+   "v4: 100127 (v2): Kronen gehen in die Blutbuche 100136 über, Grenze dazwischen ohne klare Kante."
+  ],
+  "nicht_geprueft": [
+   "v1: uebersicht_kontrast.jpg, uebersicht_gitter.jpg, uebersicht_vorschlag.jpg, uebersicht_maengel.jpg nicht angesehen; Grenzen nicht bildpunktgenau mit dem Werkzeug kante nachgemessen.",
+   "v2: uebersicht_kontrast.jpg, uebersicht_gitter.jpg, uebersicht_vorschlag.jpg und uebersicht_maengel.jpg nicht angesehen; Grenzen nicht mit dem Werkzeug kante nachgemessen.",
+   "v3: nah1_roh.jpg, nah2_roh.jpg, uebersicht_kontrast.jpg, uebersicht_gitter.jpg, uebersicht_vorschlag.jpg und uebersicht_maengel.jpg nicht angesehen; Grenzen nicht mit dem Werkzeug kante nachgemessen.",
+   "v4: nah4_roh.jpg, uebersicht_kontrast.jpg, uebersicht_gitter.jpg, uebersicht_vorschlag.jpg und uebersicht_maengel.jpg nicht angesehen; Grenzen nicht mit dem Werkzeug kante nachgemessen."
+  ],
+  "offen": [
+   "v1: 100052: Mauerkrone oder schmaler Kiesweg ist aus der Draufsicht nicht zu entscheiden.",
+   "v1: 100051: Hecke oder Mauer mit Schatten nicht sicher zu trennen.",
+   "v1: 100125, 100123, 100138: Gebüsch oder kleiner Baum nicht sicher zu trennen; Gehölz sicher.",
+   "v1: 100056: Wiese ungemäht gegen Brache nicht sicher; Nutzung unbekannt.",
+   "v1: 100056: Wo das Altgras (v1) in die Gebüschfläche (v3) übergeht, ist ohne Messung mit dem Werkzeug kante nicht gesetzt; die Grenze für das Abtrennen bleibt zu ziehen.",
+   "v2: 100111: Schatten auf dem Stellplatz oder tiefer liegender Dachteil ist aus der Draufsicht nicht sicher.",
+   "v2: 100053: Dachrand oder Gartenrand nicht zu entscheiden.",
+   "v2: 100094: Schotter oder alter Asphalt nicht zu entscheiden.",
+   "v2: 100129: Abdeckung oder leeres Becken nicht zu entscheiden; Schwimmbecken sicher.",
+   "v2: 100047: dunkles Objekt (Hütte oder Trampolin) nicht zu entscheiden.",
+   "v3: 100165, 100145: ein oder zwei Bäume nicht sicher zu trennen.",
+   "v3: 100195: höheres Gras, Feuchtstelle oder Schatten eines Geländeknicks nicht zu entscheiden.",
+   "v3: 100151, 100161: Strauch oder kleiner Baum nicht zu entscheiden.",
+   "v4: 100159: gemähte Wiese mit Heuschwaden oder abgeerntetes Getreidefeld mit Strohschwaden ist aus einem Bild nicht sicher zu trennen; ein Bild aus einem anderen Monat würde es klären.",
+   "v4: 100174: Fahrspur oder heller Heurest nicht zu entscheiden.",
+   "v4: 100135: ein großer Baum oder zwei nicht zu entscheiden.",
+   "v4: 100143, 100175: gemäht oder ungemäht nicht sicher; Nutzung unbekannt."
+  ]
+ },
+ "segment_a": {
+  "id": 100001,
+  "klasse": "2.1.1",
+  "grob": "2",
+  "name": "Straße West (Rand, unter Baumschatten)",
+  "im_kern": false,
+  "sicher": "nein",
+  "flaeche": 728,
+  "flaeche_kern": 0,
+  "vorstufe": [
+   100035,
+   100025
+  ],
+  "id_abgabe": 1,
+  "klasse_teil": "1.2.1",
+  "klasse_teil_name": "Straße (Asphalt)"
+ },
+ "segment_c": {
+  "id": 100001,
+  "klasse": "3.1",
+  "grob": "3",
+  "herkunft": "semantik",
+  "sicher": "nein",
+  "sicherheit": {
+   "wert": 0.499,
+   "abstand": 0.171
+  },
+  "flaeche": 664,
+  "im_kern": false,
+  "im_siedlung": "ja",
+  "klasse_vorstufe": "3.1",
+  "sicher_vorstufe": "nein",
+  "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
+  "urteil": "kontextrand"
+ }
+}

@@ -1,0 +1,1 @@
+abgenommen, keine Mängel-Kandidaten aus den Blickwinkeln wunschtext, verhalten; nicht geprüft: wunschtext: Ausführung nichts (Wunschtext führt nichts aus); Nacharbeit im Hauptordner (Profil Testreihen, pruefung voll, Lagebild) steht im Bericht und ist kein Mangel.; verhalten: ""

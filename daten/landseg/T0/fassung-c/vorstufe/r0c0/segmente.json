@@ -1,0 +1,3286 @@
+{
+  "schema": "landseg-segmente/1",
+  "segmente": [
+    {
+      "id": 100001,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.499,
+        "abstand": 0.171
+      },
+      "flaeche": 664,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100002,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.494
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 1123,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100003,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.458
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 222,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100004,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.566
+      },
+      "instanz": {
+        "text": "building",
+        "eingerastet": true
+      },
+      "flaeche": 731,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100005,
+      "klasse": "1.3.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.785
+      },
+      "instanz": {
+        "text": "swimming pool",
+        "eingerastet": true
+      },
+      "flaeche": 1839,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100006,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.204,
+        "abstand": 0.076
+      },
+      "flaeche": 106,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100007,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.443,
+        "abstand": 0.293
+      },
+      "flaeche": 262,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100008,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.714,
+        "abstand": 0.487
+      },
+      "flaeche": 170,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100009,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.534
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 399,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100010,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.942
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 5251,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100011,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.365,
+        "abstand": 0.209
+      },
+      "flaeche": 3581,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100012,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.529
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 689,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100013,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.897
+      },
+      "instanz": {
+        "text": "building",
+        "eingerastet": true
+      },
+      "flaeche": 3532,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100014,
+      "klasse": "1.2.4",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.567
+      },
+      "instanz": {
+        "text": "paved yard",
+        "eingerastet": true
+      },
+      "flaeche": 7768,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100015,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.711
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 643,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100016,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.604
+      },
+      "instanz": {
+        "text": "lawn",
+        "eingerastet": true
+      },
+      "flaeche": 2238,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100017,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.852
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 1588,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100018,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.44,
+        "abstand": 0.209
+      },
+      "flaeche": 90,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100019,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.427,
+        "abstand": 0.285
+      },
+      "flaeche": 395,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100020,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.566
+      },
+      "instanz": {
+        "text": "building",
+        "eingerastet": true
+      },
+      "flaeche": 528,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100021,
+      "klasse": "1.2.4",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.138,
+        "abstand": 0.083
+      },
+      "flaeche": 361,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100022,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.076,
+        "abstand": 0.034
+      },
+      "flaeche": 315,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100023,
+      "klasse": "3.4",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.354,
+        "abstand": 0.114
+      },
+      "flaeche": 128,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100024,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.401
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 991,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100025,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.43
+      },
+      "instanz": {
+        "text": "paved path",
+        "eingerastet": true
+      },
+      "flaeche": 306,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100026,
+      "klasse": "3.4",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.296,
+        "abstand": 0.11
+      },
+      "flaeche": 114,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100027,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.413
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 4359,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100028,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.124,
+        "abstand": 0.073
+      },
+      "flaeche": 198,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100029,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.445,
+        "abstand": 0.157
+      },
+      "flaeche": 437,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100030,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.127,
+        "abstand": 0.075
+      },
+      "flaeche": 314,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100031,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.583
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1014,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100032,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.462,
+        "abstand": 0.205
+      },
+      "flaeche": 259,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100033,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.946
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 6434,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100034,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.319,
+        "abstand": 0.266
+      },
+      "flaeche": 162,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100035,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.727,
+        "abstand": 0.111
+      },
+      "flaeche": 422,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100036,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.28,
+        "abstand": 0.121
+      },
+      "flaeche": 544,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100037,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.566
+      },
+      "instanz": {
+        "text": "building",
+        "eingerastet": true
+      },
+      "flaeche": 190,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100038,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.438
+      },
+      "instanz": {
+        "text": "lawn",
+        "eingerastet": true
+      },
+      "flaeche": 1930,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100039,
+      "klasse": "1.2.4",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.642,
+        "abstand": 0.306
+      },
+      "flaeche": 155,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100040,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.406,
+        "abstand": 0.107
+      },
+      "flaeche": 2062,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100041,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.264,
+        "abstand": 0.154
+      },
+      "flaeche": 115,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100042,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.07,
+        "abstand": 0.026
+      },
+      "flaeche": 147,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100043,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.691,
+        "abstand": 0.112
+      },
+      "flaeche": 239,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100044,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.356,
+        "abstand": 0.287
+      },
+      "flaeche": 130,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100045,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.641,
+        "abstand": 0.346
+      },
+      "flaeche": 123,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100046,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.343,
+        "abstand": 0.246
+      },
+      "flaeche": 580,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100047,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.516
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 3216,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100048,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.693
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 6465,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100049,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.808
+      },
+      "instanz": {
+        "text": "forest",
+        "eingerastet": true
+      },
+      "flaeche": 129,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100050,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.779,
+        "abstand": 0.393
+      },
+      "flaeche": 114,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100051,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.442,
+        "abstand": 0.385
+      },
+      "flaeche": 255,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100052,
+      "klasse": "1.3.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.2,
+        "abstand": 0.158
+      },
+      "flaeche": 521,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100053,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.369,
+        "abstand": 0.315
+      },
+      "flaeche": 145,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100054,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.685,
+        "abstand": 0.084
+      },
+      "flaeche": 95,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100055,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.313,
+        "abstand": 0.161
+      },
+      "flaeche": 212,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100056,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 118149,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100057,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.577,
+        "abstand": 0.291
+      },
+      "flaeche": 270,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100058,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.776,
+        "abstand": 0.387
+      },
+      "flaeche": 90,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100059,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.758
+      },
+      "instanz": {
+        "text": "road",
+        "eingerastet": true
+      },
+      "flaeche": 9919,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100060,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.693
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 152,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100061,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.146,
+        "abstand": 0.046
+      },
+      "flaeche": 2255,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100062,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.54
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 138,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100063,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.172,
+        "abstand": 0.085
+      },
+      "flaeche": 150,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100064,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.454
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 85,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100065,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.805,
+        "abstand": 0.456
+      },
+      "flaeche": 160,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100066,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.116,
+        "abstand": 0.065
+      },
+      "flaeche": 152,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100067,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.677,
+        "abstand": 0.213
+      },
+      "flaeche": 135,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100068,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.619,
+        "abstand": 0.067
+      },
+      "flaeche": 117,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100069,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.093,
+        "abstand": 0.025
+      },
+      "flaeche": 150,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100070,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.335,
+        "abstand": 0.167
+      },
+      "flaeche": 2324,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100071,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.251,
+        "abstand": 0.073
+      },
+      "flaeche": 174,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100072,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 150,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100073,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.546
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 557,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100074,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.237,
+        "abstand": 0.041
+      },
+      "flaeche": 102,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100075,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.079,
+        "abstand": 0.009
+      },
+      "flaeche": 74,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100076,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.516
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 175,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100077,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.564
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 1153,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100078,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.251,
+        "abstand": 0.065
+      },
+      "flaeche": 296,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100079,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 151,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100080,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 409,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100081,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 98,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100082,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.153,
+        "abstand": 0.09
+      },
+      "flaeche": 179,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100083,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.274,
+        "abstand": 0.085
+      },
+      "flaeche": 501,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100084,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 134,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100085,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.144,
+        "abstand": 0.038
+      },
+      "flaeche": 88,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100086,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.652,
+        "abstand": 0.396
+      },
+      "flaeche": 1619,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100087,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.716,
+        "abstand": 0.066
+      },
+      "flaeche": 85,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100088,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.469,
+        "abstand": 0.285
+      },
+      "flaeche": 445,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100089,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.368,
+        "abstand": 0.189
+      },
+      "flaeche": 1066,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100090,
+      "klasse": "1.2.4",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.528
+      },
+      "instanz": {
+        "text": "paved yard",
+        "eingerastet": true
+      },
+      "flaeche": 814,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100091,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.697
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 669,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100092,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.423,
+        "abstand": 0.157
+      },
+      "flaeche": 124,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100093,
+      "klasse": "3.4",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.284,
+        "abstand": 0.085
+      },
+      "flaeche": 100,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100094,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.481,
+        "abstand": 0.068
+      },
+      "flaeche": 461,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100095,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.359,
+        "abstand": 0.067
+      },
+      "flaeche": 520,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100096,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.48,
+        "abstand": 0.117
+      },
+      "flaeche": 99,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100097,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.632
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 237,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100098,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.494
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 2909,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100099,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.427,
+        "abstand": 0.101
+      },
+      "flaeche": 315,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100100,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.178,
+        "abstand": 0.062
+      },
+      "flaeche": 80,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100101,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.436,
+        "abstand": 0.059
+      },
+      "flaeche": 89,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100102,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.164,
+        "abstand": 0.069
+      },
+      "flaeche": 1483,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100103,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.419
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 1389,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100104,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.414,
+        "abstand": 0.141
+      },
+      "flaeche": 158,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100105,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.132,
+        "abstand": 0.082
+      },
+      "flaeche": 126,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100106,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.416,
+        "abstand": 0.199
+      },
+      "flaeche": 1027,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100107,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.487,
+        "abstand": 0.058
+      },
+      "flaeche": 157,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100108,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.528,
+        "abstand": 0.213
+      },
+      "flaeche": 440,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100109,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.779,
+        "abstand": 0.253
+      },
+      "flaeche": 170,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100110,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.688,
+        "abstand": 0.227
+      },
+      "flaeche": 576,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100111,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.556,
+        "abstand": 0.409
+      },
+      "flaeche": 216,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100112,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.443
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 2019,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100113,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.893
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 9419,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100114,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.692
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 883,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100115,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.441
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1064,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100116,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.632
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 624,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100117,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.408,
+        "abstand": 0.197
+      },
+      "flaeche": 147,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100118,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.919
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 4020,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100119,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.641,
+        "abstand": 0.12
+      },
+      "flaeche": 1493,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100120,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.664
+      },
+      "instanz": {
+        "text": "lawn",
+        "eingerastet": true
+      },
+      "flaeche": 6620,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100121,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.451
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 777,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100122,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.618,
+        "abstand": 0.302
+      },
+      "flaeche": 1885,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100123,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.6
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 454,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100124,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.649,
+        "abstand": 0.264
+      },
+      "flaeche": 363,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100125,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.568
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 603,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100126,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.513,
+        "abstand": 0.185
+      },
+      "flaeche": 183,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100127,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.44
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1598,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100128,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.634,
+        "abstand": 0.086
+      },
+      "flaeche": 168,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100129,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.14,
+        "abstand": 0.055
+      },
+      "flaeche": 1209,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100130,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.68
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 2931,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100131,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.786,
+        "abstand": 0.317
+      },
+      "flaeche": 147,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100132,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.798,
+        "abstand": 0.38
+      },
+      "flaeche": 138,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100133,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.808
+      },
+      "instanz": {
+        "text": "forest",
+        "eingerastet": true
+      },
+      "flaeche": 133,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100134,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 400,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100135,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.741
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 4748,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100136,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.837
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 4186,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100137,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.435
+      },
+      "instanz": {
+        "text": "lawn",
+        "eingerastet": true
+      },
+      "flaeche": 2628,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100138,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.513
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 331,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100139,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.327,
+        "abstand": 0.148
+      },
+      "flaeche": 135,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100140,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.656
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1503,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100141,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.685,
+        "abstand": 0.152
+      },
+      "flaeche": 91,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100142,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.853,
+        "abstand": 0.167
+      },
+      "flaeche": 110,
+      "im_kern": false,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100143,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 5664,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100144,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.482
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 599,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100145,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.615
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1935,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100146,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.486
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 107,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100147,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.655,
+        "abstand": 0.194
+      },
+      "flaeche": 1630,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100148,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 150,
+      "im_kern": true,
+      "im_siedlung": "ja"
+    },
+    {
+      "id": 100149,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.468
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 3789,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100150,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 220,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100151,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.563
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 630,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100152,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.662,
+        "abstand": 0.249
+      },
+      "flaeche": 85,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100153,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 78,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100154,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 118,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100155,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.56,
+        "abstand": 0.16
+      },
+      "flaeche": 238,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100156,
+      "klasse": "6.6",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.924
+      },
+      "instanz": {
+        "text": "dirt path",
+        "eingerastet": true
+      },
+      "flaeche": 135,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100157,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.734
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1396,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100158,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 200,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100159,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.764
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 17042,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100160,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.882
+      },
+      "instanz": {
+        "text": "bare soil",
+        "eingerastet": true
+      },
+      "flaeche": 78,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100161,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.427
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 645,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100162,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.737,
+        "abstand": 0.085
+      },
+      "flaeche": 75,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100163,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.824,
+        "abstand": 0.073
+      },
+      "flaeche": 155,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100164,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 80,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100165,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.604
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 2875,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100166,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 37319,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100167,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.813,
+        "abstand": 0.094
+      },
+      "flaeche": 156,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100168,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.467
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 74,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100169,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.555,
+        "abstand": 0.117
+      },
+      "flaeche": 110,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100170,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.653,
+        "abstand": 0.077
+      },
+      "flaeche": 101,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100171,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.531
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1344,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100172,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 996,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100173,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 86,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100174,
+      "klasse": "6.6",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.924
+      },
+      "instanz": {
+        "text": "dirt path",
+        "eingerastet": true
+      },
+      "flaeche": 96,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100175,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.422
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 17580,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100176,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 312,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100177,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.629
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 5884,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100178,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.467
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 712,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100179,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 195,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100180,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.678
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1537,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100181,
+      "klasse": "4.2.4",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.451
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 2179,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100182,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 189,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100183,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 340,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100184,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.573
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 879,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100185,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.638
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 3249,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100186,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 176,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100187,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.434
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 73,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100188,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 131,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100189,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 389,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100190,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 124,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100191,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.434
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 4409,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100192,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.504
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 110,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100193,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 451,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100194,
+      "klasse": "4.2.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.46
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 3784,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100195,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.433
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 752,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100196,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 126,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100197,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 234,
+      "im_kern": true,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100198,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 152,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100199,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.637
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 299,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100200,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 161,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100201,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.63
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 601,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100202,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.664
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 533,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100203,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.595
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 298,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100204,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 121,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100205,
+      "klasse": "0.2",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.544
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 190,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    },
+    {
+      "id": 100206,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 137,
+      "im_kern": false,
+      "im_siedlung": "nein"
+    }
+  ],
+  "verlauf": [
+    {
+      "zeit": "2026-11-17T16:58:41+00:00",
+      "bearbeiter": "vorstufe",
+      "op": "vorstufe",
+      "konfig": "efd5251383c0"
+    }
+  ],
+  "vorstufe": {
+    "teilkachel": "r0c0",
+    "bild": "r0c0.png",
+    "konfig": "efd5251383c0",
+    "sam3": "70eb88e22347",
+    "modell": "facebook/sam3",
+    "erstellt": "2026-11-17T16:58:41+00:00",
+    "messung": {
+      "segmente": 206,
+      "segmente_im_kern": 141,
+      "superpixel": 2568,
+      "instanzen": 109,
+      "segmente_instanz": 116,
+      "sicher_nein": 136,
+      "anteil_sicher_nein": 0.6602,
+      "flaeche_sicher_nein": 0.3781,
+      "kandidaten": {
+        "klasse_unsicher": 136,
+        "nicht_zusammenhaengend": 11,
+        "grenze_ohne_bildkante": 185
+      },
+      "im_siedlung_ja": 62,
+      "hoehe": 628,
+      "breite": 628,
+      "laufzeit_s": {
+        "sam3": 65.94,
+        "verschmelzen": 0.32,
+        "gesamt": 66.28
+      }
+    },
+    "pruefen": {
+      "ok": true,
+      "hoehe": 628,
+      "breite": 628,
+      "bildpunkte": 394384,
+      "ohne_segment": 0,
+      "segmentzahl": 206,
+      "nicht_zusammenhaengend": [],
+      "maengel": []
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+ "teilkachel": "r1c0",
+ "viertel": "v4",
+ "bearbeiter": "urt-b-r1c0-v4",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r1c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_kontrast.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_roh.jpg",
+   "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v4\\kontrast_1.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 300048,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche im Wald oben links mit nur schwacher Kronenstruktur, Grenze auf der Hell-dunkel-Kante: Schatten auf Wald.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300059,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Kleine dunkle Lücke zwischen beleuchteten Kronen: Schatten im Kronendach.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 300063,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle, hakenförmige Fläche mitten im Wald, umschließt eine beleuchtete Krone; fast strukturlos: Schatten auf Wald.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 300076,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche am Südrand mit zwei beleuchteten Kronen (79, 80) darin; setzt sich ohne Kante in 72 fort.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Grenze zu 72 liegt in durchgehend dunkler Fläche ohne Bildkante; 72 und 76 verschmelzen (545/533)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v4\\kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 300079,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Beleuchtete, gelbgrüne Baumkrone inmitten des Schattens 76, zusammen mit 80 eine Krone.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Wald",
+    "fein": "Wald"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "beleuchtete Krone, kein Schatten (532/548)",
+     "flaeche_px": 140
+    },
+    {
+     "nr": 3,
+     "art": "verschmelzen",
+     "text": "79 und 80 sind eine Krone ohne Kante dazwischen; zusammenlegen, Klasse Wald (528/552)",
+     "flaeche_px": 140
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v4\\kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 300072,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche am rechten Kernrand mit bläulichen Kronenlichtern und einer rötlichen Krone im Nordwestteil; reicht nach rechts aus dem Kern.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 4,
+     "art": "verschmelzen",
+     "text": "mit 76 verschmelzen, Grenze ohne Bildkante (548/528)",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v4\\kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 300077,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche am unteren Kernrand, fast strukturlos: Schatten auf Wald; reicht nach unten aus dem Kern.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schatten auf Gehölz",
+    "fein": "Schatten auf Wald"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_kontrast.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 300080,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Beleuchtete Krone im Schatten 76, gleiche Krone wie 79.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Wald",
+    "fein": "Wald"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 5,
+     "art": "verschmelzen",
+     "text": "mit 79 zu einer Krone verschmelzen (521/554)",
+     "flaeche_px": 144
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r1c0/v4/nah4_roh.jpg",
+    "C:\\Users\\Phil\\Developement\\Victor\\daten\\landseg\\T0\\fassung-b\\urteil\\r1c0\\v4\\kontrast_1.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 300072,
+   "seite": "rechts",
+   "text": "Schattenfläche reicht nach r1c1; Klasse dort gleich halten, Verschmelzen mit 76 betrifft nur den Kern hier."
+  }
+ ],
+ "unsicher": [
+  "300008 (Wald, v2): rötliche Krone bei 500–530/500–526 (Blutbuche oder absterbender Baum), halb im Schatten, liegt in 8 und 72.",
+  "300060 (v3): dunkle Fläche reicht in den linken Teil von v4; in v3 mit 61 zum Verschmelzen vorgeschlagen.",
+  "300042 (v2): Schattenfläche reicht von oben in v4."
+ ],
+ "nicht_geprueft": [
+  "Werkzeug kante nicht benutzt; Grenzen nur nach Sicht beurteilt.",
+  "nah1_roh, nah2_roh, nah3_nummern und nah3_roh von v4 nicht angesehen (dort nur Wald 8 und Schatten); 77 nur in Übersicht, Kontrastbild und nah4 beurteilt."
+ ],
+ "offen": [
+  "Alle Schattenflächen (48, 59, 63, 72, 76, 77): Schlagschatten auf dem Kronendach oder dunkle Nadelbäume; eine Höhenkarte oder ein Bild mit anderem Sonnenstand würde es klären.",
+  "59: ob so kleine Schattenlücken eigene Segmente bleiben oder zum Wald gehören; einheitlich festlegen."
+ ],
+ "klassen_frei": [
+  {
+   "name": "Gehölz",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Baum- oder Strauchkronen mit runder Kronenstruktur und Eigenschatten"
+  },
+  {
+   "name": "Schatten",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "sehr dunkle Fläche, in der der Grund nicht erkennbar ist"
+  },
+  {
+   "name": "Wald",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "geschlossenes Kronendach aus vielen Kronen"
+  },
+  {
+   "name": "Schatten auf Gehölz",
+   "ebene": "mittel",
+   "eltern": "Schatten",
+   "merkmal": "dunkle Fläche inmitten von Gehölz"
+  },
+  {
+   "name": "Wald",
+   "ebene": "fein",
+   "eltern": "Wald",
+   "merkmal": "Kronendach mit Laubbaumkronen verschiedener Grüntöne, nicht feiner bestimmbar"
+  },
+  {
+   "name": "Schatten auf Wald",
+   "ebene": "fein",
+   "eltern": "Schatten auf Gehölz",
+   "merkmal": "fast strukturlos dunkle Fläche, ringsum Wald"
+  }
+ ]
+}

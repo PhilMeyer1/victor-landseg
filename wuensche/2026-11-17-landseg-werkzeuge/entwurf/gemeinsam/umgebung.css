@@ -1,0 +1,74 @@
+/* Umgebung der Prüfseite (landseg): eine eigenständige Seite ohne App-Rahmen, darum neutral.
+   Farben und Schrift aus dem Vorbild, der Prüfseite der Stitcher-Session (vorbild/notizen.md):
+   dunkel, ganze Fensterhöhe, kein Seitenscrollen. Die Entwürfe ordnen Bild, Leisten und Listen selbst an. */
+
+:root {
+  color-scheme: dark;
+  --grund: #0e0f11;
+  --flaeche: #16181b;
+  --detail: #131518;
+  --linie: #2a2d32;
+  --text: #d6d8dc;
+  --text-leise: #8b9099;
+  --akzent: #ffeb3c;
+  --markiert: #7a1f63;
+  --markiert-rand: #ff7ad9;
+  --ok: #4cc27a;
+  --warn: #e0a83a;
+  --fehler: #ef6461;
+  --schrift: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --schrift-mono: "Cascadia Mono", Consolas, monospace;
+  --gr-text: 13px;
+  --gr-klein: 12px;
+  --gr-mini: 11px;
+  --radius: 6px;
+  /* Skizze: Graustufen für Kästen und Flächen */
+  --grau-1: #1d2024;
+  --grau-2: #25292e;
+  --grau-3: #30353b;
+  --grau-4: #454b53;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body {
+  margin: 0; background: var(--grund); color: var(--text);
+  font: var(--gr-text)/1.45 var(--schrift); font-variant-numeric: tabular-nums;
+  overflow: hidden;
+}
+#app { height: 100%; }
+.u-inhalt { height: 100%; min-width: 0; position: relative; overflow: hidden; }
+
+button {
+  font: inherit; color: var(--text); background: var(--grau-2);
+  border: 1px solid var(--linie); border-radius: var(--radius); padding: 4px 10px; cursor: pointer;
+}
+button:hover { border-color: var(--grau-4); }
+button[aria-pressed="true"] { background: var(--grau-3); border-color: var(--text-leise); }
+button:disabled { opacity: .45; cursor: not-allowed; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--akzent); outline-offset: 2px;
+}
+a { color: var(--text); }
+input, textarea, select {
+  font: inherit; color: var(--text); background: var(--detail);
+  border: 1px solid var(--linie); border-radius: var(--radius); padding: 5px 8px;
+}
+textarea { resize: vertical; }
+kbd {
+  font: var(--gr-mini)/1 var(--schrift-mono); color: var(--text-leise); padding: 2px 5px;
+  border: 1px solid var(--linie); border-radius: 4px; background: var(--grau-1);
+}
+code { font-family: var(--schrift-mono); }
+canvas { display: block; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--grau-3); border-radius: 5px; border: 2px solid var(--flaeche); }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* Offenes im Entwurf */
+.offen-notiz {
+  display: inline-block; padding: 2px 7px; border-radius: 4px;
+  background: #fff3a8; color: #3b3200; font-size: var(--gr-mini);
+}

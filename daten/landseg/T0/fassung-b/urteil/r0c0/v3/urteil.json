@@ -1,0 +1,574 @@
+{
+ "teilkachel": "r0c0",
+ "viertel": "v3",
+ "bearbeiter": "urt-b-r0c0-v3",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r0c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r0c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/uebersicht_roh.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_roh.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 100140,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Baumkrone mit Eigenschatten im Gebüsch am oberen Rand von v3.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Einzelbaum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronenstruktur und Lichtpunkte erkennbar, Baum statt Schatten; Vorstufe hielt das für sicher (140/340).",
+     "flaeche_px": 1503
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100151,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Etwas hellere, dunkle Krone unterhalb von 100140, Strauch oder Teil desselben Baums.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gebüsch oder kleiner Baum"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gehölz statt Schatten (130/375).",
+     "flaeche_px": 630
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100145,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Zwei ineinander greifende dunkle Kronen (Herzform) im Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baumgruppe",
+    "fein": "Baumgruppe"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronen statt Schatten; Vorstufe hielt das für sicher (279/353).",
+     "flaeche_px": 1935
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100165,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Große dunkle Krone am Westrand des Gebüschs mit Lichtpunkten, wohl ein bis zwei Bäume.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baumgruppe",
+    "fein": "Baumgruppe"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kronen statt Schatten; Vorstufe hielt das für sicher (85/436).",
+     "flaeche_px": 2706
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Der Splitter 100168 am Nordrand gehört zur Krone (99/414).",
+     "flaeche_px": 74
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 100168,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Splitter am Nordrand der Krone 100165.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baumgruppe",
+    "fein": "Baumgruppe"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Splitter von 74 Bildpunkten, mit 100165 verschmelzen (99/414).",
+     "flaeche_px": 74
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah1_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100157,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Länglich-dunkle Krone eines Einzelbaums im Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Einzelbaum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Baum statt Schatten; Vorstufe hielt das für sicher (174/421).",
+     "flaeche_px": 1396
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100161,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Zwei kleine dunkle Kronen nahe dem Ostrand von v3.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gebüsch oder kleiner Baum"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gehölz statt Schatten (291/409).",
+     "flaeche_px": 645
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100182,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Grau-bläulicher Kronensaum zwischen Krone 100165 und Wiese, wie 100178.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baumgruppe",
+    "fein": "Baumgruppe"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Kronensaum statt Wiese; mit 100178 verschmelzen (89/481).",
+     "flaeche_px": 189
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 100178,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Hellere, grau-bläuliche Krone zwischen 100165 und 100171.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baumgruppe",
+    "fein": "Baumgruppe"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 100171,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Krone mit Lichtpunkten südöstlich von 100165.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Einzelbaum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Baum statt Schatten (135/461).",
+     "flaeche_px": 1344
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 100180,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle, große Baumkrone mit Eigenschatten am Trampelpfad.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Einzelbaum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Baum statt Schatten; Vorstufe hielt das für sicher (264/497).",
+     "flaeche_px": 1537
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Der Kronenrand 100192 am Südrand gehört dazu (280/515).",
+     "flaeche_px": 110
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 100186,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Kleiner hellerer Strauch im Gebüsch direkt am Trampelpfad, keine Wiese.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüschfläche",
+    "fein": "Gebüschfläche"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Ohne Bildkante im Gebüsch; mit der Gebüschfläche (heute 100056) verschmelzen (295/488).",
+     "flaeche_px": 176
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 100166,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Glatte, gleichmäßige Wiese am Südwestrand des Gebüschs, Fortsetzung der großen Hangwiese.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/uebersicht_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100188,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Wiesenzipfel zwischen den Kronen 100178 und 100184, Teil der Wiese 100166.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Abgetrenntes Stück derselben Wiese; mit 100166 verschmelzen (103/501).",
+     "flaeche_px": 131
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 100184,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle, längliche Krone am Wiesenrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Einzelbaum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Baum statt Schatten (115/513).",
+     "flaeche_px": 879
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 100181,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Mehrere dunkle Kronen mit Lichtpunkten im Süden des Gebüschs.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baumgruppe",
+    "fein": "Baumgruppe"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100193,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Hellgrüner Grassaum zwischen der Krone 100181 und der Wiese.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese",
+    "fein": "Wiese"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Ohne Bildkante zur Wiese; mit 100166 verschmelzen (197/545).",
+     "flaeche_px": 451
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 100192,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Südrand der Krone 100180.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Einzelbaum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Kronenrand, mit 100180 verschmelzen (280/515).",
+     "flaeche_px": 110
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 100195,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunklere, glatte Grasstelle in der Wiese am Südrand von v3, keine Struktur von Gehölz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grünland",
+    "mittel": "Wiese ungemäht",
+    "fein": "Wiese ungemäht"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten ist keine Klasse und kein Baum steht südlich davon; dunkleres Gras, wohl höher oder feuchter (143/551).",
+     "flaeche_px": 747
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c0/v3/nah3_roh.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 100166,
+   "seite": "unten",
+   "text": "Die Wiese läuft über die untere Kerngrenze nach r1c0 weiter; dort dieselbe Klasse."
+  },
+  {
+   "id": 100195,
+   "seite": "unten",
+   "text": "Dunklere Grasstelle berührt die untere Kerngrenze; Grünland statt Schatten auch in r1c0."
+  }
+ ],
+ "unsicher": [
+  "100056 (v1): Der Teil in v3 ist dichtes Gebüsch mit Jungwuchs, keine Wiese; Trampelpfad schräg durch das Gebüsch nicht abgegrenzt (im Urteil v1 eingetragen).",
+  "100172, 100176, 100177 (v4): Kronen und Saum am Ostrand von v3 gehören zum Gehölz 100177."
+ ],
+ "nicht_geprueft": [
+  "nah1_roh.jpg, nah2_roh.jpg, uebersicht_kontrast.jpg, uebersicht_gitter.jpg, uebersicht_vorschlag.jpg und uebersicht_maengel.jpg nicht angesehen; Grenzen nicht mit dem Werkzeug kante nachgemessen."
+ ],
+ "offen": [
+  "100165, 100145: ein oder zwei Bäume nicht sicher zu trennen.",
+  "100195: höheres Gras, Feuchtstelle oder Schatten eines Geländeknicks nicht zu entscheiden.",
+  "100151, 100161: Strauch oder kleiner Baum nicht zu entscheiden."
+ ],
+ "klassen_frei": [
+  {
+   "name": "Gehölz",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Kronen mit Struktur und Schlagschatten, dunkler als Gras."
+  },
+  {
+   "name": "Einzelbaum",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "Eine runde Krone mit eigenem Schatten, freistehend."
+  },
+  {
+   "name": "Gebüsch",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "Kleine dunkle Krone, niedriger als ein Baum, oft unregelmäßig."
+  },
+  {
+   "name": "Gebüsch oder kleiner Baum",
+   "ebene": "fein",
+   "eltern": "Gebüsch",
+   "merkmal": "Kleine dunkle Krone, Höhe aus der Draufsicht nicht zu entscheiden."
+  },
+  {
+   "name": "Baumgruppe",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "Mehrere ineinander greifende Kronen als eine Masse."
+  },
+  {
+   "name": "Gebüschfläche",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "Flächig dichter, grob gekörnter Bewuchs aus Sträuchern und Jungwuchs ohne große Kronen."
+  },
+  {
+   "name": "Grünland",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Offene Grasflächen außerhalb von Gärten."
+  },
+  {
+   "name": "Wiese",
+   "ebene": "mittel",
+   "eltern": "Grünland",
+   "merkmal": "Gleichmäßig glatte Grasfläche, Mahd nicht sicher erkennbar."
+  },
+  {
+   "name": "Wiese ungemäht",
+   "ebene": "mittel",
+   "eltern": "Grünland",
+   "merkmal": "Hohes, unruhiges Gras mit Flecken, keine Mähspuren."
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+== kacheln frisch in den Scratchpad (Lauf 2, 17.11.2026 abends)
+PY -B -m landseg kacheln --bild ../daten/luftbilder/orthofoto-aktuell/0009626524_100_Orthophoto_aktuell_5236-56.tif --x 2000 --y 2400 --breite 1000 --hoehe 1000 --kern 500 --rand 64 --name T0 --ziel <scratchpad>/kacheln-frisch
+4 Teilkacheln (2 × 2, Kern 500, Rand 64) -> <scratchpad>\kacheln-frisch\manifest.json
+rc=0
+Vergleich mit daten/landseg/T0/kern500 (skripte/pruefe_kopien.py, kopien-messung.json "frisch"): T0.png, T0.pgw und alle
+teilkacheln/*.png|*.pgw bytegleich; manifest.json unterscheidet sich nur in "erstellt" und "quelle.bild" (relativer Pfad
+zum Original, abhängig vom Zielordner; dieselbe Datei).
+== kacheln auf kern500 ohne --ueberschreiben (Lauf 1)
+Fehler: ...\daten\landseg\T0\kern500\manifest.json gibt es schon (--ueberschreiben, um es zu ersetzen)
+rc=2

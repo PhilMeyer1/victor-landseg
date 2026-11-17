@@ -1,0 +1,1407 @@
+{
+ "teilkachel": "r0c1",
+ "viertel": "v1",
+ "bearbeiter": "urt-b-r0c1-v1",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/T0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r0c1/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/kern500/ganz/r0c1/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_roh.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah4_nummern.jpg",
+   "./nah_1.jpg",
+   "./nah_2.jpg",
+   "./nah_3.jpg",
+   "./nah_4.jpg",
+   "./nah_5.jpg",
+   "./nah_6.jpg",
+   "./nah_7.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 200058,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Gehölzkronen (kleine Bäume und Sträucher) im Garten oben links am Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Baumgruppe"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_3.jpg"
+   ]
+  },
+  {
+   "id": 200052,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Baumkronen im Schatten nördlich von Haus 60, ragt nur mit einem Streifen in den Kern; keine Wolke und kein Schatten ohne Grund.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Baumgruppe"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Dunkle, aber texturierte Kronen am oberen Kernrand (130/66): Gehölz im Schatten statt Wolke/Schatten.",
+     "flaeche_px": 174
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_2.jpg"
+   ]
+  },
+  {
+   "id": 200060,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Wohnhaus mit rotem Walmdach und zwei Gauben.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gebäude",
+    "mittel": "Wohnhaus",
+    "fein": "Wohnhaus"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_3.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200057,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schmaler graubrauner Streifen nördlich der Dachkante von Haus 60, nicht rot, also kein Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gartengehölz"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Streifen über der Nordkante des Dachs (180/63) gehört zur Gartenfläche 43 bzw. dem Randsegment 22, nicht zu einem eigenen Gebäude.",
+     "flaeche_px": 42
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200036,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Baumkrone am oberen Kernrand, reicht weit in den Kontextrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200064,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Kleiner hellgrüner Strauch westlich des Pools.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Strauch"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200066,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Dunklere Strauchgruppe westlich des Pools.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Strauch"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200059,
+   "klasse_heute": "1.3.3",
+   "was_ist_es": "Heller beiger Belag nordwestlich des Aufstellpools (Holzdeck, Platten oder Sand), kein Wasser.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Terrasse",
+    "fein": "Terrasse"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helle Fläche am Poolrand (228/70) ist Umrandung bzw. Terrasse, nicht Schwimmbecken.",
+     "flaeche_px": 110
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200067,
+   "klasse_heute": "1.3.3",
+   "was_ist_es": "Heller Südrand des runden Aufstellpools (Beckenwand).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Wasser",
+    "mittel": "Schwimmbecken",
+    "fein": "Aufstellpool"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Beckenwand (245/90) gehört zum selben Pool wie 65; zusammenlegen.",
+     "flaeche_px": 94
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200065,
+   "klasse_heute": "1.3.3",
+   "was_ist_es": "Wasserfläche des runden Aufstellpools.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Wasser",
+    "mittel": "Schwimmbecken",
+    "fein": "Aufstellpool"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200045,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Große Laubbaumkrone oben rechts im Viertel, reicht nach v2 und in den Rand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200080,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Dunkle Baumkrone am linken Kernrand, größtenteils im Kontextrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_3.jpg"
+   ]
+  },
+  {
+   "id": 200085,
+   "klasse_heute": "1.2.4",
+   "was_ist_es": "Graue befestigte Einfahrt nördlich der Straße vor dem Nebengebäude.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Hof und Zufahrt",
+    "fein": "Einfahrt"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_3.jpg"
+   ]
+  },
+  {
+   "id": 200043,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Großes Sammelsegment aus Gartenflächen von zwei Grundstücken: Hecken und Sträucher, ein dunkles Flachdach, helle Terrassen, Gartenboden um den Pool und ein weißer Kleinbau; kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gartengehölz"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Dunkles Flachdach eines Nebengebäudes (Garage oder Carport) mit hellerem Dachteil bei x 75–119, y 87–124 (92/108) als eigenes Gebäude abtrennen.",
+     "flaeche_px": 800
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Helle Plattenflächen westlich und südwestlich von Haus 60 bei x 107–134, y 93–125 (115/102) als Terrasse abtrennen.",
+     "flaeche_px": 300
+    },
+    {
+     "nr": 3,
+     "art": "trennen",
+     "text": "Gartenboden (Kies/Sand mit Rasenresten und einer Reihe kleiner Sträucher) südlich und östlich des Pools bei x 222–288, y 82–116 (255/100) abtrennen.",
+     "flaeche_px": 1800
+    },
+    {
+     "nr": 4,
+     "art": "trennen",
+     "text": "Weißer Kleinbau (Gartenhütte oder Kiste) bei x 212–220, y 101–112 (216/106) abtrennen.",
+     "flaeche_px": 80
+    },
+    {
+     "nr": 5,
+     "art": "klasse",
+     "text": "Der Rest (141/96) ist Gartengehölz aus Hecken, Sträuchern und Rasenresten, kein geschlossener Wald.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_1.jpg",
+    "./nah_2.jpg",
+    "./nah_3.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200069,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkler Streifen an der Westkante des Dachs von Haus 60: Hauswand schräg gesehen oder Schatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gebäude",
+    "mittel": "Wohnhaus",
+    "fein": "Fassade"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_3.jpg"
+   ]
+  },
+  {
+   "id": 200082,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Heller schmaler Streifen an der Südkante von Haus 60, eher Plattenweg oder Traufpflaster als Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Weg",
+    "fein": "Gartenweg"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heller Streifen südlich der Dachkante (152/123) ist kein Dachteil, sondern Plattenweg am Haus.",
+     "flaeche_px": 104
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_3.jpg"
+   ]
+  },
+  {
+   "id": 200075,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Hecke und Gartengehölz zwischen Haus 60 und der Straße, am Südrand ein hellerer Gras-/Krautstreifen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Hecke"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Hellgrüner Gras-/Krautstreifen am Südrand entlang der Straße bei x 152–205, y 130–150 (175/142) als Randstreifen abtrennen.",
+     "flaeche_px": 400
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_3.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200079,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Schmaler bewachsener Streifen am Nordrand der hellen Straße 19 (Bankett), kein Belag.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grasland",
+    "mittel": "Randstreifen",
+    "fein": "Randstreifen"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Grünlicher Randstreifen nördlich von 19 (265/118): bewachsenes Bankett statt Straße.",
+     "flaeche_px": 163
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_4.jpg",
+    "./nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200089,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Straßenrand südlich der hellen Straße 19 mit weißem Geländer oder Zaun und schmalem Grasstreifen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grasland",
+    "mittel": "Randstreifen",
+    "fein": "Randstreifen"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Weißes Geländer und Grasstreifen südlich von 19 (269/144): Randstreifen, nicht Fahrbahn.",
+     "flaeche_px": 184
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200081,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Grüne Böschung mit Sträuchern und Gras südlich der Straße am rechten Viertelrand, reicht nach v2.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gartengehölz"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schmaler Streifen aus Sträuchern und Gras an der Straße (306/138), kein Wald.",
+     "flaeche_px": 1110
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200099,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Winziger Rest (4 Bildpunkte im Kern) des grünen Straßenrands am linken Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grasland",
+    "mittel": "Randstreifen",
+    "fein": "Randstreifen"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Bewachsener Straßenrand am linken Kernrand (64/155), kein Wald; fast ganz im Kontextrand.",
+     "flaeche_px": 4
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "./nah_3.jpg"
+   ]
+  },
+  {
+   "id": 200100,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Heller Streifen an der Nordkante der Asphaltstraße (Randstein oder Gehsteig mit weißem Pfosten).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Straße",
+    "fein": "Straßenrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_3.jpg"
+   ]
+  },
+  {
+   "id": 200107,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Mehrere Laubbaum- und Strauchkronen südlich der Straße vor Haus 126.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Baumgruppe"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200111,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Helle Beton- oder Plattenfläche zwischen Straße und Haus 126 (Vorplatz), ohne Schatten nach Norden, also ebenerdig.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Hof und Zufahrt",
+    "fein": "Einfahrt"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helle ebene Fläche (139/184) ist Vorplatz/Einfahrt, kein Wald.",
+     "flaeche_px": 448
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200093,
+   "klasse_heute": "1.2.2",
+   "was_ist_es": "Asphaltstraße, die von links ins Viertel läuft und in die helle Straße 19 übergeht.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Straße",
+    "fein": "Asphaltstraße"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_3.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200117,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schlagschatten von Haus 126 nach Norden auf den Vorplatz 111.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Hof und Zufahrt",
+    "fein": "Vorplatz im Schatten"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten (143/197) liegt auf dem Vorplatz, der sich erkennbar fortsetzt: Befestigte Fläche statt Schatten ohne Grund.",
+     "flaeche_px": 283
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200105,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schlagschatten des Nebengebäudes 110 nach Norden auf den Straßenrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Straße",
+    "fein": "Asphaltstraße"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten (160/170) fällt auf die Straße 93, die sich darunter fortsetzt.",
+     "flaeche_px": 181
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200110,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Nebengebäude (Garage) mit grauem Flachdach an der Straße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gebäude",
+    "mittel": "Nebengebäude",
+    "fein": "Garage"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200108,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Grüner Streifen mit Sträuchern zwischen Garage 110 und der Zufahrt 19.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Strauch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kleiner Strauchstreifen (186/179), kein Wald.",
+     "flaeche_px": 280
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200112,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Schlagschatten von Haus 102 nach Norden auf die helle Zufahrt 19.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Hof und Zufahrt",
+    "fein": "Vorplatz im Schatten"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten (208/184) liegt auf der Zufahrt, die von Norden erkennbar darunter weiterläuft.",
+     "flaeche_px": 355
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200094,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle, runde Baumkrone mit Textur (dunkler Nadel- oder Blutbaum) an der Zufahrt, kein Schatten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Runde texturierte Krone (230/157) ist ein Baum, kein Schatten.",
+     "flaeche_px": 607
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200097,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Sträucher und kleine Baumkronen zwischen Baum 94 und Haus 102.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gartengehölz"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200098,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkler Schlagschatten nördlich von Haus 102, darunter vermutlich Hecke; Untergrund nicht sicher erkennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_roh.jpg",
+    "./nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200122,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Baumkrone am linken Kernrand, größtenteils im Kontextrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200133,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkler Streifen an der Westkante von Haus 126: Hauswand schräg gesehen oder Schatten, kein Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gebäude",
+    "mittel": "Wohnhaus",
+    "fein": "Fassade"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schmaler dunkler Streifen an der Dachkante (68/243) gehört zur Hauswand bzw. ihrem Schatten, nicht zu Wald.",
+     "flaeche_px": 143
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200126,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Großes Wohnhaus mit grauem Satteldach und Schornsteinen, rund 216 m².",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gebäude",
+    "mittel": "Wohnhaus",
+    "fein": "Wohnhaus"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Großes Dach mit Schornsteinen (125/235) ist das Wohnhaus, kein Nebengebäude.",
+     "flaeche_px": 5411
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200128,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Rasenstreifen östlich von Haus 126.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Grasland",
+    "mittel": "Rasen",
+    "fein": "Rasen"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200121,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Hellgrüne Pflanzfläche mit hellen Stellen westlich von Haus 102 (Beet oder Sträucher).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gartengehölz"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kleinteilige helle Pflanzfläche (195/217): Gartengehölz oder Beet, kein Wald.",
+     "flaeche_px": 308
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah4_nummern.jpg",
+    "./nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200130,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Schmaler Streifen an der Westkante von Dach 102 mit einer weißen geraden Linie: Außentreppe mit Geländer oder Weg an der Hauswand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Weg",
+    "fein": "Gartenweg"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Weiße Linie und dunkler Streifen westlich des Dachs (208/238): Weg oder Treppe am Haus, nicht das Dach selbst; Hauswand möglich.",
+     "flaeche_px": 194
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah4_nummern.jpg",
+    "./nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200102,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Wohnhaus mit grauem Walmdach und großem Dachfenster.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gebäude",
+    "mittel": "Wohnhaus",
+    "fein": "Wohnhaus"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah4_nummern.jpg",
+    "./nah_5.jpg",
+    "./nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200132,
+   "klasse_heute": "4.2.1",
+   "was_ist_es": "Blaugrüne Nadelbaumkrone am linken Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Einzelbaum"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200116,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Dunkle Baumkronen am linken Kernrand, Teil eines größeren Baumbestands, reicht nach v3.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum",
+    "fein": "Baumgruppe"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200138,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Niedriger Anbau mit bläulich-grauem Dach an der Südseite von Haus 126.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gebäude",
+    "mittel": "Nebengebäude",
+    "fein": "Anbau"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg"
+   ]
+  },
+  {
+   "id": 200137,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Kleiner Gebüschrest an der Südwestecke von Dach 102, gleiche Bedeckung wie 92.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gartengehölz"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Kleines Stück (223/258) mit 92 zusammenlegen, keine eigene Bildkante.",
+     "flaeche_px": 82
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah4_nummern.jpg",
+    "./nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200092,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Großes Gartengehölz aus Sträuchern, kleinen Bäumen, Beeten und einer Rasenfläche hinter den Häusern 126 und 102, reicht nach v2 und v3; kein geschlossener Wald.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Gebüsch",
+    "fein": "Gartengehölz"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Gemenge aus Sträuchern, Beeten und Gartenbäumen (252/257), kein geschlossener Wald.",
+     "flaeche_px": null
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Hellgrüne Rasenfläche südlich von Haus 126 bei x 125–160, y 262–282 (142/272) abtrennen.",
+     "flaeche_px": 450
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah4_nummern.jpg",
+    "./nah_5.jpg",
+    "./nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200144,
+   "klasse_heute": "4.1",
+   "was_ist_es": "Schmaler heller Streifen nach Süden zur Rasenfläche 143: Gartenweg oder Stufen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Befestigte Fläche",
+    "mittel": "Weg",
+    "fein": "Gartenweg"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Heller schmaler Streifen (253/300) ist ein Gartenweg, kein Wald.",
+     "flaeche_px": 94
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/T0/fassung-b/viertel/r0c1/v1/nah4_nummern.jpg",
+    "./nah_6.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 200043,
+   "seite": "links",
+   "text": "43 reicht über die linke Kerngrenze nach r0c0; Klasse und Teilung (Gartengehölz statt Wald) müssen dort gleich entschieden werden."
+  },
+  {
+   "id": 200099,
+   "seite": "links",
+   "text": "99 liegt fast ganz in r0c0; Klasse Randstreifen statt Wald gilt für beide Teilkacheln."
+  },
+  {
+   "id": 200116,
+   "seite": "links",
+   "text": "116 reicht nach r0c0; dort Baumgruppe wie hier."
+  }
+ ],
+ "unsicher": [
+  "200019 (Nachbar v2): helle Straße bzw. Zufahrt; ihr Ast nach Süden zur Zufahrt von Haus 102 setzt sich im Schatten 112 fort.",
+  "200022 (Kontextrand): Baumkronen nördlich von Haus 60; 52 und 57 grenzen dort ohne klare Kante an."
+ ],
+ "nicht_geprueft": [],
+ "offen": [
+  "200069, 200133, 200130: ob die dunklen Streifen an den Westkanten der Häuser Hauswand (schräg gesehen) oder Schatten sind, lässt das Bild nicht sicher erkennen.",
+  "200043: Das dunkle Flachdach bei 92/108 kann Garage, Carport oder Gartenhaus sein; die genaue Grenze muss mit `kante` eingerastet werden.",
+  "200092: Grenze zwischen Gartengehölz und den Beeten im Süden von Haus 102 (x 240–300, y 260–300) im Bild nicht sicher.",
+  "200098: Untergrund im Schatten nördlich von Haus 102 (Hecke oder Boden) nicht erkennbar."
+ ],
+ "klassen_frei": [
+  {
+   "name": "Gehölz",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Kronen mit Textur aus Licht und Schatten, dunkelgrün"
+  },
+  {
+   "name": "Baum",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "runde Kronen mit Schatten"
+  },
+  {
+   "name": "Baumgruppe",
+   "ebene": "fein",
+   "eltern": "Baum",
+   "merkmal": "mehrere ineinander greifende Kronen"
+  },
+  {
+   "name": "Gebäude",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Dachfläche mit harten, geraden Kanten und Schattenwurf"
+  },
+  {
+   "name": "Wohnhaus",
+   "ebene": "mittel",
+   "eltern": "Gebäude",
+   "merkmal": "großes Dach mit Schornsteinen, Dachfenstern, Garten rundum"
+  },
+  {
+   "name": "Wohnhaus",
+   "ebene": "fein",
+   "eltern": "Wohnhaus",
+   "merkmal": "wie mittlere Ebene"
+  },
+  {
+   "name": "Gebüsch",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "niedrigere, kleinteilige Kronen, Hecken und Sträucher"
+  },
+  {
+   "name": "Gartengehölz",
+   "ebene": "fein",
+   "eltern": "Gebüsch",
+   "merkmal": "Gemenge aus Sträuchern, kleinen Bäumen und Beeten im Garten"
+  },
+  {
+   "name": "Einzelbaum",
+   "ebene": "fein",
+   "eltern": "Baum",
+   "merkmal": "eine einzelne runde Krone"
+  },
+  {
+   "name": "Strauch",
+   "ebene": "fein",
+   "eltern": "Gebüsch",
+   "merkmal": "kleine einzelne Krone, wenige Meter"
+  },
+  {
+   "name": "Befestigte Fläche",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "glatte graue oder helle Fläche ohne Bewuchs, gerade Ränder"
+  },
+  {
+   "name": "Terrasse",
+   "ebene": "mittel",
+   "eltern": "Befestigte Fläche",
+   "merkmal": "helle Plattenfläche direkt am Haus oder Pool"
+  },
+  {
+   "name": "Terrasse",
+   "ebene": "fein",
+   "eltern": "Terrasse",
+   "merkmal": "wie mittlere Ebene"
+  },
+  {
+   "name": "Wasser",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "glatte blaue Fläche"
+  },
+  {
+   "name": "Schwimmbecken",
+   "ebene": "mittel",
+   "eltern": "Wasser",
+   "merkmal": "blaue Fläche mit hellem Rand"
+  },
+  {
+   "name": "Aufstellpool",
+   "ebene": "fein",
+   "eltern": "Schwimmbecken",
+   "merkmal": "runde blaue Fläche mit heller Wand"
+  },
+  {
+   "name": "Hof und Zufahrt",
+   "ebene": "mittel",
+   "eltern": "Befestigte Fläche",
+   "merkmal": "graue oder helle Fläche zwischen Straße und Gebäude"
+  },
+  {
+   "name": "Einfahrt",
+   "ebene": "fein",
+   "eltern": "Hof und Zufahrt",
+   "merkmal": "befestigte Fläche vor Garage oder Haus"
+  },
+  {
+   "name": "Fassade",
+   "ebene": "fein",
+   "eltern": "Wohnhaus",
+   "merkmal": "schmaler dunkler Streifen an einer Dachkante (Hauswand schräg gesehen oder Schatten)"
+  },
+  {
+   "name": "Weg",
+   "ebene": "mittel",
+   "eltern": "Befestigte Fläche",
+   "merkmal": "schmales helles Band"
+  },
+  {
+   "name": "Gartenweg",
+   "ebene": "fein",
+   "eltern": "Weg",
+   "merkmal": "schmaler heller Streifen im Garten"
+  },
+  {
+   "name": "Hecke",
+   "ebene": "fein",
+   "eltern": "Gebüsch",
+   "merkmal": "schmales, langes Gehölzband an einer Grundstücksgrenze"
+  },
+  {
+   "name": "Grasland",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "gleichmäßig grüne, feinkörnige Fläche ohne Kronen"
+  },
+  {
+   "name": "Randstreifen",
+   "ebene": "mittel",
+   "eltern": "Grasland",
+   "merkmal": "schmaler bewachsener Streifen an Straße, Weg oder Feld"
+  },
+  {
+   "name": "Randstreifen",
+   "ebene": "fein",
+   "eltern": "Randstreifen",
+   "merkmal": "wie mittlere Ebene"
+  },
+  {
+   "name": "Straße",
+   "ebene": "mittel",
+   "eltern": "Befestigte Fläche",
+   "merkmal": "langes Band mit gleichmäßigem Belag"
+  },
+  {
+   "name": "Straßenrand",
+   "ebene": "fein",
+   "eltern": "Straße",
+   "merkmal": "schmaler heller Streifen an der Fahrbahnkante (Randstein, Gehsteig)"
+  },
+  {
+   "name": "Asphaltstraße",
+   "ebene": "fein",
+   "eltern": "Straße",
+   "merkmal": "dunkelgraues Band"
+  },
+  {
+   "name": "Vorplatz im Schatten",
+   "ebene": "fein",
+   "eltern": "Hof und Zufahrt",
+   "merkmal": "befestigte Fläche im Schlagschatten eines Gebäudes, Fortsetzung erkennbar"
+  },
+  {
+   "name": "Nebengebäude",
+   "ebene": "mittel",
+   "eltern": "Gebäude",
+   "merkmal": "kleines Dach, oft Flachdach, neben dem Wohnhaus oder an der Zufahrt"
+  },
+  {
+   "name": "Garage",
+   "ebene": "fein",
+   "eltern": "Nebengebäude",
+   "merkmal": "kleines Flachdach an Zufahrt oder Straße"
+  },
+  {
+   "name": "Schatten",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "sehr dunkle Fläche, Untergrund nicht erkennbar"
+  },
+  {
+   "name": "Schlagschatten",
+   "ebene": "mittel",
+   "eltern": "Schatten",
+   "merkmal": "dunkle Fläche neben Gebäude oder Baum auf der Nordseite"
+  },
+  {
+   "name": "Schlagschatten",
+   "ebene": "fein",
+   "eltern": "Schlagschatten",
+   "merkmal": "wie mittlere Ebene"
+  },
+  {
+   "name": "Rasen",
+   "ebene": "mittel",
+   "eltern": "Grasland",
+   "merkmal": "kurzes, gleichmäßiges Grün im Garten"
+  },
+  {
+   "name": "Rasen",
+   "ebene": "fein",
+   "eltern": "Rasen",
+   "merkmal": "wie mittlere Ebene"
+  },
+  {
+   "name": "Anbau",
+   "ebene": "fein",
+   "eltern": "Nebengebäude",
+   "merkmal": "niedrigeres Dach direkt am Wohnhaus, andere Farbe"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+/* Platz e: erst das ganze Testfenster, Reiter oben. Skizze in Graustufen. */
+.e-rahmen { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100%; }
+.e-kopf { display: flex; align-items: center; gap: 16px; padding: 0 16px; height: 46px; background: var(--flaeche); border-bottom: 1px solid var(--linie); min-width: 0; }
+.e-weg { display: flex; align-items: center; gap: 6px; white-space: nowrap; color: var(--text-leise); }
+.e-weg b { color: var(--text); font-weight: 600; }
+.e-weg a { color: var(--text-leise); text-decoration: none; }
+.e-weg a:hover { color: var(--text); text-decoration: underline; }
+.e-reiter { display: flex; align-self: stretch; gap: 2px; margin-left: auto; }
+.e-reiter button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; padding: 0 12px; color: var(--text-leise); }
+.e-reiter button:hover { color: var(--text); }
+.e-reiter button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--akzent); }
+.e-reiter .e-trenn { width: 1px; background: var(--linie); margin: 12px 6px; }
+.e-kommentare { white-space: nowrap; }
+
+.e-uebersicht { display: grid; grid-template-columns: minmax(0, 1fr) 360px; min-height: 0; }
+.e-feld { position: relative; min-height: 0; min-width: 0; background: var(--grund); }
+.e-feld canvas { width: 100%; height: 100%; cursor: pointer; }
+.e-feld .e-hinweis { position: absolute; left: 12px; bottom: 12px; padding: 4px 8px; background: var(--flaeche); border: 1px solid var(--linie); border-radius: var(--radius); color: var(--text-leise); font-size: var(--gr-klein); }
+.e-seite { display: flex; flex-direction: column; gap: 10px; padding: 14px; background: var(--flaeche); border-left: 1px solid var(--linie); overflow: auto; }
+.e-summe { color: var(--text-leise); font-size: var(--gr-klein); }
+.e-summe b { color: var(--text); font-size: 15px; }
+.e-karte { display: block; text-decoration: none; padding: 10px 12px; background: var(--grau-1); border: 1px solid var(--linie); border-radius: var(--radius); }
+.e-karte:hover, .e-karte.e-hervor { border-color: var(--text-leise); background: var(--grau-2); }
+.e-karte h3 { margin: 0 0 6px; font-size: var(--gr-text); display: flex; justify-content: space-between; }
+.e-karte h3 span { color: var(--text-leise); font-weight: 400; }
+.e-zahlen { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.e-zahlen div { font-size: var(--gr-mini); color: var(--text-leise); }
+.e-zahlen b { display: block; font-size: 16px; color: var(--text); font-weight: 600; }
+.e-zahlen .e-warn b { color: var(--warn); }
+.e-zahlen .e-fehler b { color: var(--fehler); }
+.e-balken { height: 4px; margin-top: 8px; background: var(--grau-3); border-radius: 2px; overflow: hidden; }
+.e-balken i { display: block; height: 100%; background: var(--grau-4); }
+.e-offen { align-self: flex-start; padding: 2px 8px; background: #4a3f12; color: #f2d46b; border-radius: 4px; font-size: var(--gr-mini); }
+
+.e-kachel { display: grid; grid-template-columns: minmax(0, 1fr) 300px; min-height: 0; }
+.e-kachel .e-seite h4 { margin: 0; font-size: var(--gr-klein); color: var(--text-leise); font-weight: 500; }
+.e-nachbarn { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+.e-nachbarn a { padding: 6px 8px; border: 1px solid var(--linie); border-radius: var(--radius); text-decoration: none; background: var(--grau-1); font-size: var(--gr-klein); }
+.e-nachbarn a[aria-current="true"] { border-color: var(--akzent); }
+.e-nachbarn a:hover { background: var(--grau-2); }
+.e-liste { display: grid; gap: 2px; }
+.e-liste button { text-align: left; display: flex; justify-content: space-between; gap: 8px; border: 0; background: none; padding: 4px 6px; }
+.e-liste button:hover, .e-liste button[aria-pressed="true"] { background: var(--grau-3); }
+.e-liste span { color: var(--text-leise); }
+.e-detail { padding: 10px; background: var(--detail); border: 1px solid var(--linie); border-radius: var(--radius); display: grid; gap: 6px; }
+.e-detail textarea { width: 100%; min-height: 64px; }
+.e-pfeile { display: flex; gap: 8px; align-items: center; }
+.e-leer { color: var(--text-leise); }
+.e-komm { padding: 20px 24px; max-width: 760px; overflow: auto; }
+.e-komm p { margin: 0 0 10px; padding: 8px 10px; background: var(--grau-1); border: 1px solid var(--linie); border-radius: var(--radius); }
+.e-komm small { display: block; color: var(--text-leise); }
