@@ -7,6 +7,7 @@ Commit. Ablauf: Skill `wunsch`.
 | Datum | Kurzname | Wunsch in einem Satz | Repos | Status | Datei |
 |---|---|---|---|---|---|
 | 2026-11-17 | berichte-einpflegen | Die fünf Berichtsdateien aus Victors Lieferung geordnet ins Repo unterlagen einpflegen | unterlagen | eingereiht | 2026-11-17-berichte-einpflegen.md |
+| 2026-11-17 | gesamt-zweig | Gesamtprojekt: Hinweis „eigener Zweig“ für Victor und Klartext-Zeilen in den Commits des Bauwerkzeugs | landseg | eingereiht | 2026-11-17-gesamt-zweig.md |
 | 2026-11-17 | landseg-gesamt | Gemeinsames Gesamtprojekt für Victor: Programm mit Verlauf, alle Wünsche und Berichte, alle T0-Daten (ohne Original-Luftbilder) in einem privaten GitHub-Projekt | landseg | eingereiht | 2026-11-17-landseg-gesamt.md |
 | 2026-11-17 | landseg-kat-bedeck | Kategorienliste der Landschafts-Segmente nach Bedeckung statt Nutzung umbauen: Siedlungsgrün zu Grünland bzw. Gehölz, unbefestigte Wege zu offenem Boden, „im Siedlungsgebiet" als Merkmal je Segment | landseg | eingereiht | 2026-11-17-landseg-kat-bedeck.md |
 | 2026-11-17 | landseg-kategorien | Gestufte Kategorienliste für Landschafts-Segmente (7/25/46 Klassen) mit Regeln als Datei und Beschreibung im Repo landseg festschreiben | landseg | eingereiht | 2026-11-17-landseg-kategorien.md |

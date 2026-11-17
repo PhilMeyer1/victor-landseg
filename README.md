@@ -34,6 +34,31 @@ getrennt (`daten/luftbilder/README.md`).
 5. **Die Arbeitsdaten**: `daten/landseg/T0/`, wenn du einem Bericht bis in die einzelne Datei folgen
    willst.
 
+## Mitarbeiten: eigener Zweig und Pull-Request
+
+Bitte arbeite auf einem eigenen Zweig und lade nichts direkt auf `main` hoch. `main` frischen wir
+aus unserem Arbeitsordner auf (siehe „Verlauf“); deine Änderungen kommen über einen Pull-Request
+dazu, den wir gemeinsam ansehen und dann zusammenführen.
+
+1. Neuesten Stand holen und einen eigenen Zweig anlegen (der Name ist frei):
+
+   ```
+   git switch main
+   git pull
+   git switch -c victor/mein-thema
+   ```
+
+2. Änderungen speichern und den Zweig hochladen:
+
+   ```
+   git add -A
+   git commit -m "Was ich geändert habe"
+   git push -u origin victor/mein-thema
+   ```
+
+3. Auf GitHub erscheint danach „Compare & pull request“: dort den Pull-Request nach `main` öffnen.
+   Weitere Commits auf demselben Zweig landen automatisch im selben Pull-Request.
+
 ## Aufbau
 
 | Pfad | Inhalt |

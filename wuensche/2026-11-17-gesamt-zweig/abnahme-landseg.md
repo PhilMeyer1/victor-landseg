@@ -1,0 +1,1 @@
+abgenommen, keine Mängel-Kandidaten aus den Blickwinkeln ansicht; nicht geprüft: ansicht: Keine Fotos, weil das Profil landseg keine Oberfläche-prüfen-Angabe hat (weder oberflaeche.md noch Abschnitt); die README ist eine Markdown-Datei, die Darstellung auf GitHub (Desktop/Handy) wurde nic (gekürzt)
