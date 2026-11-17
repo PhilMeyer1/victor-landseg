@@ -1,7 +1,7 @@
 """Befehlszeile: ``python -m landseg <befehl> ...`` (im Repo-Ordner).
 
 Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``ansicht`` (W3), ``kante`` (W4), ``eingriff`` (W5),
-``pruefen`` (W6), ``zusammentragen`` (W7), ``naht`` (Nahtregel allein). Exit-Code 0 = ok, 1 = Befund,
+``pruefen`` (W6), ``zusammentragen`` (W7), ``seite`` (W8, Übersichtsseite), ``naht`` (Nahtregel allein). Exit-Code 0 = ok, 1 = Befund,
 Nahtverstoß oder Eingriff abgelehnt, 2 = Aufruf- oder Lesefehler.
 """
 
@@ -21,6 +21,7 @@ from .eingriff import Bearbeitung, EingriffFehler
 from .kacheln import KachelFehler, kacheln
 from .kante import einrasten
 from .pruefen import pruefen
+from .seite import SeiteFehler, seite
 from .vorstufe import Auftrag, VorstufeFehler, auftraege_aus_manifest, konfig_laden, vorstufe
 from .zusammentragen import ZusammenFehler, lese_auftrag, zusammentragen
 
@@ -147,6 +148,29 @@ def _rgb_bild(pfad) -> np.ndarray:
 def _rechteck(text: str) -> dict:
     x, y, b, h = (int(v) for v in text.split(","))
     return {"x": x, "y": y, "breite": b, "hoehe": h}
+
+
+def befehl_seite(a) -> int:
+    kat = kategorien.laden(a.kategorien)
+    erg = seite(a.manifest, a.ziel, kat, kommentare=a.kommentare,
+                werte=einstellungen.laden("seite", a.einstellungen))
+    if a.json:
+        print(json.dumps(erg, ensure_ascii=False))
+    else:
+        for f in erg["fassungen"]:
+            if not f["vorhanden"]:
+                print(f"Fassung {f['kennung']} ({f['name']}): keine Daten in {f['quelle']}")
+                continue
+            teile = [f"{t['id']} –" if "segmente" not in t else
+                     f"{t['id']} {t['segmente']} Segmente, pruefen {'ok' if t['pruefen_ok'] else 'FEHLER'}"
+                     for t in f["teilkacheln"]]
+            naht_text = "nicht geprüft" if f["naht"] is None else f["naht"]
+            print(f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Nahtverstöße {naht_text}")
+        print(f"Seite: {erg['ziel']} ({erg['groesse'] // 1024} KiB)")
+    if a.oeffnen:
+        import webbrowser
+        webbrowser.open(Path(erg["ziel"]).resolve().as_uri())
+    return 0
 
 
 def befehl_ansicht(a) -> int:
@@ -325,6 +349,18 @@ def parser() -> argparse.ArgumentParser:
     z.add_argument("--json", action="store_true", help="Ergebnis als JSON")
     z.set_defaults(fn=befehl_zusammentragen)
 
+    se = befehle.add_parser("seite", help="W8: Übersichtsseite als eine HTML-Datei (Fassungen, Ebenen, "
+                                          "Lücken, Nähte, Kommentare)")
+    se.add_argument("--manifest", required=True,
+                    help="manifest.json von kacheln (Ordner der Fassungen relativ dazu, siehe einstellungen/seite.json)")
+    se.add_argument("--kommentare", help="schon exportierte Kommentare (JSON) zum Anzeigen")
+    se.add_argument("--kategorien", help="kategorien.json für Fassungen ohne eigene Liste (Standard: die des Repos)")
+    se.add_argument("--einstellungen", help="JSON, überschreibt einstellungen/seite.json (etwa 'fassungen')")
+    se.add_argument("--ziel", required=True, help="HTML-Datei (unter daten/landseg/)")
+    se.add_argument("--oeffnen", action="store_true", help="danach im Standardbrowser öffnen")
+    se.add_argument("--json", action="store_true", help="Zusammenfassung als JSON")
+    se.set_defaults(fn=befehl_seite)
+
     n = befehle.add_parser("naht", help="Nahtregel auf einer zusammengetragenen Label-Karte prüfen")
     n.add_argument("--manifest", required=True, help="manifest.json von kacheln")
     n.add_argument("--labels", required=True, help="Label-Karte des ganzen Ausschnitts")
@@ -341,7 +377,7 @@ def main(argv: list[str] | None = None) -> int:
     a = parser().parse_args(argv)
     try:
         return a.fn(a)
-    except (KachelFehler, VorstufeFehler, AnsichtFehler, ZusammenFehler, ValueError, OSError,
+    except (KachelFehler, VorstufeFehler, AnsichtFehler, ZusammenFehler, SeiteFehler, ValueError, OSError,
             KeyError) as fehler:
         print(f"Fehler: {fehler}", file=sys.stderr)
         return 2

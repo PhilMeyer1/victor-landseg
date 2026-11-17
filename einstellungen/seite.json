@@ -1,0 +1,32 @@
+{
+  "beschreibung": "W8 seite: Voreinstellungen, Fassungen und Farben der Übersichtsseite. Längen in Bildpunkten der Teilkachel, Deckkraft 0 bis 1. fassungen: je Fassung kennung, name, beschreibung, ordner (relativ zum Ordner des Manifests, darin <teilkachel>/labels.tif und segmente.json) und kategorien (eigene Kategorienliste im Format von kategorien.json, relativ zum Ordner der Fassung; null = die Liste des Aufrufs, Standard kategorien.json des Repos). Eine Fassung ohne Daten erscheint ausgegraut.",
+  "fassungen": [
+    {"kennung": "A", "name": "Feste Kategorienliste",
+     "beschreibung": "Flächen nach der festen Kategorienliste des Projekts (geordnet nach Bedeckung).",
+     "ordner": "vorstufe", "kategorien": null},
+    {"kennung": "B", "name": "Kategorien frei",
+     "beschreibung": "Die KI benennt und stuft die Flächen selbst, sonst gleiche Arbeitsweise wie A.",
+     "ordner": "fassung-b", "kategorien": "kategorien.json"},
+    {"kennung": "C", "name": "Alles frei",
+     "beschreibung": "Eigene Kategorien und eigene Arbeitsweise der KI, ohne feste Regeln.",
+     "ordner": "fassung-c", "kategorien": "kategorien.json"}
+  ],
+  "ebenen_namen": {"1": "grob", "2": "mittel", "3": "fein"},
+  "start_ebene": 3,
+  "deckkraft": 0.4,
+  "gitter_abstand": 100,
+  "kategorienliste": true,
+  "farben": {
+    "umriss": "#ffffff8c",
+    "auswahl": "#ffeb3c",
+    "hover": "#ffffff",
+    "luecke": "#ff2828",
+    "naht": "#ffffffcc",
+    "naht_verstoss": "#ff7ad9",
+    "kern": "#d6d8dce6",
+    "gitter": "#ffeb3c73",
+    "abgedunkelt": "#08090b99",
+    "kommentar": "#4fc3f7"
+  },
+  "naht": {}
+}

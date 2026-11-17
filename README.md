@@ -17,17 +17,17 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `vorstufe.json` | Einstellungen der Vorstufe: Superpixel-Größe, SAM-3-Modell und -Schwellen, Texte je Kategorie, Schwellen für `sicher` und die Kandidaten, Siedlungszone für `im_siedlung` (Abschnitt `siedlung`) |
 | `landseg/ansicht.py` | W3 `ansicht`: Standardbilder je Teilkachel und je Segment (roh, umriss, maengel, vorschlag, nah, kontrast, gitter) mit Verzeichnis `ansicht.json` |
 | `landseg/kante.py` | W4 `kante`: Grenze zweier Nachbarsegmente im engen Band auf die Bildkante einrasten; Strecken ohne Bildkante bleiben stehen und werden als „geschätzt“ gemeldet |
-| `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
+| `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
 | `landseg/eingriff.py` | W5 `eingriff`: Bearbeiten der Label-Karte (verschmelzen, teilen, Grenze verschieben, Klasse setzen, Polygon zuweisen), immer lückenlos, mit Verlauf |
 | `landseg/pruefen.py` | W6 `pruefen`: Wächter der Lückenlosigkeit (H × W ohne 0, Zusammenhang je Segment, gültige Klassen) |
 | `landseg/zusammentragen.py` | W7 `zusammentragen`: Abgaben der Teilkacheln (je Teilkachel die letzte Runde, nur der Kern) zur Label-Karte des Ausschnitts; Einheiten, Klassen des Nutzers und offene Fragen aus einem JSON-Auftrag |
+| `landseg/seite.py`, `landseg/seite_vorlage/` | W8 `seite`: Übersichtsseite als eine HTML-Datei (je Bild das Ergebnis, Umschalter zwischen den Fassungen A/B/C mit je eigener Kategorienliste, Ebenen grob/mittel/fein, Lücken, Nähte, Kategorienliste, Kommentare mit Export); Vorlage aus HTML, CSS und JavaScript |
 | `landseg/naht.py` | Nahtregel: an jeder Kerngrenze gleiche ID oder echte Bildkante, gleiche Klasse |
 | `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht) mit Platzhaltern, erklärt in `vorlagen/README.md` |
 | `.claude/skills/landseg-agent/SKILL.md` | Agent-Skill mit den Arbeitsregeln für diese Aufträge |
 | `landseg/kategorien.py`, `landseg/dateien.py` | Kategorienliste laden; Lesen und Schreiben von Label-Karte, `segmente.json`, Manifest |
 | `tests/` | Tests (Python-Standardmodul `unittest`, synthetische Bilder und Label-Karten) |
 
-Die Prüfseite folgt.
 
 ## Umgebung
 
@@ -61,6 +61,32 @@ unten kurz `PY`. Aufruf immer im Repo-Ordner, damit Python das Paket `landseg` f
   `.prj`). Neben jedem PNG liegt eine Weltdatei `.pgw` für GIS-Programme.
 - **Zusammenhang** heißt: Bildpunkte eines Segments hängen über gemeinsame Kanten zusammen (nur über
   eine Ecke reicht nicht).
+
+## Erster Durchgang: von T0 bis zur Übersichtsseite
+
+Im Repo-Ordner, `PY` wie unter „Umgebung“; alle Ergebnisse landen unter `daten/landseg/T0/kern500/`.
+
+```
+PY -m landseg kacheln --bild ../daten/luftbilder/orthofoto-aktuell/0009626524_100_Orthophoto_aktuell_5236-56.tif    --x 2000 --y 2400 --breite 1000 --hoehe 1000 --kern 500 --rand 64 --name T0 --ziel ../daten/landseg/T0/kern500
+PY -B -m landseg vorstufe --manifest ../daten/landseg/T0/kern500/manifest.json --teilkachel r0c0
+PY -m landseg pruefen --labels ../daten/landseg/T0/kern500/vorstufe/r0c0/labels.tif    --segmente ../daten/landseg/T0/kern500/vorstufe/r0c0/segmente.json --bild ../daten/landseg/T0/kern500/teilkacheln/r0c0.png
+PY -B -m landseg seite --manifest ../daten/landseg/T0/kern500/manifest.json --ziel ../daten/landseg/T0/kern500/seite/T0.html --oeffnen
+```
+
+1. `kacheln` schneidet das Testfenster in vier Teilkacheln (siehe unten).
+2. `vorstufe` belegt eine Teilkachel lückenlos vor (GPU, rund eine halbe Minute; ohne `--teilkachel`
+   alle vier). Die Messzeile nennt Segmente, Anteil „unsicher“ und Kandidaten.
+3. `pruefen` muss mit `ok` enden.
+4. `seite` schreibt die Übersichtsseite und öffnet sie im Browser (ohne `--oeffnen` die Datei
+   `T0.html` selbst doppelklicken). Teilkacheln ohne Daten erscheinen leer, Fassungen ohne Daten
+   ausgegraut.
+
+Die Seite zeigt je Fassung ein Ergebnis. Welche Fassungen es gibt und wo ihre Daten liegen, steht
+unter `fassungen` in `einstellungen/seite.json`: A „Feste Kategorienliste“ liest `vorstufe/`, B
+„Kategorien frei“ `fassung-b/`, C „Alles frei“ `fassung-c/` (je neben dem Manifest, darin
+`<teilkachel>/labels.tif`, `segmente.json` und für B und C eine eigene `kategorien.json`). Liegt
+das Ergebnis woanders (etwa die korrigierte Fassung A), nennt eine eigene Datei mit dem Schlüssel
+`fassungen` die Ordner: `seite … --einstellungen <datei.json>`.
 
 ## Befehle
 
@@ -139,6 +165,37 @@ keiner Bildkante liegt (Kantenstärke unter `kante_min`), bleibt sie unveränder
 „geschätzt“ gemeldet, mit Anfang, Ende, Länge und Kantenstärke. `--trocken` meldet nur,
 `--bericht` schreibt die Meldung mit allen Punkten (für `ansicht --kante`). Der Eingriff steht im
 Verlauf von `segmente.json`.
+
+### seite
+
+```
+PY -B -m landseg seite --manifest <manifest.json> --ziel <seite.html> [--einstellungen <datei.json>] [--kategorien <kategorien.json>] [--kommentare <kommentare.json>] [--oeffnen]
+```
+
+Schreibt eine HTML-Datei, die ohne Server im Browser aufgeht (Bilder und Daten stecken darin, für
+vier Teilkacheln und eine Fassung rund 7 MB). Sie zeigt je Teilkachel ein großes Bild mit dem
+Ergebnis einer Fassung (Mausrad vergrößert, Ziehen verschiebt). Oben schaltet man zwischen den
+Fassungen um (Name und Kurzbeschreibung stehen darunter); eine Fassung ohne Daten ist ausgegraut.
+Jede Fassung bringt ihre eigene Kategorienliste im Format von `kategorien.json` mit (Code, Name,
+Eltern, Ebene, Farbe); Klassen, Namen, Farben und die Ebenen-Knöpfe kommen nur daraus. Welche
+Fassungen es gibt, steht unter `fassungen` in `einstellungen/seite.json` (`kennung`, `name`,
+`beschreibung`, `ordner` relativ zum Ordner des Manifests, `kategorien` relativ zum Ordner der
+Fassung; ohne `kategorien` gilt `--kategorien`, Standard die Liste des Repos); `--einstellungen`
+ersetzt die Liste. Liegt im Ordner einer Fassung keine Teilkachel, ist sie ausgegraut; fehlt bei
+vorhandenen Daten die eigene Kategorienliste, bricht der Befehl mit Exit 2 ab.
+
+Die Maus nennt für die Stelle unter ihr das Segment mit allen Ebenen
+(`1 Versiegelt / bebaut … › 1.1 Gebäude › 1.1.1 Hauptgebäude …`) und „sicher“ oder „unsicher“; ein Klick wählt ein
+Segment („Gewählt“), die Leiste zeigt es im selben Format samt aller Felder aus `segmente.json`.
+Schalter: Ebene (grob/mittel/fein, soweit die Fassung sie hat), Flächen (mit Deckkraft), Umriss,
+Lücken (Bildpunkte ohne Segment rot), Nähte (Verstöße der Nahtregel an den Kerngrenzen, auf den
+zusammengesetzten Kernen geprüft, sobald alle Teilkacheln einer Fassung vorliegen), Nur unsicher,
+Gitter (alle `gitter_abstand` Bildpunkte), Kategorien (Liste mit Segmentzahl und Flächenanteil;
+Klick hebt eine Kategorie hervor). „Ganzer Ausschnitt“ zeigt den Ausschnitt mit Kerngrenzen und
+Nahtverstößen. Kommentare zum gewählten Segment werden im Browser vorgemerkt und unter
+„Export (JSON)“ als `kommentare-<name>.json` (`schema` `landseg-kommentare/1`, je Kommentar mit
+`fassung`) gespeichert; `--kommentare` zeigt eine solche Datei wieder an. Farben und
+Voreinstellungen der Seite stehen in `einstellungen/seite.json`.
 
 ### pruefen
 
