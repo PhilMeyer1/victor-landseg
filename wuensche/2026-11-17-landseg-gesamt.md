@@ -1,6 +1,6 @@
 # Gemeinsames Gesamtprojekt für Victor: Programm mit Verlauf, alle Wünsche und Berichte, alle T0-Daten (ohne Original-Luftbilder) in einem privaten GitHub-Projekt
 
-Kurzname: landseg-gesamt | Datum: 2026-11-17 | Größe: mittel | Bereich: victor | Repos: landseg | Status: bereit
+Kurzname: landseg-gesamt | Datum: 2026-11-17 | Größe: mittel | Bereich: victor | Repos: landseg | Status: eingereiht
 
 ## Wunsch
 
@@ -23,6 +23,7 @@ Keine offenen Fragen: Der Aufbau ist technisch entschieden (siehe Arbeitsauftrag
 - Push zu GitHub: Nur auf ausdrückliche Ansage, nie automatisch nach einem Wunsch. (aus entscheidungen.md, 2026-11-17) — Hier ausdrücklich angesagt, aber erst durch die Hauptsession nach dem Einreihen.
 - Landschafts-Segmente: drei Fassungen als Übersicht für Victor, Ergebnis ohne Vorher/Nachher: Nutzer am 17.11.2026: „Es soll nur eine Version geben mit allen Stufen und Klassifikationen" und „erstelle dafür 2 zusätzliche Versionen. Das soll jetzt alles nur als Übersicht für Victor dienen, der sich dann raussuchen kann, was er am besten findet. Eine Version der Ergebnisse ohne Vorher nachher". (aus entscheidungen.md, 2026-11-17; Kurzfassung, gilt hier für die Benennung A/B/C der Fassungen)
 - Übrige Zeilen der entscheidungen.md (Grundsätze, Kategorien, Urteil im Verbund) betreffen die Methode, nicht diesen Wunsch; sie liegen im Gesamtprojekt als `wuensche/entscheidungen.md` zum Nachlesen.
+- 2026-11-17, Frage der Abnahme zu AK1 (Nutzer): „Kennungen behalten". Der Verlauf von Programm und Unterlagen wird nicht neu geschrieben; die ursprünglichen Commit-Kennungen bleiben (Berichte verweisen darauf). AK1 gilt als erfüllt, wenn jeder ursprüngliche Commit im Gesamtverlauf mit unveränderter Kennung erreichbar ist; dass `git log -- programm` nur die Übernahme-Schritte zeigt, ist hingenommen. Die Anleitung bzw. das README sagt Victor, wie er den Einzelverlauf sieht (z. B. `git log <übernahme-commit>^2` oder `git log --all -- landseg/`).
 
 ## Arbeitsauftrag
 

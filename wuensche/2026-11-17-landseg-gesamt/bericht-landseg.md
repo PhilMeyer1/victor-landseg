@@ -1,6 +1,16 @@
 # Bericht landseg
-Status: bereit-zur-pruefung
-Für den Nutzer: Das Gesamtprojekt für Victor liegt fertig gebaut unter `BASIS/daten/gesamt/victor-landseg`
+Status: eingereiht
+Für den Nutzer: Runde 3, nach deiner Antwort „Kennungen behalten“: Die Programm-Commits behalten
+  ihre ursprünglichen Kennungen, der Verlauf wird nicht neu geschrieben. Geändert ist nur die
+  Einstiegsseite (README) des Gesamtprojekts: Der Abschnitt „Verlauf“ sagt jetzt Schritt für
+  Schritt, wie Victor den Einzelverlauf des Programms sieht (`git log --oneline -1 -- programm`
+  zeigt die Übernahme, `git log --oneline <Kennung>^2` alle Programm-Commits, `git show <Kennung>`
+  einen Commit aus einem Bericht), und warum `git log -- programm` nur die Übernahmen zeigt. Die
+  Befehle habe ich am jetzigen Gesamt-Ordner ausprobiert. Der Gesamt-Ordner selbst ist noch nicht
+  neu gebaut; das passiert nach dem Einreihen mit `bauen` (Nacharbeit), erst dann steht die neue
+  Seite darin.
+  Stand der ersten Runde (gilt weiter):
+  Das Gesamtprojekt für Victor liegt fertig gebaut unter `BASIS/daten/gesamt/victor-landseg`
   (ein Git-Repo, nicht hochgeladen). Darin: Einstiegsseite `README.md` mit Lesereihenfolge und der
   Benennung A/B/C samt Übersetzung zu den alten Namen, `ANLEITUNG.md` (die Übergabe-Anleitung, Pfade
   angepasst, neu ein Abschnitt „Zuerst: einrichten und ausprobieren“), `programm/` (landseg mit allen
@@ -16,14 +26,14 @@ Für den Nutzer: Das Gesamtprojekt für Victor liegt fertig gebaut unter `BASIS/
   Stitchers als Herkunft der Methode. Hinweis zu e05: Victors eigener Bericht 48 nennt NAI selbst, und
   `programm/landseg/sam3.py` sagt, dass es aus dem Stitcher übernommen ist; wenn du e05 doch mitgeben
   willst, reicht es, eine Regel in `einstellungen/gesamt_projekt.json` zu streichen und neu zu bauen.
-  Eine Abweichung vom Auftrag: `git log -- programm` zeigt nur die Übernahme-Commits, nicht die
-  einzelnen Commits des Programms. Die Commits sind trotzdem alle mit ihrer ursprünglichen Kennung da
-  (`git log --oneline` zeigt sie); das README erklärt, wie man den Verlauf einer Programmdatei sieht.
+  `git log -- programm` zeigt nur die Übernahme-Commits, nicht die einzelnen Commits des Programms
+  (von dir am 17.11.2026 hingenommen, „Kennungen behalten“); die Commits sind alle mit ihrer
+  ursprünglichen Kennung da, das README zeigt den Weg zum Einzelverlauf.
   Wichtig vor dem Hochladen: Nach dem Einreihen muss `bauen` einmal neu laufen (Nacharbeit), erst dann
   enthält `programm/` das neue Prüfwerkzeug, das der erste Befehl der Anleitung braucht.
-Commit: 2bbe64a "feat(tools): add gesamt_projekt to build, check and review the shared project for Victor"
+Commit: ae6c20d "feat(tools): add gesamt_projekt to build, check and review the shared project for Victor"
 Abnahmekriterien:
-  AK1: nicht erfüllt (ein Teil) — `README.md`, `ANLEITUNG.md`, `programm/`, `unterlagen/`, `wuensche/`, `daten/landseg/`, `ergebnisse/`, `daten/luftbilder/README.md` liegen im Ziel; alle 9 Commits aus `git -C landseg log main` und beide aus unterlagen stehen mit gleicher Kennung im Ziel (Schleife `git cat-file -e <sha>` über `git -C landseg log --format=%H main`: keiner fehlt), `git -C <Ziel> log --oneline` zeigt sie, `git -C <Ziel> cat-file -t f0a0198` → `commit`. Nicht erfüllt: `git log --oneline -- programm` zeigt nur `Add 'programm/' from commit 'bb7dd84…'`, weil `git subtree` (wie verlangt, ohne `--squash`) die Commits mit ihren ursprünglichen Pfaden ohne Vorsatz übernimmt; Verlauf je Datei: `git log --oneline --full-history -- landseg/kacheln.py` zeigt die landseg-Commits (geprüft: `e805308 feat: add landseg package …`).
+  AK1: erfüllt (nach der Entscheidung „Kennungen behalten“ vom 17.11.2026) — `README.md`, `ANLEITUNG.md`, `programm/`, `unterlagen/`, `wuensche/`, `daten/landseg/`, `ergebnisse/`, `daten/luftbilder/README.md` liegen im Ziel; alle 9 Commits aus `git -C landseg log main` und beide aus unterlagen stehen mit gleicher Kennung im Ziel (22 Commits gesamt), `git -C <Ziel> cat-file -t f0a0198` → `commit`; `git log --oneline -- programm` zeigt wie hingenommen nur `29ea818 Add 'programm/' …`; die neuen README-Wege am Ziel geprüft: `git log --oneline -1 -- programm` → `29ea818`, `git log --oneline 29ea818^2` → alle 9 landseg-Commits (bb7dd84 … c0c4db5), `git log --oneline 8ddf69f^2` → beide unterlagen-Commits, `git log --oneline --full-history -- landseg/kacheln.py` → enthält `e805308`, `git show e805308` → der Commit. (`git log --all -- landseg/` aus dem Vorschlag der Entscheidung zeigt nur `77b8cf8` und `f0a0198`, also den alten Wurzelordner; darum im README nicht genannt.)
   AK2: erfüllt — `"$PY" -B tools/gesamt_projekt.py pruefen --basis C:/Users/Phil/Developement/Victor --ziel C:/Users/Phil/Developement/Victor/daten/gesamt/victor-landseg` → „Vollständigkeit: fehlend 0, abweichend 0, fremd 0 (geprüft 1585 Dateien; laut Durchsicht weggelassen 24)“, „Verbotene Pfade: 0“, Exit 0; am echten Ziel mit `--luftbilder C:/Users/Phil/Developement/Victor/daten/luftbilder` → „Luftbilder: 8 von 8 passen“, „Ergebnis: ok“. Verglichen wird die Git-Prüfsumme jeder Quelldatei mit dem Blob im Commit des Ziels (Byte für Byte). Weggelassen sind nur die 24 Dateien der Durchsicht (AK4) und 5 `__pycache__/*.pyc` aus `daten/landseg/T0/kern500/urteil/*/v*/` (Bytecode der Hilfsskripte, Git nimmt ihn nach `.gitignore` ohnehin nicht).
   AK3: erfüllt — `pruefen` → „größte Datei 16.9 MB (…/kern500/vorstufe/r1c1/sam3_roh.npz (Verlauf)); Warnungen: 0; ab 100 MB: 0“ (MiB; 17,8 Mio. Bytes), „Git-Zusatzspeicher (lfs): keiner“; Unittest `test_groessen_warnung_ab_50_und_fehler_ab_100_mb` (60 MB → Warnung, 101 MB → „zu groß für GitHub“, Exit 1). Geprüft werden Arbeitsstand und alle Blobs im Verlauf.
   AK4: erfüllt — `"$PY" -B tools/gesamt_projekt.py durchsicht --basis … --ziel … --bericht wuensche/2026-11-17-landseg-gesamt/durchsicht-landseg.md` → „ungeordnet oder Fehler: 0“, Exit 0; Zugangsdaten/Schlüssel: 0 Fundstellen. Fundstellen unten unter „Durchsicht“, vollständig mit Datei und Zeilen in `durchsicht-landseg.md`. Quellordner unverändert (das Werkzeug liest dort nur).
@@ -33,7 +43,9 @@ Abnahmekriterien:
   AK8: erfüllt — Unittest `test_bauen_ist_wiederholbar_und_bringt_neue_commits_mit_verlauf` (zweiter Lauf „neue Commits: 0“, neuer landseg-Commit kommt mit Kennung nach `programm/`); am echten Ziel dritter Lauf ohne Änderung → „neue Commits: 0“; `git -C <Ziel> config core.autocrlf` → `false`, dazu `* -text` in `.gitattributes`.
 Prüfungen:
   schnell: `pruefe_kategorien.py kategorien.json` → ok; `git status --short` sauber nach Commit
-  `"$PY" -B -m unittest discover -s tests -t .` (in W) → Ran 104 tests in 29 s, OK
+  `"$PY" -B -m unittest discover -s tests -t .` (in W, Runde 3) → Ran 104 tests in 19 s, OK
+  README-Pfade der neuen Vorlage gegen das jetzige Ziel (Hilfsskript im scratchpad, gleiche Regel wie `pruefen`) → 41 Pfade, fehlen: keine
+  `pruefe_kategorien.py kategorien.json` (Runde 3) → ok
   `"$PY" -B -m unittest tests.test_gesamt_projekt` → 5 Tests OK (rund 15 s, `git subtree` unter Windows)
   `gesamt_projekt.py bauen` am echten Ziel → 5 Commits auf `f0a0198` (Umbau, zwei Subtree-Übernahmen, Abgleich), danach je ein Abgleich-Commit, zuletzt „neue Commits: 0“
   `gesamt_projekt.py pruefen --basis … --ziel …` → Ergebnis: ok, Exit 0
@@ -47,7 +59,7 @@ Durchsicht (Zusammenfassung; jede Fundstelle mit Datei und Zeilen in `durchsicht
   Anderer Bereich, behalten: Pfad zur Python-Umgebung bzw. zu Vorlagen unter `websites/nai/stitcher` (222 Fundstellen, v. a. die 40 `auftrag.md` unter `wuensche/2026-11-17-landseg-test-t0-1/`, `gruppen.json`, Berichte der Werkzeug-Teile); Erwähnung „Stitcher“ als Herkunft (372 + 104, u. a. `wuensche/2026-11-17-landseg-methode/bericht.md`, `plan.md`, `deutung.md`, `einheiten/e03.md`, `e06.md`, `programm/landseg/sam3.py` Z. 3, `programm/KATEGORIEN.md` Z. 156, `programm/kategorien.json` Z. 1587, `programm/.claude/skills/landseg-agent/SKILL.md` Z. 10, die `arbeitsweise.md` von r1c0/r1c1); „NAI“ in Victors eigenem `unterlagen/berichte/48_luftbild_segmentierung_klassen.md` Z. 56; „privat“ = privates GitHub-Projekt in `wuensche/2026-11-17-landseg-uebergabe/bericht-landseg.md`; die Bereichsliste im Auftrag dieses Wunschs. marlene, eventmanagement: nur in diesem Auftrag.
   Wunsch-System, in der Kopie entfernt: `wuensche/.laeufe.json`, 11 × `profile-vorher.json`, 10 × `einreihen-landseg.json`/`einreihen-unterlagen.json` (Buchführung ohne Wert zum Nachvollziehen); behalten: Erwähnungen als Herkunft (118 Fundstellen, z. B. `wunsch-system`, `.claude/repos`, `stand.py`), dazu die Entwurfs-Vorlagen unter `wuensche/2026-11-17-landseg-werkzeuge/entwurf/gemeinsam/` (nötig, um die Entwürfe der Prüfseite anzusehen).
   Pfad mit Kontoname (`C:/Users/Phil/…`): 10 455 Fundstellen in 285 Dateien, behalten (Ablageort auf dem Rechner, kein Geheimnis; das README sagt, dass `C:/Users/Phil/Developement/Victor/` dem Projektordner entspricht).
-Nicht geprüft: Push nach GitHub, Umbenennen, Einladen (Sache der Hauptsession); der Nutzerweg (AK7) am echten Ziel erst nach dem Einreihen und neuem `bauen` möglich, weil `programm/` bis dahin `tools/gesamt_projekt.py` nicht enthält; Vorstufe (GPU) im Klon nicht gefahren.
+Nicht geprüft: Push nach GitHub, Umbenennen, Einladen (Sache der Hauptsession); der Nutzerweg (AK7) am echten Ziel erst nach dem Einreihen und neuem `bauen` möglich, weil `programm/` bis dahin `tools/gesamt_projekt.py` nicht enthält; Vorstufe (GPU) im Klon nicht gefahren; die geänderte README-Vorlage steht erst nach dem neuen `bauen` im Gesamt-Ordner (in Runde 3 kein Probe-Bau, nur Pfadprüfung der Vorlage gegen das jetzige Ziel und die README-Befehle am Ziel ausgeführt).
 Einstieg: stimmte; `tools/pruefe_kategorien.py` als Muster, `README.md`-Tabelle ergänzt; die Dateitabelle der Übergabe-Anleitung stand in Zeilen 25–40, die Benennung in 47–60.
 Technische Entscheidungen:
   - Gesamt-Ordner `BASIS/daten/gesamt/victor-landseg` (wie im Arbeitsauftrag) außerhalb von W angelegt und dort committet; die Übergabe-Kopie `daten/landseg/uebergabe/landseg-t0` blieb unverändert. `origin` zeigt auf `https://github.com/PhilMeyer1/landseg-t0.git`.
@@ -73,3 +85,6 @@ Erkenntnisse fürs Profil:
 Abweichungen vom Zielbild:
   - `tools/gesamt_projekt.py:51` — liest `einstellungen/gesamt_projekt.json` selbst und `--einstellungen` ersetzt die Datei ganz, statt über `landseg/einstellungen.py` einzelne Schlüssel zu überschreiben — nötig, weil das Skript in `tools/` ohne das Paket (Standardbibliothek, ohne numpy) laufen soll — sauber wäre ein paketfreier Lader, den Paket und `tools/` gemeinsam nutzen.
   - `gesamt/README.md` — die Vorlagen der Gesamtprojekt-Seiten liegen im Code-Repo und erscheinen im Gesamtprojekt doppelt (Wurzel und `programm/gesamt/`) — gewählt, damit sie versioniert und mit dem Werkzeug geprüft sind — sauber wäre ein eigenes kleines Repo für die Seiten des Gesamtprojekts.
+Nachbesserung (Runde 3): Entscheidung „Kennungen behalten“ umgesetzt: nur `gesamt/README.md`, Abschnitt „Verlauf“, um die Schritte zum Einzelverlauf ergänzt (amend auf den einen Commit, jetzt `ae6c20d`); Werkzeug und Tests unverändert. Der Gesamt-Ordner wurde in dieser Runde nicht angefasst (nur gelesen).
+Runde 2: Mangel AK1 nachvollzogen, Frage an den Nutzer gestellt (beantwortet, siehe Runde 3).
+Einreihen (Skript): eingereiht ae6c20d feat(tools): add gesamt_projekt to build, check and review the shared project for Victor in C:/Users/Phil/Developement/Victor/landseg (main); Prüfung nach Risiko (ohne Prüfschleuse, keine Zeile schnell: im Profil); voll grün (16 s); volle Prüfung offen (vermerkt in C:/Users/Phil/Developement/Victor/landseg/.git/wunsch-einreihen/pruefung-offen.jsonl); Abräumen WEG

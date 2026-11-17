@@ -89,9 +89,21 @@ Die Commits des Programms und der Unterlagen sind mit ihrer ursprünglichen Kenn
 (`git subtree`): `git log --oneline` zeigt sie alle, in zeitlicher Reihenfolge mit den
 Übernahmen dazwischen. In diesen Commits liegen die Dateien noch so wie im ursprünglichen Repo,
 also ohne den Vorsatz `programm/`. Darum zeigt `git log -- programm` nur die Übernahmen
-(„Add 'programm/' …“, „chore: update programm/ …“); den Verlauf einer einzelnen Programmdatei
-zeigt `git log --oneline --full-history -- landseg/kacheln.py` (Pfad ohne `programm/`). Der erste Stand dieses
-Projekts (die Übergabe vom 17.11.2026, Commit `f0a0198`) bleibt im Verlauf.
+(„Add 'programm/' …“, „chore: update programm/ …“). Die Kennungen sind bewusst unverändert
+geblieben, damit die Kennungen in den Berichten (etwa `e805308`) hier nachschlagbar sind.
+
+So siehst du den Einzelverlauf:
+
+1. `git log --oneline -1 -- programm` zeigt die jüngste Übernahme des Programms.
+2. Ihr zweiter Elternteil ist der übernommene Stand von `landseg`:
+   `git log --oneline <Kennung der Übernahme>^2` zeigt alle Commits des Programms bis dahin, ohne
+   die übrigen Commits dieses Projekts. Für die Unterlagen gilt dasselbe mit `unterlagen` statt
+   `programm`.
+3. Den Verlauf einer einzelnen Programmdatei zeigt
+   `git log --oneline --full-history -- landseg/kacheln.py` (Pfad ohne `programm/`).
+4. Einen einzelnen Commit aus einem Bericht zeigt `git show <Kennung>`.
+
+Der erste Stand dieses Projekts (die Übergabe vom 17.11.2026, Commit `f0a0198`) bleibt im Verlauf.
 Das Projekt wird mit `programm/tools/gesamt_projekt.py bauen` aus unserem Arbeitsordner
 aufgefrischt; `pruefen` und `durchsicht` sichern Vollständigkeit, Größen (GitHub nimmt keine Datei
 über 100 MB) und dass nichts Vertrauliches darin steht.
