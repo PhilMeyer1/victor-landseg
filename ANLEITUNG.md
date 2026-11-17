@@ -30,8 +30,8 @@ festen Liste durch uns und die beiden letzten Schritte (Grenzen umsetzen, Messbe
    ```
 
    Erwartet: „Luftbilder: 8 von 8 passen“ und „Ergebnis: ok“ (Exit-Code 0). Fehlt ein Bild, nennt
-   der Befehl es mit Namen. Ohne `--luftbilder` prüft er nur das Projekt selbst (Größen, Pfade im
-   README) und meldet „Luftbilder nicht geprüft“.
+   der Befehl es mit Namen. Ohne `--luftbilder` prüft er nur das Projekt selbst (Größen, Pfade in
+   README, ANLEITUNG und CLAUDE.md) und meldet „Luftbilder nicht geprüft“.
 
 2. Python einrichten (siehe „Umgebung“), dann im Ordner `programm/` die Tests:
 

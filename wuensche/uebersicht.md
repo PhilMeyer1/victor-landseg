@@ -25,3 +25,4 @@ Commit. Ablauf: Skill `wunsch`.
 | 2026-11-17 | landseg-werkzeuge-4 | Teil 4 von landseg-werkzeuge: zusammentragen, Nahtregel und Vorlagen | landseg | eingereiht | 2026-11-17-landseg-werkzeuge-4.md |
 | 2026-11-17 | landseg-werkzeuge-5 | Teil 5 von landseg-werkzeuge: Prüfseite und Abnahme an T0-Teilkachel | landseg | eingereiht | 2026-11-17-landseg-werkzeuge-5.md |
 | 2026-11-17 | landseg-werkzeuge | Werkzeuge für den ersten Test der lückenlosen Landschafts-Segmentierung bauen (W1–W8 und Vorlagen W10, ohne Export W9), abgenommen an einer Teilkachel des Testfensters T0 | landseg | eingereiht | 2026-11-17-landseg-werkzeuge.md |
+| 2026-11-18 | gesamt-claude | Gesamtprojekt victor-landseg: CLAUDE.md, die beim Öffnen mit Claude Code sofort die Ergebnis-Ansicht im Browser öffnet, und Prüfung, dass alles da ist und funktioniert | landseg | eingereiht | 2026-11-18-gesamt-claude.md |

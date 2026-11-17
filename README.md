@@ -9,7 +9,9 @@ getrennt (`daten/luftbilder/README.md`).
 ## In dieser Reihenfolge lesen
 
 1. **Ergebnis ansehen**: `ANLEITUNG.md` (was getestet wurde, Zahlen, Schwächen, wie man es
-   nachrechnet) und die Prüfseite `ergebnisse/T0.html` (doppelklicken, kein Server nötig).
+   nachrechnet) und die Prüfseite `ergebnisse/T0.html` (doppelklicken, kein Server nötig). Wer den
+   Projektordner mit Claude Code öffnet, bekommt die Seite zu Beginn der Sitzung von Claude im
+   Browser geöffnet und kurz erklärt (Anweisungen in `CLAUDE.md`).
 2. **Wie ist es entstanden?** Die Aufträge und Berichte in `wuensche/`, in zeitlicher Reihenfolge:
 
    | Schritt | Auftrag | Berichte und Material |
@@ -65,6 +67,7 @@ dazu, den wir gemeinsam ansehen und dann zusammenführen.
 |---|---|
 | `README.md` | diese Seite |
 | `ANLEITUNG.md` | Anleitung zum Test T0: Ergebnis, Zahlen, Dateiformate, Befehle |
+| `CLAUDE.md` | Anweisungen für Claude Code: öffnet zu Beginn jeder Sitzung `ergebnisse/T0.html` im Browser |
 | `programm/` | das Programm `landseg` mit seinem vollen Git-Verlauf (Python-Paket, Tests, Werkzeuge, Kategorienliste, Vorlagen für die KI-Agents) |
 | `unterlagen/` | deine gelieferten Berichte, mit ihrem Git-Verlauf |
 | `wuensche/` | alle Aufträge, Berichte, Abnahmen, die Methoden-Ermittlung und die Aufträge an die einzelnen KI-Agents |
