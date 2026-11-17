@@ -90,7 +90,7 @@ Die Commits des Programms und der Unterlagen sind mit ihrer ursprünglichen Kenn
 Übernahmen dazwischen. In diesen Commits liegen die Dateien noch so wie im ursprünglichen Repo,
 also ohne den Vorsatz `programm/`. Darum zeigt `git log -- programm` nur die Übernahmen
 („Add 'programm/' …“, „chore: update programm/ …“); den Verlauf einer einzelnen Programmdatei
-zeigt `git log --oneline -- landseg/kacheln.py` (Pfad ohne `programm/`). Der erste Stand dieses
+zeigt `git log --oneline --full-history -- landseg/kacheln.py` (Pfad ohne `programm/`). Der erste Stand dieses
 Projekts (die Übergabe vom 17.11.2026, Commit `f0a0198`) bleibt im Verlauf.
 Das Projekt wird mit `programm/tools/gesamt_projekt.py bauen` aus unserem Arbeitsordner
 aufgefrischt; `pruefen` und `durchsicht` sichern Vollständigkeit, Größen (GitHub nimmt keine Datei

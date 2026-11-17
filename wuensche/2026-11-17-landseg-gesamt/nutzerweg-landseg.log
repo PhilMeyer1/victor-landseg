@@ -1,0 +1,56 @@
+== bauen (Probe, Zweig wunsch/landseg-gesamt): exit 0
+geklont: C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0 -> C:\Users\Phil\AppData\Local\Temp\claude\27e54e3b8399faf6\a2bf01d3-627c-4b06-8b57-51f25ab5229e\scratchpad\probe\victor-landseg (origin https://github.com/PhilMeyer1/landseg-t0.git)
+umgebaut: T0/ -> ergebnisse/
+Verlauf übernommen: landseg -> programm/
+Verlauf übernommen: unterlagen -> unterlagen/
+Kopien: 1449 Dateien, 1452 geändert oder entfernt; laut Durchsicht weggelassen: 24
+neue Commits: 4
+  0e721d7 chore: sync wishes, working data and guides from the Victor base folder
+  4b2c568 Add 'unterlagen/' from commit '86e5c53bb26ca7faaf199b8b05e473d0ee9298cc'
+  68313ef Add 'programm/' from commit '95f757a1e2a63529102ec28346df81d64a9f5c9f'
+  808c437 refactor: move handover results to ergebnisse/ and drop the old root copy of the tools
+== git clone: exit 0
+
+== Schritt 1 pruefen --luftbilder: exit 0
+Vollständigkeit: nicht geprüft (ohne --basis)
+Verbotene Pfade: 0
+größte Datei 16.9 MB (daten/landseg/T0/kern500/vorstufe/r1c1/sam3_roh.npz (Verlauf)); Warnungen: 0; ab 100 MB: 0
+Git-Zusatzspeicher (lfs): keiner
+Zeilenenden: .gitattributes `* -text` ja; core.autocrlf false
+README-Pfade: alle vorhanden (41)
+Luftbilder: 8 von 8 passen (C:\Users\Phil\AppData\Local\Temp\claude\27e54e3b8399faf6\a2bf01d3-627c-4b06-8b57-51f25ab5229e\scratchpad\probe\klon\daten\luftbilder)
+Arbeitsstand: sauber
+Ergebnis: ok
+== Schritt 1 ohne --luftbilder: exit 0
+Vollständigkeit: nicht geprüft (ohne --basis)
+Verbotene Pfade: 0
+größte Datei 16.9 MB (daten/landseg/T0/kern500/vorstufe/r1c1/sam3_roh.npz (Verlauf)); Warnungen: 0; ab 100 MB: 0
+Git-Zusatzspeicher (lfs): keiner
+Zeilenenden: .gitattributes `* -text` ja; core.autocrlf false
+README-Pfade: alle vorhanden (41)
+Luftbilder nicht geprüft (ohne --luftbilder)
+Arbeitsstand: sauber
+Ergebnis: ok
+== Schritt 2 Tests: exit 0
+....................................................................Fehler: C:\Users\Phil\AppData\Local\Temp\tmppirufxi0\x.txt: Ziel ist eine HTML-Datei (Endung .html)
+....................................
+----------------------------------------------------------------------
+Ran 104 tests in 35.862s
+
+OK
+== Schritt 3 landseg pruefen: exit 0
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 206, nicht zusammenhängend: 0
+ok
+== Schritt 4 kacheln: exit 0
+4 Teilkacheln (2 × 2, Kern 500, Rand 64) -> ..\arbeit\T0\manifest.json
+== Vergleich mit ergebnisse/: exit 0
+arbeit/T0/T0.png gleich bytegleich
+arbeit/T0/teilkacheln/r0c0.png gleich bytegleich
+arbeit/T0/teilkacheln/r0c1.png gleich bytegleich
+arbeit/T0/teilkacheln/r1c0.png gleich bytegleich
+arbeit/T0/teilkacheln/r1c1.png gleich bytegleich
+== git status im Klon: exit 0
+
+== Klon: log -- programm: exit 0
+68313ef Add 'programm/' from commit '95f757a1e2a63529102ec28346df81d64a9f5c9f'
