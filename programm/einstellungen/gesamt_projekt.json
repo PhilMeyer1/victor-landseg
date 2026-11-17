@@ -1,0 +1,100 @@
+{
+  "grundlage": "daten/landseg/uebergabe/landseg-t0",
+  "umbau": {
+    "aus": "T0",
+    "nach": "ergebnisse",
+    "behalten": ["README.md", "ANLEITUNG.md", ".gitignore"]
+  },
+  "verlauf": [
+    {"prefix": "programm", "repo": "landseg", "branch": "main"},
+    {"prefix": "unterlagen", "repo": "unterlagen", "branch": "main"}
+  ],
+  "kopien": [
+    {"quelle": "wuensche", "ziel": "wuensche", "ohne": ["**/roh/**", ".stand.json", "**/__pycache__/**", "**/*.pyc"]},
+    {"quelle": "daten/landseg", "ziel": "daten/landseg", "ohne": ["uebergabe/**", "**/__pycache__/**", "**/*.pyc"]}
+  ],
+  "seiten": {
+    "README.md": "gesamt/README.md",
+    "ANLEITUNG.md": "gesamt/ANLEITUNG.md"
+  },
+  "luftbilder": {
+    "quelle": "daten/README.md",
+    "abschnitt": "## luftbilder/",
+    "vorlage": "gesamt/luftbilder-README.md",
+    "ziel": "daten/luftbilder/README.md"
+  },
+  "gitattributes": "# Dateien Byte für Byte wie in der Quelle: keine Umwandlung der Zeilenenden (Berichte haben CRLF).\n* -text\n",
+  "gitignore": "__pycache__/\n*.pyc\n.venv/\n# Original-Luftbilder kommen getrennt; hier nur ihre Beschreibung versionieren\n/daten/luftbilder/*\n!/daten/luftbilder/README.md\n# eigene Rechnungen nach der Anleitung\n/arbeit/\n",
+  "verboten": [
+    ".claude/**",
+    "CLAUDE.md",
+    "daten/luftbilder/**",
+    "daten/landseg/uebergabe/**",
+    "wuensche/**/roh/**",
+    "wuensche/.stand.json"
+  ],
+  "erlaubt": ["daten/luftbilder/README.md"],
+  "readme_wurzeln": ["README.md", "ANLEITUNG.md", "programm", "unterlagen", "wuensche", "daten", "ergebnisse"],
+  "groesse": {"warnung_mb": 50, "grenze_mb": 100},
+  "durchsicht": {
+    "arten": {
+      "zugang": [
+        "-----BEGIN [A-Z ]*PRIVATE KEY-----",
+        "\\bgh[pousr]_[A-Za-z0-9]{30,}",
+        "\\bgithub_pat_[A-Za-z0-9_]{20,}",
+        "\\bsk-[A-Za-z0-9_-]{20,}",
+        "\\bAKIA[0-9A-Z]{16}\\b",
+        "\\bxox[abposr]-[A-Za-z0-9-]{10,}",
+        "\\bhf_[A-Za-z0-9]{30,}",
+        "(?i)\\b(passwor[dt]|kennwort|secret|api[_-]?key|access[_-]?token|auth[_-]?token)\\b[\"']?\\s*[:=]\\s*[\"']?[^\\s\"']{6,}",
+        "(?i)\\bhttps?://[^/\\s:@]+:[^/\\s@]+@"
+      ],
+      "email": ["[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*\\.[A-Za-z]{2,}\\b"],
+      "bereich": [
+        "(?i)\\bnai\\b",
+        "(?i)\\bstitcher\\b",
+        "(?i)\\bmarlene\\b",
+        "(?i)\\beventmanagement\\b",
+        "(?i)\\bprivat\\b"
+      ],
+      "wunsch_system": [
+        "(?i)wunsch-system",
+        "plugins[/\\\\]wunsch",
+        "\\.claude[/\\\\]repos",
+        "(?i)\\b(einreihen|aufraeumer|maschine|zugang|stand)\\.py\\b",
+        "\\.stand\\.json"
+      ],
+      "kontopfad": [
+        "(?i)\\b[a-z]:(/|\\\\{1,2})users(/|\\\\{1,2})[^/\\\\\\s\"'`)]+",
+        "(?i)(?<![\\w.])/c/users/[^/\\s\"'`)]+",
+        "(?i)\\bC--Users-[A-Za-z0-9]+"
+      ]
+    },
+    "regeln": [
+      {"art": "*", "behandlung": "behalten", "dateien": ["programm/tools/gesamt_projekt.py", "programm/tests/test_gesamt_projekt.py", "programm/einstellungen/gesamt_projekt.json"],
+       "grund": "Werkzeug der Durchsicht selbst: Suchmuster, Regeln und erfundene Testwerte (Zugangsdaten gelten trotzdem als Fehler)"},
+      {"art": "wunsch_system", "behandlung": "entfernen", "dateien": ["wuensche/.laeufe.json", "wuensche/**/profile-vorher.json", "wuensche/**/einreihen-*.json"],
+       "grund": "Buchführung des Wunsch-Systems (Laufzähler, Prüfsummen der Profile, Protokolle des Einreihens): zum Nachvollziehen ohne Wert"},
+      {"art": "bereich", "behandlung": "entfernen", "dateien": ["wuensche/2026-11-17-landseg-methode/einheiten/e05.md", "wuensche/2026-11-17-landseg-methode/gegenpruefung/e05.md"],
+       "grund": "ausführliche Auswertung einer Arbeitssitzung im Bereich nai (Repo stitcher: Abläufe, Aufträge, Agent-Namen, Pfade in deren Protokolle); das Ergebnis für die Landschaft steht in bericht.md und plan.md"},
+      {"art": "email", "behandlung": "behalten", "fund": "(?i)kundenservice@bev\\.gv\\.at|doris\\.geol\\.post@ooe\\.gv\\.at",
+       "grund": "öffentliche Adressen der Behörden, bei denen es die Luftbilder gibt (BEV, DORIS Oberösterreich); zum Nachvollziehen der Bezugsquellen nötig"},
+      {"art": "bereich", "behandlung": "behalten", "zeile": "(?i)websites[/\\\\]+nai\\b|websites-nai\\b",
+       "grund": "Pfad auf dem Rechner: Python-Umgebung des Repos stitcher, mit der die Werkzeuge liefen, oder Ort einer Vorlage; kein Inhalt des Bereichs"},
+      {"art": "bereich", "behandlung": "behalten", "fund": "(?i)stitcher",
+       "grund": "Erwähnung der Herkunft: Das Verfahren ist aus der Stitcher-Methode (Bereich nai) abgeleitet, der Vergleich steht in den Berichten der Methoden-Ermittlung; die ausführliche Auswertung der Stitcher-Sitzung ist entfernt"},
+      {"art": "bereich", "behandlung": "behalten", "fund": "(?i)nai", "zeile": "(?i)stitcher|Bereich nai|nai/stitcher",
+       "grund": "Erwähnung der Herkunft (Repo stitcher im Bereich nai) in derselben Zeile; kein Inhalt des Bereichs"},
+      {"art": "bereich", "behandlung": "behalten", "dateien": ["wuensche/2026-11-17-landseg-gesamt.md", "wuensche/2026-11-17-landseg-gesamt/**"],
+       "grund": "Auftrag und Bericht dieses Gesamtprojekts nennen die Bereiche, nach denen gesucht wurde"},
+      {"art": "bereich", "behandlung": "behalten", "fund": "(?i)privat", "zeile": "(?i)privat(e[snm]?)?\\b.{0,40}(Projekt|GitHub|Repo)|(GitHub|Projekt|Repo|Ziel)\\b.{0,60}\\bprivat\\b",
+       "grund": "„privat“ heißt hier: nicht öffentliches GitHub-Projekt; kein Inhalt des Bereichs privat"},
+      {"art": "bereich", "behandlung": "behalten", "dateien": ["unterlagen/**"],
+       "grund": "Victors eigene gelieferte Berichte (unverändert)"},
+      {"art": "wunsch_system", "behandlung": "behalten",
+       "grund": "Erwähnung des Wunsch-Systems als Herkunft der Wünsche und Berichte (Arbeitsweise); keine Inhalte des Systems selbst"},
+      {"art": "kontopfad", "behandlung": "behalten",
+       "grund": "Ablageort auf dem Rechner, auf dem gerechnet wurde (Kontoname des Projektpartners, kein Geheimnis); im Projekt entspricht BASIS dem Projektordner"}
+    ]
+  }
+}
