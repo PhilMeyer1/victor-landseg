@@ -1,8 +1,8 @@
 """Befehlszeile: ``python -m landseg <befehl> ...`` (im Repo-Ordner).
 
-Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``eingriff`` (W5), ``pruefen`` (W6), ``zusammentragen`` (W7),
-``naht`` (Nahtregel allein). Exit-Code 0 = ok, 1 = Befund, Nahtverstoß oder Eingriff abgelehnt, 2 = Aufruf-
-oder Lesefehler.
+Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``ansicht`` (W3), ``kante`` (W4), ``eingriff`` (W5),
+``pruefen`` (W6), ``zusammentragen`` (W7), ``naht`` (Nahtregel allein). Exit-Code 0 = ok, 1 = Befund,
+Nahtverstoß oder Eingriff abgelehnt, 2 = Aufruf- oder Lesefehler.
 """
 
 from __future__ import annotations
@@ -12,11 +12,14 @@ import json
 import sys
 from pathlib import Path
 
+import numpy as np
 from PIL import Image
 
-from . import dateien, kategorien, naht
+from . import dateien, einstellungen, kategorien, naht
+from .ansicht import AnsichtFehler, ansicht
 from .eingriff import Bearbeitung, EingriffFehler
 from .kacheln import KachelFehler, kacheln
+from .kante import einrasten
 from .pruefen import pruefen
 from .vorstufe import Auftrag, VorstufeFehler, auftraege_aus_manifest, konfig_laden, vorstufe
 from .zusammentragen import ZusammenFehler, lese_auftrag, zusammentragen
@@ -136,6 +139,81 @@ def befehl_naht(a) -> int:
     return 0 if befund.ok else 1
 
 
+def _rgb_bild(pfad) -> np.ndarray:
+    with Image.open(pfad) as bild:
+        return np.asarray(bild.convert("RGB"))
+
+
+def _rechteck(text: str) -> dict:
+    x, y, b, h = (int(v) for v in text.split(","))
+    return {"x": x, "y": y, "breite": b, "hoehe": h}
+
+
+def befehl_ansicht(a) -> int:
+    kern = a.kern
+    quelle = {}
+    if a.manifest:
+        manifest_pfad = Path(a.manifest)
+        manifest = dateien.lese_json(manifest_pfad)
+        teil = next((t for t in manifest["teilkacheln"] if t["id"] == a.teilkachel), None)
+        if teil is None:
+            raise ValueError(f"Teilkachel {a.teilkachel!r} steht nicht im Manifest")
+        bild_pfad = manifest_pfad.parent / teil["bild"]
+        kern = kern or teil["kern_im_bild"]
+        quelle = {"manifest": str(manifest_pfad), "teilkachel": a.teilkachel}
+    else:
+        bild_pfad = Path(a.bild)
+    quelle.update({"bild": str(bild_pfad), "labels": a.labels, "segmente": a.segmente})
+    karte = dateien.lese_labels(a.labels) if a.labels else None
+    segmente = dateien.lese_segmente(a.segmente) if a.segmente else None
+    kat = kategorien.laden(a.kategorien) if segmente is not None else None
+    index = ansicht(_rgb_bild(bild_pfad), karte, a.ziel, segmente=segmente, kategorien=kat,
+                    kern=kern, ids=a.ids, nur_teilkachel=a.nur_teilkachel,
+                    kandidaten=dateien.lese_json(a.kandidaten) if a.kandidaten else None,
+                    kante=dateien.lese_json(a.kante) if a.kante else None,
+                    mindestflaeche=a.mindestflaeche,
+                    vorgaben=einstellungen.laden("ansicht", a.einstellungen), quelle=quelle)
+    teil_arten = ", ".join(index["teilkachel"]["bilder"])
+    print(f"{index['bilderzahl']} Bilder: Teilkachel ({teil_arten}), "
+          f"{len(index['segmente'])} Segmente -> {Path(a.ziel) / 'ansicht.json'}")
+    m = index["maengel"]
+    if m:
+        print(f"Mängel: Lücke {m['luecke_bildpunkte']} px, nicht zusammenhängend "
+              f"{len(m['nicht_zusammenhaengend'])}, ohne Eintrag {len(m['ohne_eintrag'])}, "
+              f"zu klein {len(m['zu_klein'])}, sicher: nein {len(m['unsicher'])}, Kandidaten "
+              f"{len(m['kandidaten'])}, geschätzte Strecken {m['geschaetzt_strecken']}")
+    return 0
+
+
+def befehl_kante(a) -> int:
+    karte = dateien.lese_labels(a.labels)
+    bild = _rgb_bild(a.bild)
+    vorgaben = einstellungen.laden("kante", a.einstellungen)
+    try:
+        if a.trocken:
+            ergebnis = einrasten(bild, karte, a.a, a.b, vorgaben, band=a.band, bereich=a.bereich)
+        else:
+            if not a.segmente or not a.bearbeiter:
+                raise EingriffFehler("ohne --trocken sind --segmente und --bearbeiter nötig")
+            kat = kategorien.laden(a.kategorien)
+            arbeit = Bearbeitung(karte, dateien.lese_segmente(a.segmente), kat, a.bearbeiter)
+            ergebnis = arbeit.kante_einrasten(bild, a.a, a.b, vorgaben, band=a.band,
+                                              bereich=a.bereich)
+    except EingriffFehler as fehler:
+        print(f"abgelehnt, nichts geändert: {fehler}", file=sys.stderr)
+        return 1
+    print(json.dumps(ergebnis.als_dict(mit_punkten=False), ensure_ascii=False) if a.json
+          else ergebnis.als_text())
+    if a.bericht:
+        dateien.schreibe_json(a.bericht, ergebnis.als_dict())
+    if a.trocken:
+        print("trocken: nichts geschrieben")
+        return 0
+    dateien.schreibe_labels(a.labels, arbeit.karte)
+    dateien.schreibe_json(a.segmente, arbeit.segmente)
+    return _befund_ausgeben(pruefen(arbeit.karte, arbeit.segmente, kat), False)
+
+
 def parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="python -m landseg", description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -176,6 +254,41 @@ def parser() -> argparse.ArgumentParser:
     pr.add_argument("--mindestflaeche", type=int, help="kleinste erlaubte Segmentfläche")
     pr.add_argument("--json", action="store_true", help="Befund als JSON")
     pr.set_defaults(fn=befehl_pruefen)
+
+    an = befehle.add_parser("ansicht", help="W3: Standardbilder je Teilkachel und Segment")
+    quelle = an.add_mutually_exclusive_group(required=True)
+    quelle.add_argument("--bild", help="Bild der Teilkachel (PNG)")
+    quelle.add_argument("--manifest", help="manifest.json von kacheln (mit --teilkachel)")
+    an.add_argument("--teilkachel", help="ID der Teilkachel im Manifest, z. B. r0c0")
+    an.add_argument("--kern", type=_rechteck, help="Kern im Bild x,y,breite,hoehe (Rahmen)")
+    an.add_argument("--labels", help="Label-Karte; ohne nur roh, kontrast, gitter")
+    an.add_argument("--segmente", help="segmente.json (Klassen, sicher)")
+    an.add_argument("--kategorien", help="kategorien.json (Standard: die des Repos)")
+    an.add_argument("--kandidaten", help='JSON {"kandidaten": [{"id": .., "grund": ..}]}')
+    an.add_argument("--kante", help="Bericht von kante --bericht (geschätzte Strecken)")
+    an.add_argument("--ids", type=_ids, help="nur diese Segmente, z. B. 3,5,8")
+    an.add_argument("--nur-teilkachel", action="store_true", help="keine Bilder je Segment")
+    an.add_argument("--mindestflaeche", type=int, help="kleinere Segmente als Mangel zeigen")
+    an.add_argument("--einstellungen", help="JSON, überschreibt einstellungen/ansicht.json")
+    an.add_argument("--ziel", required=True, help="Ausgabeordner (unter daten/landseg/)")
+    an.set_defaults(fn=befehl_ansicht)
+
+    kn = befehle.add_parser("kante", help="W4: Grenze a|b auf die Bildkante einrasten "
+                                          "(schreibt zurück, außer --trocken)")
+    kn.add_argument("--labels", required=True)
+    kn.add_argument("--bild", required=True, help="Bild der Teilkachel (gleiche Größe)")
+    kn.add_argument("--segmente", help="segmente.json (nötig ohne --trocken)")
+    kn.add_argument("--kategorien", help="kategorien.json (Standard: die des Repos)")
+    kn.add_argument("--bearbeiter", help="wer eingreift (Verlauf; nötig ohne --trocken)")
+    kn.add_argument("--a", type=int, required=True, help="Segment auf der einen Seite")
+    kn.add_argument("--b", type=int, required=True, help="Segment auf der anderen Seite")
+    kn.add_argument("--band", type=int, help="halbe Bandbreite in px (Standard aus Einstellungen)")
+    kn.add_argument("--bereich", type=_punkte, help="nur hier einrasten: Polygon x,y;x,y;...")
+    kn.add_argument("--einstellungen", help="JSON, überschreibt einstellungen/kante.json")
+    kn.add_argument("--bericht", help="Ergebnis mit allen Punkten der Strecken als JSON")
+    kn.add_argument("--trocken", action="store_true", help="nur melden, nichts schreiben")
+    kn.add_argument("--json", action="store_true", help="Meldung als JSON")
+    kn.set_defaults(fn=befehl_kante)
 
     e = befehle.add_parser("eingriff", help="W5: Label-Karte bearbeiten (schreibt zurück)")
     e.add_argument("--labels", required=True)
@@ -228,7 +341,8 @@ def main(argv: list[str] | None = None) -> int:
     a = parser().parse_args(argv)
     try:
         return a.fn(a)
-    except (KachelFehler, VorstufeFehler, ZusammenFehler, ValueError, OSError, KeyError) as fehler:
+    except (KachelFehler, VorstufeFehler, AnsichtFehler, ZusammenFehler, ValueError, OSError,
+            KeyError) as fehler:
         print(f"Fehler: {fehler}", file=sys.stderr)
         return 2
 

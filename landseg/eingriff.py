@@ -237,6 +237,26 @@ class Bearbeitung:
                                  {"von": von, "nach": nach, "flaeche": np.asarray(flaeche).tolist()},
                                  ergebnis)
 
+    def kante_einrasten(self, bild: np.ndarray, a: int, b: int, vorgaben: dict,
+                        band: int | None = None, bereich: Punkte | None = None):
+        """W4: Grenze zwischen ``a`` und ``b`` im engen Band auf die Bildkante einrasten.
+
+        Gibt das ``KantenErgebnis`` zurück (mit den geschätzten Strecken); der Verlauf führt sie
+        ohne Einzelpunkte.
+        """
+        from .kante import einrasten  # kante baut auf eingriff auf
+
+        a, b = int(a), int(b)
+        eintraege = self._eintraege()
+        self._segment(eintraege, a)
+        self._segment(eintraege, b)
+        ergebnis = einrasten(bild, self.karte, a, b, vorgaben, band=band, bereich=bereich)
+        parameter = {"a": a, "b": b, "band": ergebnis.band, "kante_min": ergebnis.kante_min,
+                     "bereich": None if bereich is None else np.asarray(bereich).tolist()}
+        self._uebernehmen(ergebnis.karte, eintraege, "kante", parameter,
+                          ergebnis.als_dict(mit_punkten=False))
+        return ergebnis
+
     def klasse_setzen(self, sid: int, klasse: str) -> dict:
         sid = int(sid)
         eintraege = self._eintraege()
