@@ -46,6 +46,9 @@ def schreibe(pfad: Path, daten: bytes):
     pfad.write_bytes(daten)
 
 
+SEITEN = {"ANLEITUNG.md": b"# Anleitung\n", "CLAUDE.md": b"# Claude\n"}
+
+
 def ausfuehren(*argv) -> tuple[int, str]:
     puffer = io.StringIO()
     with redirect_stdout(puffer):
@@ -100,13 +103,15 @@ class GesamtProjektTest(unittest.TestCase):
         self.assertEqual(git(ziel, "config", "core.autocrlf").strip(), "false")
         self.assertEqual(git(ziel, "remote", "get-url", "origin").strip(), "https://beispiel.invalid/landseg-t0.git")
         self.assertEqual(git(ziel, "cat-file", "-t", alt).strip(), "commit")
-        for pfad in ("README.md", "ANLEITUNG.md", "programm/landseg/__init__.py", "unterlagen/README.md",
+        for pfad in ("README.md", "ANLEITUNG.md", "CLAUDE.md", "programm/landseg/__init__.py", "unterlagen/README.md",
                      "ergebnisse/manifest.json", "daten/landseg/T0/kern500/a.bin", "daten/luftbilder/README.md"):
             self.assertTrue((ziel / pfad).is_file(), pfad)
         for pfad in ("landseg", "T0", "kategorien.json", "wuensche/.stand.json", "wuensche/2026-01-01-a/roh",
                      "wuensche/2026-01-01-a/einreihen-landseg.json", "daten/landseg/uebergabe"):
             self.assertFalse((ziel / pfad).exists(), pfad)
         self.assertEqual((ziel / "wuensche/2026-01-01-a.md").read_bytes(), b"# Wunsch\r\nZeile mit CRLF\r\n")
+        self.assertEqual((ziel / "CLAUDE.md").read_bytes(), (REPO / "gesamt/CLAUDE.md").read_bytes().replace(b"\r\n", b"\n"))
+        self.assertIn("ergebnisse/T0.html", (ziel / "CLAUDE.md").read_text(encoding="utf-8"))
         self.assertIn(hashlib.sha256(b"abc").hexdigest(), (ziel / "daten/luftbilder/README.md").read_text(encoding="utf-8"))
         commits = git(ziel, "rev-list", "--count", "HEAD").strip()
         self.klartext_in_neuen_commits(ziel, f"{alt}..HEAD")
@@ -134,9 +139,40 @@ class GesamtProjektTest(unittest.TestCase):
         self.assertIn("fehlend 0, abweichend 0, fremd 0", text)
         self.assertIn("laut Durchsicht weggelassen 1", text)
         self.assertIn("Luftbilder nicht geprüft", text)
+        self.assertIn("Verbotene Pfade: 0", text)
+
+        git(ziel, "rm", "-q", "CLAUDE.md")
+        git(ziel, "commit", "-q", "-m", "ohne CLAUDE.md")
+        code, text = ausfuehren("pruefen", "--basis", str(basis), "--ziel", str(ziel))
+        self.assertEqual(code, 1, text)
+        self.assertIn("fehlend: CLAUDE.md", text)
+        self.assertIn("Pfade in CLAUDE.md: CLAUDE.md fehlt", text)
+
+    def test_pfade_in_readme_anleitung_und_claude(self):
+        ziel = repo(self.ort / "ziel", {
+            ".gitattributes": b"* -text\n",
+            "README.md": b"Siehe `ergebnisse/T0.html` und [Anleitung](ANLEITUNG.md).\n",
+            "ANLEITUNG.md": (b"`python -B -m landseg pruefen` mit `../ergebnisse/a/labels.tif`, "
+                             b"`daten/luftbilder/orthofoto/bild.tif`, `<A>/x.tif`, `arbeit/T0`\n"),
+            "CLAUDE.md": b"`cmd //c start \"\" \"ergebnisse\\T0.html\"` und `ergebnisse\\T0.html`\n",
+            "ergebnisse/T0.html": b"<html></html>\n",
+            "ergebnisse/a/labels.tif": b"x",
+        })
+        code, text = ausfuehren("pruefen", "--ziel", str(ziel))
+        self.assertEqual(code, 0, text)
+        self.assertIn("Pfade in README.md: alle vorhanden (2)", text)
+        self.assertIn("Pfade in ANLEITUNG.md: alle vorhanden (1)", text)
+        self.assertIn("Pfade in CLAUDE.md: alle vorhanden (1)", text)
+        (ziel / "ergebnisse/T0.html").unlink()
+        code, text = ausfuehren("pruefen", "--ziel", str(ziel))
+        self.assertEqual(code, 1, text)
+        self.assertIn("Pfade in CLAUDE.md: 1 von 1 fehlen\n  fehlt: ergebnisse/T0.html", text)
+        (ziel / "ANLEITUNG.md").unlink()
+        code, text = ausfuehren("pruefen", "--ziel", str(ziel))
+        self.assertIn("Pfade in ANLEITUNG.md: ANLEITUNG.md fehlt", text)
 
     def test_groessen_warnung_ab_50_und_fehler_ab_100_mb(self):
-        ziel = repo(self.ort / "ziel", {"README.md": b"# Projekt\n", ".gitattributes": b"* -text\n"})
+        ziel = repo(self.ort / "ziel", {"README.md": b"# Projekt\n", ".gitattributes": b"* -text\n", **SEITEN})
         for name, mb in (("mittel.bin", 60), ("riesig.bin", 101)):
             with (ziel / name).open("wb") as datei:
                 datei.truncate(mb * GP.MB)
@@ -157,12 +193,12 @@ class GesamtProjektTest(unittest.TestCase):
                    f"| `a/eins.tif` | 3 | `{hashlib.sha256(b'abc').hexdigest()}` |\n"
                    f"| `a/zwei.tif` | 3 | `{hashlib.sha256(b'xyz').hexdigest()}` |\n")
         ziel = repo(self.ort / "ziel", {"README.md": b"Siehe `daten/luftbilder/README.md`.\n",
-                                        ".gitattributes": b"* -text\n",
+                                        ".gitattributes": b"* -text\n", **SEITEN,
                                         "daten/luftbilder/README.md": tabelle.encode("utf-8")})
         code, text = ausfuehren("pruefen", "--ziel", str(ziel))
         self.assertEqual(code, 0, text)
         self.assertIn("Luftbilder nicht geprüft", text)
-        self.assertIn("README-Pfade: alle vorhanden (1)", text)
+        self.assertIn("Pfade in README.md: alle vorhanden (1)", text)
         bilder = self.ort / "bilder"
         schreibe(bilder / "a/eins.tif", b"abc")
         code, text = ausfuehren("pruefen", "--ziel", str(ziel), "--luftbilder", str(bilder))
@@ -185,6 +221,7 @@ class GesamtProjektTest(unittest.TestCase):
         ziel = repo(self.ort / "ziel", {
             "wuensche/a.md": "Bezug: kundenservice@bev.gv.at\nPython: C:/Users/Phil/x/python.exe\n".encode("utf-8"),
             "bild.png": b"\x89PNG\0nai@x.de",
+            "wuensche/b/durchsicht-final.md": b"| `x.py` | 3 | email | `test@beispiel.invalid` | privat, NAI |\n",
         })
         bericht = self.ort / "durchsicht.md"
         code, text = ausfuehren("durchsicht", "--ziel", str(ziel), "--bericht", str(bericht))
@@ -193,6 +230,7 @@ class GesamtProjektTest(unittest.TestCase):
         self.assertIn("| `wuensche/a.md` | 1 | email | `kundenservice@bev.gv.at` | behalten |", inhalt)
         self.assertIn("| `wuensche/a.md` | 2 | kontopfad |", inhalt)
         self.assertNotIn("bild.png", inhalt)
+        self.assertIn("| `wuensche/b/durchsicht-final.md` | 1 | email | `test@beispiel.invalid` | behalten | Berichte früherer Durchsichten", inhalt)
 
         schreibe(ziel / "wuensche/b.md", f"Kontakt jemand@beispiel.de\ntoken = {geheim}\n".encode("utf-8"))
         git(ziel, "add", "-A")

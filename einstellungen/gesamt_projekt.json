@@ -15,7 +15,8 @@
   ],
   "seiten": {
     "README.md": "gesamt/README.md",
-    "ANLEITUNG.md": "gesamt/ANLEITUNG.md"
+    "ANLEITUNG.md": "gesamt/ANLEITUNG.md",
+    "CLAUDE.md": "gesamt/CLAUDE.md"
   },
   "luftbilder": {
     "quelle": "daten/README.md",
@@ -27,13 +28,14 @@
   "gitignore": "__pycache__/\n*.pyc\n.venv/\n# Original-Luftbilder kommen getrennt; hier nur ihre Beschreibung versionieren\n/daten/luftbilder/*\n!/daten/luftbilder/README.md\n# eigene Rechnungen nach der Anleitung\n/arbeit/\n",
   "verboten": [
     ".claude/**",
-    "CLAUDE.md",
     "daten/luftbilder/**",
     "daten/landseg/uebergabe/**",
     "wuensche/**/roh/**",
     "wuensche/.stand.json"
   ],
   "erlaubt": ["daten/luftbilder/README.md"],
+  "pfad_seiten": ["README.md", "ANLEITUNG.md", "CLAUDE.md"],
+  "pfade_ohne": ["daten/luftbilder/*/**"],
   "readme_wurzeln": ["README.md", "ANLEITUNG.md", "programm", "unterlagen", "wuensche", "daten", "ergebnisse"],
   "groesse": {"warnung_mb": 50, "grenze_mb": 100},
   "durchsicht": {
@@ -72,8 +74,7 @@
     },
     "regeln": [
       {"art": "*", "behandlung": "behalten", "dateien": ["programm/tools/gesamt_projekt.py", "programm/tests/test_gesamt_projekt.py", "programm/einstellungen/gesamt_projekt.json"],
-       "grund": "Werkzeug der Durchsicht selbst: Suchmuster, Regeln und erfundene Testwerte (Zugangsdaten gelten trotzdem als Fehler)"},
-      {"art": "wunsch_system", "behandlung": "entfernen", "dateien": ["wuensche/.laeufe.json", "wuensche/**/profile-vorher.json", "wuensche/**/einreihen-*.json"],
+       "grund": "Werkzeug der Durchsicht selbst: Suchmuster, Regeln und erfundene Testwerte (Zugangsdaten gelten trotzdem als Fehler)"},      {"art": "wunsch_system", "behandlung": "entfernen", "dateien": ["wuensche/.laeufe.json", "wuensche/**/profile-vorher.json", "wuensche/**/einreihen-*.json"],
        "grund": "Buchführung des Wunsch-Systems (Laufzähler, Prüfsummen der Profile, Protokolle des Einreihens): zum Nachvollziehen ohne Wert"},
       {"art": "bereich", "behandlung": "entfernen", "dateien": ["wuensche/2026-11-17-landseg-methode/einheiten/e05.md", "wuensche/2026-11-17-landseg-methode/gegenpruefung/e05.md"],
        "grund": "ausführliche Auswertung einer Arbeitssitzung im Bereich nai (Repo stitcher: Abläufe, Aufträge, Agent-Namen, Pfade in deren Protokolle); das Ergebnis für die Landschaft steht in bericht.md und plan.md"},
@@ -94,7 +95,9 @@
       {"art": "wunsch_system", "behandlung": "behalten",
        "grund": "Erwähnung des Wunsch-Systems als Herkunft der Wünsche und Berichte (Arbeitsweise); keine Inhalte des Systems selbst"},
       {"art": "kontopfad", "behandlung": "behalten",
-       "grund": "Ablageort auf dem Rechner, auf dem gerechnet wurde (Kontoname des Projektpartners, kein Geheimnis); im Projekt entspricht BASIS dem Projektordner"}
+       "grund": "Ablageort auf dem Rechner, auf dem gerechnet wurde (Kontoname des Projektpartners, kein Geheimnis); im Projekt entspricht BASIS dem Projektordner"},
+      {"art": "*", "behandlung": "behalten", "dateien": ["wuensche/**/durchsicht*.md"],
+       "grund": "Berichte früherer Durchsichten: zitieren die schon beurteilten Fundstellen samt Grund (Zugangsdaten darin geschwärzt und trotzdem ein Fehler)"}
     ]
   }
 }
