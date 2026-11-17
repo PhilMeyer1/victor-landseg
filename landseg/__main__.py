@@ -1,7 +1,8 @@
 """Befehlszeile: ``python -m landseg <befehl> ...`` (im Repo-Ordner).
 
-Befehle: ``kacheln`` (W1), ``eingriff`` (W5), ``pruefen`` (W6). Exit-Code 0 = ok, 1 = Befund oder
-Eingriff abgelehnt, 2 = Aufruf- oder Lesefehler.
+Befehle: ``kacheln`` (W1), ``eingriff`` (W5), ``pruefen`` (W6), ``zusammentragen`` (W7), ``naht``
+(Nahtregel allein). Exit-Code 0 = ok, 1 = Befund, Nahtverstoß oder Eingriff abgelehnt, 2 = Aufruf-
+oder Lesefehler.
 """
 
 from __future__ import annotations
@@ -13,10 +14,11 @@ from pathlib import Path
 
 from PIL import Image
 
-from . import dateien, kategorien
+from . import dateien, kategorien, naht
 from .eingriff import Bearbeitung, EingriffFehler
 from .kacheln import KachelFehler, kacheln
 from .pruefen import pruefen
+from .zusammentragen import ZusammenFehler, lese_auftrag, zusammentragen
 
 
 def _punkte(text: str) -> list[list[int]]:
@@ -93,6 +95,26 @@ def befehl_eingriff(a) -> int:
     return _befund_ausgeben(pruefen(arbeit.karte, arbeit.segmente, kat), False)
 
 
+def befehl_zusammentragen(a) -> int:
+    ergebnis = zusammentragen(a.datei, kategorien.laden(a.kategorien), ziel=a.ziel)
+    print(json.dumps(ergebnis.als_dict(), ensure_ascii=False) if a.json else ergebnis.als_text())
+    return 0 if ergebnis.ok else 1
+
+
+def befehl_naht(a) -> int:
+    manifest_pfad = Path(a.manifest)
+    manifest = dateien.lese_json(manifest_pfad)
+    werte, bestaetigt = None, None
+    if a.datei:
+        auftrag = lese_auftrag(a.datei)
+        werte, bestaetigt = auftrag.get("naht"), auftrag.get("naht_bestaetigt")
+    bild = naht.lese_bild(manifest_pfad.parent / manifest["ausschnitt"]["bild"])
+    befund = naht.pruefe_naehte(dateien.lese_labels(a.labels), manifest, bild, werte, bestaetigt)
+    print(json.dumps(befund.als_dict(), ensure_ascii=False) if a.json else
+          "\n".join(befund.als_text() + ["ok" if befund.ok else "FEHLER"]))
+    return 0 if befund.ok else 1
+
+
 def parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="python -m landseg", description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -149,6 +171,20 @@ def parser() -> argparse.ArgumentParser:
     o = ops.add_parser("stapel", help='JSON {"schritte": [{"op": ...}, ...]}, alles oder nichts')
     o.add_argument("--datei", required=True)
     e.set_defaults(fn=befehl_eingriff)
+
+    z = befehle.add_parser("zusammentragen", help="W7: Teilkacheln zur Label-Karte des Ausschnitts, Nähte prüfen")
+    z.add_argument("--datei", required=True, help="Auftrag zusammentragen.json (Einheiten, Nutzerklassen, Fragen)")
+    z.add_argument("--kategorien", help="kategorien.json (Standard: die des Repos)")
+    z.add_argument("--ziel", help="Ausgabeordner (Standard: Feld 'ziel' des Auftrags)")
+    z.add_argument("--json", action="store_true", help="Ergebnis als JSON")
+    z.set_defaults(fn=befehl_zusammentragen)
+
+    n = befehle.add_parser("naht", help="Nahtregel auf einer zusammengetragenen Label-Karte prüfen")
+    n.add_argument("--manifest", required=True, help="manifest.json von kacheln")
+    n.add_argument("--labels", required=True, help="Label-Karte des ganzen Ausschnitts")
+    n.add_argument("--datei", help="Auftrag zusammentragen.json (Einstellungen 'naht', 'naht_bestaetigt')")
+    n.add_argument("--json", action="store_true", help="Befund als JSON")
+    n.set_defaults(fn=befehl_naht)
     return p
 
 
@@ -159,7 +195,7 @@ def main(argv: list[str] | None = None) -> int:
     a = parser().parse_args(argv)
     try:
         return a.fn(a)
-    except (KachelFehler, ValueError, OSError, KeyError) as fehler:
+    except (KachelFehler, ZusammenFehler, ValueError, OSError, KeyError) as fehler:
         print(f"Fehler: {fehler}", file=sys.stderr)
         return 2
 

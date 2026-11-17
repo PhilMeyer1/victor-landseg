@@ -15,10 +15,14 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `landseg/kacheln.py` | W1 `kacheln`: Arbeitsausschnitt aus einem Luftbild, Teilkacheln (Kern + Kontextrand), Manifest mit Georeferenz |
 | `landseg/eingriff.py` | W5 `eingriff`: Bearbeiten der Label-Karte (verschmelzen, teilen, Grenze verschieben, Klasse setzen, Polygon zuweisen), immer lückenlos, mit Verlauf |
 | `landseg/pruefen.py` | W6 `pruefen`: Wächter der Lückenlosigkeit (H × W ohne 0, Zusammenhang je Segment, gültige Klassen) |
+| `landseg/zusammentragen.py` | W7 `zusammentragen`: Abgaben der Teilkacheln (je Teilkachel die letzte Runde, nur der Kern) zur Label-Karte des Ausschnitts; Einheiten, Klassen des Nutzers und offene Fragen aus einem JSON-Auftrag |
+| `landseg/naht.py` | Nahtregel: an jeder Kerngrenze gleiche ID oder echte Bildkante, gleiche Klasse |
+| `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht) mit Platzhaltern, erklärt in `vorlagen/README.md` |
+| `.claude/skills/landseg-agent/SKILL.md` | Agent-Skill mit den Arbeitsregeln für diese Aufträge |
 | `landseg/kategorien.py`, `landseg/dateien.py` | Kategorienliste laden; Lesen und Schreiben von Label-Karte, `segmente.json`, Manifest |
 | `tests/` | Tests (Python-Standardmodul `unittest`, synthetische Bilder und Label-Karten) |
 
-Die übrigen Werkzeuge (Vorstufe, Ansicht, Kante, Zusammentragen, Prüfseite, Auftragsvorlagen) folgen.
+Die übrigen Werkzeuge (Vorstufe, Ansicht, Kante, Prüfseite) folgen.
 
 ## Umgebung
 
@@ -93,6 +97,67 @@ Koordinaten sind Bildpunkte der Label-Karte (`x` Spalte, `y` Zeile). Ein Eingrif
 Segment-Nummern auf vorhandene Bildpunkte um, Lücken entstehen also nie. Ist er nicht ausführbar
 (Segmente nicht benachbart, Linie trennt nicht, Klasse unbekannt), bleibt alles unverändert. Danach
 läuft `pruefen` von selbst und meldet den Befund.
+
+### zusammentragen
+
+```
+PY -m landseg zusammentragen --datei <ordner>/zusammentragen.json
+```
+
+Der Auftrag `zusammentragen.json` (Pfade relativ zu seinem Ordner) nennt alles Fallbezogene:
+
+```
+{"schema": "landseg-zusammentragen/1",
+ "manifest": "manifest.json",
+ "ausgang": "vorstufe/segmente.json",
+ "einheiten": [{"teilkachel": "r0c0", "labels": "umsetzen/r0c0/labels.tif",
+                "segmente": "umsetzen/r0c0/segmente.json", "runde": 0, "name": "ums-r0c0"}],
+ "nutzerklassen": [{"id": 17, "klasse": "3.1.1", "kommentar": "Einzelbaum"}],
+ "fragen": [{"id": "F1", "text": "Weg oder Feldrain?", "segmente": [17]}],
+ "naht": {"kante_schwelle": 25, "kante_band": 1, "mindestlaenge": 1},
+ "naht_bestaetigt": [{"naht": "r0c0|r0c1", "ids": [3, 7], "grund": "Feldgrenze, kaum Farbsprung"}],
+ "ziel": "zusammen"}
+```
+
+- `einheiten`: je Teilkachel eine Abgabe; gibt es mehrere, gilt die mit der höchsten `runde`
+  (Korrekturrunden). Die Label-Karte hat die Größe des Teilkachelbilds (dann zählt nur der Kern)
+  oder nur des Kerns. Eine Teilkachel ohne Einheit bleibt leer und fällt in `pruefen` als Lücke auf.
+- `ausgang` (wahlweise): `segmente.json` der Vorstufe; deren IDs gelten als global. Eine andere ID,
+  die mehrere Teilkacheln neu vergeben haben, bekommt außer in der ersten eine neue Nummer
+  (`umbenannt`). Ohne `ausgang` gelten alle IDs als global.
+- `nutzerklassen`: Klassen, die der Nutzer festgelegt hat; sie gehen allem vor und entscheiden
+  auch einen Klassenkonflikt an der Naht. `fragen`: offene Fragen für die Prüfseite; das Ergebnis
+  ergänzt je Frage die Lage (`bbox` [x0, y0, x1, y1] im Ausschnitt).
+- `naht`, `naht_bestaetigt` (wahlweise): Einstellungen der Nahtregel und Grenzen, die ein
+  Bearbeiter am Bild als echt bestätigt hat.
+
+Ergebnis im Ordner `ziel`: `labels.tif` (ganzer Ausschnitt), `segmente.json` (je Segment mit
+`teilkacheln`, dazu `fragen` und `verlauf`) und `naht.json` (Nahtbefund, Klassenkonflikte,
+Umbenennungen, Mängel, Befund von `pruefen`). Die Ausgabe endet mit `Zusammentragen ok` oder
+`Zusammentragen FEHLER`; dann Exit-Code 1, die Dateien werden trotzdem geschrieben (der Naht-Agent
+braucht sie). `--ziel` schreibt woandershin, `--json` gibt das Ergebnis maschinenlesbar aus.
+
+**Nahtregel.** An jeder Kerngrenze zweier Nachbarkacheln stehen sich je Position zwei Bildpunkte
+gegenüber. Sie tragen dieselbe ID, oder zwischen ihnen liegt eine echte Bildkante (Farbsprung von
+mindestens `kante_schwelle`, gesucht bis `kante_band` Bildpunkte neben der Grenze). Sonst ist es ein
+Verstoß `ohne_kante` (zwei Bearbeiter haben dieselbe Fläche verschieden zugeordnet, oder die Grenze
+ist nur die Gerade der Kachelung). Eine ID, die in zwei Teilkacheln vorkommt, muss dort dieselbe
+Klasse haben, sonst Verstoß `klasse`. Strecken kürzer als `mindestlaenge` zählen nicht.
+
+### naht
+
+```
+PY -m landseg naht --manifest <manifest.json> --labels <labels.tif des Ausschnitts> [--datei zusammentragen.json]
+```
+
+Prüft nur den ID-Teil der Nahtregel auf einer schon zusammengetragenen Label-Karte, etwa nach einem
+Eingriff des Naht-Agents; `--datei` liefert Einstellungen und bestätigte Grenzen.
+
+## Auftragsvorlagen
+
+`vorlagen/urteil.md`, `umsetzen.md`, `korrektur.md`, `naht.md`: Aufträge für Agents mit Platzhaltern
+`{{NAME}}` (Liste in `vorlagen/README.md`), ohne Pfade dieses Rechners. Die Regeln, die für alle
+gelten, stehen im Skill `.claude/skills/landseg-agent/SKILL.md`.
 
 ## Tests
 
