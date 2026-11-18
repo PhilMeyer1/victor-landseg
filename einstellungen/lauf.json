@@ -1,0 +1,13 @@
+{
+  "beschreibung": "vorbereiten und zusammenfuehren: wie die Fassungen eines Agent-Laufs entstehen. Kennung, Name, Ordner und Kategorienliste jeder Fassung stehen nur in einstellungen/seite.json (fassungen); hier je Kennung nur: art (frei = eigene Karte je Teilkachel unter <ordner>/<ergebnis>/<teilkachel>/, Liste aus <ordner>/<vereinheitlichung>/kategorien-entwurf.json mit abbildung_teilkacheln, IDs + (Nummer der Teilkachel + 1) * id_versatz; urteil = Urteile auf einer Kopie der Vorstufe in <ordner>/<teilkachel>/, Urteile unter <ordner>/<ergebnis>/<teilkachel>/v<n>/urteil.json), klassen (nur art urteil: fest = Liste des Repos, Klasse = klasse_vorschlag sonst klasse_heute; frei = eigene Namen, Codes aus <ordner>/<vereinheitlichung>/codes.json, Liste aus kategorien-entwurf.json daneben), kontext_aussen (Klasse des Kontextrands außerhalb des Ausschnitts: vorstufe oder ein Code der Liste), ansicht (art frei: Ordner der Standardbilder der Vorstufe). einheit: viertel (ein Auftrag je Viertel für Fassungen mit art urteil; plan kennt nur diese). gegenprobe: Zweitagent auf einer Teilkachel einer Fassung mit eigener Kartenkopie <ordner>/<karte>/<teilkachel>/ und Urteilen unter <ordner>/<ergebnis>/ (null = keine). ordner: Unterordner der Daten des Ausschnitts (Vorstufe, Gesamtbilder, Viertelbilder). bilder: Umgebung (Bildpunkte der Teilkachel) und Vergrößerung der vorbereiteten Bilder, JPEG-Qualität. einigung: Unterordner von --ziel für die Bündel aus einigung finden (Bündelgröße: einstellungen/einigung.json).",
+  "einheit": "viertel",
+  "fassungen": [
+    {"kennung": "A", "art": "frei", "ergebnis": "abgabe", "ansicht": "ansicht", "vereinheitlichung": "vereinheitlichung", "id_versatz": 100000},
+    {"kennung": "B", "art": "urteil", "klassen": "frei", "ergebnis": "urteil", "vereinheitlichung": "vereinheitlichung", "kontext_aussen": "0"},
+    {"kennung": "C", "art": "urteil", "klassen": "fest", "ergebnis": "urteil", "kontext_aussen": "vorstufe"}
+  ],
+  "gegenprobe": {"fassung": "C", "teilkachel": "r0c0", "karte": "gegenprobe", "ergebnis": "urteil-gegenprobe"},
+  "ordner": {"vorstufe": "vorstufe", "ganz": "ganz", "viertel": "viertel"},
+  "bilder": {"viertel_rand": 32, "viertel_faktor": 3, "nah_rand": 12, "nah_faktor": 6, "ganz_faktor": 2, "jpeg_qualitaet": 92},
+  "einigung": "einigung"
+}

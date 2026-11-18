@@ -35,6 +35,15 @@ class VorlagenTest(unittest.TestCase):
                 for alt in ("nacheinander", "bist das du selbst"):
                     self.assertNotIn(alt, text)
 
+    def test_vorlagen_von_vorbereiten(self):
+        erklaert = set(PLATZHALTER.findall((VORLAGEN / "README.md").read_text(encoding="utf-8")))
+        for name in ("urteil-viertel", "frei", "vereinheitlichen-urteil", "vereinheitlichen-frei", "abschnitte"):
+            with self.subTest(vorlage=name):
+                text = (VORLAGEN / f"{name}.md").read_text(encoding="utf-8")
+                self.assertEqual(set(PLATZHALTER.findall(text)) - erklaert, set())
+                self.assertIsNone(ABSOLUT.search(text))
+                self.assertNotIn("{{{", text)
+
     def test_skill_mit_kopf_und_regeln(self):
         text = SKILL.read_text(encoding="utf-8")
         self.assertTrue(text.startswith("---\nname: landseg-agent\ndescription: "))

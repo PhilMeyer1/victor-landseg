@@ -18,7 +18,7 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `vorstufe.json` | Einstellungen der Vorstufe: Superpixel-Größe, SAM-3-Modell und -Schwellen, Texte je Kategorie, Schwellen für `sicher` und die Kandidaten, Siedlungszone für `im_siedlung` (Abschnitt `siedlung`) |
 | `landseg/ansicht.py` | W3 `ansicht`: Standardbilder je Teilkachel und je Segment (roh, umriss, maengel, vorschlag, nah, paar, kontrast, gitter) mit Verzeichnis `ansicht.json` |
 | `landseg/kante.py` | W4 `kante`: Grenze zweier Nachbarsegmente im engen Band auf die Bildkante einrasten; Strecken ohne Bildkante bleiben stehen und werden als „geschätzt“ gemeldet |
-| `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`, `einigung.json`, `zoom.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
+| `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`, `einigung.json`, `zoom.json`, `lauf.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
 | `landseg/eingriff.py` | W5 `eingriff`: Bearbeiten der Label-Karte (verschmelzen, teilen, Grenze verschieben, Klasse setzen, Polygon zuweisen), immer lückenlos, mit Verlauf |
 | `landseg/pruefen.py` | W6 `pruefen`: Wächter der Lückenlosigkeit (H × W ohne 0, Zusammenhang je Segment, gültige Klassen) |
 | `landseg/zusammentragen.py` | W7 `zusammentragen`: Abgaben der Teilkacheln (je Teilkachel die letzte Runde, nur der Kern) zur Label-Karte des Ausschnitts; Einheiten, Klassen des Nutzers und offene Fragen aus einem JSON-Auftrag |
@@ -27,6 +27,7 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `landseg/einigung.py` | `einigung`: Klassen an den Übergängen der Teilkacheln abgleichen (`finden`: offene Stellen bündeln, je Bündel Agent-Auftrag mit Bildern beider Seiten; `anwenden`: Abgaben umsetzen, nur Klassen und Vermerke; `abgabe`: `einigung_abgabe.json` aus der kurzen Liste eines Agents bauen und prüfen; `messen`: Stellen gleicher Fläche mit verschiedener Klasse, offen/unsicher/geklärt); Einstellungen `einstellungen/einigung.json` |
 | `landseg/urteil.py` | `urteil`: `urteil.json` eines Urteils-Agents aus einer kurzen Liste bauen (`bauen`) und prüfen (`pruefen`), je Teilkachel oder Viertel |
 | `landseg/plan.py` | `plan`: Urteils-Agents eines Laufs aus der Auftragsliste der Vorbereitung bilden: ein Agent je Viertel (B, C, Gegenprobe), Fassung A je Teilkachel, je Agent genau ein Auftrag und sein Prompt aus `vorlagen/agent-urteil-*.md` |
+| `landseg/vorbereiten.py`, `landseg/zusammenfuehren.py`, `landseg/lauf.py`, `einstellungen/lauf.json` | `vorbereiten` und `zusammenfuehren`: Vorbereitung der Urteile (Kartenkopien, Bilder, Aufträge aus den Vorlagen, Plan) und Zusammenführen der Urteile zu Karten, Listen und Einigungsbündeln; die Fassungstabelle steht in `einstellungen/seite.json`, `lauf.json` sagt je Fassung nur, wie sie im Lauf entsteht |
 | `landseg/zoom.py` | `zoom`: Ausschnitt einer Stelle (Punkt mit Radius, Rechteck, Segmente) vergrößert, mit Umriss und Segmentnummern, auf Wunsch neben dem Luftbild (JPEG); Einstellungen `einstellungen/zoom.json` |
 | `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht, Einigung) und Prompts der Urteils-Agents (`agent-urteil-viertel.md`, `agent-urteil-teilkachel.md`) mit Platzhaltern, erklärt in `vorlagen/README.md` |
 | `.claude/skills/landseg-agent/SKILL.md` | Agent-Skill mit den Arbeitsregeln für diese Aufträge |
@@ -241,6 +242,75 @@ nichts geschrieben (Trockenlauf). `--teilkachel`/`--viertel` grenzen den Plan ei
 weg). Die Quittung je Agent bleibt `teile` mit einem Eintrag; Nachholen, Vereinheitlichen, Nähte und Einigung
 arbeiten mit dem Ergebnis je Viertel wie bisher. Die vier Agents einer Teilkachel teilen sich die Karte zum
 Nachsegmentieren; `eingriff` und `kante` schreiben darauf nacheinander (Sperre, siehe „eingriff“).
+
+### vorbereiten
+
+```
+PY -B -m landseg vorbereiten --manifest <daten>/manifest.json --ziel <Berichtsordner> [--hinweis <hinweis.md>] [--lauf <Name>] [--py <Python der Agents>] [--einstellungen <lauf.json>] [--seite <seite.json>] [--ersetzen] [--nur-pruefen] [--json]
+```
+
+Baut alles, was die Urteils-Agents eines Laufs brauchen, aus dem Manifest, der fertigen Vorstufe
+(`<daten>/vorstufe/<tk>/labels.tif`, `segmente.json`, `kandidaten.json`; die GPU-Vorstufe bleibt der eigene Befehl
+`vorstufe`, `vorbereiten` prüft nur, dass sie für jede Teilkachel da ist) und den Vorlagen:
+
+- unter `<daten>`: `ganz/<Ausschnitt>_raster.jpg`, je Teilkachel `ganz/<tk>/` (`ganz_roh.jpg`, `ganz_nummern.jpg`
+  mit Vierteln, `ganz.json`) und `viertel/<tk>/v<n>/` (Übersicht `uebersicht_nummern|roh|vorschlag|maengel|kontrast|gitter.jpg`,
+  Nahansichten `nah1.jpg`–`nah4.jpg` als Paar, `viertel.json` mit Fenstern und Segmentliste); je Fassung die Marke
+  `fassung.json`; für Fassungen mit Urteil Kopien der Vorstufe nach `<ordner>/<tk>/` (Gegenprobe:
+  `<ordner>/gegenprobe/<tk>/`), auf denen die Agents nachsegmentieren; für die freie Fassung die Ansichten
+  `<ordner>/ansicht/<tk>/`; leere Ergebnisordner (`urteil/<tk>/v<n>/`, `urteil-gegenprobe/…`, `abgabe/<tk>/`,
+  `vereinheitlichung/`);
+- unter `--ziel`: `auftraege/<art>/<tk>/v<n>/auftrag.md` (B, C, Gegenprobe `z`; Vorlage `vorlagen/urteil-viertel.md`),
+  `auftraege/a/<tk>/auftrag.md` (`vorlagen/frei.md`), `auftraege/<art>/vereinheitlichen.md` für Fassungen mit freien
+  Klassen (`vorlagen/vereinheitlichen-urteil.md`, `vereinheitlichen-frei.md`) und den Plan `auftraege.json`
+  (`landseg-auftraege/1`, Eingabe von `plan`: `einheiten`, `viertel`, `gegenprobe`, `vereinheitlichen`, `fassungen`,
+  Übersichtsbilder, `kernsegmente`).
+
+`--hinweis` setzt eine Markdown-Datei als „Hinweis des Laufs“ in jeden Auftrag (etwa die Eigenheiten eines
+Schwarz-Weiß-Scans), sonst „keiner“. Danach prüft der Befehl sich selbst und endet mit Exit 1 und je Verletzung einer
+Zeile, wenn ein Kernsegment nicht in genau einem Viertel-Auftrag je Fassung steht, ein Platzhalter `{{…}}` übrig
+bleibt, ein genanntes Bild oder ein Ergebnisordner fehlt oder eine Kartenkopie nicht bildpunktgleich zur Vorstufe ist;
+`--nur-pruefen` prüft eine fertige Vorbereitung, ohne zu schreiben. Hat ein Ziel (Fassungsordner, `ganz/`, `viertel/`,
+`auftraege/`) schon Inhalt, bricht er ab (Exit 2), außer mit `--ersetzen` (baut die Fassungsordner neu). Exit 0 ok,
+1 Befund, 2 Aufruf- oder Lesefehler.
+
+Einstellungen `einstellungen/lauf.json`: je Kennung aus `seite.json` `art` (`urteil`: Urteile auf einer Kopie der
+Vorstufe; `frei`: eigene Karte je Teilkachel), `klassen` (`fest`/`frei`), Unterordner (`ergebnis`,
+`vereinheitlichung`, `ansicht`), `kontext_aussen`, `id_versatz`; `einheit` (nur `viertel`, wie `plan`), `gegenprobe`
+(Fassung, Teilkachel, Kartenordner, Ergebnisordner; `null` = keine), `ordner` (Vorstufe, Gesamt- und Viertelbilder),
+`bilder` (Umgebung und Vergrößerung), `einigung`. Name, Ordner und Liste einer Fassung stehen nur in `seite.json`; fehlt
+eine Kennung in einer der beiden Dateien, steht ein Ordner doppelt oder kennt `plan` die Kennung nicht, bricht der
+Befehl ab, bevor er schreibt (Exit 1).
+
+### zusammenfuehren
+
+```
+PY -B -m landseg zusammenfuehren --manifest <daten>/manifest.json --ziel <Berichtsordner> [--einstellungen <lauf.json>] [--seite <seite.json>] [--ersetzen] [--json]
+```
+
+Macht nach den Urteilen und den Vereinheitlichungen je Fassung den Stand, den `seite`, `naht` und `einigung` lesen:
+
+- Fassungen mit Urteil: Karte `<ordner>/<tk>/labels.tif` (mit den Eingriffen der Urteils-Agents, unverändert),
+  `segmente.json` mit der Klasse aus `urteil/<tk>/v1..v4/urteil.json` (`klassen: fest`: `klasse_vorschlag`, sonst
+  `klasse_heute`; `klassen: frei`: Code aus `vereinheitlichung/codes.json`), `sicher` aus dem Urteil, Zahl der
+  Eingriffe (Urteil und Verlauf der Karte) unter `urteil`; Kontextrand: Mehrheit der Klasse im Kern der Nachbarkachel,
+  außerhalb des Ausschnitts `kontext_aussen`, immer `sicher: nein`. Die `segmente.json` der Agents bleibt als
+  `segmente.vor-zusammenfuehren.json` daneben, jeder weitere Lauf baut von ihr aus.
+- Freie Fassung: Karte und `segmente.json` aus `abgabe/<tk>/`, IDs + (Nummer der Teilkachel + 1) · `id_versatz`, Codes
+  über `abbildung_teilkacheln` der Liste `vereinheitlichung/kategorien-entwurf.json` (`klasse_teil` hält den Code
+  der Abgabe).
+- Kategorienliste je Fassung (`<ordner>/<kategorien aus seite.json>`, sonst `kategorien-<kennung>.json`; feste Liste =
+  Kopie von `kategorien.json`, freie Listen aus `kategorien-entwurf.json`), `zusammentragen.json`; danach `pruefen` je
+  Teilkachel, `zusammentragen` nach `<ordner>/zusammen/`, `naht` und `einigung finden` nach
+  `<ziel>/einigung/auftraege-<kennung>/` (Bündelgröße aus `einstellungen/einigung.json`).
+
+Ausgabe je Fassung: Kernsegmente, unsichere, Eingriffe, Nahtverstöße, offene Paare an den Übergängen und die Bündel
+mit Ordner; alles in `<ziel>/zusammenfuehren.json`. Die Gegenprobe geht in keine Karte ein, die Urteile ändert der
+Befehl nie. Er baut zuerst alles im Speicher; fehlt eine Fassung, ein Urteil, eine Abgabe oder eine Liste, passt eine
+Klasse nicht zur Liste oder nennt die Marke `fassung.json` eines Ordners eine andere Fassung (vertauschte Zuordnung),
+endet er mit Exit 1 und schreibt nichts. Ziele mit Inhalt (Listen, `zusammen/`, Karten der freien Fassung, Einigung,
+ein früherer Lauf) nur mit `--ersetzen` (sonst Exit 2). Exit 0 gebaut und `pruefen` überall ok (Nahtverstöße und offene
+Paare sind Befunde für die nächsten Schritte), 1 Befund.
 
 ### kante
 

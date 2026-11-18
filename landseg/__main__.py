@@ -29,7 +29,11 @@ from .einigung import EinigungFehler
 from .kacheln import KachelFehler, kacheln
 from .kante import einrasten
 from .messung import messung_befehl, tabelle
+from . import lauf as lauf_modul
 from . import plan as plan_modul
+from . import vorbereiten as vorbereiten_modul
+from . import zusammenfuehren as zusammenfuehren_modul
+from .lauf import LaufFehler
 from .pruefen import pruefen
 from .seite import SeiteFehler, bilder_aus_einstellungen, seite
 from .vorstufe import Auftrag, VorstufeFehler, auftraege_aus_manifest, konfig_laden, vorstufe
@@ -423,6 +427,60 @@ def befehl_messung(a) -> int:
     return 0
 
 
+def _lauf_einstellungen(a) -> tuple[dict, dict]:
+    return lauf_modul.einstellungen_laden(a.einstellungen, a.seite)
+
+
+def befehl_vorbereiten(a) -> int:
+    werte, seite_werte = _lauf_einstellungen(a)
+    try:
+        if a.nur_pruefen:
+            fehler = vorbereiten_modul.pruefen(a.manifest, a.ziel, werte=werte, seite=seite_werte)
+            if fehler:
+                raise LaufFehler(fehler)
+            print("Vorbereitung geprüft: ok")
+            return 0
+        hinweis = Path(a.hinweis).read_text(encoding="utf-8") if a.hinweis else ""
+        plan = vorbereiten_modul.bauen(a.manifest, a.ziel, werte=werte, seite=seite_werte, py=a.py or sys.executable,
+                                       hinweis=hinweis, name=a.lauf or "", ersetzen=a.ersetzen)
+    except LaufFehler as fehler:
+        print("Abgelehnt:\n" + "\n".join(f"- {x}" for x in fehler.fehler), file=sys.stderr)
+        return 1
+    if a.json:
+        print(json.dumps(plan, ensure_ascii=False))
+    else:
+        zahl = {}
+        for e in plan["einheiten"]:
+            zahl[e["art"]] = zahl.get(e["art"], 0) + 1
+        print(f"Einheiten: {', '.join(f'{k} {v}' for k, v in zahl.items())}; Kernsegmente "
+              f"{', '.join(f'{tk} {n}' for tk, n in plan['kernsegmente'].items())}; "
+              f"Vereinheitlichen {len(plan['vereinheitlichen'])}; {plan['sekunden']} s")
+        print(f"Plan: {Path(a.ziel) / 'auftraege.json'} (weiter mit landseg plan --auftraege …)")
+        print("ok")
+    return 0
+
+
+def befehl_zusammenfuehren(a) -> int:
+    werte, seite_werte = _lauf_einstellungen(a)
+    try:
+        erg = zusammenfuehren_modul.bauen(a.manifest, a.ziel, werte=werte, seite=seite_werte, ersetzen=a.ersetzen)
+    except LaufFehler as fehler:
+        print("Abgelehnt, nichts geschrieben:\n" + "\n".join(f"- {x}" for x in fehler.fehler), file=sys.stderr)
+        return 1
+    if a.json:
+        print(json.dumps(erg, ensure_ascii=False))
+    else:
+        for k, e in erg["fassungen"].items():
+            fehl = [tk for tk, x in e["pruefen"].items() if x != "ok"]
+            print(f"Fassung {k} ({e['name']}): {e['segmente_kern']} Kernsegmente, unsicher {e['unsicher']}, "
+                  f"Eingriffe {e['eingriffe_urteil']} (Verlauf {e['eingriffe_verlauf']}), Nahtverstöße "
+                  f"{e['nahtverstoesse']}, offen an Übergängen {e['einigung_offen']} Paare in {len(e['buendel'])} "
+                  f"Bündeln -> {e['auftraege']}" + (f"; pruefen FEHLER {', '.join(fehl)}" if fehl else ""))
+        print(f"Befund: {Path(a.ziel) / 'zusammenfuehren.json'} ({erg['sekunden']} s)")
+        print("ok" if erg["ok"] else "FEHLER")
+    return 0 if erg["ok"] else 1
+
+
 def parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="python -m landseg", description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -618,6 +676,26 @@ def parser() -> argparse.ArgumentParser:
     pl.add_argument("--ziel", help="Plan als JSON (landseg-urteil-plan/1); ohne: nur Ausgabe, nichts geschrieben")
     pl.add_argument("--json", action="store_true", help="ganzen Plan als JSON ausgeben (mit Prompts)")
     pl.set_defaults(fn=befehl_plan)
+
+    for name, hilfe in (("vorbereiten", "Urteile eines Laufs vorbereiten: Kartenkopien, Bilder, Aufträge aus den Vorlagen, "
+                                        "Plan (auftraege.json), leere Ergebnisordner; prüft sich selbst"),
+                        ("zusammenfuehren", "Urteile und freie Abgabe je Fassung zu Karten und Listen, dann pruefen, "
+                                            "zusammentragen, naht, einigung finden")):
+        lv = befehle.add_parser(name, help=hilfe, description=hilfe + ". Fassungen: einstellungen/seite.json + lauf.json.")
+        lv.add_argument("--manifest", required=True, help="manifest.json des Ausschnitts (Ordner = Daten des Laufs)")
+        lv.add_argument("--ziel", required=True, help="Berichtsordner des Laufs (Aufträge, Plan, Einigung, Befund)")
+        lv.add_argument("--einstellungen", help="eigene lauf.json (überschreibt die genannten Schlüssel)")
+        lv.add_argument("--seite", help="eigene seite.json (Fassungen: Kennung, Name, Ordner, Liste)")
+        lv.add_argument("--ersetzen", action="store_true", help="Ziele mit Inhalt ausdrücklich neu bauen")
+        lv.add_argument("--json", action="store_true", help="Ergebnis als JSON")
+        if name == "vorbereiten":
+            lv.add_argument("--hinweis", help="Markdown-Datei mit dem Hinweis des Laufs (etwa Schwarz-Weiß-Scan)")
+            lv.add_argument("--lauf", help="Name des Laufs in den Bearbeiter-Namen (Standard: Name des Ausschnitts)")
+            lv.add_argument("--py", help="Python der Agents in den Aufträgen (Standard: dieser Interpreter)")
+            lv.add_argument("--nur-pruefen", action="store_true", help="fertige Vorbereitung nur prüfen, nichts schreiben")
+            lv.set_defaults(fn=befehl_vorbereiten)
+        else:
+            lv.set_defaults(fn=befehl_zusammenfuehren)
 
     ur = befehle.add_parser("urteil", help="urteil.json aus einer kurzen Liste bauen und prüfen (bauen, pruefen)")
     schritte = ur.add_subparsers(dest="schritt", required=True)
