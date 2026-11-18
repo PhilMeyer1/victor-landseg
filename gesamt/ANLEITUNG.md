@@ -15,8 +15,8 @@ festen Liste durch uns und die beiden letzten Schritte (Grenzen umsetzen, Messbe
   bekam eine Klasse, in drei Fassungen:
   - **A „Alles frei“**: Die KI bestimmt Grenzen, Kategorien und Arbeitsweise selbst.
   - **B „Kategorien frei“**: Die KI benennt und stuft die Klassen selbst; Grenzen und Arbeitsweise wie C.
-  - **C „Feste Kategorienliste“**: Klassen aus unserer festen, gestuften Liste (58 Klassen in drei
-    Ebenen, geordnet nach Bedeckung).
+  - **C „Feste Kategorienliste“**: Klassen aus unserer festen, gestuften Liste (59 Klassen in drei
+    Ebenen, geordnet nach Bedeckung; Gärten als eigene Unterklasse „Garten“ im Dauergrünland).
 - Danach haben sich KI-Helfer an allen Übergängen der vier Teilkacheln auf gemeinsame Klassen
   geeinigt: Keine Stelle ist mehr offen, an der dieselbe Fläche ohne Kante zwei Klassen trägt; was
   sich nicht klären ließ, ist als unsicher mit Grund belegt (A 9, B 6, C 9 Stellen).
@@ -252,7 +252,7 @@ feineren Ebenen weiter.
 |---|---:|---|---:|---:|
 | A `kategorien-a.json` | 47 | 7 / 18 / 22 | 32 | 36 |
 | B `kategorien-b.json` | 49 | 7 / 21 / 21 | 31 | 35 |
-| C `kategorien-c.json` | 58 | 7 / 25 / 26 | 43 | 27 |
+| C `kategorien-c.json` | 59 | 7 / 26 / 26 | 44 | 27 |
 
 Die feste Liste C ist nach **Bedeckung** geordnet (was man sieht, nicht wie es genutzt wird) und in
 `programm/KATEGORIEN.md` erklärt, mit Regeln G1–G5, U1–U5 und den Abweichungen von Bericht 48. Die

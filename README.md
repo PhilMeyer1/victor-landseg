@@ -8,7 +8,7 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 
 | Pfad | Was |
 |---|---|
-| `kategorien.json` | Kategorienliste, maschinenlesbar: 7 grobe Klassen (Codes 0 bis 6), 25 auf Ebene 2, 43 feinste Klassen; je Klasse Code, Name, Elternklasse, Ebene, Farbe, SW-Kennzeichen und Abbildungen auf CORINE, CLC+, FLAIR, DKM und Bericht 48; dazu die Regeln G1–G5 und U1–U5 und die Abweichungen A1–A4 |
+| `kategorien.json` | Kategorienliste, maschinenlesbar: 7 grobe Klassen (Codes 0 bis 6), 26 auf Ebene 2, 44 feinste Klassen (insgesamt 59, darunter 3.6 Garten); je Klasse Code, Name, Elternklasse, Ebene, Farbe, SW-Kennzeichen und Abbildungen auf CORINE, CLC+, FLAIR, DKM und Bericht 48; dazu die Regeln G1–G5 und U1–U5 und die Abweichungen A1–A4 |
 | `KATEGORIEN.md` | Erklärung der Kategorienliste in Alltagssprache: Aufbau, Klassentabelle, Regeln, Abweichungen von Bericht 48, was noch ungesichert ist |
 | `tools/pruefe_kategorien.py` | Prüfskript für `kategorien.json` (nur Python-Standardbibliothek) |
 | `tools/gesamt_projekt.py`, `einstellungen/gesamt_projekt.json`, `gesamt/` | Gesamtprojekt für Victor (nur Standardbibliothek): `bauen` legt es aus dem Basisordner an oder frischt es auf (Programm und Unterlagen mit Verlauf per `git subtree`, Wünsche und Arbeitsdaten als Kopie, ohne Original-Luftbilder; committet nur bei Änderungen), `pruefen` (Vollständigkeit, Größen ab 50/100 MB, Pfade in README, ANLEITUNG und CLAUDE.md, `--luftbilder` mit SHA-256), `durchsicht` (Vertrauliches; jede Fundstelle braucht eine Regel in den Einstellungen); `gesamt/` enthält README, Anleitung, `CLAUDE.md` (Anweisung an Claude Code: zu Beginn jeder Session `ergebnisse/T0.html` im Browser öffnen) und Luftbild-Beschreibung des Gesamtprojekts |
@@ -444,7 +444,7 @@ Im Repo-Ordner, mit dem Python des Stitcher-venv (dort nichts installieren) oder
 C:/Users/Phil/Developement/websites/nai/stitcher/.venv/Scripts/python.exe -I tools/pruefe_kategorien.py kategorien.json
 ```
 
-Ausgabe: die Zahlen je Ebene (`7/25/43`), die Zahl der Regeln (`5 G, 5 U`), der kleinste
+Ausgabe: die Zahlen je Ebene (`7/26/44`), die Zahl der Regeln (`5 G, 5 U`), der kleinste
 Farbabstand und am Ende `ok`. Bei einem Fehler nennt das Skript die Stelle und endet mit Code 1.
 
 ## Daten
