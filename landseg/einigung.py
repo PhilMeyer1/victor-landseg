@@ -212,9 +212,10 @@ def messen(f: Fassung, bild: np.ndarray, einst: dict) -> dict:
 # -- finden ---------------------------------------------------------------------------------------
 
 def buendeln(offene: list[dict], hoechstens: int) -> list[dict]:
-    """Zusammenhängende Paare (über gemeinsame Segmente) bleiben in einem Bündel; kleine Gruppen werden
-    der Reihe nach bis ``hoechstens`` Paare zusammengelegt. Eine größere Gruppe bleibt ganz (``uebergross``):
-    Jedes Segment steht so in genau einem Bündel und bekommt genau ein Urteil."""
+    """Zusammenhängende Paare (über gemeinsame Segmente) bleiben in einem Bündel; jede kleine Gruppe kommt
+    in das erste Bündel, das für sie noch Platz bis ``hoechstens`` Paare hat (first-fit in der Reihenfolge
+    der Linien; so nie mehr Bündel als beim Auffüllen nur des letzten). Eine größere Gruppe bleibt ganz und
+    allein (``uebergross``): Jedes Segment steht so in genau einem Bündel und bekommt genau ein Urteil."""
     eltern: dict[str, str] = {}
 
     def wurzel(s: str) -> str:
@@ -230,8 +231,10 @@ def buendeln(offene: list[dict], hoechstens: int) -> list[dict]:
         gruppen.setdefault(wurzel(p["segmente"][0]), []).append(p)
     buendel: list[dict] = []
     for gruppe in gruppen.values():
-        if buendel and not buendel[-1]["uebergross"] and len(buendel[-1]["paare"]) + len(gruppe) <= hoechstens:
-            buendel[-1]["paare"].extend(gruppe)
+        ziel = next((b for b in buendel
+                     if not b["uebergross"] and len(b["paare"]) + len(gruppe) <= hoechstens), None)
+        if ziel is not None:
+            ziel["paare"].extend(gruppe)
         else:
             buendel.append({"paare": list(gruppe), "uebergross": len(gruppe) > hoechstens})
     return buendel

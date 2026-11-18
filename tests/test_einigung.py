@@ -20,7 +20,8 @@ from PIL import Image
 
 from landseg import dateien, einstellungen, naht
 from landseg.__main__ import main
-from landseg.einigung import EinigungFehler, _im_kern, anwenden, fassung_laden, finden, messen, schluessel_karte, stellen
+from landseg.einigung import (EinigungFehler, _im_kern, anwenden, buendeln, fassung_laden, finden, messen,
+                              schluessel_karte, stellen)
 from landseg.kacheln import kacheln
 from landseg.pruefen import pruefen
 from tests.hilfe import beispiel_kategorien
@@ -219,6 +220,68 @@ class EinigungTest(unittest.TestCase):
             self.assertEqual(main(["einigung", "anwenden", *basis, "--auftraege", str(self.ordner / "einigung"),
                                    "--abgabe", str(abgabe)]), 1)
             self.assertEqual(main(["einigung", "finden", "--manifest", manifest, "--ziel", "x"]), 1)
+
+
+def _gruppen(*groessen: int) -> list[dict]:
+    """Je Größe eine Kette zusammenhängender Paare (g<i>:0|g<i>:1, g<i>:1|g<i>:2, …), Gruppen ohne gemeinsame
+    Segmente, in der Reihenfolge der Linien hintereinander."""
+    return [{"paar": f"g{i}:{k}|g{i}:{k + 1}", "segmente": [f"g{i}:{k}", f"g{i}:{k + 1}"]}
+            for i, n in enumerate(groessen) for k in range(n)]
+
+
+def _alt_zahl(groessen: list[int], hoechstens: int) -> int:
+    """Bündelzahl des alten Verfahrens (nur das zuletzt angelegte Bündel wird aufgefüllt)."""
+    buendel: list[list[int]] = []
+    for n in groessen:
+        if buendel and buendel[-1][1] == 0 and buendel[-1][0] + n <= hoechstens:
+            buendel[-1][0] += n
+        else:
+            buendel.append([n, int(n > hoechstens)])
+    return len(buendel)
+
+
+class BuendelnTest(unittest.TestCase):
+    def pruefe_aufteilung(self, offene: list[dict], buendel: list[dict], hoechstens: int):
+        self.assertEqual(sorted(p["paar"] for b in buendel for p in b["paare"]), sorted(p["paar"] for p in offene))
+        wo: dict[str, int] = {}
+        for nr, b in enumerate(buendel):
+            for p in b["paare"]:
+                for s in p["segmente"]:
+                    self.assertEqual(wo.setdefault(s, nr), nr, f"{s} in zwei Bündeln")
+            if b["uebergross"]:
+                self.assertEqual(len({p["paar"].split(":")[0] for p in b["paare"]}), 1, "übergroß nimmt nichts auf")
+                self.assertGreater(len(b["paare"]), hoechstens)
+            else:
+                self.assertLessEqual(len(b["paare"]), hoechstens)
+
+    def test_kleine_gruppen_fuellen_fruehere_buendel(self):
+        offene = _gruppen(7, 9, 3, 2)
+        erg = buendeln(offene, 12)
+        self.assertEqual(_alt_zahl([7, 9, 3, 2], 12), 3)
+        self.assertEqual([len(b["paare"]) for b in erg], [12, 9])
+        self.assertEqual({p["paar"].split(":")[0] for p in erg[0]["paare"]}, {"g0", "g2", "g3"})
+        self.pruefe_aufteilung(offene, erg, 12)
+
+    def test_uebergross_bleibt_allein(self):
+        offene = _gruppen(3, 15, 2, 8)
+        erg = buendeln(offene, 12)
+        self.assertEqual([(len(b["paare"]), b["uebergross"]) for b in erg], [(5, False), (15, True), (8, False)])
+        self.pruefe_aufteilung(offene, erg, 12)
+
+    def test_stabil_und_nie_mehr_als_vorher(self):
+        offene = _gruppen(4, 3, 3, 4, 3, 3)  # nach Größe sortiert gäbe es hier 3 Bündel statt 2
+        erg = buendeln(offene, 10)
+        self.assertEqual(len(erg), 2)
+        self.assertEqual(erg, buendeln(offene, 10))
+        zufall = np.random.default_rng(7)
+        for _ in range(300):
+            groessen = zufall.integers(1, 16, zufall.integers(1, 12)).tolist()
+            hoechstens = int(zufall.integers(1, 13))
+            offene = _gruppen(*groessen)
+            erg = buendeln(offene, hoechstens)
+            self.assertLessEqual(len(erg), _alt_zahl(groessen, hoechstens), (groessen, hoechstens))
+            self.assertEqual(erg, buendeln(offene, hoechstens))
+            self.pruefe_aufteilung(offene, erg, hoechstens)
 
 
 if __name__ == "__main__":

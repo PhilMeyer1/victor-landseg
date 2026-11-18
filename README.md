@@ -332,8 +332,8 @@ Fester Schritt nach dem Zusammentragen der Urteile, vor dem Erzeugen der Seite: 
 (Nähte samt Ecken) und an den Viertelgrenzen (Mitte jedes Kerns) sucht `finden` die Segment-Paare, die
 ohne Bildkante aneinandergrenzen (Bildkanten-Regel und Bildleser wie `naht`) und verschiedene Klassen
 tragen. Ein Segment heißt `<teilkachel>:<id>`, ein Paar `<segment>|<segment>`. Paare, die ein Segment
-teilen, bleiben in einem Bündel (eine Ecke also auch); kleine Gruppen werden bis `buendel_paare`
-zusammengelegt. Je Bündel entsteht `<ziel>/<fassung>-<nr>/auftrag.json` mit `paar_<nr>.jpg` (Luftbild
+teilen, bleiben in einem Bündel (eine Ecke also auch); jede kleine Gruppe kommt in das erste Bündel,
+das noch Platz bis `buendel_paare` Paare hat, eine größere bleibt allein (`uebergross`). Je Bündel entsteht `<ziel>/<fassung>-<nr>/auftrag.json` mit `paar_<nr>.jpg` (Luftbild
 beider Seiten, rechts mit beiden Segmenten und der Grenze), dazu `<ziel>/einigung.json` (Zahlen,
 Bündel). Ein Agent je Bündel urteilt nach `vorlagen/einigung.md` und gibt `einigung_abgabe.json` ab;
 `anwenden` setzt je Paar `gleich` (gemeinsame Klasse der Kategorienliste der Fassung, per `eingriff`),
