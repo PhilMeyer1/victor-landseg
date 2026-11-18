@@ -12,9 +12,9 @@ ABSOLUT = re.compile(r"(?<![A-Za-z])[A-Za-z]:[\\/]|/Users/|/home/|\\Users\\")
 
 
 class VorlagenTest(unittest.TestCase):
-    def test_vier_vorlagen_mit_platzhaltern_ohne_absolute_pfade(self):
+    def test_vorlagen_mit_platzhaltern_ohne_absolute_pfade(self):
         erklaert = set(PLATZHALTER.findall((VORLAGEN / "README.md").read_text(encoding="utf-8")))
-        for name in ("urteil", "umsetzen", "korrektur", "naht"):
+        for name in ("urteil", "umsetzen", "korrektur", "naht", "einigung"):
             with self.subTest(vorlage=name):
                 text = (VORLAGEN / f"{name}.md").read_text(encoding="utf-8")
                 benutzt = set(PLATZHALTER.findall(text))
@@ -28,8 +28,15 @@ class VorlagenTest(unittest.TestCase):
         text = SKILL.read_text(encoding="utf-8")
         self.assertTrue(text.startswith("---\nname: landseg-agent\ndescription: "))
         self.assertIsNone(ABSOLUT.search(text))
-        for regel in ("L1 Lückenlos", "L2 Nur im Kern", "L4 Kante aus dem Bild", "L6 Nahtregel"):
+        for regel in ("L1 Lückenlos", "L2 Nur im Kern", "L4 Kante aus dem Bild", "L6 Nahtregel", "L13 Einigung im Verbund"):
             self.assertIn(regel, text)
+
+
+    def test_einigung_vorlage(self):
+        text = (VORLAGEN / "einigung.md").read_text(encoding="utf-8")
+        for pflicht in ("einigung_abgabe.json", "kategorien-a.json", "beide Seiten", "L13", "Kontextrand"):
+            self.assertIn(pflicht, text)
+        self.assertIn("`einigung.md`", (VORLAGEN / "README.md").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

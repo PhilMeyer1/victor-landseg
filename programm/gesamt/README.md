@@ -76,8 +76,11 @@ dazu, den wir gemeinsam ansehen und dann zusammenführen.
 | `daten/luftbilder/` | Platz für die Original-Luftbilder; welche es sind, mit Größe und Prüfsumme, steht in `daten/luftbilder/README.md` |
 
 `ergebnisse/` und `daten/landseg/` überschneiden sich: `ergebnisse/` ist die aufbereitete Auswahl,
-die zuerst übergeben wurde (umbenannt, ohne Zwischenbilder); `daten/landseg/` ist der Arbeitsstand,
-so wie die Berichte ihn nennen.
+die zuerst übergeben wurde (umbenannt, ohne Zwischenbilder), seit dem 18.11.2026 mit der Einigung
+der Klassen an den Übergängen der Teilkacheln (`ANLEITUNG.md`, „Einigung an den Übergängen“);
+`daten/landseg/` ist der Arbeitsstand, so wie die Berichte ihn nennen, ohne diese Einigung.
+`programm/tools/gesamt_projekt.py bauen` holt `ergebnisse/` jedes Mal Byte für Byte aus dem
+eingecheckten Stand der Übergabe.
 
 ## Benennung der Fassungen
 

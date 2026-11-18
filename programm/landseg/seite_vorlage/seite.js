@@ -66,6 +66,16 @@
     if (v && typeof v === 'object') v = v.wert
     return typeof v === 'number' ? Math.round(v * 100) + ' %' : '–'
   }
+  // Beschlüsse der Einigung an den Übergängen (`einigung` in segmente.json): je Beschluss Entscheidung, Nachbar, Klasse, Grund
+  var EINIGUNG_ART = { gleich: 'gleiche Fläche', grenze: 'echte Grenze', unklar: 'unklar, als unsicher belegt' }
+  function einigungZeilen(s) {
+    if (!Array.isArray(s.einigung) || !s.einigung.length) return ''
+    return s.einigung.map(function (b) {
+      var k = b.klasse && FA.KAT[b.klasse]
+      return '<dt>Einigung</dt><dd>' + esc(EINIGUNG_ART[b.entscheidung] || b.entscheidung) + ' mit ' + esc(b.mit) +
+        (b.klasse ? ', Klasse ' + esc(k ? k.code + ' ' + k.name : b.klasse) : '') + ': ' + esc(b.grund) + '</dd>'
+    }).join('')
+  }
   // Segment in einer Form: Kopfzeile, dann je Ebene eine Zeile (die gezeigte Ebene hervorgehoben)
   function segZeilen(id, s) {
     if (!id) return '<div class="c-z c-fehler">kein Segment (Lücke)</div>'
@@ -322,6 +332,17 @@
     oben.appendChild(kachelWahl(K, aktiv, tk))
     return oben
   }
+  // Zwei getrennte Zahlen an den Übergängen: Schnittlinien ohne Bildkante (Nahtregel, wie `landseg naht`) und
+  // Stellen, an denen gleiche Flächen verschiedene Klassen haben (wie `landseg einigung messen`, davon unsicher belegt)
+  function schnittText(n) {
+    return n ? '<span class="c-warn">' + n + (n === 1 ? ' Schnittlinie' : ' Schnittlinien') + ' an Nähten ohne Bildkante</span>' : '<span class="c-ok">keine Schnittlinie an Nähten ohne Bildkante</span>'
+  }
+  function einigungText(e, fehler) {
+    if (!e) return '<span class="c-leise">Klassen an den Übergängen nicht gezählt' + (fehler ? ': ' + esc(fehler) : ': nicht alle Teilkacheln haben Daten') + '</span>'
+    if (!e.stellen) return '<span class="c-ok">Gleiche Flächen haben überall dieselbe Klasse</span>'
+    return '<span class="' + (e.offen.paare ? 'c-warn' : 'c-leise') + '">' + e.stellen + (e.stellen === 1 ? ' Stelle, an der gleiche Flächen verschiedene Klassen haben' : ' Stellen, an denen gleiche Flächen verschiedene Klassen haben') +
+      ' (davon ' + e.unsicher.paare + ' unsicher belegt)</span>'
+  }
   function befundText(st) {
     var b = st.roh.pruefen
     if (b.ok) return '<span class="c-ok">lückenlos</span>'
@@ -336,7 +357,7 @@
     '<dt>Teilkachel</dt><dd>Eines der Bildstücke, in die der Ausschnitt geteilt ist; oben in der Kachel-Wahl oder mit den Pfeiltasten ← → wechseln (Kennung r = Zeile, c = Spalte).</dd>' +
     '<dt>Kern</dt><dd>Der Teil im hellen Rahmen: nur er zählt für diese Teilkachel.</dd>' +
     '<dt>Rand</dt><dd>Der abgedunkelte Streifen außen: Überlappung mit den Nachbarn, nur zur Orientierung.</dd>' +
-    '<dt>Naht</dt><dd>Grenze zwischen zwei Teilkacheln. Rosa Linie: dort passen die Segmente der Nachbarn nicht zusammen.</dd>' +
+    '<dt>Naht</dt><dd>Grenze zwischen zwei Teilkacheln. Rosa Linie: Schnittlinie ohne Bildkante, dort passen die Segmente der Nachbarn nicht zusammen. Getrennt gezählt: Stellen, an denen gleiche Flächen über einen Übergang (Naht oder Mitte der Teilkachel) verschiedene Klassen haben; unsicher belegt heißt, die Einigung der KI blieb dort offen, mit Grund.</dd>' +
     '<dt>Lücke</dt><dd>Bildpunkt ohne Segment; mit „Lücken“ rot gezeigt.</dd>' +
     '<dt>unsicher</dt><dd>Die KI war sich bei der Kategorie nicht sicher.</dd>' +
     '<dt>Blauer Rand</dt><dd>Segment mit Kommentar.</dd></dl></details>'
@@ -376,7 +397,8 @@
     if (st) {
       var un = st.roh.segmente.filter(unsicher).length
       cap += '<span>' + st.roh.segmente.length + ' Segmente, ' + un + ' davon unsicher</span>' + befundText(st) +
-        '<span>' + (st.roh.naht.length ? '<span class="c-warn">' + st.roh.naht.length + ' Stellen an Nähten passen nicht</span>' : 'Nähte passen') + '</span>'
+        '<span>' + (FA.f.naht ? schnittText(st.roh.naht.length) : '<span class="c-leise">Nähte nicht geprüft: nicht alle Teilkacheln haben Daten</span>') + '</span>' +
+        '<span>' + einigungText(st.roh.einigung, FA.f.einigung_fehler) + '</span>'
     }
     f.innerHTML = '<figcaption>' + cap + '</figcaption>'
     var cv = el('canvas', 'c-bild'); cv.setAttribute('aria-label', 'Teilkachel ' + tkId + ', Fassung ' + K)
@@ -452,7 +474,7 @@
           '<dt>Sicherheit</dt><dd>' + sicherheit(s) + '</dd>' +
           '<dt>Liegt im Kern</dt><dd>' + janein(s.im_kern) + '</dd>' +
           (s.im_siedlung !== undefined ? '<dt>Im Siedlungsgebiet</dt><dd>' + janein(s.im_siedlung) + '</dd>' : '') +
-          (s.eingriffe ? '<dt>Bearbeitet</dt><dd>' + s.eingriffe.length + '×</dd>' : '') + '</dl>'
+          (s.eingriffe ? '<dt>Bearbeitet</dt><dd>' + s.eingriffe.length + '×</dd>' : '') + einigungZeilen(s) + '</dl>'
         var eigene = alleKommentare().filter(function (k) { return (k.fassung || ERSTE) === K && k.teilkachel === tkId && +k.segment === Z.sel })
         if (eigene.length) h += '<div class="c-eigene"><b>Kommentare</b>' + eigene.map(function (k) { return '<p>' + esc(k.text) + ' <span>' + esc(zeit(k.zeit)) + '</span></p>' }).join('') + '</div>'
         var felder = Object.keys(s).map(function (k) {
@@ -593,7 +615,7 @@
   function uebersicht() {
     var w = el('div', 'c-seite c-ohne-info'); w.appendChild(kopf('uebersicht'))
     var m = el('div', 'c-uebersicht'), f = el('figure', 'c-tafel'), nb = FA.f.naht
-    f.innerHTML = '<figcaption><b>Ganzer Ausschnitt ' + esc(D.name) + '</b><span>' + (nb ? (nb.verstoesse.length ? '<span class="c-warn">' + nb.verstoesse.length + ' Stellen an Nähten passen nicht</span>' : '<span class="c-ok">Nähte passen</span>') + ' · ' + nb.naehte.length + ' Nähte zwischen Teilkacheln' : 'Nähte nicht geprüft: nicht alle Teilkacheln haben Daten') + '</span><span>Klick ins Bild öffnet die Teilkachel an dieser Stelle.</span></figcaption>'
+    f.innerHTML = '<figcaption><b>Ganzer Ausschnitt ' + esc(D.name) + '</b><span>' + (nb ? schnittText(nb.verstoesse.length) + ' · ' + nb.naehte.length + ' Nähte zwischen Teilkacheln' : 'Nähte nicht geprüft: nicht alle Teilkacheln haben Daten') + '</span><span>' + einigungText(FA.f.einigung, FA.f.einigung_fehler) + '</span><span>Klick ins Bild öffnet die Teilkachel an dieser Stelle.</span></figcaption>'
     var cv = el('canvas', 'c-bild'); cv.setAttribute('aria-label', 'Ausschnitt ' + D.name + ', Fassung ' + FA.f.kennung)
     f.appendChild(cv); m.appendChild(f); w.appendChild(m)
     var l = el('section', 'c-leiste'), nv = nb ? nb.verstoesse : [], je = {}
@@ -601,8 +623,8 @@
     l.innerHTML = '<div class="c-gruppe">' + D.teilkacheln.map(function (t) {
       var st = FA.tk[t.id]
       return '<a class="c-karte" href="#/' + esc(FA.f.kennung) + '/kachel/' + t.id + '"><b>' + t.id + '</b><span>' + (st ? st.roh.segmente.length + ' Segmente' : 'keine Daten') + '</span></a>'
-    }).join('') + '</div><div class="c-gruppe c-leise">' + (nv.length ? 'Passt nicht, je Naht: ' +
-      Object.keys(je).map(function (k) { return esc(k.replace('|', ' / ')) + ' ' + je[k].n + ' Stellen' }).join(' · ') : '') + '</div>'
+    }).join('') + '</div><div class="c-gruppe c-leise">' + (nv.length ? 'Schnittlinien ohne Bildkante, je Naht: ' +
+      Object.keys(je).map(function (k) { return esc(k.replace('|', ' / ')) + ' ' + je[k].n }).join(' · ') : '') + '</div>'
     w.appendChild(l)
     app.innerHTML = ''; app.appendChild(w)
     AKTIV.abwaehlen = null

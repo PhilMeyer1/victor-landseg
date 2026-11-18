@@ -4,7 +4,8 @@ Für Victor. Hier steht, wie der erste Test an einem Luftbild-Ausschnitt (T0) ge
 in welcher Datei steht, was man den Zahlen glauben kann und wie man einen neuen Ausschnitt rechnet.
 Wie das ganze Projekt aufgebaut ist und wo die Vorgeschichte steht, erklärt `README.md`.
 
-Stand: 17.11.2026. Abgegeben ist der Zwischenstand nach dem Urteil der KI. Die Durchsicht der
+Stand: 18.11.2026. Abgegeben ist der Zwischenstand nach dem Urteil der KI und der Einigung an den
+Übergängen der Teilkacheln (18.11.2026, siehe „Einigung an den Übergängen“). Die Durchsicht der
 festen Liste durch uns und die beiden letzten Schritte (Grenzen umsetzen, Messbericht) ruhen, siehe
 „Was fehlt“.
 
@@ -16,6 +17,9 @@ festen Liste durch uns und die beiden letzten Schritte (Grenzen umsetzen, Messbe
   - **B „Kategorien frei“**: Die KI benennt und stuft die Klassen selbst; Grenzen und Arbeitsweise wie C.
   - **C „Feste Kategorienliste“**: Klassen aus unserer festen, gestuften Liste (58 Klassen in drei
     Ebenen, geordnet nach Bedeckung).
+- Danach haben sich KI-Helfer an allen Übergängen der vier Teilkacheln auf gemeinsame Klassen
+  geeinigt: Keine Stelle ist mehr offen, an der dieselbe Fläche ohne Kante zwei Klassen trägt; was
+  sich nicht klären ließ, ist als unsicher mit Grund belegt (A 9, B 6, C 9 Stellen).
 - Ansehen: `ergebnisse/T0.html` doppelklicken (eine Datei, kein Server). Oben schaltet man A, B, C um.
 - Bilder von ganz T0 je Fassung: `ergebnisse/gesamtbilder/`.
 
@@ -189,6 +193,54 @@ Segmente aus dem Kontextrand haben kein eigenes Urteil: In der Karte je Teilkach
 Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte), außerhalb von T0 die der
 Vorstufe (C) bzw. „0 Nicht bestimmbar“ (B), immer mit `sicher: nein` und `urteil: kontextrand`.
 
+## Einigung an den Übergängen
+
+**Warum.** Jede Teilkachel hat ein eigener Agent beurteilt, ohne Absprache mit den Nachbarn. Läuft
+eine Fläche (Wiese, Waldstück, Straße) über die Grenze zweier Teilkacheln, bekam sie dadurch links
+und rechts teils verschiedene Klassen. Seit dem 18.11.2026 folgt deshalb nach den Urteilen ein
+fester Schritt, in dem sich die KI an allen Übergängen einigt: an den vier Nähten zwischen den
+Teilkacheln samt der Ecke in der Mitte und an den Viertelgrenzen innerhalb jeder Teilkachel. Es
+werden **nur Klassen** abgeglichen; Grenzen, Karten und Segmentnummern bleiben, wie sie sind.
+
+**Wie gezählt wird.** Eine Stelle ist ein Paar zweier Segmente, die an einem Übergang ohne Kante im
+Luftbild aneinanderstoßen (dieselbe Regel wie das Werkzeug `naht`) und verschiedene Klassen tragen.
+`python -B -m landseg einigung messen --manifest ../ergebnisse/manifest.json` zählt je Fassung:
+**offen** (noch nicht beurteilt), **unsicher belegt** (die KI konnte es nicht klären; beide Segmente
+`sicher: nein`, Grund dabei) und **geklärt**, je mit der Zahl der Randpunkte. Die Zahl der geraden
+Schnittlinien ohne Bildkante (die Grenzen selbst) steht getrennt daneben; sie ändert die Einigung nicht.
+
+**Wie die Agents zugeschnitten sind.** `einigung finden` fasst Paare, die ein Segment teilen, zu
+einem Bündel zusammen (die Ecke mit vier Teilkacheln bleibt so in einem Bündel; höchstens etwa 12
+Paare, Wert in `programm/einstellungen/einigung.json`). Je Bündel arbeitet ein Agent; er sieht je
+Paar ein Bild beider Seiten (Luftbild mit Kontextrand, rechts mit beiden Segmenten und der Grenze)
+und liest die Urteile beider Teilkacheln mit. Je Paar entscheidet er: **gleiche Fläche** (beide
+bekommen eine gemeinsame Klasse aus der Liste der Fassung; zusammenhängende Ketten eine Klasse für
+alle Glieder), **echte Grenze** (nichts ändert sich) oder **unklar** (als unsicher belegt). Die
+Regeln stehen in `programm/vorlagen/einigung.md` und als Regel L13 in
+`programm/.claude/skills/landseg-agent/SKILL.md`; `einigung anwenden` setzt die Abgaben um und
+vermerkt bei jedem Segment unter `einigung` Entscheidung, Grund, Bearbeiter und Bündel. In A läuft
+die Einigung auf der zusammengelegten Liste `kategorien-a.json`; Segmente aus dem Kontextrand bleiben
+unverändert.
+
+**Ergebnis auf T0** (Stellen = Segment-Paare, in Klammern Randpunkte):
+
+| | A Alles frei | B Kategorien frei | C Feste Kategorienliste |
+|---|---:|---:|---:|
+| vorher offen | 68 (896) | 59 (592) | 52 (625) |
+| nachher offen | 0 | 0 | 0 |
+| nachher unsicher belegt | 9 (193) | 6 (102) | 9 (145) |
+| geklärt | 59 (703) | 58 (731) | 49 (593) |
+| Entscheidungen gleiche Fläche / echte Grenze / unklar | 21 / 38 / 9 | 31 / 28 / 6 | 22 / 27 / 9 |
+| Segmente mit neuer Klasse (im Kern) | 21 | 31 | 23 |
+| Schnittlinien ohne Bildkante (Paare, unverändert) | 83 | 84 | 84 |
+
+**Kosten.** 15 Agents (Opus) in drei Runden, zusammen rund **1,9 Mio. Tokens** und 13,5 Minuten:
+Runde 1 mit 12 Bündeln (je Fassung 4, parallel) 1,6 Mio. Tokens in 9,5 Minuten; eine gemeinsame
+Klasse für eine Kette erzeugt an deren anderem Rand neue Widersprüche zu Nachbarn, deshalb zwei
+kleine Nachrunden (B und C, dann B). Aufträge, Abgaben und Bericht:
+`wuensche/2026-11-18-naht-einigung-2/bericht-landseg.md`; das Werkzeug:
+`wuensche/2026-11-18-naht-einigung-1.md`.
+
 ## Kategorienlisten und Ebenen
 
 Alle drei Listen haben dasselbe Format (`kategorien*.json`, Schlüssel `classes`): je Klasse `code`,
@@ -219,7 +271,10 @@ Gruppen mit den Codes 0–6.
 - **`segmente.json`** (Schema `landseg-segmente/1`): unter `segmente` je Segment `id`, `klasse`
   (feinster Code), `grob`, `sicher`, `im_kern`, `flaeche`; in B und C dazu `klasse_vorstufe`,
   `sicher_vorstufe`, `urteil`, `herkunft`, `im_siedlung`; in A `name`, `klasse_teil`, `id_abgabe`.
-  Unter `verlauf` jeder Eingriff mit Zeit und Bearbeiter.
+  Segmente, die in der Einigung beurteilt wurden, haben `einigung`: je Beschluss `paar`, `mit`
+  (Nachbarsegment als `<teilkachel>:<id>`), `entscheidung` (`gleich` | `grenze` | `unklar`), `grund`,
+  `bearbeiter`, `buendel`, `zeit`, bei `gleich` die gemeinsame `klasse`. `urteil.json` bleibt dabei
+  unverändert. Unter `verlauf` jeder Eingriff mit Zeit und Bearbeiter (auch die der Einigung).
 - **`urteil.json`** (Schema `landseg-urteil-teilkachel/1`, B und C, je Teilkachel): Kopf mit
   `fassung`, `teilkachel`, `kategorien`, `klasse_regel`, `zahlen` (`nicht_sauber`, `sicher_nein`,
   `klassenwechsel`), `naht` (Hinweise an die Nachbarkachel), `unsicher`, `nicht_geprueft`; unter
@@ -234,21 +289,27 @@ Gruppen mit den Codes 0–6.
 
 ## Zahlen
 
-Gezählt aus den Dateien in `ergebnisse/`; sie stimmen mit den Berichten des Testlaufs überein.
+Gezählt aus den Dateien in `ergebnisse/` (Stand nach der Einigung, 18.11.2026); die Werte vor der
+Einigung stimmen mit den Berichten des Testlaufs überein.
 
 | | A Alles frei | B Kategorien frei | C Feste Liste |
 |---|---:|---:|---:|
 | Segmente je Teilkachel mit Rand (r0c0 / r0c1 / r1c0 / r1c1) | 128 / 272 / 64 / 417 | 206 / 234 / 86 / 408 | 206 / 234 / 86 / 408 |
 | Segmente in T0 (Kerne) | 607 | 641 | 641 |
-| unsicher (`sicher: nein`, im Kern) | 301 (50 %) | 397 (62 %) | 481 (75 %) |
+| unsicher (`sicher: nein`, im Kern), vor der Einigung | 301 (50 %) | 397 (62 %) | 481 (75 %) |
+| unsicher (`sicher: nein`, im Kern), nach der Einigung | 310 (51 %) | 398 (62 %) | 485 (76 %) |
 | „nicht sauber“ laut Urteil | – | 405 (96 / 88 / 45 / 176) | 432 (114 / 89 / 48 / 181) |
-| Klasse gegenüber der Vorstufe geändert | – | – | 383 |
-| Nahtverstöße auf der Karte von ganz T0 | 309 | – (nicht zusammengetragen) | – (nicht zusammengetragen) |
+| Klasse gegenüber der Vorstufe geändert (vor / nach der Einigung) | – | – | 383 / 397 |
+| Klasse durch die Einigung geändert (Segmente im Kern) | 21 | 31 | 23 |
+| gleiche Fläche, verschiedene Klasse: offen / unsicher belegt (Segment-Paare) | 0 / 9 | 0 / 6 | 0 / 9 |
+| Schnittlinien ohne Bildkante (Strecken; Schalter „Nähte“ der Seite und `naht`) | 309 | 312 | 312 |
 | zerfallene Segmente auf der Karte von ganz T0 | 20 | – | – |
 
 „Nicht sauber“ heißt: Die KI hat am Segment etwas auszusetzen (Klasse, Grenze, fehlende Fläche),
 nicht, dass die Klasse falsch ist. Bei C betrafen die Punkte vor allem Klassen (328) und
-Verschmelzen (156). Kosten: rund 3,3 Mio. Tokens für den Lauf der Urteile.
+Verschmelzen (156). „Nicht sauber“ zählt die Urteile vor der Einigung (`urteil.json` bleibt
+unverändert). Kosten: rund 3,3 Mio. Tokens für den Lauf der Urteile, dazu rund 1,9 Mio. Tokens für
+die Einigung.
 
 ## Bekannte Schwächen
 
@@ -262,9 +323,15 @@ Verschmelzen (156). Kosten: rund 3,3 Mio. Tokens für den Lauf der Urteile.
 - **B Kategorien frei**: Grenzen der Vorstufe wie C. Die Klasse „Feld gemäht“ (14 Segmente aus
   einem Viertel) ist ungeprüft (vielleicht gemähte Wiese statt abgeerntetes Feld). Laub- und
   Nadelbäume sind nicht getrennt, ebenso Strauch und Strauchgruppe.
-- **Prüfseite und Nähte**: Der Schalter „Nähte“ der Seite zählt auf denselben Karten 124
-  Verstöße je Fassung, das Werkzeug `naht` für A 309. Die Seite liest das Luftbild mit einer anderen
-  Funktion ein; maßgeblich ist `naht`.
+- **Einigung an den Übergängen**: Einige Stellen ließen sich nicht klären (A 9, B 6, C 9
+  Segment-Paare, als unsicher mit Grund belegt). Oft ist es keine Frage der Klasse, sondern der
+  Grenzlage (ein Waldzipfel in der Wiese, eine Lichtung über die Naht, ein Splitter eines Segments
+  in der Nachbarkrone); Grenzen ändert die Einigung nicht. Ketten über mehrere Teilkacheln bekamen
+  teils die übergeordnete Klasse (etwa „Gehölz“, „Wald“, „Dauergrünland“), wenn die feine Klasse
+  nicht für alle Glieder sicher war. Die geraden Schnittlinien ohne Bildkante (309 / 312 / 312)
+  bleiben; sie zu schließen, hieße Segmente über die Naht zusammenzufügen.
+- **Prüfseite und Nähte**: Der Schalter „Nähte“ zählt seit dem 18.11.2026 wie das Werkzeug `naht`
+  (gleiches Einlesen des Luftbilds); früher zeigte er 124 statt 309.
 - Die SW-Spalte und die Abbildungen der festen Liste auf andere Klassifikationen sind ungeprüft.
 
 ## Was fehlt
@@ -272,12 +339,18 @@ Verschmelzen (156). Kosten: rund 3,3 Mio. Tokens für den Lauf der Urteile.
 - Die Durchsicht der festen Liste (C) durch uns: Klasse für Klasse „passt“ oder „passt nicht“.
 - Die Schritte danach ruhen: Grenzen nach den Vorschlägen umsetzen, B und C zusammentragen und die
   Nähte prüfen, dann ein Messbericht mit Vergleich der drei Fassungen.
+- Die alten Arbeitsdaten unter `daten/landseg/T0/` haben die Einigung nicht; sie gilt nur für
+  `ergebnisse/`.
 
 ## Prüfseite öffnen
 
 `ergebnisse/T0.html` doppelklicken (Chrome, Edge oder Firefox, ohne Internet). Die Seite öffnet mit
 A „Alles frei“; oben schaltet man auf B und C um (auch Umschalt + A/B/C). Mausrad vergrößert,
-Ziehen verschiebt, Klick wählt ein Segment und zeigt alle Felder samt Urteil und `punkte`.
+Ziehen verschiebt, Klick wählt ein Segment und zeigt alle Felder samt Urteil und `punkte`; ein
+Segment an einem Übergang zeigt dort auch jeden Beschluss der Einigung (gleiche Fläche, echte Grenze
+oder unklar, mit Nachbarsegment, Klasse und Grund). Unter jedem Bild stehen die Zahl der
+Schnittlinien ohne Bildkante und die Zahl der Stellen, an denen gleiche Flächen verschiedene Klassen
+haben (davon unsicher belegt).
 Schalter: Ebene (grob/mittel/fein), Flächen, Umriss, Lücken, Nähte, Nur unsicher, Gitter,
 Kategorien. Kommentare zu Segmenten lassen sich über „Export (JSON)“ speichern.
 
@@ -331,6 +404,11 @@ python -B -m landseg eingriff --labels <A>/c-feste-liste/r0c0/labels.tif --segme
 #    (Auftrag wie ergebnisse/a-alles-frei/zusammentragen.json, Pfade relativ zum Auftrag)
 python -B -m landseg zusammentragen --datei <A>/c-feste-liste/zusammentragen.json
 python -B -m landseg naht --manifest <A>/manifest.json --labels <A>/c-feste-liste/zusammen/labels.tif
+
+# 5b. Einigung an den Übergängen: Bündel finden, je Bündel ein Agent (vorlagen/einigung.md), umsetzen, zählen
+python -B -m landseg einigung finden --manifest <A>/manifest.json --fassung C --ziel <A>/einigung-c
+python -B -m landseg einigung anwenden --manifest <A>/manifest.json --fassung C --auftraege <A>/einigung-c --abgabe <einigung_abgabe.json>
+python -B -m landseg einigung messen --manifest <A>/manifest.json
 
 # 6. Prüfseite
 python -B -m landseg seite --manifest <A>/manifest.json --ziel <A>/T0.html

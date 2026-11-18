@@ -1,8 +1,9 @@
 """Befehlszeile: ``python -m landseg <befehl> ...`` (im Repo-Ordner).
 
 Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``ansicht`` (W3), ``kante`` (W4), ``eingriff`` (W5),
-``pruefen`` (W6), ``zusammentragen`` (W7), ``seite`` (W8, Übersichtsseite), ``naht`` (Nahtregel allein). Exit-Code 0 = ok, 1 = Befund,
-Nahtverstoß oder Eingriff abgelehnt, 2 = Aufruf- oder Lesefehler.
+``pruefen`` (W6), ``zusammentragen`` (W7), ``seite`` (W8, Übersichtsseite), ``naht`` (Nahtregel allein),
+``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``messen``). Exit-Code 0 = ok,
+1 = Befund, Nahtverstoß, offene Stellen oder Eingriff/Abgabe abgelehnt, 2 = Aufruf- oder Lesefehler.
 """
 
 from __future__ import annotations
@@ -17,7 +18,9 @@ from PIL import Image
 
 from . import dateien, einstellungen, kategorien, naht
 from .ansicht import AnsichtFehler, ansicht
+from . import einigung as einigung_modul
 from .eingriff import Bearbeitung, EingriffFehler
+from .einigung import EinigungFehler
 from .kacheln import KachelFehler, kacheln
 from .kante import einrasten
 from .pruefen import pruefen
@@ -140,6 +143,64 @@ def befehl_naht(a) -> int:
     return 0 if befund.ok else 1
 
 
+def _einigung_fassungen(a) -> list:
+    """Fassungen des Aufrufs: ``--ordner`` (eine), ``--fassung`` oder (nur ``messen``) alle aus den Einstellungen der Seite."""
+    kat = kategorien.laden(a.kategorien)
+    if a.ordner:
+        return [einigung_modul.fassung_laden(a.manifest, a.ordner, kat, a.fassung or "")]
+    liste = einstellungen.laden("seite")["fassungen"]
+    kennungen = [a.fassung] if a.fassung else [str(e["kennung"]) for e in liste]
+    fassungen = []
+    for kennung in kennungen:
+        try:
+            fassungen.append(einigung_modul.fassung_aus_einstellungen(a.manifest, kennung, kat, liste))
+        except EinigungFehler:
+            if a.fassung:
+                raise
+    return fassungen
+
+
+def befehl_einigung(a) -> int:
+    einst = einstellungen.laden("einigung", a.einstellungen)
+    if a.schritt in ("finden", "anwenden") and not (a.fassung or a.ordner):
+        raise EinigungFehler(f"einigung {a.schritt}: --fassung oder --ordner angeben")
+    manifest = dateien.lese_json(a.manifest)
+    bild_pfad = Path(a.manifest).parent / manifest["ausschnitt"]["bild"]
+    try:
+        fassungen = _einigung_fassungen(a)
+        if not fassungen:
+            raise EinigungFehler("keine Fassung mit Daten gefunden")
+        if a.schritt == "anwenden":
+            erg = einigung_modul.anwenden(fassungen[0], [dateien.lese_json(d) for d in a.abgabe], a.auftraege,
+                                          ziel=a.ziel, schreiben=not a.probe)
+            print(json.dumps(erg, ensure_ascii=False) if a.json else
+                  f"Fassung {erg['fassung']}: {erg['abgaben']} Abgaben, gleich {erg['gleich']}, grenze {erg['grenze']}, "
+                  f"unklar {erg['unklar']}, Klassen gesetzt {erg['klassen_gesetzt']}, Teilkacheln "
+                  f"{', '.join(erg['teilkacheln']) or '-'} -> {erg['ziel']}"
+                  + ("" if erg["geschrieben"] else " (Probe, nichts geschrieben)"))
+            return 0
+        bild = naht.lese_bild(bild_pfad)
+        if a.schritt == "finden":
+            erg = einigung_modul.finden(fassungen[0], bild, einst, a.ziel)
+            z = erg["zahlen"]
+            print(json.dumps(erg, ensure_ascii=False) if a.json else
+                  f"Fassung {erg['fassung']}: {z['offen']['paare']} offene Stellen ({z['offen']['randpunkte']} "
+                  f"Randpunkte) in {len(erg['buendel'])} Bündeln -> {Path(a.ziel) / 'einigung.json'}")
+            return 0
+        ergebnisse = [einigung_modul.messen(f, bild, einst) for f in fassungen]
+    except EingriffFehler as fehler:
+        raise EinigungFehler(str(fehler)) from None
+    if a.json:
+        print(json.dumps(ergebnisse, ensure_ascii=False))
+    else:
+        for e in ergebnisse:
+            print(f"Fassung {e['fassung']}: gleiche Fläche, verschiedene Klasse: offen {e['offen']['paare']} Paare "
+                  f"({e['offen']['randpunkte']} Randpunkte), unsicher belegt {e['unsicher']['paare']} "
+                  f"({e['unsicher']['randpunkte']}), geklärt {e['geklaert']['paare']} ({e['geklaert']['randpunkte']}); "
+                  f"Schnittlinien ohne Bildkante: {e['ohne_kante']['paare']} Paare")
+    return 0 if all(e["offen"]["paare"] == 0 for e in ergebnisse) else 1
+
+
 def _rgb_bild(pfad) -> np.ndarray:
     with Image.open(pfad) as bild:
         return np.asarray(bild.convert("RGB"))
@@ -165,7 +226,11 @@ def befehl_seite(a) -> int:
                      f"{t['id']} {t['segmente']} Segmente, pruefen {'ok' if t['pruefen_ok'] else 'FEHLER'}"
                      for t in f["teilkacheln"]]
             naht_text = "nicht geprüft" if f["naht"] is None else f["naht"]
-            print(f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Nahtverstöße {naht_text}")
+            e = f["einigung"]
+            einigung_text = ("nicht gezählt" if e is None else
+                             f"{e['stellen']} (davon {e['unsicher']} unsicher belegt)")
+            print(f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Schnittlinien ohne Bildkante "
+                  f"{naht_text}; gleiche Fläche, verschiedene Klasse {einigung_text}")
         print(f"Seite: {erg['ziel']} ({erg['groesse'] // 1024} KiB)")
     if a.oeffnen:
         import webbrowser
@@ -367,6 +432,32 @@ def parser() -> argparse.ArgumentParser:
     n.add_argument("--datei", help="Auftrag zusammentragen.json (Einstellungen 'naht', 'naht_bestaetigt')")
     n.add_argument("--json", action="store_true", help="Befund als JSON")
     n.set_defaults(fn=befehl_naht)
+
+    ei = befehle.add_parser("einigung", help="Klassen an den Übergängen der Teilkacheln abgleichen "
+                                             "(finden, anwenden, messen)")
+    schritte = ei.add_subparsers(dest="schritt", required=True)
+    for name, hilfe in (("finden", "offene Stellen bündeln, je Bündel Auftrag mit Bildern beider Seiten"),
+                        ("anwenden", "Abgaben der Agents (einigung_abgabe.json) umsetzen, nur Klassen und Vermerke"),
+                        ("messen", "Stellen gleicher Fläche mit verschiedener Klasse zählen: offen, unsicher, geklärt")):
+        s = schritte.add_parser(name, help=hilfe, description=hilfe)
+        s.add_argument("--manifest", required=True, help="manifest.json von kacheln")
+        s.add_argument("--fassung", help="Kennung der Fassung aus einstellungen/seite.json (A, B, C); "
+                                         "messen ohne --fassung und --ordner: alle")
+        s.add_argument("--ordner", help="Ordner der Fassung mit <teilkachel>/labels.tif und segmente.json "
+                                        "(statt der Einstellungen der Seite)")
+        s.add_argument("--kategorien", help="Kategorienliste für --ordner bzw. Fassungen ohne eigene "
+                                            "(Standard: die des Repos)")
+        s.add_argument("--einstellungen", help="JSON, überschreibt einstellungen/einigung.json")
+        s.add_argument("--json", action="store_true", help="Ergebnis als JSON")
+        if name == "finden":
+            s.add_argument("--ziel", required=True, help="neuer Ordner für einigung.json und die Bündel-Aufträge")
+        if name == "anwenden":
+            s.add_argument("--auftraege", required=True, help="Ordner von einigung finden (<bündel>/auftrag.json)")
+            s.add_argument("--abgabe", action="append", required=True, help="einigung_abgabe.json (mehrfach)")
+            s.add_argument("--ziel", help="neuer Ordner: Kopie der Fassung, in der geändert wird "
+                                          "(sonst an Ort und Stelle)")
+            s.add_argument("--probe", action="store_true", help="nur prüfen, nichts schreiben")
+    ei.set_defaults(fn=befehl_einigung)
     return p
 
 
@@ -377,6 +468,9 @@ def main(argv: list[str] | None = None) -> int:
     a = parser().parse_args(argv)
     try:
         return a.fn(a)
+    except EinigungFehler as fehler:
+        print(f"Abgelehnt: {fehler}", file=sys.stderr)
+        return 1
     except (KachelFehler, VorstufeFehler, AnsichtFehler, ZusammenFehler, SeiteFehler, ValueError, OSError,
             KeyError) as fehler:
         print(f"Fehler: {fehler}", file=sys.stderr)

@@ -12,7 +12,7 @@ import numpy as np
 import tifffile
 from PIL import Image
 
-from landseg import dateien, einstellungen
+from landseg import dateien, einigung, einstellungen, naht
 from landseg.__main__ import main
 from landseg.kacheln import kacheln
 from landseg.seite import SeiteFehler, labels_als_rgb, lage_in_worten, seite, seite_daten
@@ -143,12 +143,73 @@ class SeiteTest(unittest.TestCase):
         self.assertFalse(befund["ok"])
         self.assertEqual(befund["ohne_segment"], 4)
 
+    def test_zwei_zahlen_und_gemeinsamer_bildleser(self):
+        """Schnittlinien ohne Bildkante wie ``naht``, gleiche Fläche mit verschiedener Klasse wie ``einigung messen``
+        (davon unsicher belegt); das Luftbild liest die Seite mit ``naht.lese_bild`` (Altlast A2)."""
+        # schwacher Farbsprung genau auf der Kerngrenze (10 je Kanal, Abstand 17 < Schwelle 25): keine echte Bildkante;
+        # als uint8 gelesen liefe die Differenz 110 - 120 über und gälte als Kante
+        quelle = self.ordner / "quelle" / "blatt.tif"
+        feld = np.full((60, 100, 3), 120, np.uint8)
+        feld[:, 40:] = 110
+        tifffile.imwrite(quelle, feld, photometric="rgb")
+        self.t = self.ordner / "T2"
+        self.manifest = kacheln(quelle, 0, 0, 80, 40, self.t, kern=40, rand=8, name="TX")
+        self.assertEqual(self.manifest["teilkacheln"][1]["kern"]["x"], 40)
+        self.feste_liste()
+        rechts = self.t / "c-feste-liste" / "r0c1" / "segmente.json"
+        daten = dateien.lese_segmente(rechts)
+        daten["segmente"][0]["einigung"] = [{"paar": "r0c0:1001|r0c1:2001", "mit": "r0c0:1001",
+                                             "entscheidung": "unklar", "grund": "Schatten, Klasse nicht erkennbar"}]
+        dateien.schreibe_json(rechts, daten)
+        manifest_pfad = self.t / "manifest.json"
+        d = seite_daten(manifest_pfad, self.kat)
+        c = d["fassungen"][2]
+        bild = naht.lese_bild(self.t / self.manifest["ausschnitt"]["bild"])
+        karte = np.where(np.arange(80)[None, :] < 40, 1001, 2001).astype(np.uint32).repeat(40, axis=0)
+        self.assertEqual(len(c["naht"]["verstoesse"]), len(naht.pruefe_naehte(karte, self.manifest, bild).verstoesse))
+        self.assertEqual(len(c["naht"]["verstoesse"]), 1)
+        uint8 = np.asarray(Image.open(self.t / self.manifest["ausschnitt"]["bild"]).convert("RGB"))
+        self.assertEqual(naht.pruefe_naehte(karte, self.manifest, uint8).verstoesse, [])  # der alte Leser übersah sie
+        # neue Zahl: dieselben Zahlen wie ``einigung messen``
+        f = einigung.fassung_aus_einstellungen(manifest_pfad, "C", self.kat, einstellungen.laden("seite")["fassungen"])
+        gemessen = einigung.messen(f, bild, einstellungen.laden("einigung"))
+        for status in ("offen", "unsicher", "geklaert"):
+            self.assertEqual(c["einigung"][status], gemessen[status])
+        self.assertEqual((c["einigung"]["stellen"], c["einigung"]["unsicher"]["paare"]), (1, 1))
+        for tk in ("r0c0", "r0c1"):
+            self.assertEqual(c["teilkacheln"][tk]["einigung"]["stellen"], 1)
+        self.assertIsNone(c["einigung_fehler"])
+        # B: ein Segment über die Naht, also keine Stelle
+        self.fassung_b()
+        ziel = self.t / "seite" / "TX.html"
+        erg = seite(manifest_pfad, ziel, self.kat)
+        self.assertEqual([(f["kennung"], f.get("naht"), f.get("einigung")) for f in erg["fassungen"]],
+                         [("A", None, None), ("B", 0, {"stellen": 0, "unsicher": 0}),
+                          ("C", 1, {"stellen": 1, "unsicher": 1})])
+        html = ziel.read_text(encoding="utf-8")
+        for teil in ("Stellen, an denen gleiche Flächen verschiedene Klassen haben", "unsicher belegt",
+                     "an Nähten ohne Bildkante", "einigungText(FA.f.einigung, FA.f.einigung_fehler)",
+                     "einigungText(st.roh.einigung"):
+            self.assertIn(teil, html)
+        self.assertNotIn("Stellen an Nähten passen nicht", html)
+        # Graustufenbild: ein Kanal aus naht.lese_bild, eingebettet als PNG
+        grau = self.ordner / "grau.tif"
+        tifffile.imwrite(grau, np.full((60, 100), 90, np.uint8))
+        self.t = self.ordner / "T3"
+        self.manifest = kacheln(grau, 0, 0, 80, 40, self.t, kern=40, rand=8, name="TX")
+        self.feste_liste()
+        g = seite_daten(self.t / "manifest.json", self.kat)
+        self.assertEqual(g["fassungen"][2]["einigung"]["stellen"], 1)
+        png = Image.open(io.BytesIO(base64.b64decode(g["ausschnitt"]["bild"].split(",", 1)[1])))
+        self.assertEqual((png.size, int(np.asarray(png.convert("L")).max())), ((80, 40), 90))
+
     def test_fehlende_teilkachel_naht_nicht_geprueft(self):
         self.feste_liste()
         (self.t / "c-feste-liste" / "r0c1" / "labels.tif").unlink()
         a = seite_daten(self.t / "manifest.json", self.kat)["fassungen"][2]
         self.assertIsNone(a["teilkacheln"]["r0c1"])
         self.assertIsNone(a["naht"])
+        self.assertIsNone(a["einigung"])
         self.assertIsNone(a["gesamt"])
 
     def test_nur_freie_fassung_und_eigene_fassungsliste(self):
@@ -204,7 +265,8 @@ class SeiteTest(unittest.TestCase):
         self.assertTrue(ziel.exists())
         text = puffer.getvalue()
         self.assertIn("Fassung C (Feste Kategorienliste): r0c0 1 Segmente, pruefen ok; r0c1 1 Segmente, pruefen ok; "
-                      "Nahtverstöße 1", text)
+                      "Schnittlinien ohne Bildkante 1; gleiche Fläche, verschiedene Klasse 1 "
+                      "(davon 0 unsicher belegt)", text)
         self.assertIn("Fassung A (Alles frei): keine Daten", text)
         self.assertIn("Fassung B (Kategorien frei): keine Daten", text)
         self.assertEqual(main(["seite", "--manifest", str(self.t / "manifest.json"), "--ziel", str(self.ordner / "x.txt")]), 2)

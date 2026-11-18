@@ -8,7 +8,8 @@ Usage (paths in Windows form ``C:/...``):
 
 ``bauen`` clones the handover repo (``grundlage``) into ``--ziel`` once, moves its ``T0/`` to
 ``ergebnisse/`` and drops the old root copy of the tools, brings the repos ``landseg`` and
-``unterlagen`` in with their full history (``git subtree``, no squash), mirrors ``wuensche/`` and
+``unterlagen`` in with their full history (``git subtree``, no squash), on every run brings
+``ergebnisse/`` to the handover's committed ``T0/`` (HEAD, byte for byte), mirrors ``wuensche/`` and
 ``daten/landseg/`` byte for byte and writes README, guide and the description of the original aerial
 images. It commits in ``--ziel`` only when something changed (a second run without changes adds no
 commit). ``pruefen`` checks completeness against the sources (with ``--basis``), forbidden paths,
@@ -195,6 +196,36 @@ def commit(ziel: Path, nachricht: str) -> bool:
     return True
 
 
+def ergebnisse_nachziehen(grundlage: Path, ziel: Path, umbau: dict, ausgabe=print) -> bool:
+    """Mirror ``umbau.aus`` of the handover's HEAD into ``umbau.nach`` byte for byte (Git blobs, not the
+    working tree of the handover); files no longer there are removed. Commits only when something changed."""
+    if not (grundlage / ".git").exists():
+        raise Fehler(f"Grundlage fehlt: {grundlage}")
+    soll = baum(grundlage, "HEAD", umbau["aus"])
+    if not soll:
+        raise Fehler(f"Grundlage ohne {umbau['aus']}/ im HEAD: {grundlage}")
+    praefix = umbau["nach"] + "/"
+    ist = {rel[len(praefix):]: h for rel, h in baum(ziel).items() if rel.startswith(praefix)}
+    geaendert = 0
+    for rel, h in soll.items():
+        if ist.get(rel) != h:
+            daten = subprocess.run(["git", "-C", str(grundlage), "cat-file", "blob", h],
+                                   capture_output=True, check=True).stdout
+            geaendert += schreibe(ziel / praefix / rel, daten)
+    for rel in set(ist) - set(soll):
+        (ziel / praefix / rel).unlink(missing_ok=True)
+        geaendert += 1
+    stand = git(grundlage, "rev-parse", "--short", "HEAD").strip()
+    neu = commit(ziel, nachricht(
+        f"chore: update {praefix} from the handover results",
+        f"Ergebnisse in {praefix} auf den neuesten Stand gebracht",
+        f"Die Ergebnisse im Ordner {praefix} sind wieder genau die der Übergabe, samt neu erzeugter "
+        f"Ergebnis-Seite.",
+        f"Mirrored byte for byte from {umbau['aus']}/ at handover commit {stand}."))
+    ausgabe(f"Ergebnisse: {len(soll)} Dateien aus der Grundlage ({stand}), {geaendert} geändert oder entfernt")
+    return neu
+
+
 def bauen(basis: Path, ziel: Path, einst: dict, ausgabe=print) -> list[str]:
     """Create or refresh the target; returns the new commits (one line each)."""
     grundlage = basis / einst["grundlage"]
@@ -253,6 +284,8 @@ def bauen(basis: Path, ziel: Path, einst: dict, ausgabe=print) -> list[str]:
                 f"Der Inhalt unseres Arbeitsordners {v['repo']} liegt jetzt hier unter {v['prefix']}/, "
                 f"samt allen früheren Änderungen, damit jeder Schritt nachvollziehbar bleibt."))
             ausgabe(f"Verlauf übernommen: {v['repo']} -> {v['prefix']}/")
+
+    ergebnisse_nachziehen(grundlage, ziel, umbau, ausgabe)
 
     soll, entfernt = kopien_soll(basis, einst)
     geaendert = 0

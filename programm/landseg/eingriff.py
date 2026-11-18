@@ -267,6 +267,21 @@ class Bearbeitung:
         return self._uebernehmen(self.karte.copy(), eintraege, "klasse_setzen",
                                  {"id": sid, "klasse": klasse}, {"alt": alt, "neu": klasse})
 
+    def vermerken(self, sid: int, felder: dict, op: str = "vermerk") -> dict:
+        """Setzt Felder eines Segments, die weder Karte noch Klasse betreffen (etwa ``sicher``), mit Verlauf.
+
+        ``id``, ``klasse`` und ``grob`` ändert nur ``klasse_setzen``."""
+        sid = int(sid)
+        verboten = {"id", "klasse", "grob"} & set(felder)
+        if verboten:
+            raise EingriffFehler(f"vermerken ändert {', '.join(sorted(verboten))} nicht (dafür klasse_setzen)")
+        eintraege = self._eintraege()
+        eintrag = self._segment(eintraege, sid)
+        alt = {k: copy.deepcopy(eintrag.get(k)) for k in felder}
+        eintrag.update(copy.deepcopy(felder))
+        return self._uebernehmen(self.karte.copy(), eintraege, op, {"id": sid, "felder": sorted(felder)},
+                                 {"alt": alt})
+
     def polygon_zuweisen(self, flaeche: Punkte, sid: int | None = None,
                          klasse: str | None = None) -> dict:
         """Alle Bildpunkte im Polygon an ein vorhandenes Segment oder an ein neues mit Klasse.

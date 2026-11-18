@@ -1,0 +1,10 @@
+{
+  "beschreibung": "Einigung an den Übergängen der Teilkacheln (finden, anwenden, messen). naht: Bildkanten-Regel wie beim Werkzeug naht (kante_schwelle, kante_band, mindestlaenge = kürzeste Strecke ohne Bildkante, die als Stelle zählt; leer = Standard von naht, wie in der Seite). buendel_paare: höchstens so viele Segment-Paare je Agent-Auftrag (zusammenhängende Paare bleiben immer in einem Bündel). fenster: Rand in Bildpunkten um die Stelle im Bild beider Seiten. bild_seite: angestrebte lange Seite je Bildhälfte; vergroesserung_max: größter Vergrößerungsfaktor. deckkraft: Einfärbung der beiden Segmente (0 bis 1). farben: a/b die beiden Segmente, linie die Grenze, umriss die Segmentumrisse.",
+  "naht": {},
+  "buendel_paare": 12,
+  "fenster": 40,
+  "bild_seite": 640,
+  "vergroesserung_max": 8,
+  "deckkraft": 0.35,
+  "farben": {"a": "#00e5ff", "b": "#ff00ff", "linie": "#ffeb3c", "umriss": "#ffffff"}
+}

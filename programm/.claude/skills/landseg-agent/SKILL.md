@@ -1,11 +1,11 @@
 ---
 name: landseg-agent
-description: Regeln für Agents, die in der Landschafts-Segmentierung (Repo landseg) Teilkacheln beurteilen, Label-Karten bearbeiten, Kommentare umsetzen oder Nähte klären. Lesen, bevor ein Auftrag aus vorlagen/ (urteil, umsetzen, korrektur, naht) bearbeitet wird.
+description: Regeln für Agents, die in der Landschafts-Segmentierung (Repo landseg) Teilkacheln beurteilen, Label-Karten bearbeiten, Kommentare umsetzen oder Nähte klären oder Klassen an den Übergängen einigen. Lesen, bevor ein Auftrag aus vorlagen/ (urteil, umsetzen, korrektur, naht, einigung) bearbeitet wird.
 ---
 
 # Agent-Regeln der Landschafts-Segmentierung
 
-Diese Regeln gelten für jeden Agent-Auftrag aus `vorlagen/` (Urteil, Umsetzen, Korrektur, Naht).
+Diese Regeln gelten für jeden Agent-Auftrag aus `vorlagen/` (Urteil, Umsetzen, Korrektur, Naht, Einigung).
 Der Auftrag nennt Gegenstand, Daten und Abgabe; hier steht, wie gearbeitet wird. Sie sind aus der
 Stitcher-Methode übernommen und auf Landschaft umgestellt (Ermittlung `landseg-methode`).
 
@@ -57,10 +57,17 @@ Stitcher-Methode übernommen und auf Landschaft umgestellt (Ermittlung `landseg-
   Stelle, die es zeigt?).
 - **L12 Umgebung.** Python nur über den Interpreter aus dem Auftrag (nie bloßes `python`), nichts
   installieren, Skripte als Datei, keine Prozesse dauerhaft starten, keine Fenster öffnen.
+- **L13 Einigung im Verbund.** An den Übergängen der Teilkacheln (Nähte, Ecken, Viertelgrenzen)
+  urteilst du mit Blick auf beide Seiten und die Urteile beider Teilkacheln: Zeigen zwei Segmente
+  ohne Bildkante dieselbe Fläche, bekommen sie eine gemeinsame Klasse aus der Liste der Fassung (bei
+  Fassung A die zusammengelegte `kategorien-a.json`), eine Kette über mehrere Teilkacheln eine Klasse
+  für alle Glieder; eine echte Grenze bleibt mit Grund stehen; was sich nicht klären lässt, wird als
+  unsicher mit Grund belegt, nie stillschweigend gelassen. Ein Urteil je Stelle für alle Beteiligten,
+  nur Klassen von Segmenten im Kern, keine Grenzen und keine neuen Klassen.
 
 ## Abgabe und Rückgabe
 
-- Die Abgabe-Dateien (`urteil.json`, `abgabe.json`, `naht_abgabe.json`) sind UTF-8-JSON genau nach
+- Die Abgabe-Dateien (`urteil.json`, `abgabe.json`, `naht_abgabe.json`, `einigung_abgabe.json`) sind UTF-8-JSON genau nach
   dem Schema im Auftrag; Listen, die nichts enthalten, bleiben als `[]` stehen.
 - `nicht_geprueft` nennt, was du nicht angesehen hast; `offen`, was du nicht entscheiden konntest.
 - Die Rückgabe an die Hauptsession ist kurz: die Zahlen, die der Auftrag unter „Rückgabe“ nennt,
