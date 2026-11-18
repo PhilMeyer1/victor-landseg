@@ -6,9 +6,11 @@ also keine Lücken. Die Liste steht maschinenlesbar in `kategorien.json`; dieses
 
 Herkunft: Ermittlung `landseg-methode`, Teil e02 (Vorschlag einer gestuften Liste) mit Gegenprüfung,
 und die Entscheidungen des Nutzers vom 17.11.2026 (F1 bis F7 in `wuensche/entscheidungen.md` des
-Basisordners). Seit dem 17.11.2026 gilt dazu die Entscheidung „Bedeckung statt Nutzung“: Rasen,
-Hausgärten und unbefestigte Wege werden nach dem eingeordnet, was im Bild liegt; ob ein Segment im
-Siedlungsgebiet liegt, ist ein eigenes Merkmal (siehe „Siedlungsgebiet und Bericht 48“).
+Basisordners). Seit dem 17.11.2026 gilt dazu die Entscheidung „Bedeckung statt Nutzung“: Rasen
+und unbefestigte Wege werden nach dem eingeordnet, was im Bild liegt; ob ein Segment im
+Siedlungsgebiet liegt, ist ein eigenes Merkmal (siehe „Siedlungsgebiet und Bericht 48“). Seit dem
+18.11.2026 haben Haus- und Hofgärten eine eigene Unterklasse „Garten“ (3.6) im Dauergrünland
+(Entscheidung „Gärten als Dauergrünland mit Unterklasse Garten“, siehe „Garten“ unter der Tabelle).
 
 ## Aufbau: drei Ebenen
 
@@ -17,13 +19,13 @@ Die Kategorien sind wie ein Baum gestuft:
 - **Ebene 1 (7 Klassen, Codes 0 bis 6):** die groben Klassen. Das sind die sechs Klassen aus
   Bericht 48 (Versiegelt/bebaut, Acker, Dauergrünland, Wald, Gewässer, Offener Boden) und dazu
   „Nicht bestimmbar“ für Bildfehler und Wolken.
-- **Ebene 2 (25 Klassen, z. B. 1.2 Verkehrsfläche):** eine feinere Unterteilung jeder groben Klasse.
+- **Ebene 2 (26 Klassen, z. B. 1.2 Verkehrsfläche):** eine feinere Unterteilung jeder groben Klasse.
 - **Ebene 3 (z. B. 1.2.1 Straße):** die feinsten Klassen, wo das Bild sie hergibt.
 
 Der Code verrät die Ebene: Ein Code ohne Punkt ist Ebene 1, mit einem Punkt Ebene 2, mit zwei Punkten
 Ebene 3. Nicht jede Klasse der Ebene 2 ist weiter unterteilt; „Ackerbrache“ (2.3) zum Beispiel ist
-schon die feinste Stufe. Klassen ohne Unterklassen heißen Blätter; es gibt 43 davon (über alle
-Ebenen gezählt). Insgesamt hat die Liste 58 Klassen.
+schon die feinste Stufe. Klassen ohne Unterklassen heißen Blätter; es gibt 44 davon (über alle
+Ebenen gezählt). Insgesamt hat die Liste 59 Klassen.
 
 Wichtig: Auch eine grobe Klasse ist eine gültige Antwort (Regel G5). Wer nicht sicher sagen kann, ob
 ein Weg befestigt ist, nimmt „Verkehrsfläche“ (1.2) statt zu raten (Regel U1).
@@ -41,7 +43,8 @@ ein Weg befestigt ist, nimmt „Verkehrsfläche“ (1.2) statt zu raten (Regel U
   Werte bedeuten „eine von diesen, je nach Fall“. Die Abbildungen stehen nur in `kategorien.json`.
 - **Die Farben** hat der Umsetzer festgelegt: jede grobe Klasse eine Farbfamilie (Nicht bestimmbar
   grau, Bebaut rot bis violett, Acker gelb, Grünland hellgrün, Wald dunkelgrün, Gewässer blau,
-  Offener Boden braun). Das Prüfskript sorgt dafür, dass alle 58 Farben deutlich verschieden sind.
+  Offener Boden braun). Das Prüfskript sorgt dafür, dass alle 59 Farben deutlich verschieden sind.
+  Garten (3.6) ist ein helles Mintgrün, das sich von allen anderen Grüntönen am weitesten abhebt.
 
 ## Die Klassen
 
@@ -81,6 +84,7 @@ ein Weg befestigt ist, nimmt „Verkehrsfläche“ (1.2) statt zu raten (Regel U
 | 3.3 | › Grünlandbrache / Ruderalflur | ungleichmäßig, hochwüchsig | eing. | `#a5d19f` |
 | 3.4 | › Krautsaum linear (Feldrain, Wegrand, Böschung) | schmaler Streifen zwischen Nutzungen | ja | `#47b521` |
 | 3.5 | › Verbuschende Fläche (Grünland mit Gehölzanflug) | Gras mit verstreuten Büschen | eing. | `#749146` |
+| 3.6 | › Garten (Haus- und Hofgarten: Grünfläche, Beet) | kleinteiliges Grün und Beete am Haus oder Hof, von Gebäude, Zaun oder Hecke eingefasst | eing. | `#a6ffaf` |
 | 4 | **Wald und Gehölze** (Abweichung A2) | grobe Kronentextur, dunkel | ja | `#1d7239` |
 | 4.1 | › Wald (geschlossener Bestand) | durchgehendes Kronendach | ja | `#19e697` |
 | 4.1.1 | › › Laubwald | runde Kronen | eing. | `#103714` |
@@ -106,16 +110,34 @@ ein Weg befestigt ist, nimmt „Verkehrsfläche“ (1.2) statt zu raten (Regel U
 | 6.5 | › Schnee / Eis / Gletscher | weiß, glatt | eing. (Verwechslung mit Überstrahlung) | `#6b5747` |
 | 6.6 | › Weg, unbefestigt (Feld-, Wald-, Schotterweg) | Fahrspuren, Mittelstreifen | eing. | `#a0522d` |
 
-Es gibt keine Klasse „Siedlungsgrün“ mehr: Rasen und krautiges Grün in Garten, Park oder Friedhof
-sind Wiese/Weide (3.1), Gartenbaum, Strauch und Hecke sind Gehölz (4.2.1 bis 4.2.4), ein Gartenbeet
-ist Acker (2.1 mit, 2.2 ohne Bewuchs). Unbefestigte Wege stehen unter Offener Boden (6.6).
+### Garten
+
+Gärten spielen in der Landschaft eine nennenswerte Rolle und tragen deshalb eine eigene Unterklasse
+im Dauergrünland: **3.6 Garten**. Grobe Klasse bleibt „3 Dauergrünland“.
+
+- **Dazu gehört:** jede krautige Grünfläche und jedes Beet in einem Haus- oder Hofgarten, auch
+  Vorgarten, Obstgarten und Gemüsegarten am Haus. Ein gepflegter Rasen ist kein Kennzeichen: Auch
+  verwilderte, gemähte oder brachliegende Gartenfläche ist Garten. Erkennbar ist ein Garten vor
+  allem an der Lage: am Wohnhaus oder Hof, oft von Zaun, Hecke oder Gebäuden eingefasst.
+- **Nicht dazu gehört:** Gartenbaum, Strauch und Hecke im Garten bleiben Gehölz (4.2.1 bis 4.2.4),
+  weil man von oben die Krone sieht (G2); ein Gartenhaus ist Nebengebäude (1.1.2), ein befestigter Gartenweg
+  oder eine Terrasse Weg bzw. Platz (1.2.2, 1.2.4), ein Gartenteich Stillgewässer (5.2), ein Pool
+  Schwimmbecken (1.3.3). Rasen in Parks, auf Friedhöfen und Sportanlagen ist kein Garten, sondern
+  Wiese/Weide (3.1); eine Obstanlage in Reihen ist Dauerkultur (2.4.2); Wiese oder Acker am
+  Ortsrand, die nicht zu einem Haus oder Hof gehört, bleibt Wiese/Weide bzw. Acker.
+- **Im Zweifel:** Lässt sich nicht sicher sagen, ob eine Grünfläche am Haus zum Garten gehört,
+  gilt die Elternklasse „3 Dauergrünland“ (U1); die Lage ist Nutzung und allein kein Grund für
+  `sicher: nein` (U5).
+
+Eine eigene grobe Klasse „Siedlungsgrün“ gibt es nicht. Unbefestigte Wege stehen unter Offener
+Boden (6.6).
 
 ## Grundsätze G1 bis G5
 
 Sie sagen, was ein Segment überhaupt beschreibt. Wortlaut und Herkunft stehen auch in
 `kategorien.json` unter `rules`.
 
-- **G1 Bedeckung vor Nutzung:** Das Segment-Label beschreibt, was in der Draufsicht zu sehen ist (CLC+, FLAIR, LUCAS LC, EAGLE LCC). Nutzung, die das Bild nicht zeigt (Wiese vs. Weide, Kulturart, Brache-Status, Widmung), kommt in eine getrennte Attributschicht aus Fremddaten (INVEKOS, DKM) — EAGLE LUA, LUCAS LU, LISA LN (B6, B7, B11). Auch Siedlungsgrün ist keine Klasse: Rasen zählt zu Grünland (3.1), Gartenbaum, Strauch und Hecke zu Gehölz (4.2), Gartenbeet zu Acker (2.1/2.2). Ob ein Segment im Siedlungsgebiet liegt, trägt es als Merkmal `im_siedlung: ja|nein`; für Auswertungen nach Bericht 48 gilt die Regel im nächsten Abschnitt.
+- **G1 Bedeckung vor Nutzung:** Das Segment-Label beschreibt, was in der Draufsicht zu sehen ist (CLC+, FLAIR, LUCAS LC, EAGLE LCC). Nutzung, die das Bild nicht zeigt (Wiese vs. Weide, Kulturart, Brache-Status, Widmung), kommt in eine getrennte Attributschicht aus Fremddaten (INVEKOS, DKM) — EAGLE LUA, LUCAS LU, LISA LN (B6, B7, B11). Siedlungsgrün ist keine eigene grobe Klasse: Haus- und Hofgärten (jede krautige Grünfläche und jedes Beet darin, gepflegt oder nicht, auch Vor-, Obst- und Gemüsegarten) tragen die Unterklasse Garten (3.6) im Dauergrünland; Gartenbaum, Strauch und Hecke bleiben Gehölz (4.2, G2); Rasen in Park, Friedhof und Sportanlage bleibt Wiese/Weide (3.1). Ob ein Segment im Siedlungsgebiet liegt, trägt es als Merkmal `im_siedlung: ja|nein`; für Auswertungen nach Bericht 48 gilt die Regel im nächsten Abschnitt.
 - **G2 Sichtbare oberste Schicht:** Baumkrone über Straße ist Baum; Verdecktes wird nicht geraten (wie Draufsicht-Schemata CLC+, FLAIR; vermutet für FLAIR, nicht in deren Regeln nachgelesen).
 - **G3 Keine harte Mindestfläche beim Segmentieren:** Keine harte Mindestfläche beim Segmentieren (CLC+: „no MMU“); untere Grenze ist die Erkennbarkeit, Richtwert 3 Bildpunkte Breite (0,6 m bei 0,2 m; 1,5–3 m bei historischen 0,5–1 m) — Vorschlag, vermutet. Die Mindestgrößen aus Bericht 48 (100–400 m², Linien ≥ 2 m) und DKM (200 m²) sind Auswertungsebenen, die aus den feinen Segmenten aggregiert werden (deckt F1 „empfohlen“).
   Berichtigung: DKM-Mindestflächen nach § 4 BANU-V (Gegenprüfung B10, wuensche/2026-11-17-landseg-methode/gegenpruefung/e02.md:23): Gebäude ab 20 m², streifenförmige Elemente ab 4 m Breite (befestigte Verkehrswege und fließende Gewässer auch darunter), Wald ab 10 m Breite und 1 000 m², Alpen/Fels/Geröll/vegetationsarme Flächen/Gletscher ab 2 000 m², übrige Nutzungen ab 200 m². „DKM 200 m²“ gilt nur für die übrigen Nutzungen.
@@ -124,9 +146,9 @@ Sie sagen, was ein Segment überhaupt beschreibt. Wortlaut und Herkunft stehen a
 
 ## Siedlungsgebiet und Bericht 48
 
-Die grobe Klasse eines Segments (`grob`, Ebene 1) richtet sich nur nach der Bedeckung: Eine Wiese
-im Garten ist „3 Dauergrünland“ wie jede Wiese. Verwechselt die Vorstufe Rasen und Wiese, ist das
-deshalb nur noch ein feiner Fehler.
+Die grobe Klasse eines Segments (`grob`, Ebene 1) richtet sich nur nach der Bedeckung: Ein Garten
+(3.6) ist „3 Dauergrünland“ wie jede Wiese. Verwechselt die Vorstufe Garten und Wiese, ist das
+deshalb nur ein feiner Fehler.
 
 Ob ein Segment im Siedlungsgebiet liegt, steht als eigenes Merkmal `im_siedlung: ja | nein` je
 Segment in `segmente.json` (wie `sicher`), nicht als Klasse. Die Vorstufe setzt es aus der fertigen
@@ -136,8 +158,9 @@ in dieser Zone liegt, bekommt `ja`, alle anderen `nein` (Einstellungen in `vorst
 `siedlung`, am Test T0 noch nicht abgestimmt).
 
 **Abbildung auf Bericht 48:** Bericht 48 führt Hausgärten „als Teil der Siedlung“. Für Auswertungen
-nach Bericht 48 zählt deshalb ein Segment der Klassen 2, 3 und 4.2 (samt Unterklassen) mit
-`im_siedlung: ja` als „1 Versiegelt / bebaut“; alle anderen Segmente zählen nach ihrer Ebene-1-Klasse.
+nach Bericht 48 zählt deshalb ein Segment der Klassen 2, 3 und 4.2 (samt Unterklassen, also auch
+Garten 3.6) mit `im_siedlung: ja` als „1 Versiegelt / bebaut“; alle anderen Segmente zählen nach
+ihrer Ebene-1-Klasse, ein Garten ohne `im_siedlung: ja` also als „3 Dauergrünland“.
 Die Klassenliste dazu steht in `kategorien.json` bei Regel G1 (Feld `bericht48`), die Funktion ist
 `bericht48_klasse(klasse, im_siedlung)` in `landseg/kategorien.py`.
 
@@ -176,7 +199,7 @@ Zuordnung unbefestigter Wege zur Verkehrsfläche aus F5 ist durch „Bedeckung s
 python -I tools/pruefe_kategorien.py kategorien.json
 ```
 
-Das Skript braucht nur Python selbst. Es zählt die Klassen je Ebene (7/25/43) und die Regeln (5 G,
+Das Skript braucht nur Python selbst. Es zählt die Klassen je Ebene (7/26/44) und die Regeln (5 G,
 5 U), prüft eindeutige Codes, vorhandene Elternklassen, Pflichtfelder, gültige und deutlich
 verschiedene Farben und die Regel zu Bericht 48 (Feld `bericht48` bei G1: Klassen vorhanden, Ziel
 auf Ebene 1) und meldet am Ende `ok`. Bei einem Fehler nennt es die Stelle und endet mit

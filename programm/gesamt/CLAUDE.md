@@ -24,7 +24,7 @@ ohne Rückfrage und bevor du etwas anderes tust:
 4. Victor in wenigen Sätzen sagen, was er sieht:
    - Oben der Umschalter der drei Fassungen: **A „Alles frei“** (die KI bestimmt Grenzen,
      Kategorien und Arbeitsweise selbst), **B „Kategorien frei“** (die KI benennt und stuft die
-     Klassen selbst), **C „Feste Kategorienliste“** (unsere feste, gestufte Liste mit 58 Klassen).
+     Klassen selbst), **C „Feste Kategorienliste“** (unsere feste, gestufte Liste mit 59 Klassen).
      Die Seite öffnet mit A; Umschalt + A/B/C wechselt ebenfalls.
    - Wichtig, ausdrücklich sagen: Der Ausschnitt besteht aus **vier Teilkacheln** (Bildstücken),
      und die Seite zeigt immer nur eine davon. Darunter liegt deshalb die breite **Kachel-Wahl**:

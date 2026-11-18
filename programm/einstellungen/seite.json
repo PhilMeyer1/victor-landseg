@@ -1,5 +1,13 @@
 {
-  "beschreibung": "W8 seite: Voreinstellungen, Fassungen und Farben der Übersichtsseite. Längen in Bildpunkten der Teilkachel, Deckkraft 0 bis 1. fassungen: je Fassung kennung, name, beschreibung, ordner (relativ zum Ordner des Manifests, darin <teilkachel>/labels.tif und segmente.json) und kategorien (eigene Kategorienliste im Format von kategorien.json, relativ zum Ordner der Fassung; null = die Liste des Aufrufs, Standard kategorien.json des Repos). Reihenfolge der Liste = Reihenfolge der Umschalter; die Seite öffnet mit der ersten Fassung. Eine Fassung ohne Daten erscheint ausgegraut.",
+  "beschreibung": "W8 seite: Voreinstellungen, Fassungen und Farben der Übersichtsseite. Längen in Bildpunkten der Teilkachel, Deckkraft 0 bis 1. fassungen: je Fassung kennung, name, beschreibung, ordner (relativ zum Ordner des Manifests, darin <teilkachel>/labels.tif und segmente.json) und kategorien (eigene Kategorienliste im Format von kategorien.json, relativ zum Ordner der Fassung; null = die Liste des Aufrufs, Standard kategorien.json des Repos). Reihenfolge der Liste = Reihenfolge der Umschalter; die Seite öffnet mit der ersten Fassung. Eine Fassung ohne Daten erscheint ausgegraut. bilder: die Bilder einer Seite mit Bildwahl (seite --daten <ordner>), je Bild kennung (im Link der Seite), name, beschreibung, manifest (relativ zu --daten oder absolut) und wahlweise ordner (Kennung der Fassung -> Ordner relativ zum Ordner des Manifests, ersetzt für dieses Bild den Ordner aus fassungen); Reihenfolge = Reihenfolge der Bildwahl, die Seite öffnet mit dem ersten Bild mit Daten. Ein Bild ohne Manifest oder ohne Daten erscheint ausgegraut. seite --manifest <m> macht eine Seite mit diesem einen Bild ohne Bildwahl.",
+  "bilder": [
+    {"kennung": "T0", "name": "Orthofoto T0",
+     "beschreibung": "Orthofoto in Farbe, Ausschnitt 1000 × 1000 Bildpunkte, vier Teilkacheln.",
+     "manifest": "T0/manifest.json"},
+    {"kennung": "H0", "name": "Historischer Ausschnitt H0",
+     "beschreibung": "Luftbild-Scan von 1968, Schwarz-Weiß, ohne Lage; Ausschnitt 1000 × 1000 Bildpunkte, vier Teilkacheln.",
+     "manifest": "H0/manifest.json"}
+  ],
   "fassungen": [
     {"kennung": "A", "name": "Alles frei",
      "beschreibung": "Eigene Kategorien, eigene Grenzen und eigene Arbeitsweise der KI je Teilkachel, ohne feste Regeln; Liste danach zusammengelegt.",

@@ -26,12 +26,23 @@ class KategorienTest(unittest.TestCase):
         self.assertEqual((KAT.grob("6.6"), KAT.klassen["6.6"]["parent"]), ("6", "6"))
         self.assertEqual(KAT.name("6.6"), "Weg, unbefestigt (Feld-, Wald-, Schotterweg)")
 
-    def test_pruefskript_zaehlt_7_25_43(self):
+    def test_pruefskript_zaehlt_7_26_44(self):
         doc = json.loads((REPO / "kategorien.json").read_text(encoding="utf-8"))
         fehler, zahlen = pruefskript().check(doc)
         self.assertEqual(fehler, [])
         self.assertEqual((zahlen["level_1"], zahlen["level_2"], zahlen["leaves"], zahlen["classes"]),
-                         (7, 25, 43, 58))
+                         (7, 26, 44, 59))
+
+    def test_garten_ist_unterklasse_von_dauergruenland(self):
+        self.assertTrue(KAT.gueltig("3.6"))
+        self.assertTrue(KAT.name("3.6").startswith("Garten"))
+        self.assertEqual((KAT.klassen["3.6"]["parent"], KAT.klassen["3.6"]["level"], KAT.grob("3.6")),
+                         ("3", 2, "3"))
+        self.assertEqual([c for c, k in KAT.klassen.items() if k.get("parent") == "3.6"], [])
+        doc = json.loads((REPO / "kategorien.json").read_text(encoding="utf-8"))
+        g1 = next(r for r in doc["rules"] if r["id"] == "G1")
+        self.assertIn("Garten (3.6)", g1["text"])
+        self.assertNotIn("Gartenbeet zu Acker", g1["text"])
 
     def test_pruefskript_meldet_kaputte_bericht48_regel(self):
         doc = json.loads((REPO / "kategorien.json").read_text(encoding="utf-8"))
@@ -58,6 +69,13 @@ class Bericht48Test(unittest.TestCase):
         for code in ("0", "0.2", "1.1.1", "1.2.1", "1.3.1", "4", "4.1", "4.1.1", "5.2", "6.1", "6.6"):
             for merkmal in ("ja", "nein", None):
                 self.assertEqual(KAT.bericht48_klasse(code, merkmal), KAT.grob(code), (code, merkmal))
+
+    def test_garten_im_siedlungsgebiet_zaehlt_als_siedlung_sonst_als_dauergruenland(self):
+        self.assertTrue(KAT.siedlung_moeglich("3.6"))
+        self.assertEqual(KAT.bericht48_klasse("3.6", "ja"), "1")
+        self.assertEqual(KAT.bericht48_klasse("3.6", True), "1")
+        self.assertEqual(KAT.bericht48_klasse("3.6", "nein"), "3")
+        self.assertEqual(KAT.bericht48_klasse("3.6"), "3")
 
     def test_rasen_ist_gruenland_grob_und_siedlung_nur_mit_merkmal(self):
         self.assertEqual(KAT.grob("3.1"), "3")

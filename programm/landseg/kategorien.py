@@ -8,11 +8,44 @@ Feld ``bericht48`` (``im_siedlung_klassen``, ``im_siedlung_ziel``).
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
 #: Standardort der Kategorienliste: Wurzel des Repos (neben dem Paket).
 STANDARD_PFAD = Path(__file__).resolve().parent.parent / "kategorien.json"
+
+#: Namen, die jede freie Liste (Fassungen A und B) führen muss: Klasse „Garten“ unter der Ebene-1-Klasse
+#: „Dauergrünland“ (Skill landseg-agent, L14). Ein Zusatz in Klammern ist erlaubt, etwa „Garten (Haus- und
+#: Hofgarten)“; Groß- und Kleinschreibung zählt nicht.
+GARTEN = "Garten"
+DAUERGRUENLAND = "Dauergrünland"
+
+
+def _heisst(name: object, wort: str) -> bool:
+    return isinstance(name, str) and re.fullmatch(rf"{re.escape(wort)}(\s*\(.*\))?", name.strip(),
+                                                  re.IGNORECASE | re.DOTALL) is not None
+
+
+def garten_maengel(klassen: dict[str, dict]) -> list[str]:
+    """Mängel einer freien Liste (Code -> Klasse) gegen die Pflicht „Garten unter Dauergrünland“; leer = ok."""
+    garten = [c for c, k in klassen.items() if _heisst(k.get("name"), GARTEN)]
+    if not garten:
+        return [f"Garten: Liste ohne Klasse „{GARTEN}“ (Pflicht in jeder freien Fassung, unter der "
+                f"Ebene-1-Klasse „{DAUERGRUENLAND}“; Skill landseg-agent, L14)"]
+    maengel = []
+    for code in garten:
+        kette, gesehen = [code], {code}
+        while (eltern := klassen.get(kette[-1], {}).get("parent")) is not None and str(eltern) not in gesehen:
+            kette.append(str(eltern))
+            gesehen.add(str(eltern))
+        oben = kette[-1]
+        if len(kette) < 2 or not _heisst(klassen.get(oben, {}).get("name"), DAUERGRUENLAND):
+            ort = ("ist selbst Ebene 1" if len(kette) < 2
+                   else f"steht unter {oben} „{klassen.get(oben, {}).get('name', oben)}“")
+            maengel.append(f"Garten: Klasse {code} „{klassen[code].get('name')}“ {ort}, "
+                           f"erwartet unter der Ebene-1-Klasse „{DAUERGRUENLAND}“")
+    return maengel
 
 
 @dataclass
@@ -59,6 +92,10 @@ class Kategorien:
     def siedlung_moeglich(self, code: str) -> bool:
         """Ob ein Segment dieser Klasse das Merkmal ``im_siedlung: ja`` tragen kann."""
         return self.unter(code, self.siedlung_klassen)
+
+    def garten_maengel(self) -> list[str]:
+        """Pflicht der freien Fassungen: Klasse „Garten“ unter „Dauergrünland“ (``garten_maengel``)."""
+        return garten_maengel(self.klassen)
 
     def bericht48_klasse(self, code: str, im_siedlung: object = None) -> str:
         """Ebene-1-Klasse für Auswertungen nach Bericht 48.

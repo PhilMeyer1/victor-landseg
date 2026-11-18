@@ -15,6 +15,8 @@ from __future__ import annotations
 
 import json
 import os
+import time
+from contextlib import contextmanager
 from pathlib import Path
 
 import numpy as np
@@ -51,6 +53,43 @@ def schreibe_labels(pfad: str | Path, karte: np.ndarray) -> None:
     else:
         tifffile.imwrite(tmp, karte, compression="zlib", photometric="minisblack")
     os.replace(tmp, pfad)
+
+
+@contextmanager
+def karte_sperren(labels: str | Path, warten: float = 600.0, veraltet: float = 300.0):
+    """Exklusiv für Lesen-Ändern-Schreiben von Label-Karte und ``segmente.json``.
+
+    Mehrere Agents (je Viertel einer) bearbeiten dieselbe Karte: Wer schreibt, hält die Sperrdatei
+    ``<labels>.sperre`` vom Lesen bis zum Schreiben; die anderen warten (höchstens ``warten`` Sekunden,
+    dann ``TimeoutError``). So geht kein Eingriff verloren, und jeder liest den Stand nach dem letzten.
+    Eine Sperrdatei älter als ``veraltet`` Sekunden stammt von einem abgebrochenen Aufruf und wird entfernt.
+    """
+    sperre = Path(labels).with_name(Path(labels).name + ".sperre")
+    sperre.parent.mkdir(parents=True, exist_ok=True)
+    ende = time.monotonic() + warten
+    while True:
+        try:
+            fd = os.open(sperre, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            break
+        except FileExistsError:
+            try:
+                if time.time() - sperre.stat().st_mtime > veraltet:
+                    sperre.unlink()
+                    continue
+            except FileNotFoundError:
+                continue
+            if time.monotonic() >= ende:
+                raise TimeoutError(f"{sperre}: Karte nach {warten:.0f} s noch von einem anderen Aufruf gesperrt")
+            time.sleep(0.1)
+    try:
+        os.write(fd, f"{os.getpid()}\n".encode())
+        os.close(fd)
+        yield
+    finally:
+        try:
+            sperre.unlink()
+        except FileNotFoundError:
+            pass
 
 
 def lese_json(pfad: str | Path) -> dict:

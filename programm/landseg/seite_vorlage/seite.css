@@ -40,8 +40,8 @@ h3 button { margin-left: auto; text-transform: none; letter-spacing: 0; font-siz
 .c-kopf a:hover { color: var(--text); background: var(--grau-2); }
 .c-kopf a[aria-current="page"] { color: var(--text); background: var(--grau-3); }
 .c-rechts { justify-self: end; }
-.c-fassungen { display: flex; gap: 4px; }
-.c-fassungen button span:not(.c-fname) { color: var(--text-leise); }
+.c-fassungen, .c-bilder { display: flex; gap: 4px; }
+.c-fassungen button span:not(.c-fname), .c-bilder button span:not(.c-fname) { color: var(--text-leise); }
 .c-beschr { grid-column: 1 / -1; margin: 0; color: var(--text-leise); font-size: var(--gr-klein); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .c-beschr b { color: var(--text); margin-right: 6px; }
 
@@ -171,6 +171,7 @@ kbd { display: inline-grid; place-items: center; min-width: 20px; height: 20px; 
   .c-info, .c-kat { display: none; }
   .c-kopf { grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 10px; padding: 6px 10px; }
   .c-kopf > b, .c-fname { display: none; }
+  .c-kopf:has(> .c-bilder) { grid-template-columns: auto auto minmax(0, 1fr) auto; }
   .c-tafel figcaption { gap: 10px; }
   .c-leiste { gap: 14px; padding: 0 10px; }
   .c-kachelwahl { gap: 6px; padding: 6px 8px; }

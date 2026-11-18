@@ -54,9 +54,14 @@ Stitcher-Methode übernommen und auf Landschaft umgestellt (Ermittlung `landseg-
   Bearbeiter-Name bei jedem `eingriff`.
 - **L11 Bilder selbst prüfen.** Höchstens 2000 Bildpunkte an der langen Seite, JPEG; Beschriftung
   deutsch, mit Umlauten und lesbar; sieh dir jedes fertige Bild noch einmal an (verdeckt nichts die
-  Stelle, die es zeigt?).
+  Stelle, die es zeigt?). Übersichtsbilder (ganzer Ausschnitt, ganze Teilkachel, Viertel) verlangt nur
+  der Auftrag, an genau einer Stelle; ein Prompt wiederholt sie nicht, und du siehst jedes nur einmal an.
+  Nahansichten sind ein Paar in einem Bild: links roh, rechts dieselbe Stelle mit Grenzen und Nummern,
+  im selben Maßstab (`zoom --roh` oder `paar.png` aus `ansicht`); nie getrennt roh und nummeriert.
 - **L12 Umgebung.** Python nur über den Interpreter aus dem Auftrag (nie bloßes `python`), nichts
-  installieren, Skripte als Datei, keine Prozesse dauerhaft starten, keine Fenster öffnen.
+  installieren, Skripte als Datei, keine Prozesse dauerhaft starten, keine Fenster öffnen. Für
+  wiederkehrende Schritte zuerst die fertigen Befehle aus dem Auftrag (etwa `urteil bauen`, `zoom`,
+  `einigung abgabe`); ein eigenes Skript nur, wenn kein Befehl den Fall deckt.
 - **L13 Einigung im Verbund.** An den Übergängen der Teilkacheln (Nähte, Ecken, Viertelgrenzen)
   urteilst du mit Blick auf beide Seiten und die Urteile beider Teilkacheln: Zeigen zwei Segmente
   ohne Bildkante dieselbe Fläche, bekommen sie eine gemeinsame Klasse aus der Liste der Fassung (bei
@@ -64,6 +69,28 @@ Stitcher-Methode übernommen und auf Landschaft umgestellt (Ermittlung `landseg-
   für alle Glieder; eine echte Grenze bleibt mit Grund stehen; was sich nicht klären lässt, wird als
   unsicher mit Grund belegt, nie stillschweigend gelassen. Ein Urteil je Stelle für alle Beteiligten,
   nur Klassen von Segmenten im Kern, keine Grenzen und keine neuen Klassen.
+- **L14 Garten.** Haus- und Hofgärten tragen die Unterklasse **3.6 Garten** im Dauergrünland (Abschnitt
+  „Garten“ in `KATEGORIEN.md`). Garten ist jede krautige Grünfläche und jedes Beet in einem Haus- oder
+  Hofgarten, auch Vor-, Obst- und Gemüsegarten am Haus, gepflegt oder verwildert, gemäht oder brach; Rasen
+  ist kein Kennzeichen, die Lage am Wohnhaus oder Hof (eingefasst von Gebäude, Zaun oder Hecke) ist es.
+  Kein Garten: Gartenbaum, Strauch und Hecke (Gehölz, G2), Gartenhaus (1.1.2), befestigter Weg oder
+  Terrasse, Teich, Pool; Rasen in Park, Friedhof und Sportanlage (3.1); Wiese oder Acker am Ortsrand, die
+  zu keinem Haus oder Hof gehört. Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat:
+  entscheide am Bild. Gehört eine Grünfläche am Haus nicht sicher zum Garten, nimm „3 Dauergrünland“.
+  In den freien Fassungen (A „Alles frei“, B „Kategorien frei“) gilt dasselbe für die eigenen Namen: Jede
+  freie Liste führt die Klasse „Garten“ unter der Ebene-1-Klasse „Dauergrünland“ (genau diese Namen, ein
+  Zusatz in Klammern ist erlaubt), auch wenn noch kein Segment sie trägt; wer Listen zusammenlegt, erhält
+  sie dort und bildet jeden Gartennamen der Teil-Listen auf sie ab. `pruefen --frei` meldet sonst einen Fehler.
+- **L15 Feinheit je Bildart.** L5 meint die Genauigkeit der Grenzen, nicht die Größe der Flächen. Wie klein
+  Flächen werden dürfen, hängt an der Bildart (`einstellungen/bildarten.json`, aus dem Manifest; Aufruf
+  `landseg bildart --manifest … --teilkachel …`). Farb-Orthofoto: so fein, wie sicher erkennbar, ohne Richtwert.
+  Schwarz-Weiß-Scan (alt, niedrig aufgelöst, ein Kanal): Richtwert rund 600 Segmente je Ausschnitt von
+  1000 × 1000 Bildpunkten (Teilkachel mit Kern 500 × 500: 150), Mindestfläche 100 m²; kleiner nur ein klar
+  erkennbares Objekt (Haus, Einzelbaum, schmaler Weg, Garten am Haus), das du mit `sicher: ja` urteilst. Ein klar
+  erkennbarer Garten am Haus bleibt eigene Fläche „Garten“ (L14), ein unklarer geht in die Nachbarfläche. Korn,
+  Rauschen und Helligkeitsflecken sind keine Flächen: zusammenlegen (`eingriff verschmelzen`, Klasse der größeren
+  Fläche), nachsegmentieren nur klar erkennbare Objekte. Die Zahlen setzt der Auftrag ein (`{{FEINHEIT}}`);
+  `pruefen --manifest … --teilkachel …` meldet ein Überschreiten als Hinweis.
 
 ## Abgabe und Rückgabe
 

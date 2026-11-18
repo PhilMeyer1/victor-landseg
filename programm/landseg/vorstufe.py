@@ -39,6 +39,7 @@ from scipy import ndimage
 from skimage.measure import label as zusammenhang_label
 from skimage.segmentation import slic
 
+from . import bildart as bildart_modul
 from . import dateien
 from .kategorien import Kategorien
 from .pruefen import VIERER, pruefen
@@ -269,10 +270,12 @@ class Ergebnis:
 
 def verschmelzen(bild: np.ndarray, sp: np.ndarray, roh: Roh, konfig: dict, kat: Kategorien,
                  id_start: int = 0, kern: dict | None = None,
-                 bildpunkt_m: float | None = None) -> Ergebnis:
+                 bildpunkt_m: float | None = None, feinheit: dict | None = None) -> Ergebnis:
     """Schritt d: Superpixel + Rohwerte -> lückenlose Label-Karte, Segmente, Kandidaten.
 
     ``bildpunkt_m``: Bildpunktgröße für den Puffer der Siedlungszone (sonst ``siedlung.bildpunkt_m``).
+    ``feinheit``: aus ``bildart.feinheit``; mit ``mindest_px`` werden kleinere Segmente (außer geschützten und
+    solchen an der Kerngrenze) mit einem Nachbarn zusammengelegt (Bildart ``sw``).
     """
     h, w = sp.shape
     if roh.werte.shape[1:] != (h, w):
@@ -392,6 +395,20 @@ def verschmelzen(bild: np.ndarray, sp: np.ndarray, roh: Roh, konfig: dict, kat: 
                                "laenge_px": laenge, "staerke": round(staerke, 4),
                                "grund": f"mittlere Kantenstärke {staerke:.3f} < {kd['kante_min']}"})
 
+    zusammenlegen = None
+    if feinheit and feinheit.get("mindest_px"):
+        from .eingriff import Bearbeitung
+        arbeit = Bearbeitung(labels, {"segmente": segmente, "verlauf": []}, kat, "vorstufe")
+        zusammenlegen = bildart_modul.kleine_zusammenlegen(arbeit, int(feinheit["mindest_px"]),
+                                                           feinheit.get("schutz"), kern, kat)
+        labels, segmente = arbeit.karte, arbeit.segmente["segmente"]
+        bleibt = {e["id"] for e in segmente}
+        kandidaten = [k for k in kandidaten if all(i in bleibt for i in k["ids"])]
+        n = len(segmente)
+        if im_kern is not None:
+            im_kern = np.zeros(n + 1, bool)
+            im_kern[1:] = [e.get("im_kern", False) for e in segmente]
+
     im_siedlung_ja = siedlung_merkmal(labels, segmente, konfig["siedlung"], kat, bildpunkt_m)
     nein = [e for e in segmente if e["sicher"] == "nein"]
     arten: dict[str, int] = {}
@@ -409,6 +426,11 @@ def verschmelzen(bild: np.ndarray, sp: np.ndarray, roh: Roh, konfig: dict, kat: 
         "kandidaten": arten,
         "im_siedlung_ja": im_siedlung_ja,
     }
+    if feinheit:
+        messung["bildart"] = feinheit["bildart"]
+        messung["richtwert"] = feinheit.get("richtwert")
+        if zusammenlegen:
+            messung["zusammenlegen"] = zusammenlegen
     daten = {"schema": dateien.SEGMENTE_SCHEMA, "segmente": segmente, "verlauf": []}
     return Ergebnis(labels=labels, segmente=daten, kandidaten=kandidaten, messung=messung)
 
@@ -425,6 +447,7 @@ class Auftrag:
     id_start: int = 0
     kern: dict | None = None
     bildpunkt_m: float | None = None  # aus dem transform der Teilkachel
+    bildart: str = bildart_modul.STANDARD  # aus dem Manifest (einstellungen/bildarten.json)
 
 
 def auftraege_aus_manifest(manifest_pfad: str | Path, konfig: dict,
@@ -432,6 +455,7 @@ def auftraege_aus_manifest(manifest_pfad: str | Path, konfig: dict,
     manifest_pfad = Path(manifest_pfad)
     manifest = dateien.lese_json(manifest_pfad)
     ordner = manifest_pfad.parent
+    art = bildart_modul.bildart_von(manifest)
     alle = manifest.get("teilkacheln") or []
     bekannt = {t["id"] for t in alle}
     for name in auswahl or []:
@@ -445,7 +469,8 @@ def auftraege_aus_manifest(manifest_pfad: str | Path, konfig: dict,
                                  ziel=ordner / "vorstufe" / t["id"],
                                  id_start=nr * int(konfig["id_block"]),
                                  kern=t.get("kern_im_bild"),
-                                 bildpunkt_m=bildpunkt_aus_transform(t.get("transform"))))
+                                 bildpunkt_m=bildpunkt_aus_transform(t.get("transform")),
+                                 bildart=art))
     return auftraege
 
 
@@ -472,8 +497,20 @@ def vorstufe(auftraege: list[Auftrag], konfig: dict, kat: Kategorien, modell_lad
     -> Roh`` liefert; sie wird höchstens einmal und nur bei Bedarf aufgerufen.
     """
     abdruck_sam3 = fingerabdruck(sam3_teil(konfig))
-    abdruck = fingerabdruck({k: v for k, v in konfig.items() if not k.startswith("_")})
     klassen, texte = klassen_und_texte(konfig)
+    je_bildart: dict[str, tuple[dict, str]] = {}
+
+    def konfig_fuer(auftrag: Auftrag) -> tuple[dict, str]:
+        """Einstellungen der Bildart (Farbe: ``konfig`` selbst) und ihr Fingerabdruck."""
+        if auftrag.bildart not in je_bildart:
+            k = bildart_modul.vorstufe_konfig(konfig, auftrag.bildart)
+            je_bildart[auftrag.bildart] = (k, fingerabdruck({s: v for s, v in k.items() if not s.startswith("_")}))
+        return je_bildart[auftrag.bildart]
+
+    def feinheit_fuer(auftrag: Auftrag) -> dict | None:
+        fein = bildart_modul.feinheit(auftrag.bildart, auftrag.kern["breite"] * auftrag.kern["hoehe"]
+                                      if auftrag.kern else None, auftrag.bildpunkt_m)
+        return fein if fein["richtwert"] or fein["mindest_px"] else None
     modell = None
     ergebnisse: list[dict] = []
 
@@ -481,8 +518,9 @@ def vorstufe(auftraege: list[Auftrag], konfig: dict, kat: Kategorien, modell_lad
                            t_start: float, sam3_s: float) -> dict:
         sp = sp_zukunft.result()
         t0 = time.perf_counter()
-        erg = verschmelzen(bild, sp, roh, konfig, kat, id_start=auftrag.id_start, kern=auftrag.kern,
-                           bildpunkt_m=auftrag.bildpunkt_m)
+        k, abdruck = konfig_fuer(auftrag)
+        erg = verschmelzen(bild, sp, roh, k, kat, id_start=auftrag.id_start, kern=auftrag.kern,
+                           bildpunkt_m=auftrag.bildpunkt_m, feinheit=feinheit_fuer(auftrag))
         befund = pruefen(erg.labels, erg.segmente, kat, form=bild.shape[:2])
         erg.messung.update(hoehe=int(bild.shape[0]), breite=int(bild.shape[1]))
         sekunden = time.perf_counter() - t_start
@@ -491,7 +529,7 @@ def vorstufe(auftraege: list[Auftrag], konfig: dict, kat: Kategorien, modell_lad
                                      "gesamt": round(sekunden, 2)}
         erg.segmente["vorstufe"] = {
             "teilkachel": auftrag.name, "bild": auftrag.bild.name, "konfig": abdruck,
-            "sam3": abdruck_sam3, "modell": konfig["sam3"]["modell"],
+            "sam3": abdruck_sam3, "modell": konfig["sam3"]["modell"], "bildart": auftrag.bildart,
             "erstellt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "messung": erg.messung, "pruefen": befund.als_dict()}
         erg.segmente["verlauf"].append({"zeit": erg.segmente["vorstufe"]["erstellt"],
@@ -513,6 +551,7 @@ def vorstufe(auftraege: list[Auftrag], konfig: dict, kat: Kategorien, modell_lad
         offen = []
         for auftrag in auftraege:
             fertig = auftrag.ziel / "segmente.json"
+            k, abdruck = konfig_fuer(auftrag)
             if not neu and fertig.exists():
                 alt = dateien.lese_json(fertig).get("vorstufe", {})
                 if alt.get("konfig") == abdruck:
@@ -524,7 +563,7 @@ def vorstufe(auftraege: list[Auftrag], konfig: dict, kat: Kategorien, modell_lad
                     continue
             t_start = time.perf_counter()
             bild = lese_bild(auftrag.bild)
-            sp_zukunft = pool.submit(uebersegmentierung, bild, konfig["uebersegmentierung"])
+            sp_zukunft = pool.submit(uebersegmentierung, bild, k["uebersegmentierung"])
             roh_pfad = auftrag.ziel / "sam3_roh.npz"
             t0 = time.perf_counter()
             roh = Roh.laden(roh_pfad, abdruck_sam3)

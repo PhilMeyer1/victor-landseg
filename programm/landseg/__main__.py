@@ -2,8 +2,12 @@
 
 Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``ansicht`` (W3), ``kante`` (W4), ``eingriff`` (W5),
 ``pruefen`` (W6), ``zusammentragen`` (W7), ``seite`` (W8, Übersichtsseite), ``naht`` (Nahtregel allein),
-``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``messen``). Exit-Code 0 = ok,
-1 = Befund, Nahtverstoß, offene Stellen oder Eingriff/Abgabe abgelehnt, 2 = Aufruf- oder Lesefehler.
+``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``abgabe``, ``messen``),
+``urteil`` (``urteil.json`` aus kurzer Liste bauen, prüfen), ``zoom`` (Ausschnitt einer Stelle mit Umriss und
+Nummern), ``messung`` (Kosten eines Agent-Laufs aus den Transkripten), ``plan`` (Urteils-Agents eines Laufs:
+ein Agent je Viertel, Fassung A je Teilkachel, mit Prompt), ``bildart`` (Feinheit der Bildart: Richtwert,
+Mindestfläche), ``vergroebern`` (kleine Flächen einer Fassung mit dem Nachbarn zusammenlegen). Exit-Code 0 = ok, 1 = Befund,
+Nahtverstoß, offene Stellen oder Eingriff/Abgabe/Urteil abgelehnt, 2 = Aufruf- oder Lesefehler.
 """
 
 from __future__ import annotations
@@ -16,15 +20,24 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
+from . import bildart as bildart_modul
 from . import dateien, einstellungen, kategorien, naht
-from .ansicht import AnsichtFehler, ansicht
+from . import urteil as urteil_modul
+from . import zoom as zoom_modul
+from .ansicht import Ansicht, AnsichtFehler, ansicht
 from . import einigung as einigung_modul
 from .eingriff import Bearbeitung, EingriffFehler
 from .einigung import EinigungFehler
 from .kacheln import KachelFehler, kacheln
 from .kante import einrasten
+from .messung import messung_befehl, tabelle
+from . import lauf as lauf_modul
+from . import plan as plan_modul
+from . import vorbereiten as vorbereiten_modul
+from . import zusammenfuehren as zusammenfuehren_modul
+from .lauf import LaufFehler
 from .pruefen import pruefen
-from .seite import SeiteFehler, seite
+from .seite import SeiteFehler, bilder_aus_einstellungen, seite
 from .vorstufe import Auftrag, VorstufeFehler, auftraege_aus_manifest, konfig_laden, vorstufe
 from .zusammentragen import ZusammenFehler, lese_auftrag, zusammentragen
 
@@ -70,7 +83,8 @@ def befehl_vorstufe(a) -> int:
     else:
         if not a.ziel or a.teilkachel:
             raise VorstufeFehler("--bild braucht --ziel und kennt keine --teilkachel")
-        auftraege = [Auftrag(name=Path(a.bild).stem, bild=Path(a.bild), ziel=Path(a.ziel))]
+        auftraege = [Auftrag(name=Path(a.bild).stem, bild=Path(a.bild), ziel=Path(a.ziel),
+                             bildart=bildart_modul.bildart_von_bild(a.bild))]
 
     def modell_laden():
         from .sam3 import Sam3Vorschlag
@@ -83,16 +97,109 @@ def befehl_vorstufe(a) -> int:
 def befehl_pruefen(a) -> int:
     karte = dateien.lese_labels(a.labels)
     segmente = dateien.lese_segmente(a.segmente) if a.segmente else None
-    kat = kategorien.laden(a.kategorien) if segmente is not None else None
+    kat = kategorien.laden(a.kategorien) if segmente is not None or a.frei else None
     form = a.form
     if a.bild:
         with Image.open(a.bild) as bild:
             form = (bild.height, bild.width)
-    befund = pruefen(karte, segmente, kat, form=form, mindestflaeche=a.mindestflaeche)
+    richtwert, kern = a.richtwert, None
+    if a.manifest:
+        if not a.teilkachel:
+            raise ValueError("--manifest braucht --teilkachel (Richtwert und Kern der Teilkachel)")
+        manifest = dateien.lese_json(a.manifest)
+        fein = bildart_modul.feinheit_aus_manifest(manifest, a.teilkachel)
+        richtwert = richtwert or fein["richtwert"]
+        kern = next(t["kern_im_bild"] for t in manifest["teilkacheln"] if t["id"] == a.teilkachel)
+    befund = pruefen(karte, segmente, kat, form=form, mindestflaeche=a.mindestflaeche, frei=a.frei,
+                     richtwert=richtwert, kern=kern)
     return _befund_ausgeben(befund, a.json)
 
 
+def befehl_bildart(a) -> int:
+    manifest = dateien.lese_json(a.manifest)
+    fein = bildart_modul.feinheit_aus_manifest(manifest, a.teilkachel)
+    if a.auftrag:
+        print(bildart_modul.auftrag_block(fein).strip())
+    else:
+        print(json.dumps(fein, ensure_ascii=False) if a.json else bildart_modul.feinheit_text(fein))
+    return 0
+
+
+def _fassungs_kategorien(ordner: Path, pfad: str | None):
+    if pfad:
+        return kategorien.laden(pfad)
+    listen = sorted(ordner.glob("kategorien-*.json"))
+    return kategorien.laden(listen[0] if len(listen) == 1 else None)
+
+
+def befehl_vergroebern(a) -> int:
+    """Alle Teilkacheln der Fassung bleiben bis zum Schreiben gesperrt und geladen: Beschlüsse der Einigung nennen
+    Segmente der Nachbarn, ``einigung_umbenennen`` stellt sie in der ganzen Fassung um."""
+    from contextlib import ExitStack
+    manifest = dateien.lese_json(a.manifest)
+    ordner = Path(a.ordner)
+    kat = _fassungs_kategorien(ordner, a.kategorien)
+    teil = {t["id"]: t for t in manifest["teilkacheln"]}
+    for tk in a.teilkachel or []:
+        if tk not in teil:
+            raise ValueError(f"Teilkachel {tk!r} fehlt im Manifest")
+    fehler = 0
+    with ExitStack() as sperren:
+        arbeiten: dict[str, Bearbeitung] = {}
+        for tk in teil:
+            labels = ordner / tk / "labels.tif"
+            if labels.exists():
+                sperren.enter_context(dateien.karte_sperren(labels))
+                arbeiten[tk] = Bearbeitung(dateien.lese_labels(labels), dateien.lese_segmente(
+                    ordner / tk / "segmente.json"), kat, a.bearbeiter)
+        ersetzt: dict[str, dict[int, int]] = {}
+        zeilen: dict[str, tuple[dict, dict]] = {}
+        for tk in a.teilkachel or list(teil):
+            fein = bildart_modul.feinheit_aus_manifest(manifest, tk)
+            if not fein["mindest_px"]:
+                print(f"{tk}: {bildart_modul.feinheit_text(fein)}; nichts zusammenzulegen")
+                continue
+            if tk not in arbeiten:
+                raise ValueError(f"{ordner / tk / 'labels.tif'} fehlt")
+            erg = bildart_modul.kleine_zusammenlegen(arbeiten[tk], fein["mindest_px"], fein["schutz"],
+                                                     teil[tk]["kern_im_bild"], kat)
+            ersetzt[tk] = erg["ersetzt"]
+            zeilen[tk] = (fein, erg)
+        umbenannt = bildart_modul.einigung_umbenennen(arbeiten, ersetzt)
+        for tk, (fein, erg) in zeilen.items():
+            arbeit, kern = arbeiten[tk], teil[tk]["kern_im_bild"]
+            befund = pruefen(arbeit.karte, arbeit.segmente, kat, richtwert=fein["richtwert"], kern=kern)
+            im_kern = len(np.unique(arbeit.karte[kern["y"]:kern["y"] + kern["hoehe"],
+                                                  kern["x"]:kern["x"] + kern["breite"]]))
+            b = erg["bleiben_unter_mindest"]
+            print(f"{tk}: Segmente {erg['vorher']} -> {erg['nachher']} (im Kern {im_kern}, Richtwert {fein['richtwert']}), "
+                  f"zusammengelegt {erg['zusammengelegt']}, davon an Kern- und Viertelgrenzen {erg['an_der_naht']} "
+                  f"(Einigung mitgenommen {erg['einigung_umgezogen']}); unter {fein['mindest_px']} Bildpunkten "
+                  f"bleiben: geschützt {b['schutz']}, an der Grenze ohne Nachbarn gleicher Klasse {b['naht']}; "
+                  f"pruefen {'ok' if befund.ok else 'FEHLER'}" + (" (Probe, nichts geschrieben)" if a.probe else ""))
+            for h in befund.hinweise:
+                print(f"  Hinweis: {h}")
+            if not befund.ok:
+                print(befund.als_text())
+                fehler += 1
+        print(f"Einigung: {sum(umbenannt.values())} Beschlüsse auf die zusammengelegten Segmente umgestellt")
+        if not a.probe and not fehler:
+            for tk, arbeit in arbeiten.items():
+                if tk in zeilen:
+                    dateien.schreibe_labels(ordner / tk / "labels.tif", arbeit.karte)
+                if tk in zeilen or umbenannt.get(tk):
+                    dateien.schreibe_json(ordner / tk / "segmente.json", arbeit.segmente)
+        elif fehler:
+            print("nichts geschrieben (pruefen meldet Fehler)")
+    return 1 if fehler else 0
+
+
 def befehl_eingriff(a) -> int:
+    with dateien.karte_sperren(a.labels):   # mehrere Agents je Karte (ein Agent je Viertel)
+        return _eingriff(a)
+
+
+def _eingriff(a) -> int:
     karte = dateien.lese_labels(a.labels)
     segmente = dateien.lese_segmente(a.segmente)
     kat = kategorien.laden(a.kategorien)
@@ -162,6 +269,8 @@ def _einigung_fassungen(a) -> list:
 
 def befehl_einigung(a) -> int:
     einst = einstellungen.laden("einigung", a.einstellungen)
+    if a.schritt == "abgabe" and not a.fassung:
+        a.fassung = einigung_modul.auftrag_lesen(a.auftraege, a.buendel)["fassung"]
     if a.schritt in ("finden", "anwenden") and not (a.fassung or a.ordner):
         raise EinigungFehler(f"einigung {a.schritt}: --fassung oder --ordner angeben")
     manifest = dateien.lese_json(a.manifest)
@@ -170,6 +279,14 @@ def befehl_einigung(a) -> int:
         fassungen = _einigung_fassungen(a)
         if not fassungen:
             raise EinigungFehler("keine Fassung mit Daten gefunden")
+        if a.schritt == "abgabe":
+            abgabe, erg = einigung_modul.abgabe_bauen(fassungen[0], a.auftraege, a.buendel, a.bearbeiter,
+                                                      dateien.lese_json(a.liste))
+            dateien.schreibe_json(a.ziel, abgabe)
+            print(json.dumps({"ziel": str(a.ziel), "probe": erg}, ensure_ascii=False) if a.json else
+                  f"Abgabe {abgabe['buendel']} ({len(abgabe['paare'])} Paare: gleich {erg['gleich']}, grenze "
+                  f"{erg['grenze']}, unklar {erg['unklar']}) -> {a.ziel}; Probe wie anwenden --probe: ok")
+            return 0
         if a.schritt == "anwenden":
             erg = einigung_modul.anwenden(fassungen[0], [dateien.lese_json(d) for d in a.abgabe], a.auftraege,
                                           ziel=a.ziel, schreiben=not a.probe)
@@ -201,6 +318,69 @@ def befehl_einigung(a) -> int:
     return 0 if all(e["offen"]["paare"] == 0 for e in ergebnisse) else 1
 
 
+def _teilkachel_quelle(a) -> tuple[Path, dict | None]:
+    """Bildpfad und ``kern_im_bild`` aus ``--manifest``/``--teilkachel`` oder ``--bild`` (ohne Kern)."""
+    if not a.manifest:
+        return Path(a.bild), None
+    manifest = dateien.lese_json(a.manifest)
+    teil = next((t for t in manifest["teilkacheln"] if t["id"] == a.teilkachel), None)
+    if teil is None:
+        raise ValueError(f"Teilkachel {a.teilkachel!r} steht nicht im Manifest")
+    return Path(a.manifest).parent / teil["bild"], teil["kern_im_bild"]
+
+
+def befehl_urteil(a) -> int:
+    kat = kategorien.laden(a.kategorien)
+    if a.schritt == "pruefen":
+        urteil = dateien.lese_json(a.urteil)
+        teilkachel = a.teilkachel or urteil.get("teilkachel")
+        viertel = a.viertel or urteil.get("viertel")
+        ordner = Path(a.urteil).parent
+    else:
+        teilkachel, viertel, ordner = a.teilkachel, a.viertel, Path(a.ziel).parent
+    g = urteil_modul.grundlage_laden(a.manifest, teilkachel, a.labels, kat, a.segmente, viertel)
+    try:
+        if a.schritt == "bauen":
+            urteil = urteil_modul.bauen(g, dateien.lese_json(a.liste), a.bearbeiter)
+        fehler = urteil_modul.pruefen(g, urteil, ordner)
+    except urteil_modul.UrteilFehler as f:
+        fehler = [str(f)]
+    geschrieben = a.schritt == "bauen" and not fehler
+    if geschrieben:
+        dateien.schreibe_json(a.ziel, urteil)
+    if a.json:
+        print(json.dumps({"ok": not fehler, "fehler": fehler, "segmente_soll": len(g.soll),
+                          "ziel": str(a.ziel) if geschrieben else None}, ensure_ascii=False))
+        return 1 if fehler else 0
+    for f in fehler:
+        print(f"- {f}")
+    wo = teilkachel + (f" Viertel {viertel}" if viertel else "")
+    if fehler:
+        print(f"FEHLER: {len(fehler)} Befunde in {wo}" + (", nichts geschrieben" if a.schritt == "bauen" else ""))
+        return 1
+    print(f"ok: {wo}, {len(g.soll)} Segmente mit Urteil" + (f" -> {a.ziel}" if geschrieben else ""))
+    return 0
+
+
+def befehl_zoom(a) -> int:
+    if (a.punkt is None) != (a.radius is None):
+        raise AnsichtFehler("--punkt und --radius gehören zusammen")
+    bild_pfad, kern = _teilkachel_quelle(a)
+    segmente = dateien.lese_segmente(a.segmente) if a.segmente else None
+    ans = Ansicht(zoom_modul.bild_rgb(naht.lese_bild(bild_pfad)), dateien.lese_labels(a.labels), segmente,
+                  kategorien.laden(a.kategorien) if segmente is not None else None,
+                  einstellungen.laden("ansicht"), kern=kern)
+    erg = zoom_modul.zoom(ans, einstellungen.laden("zoom", a.einstellungen), a.ziel, punkt=a.punkt,
+                          radius=a.radius, rechteck=a.rechteck, ids=a.ids, roh=a.roh,
+                          titel=a.teilkachel or bild_pfad.stem)
+    f = erg["fenster"]
+    print(json.dumps(erg, ensure_ascii=False) if a.json else
+          f"{erg['ziel']}: {erg['groesse'][0]} × {erg['groesse'][1]} px, Ausschnitt x {f['x']}, y {f['y']}, "
+          f"{f['breite']} × {f['hoehe']}, {f['faktor']}-fach, {len(erg['nummern'])} Nummern"
+          + (", neben dem Luftbild" if erg["roh"] else ""))
+    return 0
+
+
 def _rgb_bild(pfad) -> np.ndarray:
     with Image.open(pfad) as bild:
         return np.asarray(bild.convert("RGB"))
@@ -213,29 +393,38 @@ def _rechteck(text: str) -> dict:
 
 def befehl_seite(a) -> int:
     kat = kategorien.laden(a.kategorien)
-    erg = seite(a.manifest, a.ziel, kat, kommentare=a.kommentare,
-                werte=einstellungen.laden("seite", a.einstellungen))
+    werte = einstellungen.laden("seite", a.einstellungen)
+    bilder = a.manifest if a.manifest else bilder_aus_einstellungen(a.daten, werte)
+    erg = seite(bilder, a.ziel, kat, kommentare=a.kommentare, werte=werte)
     if a.json:
         print(json.dumps(erg, ensure_ascii=False))
     else:
-        for f in erg["fassungen"]:
-            if not f["vorhanden"]:
-                print(f"Fassung {f['kennung']} ({f['name']}): keine Daten in {f['quelle']}")
+        for b in erg["bilder"]:
+            if not b["vorhanden"]:
+                print(f"Bild {b['kennung']} ({b['titel']}): keine Daten ({b['grund']})")
                 continue
-            teile = [f"{t['id']} –" if "segmente" not in t else
-                     f"{t['id']} {t['segmente']} Segmente, pruefen {'ok' if t['pruefen_ok'] else 'FEHLER'}"
-                     for t in f["teilkacheln"]]
-            naht_text = "nicht geprüft" if f["naht"] is None else f["naht"]
-            e = f["einigung"]
-            einigung_text = ("nicht gezählt" if e is None else
-                             f"{e['stellen']} (davon {e['unsicher']} unsicher belegt)")
-            print(f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Schnittlinien ohne Bildkante "
-                  f"{naht_text}; gleiche Fläche, verschiedene Klasse {einigung_text}")
+            if len(erg["bilder"]) > 1:
+                print(f"Bild {b['kennung']} ({b['titel']}):")
+            for f in b["fassungen"]:
+                print(_fassung_zeile(f))
         print(f"Seite: {erg['ziel']} ({erg['groesse'] // 1024} KiB)")
     if a.oeffnen:
         import webbrowser
         webbrowser.open(Path(erg["ziel"]).resolve().as_uri())
     return 0
+
+
+def _fassung_zeile(f: dict) -> str:
+    if not f["vorhanden"]:
+        return f"Fassung {f['kennung']} ({f['name']}): keine Daten in {f['quelle']}"
+    teile = [f"{t['id']} –" if "segmente" not in t else
+             f"{t['id']} {t['segmente']} Segmente, pruefen {'ok' if t['pruefen_ok'] else 'FEHLER'}"
+             for t in f["teilkacheln"]]
+    naht_text = "nicht geprüft" if f["naht"] is None else f["naht"]
+    e = f["einigung"]
+    einigung_text = "nicht gezählt" if e is None else f"{e['stellen']} (davon {e['unsicher']} unsicher belegt)"
+    return (f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Schnittlinien ohne Bildkante "
+            f"{naht_text}; gleiche Fläche, verschiedene Klasse {einigung_text}")
 
 
 def befehl_ansicht(a) -> int:
@@ -275,6 +464,13 @@ def befehl_ansicht(a) -> int:
 
 
 def befehl_kante(a) -> int:
+    if a.trocken:
+        return _kante(a)
+    with dateien.karte_sperren(a.labels):   # mehrere Agents je Karte (ein Agent je Viertel)
+        return _kante(a)
+
+
+def _kante(a) -> int:
     karte = dateien.lese_labels(a.labels)
     bild = _rgb_bild(a.bild)
     vorgaben = einstellungen.laden("kante", a.einstellungen)
@@ -301,6 +497,79 @@ def befehl_kante(a) -> int:
     dateien.schreibe_labels(a.labels, arbeit.karte)
     dateien.schreibe_json(a.segmente, arbeit.segmente)
     return _befund_ausgeben(pruefen(arbeit.karte, arbeit.segmente, kat), False)
+
+
+def befehl_plan(a) -> int:
+    p = plan_modul.plan(a.auftraege, a.repo or Path(__file__).resolve().parent.parent, a.py or sys.executable,
+                        hinweis=a.hinweis or "", teilkacheln=a.teilkachel, viertel=a.viertel)
+    zeilen = plan_modul.log_zeilen(p)
+    if a.ziel:
+        dateien.schreibe_json(a.ziel, p)
+        zeilen.append(f"Plan geschrieben: {a.ziel}")
+    else:
+        zeilen.append("trocken: nichts geschrieben (ohne --ziel)")
+    print(json.dumps(p, ensure_ascii=False) if a.json else "\n".join(zeilen))
+    return 0
+
+
+def befehl_messung(a) -> int:
+    m = messung_befehl(a.transkripte, lauf=a.lauf, ziel=a.ziel)
+    print(json.dumps(m, ensure_ascii=False) if a.json else tabelle(m))
+    return 0
+
+
+def _lauf_einstellungen(a) -> tuple[dict, dict]:
+    return lauf_modul.einstellungen_laden(a.einstellungen, a.seite)
+
+
+def befehl_vorbereiten(a) -> int:
+    werte, seite_werte = _lauf_einstellungen(a)
+    try:
+        if a.nur_pruefen:
+            fehler = vorbereiten_modul.pruefen(a.manifest, a.ziel, werte=werte, seite=seite_werte)
+            if fehler:
+                raise LaufFehler(fehler)
+            print("Vorbereitung geprüft: ok")
+            return 0
+        hinweis = Path(a.hinweis).read_text(encoding="utf-8") if a.hinweis else ""
+        plan = vorbereiten_modul.bauen(a.manifest, a.ziel, werte=werte, seite=seite_werte, py=a.py or sys.executable,
+                                       hinweis=hinweis, name=a.lauf or "", ersetzen=a.ersetzen)
+    except LaufFehler as fehler:
+        print("Abgelehnt:\n" + "\n".join(f"- {x}" for x in fehler.fehler), file=sys.stderr)
+        return 1
+    if a.json:
+        print(json.dumps(plan, ensure_ascii=False))
+    else:
+        zahl = {}
+        for e in plan["einheiten"]:
+            zahl[e["art"]] = zahl.get(e["art"], 0) + 1
+        print(f"Einheiten: {', '.join(f'{k} {v}' for k, v in zahl.items())}; Kernsegmente "
+              f"{', '.join(f'{tk} {n}' for tk, n in plan['kernsegmente'].items())}; "
+              f"Vereinheitlichen {len(plan['vereinheitlichen'])}; {plan['sekunden']} s")
+        print(f"Plan: {Path(a.ziel) / 'auftraege.json'} (weiter mit landseg plan --auftraege …)")
+        print("ok")
+    return 0
+
+
+def befehl_zusammenfuehren(a) -> int:
+    werte, seite_werte = _lauf_einstellungen(a)
+    try:
+        erg = zusammenfuehren_modul.bauen(a.manifest, a.ziel, werte=werte, seite=seite_werte, ersetzen=a.ersetzen)
+    except LaufFehler as fehler:
+        print("Abgelehnt, nichts geschrieben:\n" + "\n".join(f"- {x}" for x in fehler.fehler), file=sys.stderr)
+        return 1
+    if a.json:
+        print(json.dumps(erg, ensure_ascii=False))
+    else:
+        for k, e in erg["fassungen"].items():
+            fehl = [tk for tk, x in e["pruefen"].items() if x != "ok"]
+            print(f"Fassung {k} ({e['name']}): {e['segmente_kern']} Kernsegmente, unsicher {e['unsicher']}, "
+                  f"Eingriffe {e['eingriffe_urteil']} (Verlauf {e['eingriffe_verlauf']}), Nahtverstöße "
+                  f"{e['nahtverstoesse']}, offen an Übergängen {e['einigung_offen']} Paare in {len(e['buendel'])} "
+                  f"Bündeln -> {e['auftraege']}" + (f"; pruefen FEHLER {', '.join(fehl)}" if fehl else ""))
+        print(f"Befund: {Path(a.ziel) / 'zusammenfuehren.json'} ({erg['sekunden']} s)")
+        print("ok" if erg["ok"] else "FEHLER")
+    return 0 if erg["ok"] else 1
 
 
 def parser() -> argparse.ArgumentParser:
@@ -341,8 +610,31 @@ def parser() -> argparse.ArgumentParser:
     form.add_argument("--form", type=_form, help="erwartete Form HxW, z. B. 628x628")
     form.add_argument("--bild", help="Bild, dessen Größe die Karte haben muss")
     pr.add_argument("--mindestflaeche", type=int, help="kleinste erlaubte Segmentfläche")
+    pr.add_argument("--frei", action="store_true",
+                    help="Liste einer freien Fassung (A, B): Klasse „Garten“ muss unter „Dauergrünland“ stehen")
     pr.add_argument("--json", action="store_true", help="Befund als JSON")
+    pr.add_argument("--manifest", help="manifest.json (mit --teilkachel): Richtwert der Bildart für den Kern melden")
+    pr.add_argument("--teilkachel", help="ID der Teilkachel im Manifest, z. B. r0c1")
+    pr.add_argument("--richtwert", type=int, help="Hinweis, wenn mehr Segmente (im Kern) als dieser Wert")
     pr.set_defaults(fn=befehl_pruefen)
+
+    ba = befehle.add_parser("bildart", help="Bildart und Feinheit (Richtwert, Mindestfläche) aus dem Manifest")
+    ba.add_argument("--manifest", required=True, help="manifest.json von kacheln")
+    ba.add_argument("--teilkachel", help="Richtwert für den Kern dieser Teilkachel (sonst für den Ausschnitt)")
+    ba.add_argument("--json", action="store_true", help="als JSON")
+    ba.add_argument("--auftrag", action="store_true", help="Text für {{FEINHEIT}} der Vorlagen (Farbe: leer)")
+    ba.set_defaults(fn=befehl_bildart)
+
+    vg = befehle.add_parser("vergroebern", help="kleine Flächen einer Fassung mit dem Nachbarn zusammenlegen "
+                                                 "(Bildart mit Mindestfläche, über eingriff verschmelzen)")
+    vg.add_argument("--manifest", required=True, help="manifest.json von kacheln")
+    vg.add_argument("--ordner", required=True, help="Fassungsordner mit <teilkachel>/labels.tif und segmente.json")
+    vg.add_argument("--teilkachel", action="append", help="ID aus dem Manifest, mehrfach; Standard alle")
+    vg.add_argument("--kategorien", help="Kategorienliste der Fassung (Standard: die eine kategorien-*.json im "
+                                         "Ordner, sonst die des Repos)")
+    vg.add_argument("--bearbeiter", default="vergroebern", help="Name im Verlauf (Standard vergroebern)")
+    vg.add_argument("--probe", action="store_true", help="nur zählen, nichts schreiben")
+    vg.set_defaults(fn=befehl_vergroebern)
 
     an = befehle.add_parser("ansicht", help="W3: Standardbilder je Teilkachel und Segment")
     quelle = an.add_mutually_exclusive_group(required=True)
@@ -414,11 +706,18 @@ def parser() -> argparse.ArgumentParser:
     z.add_argument("--json", action="store_true", help="Ergebnis als JSON")
     z.set_defaults(fn=befehl_zusammentragen)
 
-    se = befehle.add_parser("seite", help="W8: Übersichtsseite als eine HTML-Datei (Fassungen, Ebenen, "
+    se = befehle.add_parser("seite", help="W8: Übersichtsseite als eine HTML-Datei (Bilder, Fassungen, Ebenen, "
                                           "Lücken, Nähte, Kommentare)")
-    se.add_argument("--manifest", required=True,
-                    help="manifest.json von kacheln (Ordner der Fassungen relativ dazu, siehe einstellungen/seite.json)")
-    se.add_argument("--kommentare", help="schon exportierte Kommentare (JSON) zum Anzeigen")
+    quelle = se.add_mutually_exclusive_group(required=True)
+    quelle.add_argument("--manifest",
+                        help="manifest.json von kacheln: Seite mit diesem einen Bild (Ordner der Fassungen relativ "
+                             "dazu, siehe einstellungen/seite.json)")
+    quelle.add_argument("--daten",
+                        help="Ordner, zu dem die Manifeste unter 'bilder' in einstellungen/seite.json relativ sind: "
+                             "Seite mit allen Bildern und Bildwahl")
+    se.add_argument("--kommentare", action="append",
+                    help="schon exportierte Kommentare (JSON) zum Anzeigen; mehrfach möglich, je Datei dem Bild aus "
+                         "ihrem Export zugeordnet")
     se.add_argument("--kategorien", help="kategorien.json für Fassungen ohne eigene Liste (Standard: die des Repos)")
     se.add_argument("--einstellungen", help="JSON, überschreibt einstellungen/seite.json (etwa 'fassungen')")
     se.add_argument("--ziel", required=True, help="HTML-Datei (unter daten/landseg/)")
@@ -434,10 +733,12 @@ def parser() -> argparse.ArgumentParser:
     n.set_defaults(fn=befehl_naht)
 
     ei = befehle.add_parser("einigung", help="Klassen an den Übergängen der Teilkacheln abgleichen "
-                                             "(finden, anwenden, messen)")
+                                             "(finden, anwenden, abgabe, messen)")
     schritte = ei.add_subparsers(dest="schritt", required=True)
     for name, hilfe in (("finden", "offene Stellen bündeln, je Bündel Auftrag mit Bildern beider Seiten"),
                         ("anwenden", "Abgaben der Agents (einigung_abgabe.json) umsetzen, nur Klassen und Vermerke"),
+                        ("abgabe", "einigung_abgabe.json aus einer kurzen Liste bauen (Paar oder Nummer, "
+                                   "Entscheidung, Klasse, Grund) und wie anwenden --probe prüfen"),
                         ("messen", "Stellen gleicher Fläche mit verschiedener Klasse zählen: offen, unsicher, geklärt")):
         s = schritte.add_parser(name, help=hilfe, description=hilfe)
         s.add_argument("--manifest", required=True, help="manifest.json von kacheln")
@@ -457,7 +758,103 @@ def parser() -> argparse.ArgumentParser:
             s.add_argument("--ziel", help="neuer Ordner: Kopie der Fassung, in der geändert wird "
                                           "(sonst an Ort und Stelle)")
             s.add_argument("--probe", action="store_true", help="nur prüfen, nichts schreiben")
+        if name == "abgabe":
+            s.add_argument("--auftraege", required=True, help="Ordner von einigung finden (<bündel>/auftrag.json)")
+            s.add_argument("--buendel", required=True, help="Name des Bündels, z. B. A-02 (die Fassung kommt aus dem "
+                                                            "Auftrag, wenn --fassung fehlt)")
+            s.add_argument("--bearbeiter", required=True, help="Name des Agents")
+            s.add_argument("--liste", required=True,
+                           help='JSON {"paare": [[Nummer oder "a|b", "gleich|grenze|unklar", "Klasse oder null", '
+                                '"Grund"], ...], "offen": [], "nicht_geprueft": []}')
+            s.add_argument("--ziel", required=True, help="einigung_abgabe.json im eigenen Ergebnisordner")
     ei.set_defaults(fn=befehl_einigung)
+
+    me = befehle.add_parser("messung", help="Kosten eines Agent-Laufs je Phase aus den Transkripten "
+                                            "(Tokens, USD, Minuten, Bilder, .py)")
+    me.add_argument("--transkripte", required=True, help="Protokollordner des Laufs mit agent-*.jsonl und "
+                                                         "agent-*.meta.json (wird nur gelesen)")
+    me.add_argument("--lauf", help="Name des Laufs in Tabelle und messung.json (Standard: Name des Ordners)")
+    me.add_argument("--ziel", help="Ordner für messung.json und messung.md (sonst nur Ausgabe)")
+    me.add_argument("--json", action="store_true", help="Ergebnis als JSON statt Tabelle")
+    me.set_defaults(fn=befehl_messung)
+
+    pl = befehle.add_parser("plan", help="Urteils-Agents eines Laufs bilden: ein Agent je Viertel (B, C, "
+                                          "Gegenprobe), Fassung A je Teilkachel; je Agent ein Auftrag und Prompt")
+    pl.add_argument("--auftraege", required=True, help="auftraege.json der Vorbereitung (einheiten, Übersichtsbilder)")
+    pl.add_argument("--repo", help="Ordner des Repos im Prompt (Standard: dieses Repo)")
+    pl.add_argument("--py", help="Python für die Agents im Prompt (Standard: dieses Python)")
+    pl.add_argument("--hinweis", help="Satz zum Bild für alle Agents, z. B. Schwarz-Weiß-Scan (Standard: keiner)")
+    pl.add_argument("--teilkachel", nargs="+", help="nur diese Teilkacheln (Trockenlauf auf wenig Daten)")
+    pl.add_argument("--viertel", nargs="+", type=int, choices=[1, 2, 3, 4],
+                    help="nur diese Viertel (Fassung A fällt dann weg)")
+    pl.add_argument("--ziel", help="Plan als JSON (landseg-urteil-plan/1); ohne: nur Ausgabe, nichts geschrieben")
+    pl.add_argument("--json", action="store_true", help="ganzen Plan als JSON ausgeben (mit Prompts)")
+    pl.set_defaults(fn=befehl_plan)
+
+    for name, hilfe in (("vorbereiten", "Urteile eines Laufs vorbereiten: Kartenkopien, Bilder, Aufträge aus den Vorlagen, "
+                                        "Plan (auftraege.json), leere Ergebnisordner; prüft sich selbst"),
+                        ("zusammenfuehren", "Urteile und freie Abgabe je Fassung zu Karten und Listen, dann pruefen, "
+                                            "zusammentragen, naht, einigung finden")):
+        lv = befehle.add_parser(name, help=hilfe, description=hilfe + ". Fassungen: einstellungen/seite.json + lauf.json.")
+        lv.add_argument("--manifest", required=True, help="manifest.json des Ausschnitts (Ordner = Daten des Laufs)")
+        lv.add_argument("--ziel", required=True, help="Berichtsordner des Laufs (Aufträge, Plan, Einigung, Befund)")
+        lv.add_argument("--einstellungen", help="eigene lauf.json (überschreibt die genannten Schlüssel)")
+        lv.add_argument("--seite", help="eigene seite.json (Fassungen: Kennung, Name, Ordner, Liste)")
+        lv.add_argument("--ersetzen", action="store_true", help="Ziele mit Inhalt ausdrücklich neu bauen")
+        lv.add_argument("--json", action="store_true", help="Ergebnis als JSON")
+        if name == "vorbereiten":
+            lv.add_argument("--hinweis", help="Markdown-Datei mit dem Hinweis des Laufs (etwa Schwarz-Weiß-Scan)")
+            lv.add_argument("--lauf", help="Name des Laufs in den Bearbeiter-Namen (Standard: Name des Ausschnitts)")
+            lv.add_argument("--py", help="Python der Agents in den Aufträgen (Standard: dieser Interpreter)")
+            lv.add_argument("--nur-pruefen", action="store_true", help="fertige Vorbereitung nur prüfen, nichts schreiben")
+            lv.set_defaults(fn=befehl_vorbereiten)
+        else:
+            lv.set_defaults(fn=befehl_zusammenfuehren)
+
+    ur = befehle.add_parser("urteil", help="urteil.json aus einer kurzen Liste bauen und prüfen (bauen, pruefen)")
+    schritte = ur.add_subparsers(dest="schritt", required=True)
+    for name, hilfe in (("bauen", "urteil.json aus der kurzen Liste des Agents bauen; schreibt nur, wenn die "
+                                  "Prüfung ok ist"),
+                        ("pruefen", "urteil.json prüfen: jeder Fehler in Klartext (Exit 0 ok, 1 Fehler)")):
+        s = schritte.add_parser(name, help=hilfe, description=hilfe + ". Format der Liste: README, Abschnitt urteil.")
+        s.add_argument("--manifest", required=True, help="manifest.json von kacheln")
+        s.add_argument("--teilkachel", required=name == "bauen",
+                       help="ID der Teilkachel, z. B. r0c0 (pruefen: Standard aus urteil.json)")
+        s.add_argument("--viertel", choices=list(urteil_modul.VIERTEL),
+                       help="nur dieses Viertel des Kerns (v1 oben links, v2 oben rechts, v3 unten links, "
+                            "v4 unten rechts)")
+        s.add_argument("--labels", required=True, help="aktuelle Label-Karte der Teilkachel")
+        s.add_argument("--segmente", required=name == "bauen", help="segmente.json dazu (heutige Klasse)")
+        s.add_argument("--kategorien", help="Kategorienliste der Fassung (Standard: die des Repos)")
+        s.add_argument("--json", action="store_true", help="Ergebnis als JSON")
+        if name == "bauen":
+            s.add_argument("--bearbeiter", required=True, help="Name des Agents")
+            s.add_argument("--liste", required=True,
+                           help='JSON {"segmente": [[id, urteil, vorschlag, punkte, bilder], ...], "sauber": [ids], '
+                                '"naht": [], "unsicher": [], "nicht_geprueft": [], "offen": []}')
+            s.add_argument("--ziel", required=True, help="urteil.json im eigenen Ergebnisordner (Bilder relativ dazu)")
+        else:
+            s.add_argument("--urteil", required=True, help="urteil.json (Bilder relativ zu ihrem Ordner)")
+    ur.set_defaults(fn=befehl_urteil)
+
+    zo = befehle.add_parser("zoom", help="Ausschnitt einer Stelle vergrößert, mit Umriss und Segmentnummern (JPEG)")
+    quelle = zo.add_mutually_exclusive_group(required=True)
+    quelle.add_argument("--manifest", help="manifest.json von kacheln (mit --teilkachel; Kern als Rahmen)")
+    quelle.add_argument("--bild", help="Bild der Teilkachel")
+    zo.add_argument("--teilkachel", help="ID der Teilkachel im Manifest, z. B. r0c0")
+    zo.add_argument("--labels", required=True, help="Label-Karte (gleiche Größe wie das Bild)")
+    zo.add_argument("--segmente", help="segmente.json (nicht nötig für Umriss und Nummern)")
+    zo.add_argument("--kategorien", help="kategorien.json (Standard: die des Repos)")
+    stelle = zo.add_mutually_exclusive_group(required=True)
+    stelle.add_argument("--punkt", type=lambda text: _punkte(text)[0], help="Mitte x,y (mit --radius)")
+    stelle.add_argument("--rechteck", type=_rechteck, help="x,y,breite,hoehe")
+    stelle.add_argument("--ids", type=_ids, help="Segmente, z. B. 3,5,8 (Rahmen um alle, farbig umrandet)")
+    zo.add_argument("--radius", type=int, help="Radius um --punkt in Bildpunkten")
+    zo.add_argument("--roh", action="store_true", help="links das rohe Luftbild daneben")
+    zo.add_argument("--einstellungen", help="JSON, überschreibt einstellungen/zoom.json")
+    zo.add_argument("--ziel", required=True, help="JPEG im eigenen Ergebnisordner, z. B. nah_17_1.jpg")
+    zo.add_argument("--json", action="store_true", help="Ergebnis als JSON (Fenster, Lage der Nummern)")
+    zo.set_defaults(fn=befehl_zoom)
     return p
 
 
@@ -472,7 +869,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Abgelehnt: {fehler}", file=sys.stderr)
         return 1
     except (KachelFehler, VorstufeFehler, AnsichtFehler, ZusammenFehler, SeiteFehler, ValueError, OSError,
-            KeyError) as fehler:
+            KeyError, bildart_modul.BildartFehler, EingriffFehler) as fehler:
         print(f"Fehler: {fehler}", file=sys.stderr)
         return 2
 

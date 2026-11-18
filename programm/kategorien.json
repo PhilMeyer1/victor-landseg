@@ -9,8 +9,8 @@
   ],
   "counts": {
     "level_1": 7,
-    "level_2": 25,
-    "leaves": 43,
+    "level_2": 26,
+    "leaves": 44,
     "rules_g": 5,
     "rules_u": 5
   },
@@ -900,6 +900,33 @@
       }
     },
     {
+      "code": "3.6",
+      "name": "Garten (Haus- und Hofgarten: Grünfläche, Beet)",
+      "parent": "3",
+      "level": 2,
+      "color": "#a6ffaf",
+      "image_cue": "kleinteiliges Grün und Beete am Haus oder Hof, von Gebäude, Zaun oder Hecke eingefasst",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [
+          "1.1.2"
+        ],
+        "clc_plus": [
+          "6"
+        ],
+        "flair": [
+          "10",
+          "12"
+        ],
+        "dkm": [
+          "Gärten"
+        ],
+        "bericht48": [
+          "Hausgärten „als Teil der Siedlung führen“"
+        ]
+      }
+    },
+    {
       "code": "4",
       "name": "Wald und Gehölze",
       "parent": null,
@@ -1526,8 +1553,8 @@
       "id": "G1",
       "kind": "grundsatz",
       "title": "Bedeckung vor Nutzung",
-      "text": "Das Segment-Label beschreibt, was in der Draufsicht zu sehen ist (CLC+, FLAIR, LUCAS LC, EAGLE LCC). Nutzung, die das Bild nicht zeigt (Wiese vs. Weide, Kulturart, Brache-Status, Widmung), kommt in eine getrennte Attributschicht aus Fremddaten (INVEKOS, DKM) — EAGLE LUA, LUCAS LU, LISA LN (B6, B7, B11). Auch Siedlungsgrün ist keine Klasse: Rasen zählt zu Grünland (3.1), Gartenbaum, Strauch und Hecke zu Gehölz (4.2), Gartenbeet zu Acker (2.1/2.2). Ob ein Segment im Siedlungsgebiet liegt, trägt es als Merkmal `im_siedlung: ja|nein`; für Auswertungen nach Bericht 48 zählen Segmente der Klassen unter `bericht48.im_siedlung_klassen` mit `im_siedlung: ja` als `bericht48.im_siedlung_ziel` (Hausgärten „als Teil der Siedlung führen“, Bericht 48).",
-      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:87 (Quellen: CLC+, FLAIR, LUCAS, EAGLE, LISA; Bericht 48); Entscheidung „Landschafts-Kategorien: Bedeckung statt Nutzung“ (2026-11-17)",
+      "text": "Das Segment-Label beschreibt, was in der Draufsicht zu sehen ist (CLC+, FLAIR, LUCAS LC, EAGLE LCC). Nutzung, die das Bild nicht zeigt (Wiese vs. Weide, Kulturart, Brache-Status, Widmung), kommt in eine getrennte Attributschicht aus Fremddaten (INVEKOS, DKM) — EAGLE LUA, LUCAS LU, LISA LN (B6, B7, B11). Siedlungsgrün ist keine eigene grobe Klasse: Haus- und Hofgärten (jede krautige Grünfläche und jedes Beet darin, gepflegt oder nicht, auch Vor-, Obst- und Gemüsegarten) tragen die Unterklasse Garten (3.6) im Dauergrünland; Gartenbaum, Strauch und Hecke bleiben Gehölz (4.2, G2); Rasen in Park, Friedhof und Sportanlage bleibt Wiese/Weide (3.1). Ob ein Segment im Siedlungsgebiet liegt, trägt es als Merkmal `im_siedlung: ja|nein`; für Auswertungen nach Bericht 48 zählen Segmente der Klassen unter `bericht48.im_siedlung_klassen` mit `im_siedlung: ja` als `bericht48.im_siedlung_ziel` (Hausgärten „als Teil der Siedlung führen“, Bericht 48).",
+      "source": "wuensche/2026-11-17-landseg-methode/einheiten/e02.md:87 (Quellen: CLC+, FLAIR, LUCAS, EAGLE, LISA; Bericht 48); Entscheidung „Landschafts-Kategorien: Bedeckung statt Nutzung“ (2026-11-17); Entscheidung „Gärten als Dauergrünland mit Unterklasse Garten“ (2026-11-18, Wunsch landseg-garten F1–F4)",
       "bericht48": {
         "im_siedlung_klassen": [
           "2",

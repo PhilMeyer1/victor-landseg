@@ -126,5 +126,76 @@ class PruefenKategorienDesReposTest(unittest.TestCase):
         self.assertFalse(befund.ok)
         self.assertTrue(any("im_siedlung" in m for m in befund.maengel), befund.maengel)
 
+
+class PruefenGartenFreiTest(unittest.TestCase):
+    """Garten in freien Fassungen (Skill landseg-agent, L14): ``pruefen --frei``."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.ordner = Path(self.tmp.name)
+        self.karte, _ = beispiel_karte()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def _freie_liste(self, klassen: list[dict]) -> kategorien.Kategorien:
+        pfad = self.ordner / "kategorien-frei.json"
+        dateien.schreibe_json(pfad, {"classes": klassen})
+        return kategorien.laden(pfad)
+
+    def _frei_segmente(self, code: str) -> dict:
+        return {"segmente": [{"id": i, "klasse": code} for i in (1, 2, 3, 4)], "verlauf": []}
+
+    def test_freie_fassung_mit_garten_unter_dauergruenland_ok(self):
+        for name_dg, name_garten in (("Dauergrünland", "Garten"), ("dauergrünland (krautig)", "Garten (am Haus)")):
+            kat = self._freie_liste([
+                {"code": "1", "name": "Bebauung", "parent": None, "level": 1},
+                {"code": "2", "name": name_dg, "parent": None, "level": 1},
+                {"code": "2.1", "name": "Grünfläche", "parent": "2", "level": 2},
+                {"code": "2.1.1", "name": name_garten, "parent": "2.1", "level": 3}])
+            befund = pruefen(self.karte, self._frei_segmente("1"), kat, frei=True)
+            self.assertTrue(befund.ok, befund.maengel)
+        # die feste Liste erfüllt die Pflicht auch (3.6 unter 3)
+        self.assertEqual(kategorien.laden().garten_maengel(), [])
+
+    def test_freie_fassung_ohne_garten_fehler(self):
+        kat = self._freie_liste([{"code": "1", "name": "Bebauung", "parent": None, "level": 1},
+                                 {"code": "2", "name": "Dauergrünland", "parent": None, "level": 1},
+                                 {"code": "2.1", "name": "Gartenland", "parent": "2", "level": 2}])
+        befund = pruefen(self.karte, self._frei_segmente("1"), kat, frei=True)
+        self.assertFalse(befund.ok)
+        self.assertTrue(any(m.startswith("Garten: Liste ohne Klasse „Garten“") for m in befund.maengel),
+                        befund.maengel)
+        # ohne frei (feste Liste, Teil-Listen anderer Werkzeuge) keine Garten-Pflicht
+        self.assertTrue(pruefen(self.karte, self._frei_segmente("1"), kat).ok)
+
+    def test_freie_fassung_garten_nicht_unter_dauergruenland_fehler(self):
+        kat = self._freie_liste([{"code": "1", "name": "Hof und Garten", "parent": None, "level": 1},
+                                 {"code": "1.2", "name": "Garten", "parent": "1", "level": 2},
+                                 {"code": "2", "name": "Dauergrünland", "parent": None, "level": 1},
+                                 {"code": "3", "name": "Garten", "parent": None, "level": 1}])
+        befund = pruefen(self.karte, self._frei_segmente("2"), kat, frei=True)
+        self.assertIn("Garten: Klasse 1.2 „Garten“ steht unter 1 „Hof und Garten“, erwartet unter der "
+                      "Ebene-1-Klasse „Dauergrünland“", befund.maengel)
+        self.assertIn("Garten: Klasse 3 „Garten“ ist selbst Ebene 1, erwartet unter der Ebene-1-Klasse "
+                      "„Dauergrünland“", befund.maengel)
+
+    def test_befehl_frei(self):
+        labels = self.ordner / "labels.tif"
+        seg = self.ordner / "segmente.json"
+        dateien.schreibe_labels(labels, self.karte)
+        dateien.schreibe_json(seg, self._frei_segmente("1"))
+        ohne = self._freie_liste([{"code": "1", "name": "Bebauung", "parent": None, "level": 1}])
+        args = ["pruefen", "--labels", str(labels), "--segmente", str(seg), "--kategorien", str(ohne.pfad)]
+        with redirect_stdout(io.StringIO()):
+            self.assertEqual(main(args), 0)
+        with redirect_stdout(io.StringIO()) as aus:
+            self.assertEqual(main(args + ["--frei"]), 1)
+        self.assertIn("Garten: Liste ohne Klasse", aus.getvalue())
+        with redirect_stdout(io.StringIO()) as aus:   # auch ohne segmente.json: nur Karte und Liste
+            self.assertEqual(main(["pruefen", "--labels", str(labels), "--kategorien", str(ohne.pfad), "--frei"]), 1)
+        self.assertIn("Garten: Liste ohne Klasse", aus.getvalue())
+
+
 if __name__ == "__main__":
     unittest.main()

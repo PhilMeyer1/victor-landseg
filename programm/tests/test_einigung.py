@@ -18,12 +18,13 @@ import numpy as np
 import tifffile
 from PIL import Image
 
-from landseg import dateien, einstellungen, naht
+from landseg import dateien, einstellungen, kategorien, naht
 from landseg.__main__ import main
-from landseg.einigung import EinigungFehler, _im_kern, anwenden, fassung_laden, finden, messen, schluessel_karte, stellen
+from landseg.einigung import (EinigungFehler, _im_kern, abgabe_bauen, anwenden, buendeln, fassung_laden, finden,
+                              messen, schluessel_karte, stellen)
 from landseg.kacheln import kacheln
 from landseg.pruefen import pruefen
-from tests.hilfe import beispiel_kategorien
+from tests.hilfe import BEISPIEL_KLASSEN, beispiel_kategorien
 from tests.test_kacheln import PRJ
 
 OFFEN = {"r0c0:1|r0c0:2", "r0c0:1|r1c0:10", "r0c0:2|r0c1:20"}
@@ -186,6 +187,90 @@ class EinigungTest(unittest.TestCase):
         self.assertFalse(probe["geschrieben"])
         self.assertEqual((self.fassung / "r0c0" / "segmente.json").read_bytes(), vorher)
 
+    def test_abgabe_aus_kurzer_liste(self):
+        f = self.laden()
+        finden(f, self.bild, self.einst, self.ordner / "einigung")
+        auftrag = dateien.lese_json(self.ordner / "einigung" / "X-01" / "auftrag.json")
+        nr = {p["paar"]: p["nr"] for p in auftrag["paare"]}
+        liste = {"paare": [[nr["r0c0:1|r0c0:2"], "gleich", "3", "derselbe Wald"],
+                           ["r1c0:10|r0c0:1", "grenze", "Waldrand ohne Farbsprung"],
+                           {"paar": "r0c0:2|r0c1:20", "entscheidung": "unklar", "klasse": "3", "grund": "Schatten"}],
+                 "offen": ["Schatten bei r0c1"]}
+        abgabe, probe = abgabe_bauen(f, self.ordner / "einigung", "X-01", "einigung-X-01", liste)
+        self.assertEqual({k: abgabe[k] for k in ("schema", "fassung", "buendel", "bearbeiter")},
+                         {"schema": "landseg-einigung-abgabe/1", "fassung": "X", "buendel": "X-01",
+                          "bearbeiter": "einigung-X-01"})
+        self.assertEqual(abgabe["paare"], [
+            {"paar": "r0c0:1|r0c0:2", "entscheidung": "gleich", "klasse": "3", "grund": "derselbe Wald"},
+            {"paar": "r0c0:1|r1c0:10", "entscheidung": "grenze", "klasse": None, "grund": "Waldrand ohne Farbsprung"},
+            {"paar": "r0c0:2|r0c1:20", "entscheidung": "unklar", "klasse": None, "grund": "Schatten"}])
+        self.assertEqual((abgabe["offen"], abgabe["nicht_geprueft"]), (["Schatten bei r0c1"], []))
+        self.assertFalse(probe["geschrieben"])
+        self.assertEqual((probe["gleich"], probe["grenze"], probe["unklar"]), (1, 1, 1))
+        self.assertEqual(anwenden(f, [abgabe], self.ordner / "einigung", schreiben=False)["abgaben"], 1)
+        gut = ["grenze", "x"]
+        faelle = {
+            "Paar fehlt": ([[1, *gut], [2, *gut]], "ohne Urteil"),
+            "fremdes Paar": ([[i, *gut] for i in (1, 2, 3)] + [["r0c0:2|r1c0:10", *gut]], "gehört nicht zum Bündel"),
+            "Nummer unbekannt": ([[i, *gut] for i in (1, 2, 3, 9)], "Nummer 9 gibt es im Bündel X-01 nicht"),
+            "Klasse ungültig": ([[1, "gleich", "9.9", "x"], [2, *gut], [3, *gut]], "steht nicht in"),
+        }
+        for name, (paare, text) in faelle.items():
+            with self.subTest(fall=name), self.assertRaises(EinigungFehler) as fehler:
+                abgabe_bauen(f, self.ordner / "einigung", "X-01", "einigung-X-01", paare)
+            self.assertIn(text, str(fehler.exception))
+
+        liste_pfad, ziel = self.ordner / "liste.json", self.ordner / "ergebnis" / "einigung_abgabe.json"
+        liste_pfad.write_text(json.dumps(liste, ensure_ascii=False), encoding="utf-8")
+        manifest = str(self.t / "manifest.json")
+        aufruf = ["einigung", "abgabe", "--manifest", manifest, "--ordner", str(self.fassung), "--kategorien",
+                  str(self.kat.pfad), "--auftraege", str(self.ordner / "einigung"), "--buendel", "X-01",
+                  "--bearbeiter", "einigung-X-01", "--liste", str(liste_pfad), "--ziel", str(ziel)]
+        with redirect_stdout(StringIO()), self.assertRaises(SystemExit) as ende:
+            main(["einigung", "abgabe", "--help"])
+        self.assertEqual(ende.exception.code, 0)
+        aus = StringIO()
+        with redirect_stdout(aus):
+            self.assertEqual(main(aufruf), 0)
+        self.assertIn("Probe wie anwenden --probe: ok", aus.getvalue())
+        self.assertEqual(dateien.lese_json(ziel), abgabe)
+        with redirect_stdout(StringIO()):
+            self.assertEqual(main(["einigung", "anwenden", "--manifest", manifest, "--ordner", str(self.fassung),
+                                   "--fassung", "X", "--kategorien", str(self.kat.pfad), "--auftraege",
+                                   str(self.ordner / "einigung"), "--abgabe", str(ziel), "--probe"]), 0)
+        liste_pfad.write_text(json.dumps([[1, *gut]]), encoding="utf-8")
+        ziel.unlink()
+        fehler = StringIO()
+        with redirect_stdout(StringIO()), redirect_stderr(fehler):
+            self.assertEqual(main(aufruf), 1)
+        self.assertIn("Abgelehnt", fehler.getvalue())
+        self.assertFalse(ziel.exists(), "abgelehnte Abgabe wird nicht geschrieben")
+
+    def test_freie_fassung_einigt_auf_garten_unter_dauergruenland(self):
+        """Fassung A/B: die zusammengelegte Liste führt Garten unter Dauergrünland, die Einigung bietet ihn an."""
+        pfad = self.ordner / "kategorien-a.json"
+        dateien.schreibe_json(pfad, {"classes": BEISPIEL_KLASSEN + [
+            {"code": "4", "name": "Dauergrünland", "parent": None, "level": 1},
+            {"code": "4.1", "name": "Garten", "parent": "4", "level": 2}]})
+        self.kat = kategorien.laden(pfad)
+        self.assertEqual(self.kat.garten_maengel(), [])
+        f = self.laden()
+        finden(f, self.bild, self.einst, self.ordner / "einigung")
+        auftrag = dateien.lese_json(self.ordner / "einigung" / "X-01" / "auftrag.json")
+        self.assertTrue(auftrag["kategorien"].endswith("kategorien-a.json"))
+        self.assertIn({"code": "4.1", "name": "Garten", "parent": "4", "level": 2}, auftrag["klassen"])
+        nr = {p["paar"]: p["nr"] for p in auftrag["paare"]}
+        abgabe, probe = abgabe_bauen(f, self.ordner / "einigung", "X-01", "einigung-X-01", [
+            [nr["r0c0:1|r0c0:2"], "gleich", "4.1", "ein Hausgarten über die Viertelgrenze"],
+            [nr["r0c0:1|r1c0:10"], "grenze", "Gartenzaun"], [nr["r0c0:2|r0c1:20"], "grenze", "Hecke"]])
+        self.assertEqual(abgabe["paare"][0]["klasse"], "4.1")
+        self.assertEqual(probe["gleich"], 1)
+        anwenden(f, [abgabe], self.ordner / "einigung")
+        segmente = dateien.lese_json(self.fassung / "r0c0" / "segmente.json")["segmente"]
+        self.assertEqual({s["klasse"] for s in segmente if s["id"] in (1, 2)}, {"4.1"})
+        self.assertTrue(pruefen(dateien.lese_labels(self.fassung / "r0c0" / "labels.tif"),
+                                dateien.lese_json(self.fassung / "r0c0" / "segmente.json"), self.kat, frei=True).ok)
+
     def test_nur_kern(self):
         f = self.laden()
         self.assertFalse(_im_kern(f, "r1c0:11"))
@@ -219,6 +304,68 @@ class EinigungTest(unittest.TestCase):
             self.assertEqual(main(["einigung", "anwenden", *basis, "--auftraege", str(self.ordner / "einigung"),
                                    "--abgabe", str(abgabe)]), 1)
             self.assertEqual(main(["einigung", "finden", "--manifest", manifest, "--ziel", "x"]), 1)
+
+
+def _gruppen(*groessen: int) -> list[dict]:
+    """Je Größe eine Kette zusammenhängender Paare (g<i>:0|g<i>:1, g<i>:1|g<i>:2, …), Gruppen ohne gemeinsame
+    Segmente, in der Reihenfolge der Linien hintereinander."""
+    return [{"paar": f"g{i}:{k}|g{i}:{k + 1}", "segmente": [f"g{i}:{k}", f"g{i}:{k + 1}"]}
+            for i, n in enumerate(groessen) for k in range(n)]
+
+
+def _alt_zahl(groessen: list[int], hoechstens: int) -> int:
+    """Bündelzahl des alten Verfahrens (nur das zuletzt angelegte Bündel wird aufgefüllt)."""
+    buendel: list[list[int]] = []
+    for n in groessen:
+        if buendel and buendel[-1][1] == 0 and buendel[-1][0] + n <= hoechstens:
+            buendel[-1][0] += n
+        else:
+            buendel.append([n, int(n > hoechstens)])
+    return len(buendel)
+
+
+class BuendelnTest(unittest.TestCase):
+    def pruefe_aufteilung(self, offene: list[dict], buendel: list[dict], hoechstens: int):
+        self.assertEqual(sorted(p["paar"] for b in buendel for p in b["paare"]), sorted(p["paar"] for p in offene))
+        wo: dict[str, int] = {}
+        for nr, b in enumerate(buendel):
+            for p in b["paare"]:
+                for s in p["segmente"]:
+                    self.assertEqual(wo.setdefault(s, nr), nr, f"{s} in zwei Bündeln")
+            if b["uebergross"]:
+                self.assertEqual(len({p["paar"].split(":")[0] for p in b["paare"]}), 1, "übergroß nimmt nichts auf")
+                self.assertGreater(len(b["paare"]), hoechstens)
+            else:
+                self.assertLessEqual(len(b["paare"]), hoechstens)
+
+    def test_kleine_gruppen_fuellen_fruehere_buendel(self):
+        offene = _gruppen(7, 9, 3, 2)
+        erg = buendeln(offene, 12)
+        self.assertEqual(_alt_zahl([7, 9, 3, 2], 12), 3)
+        self.assertEqual([len(b["paare"]) for b in erg], [12, 9])
+        self.assertEqual({p["paar"].split(":")[0] for p in erg[0]["paare"]}, {"g0", "g2", "g3"})
+        self.pruefe_aufteilung(offene, erg, 12)
+
+    def test_uebergross_bleibt_allein(self):
+        offene = _gruppen(3, 15, 2, 8)
+        erg = buendeln(offene, 12)
+        self.assertEqual([(len(b["paare"]), b["uebergross"]) for b in erg], [(5, False), (15, True), (8, False)])
+        self.pruefe_aufteilung(offene, erg, 12)
+
+    def test_stabil_und_nie_mehr_als_vorher(self):
+        offene = _gruppen(4, 3, 3, 4, 3, 3)  # nach Größe sortiert gäbe es hier 3 Bündel statt 2
+        erg = buendeln(offene, 10)
+        self.assertEqual(len(erg), 2)
+        self.assertEqual(erg, buendeln(offene, 10))
+        zufall = np.random.default_rng(7)
+        for _ in range(300):
+            groessen = zufall.integers(1, 16, zufall.integers(1, 12)).tolist()
+            hoechstens = int(zufall.integers(1, 13))
+            offene = _gruppen(*groessen)
+            erg = buendeln(offene, hoechstens)
+            self.assertLessEqual(len(erg), _alt_zahl(groessen, hoechstens), (groessen, hoechstens))
+            self.assertEqual(erg, buendeln(offene, hoechstens))
+            self.pruefe_aufteilung(offene, erg, hoechstens)
 
 
 if __name__ == "__main__":

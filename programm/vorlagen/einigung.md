@@ -19,8 +19,9 @@ alle Beteiligten gilt.
   beiden Segmenten (türkis, magenta) und der Grenzlinie (gelb).
 - `{{DATEN}}/{{URTEILE}}/<teilkachel>/urteil.json`: die Urteile der Teilkacheln beider Seiten; lies
   sie zu jedem Segment mit, bevor du entscheidest.
-- `{{DATEN}}/manifest.json` und das Ausschnittbild darin, falls du die Stelle weiter vergrößern willst
-  (`{{PY}} -m landseg ansicht`, eigene Bilder nur in `{{ERGEBNIS}}`).
+- `{{DATEN}}/manifest.json` und das Ausschnittbild darin, falls du die Stelle weiter vergrößern willst:
+  `{{PY}} -B -m landseg zoom` mit `--manifest`, `--teilkachel`, `--labels` der Teilkachel und `--ids` oder
+  `--punkt`/`--radius`, `--roh`, `--ziel {{ERGEBNIS}}/einigung_<nr>.jpg` (README, „zoom“).
 
 ## Was
 
@@ -28,7 +29,9 @@ Je Paar genau eine Entscheidung:
 
 - `gleich`: Beide Seiten zeigen dieselbe Fläche. Wähle die Klasse aus `klassen`, die am besten passt
   (feinste sicher erkennbare Ebene, Regeln aus `KATEGORIEN.md` bzw. der Liste der Fassung), und
-  nenne sie unter `klasse`. Hängen mehrere Paare über ein gemeinsames Segment zusammen (Kette a–b–c,
+  nenne sie unter `klasse`. Gärten nach Regel L14 des Skills: krautige Grünfläche und Beet im Haus-
+  oder Hofgarten bekommen „Garten“ (feste Liste 3.6, in den freien Fassungen die Klasse „Garten“ unter
+  „Dauergrünland“); Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat. Hängen mehrere Paare über ein gemeinsames Segment zusammen (Kette a–b–c,
   Ecke), bekommen alle Glieder dieselbe Klasse.
 - `grenze`: Dort liegt wirklich eine Grenze zweier verschiedener Flächen, nur ohne Farbsprung;
   beide Klassen bleiben.
@@ -42,19 +45,29 @@ geändert. Keine neue Klasse anlegen: Passt keine der Liste, entscheide `unklar`
 `kategorien-a.json` zusammengelegt; die Einigung läuft auf dieser Liste (`klasse` ist ein Code daraus,
 der ursprüngliche Code der Teilkachel steht unter `klasse_teil`). Meinen beide Seiten dieselbe Fläche
 unter verschiedenen Namen, wähle den Code der gemeinsamen Liste, der am besten passt, und nenne den
-Grund.
+Grund. Die Listen der freien Fassungen (`kategorien-a.json`, `kategorien-b.json`) führen „Garten“ unter
+„Dauergrünland“; nimm für einen Garten diesen Code, auch wenn eine Seite ihn anders benannt hat.
 
 ## Wie
 
-Ändere nichts an den Daten. Prüfe deine Abgabe mit
-`{{PY}} -m landseg einigung anwenden --manifest {{DATEN}}/manifest.json --fassung {{FASSUNG}} --auftraege {{AUFTRAEGE}} --abgabe {{ERGEBNIS}}/einigung_abgabe.json --probe`
-(Befehle im Ordner `{{REPO}}`); sie muss ohne „Abgelehnt“ durchlaufen. Umsetzen macht die
-Hauptsession für alle Bündel gemeinsam.
+Ändere nichts an den Daten. Schreib deine Entscheidungen als kurze Liste `{{ERGEBNIS}}/liste.json`
+(je Paar Nummer aus dem Auftrag, Entscheidung, Klasse nur bei `gleich`, Grund):
+
+```
+{"paare": [[1, "gleich", "Code", "ein Satz, was das Bild zeigt"], [2, "grenze", "ein Satz"], [3, "unklar", "ein Satz"]],
+ "offen": [], "nicht_geprueft": []}
+```
+
+und bau daraus die Abgabe (Befehle im Ordner `{{REPO}}`):
+`{{PY}} -B -m landseg einigung abgabe --manifest {{DATEN}}/manifest.json --auftraege {{AUFTRAEGE}} --buendel {{BUENDEL}} --bearbeiter {{BEARBEITER}} --liste {{ERGEBNIS}}/liste.json --ziel {{ERGEBNIS}}/einigung_abgabe.json`
+Der Befehl ergänzt Schema, Fassung und Bündel, meldet fehlende oder fremde Paare und prüft wie
+`einigung anwenden --probe`; er muss ohne „Abgelehnt“ durchlaufen. Ein eigenes Skript nur, wenn der
+Befehl deinen Fall nicht deckt. Umsetzen macht die Hauptsession für alle Bündel gemeinsam.
 
 ## Ergebnis in `{{ERGEBNIS}}` (genau diese Namen)
 
 - eigene Bilder, falls du welche gemacht hast (`einigung_<nr>.jpg`).
-- `einigung_abgabe.json` (UTF-8), nach `abgabe_muster`:
+- `liste.json` und `einigung_abgabe.json` (UTF-8, gebaut von `einigung abgabe`), nach `abgabe_muster`:
 
 ```
 {"schema": "landseg-einigung-abgabe/1", "fassung": "{{FASSUNG}}", "buendel": "{{BUENDEL}}",

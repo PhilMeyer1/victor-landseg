@@ -6,7 +6,7 @@ Regeln gelten hier. Antworte auf Deutsch.
 Gegenstand: Teilkachel `{{TEILKACHEL}}` des Ausschnitts in `{{DATEN}}`. Der Nutzer hat den
 zusammengetragenen Stand auf der Prüfseite angesehen und kommentiert. Deine Kommentare, wörtlich:
 
-{{KOMMENTARE}}
+{{KOMMENTARE}}{{FEINHEIT}}
 
 ## Daten (eingefrorener Stand, nur lesen)
 
@@ -19,6 +19,8 @@ zusammengetragenen Stand auf der Prüfseite angesehen und kommentiert. Deine Kom
 
 - Setze genau die Kommentare um, nicht mehr. Alles, was sie nicht betreffen, bleibt bildpunktgleich:
   nichts glätten, nichts neu ziehen.
+- Verlangt ein Kommentar eine Klasse, gelten die Regeln aus `KATEGORIEN.md`. Gärten nach Regel L14 des Skills: krautige Grünfläche und Beet im Haus- oder Hofgarten = 3.6 Garten;
+  Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat, entschieden wird am Bild.
 - Bildpunkte, die du einem Segment nimmst, gehen an das Segment, zu dem sie nach dem Bild gehören;
   entscheide das ausdrücklich. Lücken kann es nicht geben, weil `eingriff` nur umnummeriert.
 - Kante aus dem Bild mit `kante` im engen Band; wo das Bild nichts hergibt, von Hand und als
