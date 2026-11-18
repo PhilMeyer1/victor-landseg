@@ -10,12 +10,12 @@ from PIL import Image
 
 from landseg import dateien, einstellungen
 from landseg.__main__ import main
-from landseg.ansicht import Ansicht, AnsichtFehler, ansicht
+from landseg.ansicht import Ansicht, AnsichtFehler, Fenster, ansicht
 from landseg.zoom import zoom
 from tests.hilfe import beispiel_karte, beispiel_kategorien
 
 TEIL_ARTEN = ["roh", "umriss", "maengel", "vorschlag", "kontrast", "gitter"]
-SEGMENT_ARTEN = ["roh", "umriss", "maengel", "vorschlag", "nah", "kontrast", "gitter"]
+SEGMENT_ARTEN = ["roh", "umriss", "maengel", "vorschlag", "nah", "paar", "kontrast", "gitter"]
 
 
 def bild_40() -> np.ndarray:
@@ -46,7 +46,7 @@ class AnsichtTest(unittest.TestCase):
         self.assertEqual([s["id"] for s in index["segmente"]], [1, 2, 3, 4])
         for s in index["segmente"]:
             self.assertEqual(list(s["bilder"]), SEGMENT_ARTEN)
-        self.assertEqual(index["bilderzahl"], 6 + 4 * 7)
+        self.assertEqual(index["bilderzahl"], 6 + 4 * 8)
         for rel in index["teilkachel"]["bilder"].values():
             self.assertTrue((self.ordner / "aus" / rel).exists(), rel)
         self.assertEqual(self.lesen("teilkachel/roh.png").shape, (40, 40, 3))
@@ -73,6 +73,60 @@ class AnsichtTest(unittest.TestCase):
         x = (3 - f["x"]) * f["faktor"] + f["faktor"] // 2
         y = (3 - f["y"]) * f["faktor"] + f["faktor"] // 2
         self.assertTrue((nah[y, x] == bild_40()[3, 3]).all())
+
+    def test_paar_roh_neben_nummern_im_selben_massstab(self):
+        index = ansicht(bild_40(), self.karte, self.ordner / "aus", segmente=self.segmente,
+                        kategorien=self.kat, ids=[4])
+        s = index["segmente"][0]
+        f, versatz = s["paar"]["fenster"], s["paar"]["versatz"]
+        streifen = einstellungen.laden("ansicht")["paar"]["streifen"]
+        self.assertEqual(f, s["fenster"])  # klein genug: Faktor wie bei nah
+        self.assertEqual(versatz, f["breite"] * f["faktor"] + streifen)
+        paar = self.lesen(s["bilder"]["paar"])
+        self.assertEqual(paar.shape[:2], (f["hoehe"] * f["faktor"], 2 * f["breite"] * f["faktor"] + streifen))
+        fenster = bild_40()[f["y"]:f["y"] + f["hoehe"], f["x"]:f["x"] + f["breite"]]
+        roh_gross = np.repeat(np.repeat(fenster, f["faktor"], axis=0), f["faktor"], axis=1)
+        self.assertTrue((paar[:, :f["breite"] * f["faktor"]] == roh_gross).all())  # linke Hälfte = Rohbild
+        self.assertTrue((paar[:, f["breite"] * f["faktor"]:versatz] == (20, 20, 24)).all())  # Streifen
+
+        def teilkachel(x_bild: int, y_bild: int, rechts: bool) -> tuple[int, int]:
+            return (f["x"] + (x_bild - (versatz if rechts else 0)) // f["faktor"],
+                    f["y"] + y_bild // f["faktor"])
+
+        # Grenze 1|2 (Teilkachel x = 19) liegt rechts gelb, links an derselben Stelle steht das Rohbild
+        a = Ansicht(bild_40(), self.karte, self.segmente, self.kat, einstellungen.laden("ansicht"))
+        pf = a.paar_fenster(Fenster(10, 0, 20, 30, 4))
+        bild = a.zeichnen("paar", pf)
+        x_links, y_bild = (19 - 10) * 4 + 3, 2 * 4 + 1  # Grenze: letzte Spalte vor dem Wechsel
+        x_rechts = a.paar_versatz(pf) + x_links
+        self.assertEqual(tuple(bild[y_bild, x_rechts]), (255, 255, 0))
+        self.assertTrue((bild[y_bild, x_links] == bild_40()[2, 19]).all())
+        f, versatz = pf.als_dict(), a.paar_versatz(pf)
+        self.assertEqual(teilkachel(x_links, y_bild, False), (19, 2))
+        self.assertEqual(teilkachel(x_rechts, y_bild, True), (19, 2))
+        gespeichert = json.loads((self.ordner / "aus" / "ansicht.json").read_text("utf-8"))
+        self.assertIn("versatz", gespeichert["koordinaten"])
+        self.assertIn("ID mod 100000", gespeichert["nummern"])
+
+    def test_paar_hoechstens_2000_bildpunkte(self):
+        karte = np.ones((300, 400), np.uint32)
+        karte[:, 200:] = 2
+        karte[150:, :] += 100000  # IDs mit Teilkachel-Block: im Bild steht ID mod 100000
+        a = Ansicht(np.full((300, 400, 3), 90, np.uint8), karte, None, None, einstellungen.laden("ansicht"))
+        sechsfach = Fenster(0, 0, 200, 150, 6)  # als Paar 2 × 1200 + 8 breit
+        with self.assertRaises(AnsichtFehler):
+            a.zeichnen("paar", sechsfach)
+        pf = a.paar_fenster(sechsfach)
+        self.assertEqual((pf.faktor, pf.x, pf.y, pf.breite, pf.hoehe), (4, 0, 0, 200, 150))
+        bild = a.zeichnen("paar", pf)
+        self.assertLessEqual(max(bild.shape[:2]), 2000)
+        self.assertEqual(bild.shape[:2], (600, 2 * 800 + 8))
+        rechts = bild[:, a.paar_versatz(pf):]
+        self.assertTrue((rechts > 230).all(axis=2).any())  # Nummern (weiß) gezeichnet
+        self.assertFalse((bild[:, :800] > 230).all(axis=2).any())
+        with self.assertRaises(AnsichtFehler):  # auch im Maßstab 1 zu breit
+            Ansicht(np.zeros((10, 1200, 3), np.uint8), np.ones((10, 1200), np.uint32), None, None,
+                    einstellungen.laden("ansicht")).paar_fenster(Fenster(0, 0, 1200, 10, 1))
 
     def test_maengel_zeigt_luecke_unsicher_und_geschaetzt(self):
         karte = self.karte.copy()
@@ -124,7 +178,7 @@ class AnsichtTest(unittest.TestCase):
                          "--segmente", str(self.ordner / "segmente.json"),
                          "--kategorien", str(self.kat.pfad), "--ziel", str(self.ordner / "aus")])
         self.assertEqual(code, 0)
-        self.assertIn("34 Bilder", aus.getvalue())
+        self.assertIn("38 Bilder", aus.getvalue())
         self.assertTrue((self.ordner / "aus" / "segmente" / "4" / "nah.png").exists())
 
 

@@ -54,7 +54,10 @@ Stitcher-Methode übernommen und auf Landschaft umgestellt (Ermittlung `landseg-
   Bearbeiter-Name bei jedem `eingriff`.
 - **L11 Bilder selbst prüfen.** Höchstens 2000 Bildpunkte an der langen Seite, JPEG; Beschriftung
   deutsch, mit Umlauten und lesbar; sieh dir jedes fertige Bild noch einmal an (verdeckt nichts die
-  Stelle, die es zeigt?).
+  Stelle, die es zeigt?). Übersichtsbilder (ganzer Ausschnitt, ganze Teilkachel, Viertel) verlangt nur
+  der Auftrag, an genau einer Stelle; ein Prompt wiederholt sie nicht, und du siehst jedes nur einmal an.
+  Nahansichten sind ein Paar in einem Bild: links roh, rechts dieselbe Stelle mit Grenzen und Nummern,
+  im selben Maßstab (`zoom --roh` oder `paar.png` aus `ansicht`); nie getrennt roh und nummeriert.
 - **L12 Umgebung.** Python nur über den Interpreter aus dem Auftrag (nie bloßes `python`), nichts
   installieren, Skripte als Datei, keine Prozesse dauerhaft starten, keine Fenster öffnen. Für
   wiederkehrende Schritte zuerst die fertigen Befehle aus dem Auftrag (etwa `urteil bauen`, `zoom`,

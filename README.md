@@ -16,7 +16,7 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `landseg/kacheln.py` | W1 `kacheln`: Arbeitsausschnitt aus einem Luftbild, Teilkacheln (Kern + Kontextrand), Manifest mit Georeferenz |
 | `landseg/vorstufe.py`, `landseg/sam3.py` | W2 `vorstufe`: lückenlose Vorbelegung einer Teilkachel (Superpixel, SAM 3 mit Text je Kategorie, Semantik-argmax), mit Sicherheit je Segment und Kandidatenliste |
 | `vorstufe.json` | Einstellungen der Vorstufe: Superpixel-Größe, SAM-3-Modell und -Schwellen, Texte je Kategorie, Schwellen für `sicher` und die Kandidaten, Siedlungszone für `im_siedlung` (Abschnitt `siedlung`) |
-| `landseg/ansicht.py` | W3 `ansicht`: Standardbilder je Teilkachel und je Segment (roh, umriss, maengel, vorschlag, nah, kontrast, gitter) mit Verzeichnis `ansicht.json` |
+| `landseg/ansicht.py` | W3 `ansicht`: Standardbilder je Teilkachel und je Segment (roh, umriss, maengel, vorschlag, nah, paar, kontrast, gitter) mit Verzeichnis `ansicht.json` |
 | `landseg/kante.py` | W4 `kante`: Grenze zweier Nachbarsegmente im engen Band auf die Bildkante einrasten; Strecken ohne Bildkante bleiben stehen und werden als „geschätzt“ gemeldet |
 | `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`, `einigung.json`, `zoom.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
 | `landseg/eingriff.py` | W5 `eingriff`: Bearbeiten der Label-Karte (verschmelzen, teilen, Grenze verschieben, Klasse setzen, Polygon zuweisen), immer lückenlos, mit Verlauf |
@@ -160,13 +160,18 @@ PY -m landseg ansicht --manifest <ausschnitt>/manifest.json --teilkachel r0c0   
 ```
 
 Schreibt `teilkachel/<art>.png` (roh, umriss, maengel, vorschlag, kontrast, gitter) und je Segment
-`segmente/<id>/<art>.png` (dieselben plus `nah`), dazu `ansicht.json` mit Fenster und
+`segmente/<id>/<art>.png` (dieselben plus `nah` und `paar`), dazu `ansicht.json` mit Fenster und
 Vergrößerungsfaktor je Segment: `x_teilkachel = fenster.x + x_bild // faktor` (`roh` je Segment im
 Maßstab 1; im Gitterbild vorher 40 px links und 16 px oben abziehen). Das Gitter ist in Bildpunkten
 der Teilkachel beschriftet, `vorschlag` färbt nach der Klassenfarbe aus `kategorien.json`,
 `maengel` zeigt Lücken, nicht zusammenhängende Segmente, fehlende Einträge, `sicher: nein`,
 `--mindestflaeche`, `--kandidaten <json>` und mit `--kante <bericht.json>` die geschätzten Strecken.
 Ohne `--labels` entstehen nur roh, kontrast und gitter; `--ids 3,5` und `--nur-teilkachel` begrenzen.
+`paar` ist die Nahansicht als ein Bild: links das Fenster roh, rechts dasselbe Fenster mit allen Grenzen und
+Nummern (Nummer = ID mod 100000), im selben Maßstab, dazwischen ein 8 px breiter Streifen; der Faktor sinkt
+ganzzahlig, bis das Paar höchstens 2000 Bildpunkte an der langen Seite hat (Einstellungen unter `paar`).
+`ansicht.json` führt dazu unter `paar` eigenes Fenster und `versatz` der rechten Hälfte:
+`x_teilkachel = fenster.x + (x_bild - versatz) // faktor` (links `versatz` 0).
 
 ### zoom
 

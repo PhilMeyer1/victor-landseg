@@ -9,13 +9,19 @@ Bildarten (Auswahl und Größen in ``einstellungen/ansicht.json``):
   ``kante``; Legende unten
 - ``vorschlag``: Segmente in der Farbe ihrer Klasse aus ``kategorien.json``, mit Klassen-Code
 - ``nah``: nur je Segment: das vergrößerte Fenster, nur mit dem Umriss des Segments
+- ``paar``: Nahansicht als ein Bild: links das Fenster roh, rechts dasselbe Fenster mit allen
+  Segmentgrenzen und Nummern (Nummer = ID mod ``paar.nummer_modulo``), im selben Maßstab, dazwischen
+  ein schmaler Streifen; der Faktor sinkt ganzzahlig, bis das Paar höchstens ``paar.lange_seite``
+  Bildpunkte an der langen Seite hat (Regel L11)
 - ``kontrast``: Kontrast verstärkt (CLAHE auf der Helligkeit in Lab)
 - ``gitter``: Koordinatengitter, beschriftet in Bildpunkten der Teilkachel
 
 Je Segment werden alle Arten außer ``roh`` im vergrößerten Fenster gezeichnet, um einen ganzzahligen
 Faktor, so dass jeder Bildpunkt als Quadrat erscheint und Grenzen auf Bildpunktkanten liegen.
 ``ansicht.json`` im Zielordner führt jedes Bild mit Fenster und Faktor:
-``x_teilkachel = fenster.x + x_bild // faktor`` (im Gitterbild zuerst den Rand abziehen).
+``x_teilkachel = fenster.x + x_bild // faktor`` (im Gitterbild zuerst den Rand abziehen). Das Paar
+steht zusätzlich unter ``paar`` mit eigenem Fenster und dem Versatz der rechten Hälfte:
+``x_teilkachel = fenster.x + (x_bild - versatz) // faktor`` rechts, ``versatz`` = 0 links.
 """
 
 from __future__ import annotations
@@ -49,6 +55,8 @@ MAENGEL_ARTEN = {
     "geschaetzt": "Grenze geschaetzt (kante)",
 }
 SCHRIFT = cv2.FONT_HERSHEY_SIMPLEX
+#: Farbe des Trennstreifens im Paar.
+STREIFEN = (20, 20, 24)
 
 
 class AnsichtFehler(ValueError):
@@ -259,6 +267,20 @@ class Ansicht:
     def ganz(self) -> Fenster:
         return Fenster(0, 0, self.bild.shape[1], self.bild.shape[0], 1)
 
+    def paar_fenster(self, f: Fenster) -> Fenster:
+        """``f`` mit dem größten ganzzahligen Faktor bis ``f.faktor``, bei dem das Paar höchstens
+        ``paar.lange_seite`` Bildpunkte an der langen Seite hat."""
+        lang, streifen = int(self.v["paar"]["lange_seite"]), int(self.v["paar"]["streifen"])
+        hoechst = min((lang - streifen) // (2 * f.breite), lang // f.hoehe)
+        if hoechst < 1:
+            raise AnsichtFehler(f"Fenster {f.breite} × {f.hoehe} ist als Paar breiter als {lang} Bildpunkte "
+                                "auch im Maßstab 1; kleineres Fenster wählen")
+        return Fenster(f.x, f.y, f.breite, f.hoehe, min(f.faktor, hoechst))
+
+    def paar_versatz(self, f: Fenster) -> int:
+        """Erste Spalte der rechten Hälfte im Paarbild."""
+        return f.breite * f.faktor + int(self.v["paar"]["streifen"])
+
     # -- Zeichnen ---------------------------------------------------------------------------
 
     def _karte_im(self, f: Fenster) -> np.ndarray:
@@ -340,11 +362,25 @@ class Ansicht:
             _text(aus, str(wert), 2, py + 4, farbe, 0.35)
         return aus
 
+    def _paar(self, f: Fenster, sid: int | None) -> np.ndarray:
+        if self.paar_fenster(f).faktor != f.faktor:
+            raise AnsichtFehler(f"Paar im Faktor {f.faktor} länger als {self.v['paar']['lange_seite']} "
+                                "Bildpunkte; Fenster über paar_fenster wählen")
+        p = self.v["paar"]
+        modulo = int(p["nummer_modulo"])
+        rechts = self.zeichnen("umriss", f, sid)
+        self._beschriften(rechts, f, text=lambda i: str(i % modulo), ab=int(p["nummer_ab"]),
+                          groesse=float(p["nummer_groesse"]))
+        streifen = np.full((rechts.shape[0], int(p["streifen"]), 3), STREIFEN, np.uint8)
+        return np.hstack([self.zeichnen("roh", f), streifen, rechts])
+
     def zeichnen(self, art: str, f: Fenster, sid: int | None = None) -> np.ndarray:
         if art == "nah" and sid is None:
             raise AnsichtFehler("Bildart 'nah' gibt es nur je Segment")
         if self.karte is None and art not in OHNE_KARTE:
             raise AnsichtFehler(f"Bildart {art!r} braucht eine Label-Karte")
+        if art == "paar":
+            return self._paar(f, sid)
         grund = {"nah": "roh", "umriss": "roh", "gitter": "roh"}.get(art, art)
         if grund not in self.grund:
             raise AnsichtFehler(f"unbekannte Bildart {art!r}")
@@ -391,15 +427,25 @@ def ansicht(bild: np.ndarray, karte: np.ndarray | None, ziel: str | Path, *,
         "schema": SCHEMA,
         "quelle": quelle or {},
         "koordinaten": "x_teilkachel = fenster.x + x_bild // faktor; im Gitterbild vorher 40 px "
-                       "links und 16 px oben abziehen; im Mängelbild steht die Legende unten",
+                       "links und 16 px oben abziehen; im Mängelbild steht die Legende unten; im Paarbild "
+                       "gelten Fenster und Faktor unter 'paar', rechte Hälfte: x_teilkachel = fenster.x + "
+                       "(x_bild - versatz) // faktor",
+        "nummern": f"im Paarbild Nummer = ID mod {int(vorgaben['paar']['nummer_modulo'])}",
         "teilkachel": {"fenster": a.ganz().als_dict(), "bilder": {}},
         "maengel": a.maengel,
         "segmente": [],
     }
+
+    def paar(eintrag: dict, f: Fenster) -> Fenster:
+        pf = a.paar_fenster(f)
+        eintrag["paar"] = {"fenster": pf.als_dict(), "versatz": a.paar_versatz(pf)}
+        return pf
+
     for art in teil_arten:
         rel = f"teilkachel/{art}.png"
         index["teilkachel"]["bilder"][art] = rel
-        auftraege.append((ziel / rel, art, a.ganz(), None))
+        fenster = paar(index["teilkachel"], a.ganz()) if art == "paar" else a.ganz()
+        auftraege.append((ziel / rel, art, fenster, None))
     if karte is not None and not nur_teilkachel:
         gewaehlt = a.ids if ids is None else [i for i in ids if i in a.lage]
         fehlend = sorted(set(ids or []) - set(a.lage))
@@ -414,7 +460,8 @@ def ansicht(bild: np.ndarray, karte: np.ndarray | None, ziel: str | Path, *,
             for art in vorgaben["segment_arten"]:
                 rel = f"segmente/{sid}/{art}.png"
                 eintrag["bilder"][art] = rel
-                fenster = Fenster(f.x, f.y, f.breite, f.hoehe, 1) if art == "roh" else f
+                fenster = (Fenster(f.x, f.y, f.breite, f.hoehe, 1) if art == "roh"
+                           else paar(eintrag, f) if art == "paar" else f)
                 auftraege.append((ziel / rel, art, fenster, sid))
             index["segmente"].append(eintrag)
 

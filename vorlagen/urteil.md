@@ -16,13 +16,27 @@ du ändern würdest. Die Label-Karte änderst du nicht.
   Kandidatenliste der Vorstufe, falls vorhanden.
 - `{{REPO}}/kategorien.json` und `{{REPO}}/KATEGORIEN.md`: die gültigen Klassen und Regeln.
 
+## Bilder ansehen
+
+Die Übersichtsbilder verlangt nur dieser Auftrag, an dieser Stelle; der Prompt, der dich startet, verweist
+hierher und wiederholt sie nicht. Sieh jedes Bild genau einmal an, in dieser Reihenfolge:
+
+1. der ganze Ausschnitt: `{{AUSSCHNITT_BILD}}`;
+2. die ganze Teilkachel {{TEILKACHEL}}: `{{TEILKACHEL_BILD}}` (Grenzen und Nummern);
+3. dann die Segmente im Kern; Nahansichten nur an Stellen, die du in der Übersicht nicht beurteilen kannst.
+
+Eine Nahansicht ist immer ein Paar in einem Bild: links die Stelle roh, rechts dieselbe Stelle mit allen
+Segmentgrenzen und Nummern, im selben Maßstab nebeneinander. Getrennte Bilder roh und nummeriert gibt es nicht.
+
 ## Werkzeuge
 
 Befehle im Ordner `{{REPO}}` mit `{{PY}} -B -m landseg <befehl>`; Aufruf und Schalter stehen in
 `{{REPO}}/README.md`. Zuerst die fertigen Befehle, sie sind der Standardweg:
 
-- Übersichtsbilder: `ansicht` (W3); fragliche Grenzen: `kante` (W4, hier nur zum Ansehen der Bildkante).
-- Nahbilder einer Stelle mit Umriss und Nummern, links das rohe Luftbild:
+- Weitere Standardbilder der Teilkachel: `ansicht` (W3), je Segment auch das Paar `segmente/<id>/paar.png`
+  (Nummer = ID mod 100000; Fenster, Faktor und Versatz der rechten Hälfte in `ansicht.json` unter `paar`);
+  fragliche Grenzen: `kante` (W4, hier nur zum Ansehen der Bildkante).
+- Nahansicht einer beliebigen Stelle als Paar (links das rohe Luftbild, rechts Umriss und Nummern):
   `{{PY}} -B -m landseg zoom --manifest {{DATEN}}/manifest.json --teilkachel {{TEILKACHEL}} --labels {{DATEN}}/{{LABELS}} --ids 17 --roh --ziel {{ERGEBNIS}}/nah_17_1.jpg`
   (statt `--ids` auch `--punkt x,y --radius r` oder `--rechteck x,y,b,h`).
 - `urteil.json` nicht von Hand schreiben, sondern die kurze Liste `{{ERGEBNIS}}/liste.json` (Format unten)
@@ -40,7 +54,7 @@ Hilfe beim Nachsegmentieren; nenne es in der Rückgabe.
 - `roh.jpg`, `umriss.jpg` (alle Segmentgrenzen mit ID), `maengel.jpg` (nummerierte Punkte mit kurzer
   deutscher Beschriftung, sonst Vermerk „keine Mängel“), `vorschlag.jpg` (Grenzen und Klassen, wie
   du sie setzen würdest, sonst Vermerk „unverändert“): je die ganze Teilkachel, Kern umrandet.
-- `nah_<id>_<n>.jpg`: Nahbilder der Stellen, die man in der Übersicht nicht beurteilen kann;
+- `nah_<id>_<n>.jpg`: Nahansichten (Paar, `zoom --roh`) der Stellen, die man in der Übersicht nicht beurteilen kann;
   `kontrast_<id>_<n>.jpg` bei blassen Stellen.
 - `liste.json`, die kurze Liste für `urteil bauen`: was nur du weißt, je Segment `[id, urteil, vorschlag,
   punkte, bilder]` (hintere Felder dürfen fehlen) oder ein Objekt mit denselben Feldern und `was`
