@@ -1,6 +1,6 @@
 # Auftragsvorlagen für Agents
 
-Vier Vorlagen für die Agent-Schritte der Landschafts-Segmentierung, je eine Datei mit Platzhaltern
+Fünf Vorlagen für die Agent-Schritte der Landschafts-Segmentierung, je eine Datei mit Platzhaltern
 `{{NAME}}`. Die Hauptsession kopiert die Vorlage, setzt alle Platzhalter ein (es darf keiner übrig
 bleiben) und gibt den Text als Auftrag weiter. Die Regeln, die für alle Schritte gelten, stehen im
 Agent-Skill `landseg-agent` (`.claude/skills/landseg-agent/SKILL.md`); die Vorlagen verweisen darauf
@@ -12,6 +12,7 @@ und wiederholen sie nicht.
 | `umsetzen.md` | ein Agent je Teilkachel setzt das bestätigte Urteil auf der Label-Karte um | `labels.tif`, `segmente.json`, `abgabe.json`, Bilder |
 | `korrektur.md` | ein Agent je Teilkachel setzt genau die Kommentare des Nutzers um (Runde n) | wie `umsetzen.md` |
 | `naht.md` | ein Agent klärt die Nahtverstöße aus `zusammentragen` | geänderte Teilkacheln (neue Runde), `naht_abgabe.json` |
+| `einigung.md` | ein Agent je Bündel aus `einigung finden` einigt die Klassen an den Übergängen der Teilkacheln (Urteil im Verbund: Bilder beider Seiten, ein Urteil je Stelle für alle Beteiligten, nur Klassen im Kern) | `einigung_abgabe.json` |
 
 Die Vorlagen enthalten keine Pfade dieses Rechners und keinen Einzelfall: Alles Fallbezogene kommt
 über die Platzhalter.
@@ -33,8 +34,14 @@ Die Vorlagen enthalten keine Pfade dieses Rechners und keinen Einzelfall: Alles 
 | `{{RUNDE}}` | Nummer der Runde, die der Agent abgibt (Umsetzen 0, Korrektur und Naht ab 1) | `1` |
 | `{{KOMMENTARE}}` | Kommentare des Nutzers für diesen Agent, wörtlich mit Kennung | `K3: „Hecke reicht bis zum Weg“` |
 | `{{AUFTRAG_ZUSAMMEN}}` | `zusammentragen.json` des Ausschnitts (relativ zu `{{DATEN}}`) | `zusammentragen.json` |
+| `{{FASSUNG}}` | Kennung der Fassung aus `einstellungen/seite.json` | `A` |
+| `{{AUFTRAEGE}}` | Ordner, in den `einigung finden` die Bündel-Aufträge geschrieben hat | `…/T0/<lauf>/einigung-a` |
+| `{{BUENDEL}}` | Name des Bündels (Unterordner von `{{AUFTRAEGE}}`) | `A-02` |
+| `{{URTEILE}}` | Ordner mit `<teilkachel>/urteil.json` der Fassung (relativ zu `{{DATEN}}`) | `urteil` |
 | `{{ZUSAMMEN}}` | Ordner des zusammengetragenen Stands mit `labels.tif`, `segmente.json`, `naht.json` (relativ zu `{{DATEN}}`) | `zusammen` |
 
 Nach dem Rücklauf trägt die Hauptsession jede Abgabe als Einheit in `zusammentragen.json` ein
 (`teilkachel`, `labels`, `segmente`, `runde`, `name`), bei `naht.md` auch dessen `naht_bestaetigt`,
-und ruft `python -m landseg zusammentragen --datei zusammentragen.json` (README, „zusammentragen“).
+und ruft `python -m landseg zusammentragen --datei zusammentragen.json` (README, „zusammentragen“). Bei
+`einigung.md` ruft sie nach dem Rücklauf aller Bündel einer Fassung einmal `python -m landseg einigung anwenden`
+mit allen Abgaben und danach `einigung messen` (README, „einigung“).

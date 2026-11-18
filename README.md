@@ -18,13 +18,14 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `vorstufe.json` | Einstellungen der Vorstufe: Superpixel-Größe, SAM-3-Modell und -Schwellen, Texte je Kategorie, Schwellen für `sicher` und die Kandidaten, Siedlungszone für `im_siedlung` (Abschnitt `siedlung`) |
 | `landseg/ansicht.py` | W3 `ansicht`: Standardbilder je Teilkachel und je Segment (roh, umriss, maengel, vorschlag, nah, kontrast, gitter) mit Verzeichnis `ansicht.json` |
 | `landseg/kante.py` | W4 `kante`: Grenze zweier Nachbarsegmente im engen Band auf die Bildkante einrasten; Strecken ohne Bildkante bleiben stehen und werden als „geschätzt“ gemeldet |
-| `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
+| `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`, `einigung.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
 | `landseg/eingriff.py` | W5 `eingriff`: Bearbeiten der Label-Karte (verschmelzen, teilen, Grenze verschieben, Klasse setzen, Polygon zuweisen), immer lückenlos, mit Verlauf |
 | `landseg/pruefen.py` | W6 `pruefen`: Wächter der Lückenlosigkeit (H × W ohne 0, Zusammenhang je Segment, gültige Klassen) |
 | `landseg/zusammentragen.py` | W7 `zusammentragen`: Abgaben der Teilkacheln (je Teilkachel die letzte Runde, nur der Kern) zur Label-Karte des Ausschnitts; Einheiten, Klassen des Nutzers und offene Fragen aus einem JSON-Auftrag |
 | `landseg/seite.py`, `landseg/seite_vorlage/` | W8 `seite`: Übersichtsseite als eine HTML-Datei (je Bild das Ergebnis, Umschalter zwischen den Fassungen A/B/C mit je eigener Kategorienliste, Ebenen grob/mittel/fein, Lücken, Nähte, Kategorienliste, Kommentare mit Export); Vorlage aus HTML, CSS und JavaScript |
 | `landseg/naht.py` | Nahtregel: an jeder Kerngrenze gleiche ID oder echte Bildkante, gleiche Klasse |
-| `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht) mit Platzhaltern, erklärt in `vorlagen/README.md` |
+| `landseg/einigung.py` | `einigung`: Klassen an den Übergängen der Teilkacheln abgleichen (`finden`: offene Stellen bündeln, je Bündel Agent-Auftrag mit Bildern beider Seiten; `anwenden`: Abgaben umsetzen, nur Klassen und Vermerke; `messen`: Stellen gleicher Fläche mit verschiedener Klasse, offen/unsicher/geklärt); Einstellungen `einstellungen/einigung.json` |
+| `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht, Einigung) mit Platzhaltern, erklärt in `vorlagen/README.md` |
 | `.claude/skills/landseg-agent/SKILL.md` | Agent-Skill mit den Arbeitsregeln für diese Aufträge |
 | `landseg/kategorien.py`, `landseg/dateien.py` | Kategorienliste laden; Lesen und Schreiben von Label-Karte, `segmente.json`, Manifest |
 | `tests/` | Tests (Python-Standardmodul `unittest`, synthetische Bilder und Label-Karten) |
@@ -299,9 +300,33 @@ PY -m landseg naht --manifest <manifest.json> --labels <labels.tif des Ausschnit
 Prüft nur den ID-Teil der Nahtregel auf einer schon zusammengetragenen Label-Karte, etwa nach einem
 Eingriff des Naht-Agents; `--datei` liefert Einstellungen und bestätigte Grenzen.
 
+### einigung
+
+```
+PY -B -m landseg einigung finden   --manifest <manifest.json> --fassung <A|B|C> --ziel <neuer Ordner>
+PY -B -m landseg einigung anwenden --manifest <manifest.json> --fassung <A|B|C> --auftraege <Ordner von finden> --abgabe <einigung_abgabe.json> [--abgabe …] [--ziel <neuer Ordner>] [--probe]
+PY -B -m landseg einigung messen   --manifest <manifest.json> [--fassung <A|B|C>]
+```
+
+Fester Schritt nach dem Zusammentragen der Urteile, vor dem Erzeugen der Seite: An den Kerngrenzen
+(Nähte samt Ecken) und an den Viertelgrenzen (Mitte jedes Kerns) sucht `finden` die Segment-Paare, die
+ohne Bildkante aneinandergrenzen (Bildkanten-Regel und Bildleser wie `naht`) und verschiedene Klassen
+tragen. Ein Segment heißt `<teilkachel>:<id>`, ein Paar `<segment>|<segment>`. Paare, die ein Segment
+teilen, bleiben in einem Bündel (eine Ecke also auch); kleine Gruppen werden bis `buendel_paare`
+zusammengelegt. Je Bündel entsteht `<ziel>/<fassung>-<nr>/auftrag.json` mit `paar_<nr>.jpg` (Luftbild
+beider Seiten, rechts mit beiden Segmenten und der Grenze), dazu `<ziel>/einigung.json` (Zahlen,
+Bündel). Ein Agent je Bündel urteilt nach `vorlagen/einigung.md` und gibt `einigung_abgabe.json` ab;
+`anwenden` setzt je Paar `gleich` (gemeinsame Klasse der Kategorienliste der Fassung, per `eingriff`),
+`grenze` (nichts ändert sich) oder `unklar` (beide `sicher: nein`) um und vermerkt bei jedem beteiligten
+Segment unter `einigung` Entscheidung, Grund, Bearbeiter und Bündel, mit Verlaufseintrag. Label-Karten
+bleiben unberührt; nur Segmente im Kern; alles oder nichts (Exit 1 bei abgelehnter Abgabe). `messen`
+zählt je Fassung die Stellen (Paare, Strecken, Randpunkte): offen, unsicher belegt, geklärt, dazu alle
+Schnittlinien ohne Bildkante; Exit 1, solange etwas offen ist. Die Fassungen (Ordner, Kategorienliste)
+kommen aus `einstellungen/seite.json`, wahlweise `--ordner`.
+
 ## Auftragsvorlagen
 
-`vorlagen/urteil.md`, `umsetzen.md`, `korrektur.md`, `naht.md`: Aufträge für Agents mit Platzhaltern
+`vorlagen/urteil.md`, `umsetzen.md`, `korrektur.md`, `naht.md`, `einigung.md`: Aufträge für Agents mit Platzhaltern
 `{{NAME}}` (Liste in `vorlagen/README.md`), ohne Pfade dieses Rechners. Die Regeln, die für alle
 gelten, stehen im Skill `.claude/skills/landseg-agent/SKILL.md`.
 
