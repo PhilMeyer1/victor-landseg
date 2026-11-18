@@ -202,8 +202,12 @@ Schalter: Ebene (grob/mittel/fein, soweit die Fassung sie hat), Flächen (mit De
 Lücken (Bildpunkte ohne Segment rot), Nähte (Verstöße der Nahtregel an den Kerngrenzen, auf den
 zusammengesetzten Kernen geprüft, sobald alle Teilkacheln einer Fassung vorliegen), Nur unsicher,
 Gitter (alle `gitter_abstand` Bildpunkte), Kategorien (Liste mit Segmentzahl und Flächenanteil;
-Klick hebt eine Kategorie hervor). „Ganzer Ausschnitt“ zeigt den Ausschnitt mit Kerngrenzen und
-Nahtverstößen. Kommentare zum gewählten Segment werden im Browser vorgemerkt und unter
+Klick hebt eine Kategorie hervor). Unter dem Kopf liegt die Kachel-Wahl in fester Höhe: „vorige“,
+„Ganzer Ausschnitt“, je Teilkachel ein Reiter mit Nummer, Miniatur des Kerns, Raster-Symbol und Lage in
+Worten („oben links“ …, aus `zeile`/`spalte`; die Kennung `r0c0` klein dabei), „nächste“; die Pfeiltasten
+← → gehen dieselben Schritte (nicht in Eingabefeldern). Im Bild steht „Teilkachel n von N“ mit dem
+nächsten Schritt. „Ganzer Ausschnitt“ zeigt den Ausschnitt mit Kerngrenzen, Nummer und Lage je Kern und
+Nahtverstößen. Auf schmalen Bildschirmen (bis 760 px) entfallen die Leisten links und rechts. Kommentare zum gewählten Segment werden im Browser vorgemerkt und unter
 „Export (JSON)“ als `kommentare-<name>.json` (`schema` `landseg-kommentare/1`, je Kommentar mit
 `fassung`) gespeichert; `--kommentare` zeigt eine solche Datei wieder an. Farben und
 Voreinstellungen der Seite stehen in `einstellungen/seite.json`.

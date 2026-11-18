@@ -5,12 +5,12 @@
 :root {
   color-scheme: dark;
   --grund: #0e0f11; --flaeche: #16181b; --detail: #131518; --linie: #2a2d32;
-  --text: #d6d8dc; --text-leise: #8b9099; --akzent: #ffeb3c;
+  --text: #d6d8dc; --text-leise: #8b9099; --akzent: #ffeb3c; --akzent-text: #16181b;
   --ok: #4cc27a; --warn: #e0a83a; --fehler: #ef6461;
   --schrift: "Segoe UI", system-ui, -apple-system, sans-serif;
   --gr-text: 13px; --gr-klein: 12px; --gr-mini: 11px; --radius: 6px;
   --grau-2: #25292e; --grau-3: #30353b; --grau-4: #454b53;
-  --info-breite: 320px; --kat-breite: 290px; --kopf-hoehe: 72px; --leiste-hoehe: 52px; --maus-hoehe: 150px;
+  --info-breite: 320px; --kat-breite: 290px; --kopf-hoehe: 72px; --wahl-hoehe: 78px; --leiste-hoehe: 52px; --maus-hoehe: 150px;
 }
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -33,16 +33,15 @@ h3 { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 h3 span { text-transform: none; letter-spacing: 0; overflow: hidden; text-overflow: ellipsis; }
 h3 button { margin-left: auto; text-transform: none; letter-spacing: 0; font-size: var(--gr-mini); padding: 2px 8px; }
 
-.c-seite { display: grid; grid-template-rows: var(--kopf-hoehe) minmax(0, 1fr) var(--leiste-hoehe); height: 100%; min-width: 0; }
+.c-seite { display: grid; grid-template-rows: calc(var(--kopf-hoehe) + var(--wahl-hoehe)) minmax(0, 1fr) var(--leiste-hoehe); height: 100%; min-width: 0; }
+.c-oben { display: grid; grid-template-rows: var(--kopf-hoehe) var(--wahl-hoehe); min-width: 0; min-height: 0; overflow: hidden; }
 .c-kopf { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; grid-template-rows: auto auto; align-items: center; gap: 4px 18px; padding: 8px 14px; background: var(--flaeche); border-bottom: 1px solid var(--linie); overflow: hidden; }
-.c-kopf nav { display: flex; gap: 2px; min-width: 0; overflow: hidden; }
 .c-kopf a { text-decoration: none; color: var(--text-leise); padding: 4px 10px; border-radius: var(--radius); white-space: nowrap; }
 .c-kopf a:hover { color: var(--text); background: var(--grau-2); }
 .c-kopf a[aria-current="page"] { color: var(--text); background: var(--grau-3); }
-.c-kopf .c-ohne { opacity: .5; }
 .c-rechts { justify-self: end; }
 .c-fassungen { display: flex; gap: 4px; }
-.c-fassungen button span { color: var(--text-leise); }
+.c-fassungen button span:not(.c-fname) { color: var(--text-leise); }
 .c-beschr { grid-column: 1 / -1; margin: 0; color: var(--text-leise); font-size: var(--gr-klein); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .c-beschr b { color: var(--text); margin-right: 6px; }
 
@@ -110,3 +109,80 @@ button[data-schalter][aria-pressed="true"]::before { content: "✓ "; }
 .c-liste { padding: 20px 24px; max-width: 760px; overflow: auto; height: 100%; }
 .c-liste p { margin: 12px 0; }
 .c-liste button[data-loeschen] { font-size: var(--gr-mini); padding: 1px 8px; }
+
+/* Kachel-Wahl unter dem Kopf: vorige | Ganzer Ausschnitt | Teilkacheln (Nummer, Miniatur, Raster, Lage) | nächste.
+   Feste Höhe (--wahl-hoehe) in allen Ansichten: das Bild darunter springt beim Umschalten nicht. */
+.c-kachelwahl { display: flex; align-items: stretch; gap: 8px; padding: 8px 14px; background: var(--detail); border-bottom: 1px solid var(--linie); min-width: 0; min-height: 0; overflow: hidden; }
+.c-spur { flex: 1 1 auto; min-width: 0; display: flex; align-items: stretch; gap: 8px; }
+.c-vier { flex: 1 1 auto; min-width: 0; display: grid; gap: 6px; }
+.c-trenner { flex: none; width: 1px; margin: 6px 0; background: var(--grau-4); }
+.c-pfeil { flex: 0 0 118px; display: flex; align-items: center; gap: 8px; padding: 0 12px; border: 1px solid var(--linie); border-radius: var(--radius); background: var(--grau-2); color: var(--text); text-decoration: none; min-width: 0; height: auto; }
+.c-pfeil:hover { border-color: var(--grau-4); background: var(--grau-3); }
+.c-pfeil-vor { justify-content: flex-end; text-align: right; }
+.c-pfeil:disabled { opacity: .45; border-style: solid; }
+.c-zeichen { font-size: 28px; line-height: 1; color: var(--akzent); flex: none; }
+.c-pfeil:disabled .c-zeichen { color: var(--text-leise); }
+.c-pfeiltext { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.c-pfeiltext b { font-size: 14px; font-weight: 600; }
+.c-pfeiltext small { font-size: var(--gr-mini); color: var(--text-leise); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.c-reiter { position: relative; display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; min-width: 0; border: 1px solid var(--linie); border-radius: var(--radius); background: var(--flaeche); color: var(--text); text-decoration: none; }
+.c-reiter-ganz { flex: 0 0 190px; }
+.c-reiter:hover { border-color: var(--grau-4); background: var(--grau-2); }
+.c-reiter[aria-current="page"] { border-color: var(--akzent); background: var(--grau-3); box-shadow: inset 0 -3px 0 var(--akzent); }
+.c-reiter .c-bild { position: relative; flex: none; width: 48px; height: 48px; }
+.c-mini { display: block; width: 48px; height: 48px; border-radius: 4px; object-fit: cover; background: #000; }
+.c-nr { position: absolute; left: -5px; bottom: -5px; display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--grund); color: var(--text); border: 1px solid var(--grau-4); font-size: var(--gr-mini); font-weight: 700; }
+.c-reiter[aria-current="page"] .c-nr { background: var(--akzent); color: var(--akzent-text); border-color: var(--akzent); }
+.c-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.c-ober { display: flex; align-items: center; gap: 6px; font-size: var(--gr-mini); color: var(--text-leise); white-space: nowrap; overflow: hidden; }
+.c-text b { font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.c-reiter[aria-current="page"] .c-text b { color: var(--akzent); }
+.c-stand { font-size: var(--gr-mini); color: var(--text-leise); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.c-kennung { font-size: var(--gr-mini); color: var(--text-leise); opacity: .8; }
+.c-tafel figcaption .c-kennung { margin-left: -8px; }
+/* Teilkachel ohne Daten in dieser Fassung: ausgegraut, bleibt wählbar */
+.c-reiter.c-ohne { border-style: dashed; }
+.c-reiter.c-ohne .c-mini { filter: grayscale(1) brightness(.55); }
+.c-reiter.c-ohne .c-text b, .c-reiter.c-ohne .c-stand { color: var(--text-leise); }
+/* Raster-Symbol: die Teilkacheln in ihrer Lage */
+.c-raster { display: inline-grid; gap: 1px; flex: none; }
+.c-raster i { width: 6px; height: 6px; border-radius: 1px; background: var(--grau-4); }
+.c-raster i.c-an { background: var(--text); }
+.c-reiter[aria-current="page"] .c-raster i.c-an { background: var(--akzent); }
+
+/* Hinweis im Bild: Teilkachel n von N, Fortschritt, nächster Schritt */
+.c-fortschritt { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 2; display: flex; align-items: center; gap: 12px; max-width: calc(100% - 24px); padding: 6px 6px 6px 14px; border: 1px solid var(--grau-4); border-radius: 8px; background: rgba(14, 15, 17, .88); font-size: var(--gr-klein); white-space: nowrap; }
+.c-fz { color: var(--text-leise); flex: none; }
+.c-fz b { color: var(--akzent); font-size: 15px; }
+.c-punkte { display: inline-flex; gap: 5px; flex: none; }
+.c-punkte i { width: 8px; height: 8px; border-radius: 50%; background: var(--grau-4); }
+.c-punkte i.c-war { background: var(--text-leise); }
+.c-punkte i.c-hier { background: var(--akzent); }
+.c-weiter { min-width: 0; overflow: hidden; text-overflow: ellipsis; padding: 4px 12px; border-radius: var(--radius); background: var(--akzent); color: var(--akzent-text); font-weight: 600; text-decoration: none; }
+.c-weiter:hover { filter: brightness(1.08); }
+.c-tasten { display: inline-flex; gap: 3px; flex: none; }
+kbd { display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 4px; border: 1px solid var(--grau-4); border-bottom-width: 2px; border-radius: 4px; color: var(--text-leise); font: var(--gr-mini)/1 var(--schrift); }
+
+/* schmaler Bildschirm (Handy): Kopf, Kachel-Wahl (nur Miniatur mit Nummer), Bild und Schalter; die Leisten
+   links und rechts entfallen, damit das Bild Platz hat und nichts scrollt */
+@media (max-width: 760px) {
+  :root { --kopf-hoehe: 64px; --wahl-hoehe: 60px; --leiste-hoehe: 48px; }
+  .c-mitte { grid-template-columns: minmax(0, 1fr); }
+  .c-info, .c-kat { display: none; }
+  .c-kopf { grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 10px; padding: 6px 10px; }
+  .c-kopf > b, .c-fname { display: none; }
+  .c-tafel figcaption { gap: 10px; }
+  .c-leiste { gap: 14px; padding: 0 10px; }
+  .c-kachelwahl { gap: 6px; padding: 6px 8px; }
+  .c-spur { gap: 6px; }
+  .c-vier { gap: 4px; }
+  .c-pfeil { flex: 0 0 40px; padding: 0; justify-content: center; }
+  .c-pfeiltext { display: none; }
+  .c-reiter, .c-reiter-ganz { flex: 0 0 auto; justify-content: center; gap: 0; padding: 3px; }
+  .c-vier .c-reiter { flex: 1 1 auto; }
+  .c-text { display: none; }
+  .c-reiter .c-bild, .c-mini { width: 38px; height: 38px; }
+  .c-nr { left: -3px; bottom: -3px; width: 18px; height: 18px; }
+  .c-fortschritt { gap: 8px; bottom: 8px; padding: 4px 4px 4px 10px; }
+  .c-punkte, .c-tasten { display: none; }
+}

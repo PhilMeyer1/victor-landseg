@@ -15,7 +15,7 @@ from PIL import Image
 from landseg import dateien, einstellungen
 from landseg.__main__ import main
 from landseg.kacheln import kacheln
-from landseg.seite import SeiteFehler, labels_als_rgb, seite, seite_daten
+from landseg.seite import SeiteFehler, labels_als_rgb, lage_in_worten, seite, seite_daten
 from tests.hilfe import beispiel_kategorien
 from tests.test_kacheln import PRJ
 
@@ -115,6 +115,26 @@ class SeiteTest(unittest.TestCase):
         self.assertTrue((ids_aus_png(b["gesamt"]) == 7).all())
         self.assertEqual([(f["kennung"], f["vorhanden"], f.get("naht")) for f in erg["fassungen"]],
                          [("A", False, None), ("B", True, 0), ("C", True, 1)])
+
+    def test_kachel_wahl(self):
+        """Kachel-Wahl: Nummer und Lage je Teilkachel in den Daten; Wahl, Hinweis im Bild und Pfeiltasten in der Seite."""
+        self.feste_liste()
+        ziel = self.t / "seite" / "TX.html"
+        seite(self.t / "manifest.json", ziel, self.kat)
+        html = ziel.read_text(encoding="utf-8")
+        d = daten_aus_html(html)
+        self.assertEqual([(t["id"], t["nummer"], t["lage"]) for t in d["teilkacheln"]],
+                         [("r0c0", 1, "links"), ("r0c1", 2, "rechts")])
+        self.assertEqual([lage_in_worten(z, s, 2, 2) for z in (0, 1) for s in (0, 1)],
+                         ["oben links", "oben rechts", "unten links", "unten rechts"])
+        self.assertEqual(lage_in_worten(1, 1, 3, 3), "Mitte")
+        self.assertEqual(lage_in_worten(0, 3, 2, 4), "Zeile 1, Spalte 4")
+        for teil in ("c-kachelwahl", "Ganzer Ausschnitt", "'vorige'", "'nächste'", "' von ' + ANZAHL", "c-fortschritt",
+                     "weiter: Teilkachel ", "ArrowLeft", "ArrowRight", "t === 'TEXTAREA' || t === 'INPUT'",
+                     "--wahl-hoehe", "@media (max-width: 760px)"):
+            self.assertIn(teil, html)
+        # Miniaturen entstehen im Browser aus denselben Bildern: keine zweite Kopie in der Datei
+        self.assertEqual(html.count(d["teilkacheln"][0]["bild"]), 1)
 
     def test_luecke(self):
         self.feste_liste(luecke=True)
