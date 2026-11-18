@@ -27,6 +27,7 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `landseg/einigung.py` | `einigung`: Klassen an den Übergängen der Teilkacheln abgleichen (`finden`: offene Stellen bündeln, je Bündel Agent-Auftrag mit Bildern beider Seiten; `anwenden`: Abgaben umsetzen, nur Klassen und Vermerke; `messen`: Stellen gleicher Fläche mit verschiedener Klasse, offen/unsicher/geklärt); Einstellungen `einstellungen/einigung.json` |
 | `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht, Einigung) mit Platzhaltern, erklärt in `vorlagen/README.md` |
 | `.claude/skills/landseg-agent/SKILL.md` | Agent-Skill mit den Arbeitsregeln für diese Aufträge |
+| `landseg/messung.py` | `messung`: Kosten eines Agent-Laufs je Phase aus den Transkripten (Agents, Minuten, Runden, Tokens, USD nach Listenpreis, Bilder, eigene .py); nur Standardbibliothek |
 | `landseg/kategorien.py`, `landseg/dateien.py` | Kategorienliste laden; Lesen und Schreiben von Label-Karte, `segmente.json`, Manifest |
 | `tests/` | Tests (Python-Standardmodul `unittest`, synthetische Bilder und Label-Karten) |
 
@@ -343,6 +344,26 @@ bleiben unberührt; nur Segmente im Kern; alles oder nichts (Exit 1 bei abgelehn
 zählt je Fassung die Stellen (Paare, Strecken, Randpunkte): offen, unsicher belegt, geklärt, dazu alle
 Schnittlinien ohne Bildkante; Exit 1, solange etwas offen ist. Die Fassungen (Ordner, Kategorienliste)
 kommen aus `einstellungen/seite.json`, wahlweise `--ordner`.
+
+### messung
+
+```
+PY -B -m landseg messung --transkripte <Protokollordner des Laufs> [--lauf <Name>] [--ziel <Ordner>] [--json]
+```
+
+Nach jedem Agent-Lauf fahren und die Tabelle in den Bericht des Laufs übernehmen. Der Protokollordner
+ist der Ordner des Workflow-Laufs im Claude-Projektordner (`…/subagents/workflows/wf_<…>`) mit je Agent
+`agent-<id>.jsonl` und `agent-<id>.meta.json`; der Befehl sucht ihn nicht selbst und liest ihn nur. Die
+Phase kommt aus `workflowPhase` der `meta.json` (fehlt sie: Phase `?`), das Modell aus der Antwort, sonst
+aus `model`. Ausgabe je Phase (nach erstem Start) und `zusammen`: Agents, Wand-Minuten, Agent-Minuten,
+Runden (API-Antworten; eine Antwort zählt einmal, auch wenn sie je Inhaltsblock mehrfach im Transkript
+steht), gelesen (Cache-Lesen), neu (Eingabe + Cache-Schreiben), Ausgabe, USD, gelesene Bilder (`Read` auf
+Bilddateien), geschriebene `.py` (`Write`). USD ist ein Rechenwert nach Listenpreis (`PREIS` in
+`landseg/messung.py` mit Stand-Datum, wie im Stitcher und im Plugin `wunsch`: Opus 4 Eingabe, 5
+Cache-Schreiben 5 min, 8 Cache-Schreiben 1 h, 0,20 Cache-Lesen, 20 Ausgabe USD je Mio.; Sonnet die Hälfte),
+keine Abo-Kosten. Mit `--ziel` entstehen dort `messung.json` (Form `landseg-messung/1`, dazu jede
+Agent-Zeile) und `messung.md` (dieselbe Tabelle wie auf der Konsole); kaputte Zeilen werden übersprungen.
+Exit 2, wenn der Ordner fehlt oder keine `agent-*.jsonl` enthält.
 
 ## Auftragsvorlagen
 

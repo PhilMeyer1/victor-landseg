@@ -45,3 +45,8 @@ Nach dem Rücklauf trägt die Hauptsession jede Abgabe als Einheit in `zusamment
 und ruft `python -m landseg zusammentragen --datei zusammentragen.json` (README, „zusammentragen“). Bei
 `einigung.md` ruft sie nach dem Rücklauf aller Bündel einer Fassung einmal `python -m landseg einigung anwenden`
 mit allen Abgaben und danach `einigung messen` (README, „einigung“).
+
+Nach jedem Lauf mit diesen Vorlagen misst die Hauptsession die Kosten und übernimmt die Tabelle in den
+Bericht des Laufs:
+`python -m landseg messung --transkripte <Protokollordner des Laufs> --lauf <Name> --ziel <Berichtsordner>`
+(schreibt `messung.md` und `messung.json`; README, „messung“).

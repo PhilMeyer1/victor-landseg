@@ -2,7 +2,8 @@
 
 Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``ansicht`` (W3), ``kante`` (W4), ``eingriff`` (W5),
 ``pruefen`` (W6), ``zusammentragen`` (W7), ``seite`` (W8, Übersichtsseite), ``naht`` (Nahtregel allein),
-``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``messen``). Exit-Code 0 = ok,
+``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``messen``), ``messung``
+(Kosten eines Agent-Laufs aus den Transkripten). Exit-Code 0 = ok,
 1 = Befund, Nahtverstoß, offene Stellen oder Eingriff/Abgabe abgelehnt, 2 = Aufruf- oder Lesefehler.
 """
 
@@ -23,6 +24,7 @@ from .eingriff import Bearbeitung, EingriffFehler
 from .einigung import EinigungFehler
 from .kacheln import KachelFehler, kacheln
 from .kante import einrasten
+from .messung import messung_befehl, tabelle
 from .pruefen import pruefen
 from .seite import SeiteFehler, bilder_aus_einstellungen, seite
 from .vorstufe import Auftrag, VorstufeFehler, auftraege_aus_manifest, konfig_laden, vorstufe
@@ -312,6 +314,12 @@ def befehl_kante(a) -> int:
     return _befund_ausgeben(pruefen(arbeit.karte, arbeit.segmente, kat), False)
 
 
+def befehl_messung(a) -> int:
+    m = messung_befehl(a.transkripte, lauf=a.lauf, ziel=a.ziel)
+    print(json.dumps(m, ensure_ascii=False) if a.json else tabelle(m))
+    return 0
+
+
 def parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="python -m landseg", description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -474,6 +482,15 @@ def parser() -> argparse.ArgumentParser:
                                           "(sonst an Ort und Stelle)")
             s.add_argument("--probe", action="store_true", help="nur prüfen, nichts schreiben")
     ei.set_defaults(fn=befehl_einigung)
+
+    me = befehle.add_parser("messung", help="Kosten eines Agent-Laufs je Phase aus den Transkripten "
+                                            "(Tokens, USD, Minuten, Bilder, .py)")
+    me.add_argument("--transkripte", required=True, help="Protokollordner des Laufs mit agent-*.jsonl und "
+                                                         "agent-*.meta.json (wird nur gelesen)")
+    me.add_argument("--lauf", help="Name des Laufs in Tabelle und messung.json (Standard: Name des Ordners)")
+    me.add_argument("--ziel", help="Ordner für messung.json und messung.md (sonst nur Ausgabe)")
+    me.add_argument("--json", action="store_true", help="Ergebnis als JSON statt Tabelle")
+    me.set_defaults(fn=befehl_messung)
     return p
 
 
