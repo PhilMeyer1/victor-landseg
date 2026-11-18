@@ -135,6 +135,25 @@ class GesamtProjektTest(unittest.TestCase):
         self.assertIn("chore: update programm/ from landseg main", git(ziel, "log", "--oneline", "--", "programm"))
         self.klartext_in_neuen_commits(ziel, f"{stand}..HEAD")
 
+        # neues Ergebnis in der Grundlage: bauen zieht ergebnisse/ aus deren HEAD nach (Byte für Byte, auch CRLF),
+        # nicht aus dem Arbeitsstand; was dort nicht mehr liegt, fällt weg
+        grundlage = basis / "daten/landseg/uebergabe/landseg-t0"
+        schreibe(grundlage / "T0/T0.html", b"<html>\r\nneu\r\n</html>\r\n")
+        git(grundlage, "rm", "-q", "T0/manifest.json")
+        git(grundlage, "add", "-A")
+        git(grundlage, "commit", "-q", "-m", "feat: neue Seite")
+        schreibe(grundlage / "T0/T0.html", b"nicht committet\n")
+        stand = git(ziel, "rev-parse", "HEAD").strip()
+        code, text = ausfuehren("bauen", "--basis", str(basis), "--ziel", str(ziel))
+        self.assertEqual(code, 0, text)
+        self.assertIn("Ergebnisse: 1 Dateien aus der Grundlage", text)
+        self.assertEqual((ziel / "ergebnisse/T0.html").read_bytes(), b"<html>\r\nneu\r\n</html>\r\n")
+        self.assertFalse((ziel / "ergebnisse/manifest.json").exists())
+        self.assertIn("chore: update ergebnisse/ from the handover results", git(ziel, "log", "--oneline", f"{stand}..HEAD"))
+        self.klartext_in_neuen_commits(ziel, f"{stand}..HEAD")
+        code, text = ausfuehren("bauen", "--basis", str(basis), "--ziel", str(ziel))
+        self.assertIn("neue Commits: 0", text)
+
         code, text = ausfuehren("pruefen", "--basis", str(basis), "--ziel", str(ziel))
         self.assertIn("fehlend 0, abweichend 0, fremd 0", text)
         self.assertIn("laut Durchsicht weggelassen 1", text)

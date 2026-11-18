@@ -66,6 +66,16 @@
     if (v && typeof v === 'object') v = v.wert
     return typeof v === 'number' ? Math.round(v * 100) + ' %' : '–'
   }
+  // Beschlüsse der Einigung an den Übergängen (`einigung` in segmente.json): je Beschluss Entscheidung, Nachbar, Klasse, Grund
+  var EINIGUNG_ART = { gleich: 'gleiche Fläche', grenze: 'echte Grenze', unklar: 'unklar, als unsicher belegt' }
+  function einigungZeilen(s) {
+    if (!Array.isArray(s.einigung) || !s.einigung.length) return ''
+    return s.einigung.map(function (b) {
+      var k = b.klasse && FA.KAT[b.klasse]
+      return '<dt>Einigung</dt><dd>' + esc(EINIGUNG_ART[b.entscheidung] || b.entscheidung) + ' mit ' + esc(b.mit) +
+        (b.klasse ? ', Klasse ' + esc(k ? k.code + ' ' + k.name : b.klasse) : '') + ': ' + esc(b.grund) + '</dd>'
+    }).join('')
+  }
   // Segment in einer Form: Kopfzeile, dann je Ebene eine Zeile (die gezeigte Ebene hervorgehoben)
   function segZeilen(id, s) {
     if (!id) return '<div class="c-z c-fehler">kein Segment (Lücke)</div>'
@@ -464,7 +474,7 @@
           '<dt>Sicherheit</dt><dd>' + sicherheit(s) + '</dd>' +
           '<dt>Liegt im Kern</dt><dd>' + janein(s.im_kern) + '</dd>' +
           (s.im_siedlung !== undefined ? '<dt>Im Siedlungsgebiet</dt><dd>' + janein(s.im_siedlung) + '</dd>' : '') +
-          (s.eingriffe ? '<dt>Bearbeitet</dt><dd>' + s.eingriffe.length + '×</dd>' : '') + '</dl>'
+          (s.eingriffe ? '<dt>Bearbeitet</dt><dd>' + s.eingriffe.length + '×</dd>' : '') + einigungZeilen(s) + '</dl>'
         var eigene = alleKommentare().filter(function (k) { return (k.fassung || ERSTE) === K && k.teilkachel === tkId && +k.segment === Z.sel })
         if (eigene.length) h += '<div class="c-eigene"><b>Kommentare</b>' + eigene.map(function (k) { return '<p>' + esc(k.text) + ' <span>' + esc(zeit(k.zeit)) + '</span></p>' }).join('') + '</div>'
         var felder = Object.keys(s).map(function (k) {
