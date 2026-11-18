@@ -1242,6 +1242,62 @@
           ]
         }
       }
+    },
+    {
+      "nr": 38,
+      "zeit": "2026-11-18T17:42:39+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300065,
+        "klasse": "2.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.3.2",
+        "neu": "2.4.2"
+      }
+    },
+    {
+      "nr": 39,
+      "zeit": "2026-11-18T17:42:39+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300070,
+        "klasse": "2.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.3.2",
+        "neu": "2.4.2"
+      }
+    },
+    {
+      "nr": 40,
+      "zeit": "2026-11-18T17:42:39+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300074,
+        "klasse": "2.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.3.2",
+        "neu": "2.4.2"
+      }
+    },
+    {
+      "nr": 41,
+      "zeit": "2026-11-18T17:42:39+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300075,
+        "klasse": "2.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.3.2",
+        "neu": "2.4.2"
+      }
     }
   ],
   "vorstufe": {
@@ -1300,7 +1356,7 @@
         "text": "sports field",
         "eingerastet": true
       },
-      "flaeche": 19668,
+      "flaeche": 20179,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "1.3.4",
@@ -1482,7 +1538,7 @@
         "text": "forest",
         "eingerastet": true
       },
-      "flaeche": 196372,
+      "flaeche": 177700,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "4.1",
@@ -1718,7 +1774,7 @@
         "text": "grassland",
         "eingerastet": true
       },
-      "flaeche": 11936,
+      "flaeche": 9486,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "3.1",
@@ -1807,7 +1863,7 @@
         "text": "grassland",
         "eingerastet": true
       },
-      "flaeche": 4209,
+      "flaeche": 3698,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "3.1",
@@ -2885,7 +2941,7 @@
         "text": "shadow",
         "eingerastet": true
       },
-      "flaeche": 12497,
+      "flaeche": 18594,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "0.2",
@@ -3661,8 +3717,8 @@
     },
     {
       "id": 300065,
-      "klasse": "3.3.2",
-      "grob": "3",
+      "klasse": "2.4.2",
+      "grob": "2",
       "herkunft": "sam3-instanz",
       "sicher": "nein",
       "sicherheit": {
@@ -3763,8 +3819,8 @@
     },
     {
       "id": 300070,
-      "klasse": "3.3.2",
-      "grob": "3",
+      "klasse": "2.4.2",
+      "grob": "2",
       "herkunft": "sam3-instanz",
       "sicher": "nein",
       "sicherheit": {
@@ -3813,7 +3869,7 @@
         "text": "shadow",
         "eingerastet": true
       },
-      "flaeche": 3773,
+      "flaeche": 10486,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "0.2",
@@ -3884,8 +3940,8 @@
     },
     {
       "id": 300074,
-      "klasse": "3.3.2",
-      "grob": "3",
+      "klasse": "2.4.2",
+      "grob": "2",
       "herkunft": "sam3-instanz",
       "sicher": "nein",
       "sicherheit": {
@@ -3905,8 +3961,8 @@
     },
     {
       "id": 300075,
-      "klasse": "3.3.2",
-      "grob": "3",
+      "klasse": "2.4.2",
+      "grob": "2",
       "herkunft": "sam3-instanz",
       "sicher": "nein",
       "sicherheit": {
@@ -4202,6 +4258,228 @@
       "sicher_vorstufe": "nein",
       "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
       "urteil": "kontextrand"
+    },
+    {
+      "id": 300087,
+      "klasse": "1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.89
+      },
+      "instanz": {
+        "text": "forest",
+        "eingerastet": true
+      },
+      "flaeche": 5862,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 9,
+          "art": "trennen",
+          "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+          "flaeche_px": 3000
+        },
+        {
+          "nr": 10,
+          "art": "fehlt",
+          "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+          "flaeche_px": 80
+        },
+        {
+          "nr": 11,
+          "art": "sonstiges",
+          "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+          "flaeche_px": 100
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Wald",
+        "fein": "Wald"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100056|r1c0:300008",
+          "mit": "r0c0:100056",
+          "entscheidung": "unklar",
+          "grund": "An der Naht liegen oben im Wiesen-Segment 100056 dieselben hellen, knolligen Laubkronen bzw. dichtes Jungwuchs-Gebüsch wie im Wald 300008 darunter (einigung_05.jpg); 100056 ist als Ganzes aber Wiese, 300008 Wald, keine gemeinsame Klasse passt, bevor der Gebüschteil von 100056 abgetrennt ist (Punkt 4 im Urteil r0c0).",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r0c0:100166|r1c0:300008",
+          "mit": "r0c0:100166",
+          "entscheidung": "unklar",
+          "grund": "An der Naht setzt sich die glatte Wiese 100166 ohne Kante in einen Zipfel des Wald-Segments 300008 fort (einigung_06.jpg); als Ganzes sind es Wiese und Wald, eine gemeinsame Klasse wäre für eines der beiden falsch, die Grenze von 300008 muss erst nach Westen auf die Kronenkante.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r0c0:100191|r1c0:300008",
+          "mit": "r0c0:100191",
+          "entscheidung": "gleich",
+          "grund": "Die hellen, besonnten Laubkronen von 100191 setzen sich ohne Kante im belichteten Kronendach des Waldes 300008 fort; es ist der Nordrand desselben Waldes, daher Wald belichtet.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "1.2.1"
+        },
+        {
+          "paar": "r1c0:300008|r1c0:300030",
+          "mit": "r1c0:300030",
+          "entscheidung": "unklar",
+          "grund": "Das kleine helle Stück 300030 ist von der umgebenden hellen, fein strukturierten Fläche im Wald-Segment 300008 nicht zu unterscheiden (einigung_19.jpg); ob das Wiese oder beleuchteter Jungwuchs bzw. Randkrone ist, gibt das Bild nicht her.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r1c0:300008|r1c0:300027",
+          "mit": "r1c0:300027",
+          "entscheidung": "grenze",
+          "grund": "Das dunkle Band 300027 (Randkronen oder deren Schatten) hebt sich bis auf einen Punkt mit einer Hell-dunkel-Kante vom heller belichteten Teil von 300008 ab; belichtet und beschattet bleiben getrennt.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r1c0:300008|r1c0:300048",
+          "mit": "r1c0:300048",
+          "entscheidung": "grenze",
+          "grund": "Die dunkle, kaum strukturierte Fläche 300048 grenzt mit klarer Hell-dunkel-Kante an das belichtete Kronendach 300008; Schatten auf Wald gegen belichteten Wald.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r1c0:300008|r1c0:300038",
+          "mit": "r1c0:300038",
+          "entscheidung": "grenze",
+          "grund": "Die helle, gelbgrüne Krautfläche 300038 berührt nur an einer Ecke den dunkleren Waldrand 300008; verschiedene Flächen.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r1c0:300008|r1c1:400002",
+          "mit": "r1c1:400002",
+          "entscheidung": "unklar",
+          "grund": "Der Teil von 300008 an der Naht ist keine Krone, sondern dieselbe hellgrüne Wiese mit Pfad wie 400002 rechts (die krautige Lichtung aus Punkt 9 im Urteil r1c0, einigung_28.jpg); als Ganzes ist 300008 Wald, eine gemeinsame Klasse passt erst, wenn die Lichtung abgetrennt ist.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r1c0:300008|r1c1:400034",
+          "mit": "r1c1:400034",
+          "entscheidung": "gleich",
+          "grund": "Das geschlossene Laubkronendach läuft auf ganzer Länge der Naht (y 613–999) ohne Bildkante weiter, auf beiden Seiten mit hellen und dunklen Kronen im Wechsel (einigung_04.jpg); derselbe Wald, Licht und Schatten wechseln im Bestand, daher Wald wie in der Kette 300042/300072/400034/400052.",
+          "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:59:09+00:00",
+          "klasse": "1.2"
+        },
+        {
+          "paar": "r1c0:300008|r1c1:400052",
+          "mit": "r1c1:400052",
+          "entscheidung": "gleich",
+          "grund": "An den vier Berührungspunkten (y 757–759, 796) liegen beiderseits der Naht dieselben mittelhellen Kronen des Waldes (einigung_05.jpg); 400052 ist Wald im Eigenschatten und hängt über die Kette an 400034, daher Wald wie in Paar 4.",
+          "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:59:09+00:00",
+          "klasse": "1.2"
+        },
+        {
+          "paar": "r0c0:100191|r1c0:300008",
+          "mit": "r0c0:100191",
+          "entscheidung": "gleich",
+          "grund": "Das geschlossene Laubkronendach mit hellen und dunklen Kronen läuft über die gerade Naht bei y 500 (x 293–372) ohne jede Bildkante weiter (paar_01.jpg); 100191 ist der Nordrand desselben Waldes 300008, und weil 300008 in der Kette mit 400034 und 400052 schon Wald (1.2) trägt, bekommt das ganze Glied Wald statt Wald belichtet.",
+          "bearbeiter": "agent:einigung-B-01:20261118e-r3",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T01:00:00+00:00",
+          "klasse": "1.2"
+        }
+      ],
+      "zerfall_teil_von": 300008
+    },
+    {
+      "id": 300088,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.477
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 2450,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Krautige Fläche am Nordostrand des Waldes, der Kernteil nur eine kleine Ecke oben rechts; Grenze zu 17 auf der dunklen Kronenkante.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Saum",
+        "fein": "Saum"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100197|r1c0:300013",
+          "mit": "r0c0:100197",
+          "entscheidung": "gleich",
+          "grund": "Das kleine Grasstück 100197 und die krautige Fläche 300013 sind dieselbe grüne Wiese am Kronenrand, ohne Kante; Wiese wie die ganze Kette 100175-200189-300013-400002.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        },
+        {
+          "paar": "r0c0:100175|r1c0:300013",
+          "mit": "r0c0:100175",
+          "entscheidung": "gleich",
+          "grund": "Der Wiesenstreifen 100175 läuft ohne Kante in 300013 weiter, beide zeigen dasselbe grüne, grob gekörnte Gras; 300013 ist kein schmaler Saum, sondern der Kernzipfel der großen Hangwiese, daher Wiese.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        },
+        {
+          "paar": "r1c0:300013|r1c1:400017",
+          "mit": "r1c1:400017",
+          "entscheidung": "grenze",
+          "grund": "Rechts der helle Trampelpfad 400017, links die grüne Fläche 300013, in die nur das westliche Pfadende einige Bildpunkte hineinreicht; Pfad und Wiese bleiben verschiedene Flächen.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r1c0:300013|r1c1:400002",
+          "mit": "r1c1:400002",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe grüne Hangwiese läuft ohne Kante von 300013 in 400002 über die Naht; Wiese für die ganze Kette.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        }
+      ],
+      "zerfall_teil_von": 300013
     }
   ]
 }

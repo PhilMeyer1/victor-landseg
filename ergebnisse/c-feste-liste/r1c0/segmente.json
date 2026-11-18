@@ -929,7 +929,7 @@
         "text": "forest",
         "eingerastet": true
       },
-      "flaeche": 196372,
+      "flaeche": 177700,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "4.1",
@@ -1120,7 +1120,7 @@
         "text": "grassland",
         "eingerastet": true
       },
-      "flaeche": 11936,
+      "flaeche": 9486,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "3.1",
@@ -1206,7 +1206,7 @@
         "text": "grassland",
         "eingerastet": true
       },
-      "flaeche": 4209,
+      "flaeche": 3698,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "3.1",
@@ -2241,7 +2241,7 @@
         "text": "shadow",
         "eingerastet": true
       },
-      "flaeche": 12497,
+      "flaeche": 18594,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "0.2",
@@ -3146,7 +3146,7 @@
         "text": "shadow",
         "eingerastet": true
       },
-      "flaeche": 3773,
+      "flaeche": 10486,
       "im_kern": true,
       "im_siedlung": "nein",
       "klasse_vorstufe": "0.2",
@@ -3537,6 +3537,253 @@
       "sicher_vorstufe": "nein",
       "herkunft_klasse": "Kontextrand außerhalb T0: Klasse der Vorstufe",
       "urteil": "kontextrand"
+    },
+    {
+      "id": 300087,
+      "klasse": "4.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.89
+      },
+      "instanz": {
+        "text": "forest",
+        "eingerastet": true
+      },
+      "flaeche": 5862,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Großer Laub- und Mischwald im Osten und Süden der Teilkachel; enthält im Viertel v2 eine offene Graslichtung und Gras-/Gebüschsäume.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "fremdes",
+          "text": "Offene Graslichtung mit zwei Pfaden etwa x 440–560, y 130–205 liegt im Wald; abtrennen als Grünland 3.1 (oder 3.5) (525/175).",
+          "flaeche_px": 5500
+        },
+        {
+          "nr": 2,
+          "art": "fremdes",
+          "text": "Gras- und Krautsaum mit hellem Fleck am Westrand, an 300030 und 300015 anschließend, abtrennen als 3.1 (325/150).",
+          "flaeche_px": 400
+        },
+        {
+          "nr": 3,
+          "art": "fremdes",
+          "text": "Gras- und Gebüschfläche östlich des braunen Streifens 300045 (Viertel v1/v3), x 230–275, y 180–235: niedrige Gebüsch- und Jungwuchskronen mit hellem Fleck, eher 4.2.4 als geschlossener Wald, nicht sicher (250/205).",
+          "flaeche_px": 1500
+        },
+        {
+          "nr": 4,
+          "art": "verschmelzen",
+          "text": "Die Schatten-Segmente 300017, 300022, 300023, 300042 (und in v3/v4 300048, 300060, 300063 u. a.) sind derselbe Wald; mit 300008 verschmelzen (449/216).",
+          "flaeche_px": null
+        }
+      ],
+      "klasse_heute": "4.1",
+      "klasse_vorschlag": null,
+      "einigung": [
+        {
+          "paar": "r0c0:100056|r1c0:300008",
+          "mit": "r0c0:100056",
+          "entscheidung": "unklar",
+          "grund": "An der Naht geht verbuschtes Grasland in Waldrand über (helle Gebüsch- und Kronenteile gemischt); 300008 ist im Ganzen Wald, 56 Grasland, eine gemeinsame Klasse passt auf keines, eine echte Kante fehlt.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00"
+        },
+        {
+          "paar": "r0c0:100166|r1c0:300008",
+          "mit": "r0c0:100166",
+          "entscheidung": "unklar",
+          "grund": "Unter der Wiese 166 setzt sich ein Gras- und Gebüschsaum fort, der im Segment Wald 300008 steckt (vom Urteil r1c0 zum Abtrennen gemeldet); örtlich gleiche Fläche, als Ganzes nicht.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00"
+        },
+        {
+          "paar": "r0c0:100191|r1c0:300008",
+          "mit": "r0c0:100191",
+          "entscheidung": "gleich",
+          "grund": "Die hellen Laubkronen von 191 bilden ein durchgehendes Kronendach mit dem Wald 300008 jenseits der Naht; Ausläufer des geschlossenen Bestands.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00",
+          "klasse": "4.1"
+        },
+        {
+          "paar": "r1c0:300008|r1c0:300030",
+          "mit": "r1c0:300030",
+          "entscheidung": "unklar",
+          "grund": "Das Graskrautstück 300030 liegt in einem Grassaum, der im Segment Wald 300008 steckt (Urteil r1c0: abtrennen); örtlich gleiche Fläche, als Ganzes Wald gegen Gras.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00"
+        },
+        {
+          "paar": "r1c0:300008|r1c0:300038",
+          "mit": "r1c0:300038",
+          "entscheidung": "grenze",
+          "grund": "Die verbuschte Grasfläche 300038 grenzt an einen gröber texturierten Gebüsch- und Jungwuchsstreifen von 300008; bis auf einen Punkt auf Bildkante.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00"
+        },
+        {
+          "paar": "r1c0:300008|r1c1:400002",
+          "mit": "r1c1:400002",
+          "entscheidung": "unklar",
+          "grund": "An der Naht liegt die offene Graslichtung im Segment Wald 300008 (Urteil r1c0: abtrennen) neben der Grasfläche 400002; örtlich dieselbe Wiese, als Ganzes Wald gegen Gras.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00"
+        },
+        {
+          "paar": "r0c0:100056|r1c0:300087",
+          "mit": "r0c0:100056",
+          "entscheidung": "unklar",
+          "grund": "An der Naht geht verbuschtes Grasland in Waldrand über (helle Gebüsch- und Kronenteile gemischt); 300008 ist im Ganzen Wald, 56 Grasland, eine gemeinsame Klasse passt auf keines, eine echte Kante fehlt. [übernommen aus Paar r0c0:100056|r1c0:300008: Kernteil nach Zerfall eigene Fläche bzw. an gleichklassigen Nachbarn]",
+          "bearbeiter": "umsetzer:landseg-garten-4",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T17:45:57+00:00"
+        }
+      ],
+      "zerfall_teil_von": 300008
+    },
+    {
+      "id": 300088,
+      "klasse": "3",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.477
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 2450,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Grasfläche mit hellem Pfad in der oberen rechten Ecke des Kerns, Fortsetzung der offenen Hangwiese nach Norden.",
+      "viertel": "v2",
+      "klasse_heute": "3.1",
+      "klasse_vorschlag": null,
+      "einigung": [
+        {
+          "paar": "r1c0:300013|r1c1:400017",
+          "mit": "r1c1:400017",
+          "entscheidung": "unklar",
+          "grund": "Der helle Trampelpfad quert die Naht: links steckt er in der Grasfläche 300013, rechts ist er eigenes Segment 6.6; gleiche Klasse für beide Segmente passt nicht, Grenze auch nicht.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00"
+        },
+        {
+          "paar": "r1c0:300013|r1c1:400002",
+          "mit": "r1c1:400002",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe Hangwiese mit hellem Pfad setzt sich ohne Kante über die Naht fort; Kette mit Paar 9 und 18, Elternklasse Dauergrünland wegen 3.1 gegen 3.5.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00",
+          "klasse": "3"
+        },
+        {
+          "paar": "r0c0:100197|r1c0:300013",
+          "mit": "r0c0:100197",
+          "entscheidung": "gleich",
+          "grund": "Das kleine Wiesenstück 100197 neben der dunklen Krone setzt sich unter der Naht ohne Farbsprung als dieselbe Grasfläche 300013 fort; Glied der Kette 100175–200189–300013, daher Dauergrünland 3.",
+          "bearbeiter": "agent:einigung-C-01:20261118e-r2",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:59:10+00:00",
+          "klasse": "3"
+        },
+        {
+          "paar": "r0c0:100175|r1c0:300013",
+          "mit": "r0c0:100175",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe Hangwiese mit dem hellen Pfad zieht ohne Kante über die waagrechte Naht; Glied der Kette mit 200189 und 400002, daher Dauergrünland 3.",
+          "bearbeiter": "agent:einigung-C-01:20261118e-r2",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:59:10+00:00",
+          "klasse": "3"
+        }
+      ],
+      "zerfall_teil_von": 300013
+    },
+    {
+      "id": 300089,
+      "klasse": "3.5",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.557
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 511,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Wiese mit einzelnen kleinen Büschen im Nordosten des Viertels, zwischen Baumkronen 300027 und dem oberen Rand.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Klasse stimmt; Grenzen zu 300021, 300024, 300025 ohne Bildkante, dieselbe Wiese (295/86).",
+          "flaeche_px": null
+        }
+      ],
+      "klasse_heute": "3.1",
+      "klasse_vorschlag": null,
+      "einigung": [
+        {
+          "paar": "r0c0:100056|r1c0:300015",
+          "mit": "r0c0:100056",
+          "entscheidung": "gleich",
+          "grund": "Über die Naht läuft ohne Kante dieselbe hochwüchsige Grasfläche mit vielen kleinen dunklen Büschen; verbuschendes Grünland auf beiden Seiten.",
+          "bearbeiter": "agent:einigung-C-01:20261118e",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:53:59+00:00",
+          "klasse": "3.5"
+        },
+        {
+          "paar": "r0c0:100166|r1c0:300015",
+          "mit": "r0c0:100166",
+          "entscheidung": "unklar",
+          "grund": "An der Naht liegt beidseits dasselbe grüne Gras mit kleinen dunklen Büschen ohne Kante, aber 100166 ist als Ganzes die glatte, gemähte Wiese (3.1, in Runde 1 gegen die raue Fläche 100056 als Grenze bestätigt), während 300015 mit 100056 als verbuschende Fläche 3.5 verkettet ist; eine gemeinsame Klasse würde eine der beiden Flächen falsch benennen, der Übergang glatt/rau liegt innerhalb von 100166 und nicht auf der Naht (einigung_05.jpg).",
+          "bearbeiter": "agent:einigung-C-01:20261118e-r2",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:59:10+00:00"
+        },
+        {
+          "paar": "r1c0:300015|r1c0:300024",
+          "mit": "r1c0:300024",
+          "entscheidung": "gleich",
+          "grund": "Das kleine Stück 300024 liegt mitten in 300015 und zeigt dasselbe Gras ohne Kante (Urteil r1c0: verschmelzen); es übernimmt die Klasse seiner Kette 100056–300015, verbuschende Fläche 3.5.",
+          "bearbeiter": "agent:einigung-C-01:20261118e-r2",
+          "buendel": "C-01",
+          "zeit": "2026-11-18T00:59:10+00:00",
+          "klasse": "3.5"
+        }
+      ],
+      "zerfall_teil_von": 300015
     }
   ]
 }

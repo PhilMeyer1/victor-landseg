@@ -1,0 +1,35 @@
+{
+ "schema": "landseg-zusammentragen/1",
+ "manifest": "../manifest.json",
+ "einheiten": [
+  {
+   "teilkachel": "r0c0",
+   "labels": "r0c0/labels.tif",
+   "segmente": "r0c0/segmente.json",
+   "runde": 0,
+   "name": "b-r0c0"
+  },
+  {
+   "teilkachel": "r0c1",
+   "labels": "r0c1/labels.tif",
+   "segmente": "r0c1/segmente.json",
+   "runde": 0,
+   "name": "b-r0c1"
+  },
+  {
+   "teilkachel": "r1c0",
+   "labels": "r1c0/labels.tif",
+   "segmente": "r1c0/segmente.json",
+   "runde": 0,
+   "name": "b-r1c0"
+  },
+  {
+   "teilkachel": "r1c1",
+   "labels": "r1c1/labels.tif",
+   "segmente": "r1c1/segmente.json",
+   "runde": 0,
+   "name": "b-r1c1"
+  }
+ ],
+ "ziel": "zusammen"
+}
