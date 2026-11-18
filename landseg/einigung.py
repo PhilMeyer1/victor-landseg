@@ -1,4 +1,4 @@
-"""einigung: Klassen an den Übergängen der Teilkacheln abgleichen (finden, anwenden, messen).
+"""einigung: Klassen an den Übergängen der Teilkacheln abgleichen (finden, anwenden, abgabe, messen).
 
 Je Fassung urteilt ein Agent je Teilkachel; an den Kerngrenzen (Nähte samt Ecken) und an den
 Viertelgrenzen (Mitte jedes Kerns) stoßen deshalb Segmente aneinander, die dieselbe Fläche zeigen,
@@ -16,6 +16,8 @@ die IDs je Teilkachel vergeben sind.
   (nichts ändert sich, Grund wird festgehalten) oder ``unklar`` (beide ``sicher: nein``). Jedes
   beteiligte Segment bekommt einen Eintrag unter ``einigung``; Label-Karten bleiben unberührt, nur
   Segmente im Kern werden geändert, alles oder nichts.
+- ``abgabe``: baut ``einigung_abgabe.json`` aus der kurzen Liste eines Agents (Paar oder Nummer, Entscheidung,
+  Klasse, Grund); Schema, Fassung und Bündel kommen aus dem Auftrag, geprüft wird wie ``anwenden --probe``.
 - ``messen``: Zahl der Stellen (Paare, Strecken, Randpunkte) getrennt nach offen, unsicher, geklärt.
 
 Einstellungen in ``einstellungen/einigung.json``; die Fassungen (Ordner, Kategorienliste) kommen aus
@@ -381,6 +383,64 @@ def _abgabe_pruefen(f: Fassung, abgabe: dict, auftraege: Path) -> tuple[dict, li
     if fehlen:
         raise EinigungFehler(f"Abgabe {name}: ohne Urteil: {', '.join(fehlen)}")
     return auftrag, urteile
+
+
+def auftrag_lesen(auftraege: str | Path, buendel: str) -> dict:
+    """``<auftraege>/<bündel>/auftrag.json`` von ``finden``."""
+    pfad = Path(auftraege) / buendel / "auftrag.json"
+    if not pfad.exists():
+        raise EinigungFehler(f"Bündel {buendel!r} hat keinen Auftrag in {auftraege}")
+    return dateien.lese_json(pfad)
+
+
+def abgabe_bauen(f: Fassung, auftraege: str | Path, buendel: str, bearbeiter: str, liste) -> tuple[dict, dict]:
+    """Baut ``einigung_abgabe.json`` aus der kurzen Liste des Agents und prüft sie wie ``anwenden --probe``.
+
+    ``liste``: ``{"paare": [...], "offen": [...], "nicht_geprueft": [...]}`` oder nur die Liste der Paare. Je Paar
+    ``[paar, entscheidung, klasse, grund]``, ``[paar, entscheidung, grund]`` (ohne Klasse) oder ein Objekt mit
+    ``paar``/``nr``, ``entscheidung``, ``klasse``, ``grund``; ``paar`` ist ``"a|b"`` (Reihenfolge egal) oder die
+    Nummer des Paars im Auftrag (``nr``, wie ``paar_<nr>.jpg``). Schema, Fassung und Bündel kommen aus dem Auftrag.
+    Gibt (Abgabe, Ergebnis der Probe) zurück; Fehler als ``EinigungFehler``, nichts wird geschrieben.
+    """
+    auftrag = auftrag_lesen(auftraege, buendel)
+    if isinstance(liste, list):
+        liste = {"paare": liste}
+    if not isinstance(liste, dict) or not isinstance(liste.get("paare"), list):
+        raise EinigungFehler("Liste: erwartet {\"paare\": [...]} oder eine Liste der Paare")
+    nach_nr = {p["nr"]: p["paar"] for p in auftrag["paare"]}
+    paare, fehler = [], []
+    for i, eintrag in enumerate(liste["paare"], 1):
+        if isinstance(eintrag, (list, tuple)) and len(eintrag) in (3, 4):
+            werte = dict(zip(("paar", "entscheidung", "klasse", "grund") if len(eintrag) == 4
+                             else ("paar", "entscheidung", "grund"), eintrag))
+        elif isinstance(eintrag, dict):
+            werte = {**eintrag, "paar": eintrag.get("paar", eintrag.get("nr"))}
+        else:
+            fehler.append(f"Eintrag {i}: erwartet [paar, entscheidung, klasse, grund] oder ein Objekt, hat {eintrag!r}")
+            continue
+        paar = werte["paar"]
+        if isinstance(paar, int) and not isinstance(paar, bool):
+            if paar not in nach_nr:
+                fehler.append(f"Eintrag {i}: Paar Nummer {paar} gibt es im Bündel {buendel} nicht "
+                              f"(1 bis {len(nach_nr)})")
+                continue
+            paar = nach_nr[paar]
+        elif isinstance(paar, str) and paar.count("|") == 1 and all(
+                ":" in s and s.rsplit(":", 1)[1].strip().isdigit() for s in paar.split("|")):
+            paar = paar_name(*(s.strip() for s in paar.split("|")))
+        else:
+            fehler.append(f"Eintrag {i}: Paar {paar!r} ist weder 'a|b' noch eine Nummer")
+            continue
+        entscheidung = werte.get("entscheidung")
+        paare.append({"paar": paar, "entscheidung": entscheidung,
+                      "klasse": werte.get("klasse") if entscheidung == "gleich" else None,
+                      "grund": werte.get("grund")})
+    if fehler:
+        raise EinigungFehler("; ".join(fehler))
+    abgabe = {"schema": auftrag.get("abgabe_muster", {}).get("schema", ABGABE_SCHEMA), "fassung": auftrag["fassung"],
+              "buendel": auftrag["buendel"], "bearbeiter": bearbeiter, "paare": paare,
+              "offen": list(liste.get("offen") or []), "nicht_geprueft": list(liste.get("nicht_geprueft") or [])}
+    return abgabe, anwenden(f, [abgabe], auftraege, schreiben=False)
 
 
 def anwenden(f: Fassung, abgaben: list[dict], auftraege: str | Path, ziel: str | Path | None = None,

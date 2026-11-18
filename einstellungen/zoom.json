@@ -1,0 +1,13 @@
+{
+  "beschreibung": "zoom: vergrößerter Ausschnitt einer Stelle mit Umriss und Segmentnummern (JPEG). lange_seite: höchstens so viele Bildpunkte an der langen Seite des ganzen Bilds (Regel L11); zielseite: angestrebte lange Seite einer Tafel; hoechstfaktor: größter Vergrößerungsfaktor; segment_rand: Rand in Bildpunkten um gewählte Segmente; nummer_ab: kleinste Fläche (Bildpunkte im vergrößerten Bild), die eine Nummer bekommt; nummer_groesse: Schriftgröße der Nummern (OpenCV); schrift: Schriftgröße der Überschriften in px; kopf: Höhe des Kopfstreifens; luecke: Abstand der beiden Tafeln; jpeg_qualitaet: JPEG-Qualität.",
+  "lange_seite": 2000,
+  "zielseite": 1000,
+  "hoechstfaktor": 8,
+  "segment_rand": 24,
+  "nummer_ab": 120,
+  "nummer_groesse": 0.5,
+  "schrift": 14,
+  "kopf": 40,
+  "luecke": 8,
+  "jpeg_qualitaet": 90
+}

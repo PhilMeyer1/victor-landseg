@@ -10,7 +10,8 @@ from PIL import Image
 
 from landseg import dateien, einstellungen
 from landseg.__main__ import main
-from landseg.ansicht import AnsichtFehler, ansicht
+from landseg.ansicht import Ansicht, AnsichtFehler, ansicht
+from landseg.zoom import zoom
 from tests.hilfe import beispiel_karte, beispiel_kategorien
 
 TEIL_ARTEN = ["roh", "umriss", "maengel", "vorschlag", "kontrast", "gitter"]
@@ -125,6 +126,71 @@ class AnsichtTest(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertIn("34 Bilder", aus.getvalue())
         self.assertTrue((self.ordner / "aus" / "segmente" / "4" / "nah.png").exists())
+
+
+class ZoomTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.ordner = Path(self.tmp.name)
+        self.kat = beispiel_kategorien(self.ordner)
+        self.karte, self.segmente = beispiel_karte()
+        self.ansicht = Ansicht(bild_40(), self.karte, self.segmente, self.kat, einstellungen.laden("ansicht"),
+                               kern={"x": 4, "y": 4, "breite": 32, "hoehe": 32})
+        self.vorgaben = einstellungen.laden("zoom")
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_stellen_groesse_format_und_nummern(self):
+        for name, stelle in {"punkt": {"punkt": (30, 30), "radius": 6},
+                             "rechteck": {"rechteck": {"x": 10, "y": 0, "breite": 20, "hoehe": 40}},
+                             "ids": {"ids": [2, 4]}}.items():
+            with self.subTest(stelle=name):
+                ziel = self.ordner / f"{name}.jpg"
+                erg = zoom(self.ansicht, self.vorgaben, ziel, roh=True, titel="r0c0", **stelle)
+                with Image.open(ziel) as jpg:
+                    self.assertEqual(jpg.format, "JPEG")
+                    self.assertLessEqual(max(jpg.size), 2000)
+                    self.assertEqual(list(jpg.size), erg["groesse"])
+                self.assertGreater(erg["fenster"]["faktor"], 1)
+                for n in erg["nummern"]:  # jede Nummer steht in ihrem Segment
+                    self.assertEqual(int(self.karte[n["y"], n["x"]]), n["id"])
+        erg = zoom(self.ansicht, self.vorgaben, self.ordner / "p.jpg", punkt=(30, 30), radius=6)
+        self.assertEqual(erg["fenster"], {"x": 24, "y": 24, "breite": 13, "hoehe": 13, "faktor": 8})
+        self.assertEqual([n["id"] for n in erg["nummern"]], [3])
+        erg = zoom(self.ansicht, self.vorgaben, self.ordner / "i.jpg", ids=[4])
+        self.assertEqual({n["id"] for n in erg["nummern"]}, {1, 2, 3, 4})  # Rand 24 um Segment 4
+
+    def test_lange_seite_hoechstens_2000(self):
+        gross = np.zeros((300, 1400), np.uint32) + 1
+        gross[:, 700:] = 2
+        a = Ansicht(np.full((300, 1400, 3), 90, np.uint8), gross, None, None, einstellungen.laden("ansicht"))
+        erg = zoom(a, self.vorgaben, self.ordner / "g.jpg", rechteck={"x": 0, "y": 0, "breite": 1400, "hoehe": 300},
+                   roh=True)
+        self.assertLessEqual(max(erg["groesse"]), 2000)
+        self.assertTrue(erg["verkleinert"])
+
+    def test_falsche_angaben(self):
+        with self.assertRaises(AnsichtFehler):
+            zoom(self.ansicht, self.vorgaben, self.ordner / "x.png", ids=[1])
+        with self.assertRaises(AnsichtFehler):
+            zoom(self.ansicht, self.vorgaben, self.ordner / "x.jpg", ids=[77])
+        with self.assertRaises(AnsichtFehler):
+            zoom(self.ansicht, self.vorgaben, self.ordner / "x.jpg", punkt=(1, 1))
+
+    def test_befehl(self):
+        Image.fromarray(bild_40()).save(self.ordner / "r0c0.png")
+        dateien.schreibe_labels(self.ordner / "labels.tif", self.karte)
+        with redirect_stdout(io.StringIO()), self.assertRaises(SystemExit) as ende:
+            main(["zoom", "--help"])
+        self.assertEqual(ende.exception.code, 0)
+        aus = io.StringIO()
+        with redirect_stdout(aus):
+            code = main(["zoom", "--bild", str(self.ordner / "r0c0.png"), "--labels", str(self.ordner / "labels.tif"),
+                         "--ids", "4", "--roh", "--ziel", str(self.ordner / "z" / "nah_4_1.jpg"), "--json"])
+        self.assertEqual(code, 0)
+        self.assertTrue(json.loads(aus.getvalue())["roh"])
+        self.assertTrue((self.ordner / "z" / "nah_4_1.jpg").exists())
 
 
 if __name__ == "__main__":

@@ -32,6 +32,18 @@ class VorlagenTest(unittest.TestCase):
             self.assertIn(regel, text)
 
 
+    def test_fertige_befehle_als_standardweg(self):
+        urteil = (VORLAGEN / "urteil.md").read_text(encoding="utf-8")
+        einigung = (VORLAGEN / "einigung.md").read_text(encoding="utf-8")
+        for befehl in ("-m landseg urteil bauen", "-m landseg zoom", "liste.json"):
+            self.assertIn(befehl, urteil)
+        for befehl in ("-m landseg einigung abgabe", "-m landseg zoom", "liste.json"):
+            self.assertIn(befehl, einigung)
+        for text in (urteil, einigung):
+            self.assertIn("eigenes Skript", text)
+            self.assertNotIn("Eigene Skripte als Datei in", text)
+        self.assertIn("ein eigenes Skript nur, wenn kein Befehl den Fall deckt", SKILL.read_text(encoding="utf-8"))
+
     def test_einigung_vorlage(self):
         text = (VORLAGEN / "einigung.md").read_text(encoding="utf-8")
         for pflicht in ("einigung_abgabe.json", "kategorien-a.json", "beide Seiten", "L13", "Kontextrand"):

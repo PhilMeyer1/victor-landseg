@@ -18,13 +18,15 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `vorstufe.json` | Einstellungen der Vorstufe: Superpixel-Größe, SAM-3-Modell und -Schwellen, Texte je Kategorie, Schwellen für `sicher` und die Kandidaten, Siedlungszone für `im_siedlung` (Abschnitt `siedlung`) |
 | `landseg/ansicht.py` | W3 `ansicht`: Standardbilder je Teilkachel und je Segment (roh, umriss, maengel, vorschlag, nah, kontrast, gitter) mit Verzeichnis `ansicht.json` |
 | `landseg/kante.py` | W4 `kante`: Grenze zweier Nachbarsegmente im engen Band auf die Bildkante einrasten; Strecken ohne Bildkante bleiben stehen und werden als „geschätzt“ gemeldet |
-| `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`, `einigung.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
+| `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`, `einigung.json`, `zoom.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
 | `landseg/eingriff.py` | W5 `eingriff`: Bearbeiten der Label-Karte (verschmelzen, teilen, Grenze verschieben, Klasse setzen, Polygon zuweisen), immer lückenlos, mit Verlauf |
 | `landseg/pruefen.py` | W6 `pruefen`: Wächter der Lückenlosigkeit (H × W ohne 0, Zusammenhang je Segment, gültige Klassen) |
 | `landseg/zusammentragen.py` | W7 `zusammentragen`: Abgaben der Teilkacheln (je Teilkachel die letzte Runde, nur der Kern) zur Label-Karte des Ausschnitts; Einheiten, Klassen des Nutzers und offene Fragen aus einem JSON-Auftrag |
 | `landseg/seite.py`, `landseg/seite_vorlage/` | W8 `seite`: Übersichtsseite als eine HTML-Datei (je Bild das Ergebnis, Umschalter zwischen den Fassungen A/B/C mit je eigener Kategorienliste, Ebenen grob/mittel/fein, Lücken, Nähte, Kategorienliste, Kommentare mit Export); Vorlage aus HTML, CSS und JavaScript |
 | `landseg/naht.py` | Nahtregel: an jeder Kerngrenze gleiche ID oder echte Bildkante, gleiche Klasse |
-| `landseg/einigung.py` | `einigung`: Klassen an den Übergängen der Teilkacheln abgleichen (`finden`: offene Stellen bündeln, je Bündel Agent-Auftrag mit Bildern beider Seiten; `anwenden`: Abgaben umsetzen, nur Klassen und Vermerke; `messen`: Stellen gleicher Fläche mit verschiedener Klasse, offen/unsicher/geklärt); Einstellungen `einstellungen/einigung.json` |
+| `landseg/einigung.py` | `einigung`: Klassen an den Übergängen der Teilkacheln abgleichen (`finden`: offene Stellen bündeln, je Bündel Agent-Auftrag mit Bildern beider Seiten; `anwenden`: Abgaben umsetzen, nur Klassen und Vermerke; `abgabe`: `einigung_abgabe.json` aus der kurzen Liste eines Agents bauen und prüfen; `messen`: Stellen gleicher Fläche mit verschiedener Klasse, offen/unsicher/geklärt); Einstellungen `einstellungen/einigung.json` |
+| `landseg/urteil.py` | `urteil`: `urteil.json` eines Urteils-Agents aus einer kurzen Liste bauen (`bauen`) und prüfen (`pruefen`), je Teilkachel oder Viertel |
+| `landseg/zoom.py` | `zoom`: Ausschnitt einer Stelle (Punkt mit Radius, Rechteck, Segmente) vergrößert, mit Umriss und Segmentnummern, auf Wunsch neben dem Luftbild (JPEG); Einstellungen `einstellungen/zoom.json` |
 | `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht, Einigung) mit Platzhaltern, erklärt in `vorlagen/README.md` |
 | `.claude/skills/landseg-agent/SKILL.md` | Agent-Skill mit den Arbeitsregeln für diese Aufträge |
 | `landseg/messung.py` | `messung`: Kosten eines Agent-Laufs je Phase aus den Transkripten (Agents, Minuten, Runden, Tokens, USD nach Listenpreis, Bilder, eigene .py); nur Standardbibliothek |
@@ -164,6 +166,53 @@ der Teilkachel beschriftet, `vorschlag` färbt nach der Klassenfarbe aus `katego
 `maengel` zeigt Lücken, nicht zusammenhängende Segmente, fehlende Einträge, `sicher: nein`,
 `--mindestflaeche`, `--kandidaten <json>` und mit `--kante <bericht.json>` die geschätzten Strecken.
 Ohne `--labels` entstehen nur roh, kontrast und gitter; `--ids 3,5` und `--nur-teilkachel` begrenzen.
+
+### zoom
+
+```
+PY -B -m landseg zoom --manifest <manifest.json> --teilkachel r0c0 --labels <labels.tif> (--punkt x,y --radius r | --rechteck x,y,b,h | --ids 3,5) [--roh] --ziel <ergebnis>/nah_3_1.jpg [--json]
+```
+
+Ein Bild einer Stelle für die Urteils- und Einigungs-Agents: der Ausschnitt (Punkt mit Radius, Rechteck
+oder Rahmen um die Segmente mit `segment_rand` Rand; Angaben in Bildpunkten des Teilkachelbilds)
+vergrößert um einen ganzzahligen Faktor, alle Segmentgrenzen gelb, mit `--ids` gewählte Segmente
+magenta, jede Segmentnummer an der Stelle größten Randabstands, Kern als weißer Rahmen; `--roh` setzt
+das rohe Luftbild links daneben. Ein JPEG, höchstens `lange_seite` (2000) Bildpunkte an der langen
+Seite, Überschriften deutsch mit Umlauten; statt `--manifest`/`--teilkachel` geht auch `--bild`. Ausgabe:
+Pfad, Größe, Fenster und Faktor (`x_teilkachel = fenster.x + (x_bild - versatz) // faktor`, die rechte
+Tafel beginnt bei `versatz`); `--json` nennt dazu die Lage jeder Nummer. Exit 0, Exit 2 bei falscher
+Stelle oder Endung. Größen in `einstellungen/zoom.json`.
+
+### urteil
+
+```
+PY -B -m landseg urteil bauen   --manifest <manifest.json> --teilkachel r0c0 [--viertel v1] --labels <labels.tif> --segmente <segmente.json> [--kategorien <liste>] --bearbeiter <name> --liste <liste.json> --ziel <ergebnis>/urteil.json
+PY -B -m landseg urteil pruefen --manifest <manifest.json> [--teilkachel r0c0] [--viertel v1] --labels <labels.tif> [--kategorien <liste>] --urteil <ergebnis>/urteil.json
+```
+
+Der Urteils-Agent schreibt nur, was nur er weiß, als kurze Liste (JSON):
+
+```
+{"segmente": [[17, "nicht_sauber", "3.1", [["trennen", "Hecke bei x 120/y 80 abtrennen", 340]], ["nah_17_1.jpg"]],
+              {"id": 18, "urteil": "sauber", "was": "Acker mit Fahrspur", "sicher": false}],
+ "sauber": [3, 4, 5],
+ "naht": [{"id": 17, "seite": "rechts", "text": "…"}], "unsicher": [], "nicht_geprueft": [], "offen": []}
+```
+
+Je Segment `[id, urteil, vorschlag, punkte, bilder]` (hintere Felder dürfen fehlen) oder ein Objekt mit
+denselben Feldern und `was`, `sicher`; ein Punkt `[art, text, flaeche_px]`, nummeriert wird er vom Befehl.
+`sauber` zählt die Segmente ohne Befund ausdrücklich auf. `bauen` ergänzt Schema
+(`landseg-urteil/1`), Teilkachel, Viertel, Bearbeiter und `klasse_heute` (aus `segmente.json`), ohne
+`was` den Namen der heutigen Klasse, ohne `sicher` `true`, und schreibt `urteil.json` im Format von
+`vorlagen/urteil.md`, aber nur, wenn die Prüfung ok ist. `pruefen` nennt jeden Fehler als eigene Zeile:
+Segment im Kern ohne Eintrag (es wird nie still als „sauber“ ergänzt), doppelt, außerhalb des Kerns
+oder des Viertels, unbekanntes Urteil, unbekannte Klasse (Kategorienliste der Fassung, `--kategorien`),
+unbekannte Punktart, Punkt ohne Text, fehlende Bilddatei (relativ zum Ordner der `urteil.json` oder
+absolut), Naht-Eintrag mit unbekannter Seite. Welche Segmente im Kern liegen, liest der Befehl aus der
+**aktuellen** Label-Karte (`--labels`), auch nach Nachsegmentieren. `--viertel` (v1 oben links, v2 oben
+rechts, v3 unten links, v4 unten rechts, Teilung in der Kernmitte) verlangt nur die Segmente, deren meiste
+Kern-Bildpunkte im Viertel liegen; so steht jedes Kernsegment in genau einem Viertel. Exit 0 ok, 1 bei
+Fehlern (nichts geschrieben), 2 bei Lesefehlern.
 
 ### kante
 
@@ -326,6 +375,7 @@ Eingriff des Naht-Agents; `--datei` liefert Einstellungen und bestätigte Grenze
 ```
 PY -B -m landseg einigung finden   --manifest <manifest.json> --fassung <A|B|C> --ziel <neuer Ordner>
 PY -B -m landseg einigung anwenden --manifest <manifest.json> --fassung <A|B|C> --auftraege <Ordner von finden> --abgabe <einigung_abgabe.json> [--abgabe …] [--ziel <neuer Ordner>] [--probe]
+PY -B -m landseg einigung abgabe   --manifest <manifest.json> --auftraege <Ordner von finden> --buendel <A-02> --bearbeiter <name> --liste <liste.json> --ziel <ergebnis>/einigung_abgabe.json
 PY -B -m landseg einigung messen   --manifest <manifest.json> [--fassung <A|B|C>]
 ```
 
@@ -344,6 +394,15 @@ bleiben unberührt; nur Segmente im Kern; alles oder nichts (Exit 1 bei abgelehn
 zählt je Fassung die Stellen (Paare, Strecken, Randpunkte): offen, unsicher belegt, geklärt, dazu alle
 Schnittlinien ohne Bildkante; Exit 1, solange etwas offen ist. Die Fassungen (Ordner, Kategorienliste)
 kommen aus `einstellungen/seite.json`, wahlweise `--ordner`.
+
+`abgabe` baut die Abgabe eines Einigungs-Agents aus einer kurzen Liste
+`{"paare": [[1, "gleich", "3.1", "Grund"], [2, "grenze", "Grund"], ["r0c0:12|r0c1:7", "unklar", null, "Grund"]],
+"offen": [], "nicht_geprueft": []}` (je Paar Nummer aus dem Auftrag wie `paar_<nr>.jpg` oder `a|b` in beliebiger
+Reihenfolge, Entscheidung, Klasse nur bei `gleich`, Grund; auch als Objekt). Schema, Fassung und Bündel
+kommen aus `<auftraege>/<bündel>/auftrag.json` (`--fassung` darf fehlen). Geprüft wird wie mit
+`anwenden --probe`: Fehlende oder fremde Paare, unbekannte Nummern, Klassen außerhalb der Liste und
+Ketten mit zwei Klassen lehnt der Befehl ab (Exit 1, „Abgelehnt: …“, nichts geschrieben); sonst schreibt er
+`--ziel` und meldet die Zahlen je Entscheidung (Exit 0).
 
 ### messung
 

@@ -278,19 +278,28 @@ class Ansicht:
         y1 = y0 + k["hoehe"] * f.faktor - 1
         cv2.rectangle(bild, (x0, y0), (x1, y1), self.farben["kern"], 1, cv2.LINE_4)
 
-    def _beschriften(self, bild: np.ndarray, f: Fenster) -> None:
-        """Klassen-Code in jedes ausreichend große Segment, an der Stelle größten Randabstands."""
-        ab = int(self.v["vorschlag_beschriftung_ab"])
+    def _beschriften(self, bild: np.ndarray, f: Fenster, text=None, ab: int | None = None,
+                     groesse: float = 0.4) -> list[dict]:
+        """Text je ausreichend großem Segment (Standard: Klassen-Code, ``text(id)`` sonst), an der Stelle
+        größten Randabstands; gibt die Stellen in Bildpunkten der Teilkachel zurück."""
+        ab = int(self.v["vorschlag_beschriftung_ab"]) if ab is None else ab
         karte = self.karte[f.schnitt()]
+        orte = []
         for sid in np.unique(karte).tolist():
             maske = karte == sid
             if sid == 0 or maske.sum() * f.faktor ** 2 < ab:
                 continue
-            code = str(self.eintraege.get(sid, {}).get("klasse", "?"))
+            inhalt = str(self.eintraege.get(sid, {}).get("klasse", "?")) if text is None else text(sid)
             abstand = ndimage.distance_transform_edt(np.pad(maske, 1))[1:-1, 1:-1]
             y, x = np.unravel_index(int(np.argmax(abstand)), abstand.shape)
             px, py = int((x + 0.5) * f.faktor), int((y + 0.5) * f.faktor)
-            _text(bild, code, px - 4 * len(code), py + 4)
+            halb, hoch = round(10 * groesse * len(inhalt)), round(10 * groesse)
+            # ganz im Bild halten (Segmente am Rand des Fensters)
+            tx = min(max(2, px - halb), max(2, bild.shape[1] - 2 * halb - 2))
+            ty = min(max(2 * hoch + 2, py + hoch), bild.shape[0] - 3)
+            _text(bild, inhalt, tx, ty, groesse=groesse)
+            orte.append({"id": int(sid), "x": f.x + int(x), "y": f.y + int(y)})
+        return orte
 
     def _legende(self, bild: np.ndarray) -> np.ndarray:
         eintraege = [(self.farben[a], t) for a, t in MAENGEL_ARTEN.items()

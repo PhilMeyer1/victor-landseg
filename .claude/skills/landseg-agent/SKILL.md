@@ -56,7 +56,9 @@ Stitcher-Methode übernommen und auf Landschaft umgestellt (Ermittlung `landseg-
   deutsch, mit Umlauten und lesbar; sieh dir jedes fertige Bild noch einmal an (verdeckt nichts die
   Stelle, die es zeigt?).
 - **L12 Umgebung.** Python nur über den Interpreter aus dem Auftrag (nie bloßes `python`), nichts
-  installieren, Skripte als Datei, keine Prozesse dauerhaft starten, keine Fenster öffnen.
+  installieren, Skripte als Datei, keine Prozesse dauerhaft starten, keine Fenster öffnen. Für
+  wiederkehrende Schritte zuerst die fertigen Befehle aus dem Auftrag (etwa `urteil bauen`, `zoom`,
+  `einigung abgabe`); ein eigenes Skript nur, wenn kein Befehl den Fall deckt.
 - **L13 Einigung im Verbund.** An den Übergängen der Teilkacheln (Nähte, Ecken, Viertelgrenzen)
   urteilst du mit Blick auf beide Seiten und die Urteile beider Teilkacheln: Zeigen zwei Segmente
   ohne Bildkante dieselbe Fläche, bekommen sie eine gemeinsame Klasse aus der Liste der Fassung (bei

@@ -20,8 +20,8 @@ from PIL import Image
 
 from landseg import dateien, einstellungen, naht
 from landseg.__main__ import main
-from landseg.einigung import (EinigungFehler, _im_kern, anwenden, buendeln, fassung_laden, finden, messen,
-                              schluessel_karte, stellen)
+from landseg.einigung import (EinigungFehler, _im_kern, abgabe_bauen, anwenden, buendeln, fassung_laden, finden,
+                              messen, schluessel_karte, stellen)
 from landseg.kacheln import kacheln
 from landseg.pruefen import pruefen
 from tests.hilfe import beispiel_kategorien
@@ -186,6 +186,65 @@ class EinigungTest(unittest.TestCase):
         probe = anwenden(f, [self.abgabe({p: gut for p in OFFEN})], self.ordner / "einigung", schreiben=False)
         self.assertFalse(probe["geschrieben"])
         self.assertEqual((self.fassung / "r0c0" / "segmente.json").read_bytes(), vorher)
+
+    def test_abgabe_aus_kurzer_liste(self):
+        f = self.laden()
+        finden(f, self.bild, self.einst, self.ordner / "einigung")
+        auftrag = dateien.lese_json(self.ordner / "einigung" / "X-01" / "auftrag.json")
+        nr = {p["paar"]: p["nr"] for p in auftrag["paare"]}
+        liste = {"paare": [[nr["r0c0:1|r0c0:2"], "gleich", "3", "derselbe Wald"],
+                           ["r1c0:10|r0c0:1", "grenze", "Waldrand ohne Farbsprung"],
+                           {"paar": "r0c0:2|r0c1:20", "entscheidung": "unklar", "klasse": "3", "grund": "Schatten"}],
+                 "offen": ["Schatten bei r0c1"]}
+        abgabe, probe = abgabe_bauen(f, self.ordner / "einigung", "X-01", "einigung-X-01", liste)
+        self.assertEqual({k: abgabe[k] for k in ("schema", "fassung", "buendel", "bearbeiter")},
+                         {"schema": "landseg-einigung-abgabe/1", "fassung": "X", "buendel": "X-01",
+                          "bearbeiter": "einigung-X-01"})
+        self.assertEqual(abgabe["paare"], [
+            {"paar": "r0c0:1|r0c0:2", "entscheidung": "gleich", "klasse": "3", "grund": "derselbe Wald"},
+            {"paar": "r0c0:1|r1c0:10", "entscheidung": "grenze", "klasse": None, "grund": "Waldrand ohne Farbsprung"},
+            {"paar": "r0c0:2|r0c1:20", "entscheidung": "unklar", "klasse": None, "grund": "Schatten"}])
+        self.assertEqual((abgabe["offen"], abgabe["nicht_geprueft"]), (["Schatten bei r0c1"], []))
+        self.assertFalse(probe["geschrieben"])
+        self.assertEqual((probe["gleich"], probe["grenze"], probe["unklar"]), (1, 1, 1))
+        self.assertEqual(anwenden(f, [abgabe], self.ordner / "einigung", schreiben=False)["abgaben"], 1)
+        gut = ["grenze", "x"]
+        faelle = {
+            "Paar fehlt": ([[1, *gut], [2, *gut]], "ohne Urteil"),
+            "fremdes Paar": ([[i, *gut] for i in (1, 2, 3)] + [["r0c0:2|r1c0:10", *gut]], "gehört nicht zum Bündel"),
+            "Nummer unbekannt": ([[i, *gut] for i in (1, 2, 3, 9)], "Nummer 9 gibt es im Bündel X-01 nicht"),
+            "Klasse ungültig": ([[1, "gleich", "9.9", "x"], [2, *gut], [3, *gut]], "steht nicht in"),
+        }
+        for name, (paare, text) in faelle.items():
+            with self.subTest(fall=name), self.assertRaises(EinigungFehler) as fehler:
+                abgabe_bauen(f, self.ordner / "einigung", "X-01", "einigung-X-01", paare)
+            self.assertIn(text, str(fehler.exception))
+
+        liste_pfad, ziel = self.ordner / "liste.json", self.ordner / "ergebnis" / "einigung_abgabe.json"
+        liste_pfad.write_text(json.dumps(liste, ensure_ascii=False), encoding="utf-8")
+        manifest = str(self.t / "manifest.json")
+        aufruf = ["einigung", "abgabe", "--manifest", manifest, "--ordner", str(self.fassung), "--kategorien",
+                  str(self.kat.pfad), "--auftraege", str(self.ordner / "einigung"), "--buendel", "X-01",
+                  "--bearbeiter", "einigung-X-01", "--liste", str(liste_pfad), "--ziel", str(ziel)]
+        with redirect_stdout(StringIO()), self.assertRaises(SystemExit) as ende:
+            main(["einigung", "abgabe", "--help"])
+        self.assertEqual(ende.exception.code, 0)
+        aus = StringIO()
+        with redirect_stdout(aus):
+            self.assertEqual(main(aufruf), 0)
+        self.assertIn("Probe wie anwenden --probe: ok", aus.getvalue())
+        self.assertEqual(dateien.lese_json(ziel), abgabe)
+        with redirect_stdout(StringIO()):
+            self.assertEqual(main(["einigung", "anwenden", "--manifest", manifest, "--ordner", str(self.fassung),
+                                   "--fassung", "X", "--kategorien", str(self.kat.pfad), "--auftraege",
+                                   str(self.ordner / "einigung"), "--abgabe", str(ziel), "--probe"]), 0)
+        liste_pfad.write_text(json.dumps([[1, *gut]]), encoding="utf-8")
+        ziel.unlink()
+        fehler = StringIO()
+        with redirect_stdout(StringIO()), redirect_stderr(fehler):
+            self.assertEqual(main(aufruf), 1)
+        self.assertIn("Abgelehnt", fehler.getvalue())
+        self.assertFalse(ziel.exists(), "abgelehnte Abgabe wird nicht geschrieben")
 
     def test_nur_kern(self):
         f = self.laden()

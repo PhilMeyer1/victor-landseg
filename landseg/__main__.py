@@ -2,9 +2,10 @@
 
 Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``ansicht`` (W3), ``kante`` (W4), ``eingriff`` (W5),
 ``pruefen`` (W6), ``zusammentragen`` (W7), ``seite`` (W8, Übersichtsseite), ``naht`` (Nahtregel allein),
-``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``messen``), ``messung``
-(Kosten eines Agent-Laufs aus den Transkripten). Exit-Code 0 = ok,
-1 = Befund, Nahtverstoß, offene Stellen oder Eingriff/Abgabe abgelehnt, 2 = Aufruf- oder Lesefehler.
+``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``abgabe``, ``messen``),
+``urteil`` (``urteil.json`` aus kurzer Liste bauen, prüfen), ``zoom`` (Ausschnitt einer Stelle mit Umriss und
+Nummern), ``messung`` (Kosten eines Agent-Laufs aus den Transkripten). Exit-Code 0 = ok, 1 = Befund,
+Nahtverstoß, offene Stellen oder Eingriff/Abgabe/Urteil abgelehnt, 2 = Aufruf- oder Lesefehler.
 """
 
 from __future__ import annotations
@@ -18,7 +19,9 @@ import numpy as np
 from PIL import Image
 
 from . import dateien, einstellungen, kategorien, naht
-from .ansicht import AnsichtFehler, ansicht
+from . import urteil as urteil_modul
+from . import zoom as zoom_modul
+from .ansicht import Ansicht, AnsichtFehler, ansicht
 from . import einigung as einigung_modul
 from .eingriff import Bearbeitung, EingriffFehler
 from .einigung import EinigungFehler
@@ -164,6 +167,8 @@ def _einigung_fassungen(a) -> list:
 
 def befehl_einigung(a) -> int:
     einst = einstellungen.laden("einigung", a.einstellungen)
+    if a.schritt == "abgabe" and not a.fassung:
+        a.fassung = einigung_modul.auftrag_lesen(a.auftraege, a.buendel)["fassung"]
     if a.schritt in ("finden", "anwenden") and not (a.fassung or a.ordner):
         raise EinigungFehler(f"einigung {a.schritt}: --fassung oder --ordner angeben")
     manifest = dateien.lese_json(a.manifest)
@@ -172,6 +177,14 @@ def befehl_einigung(a) -> int:
         fassungen = _einigung_fassungen(a)
         if not fassungen:
             raise EinigungFehler("keine Fassung mit Daten gefunden")
+        if a.schritt == "abgabe":
+            abgabe, erg = einigung_modul.abgabe_bauen(fassungen[0], a.auftraege, a.buendel, a.bearbeiter,
+                                                      dateien.lese_json(a.liste))
+            dateien.schreibe_json(a.ziel, abgabe)
+            print(json.dumps({"ziel": str(a.ziel), "probe": erg}, ensure_ascii=False) if a.json else
+                  f"Abgabe {abgabe['buendel']} ({len(abgabe['paare'])} Paare: gleich {erg['gleich']}, grenze "
+                  f"{erg['grenze']}, unklar {erg['unklar']}) -> {a.ziel}; Probe wie anwenden --probe: ok")
+            return 0
         if a.schritt == "anwenden":
             erg = einigung_modul.anwenden(fassungen[0], [dateien.lese_json(d) for d in a.abgabe], a.auftraege,
                                           ziel=a.ziel, schreiben=not a.probe)
@@ -201,6 +214,69 @@ def befehl_einigung(a) -> int:
                   f"({e['unsicher']['randpunkte']}), geklärt {e['geklaert']['paare']} ({e['geklaert']['randpunkte']}); "
                   f"Schnittlinien ohne Bildkante: {e['ohne_kante']['paare']} Paare")
     return 0 if all(e["offen"]["paare"] == 0 for e in ergebnisse) else 1
+
+
+def _teilkachel_quelle(a) -> tuple[Path, dict | None]:
+    """Bildpfad und ``kern_im_bild`` aus ``--manifest``/``--teilkachel`` oder ``--bild`` (ohne Kern)."""
+    if not a.manifest:
+        return Path(a.bild), None
+    manifest = dateien.lese_json(a.manifest)
+    teil = next((t for t in manifest["teilkacheln"] if t["id"] == a.teilkachel), None)
+    if teil is None:
+        raise ValueError(f"Teilkachel {a.teilkachel!r} steht nicht im Manifest")
+    return Path(a.manifest).parent / teil["bild"], teil["kern_im_bild"]
+
+
+def befehl_urteil(a) -> int:
+    kat = kategorien.laden(a.kategorien)
+    if a.schritt == "pruefen":
+        urteil = dateien.lese_json(a.urteil)
+        teilkachel = a.teilkachel or urteil.get("teilkachel")
+        viertel = a.viertel or urteil.get("viertel")
+        ordner = Path(a.urteil).parent
+    else:
+        teilkachel, viertel, ordner = a.teilkachel, a.viertel, Path(a.ziel).parent
+    g = urteil_modul.grundlage_laden(a.manifest, teilkachel, a.labels, kat, a.segmente, viertel)
+    try:
+        if a.schritt == "bauen":
+            urteil = urteil_modul.bauen(g, dateien.lese_json(a.liste), a.bearbeiter)
+        fehler = urteil_modul.pruefen(g, urteil, ordner)
+    except urteil_modul.UrteilFehler as f:
+        fehler = [str(f)]
+    geschrieben = a.schritt == "bauen" and not fehler
+    if geschrieben:
+        dateien.schreibe_json(a.ziel, urteil)
+    if a.json:
+        print(json.dumps({"ok": not fehler, "fehler": fehler, "segmente_soll": len(g.soll),
+                          "ziel": str(a.ziel) if geschrieben else None}, ensure_ascii=False))
+        return 1 if fehler else 0
+    for f in fehler:
+        print(f"- {f}")
+    wo = teilkachel + (f" Viertel {viertel}" if viertel else "")
+    if fehler:
+        print(f"FEHLER: {len(fehler)} Befunde in {wo}" + (", nichts geschrieben" if a.schritt == "bauen" else ""))
+        return 1
+    print(f"ok: {wo}, {len(g.soll)} Segmente mit Urteil" + (f" -> {a.ziel}" if geschrieben else ""))
+    return 0
+
+
+def befehl_zoom(a) -> int:
+    if (a.punkt is None) != (a.radius is None):
+        raise AnsichtFehler("--punkt und --radius gehören zusammen")
+    bild_pfad, kern = _teilkachel_quelle(a)
+    segmente = dateien.lese_segmente(a.segmente) if a.segmente else None
+    ans = Ansicht(zoom_modul.bild_rgb(naht.lese_bild(bild_pfad)), dateien.lese_labels(a.labels), segmente,
+                  kategorien.laden(a.kategorien) if segmente is not None else None,
+                  einstellungen.laden("ansicht"), kern=kern)
+    erg = zoom_modul.zoom(ans, einstellungen.laden("zoom", a.einstellungen), a.ziel, punkt=a.punkt,
+                          radius=a.radius, rechteck=a.rechteck, ids=a.ids, roh=a.roh,
+                          titel=a.teilkachel or bild_pfad.stem)
+    f = erg["fenster"]
+    print(json.dumps(erg, ensure_ascii=False) if a.json else
+          f"{erg['ziel']}: {erg['groesse'][0]} × {erg['groesse'][1]} px, Ausschnitt x {f['x']}, y {f['y']}, "
+          f"{f['breite']} × {f['hoehe']}, {f['faktor']}-fach, {len(erg['nummern'])} Nummern"
+          + (", neben dem Luftbild" if erg["roh"] else ""))
+    return 0
 
 
 def _rgb_bild(pfad) -> np.ndarray:
@@ -458,10 +534,12 @@ def parser() -> argparse.ArgumentParser:
     n.set_defaults(fn=befehl_naht)
 
     ei = befehle.add_parser("einigung", help="Klassen an den Übergängen der Teilkacheln abgleichen "
-                                             "(finden, anwenden, messen)")
+                                             "(finden, anwenden, abgabe, messen)")
     schritte = ei.add_subparsers(dest="schritt", required=True)
     for name, hilfe in (("finden", "offene Stellen bündeln, je Bündel Auftrag mit Bildern beider Seiten"),
                         ("anwenden", "Abgaben der Agents (einigung_abgabe.json) umsetzen, nur Klassen und Vermerke"),
+                        ("abgabe", "einigung_abgabe.json aus einer kurzen Liste bauen (Paar oder Nummer, "
+                                   "Entscheidung, Klasse, Grund) und wie anwenden --probe prüfen"),
                         ("messen", "Stellen gleicher Fläche mit verschiedener Klasse zählen: offen, unsicher, geklärt")):
         s = schritte.add_parser(name, help=hilfe, description=hilfe)
         s.add_argument("--manifest", required=True, help="manifest.json von kacheln")
@@ -481,6 +559,15 @@ def parser() -> argparse.ArgumentParser:
             s.add_argument("--ziel", help="neuer Ordner: Kopie der Fassung, in der geändert wird "
                                           "(sonst an Ort und Stelle)")
             s.add_argument("--probe", action="store_true", help="nur prüfen, nichts schreiben")
+        if name == "abgabe":
+            s.add_argument("--auftraege", required=True, help="Ordner von einigung finden (<bündel>/auftrag.json)")
+            s.add_argument("--buendel", required=True, help="Name des Bündels, z. B. A-02 (die Fassung kommt aus dem "
+                                                            "Auftrag, wenn --fassung fehlt)")
+            s.add_argument("--bearbeiter", required=True, help="Name des Agents")
+            s.add_argument("--liste", required=True,
+                           help='JSON {"paare": [[Nummer oder "a|b", "gleich|grenze|unklar", "Klasse oder null", '
+                                '"Grund"], ...], "offen": [], "nicht_geprueft": []}')
+            s.add_argument("--ziel", required=True, help="einigung_abgabe.json im eigenen Ergebnisordner")
     ei.set_defaults(fn=befehl_einigung)
 
     me = befehle.add_parser("messung", help="Kosten eines Agent-Laufs je Phase aus den Transkripten "
@@ -491,6 +578,51 @@ def parser() -> argparse.ArgumentParser:
     me.add_argument("--ziel", help="Ordner für messung.json und messung.md (sonst nur Ausgabe)")
     me.add_argument("--json", action="store_true", help="Ergebnis als JSON statt Tabelle")
     me.set_defaults(fn=befehl_messung)
+
+    ur = befehle.add_parser("urteil", help="urteil.json aus einer kurzen Liste bauen und prüfen (bauen, pruefen)")
+    schritte = ur.add_subparsers(dest="schritt", required=True)
+    for name, hilfe in (("bauen", "urteil.json aus der kurzen Liste des Agents bauen; schreibt nur, wenn die "
+                                  "Prüfung ok ist"),
+                        ("pruefen", "urteil.json prüfen: jeder Fehler in Klartext (Exit 0 ok, 1 Fehler)")):
+        s = schritte.add_parser(name, help=hilfe, description=hilfe + ". Format der Liste: README, Abschnitt urteil.")
+        s.add_argument("--manifest", required=True, help="manifest.json von kacheln")
+        s.add_argument("--teilkachel", required=name == "bauen",
+                       help="ID der Teilkachel, z. B. r0c0 (pruefen: Standard aus urteil.json)")
+        s.add_argument("--viertel", choices=list(urteil_modul.VIERTEL),
+                       help="nur dieses Viertel des Kerns (v1 oben links, v2 oben rechts, v3 unten links, "
+                            "v4 unten rechts)")
+        s.add_argument("--labels", required=True, help="aktuelle Label-Karte der Teilkachel")
+        s.add_argument("--segmente", required=name == "bauen", help="segmente.json dazu (heutige Klasse)")
+        s.add_argument("--kategorien", help="Kategorienliste der Fassung (Standard: die des Repos)")
+        s.add_argument("--json", action="store_true", help="Ergebnis als JSON")
+        if name == "bauen":
+            s.add_argument("--bearbeiter", required=True, help="Name des Agents")
+            s.add_argument("--liste", required=True,
+                           help='JSON {"segmente": [[id, urteil, vorschlag, punkte, bilder], ...], "sauber": [ids], '
+                                '"naht": [], "unsicher": [], "nicht_geprueft": [], "offen": []}')
+            s.add_argument("--ziel", required=True, help="urteil.json im eigenen Ergebnisordner (Bilder relativ dazu)")
+        else:
+            s.add_argument("--urteil", required=True, help="urteil.json (Bilder relativ zu ihrem Ordner)")
+    ur.set_defaults(fn=befehl_urteil)
+
+    zo = befehle.add_parser("zoom", help="Ausschnitt einer Stelle vergrößert, mit Umriss und Segmentnummern (JPEG)")
+    quelle = zo.add_mutually_exclusive_group(required=True)
+    quelle.add_argument("--manifest", help="manifest.json von kacheln (mit --teilkachel; Kern als Rahmen)")
+    quelle.add_argument("--bild", help="Bild der Teilkachel")
+    zo.add_argument("--teilkachel", help="ID der Teilkachel im Manifest, z. B. r0c0")
+    zo.add_argument("--labels", required=True, help="Label-Karte (gleiche Größe wie das Bild)")
+    zo.add_argument("--segmente", help="segmente.json (nicht nötig für Umriss und Nummern)")
+    zo.add_argument("--kategorien", help="kategorien.json (Standard: die des Repos)")
+    stelle = zo.add_mutually_exclusive_group(required=True)
+    stelle.add_argument("--punkt", type=lambda text: _punkte(text)[0], help="Mitte x,y (mit --radius)")
+    stelle.add_argument("--rechteck", type=_rechteck, help="x,y,breite,hoehe")
+    stelle.add_argument("--ids", type=_ids, help="Segmente, z. B. 3,5,8 (Rahmen um alle, farbig umrandet)")
+    zo.add_argument("--radius", type=int, help="Radius um --punkt in Bildpunkten")
+    zo.add_argument("--roh", action="store_true", help="links das rohe Luftbild daneben")
+    zo.add_argument("--einstellungen", help="JSON, überschreibt einstellungen/zoom.json")
+    zo.add_argument("--ziel", required=True, help="JPEG im eigenen Ergebnisordner, z. B. nah_17_1.jpg")
+    zo.add_argument("--json", action="store_true", help="Ergebnis als JSON (Fenster, Lage der Nummern)")
+    zo.set_defaults(fn=befehl_zoom)
     return p
 
 

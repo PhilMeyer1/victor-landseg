@@ -15,7 +15,9 @@ und wiederholen sie nicht.
 | `einigung.md` | ein Agent je Bündel aus `einigung finden` einigt die Klassen an den Übergängen der Teilkacheln (Urteil im Verbund: Bilder beider Seiten, ein Urteil je Stelle für alle Beteiligten, nur Klassen im Kern) | `einigung_abgabe.json` |
 
 Die Vorlagen enthalten keine Pfade dieses Rechners und keinen Einzelfall: Alles Fallbezogene kommt
-über die Platzhalter.
+über die Platzhalter. Für wiederkehrende Schritte nennen sie fertige Befehle als Standardweg
+(`urteil bauen`/`urteil pruefen`, `zoom`, `einigung abgabe`; README des Repos); eigene Skripte der
+Agents nur für Fälle, die kein Befehl deckt.
 
 ## Platzhalter
 
