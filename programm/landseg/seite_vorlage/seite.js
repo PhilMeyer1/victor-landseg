@@ -1,5 +1,6 @@
 /* Übersichtsseite (landseg seite). Je Bild ein Stand, das Ergebnis, in einem großen Bild; oben der
-   Umschalter zwischen den Fassungen desselben Ausschnitts, links eine feste Leiste mit den Angaben zum
+   Umschalter zwischen den Fassungen desselben Ausschnitts, darunter die Kachel-Wahl (vorige, Ganzer Ausschnitt,
+   die Teilkacheln mit Miniatur und Lage, nächste; Pfeiltasten), links eine feste Leiste mit den Angaben zum
    Segment (unter der Maus, gewählt, Kommentar), unten die Schalter, rechts die Kategorienliste.
    Was sich beim Überfahren, Klicken oder Ziehen ändert, steht nur in der linken Leiste (feste Breite)
    oder im Bild selbst: Lage und Größe des Bildes bleiben dabei gleich.
@@ -118,6 +119,79 @@
   }
   function ersteKachel(fx) { return (D.teilkacheln.filter(function (t) { return fx.tk[t.id] })[0] || D.teilkacheln[0]).id }
 
+  // --- Teilkacheln in Lage-Reihenfolge (1 oben links … zeilenweise), Miniaturen für die Kachel-Wahl ----
+  var REIHE = D.teilkacheln.slice().sort(function (a, b) { return a.nummer - b.nummer })
+  var ANZAHL = REIHE.length
+  var SPALTEN = 1 + Math.max.apply(null, REIHE.map(function (t) { return t.spalte }))
+  var MINI = {}
+  function nummer(tk) { for (var i = 0; i < ANZAHL; i++) if (REIHE[i].id === tk) return i + 1; return 0 }
+  // Miniaturen einmal nach dem Laden aus denselben Bildern verkleinert (keine zweite Kopie in der Datei)
+  function miniaturen() {
+    function klein(quelle, x, y, b, h) {
+      var c = el('canvas'), s = 112 / Math.max(b, h)
+      c.width = Math.max(1, Math.round(b * s)); c.height = Math.max(1, Math.round(h * s))
+      var ctx = c.getContext('2d'); ctx.imageSmoothingQuality = 'high'
+      ctx.drawImage(quelle, x, y, b, h, 0, 0, c.width, c.height)
+      return c.toDataURL('image/jpeg', 0.85)
+    }
+    REIHE.forEach(function (t) { var x = TK[t.id], k = t.kern_im_bild; MINI[t.id] = klein(x.bild, k.x, k.y, k.breite, k.hoehe) })
+    MINI.ganz = klein(AUSSCHNITT, 0, 0, AUSSCHNITT.width, AUSSCHNITT.height)
+  }
+  // Schritt: 0 = Ganzer Ausschnitt, 1 … ANZAHL = Teilkacheln, -1 = keiner (Kommentare)
+  function schritt(aktiv, tk) { return aktiv === 'uebersicht' ? 0 : aktiv === 'kachel' ? nummer(tk) : -1 }
+  function wegSchritt(K, n) { return n === 0 ? '/' + K + '/uebersicht' : '/' + K + '/kachel/' + REIHE[n - 1].id }
+  function nameSchritt(n) { return n === 0 ? 'Ganzer Ausschnitt' : REIHE[n - 1].lage }
+  // Raster-Symbol: die Teilkacheln in ihrer Lage, die gemeinten hell (aktiv: gelb)
+  function raster(an) {
+    return '<span class="c-raster" style="grid-template-columns:repeat(' + SPALTEN + ',6px)" aria-hidden="true">' + REIHE.map(function (t) {
+      return '<i' + (an === 'alle' || an === t.id ? ' class="c-an"' : '') + '></i>'
+    }).join('') + '</span>'
+  }
+  // vorige / nächste: Link auf den Nachbarschritt, am Ende ein gesperrter Knopf (gleich groß)
+  function pfeil(K, n, richtung) {
+    var ziel = n < 0 ? -1 : n + richtung, wort = richtung < 0 ? 'vorige' : 'nächste'
+    var zeichen = '<span class="c-zeichen" aria-hidden="true">' + (richtung < 0 ? '‹' : '›') + '</span>'
+    var klasse = 'c-pfeil c-pfeil-' + (richtung < 0 ? 'zurueck' : 'vor'), taste = 'Pfeiltaste ' + (richtung < 0 ? '←' : '→')
+    var gesperrt = ziel < 0 || ziel > ANZAHL
+    var unter = gesperrt ? (n === 0 && richtung < 0 ? 'Anfang' : n === ANZAHL ? 'letzte Teilkachel' : '–') : esc(nameSchritt(ziel))
+    var innen = (richtung < 0 ? zeichen : '') + '<span class="c-pfeiltext"><b>' + wort + '</b><small>' + unter + '</small></span>' + (richtung > 0 ? zeichen : '')
+    return gesperrt ? '<button type="button" class="' + klasse + '" disabled title="' + taste + '">' + innen + '</button>'
+      : '<a class="' + klasse + '" href="#' + esc(wegSchritt(K, ziel)) + '" title="' + taste + '">' + innen + '</a>'
+  }
+  // Kachel-Wahl unter dem Kopf: vorige | Ganzer Ausschnitt | Teilkacheln mit Miniatur, Raster und Lage | nächste.
+  // Gleiche Höhe in allen Ansichten und Fassungen: das Bild darunter springt beim Umschalten nicht.
+  function kachelWahl(K, aktiv, tk) {
+    var n = schritt(aktiv, tk)
+    var nav = el('nav', 'c-kachelwahl'); nav.setAttribute('aria-label', 'Teilkacheln')
+    var ganz = '<a class="c-reiter c-reiter-ganz" href="#/' + esc(K) + '/uebersicht"' + (n === 0 ? ' aria-current="page"' : '') +
+      ' title="Ganzer Ausschnitt ' + esc(D.name) + '"><span class="c-bild"><img class="c-mini" src="' + MINI.ganz + '" alt=""></span>' +
+      '<span class="c-text"><span class="c-ober">' + raster('alle') + 'Übersicht</span><b>Ganzer Ausschnitt</b>' +
+      '<span class="c-stand">alle ' + ANZAHL + ' Teilkacheln</span></span></a>'
+    var reiter = REIHE.map(function (t, i) {
+      var st = FA.tk[t.id]
+      return '<a class="c-reiter' + (st ? '' : ' c-ohne') + '" href="#/' + esc(K) + '/kachel/' + t.id + '"' + (n === i + 1 ? ' aria-current="page"' : '') +
+        ' title="Teilkachel ' + (i + 1) + ' von ' + ANZAHL + ': ' + esc(t.lage) + ' (' + t.id + ')' + (st ? '' : ', ohne Daten') + '">' +
+        '<span class="c-bild"><img class="c-mini" src="' + MINI[t.id] + '" alt=""><span class="c-nr">' + (i + 1) + '</span></span>' +
+        '<span class="c-text"><span class="c-ober">' + raster(t.id) + 'Teilkachel ' + (i + 1) + ' <span class="c-kennung">' + t.id + '</span></span>' +
+        '<b>' + esc(t.lage) + '</b><span class="c-stand">' + (st ? st.roh.segmente.length + ' Segmente' : 'keine Daten') + '</span></span></a>'
+    }).join('')
+    nav.innerHTML = pfeil(K, n, -1) + '<div class="c-spur">' + ganz + '<span class="c-trenner" aria-hidden="true"></span>' +
+      '<div class="c-vier" style="grid-template-columns:repeat(' + ANZAHL + ',minmax(0,1fr))">' + reiter + '</div></div>' + pfeil(K, n, 1)
+    return nav
+  }
+  // Hinweis im Bild der Teilkachel: „Teilkachel n von N“, Fortschritt und der nächste Schritt
+  function fortschritt(K, tkId) {
+    var n = nummer(tkId)
+    var punkte = '<span class="c-punkte" aria-hidden="true">' + REIHE.map(function (t, i) {
+      return '<i class="' + (i + 1 === n ? 'c-hier' : i + 1 < n ? 'c-war' : '') + '"></i>'
+    }).join('') + '</span>'
+    var weiter = n < ANZAHL
+      ? '<a class="c-weiter" href="#' + esc(wegSchritt(K, n + 1)) + '">weiter: Teilkachel ' + (n + 1) + ', ' + esc(nameSchritt(n + 1)) + ' <span aria-hidden="true">›</span></a>'
+      : '<a class="c-weiter" href="#' + esc(wegSchritt(K, 0)) + '">alle ' + ANZAHL + ' gesehen · Ganzer Ausschnitt <span aria-hidden="true">›</span></a>'
+    return el('div', 'c-fortschritt', '<span class="c-fz">Teilkachel <b>' + n + '</b> von ' + ANZAHL + '</span>' + punkte + weiter +
+      '<span class="c-tasten" title="Pfeiltasten wechseln die Teilkachel"><kbd>←</kbd><kbd>→</kbd></span>')
+  }
+
   // --- Zeichnen --------------------------------------------------------------------------------------
   function passe(c) {
     var r = c.getBoundingClientRect(), d = window.devicePixelRatio || 1
@@ -227,19 +301,15 @@
     UEBERNAHME = aktiv === 'kachel'
     gehe('/' + ziel.f.kennung + '/kachel/' + (aktiv === 'kachel' ? tk : ersteKachel(ziel)))
   }
+  // Kopf: schlanke Zeile (Name, Fassungen, Kommentare), darunter die Kachel-Wahl
   function kopf(aktiv, tk) {
-    var h = el('header', 'c-kopf'), K = FA.f.kennung
+    var oben = el('div', 'c-oben'), h = el('header', 'c-kopf'), K = FA.f.kennung
     h.innerHTML = '<b>Ausschnitt ' + esc(D.name) + '</b>' +
       '<div class="c-fassungen" role="group" aria-label="Fassung">' + D.fassungen.map(function (f) {
         return '<button data-fassung="' + esc(f.kennung) + '" aria-pressed="' + (aktiv !== 'kommentare' && f.kennung === K) + '"' +
           (f.vorhanden ? ' title="Umschalt + ' + esc(f.kennung) + '"' : ' disabled title="Für diese Fassung gibt es noch keine Ergebnisse"') + '>' +
-          esc(f.kennung + ' · ' + f.name) + (f.vorhanden ? '' : ' <span>(noch leer)</span>') + '</button>'
-      }).join('') + '</div>' +
-      '<nav aria-label="Teilkacheln"><a href="#/' + esc(K) + '/uebersicht"' + (aktiv === 'uebersicht' ? ' aria-current="page"' : '') + '>Ganzer Ausschnitt</a>' +
-      D.teilkacheln.map(function (t) {
-        return '<a href="#/' + esc(K) + '/kachel/' + t.id + '"' + (aktiv === 'kachel' && tk === t.id ? ' aria-current="page"' : '') +
-          (FA.tk[t.id] ? ' title="Teilkachel ' + t.id + ' (Zeile ' + (t.zeile + 1) + ', Spalte ' + (t.spalte + 1) + ')"' : ' class="c-ohne" title="ohne Daten"') + '>' + t.id + '</a>'
-      }).join('') + '</nav>' +
+          esc(f.kennung) + '<span class="c-fname"> · ' + esc(f.name) + '</span>' + (f.vorhanden ? '' : ' <span>(noch leer)</span>') + '</button>'
+      }).join('') + '</div><span></span>' +
       '<span class="c-rechts"><a href="#/kommentare"' + (aktiv === 'kommentare' ? ' aria-current="page"' : '') + ' data-kommzahl>Kommentare (' + alleKommentare().length + ')</a></span>' +
       '<p class="c-beschr" title="' + esc(aktiv === 'kommentare' ? '' : FA.f.beschreibung) + '">' +
       (aktiv === 'kommentare' ? 'Kommentare zu allen Fassungen' : '<b>' + esc(K + ' · ' + FA.f.name) + '</b> ' + esc(FA.f.beschreibung)) + '</p>'
@@ -248,7 +318,9 @@
       wechsleFassung(b.dataset.fassung, aktiv, tk)
     })
     AKTIV.wechsle = function (kennung) { wechsleFassung(kennung, aktiv, tk) }
-    return h
+    oben.appendChild(h)
+    oben.appendChild(kachelWahl(K, aktiv, tk))
+    return oben
   }
   function befundText(st) {
     var b = st.roh.pruefen
@@ -261,7 +333,7 @@
   }
   var LEGENDE = '<details class="c-legende"><summary>Was bedeutet …?</summary><dl>' +
     '<dt>Fassung</dt><dd>Eine Art, die Flächen einzuteilen; oben umschalten (auch mit Umschalt + A, B, C …).</dd>' +
-    '<dt>Teilkachel</dt><dd>Eines der Bildstücke, in die der Ausschnitt geteilt ist (r = Zeile, c = Spalte).</dd>' +
+    '<dt>Teilkachel</dt><dd>Eines der Bildstücke, in die der Ausschnitt geteilt ist; oben in der Kachel-Wahl oder mit den Pfeiltasten ← → wechseln (Kennung r = Zeile, c = Spalte).</dd>' +
     '<dt>Kern</dt><dd>Der Teil im hellen Rahmen: nur er zählt für diese Teilkachel.</dd>' +
     '<dt>Rand</dt><dd>Der abgedunkelte Streifen außen: Überlappung mit den Nachbarn, nur zur Orientierung.</dd>' +
     '<dt>Naht</dt><dd>Grenze zwischen zwei Teilkacheln. Rosa Linie: dort passen die Segmente der Nachbarn nicht zusammen.</dd>' +
@@ -300,7 +372,7 @@
       '<p class="c-status" data-status>Kommentare bleiben nur in diesem Browser, bis Sie sie exportieren.</p></form>' + LEGENDE
     mitte.appendChild(info)
     var f = el('figure', 'c-tafel')
-    var cap = '<b>Teilkachel ' + tkId + '</b>'
+    var cap = '<b>Teilkachel ' + nummer(tkId) + ' von ' + ANZAHL + ' · ' + esc(x.t.lage) + '</b><span class="c-kennung">' + tkId + '</span>'
     if (st) {
       var un = st.roh.segmente.filter(unsicher).length
       cap += '<span>' + st.roh.segmente.length + ' Segmente, ' + un + ' davon unsicher</span>' + befundText(st) +
@@ -310,6 +382,7 @@
     var cv = el('canvas', 'c-bild'); cv.setAttribute('aria-label', 'Teilkachel ' + tkId + ', Fassung ' + K)
     f.appendChild(cv)
     if (!st) f.appendChild(el('div', 'c-leer', 'Fassung ' + esc(K) + ' hat für ' + tkId + ' noch keine Ergebnisse.'))
+    f.appendChild(fortschritt(K, tkId))
     mitte.appendChild(f)
     var kat = el('aside', 'c-kat'); kat.setAttribute('aria-label', 'Kategorien'); kat.hidden = !S.liste
     mitte.appendChild(kat)
@@ -556,6 +629,23 @@
       D.teilkacheln.forEach(function (t) { var k = t.kern; ctx.strokeRect(L.ox + k.x * L.s, L.oy + k.y * L.s, k.breite * L.s, k.hoehe * L.s) })
       ctx.setLineDash([])
       if (nb) naehte(ctx, L, nb.verstoesse)
+      marken(ctx, L)
+    }
+    // Nummer und Lage in jedem Kern: der Ausschnitt besteht aus den Teilkacheln der Kachel-Wahl
+    function marken(ctx, L) {
+      var d = window.devicePixelRatio || 1, r = 10 * d, h = 2 * r + 8 * d
+      ctx.font = '600 ' + Math.round(13 * d) + 'px Segoe UI, system-ui, sans-serif'; ctx.textBaseline = 'middle'
+      REIHE.forEach(function (t) {
+        var k = t.kern, x0 = L.ox + k.x * L.s + 10 * d, y0 = L.oy + k.y * L.s + 10 * d, mit = !!FA.tk[t.id]
+        var text = t.lage + (mit ? '' : ' · keine Daten'), b = h + ctx.measureText(text).width + 14 * d
+        ctx.fillStyle = 'rgba(14,15,17,0.85)'; ctx.beginPath()
+        if (ctx.roundRect) ctx.roundRect(x0, y0, b, h, h / 2); else ctx.rect(x0, y0, b, h)
+        ctx.fill()
+        ctx.beginPath(); ctx.arc(x0 + h / 2, y0 + h / 2, r, 0, 2 * Math.PI)
+        ctx.fillStyle = '#0e0f11'; ctx.fill(); ctx.strokeStyle = '#454b53'; ctx.lineWidth = d; ctx.stroke()
+        ctx.fillStyle = '#d6d8dc'; ctx.textAlign = 'center'; ctx.fillText(String(t.nummer), x0 + h / 2, y0 + h / 2)
+        ctx.fillStyle = mit ? '#d6d8dc' : '#8b9099'; ctx.textAlign = 'left'; ctx.fillText(text, x0 + h + 6 * d, y0 + h / 2)
+      })
     }
     cv.addEventListener('click', function (ev) {
       var p = punktIm(cv, a, ev)
@@ -595,8 +685,16 @@
 
   // --- Tasten: Esc hebt die Wahl auf (auch im Kommentarfeld), Umschalt + Kennung schaltet die Fassung
   //     (nie beim Tippen in ein Eingabefeld; ohne Umschalt geht kein Buchstabe verloren) ------------------
+  // Pfeiltasten ← → gehen wie „vorige“ / „nächste“ der Kachel-Wahl (nie in Eingabefeldern, nie mit Umschalt usw.)
   document.addEventListener('keydown', function (ev) {
     var t = ev.target && ev.target.tagName
+    if (ev.key === 'ArrowLeft' || ev.key === 'ArrowRight') {
+      if (t === 'TEXTAREA' || t === 'INPUT' || t === 'SELECT' || (ev.target && ev.target.isContentEditable)) return
+      if (ev.shiftKey || ev.ctrlKey || ev.metaKey || ev.altKey || ev.defaultPrevented) return
+      var a = document.querySelector('.c-kachelwahl .c-pfeil-' + (ev.key === 'ArrowLeft' ? 'zurueck' : 'vor') + '[href]')
+      if (a) { ev.preventDefault(); location.hash = a.getAttribute('href') }
+      return
+    }
     if (ev.key === 'Escape') {
       if (t === 'TEXTAREA' && ev.target.value && ev.target.value.trim()) return
       if (t === 'TEXTAREA' && ev.target.blur) ev.target.blur()
@@ -621,6 +719,6 @@
     gehe('/' + FA.f.kennung + '/kachel/' + ersteKachel(FA))
   }
   app.innerHTML = '<p class="c-liste">Lade Bilder …</p>'
-  laden().then(function () { window.addEventListener('hashchange', weg); weg() },
+  laden().then(function () { miniaturen(); window.addEventListener('hashchange', weg); weg() },
     function () { app.innerHTML = '<p class="c-liste c-fehler">Bilder ließen sich nicht lesen.</p>' })
 })()

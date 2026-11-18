@@ -33,6 +33,9 @@ KOMMENTAR_SCHEMA = "landseg-kommentare/1"
 VORLAGEN = Path(__file__).resolve().parent / "seite_vorlage"
 #: Größte Segment-ID, die die Seite darstellen kann (drei Farbkanäle zu je 8 Bit).
 ID_GRENZE = 2 ** 24
+#: Lage im Raster in Worten, je Zahl der Zeilen bzw. Spalten (größere Raster: „Zeile n, Spalte m").
+_LAGE_ZEILE = {1: ("",), 2: ("oben", "unten"), 3: ("oben", "Mitte", "unten")}
+_LAGE_SPALTE = {1: ("",), 2: ("links", "rechts"), 3: ("links", "Mitte", "rechts")}
 
 
 class SeiteFehler(Exception):
@@ -143,6 +146,17 @@ def _stand_fuer_seite(stand: dict | None, naht_befund: dict | None, teilkachel: 
             "quelle": stand["quelle"]}
 
 
+def lage_in_worten(zeile: int, spalte: int, zeilen: int, spalten: int) -> str:
+    """Lage einer Teilkachel im Raster in Worten für die Kachel-Wahl der Seite („oben links" … „unten rechts")."""
+    wz, ws = _LAGE_ZEILE.get(zeilen), _LAGE_SPALTE.get(spalten)
+    if wz is None or ws is None:
+        return f"Zeile {zeile + 1}, Spalte {spalte + 1}"
+    worte = [w for w in (wz[zeile], ws[spalte]) if w]
+    if worte == ["Mitte", "Mitte"]:
+        return "Mitte"
+    return " ".join(worte) or "ganzer Ausschnitt"
+
+
 def _kommentare_lesen(pfad: Path | None) -> list[dict]:
     if pfad is None:
         return []
@@ -225,8 +239,14 @@ def seite_daten(manifest_pfad: str | Path, kat: Kategorien, kommentare: str | Pa
         raise SeiteFehler("keine Fassung mit Daten: " + "; ".join(
             f"{f['kennung']}: {f['quelle']}/<teilkachel>/ ohne labels.tif und segmente.json" for f in fassungen))
 
-    teilkacheln = [{"id": t["id"], "zeile": t["zeile"], "spalte": t["spalte"], "kern": t["kern"],
-                    "kontext": t["kontext"], "kern_im_bild": t["kern_im_bild"],
+    # Nummer (1 … n, zeilenweise von oben links) und Lage in Worten für die Kachel-Wahl
+    zeilen = 1 + max(t["zeile"] for t in manifest["teilkacheln"])
+    spalten = 1 + max(t["spalte"] for t in manifest["teilkacheln"])
+    reihe = sorted(manifest["teilkacheln"], key=lambda t: (t["zeile"], t["spalte"]))
+    nummer = {t["id"]: i + 1 for i, t in enumerate(reihe)}
+    teilkacheln = [{"id": t["id"], "zeile": t["zeile"], "spalte": t["spalte"], "nummer": nummer[t["id"]],
+                    "lage": lage_in_worten(t["zeile"], t["spalte"], zeilen, spalten),
+                    "kern": t["kern"], "kontext": t["kontext"], "kern_im_bild": t["kern_im_bild"],
                     "bild": _png(_lese_bild(basis / t["bild"]))} for t in manifest["teilkacheln"]]
     return {
         "schema": "landseg-seite/2",
