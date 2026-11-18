@@ -14,7 +14,8 @@ du ändern würdest. Die Label-Karte änderst du nicht.
 - `{{DATEN}}/{{LABELS}}`: Label-Karte (Segment-ID je Bildpunkt, Größe des Teilkachelbilds).
 - `{{DATEN}}/{{SEGMENTE}}`: je Segment `id`, `klasse`, `grob`, `herkunft`, `sicher`; dazu die
   Kandidatenliste der Vorstufe, falls vorhanden.
-- `{{REPO}}/kategorien.json` und `{{REPO}}/KATEGORIEN.md`: die gültigen Klassen und Regeln.
+- `{{REPO}}/kategorien.json` und `{{REPO}}/KATEGORIEN.md`: die gültigen Klassen und Regeln. Gärten nach Regel L14 des Skills: krautige Grünfläche und Beet im Haus- oder Hofgarten = 3.6 Garten;
+  Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat, entschieden wird am Bild.
 
 ## Bilder ansehen
 

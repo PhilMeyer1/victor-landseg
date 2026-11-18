@@ -9,6 +9,12 @@ nur in `{{ERGEBNIS}}`), Eingaben nur lesen.
 Ziel: das Landschaftsbild so fein segmentieren, wie im Bild sicher erkennbar, und jedem Segment eine Klasse aus
 deiner eigenen, gestuften Liste geben.
 
+Eine Klasse ist auch hier Pflicht (Regel L14 des Skills, die einzige Kategorie, die vorgegeben ist): Deine Liste
+führt eine Klasse „Garten“ unter einer Ebene-1-Klasse „Dauergrünland“ (genau diese Namen, Zusatz in Klammern
+erlaubt), auch wenn kein Segment sie trägt. Garten ist jede krautige Grünfläche und jedes Beet in einem Haus- oder
+Hofgarten, gepflegt oder nicht; Gartenbäume, Sträucher und Hecken, Parks, Friedhöfe und Sportrasen gehören nicht
+dazu. Die Kontrolle unten prüft das.
+
 Zuerst siehst du den ganzen Ausschnitt an (`{{AUSSCHNITT_BILD}}`), dann deine Teilkachel (`{{TEILKACHEL_ROH}}`,
 mit Grenzen der Vorstufe `{{TEILKACHEL_BILD}}`), und nennst beide in `arbeitsweise.md`.
 
@@ -49,7 +55,7 @@ Alle Werkzeuge von landseg stehen dir frei (`{{REPO}}/README.md`; Befehle im Ord
 Kontrolle (im Ordner `{{REPO}}`, muss mit `ok` enden):
 
 ```
-{{PY}} -B -m landseg pruefen --labels {{ERGEBNIS}}/labels.tif --segmente {{ERGEBNIS}}/segmente.json --bild {{DATEN}}/{{TEILKACHEL_DATEI}} --kategorien {{ERGEBNIS}}/kategorien-teil.json
+{{PY}} -B -m landseg pruefen --labels {{ERGEBNIS}}/labels.tif --segmente {{ERGEBNIS}}/segmente.json --bild {{DATEN}}/{{TEILKACHEL_DATEI}} --kategorien {{ERGEBNIS}}/kategorien-teil.json --frei
 ```
 
 ## Rückgabe

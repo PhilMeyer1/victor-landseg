@@ -18,6 +18,8 @@ des Urteils geprüft und bestätigt. Was er anders will: {{ABWEICHUNGEN}}
   arbeite nur an diesen Kopien.
 - Setze jeden Punkt des Urteils (mit den Abweichungen oben) um, Segment für Segment, nur im Kern.
   Was das Urteil nicht nennt, bleibt bildpunktgleich.
+- Klassen nach dem Urteil und `KATEGORIEN.md`. Gärten nach Regel L14 des Skills: krautige Grünfläche und Beet im Haus- oder Hofgarten = 3.6 Garten;
+  Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat, entschieden wird am Bild.
 - Grenzen legst du mit `kante` auf die Kante im Bild; wo das Bild keine hergibt, setzt du sie von
   Hand und meldest die Strecke als geschätzt.
 - Ändert ein Eingriff eine Grenze bis an den Kernrand, meldest du das Segment unter `naht`.

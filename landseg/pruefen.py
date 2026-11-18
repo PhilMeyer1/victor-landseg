@@ -3,7 +3,8 @@
 Geprüft wird: Form H × W (wenn erwartet), kein Bildpunkt mit ID 0, jede ID ein zusammenhängendes
 Gebiet (4er-Nachbarschaft), und mit ``segmente.json`` und Kategorienliste: jede ID der Karte hat
 genau einen Eintrag mit gültiger Klasse, kein Eintrag ohne Bildpunkte, ``grob`` passt zur Klasse, ``im_siedlung`` ist ``ja``, ``nein`` oder fehlt.
-Optional: Mindestfläche je Segment.
+Optional: Mindestfläche je Segment; ``frei``: die Liste einer freien Fassung (A, B) führt die Klasse „Garten“
+unter der Ebene-1-Klasse „Dauergrünland“ (``kategorien.garten_maengel``).
 """
 
 from __future__ import annotations
@@ -86,6 +87,7 @@ def pruefen(
     kategorien: Kategorien | None = None,
     form: tuple[int, int] | None = None,
     mindestflaeche: int | None = None,
+    frei: bool = False,
 ) -> Befund:
     hoehe, breite = karte.shape
     befund = Befund(hoehe=hoehe, breite=breite)
@@ -121,6 +123,11 @@ def pruefen(
                     f"Mindestfläche: Segment {sid} hat {fl} Bildpunkte (< {mindestflaeche})"
                 )
 
+    if frei:
+        if kategorien is None:
+            befund.maengel.append("Garten: Prüfung einer freien Fassung ohne Kategorienliste")
+        else:
+            befund.maengel.extend(kategorien.garten_maengel())
     if segmente is not None:
         _pruefe_segmente(befund, set(ids.tolist()), segmente, kategorien)
     return befund

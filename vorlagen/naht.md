@@ -27,7 +27,8 @@ sie mit Grund).
   gleiche die Gegenseite an oder melde den Fall unter `offen`.
 - Echte Grenze, die nur schwach im Bild liegt: nichts ändern, unter `naht_bestaetigt` mit Grund.
 - Klassenkonflikt: Klasse nach dem Bild und `KATEGORIEN.md` entscheiden und in der Teilkachel mit
-  der falschen Klasse setzen.
+  der falschen Klasse setzen. Gärten nach Regel L14 des Skills: krautige Grünfläche und Beet im Haus- oder Hofgarten = 3.6 Garten;
+  Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat, entschieden wird am Bild.
 - Nicht sicher entscheidbar: nichts ändern, unter `offen`.
 
 ## Wie

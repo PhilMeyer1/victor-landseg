@@ -29,7 +29,9 @@ Je Paar genau eine Entscheidung:
 
 - `gleich`: Beide Seiten zeigen dieselbe Fläche. Wähle die Klasse aus `klassen`, die am besten passt
   (feinste sicher erkennbare Ebene, Regeln aus `KATEGORIEN.md` bzw. der Liste der Fassung), und
-  nenne sie unter `klasse`. Hängen mehrere Paare über ein gemeinsames Segment zusammen (Kette a–b–c,
+  nenne sie unter `klasse`. Gärten nach Regel L14 des Skills: krautige Grünfläche und Beet im Haus-
+  oder Hofgarten bekommen „Garten“ (feste Liste 3.6, in den freien Fassungen die Klasse „Garten“ unter
+  „Dauergrünland“); Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat. Hängen mehrere Paare über ein gemeinsames Segment zusammen (Kette a–b–c,
   Ecke), bekommen alle Glieder dieselbe Klasse.
 - `grenze`: Dort liegt wirklich eine Grenze zweier verschiedener Flächen, nur ohne Farbsprung;
   beide Klassen bleiben.
@@ -43,7 +45,8 @@ geändert. Keine neue Klasse anlegen: Passt keine der Liste, entscheide `unklar`
 `kategorien-a.json` zusammengelegt; die Einigung läuft auf dieser Liste (`klasse` ist ein Code daraus,
 der ursprüngliche Code der Teilkachel steht unter `klasse_teil`). Meinen beide Seiten dieselbe Fläche
 unter verschiedenen Namen, wähle den Code der gemeinsamen Liste, der am besten passt, und nenne den
-Grund.
+Grund. Die Listen der freien Fassungen (`kategorien-a.json`, `kategorien-b.json`) führen „Garten“ unter
+„Dauergrünland“; nimm für einen Garten diesen Code, auch wenn eine Seite ihn anders benannt hat.
 
 ## Wie
 

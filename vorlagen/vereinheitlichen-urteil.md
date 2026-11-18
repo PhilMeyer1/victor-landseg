@@ -9,6 +9,11 @@ mit Ebene, Eltern, Bildmerkmal). Du machst daraus eine einheitliche, gestufte Ka
 Ausschnitt und ordnest jedem Segment ihren Code zu. Du urteilst nicht neu am Bild, änderst keine Viertel-Abgabe
 und nicht die Label-Karte.
 
+Pflicht beim Zusammenlegen (Regel L14 des Skills): Die neue Liste führt die Klasse „Garten“ unter der
+Ebene-1-Klasse „Dauergrünland“ (genau diese Namen, Zusatz in Klammern erlaubt), auch wenn sie keiner trägt.
+Jeder Name für Haus- und Hofgärten (Garten, Gartenland, Grün im Ort am Haus und ähnliche) geht auf sie über;
+Hof, Gartenbaum, Hecke und Gartenweg nicht. `zusammenfuehren` lehnt eine Liste ohne diese Klasse ab.
+
 ## Hinweis des Laufs
 
 {{HINWEIS}}

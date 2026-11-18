@@ -64,6 +64,28 @@ class VorlagenTest(unittest.TestCase):
             self.assertNotIn("Eigene Skripte als Datei in", text)
         self.assertIn("ein eigenes Skript nur, wenn kein Befehl den Fall deckt", SKILL.read_text(encoding="utf-8"))
 
+    def test_garten_in_regeln_und_auftraegen(self):
+        """L14: wann „Garten“ zu wählen ist; freie Listen führen Garten unter Dauergrünland."""
+        skill = SKILL.read_text(encoding="utf-8")
+        self.assertIn("L14 Garten", skill)
+        for pflicht in ("3.6 Garten", "Haus- oder", "Hofgarten", "Gehölz", "Park, Friedhof und Sportanlage",
+                        "im_siedlung: ja", "„Dauergrünland“", "pruefen --frei"):
+            self.assertIn(pflicht, skill)
+        for name in ("urteil", "einigung", "naht", "korrektur", "umsetzen", "abschnitte"):
+            with self.subTest(vorlage=name):
+                text = (VORLAGEN / f"{name}.md").read_text(encoding="utf-8")
+                self.assertIn("L14", text)
+                self.assertIn("Garten", text)
+        for name in ("frei", "vereinheitlichen-frei", "vereinheitlichen-urteil", "einigung", "abschnitte"):
+            with self.subTest(freie_liste=name):
+                text = (VORLAGEN / f"{name}.md").read_text(encoding="utf-8")
+                self.assertIn("„Garten“", text)
+                self.assertIn("„Dauergrünland“", text)
+        self.assertIn("--frei", (VORLAGEN / "frei.md").read_text(encoding="utf-8"))
+        einigung = (VORLAGEN / "einigung.md").read_text(encoding="utf-8")
+        for liste in ("kategorien-a.json", "kategorien-b.json"):
+            self.assertIn(liste, einigung)
+
     def test_einigung_vorlage(self):
         text = (VORLAGEN / "einigung.md").read_text(encoding="utf-8")
         for pflicht in ("einigung_abgabe.json", "kategorien-a.json", "beide Seiten", "L13", "Kontextrand"):

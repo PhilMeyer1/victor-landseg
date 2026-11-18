@@ -61,11 +61,13 @@ def block_karte(groesse: int = 64, block: int = 8) -> tuple[np.ndarray, dict]:
 
 #: Klassen der Vorstufe (aus kategorien.json des Repos) je Block, abwechselnd.
 LAUF_KLASSEN = ("1.1", "2.1")
-#: kleine freie Liste (Fassungen mit eigenen Klassen) und ihre Codes
+#: kleine freie Liste (Fassungen mit eigenen Klassen) und ihre Codes; Garten unter Dauergrünland ist Pflicht
 FREIE_LISTE = [{"code": "0", "name": "Nicht bestimmbar", "parent": None, "level": 1, "color": "#808080"},
                {"code": "1", "name": "Bebaut", "parent": None, "level": 1, "color": "#c03030"},
                {"code": "1.1", "name": "Dach", "parent": "1", "level": 2, "color": "#ff6060"},
-               {"code": "2", "name": "Offen", "parent": None, "level": 1, "color": "#30a030"}]
+               {"code": "2", "name": "Offen", "parent": None, "level": 1, "color": "#30a030"},
+               {"code": "3", "name": "Dauergrünland", "parent": None, "level": 1, "color": "#60c060"},
+               {"code": "3.1", "name": "Garten", "parent": "3", "level": 2, "color": "#a6ffaf"}]
 
 
 def _block_id(gx, gy):

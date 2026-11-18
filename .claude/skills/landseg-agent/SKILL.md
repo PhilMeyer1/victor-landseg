@@ -69,6 +69,18 @@ Stitcher-Methode übernommen und auf Landschaft umgestellt (Ermittlung `landseg-
   für alle Glieder; eine echte Grenze bleibt mit Grund stehen; was sich nicht klären lässt, wird als
   unsicher mit Grund belegt, nie stillschweigend gelassen. Ein Urteil je Stelle für alle Beteiligten,
   nur Klassen von Segmenten im Kern, keine Grenzen und keine neuen Klassen.
+- **L14 Garten.** Haus- und Hofgärten tragen die Unterklasse **3.6 Garten** im Dauergrünland (Abschnitt
+  „Garten“ in `KATEGORIEN.md`). Garten ist jede krautige Grünfläche und jedes Beet in einem Haus- oder
+  Hofgarten, auch Vor-, Obst- und Gemüsegarten am Haus, gepflegt oder verwildert, gemäht oder brach; Rasen
+  ist kein Kennzeichen, die Lage am Wohnhaus oder Hof (eingefasst von Gebäude, Zaun oder Hecke) ist es.
+  Kein Garten: Gartenbaum, Strauch und Hecke (Gehölz, G2), Gartenhaus (1.1.2), befestigter Weg oder
+  Terrasse, Teich, Pool; Rasen in Park, Friedhof und Sportanlage (3.1); Wiese oder Acker am Ortsrand, die
+  zu keinem Haus oder Hof gehört. Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat:
+  entscheide am Bild. Gehört eine Grünfläche am Haus nicht sicher zum Garten, nimm „3 Dauergrünland“.
+  In den freien Fassungen (A „Alles frei“, B „Kategorien frei“) gilt dasselbe für die eigenen Namen: Jede
+  freie Liste führt die Klasse „Garten“ unter der Ebene-1-Klasse „Dauergrünland“ (genau diese Namen, ein
+  Zusatz in Klammern ist erlaubt), auch wenn noch kein Segment sie trägt; wer Listen zusammenlegt, erhält
+  sie dort und bildet jeden Gartennamen der Teil-Listen auf sie ab. `pruefen --frei` meldet sonst einen Fehler.
 
 ## Abgabe und Rückgabe
 

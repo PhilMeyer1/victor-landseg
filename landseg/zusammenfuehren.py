@@ -16,8 +16,8 @@ Je Fassung (Tabelle aus ``einstellungen/seite.json`` + ``einstellungen/lauf.json
   ``zusammentragen.json``; danach ``pruefen`` je Teilkachel, ``zusammentragen`` nach ``<ordner>/zusammen/``,
   ``naht`` und ``einigung finden`` nach ``<ziel>/<einigung>/auftraege-<kennung>/``.
 
-Alles wird zuerst im Speicher gebaut und geprüft; ein Befund (fehlende Abgabe, Klasse nicht in der Liste, Marke
-``fassung.json`` passt nicht zur Tabelle) ist ein ``LaufFehler`` (Exit 1), dann wird nichts geschrieben. Die
+Alles wird zuerst im Speicher gebaut und geprüft; ein Befund (fehlende Abgabe, Klasse nicht in der Liste, freie
+Liste ohne „Garten“ unter „Dauergrünland“, Marke ``fassung.json`` passt nicht zur Tabelle) ist ein ``LaufFehler`` (Exit 1), dann wird nichts geschrieben. Die
 Urteile selbst ändert der Befehl nie; die Gegenprobe geht in keine Karte ein.
 """
 
@@ -93,6 +93,8 @@ def _liste(b: Bau, name: str) -> set[str]:
             k.setdefault("mappings", {m: [] for m in MAPPINGS})
         if f.art == "frei" and not isinstance(b.liste.get("abbildung_teilkacheln"), dict):
             b.fehler.append(f"{f.titel}: {p(quelle)} ohne abbildung_teilkacheln")
+        b.fehler += [f"{f.titel}: {p(quelle)}: {m}" for m in kategorien.garten_maengel(
+            {str(k.get("code")): k for k in b.liste.get("classes") or []})]
     return {str(k["code"]) for k in b.liste.get("classes") or []}
 
 

@@ -18,13 +18,13 @@ import numpy as np
 import tifffile
 from PIL import Image
 
-from landseg import dateien, einstellungen, naht
+from landseg import dateien, einstellungen, kategorien, naht
 from landseg.__main__ import main
 from landseg.einigung import (EinigungFehler, _im_kern, abgabe_bauen, anwenden, buendeln, fassung_laden, finden,
                               messen, schluessel_karte, stellen)
 from landseg.kacheln import kacheln
 from landseg.pruefen import pruefen
-from tests.hilfe import beispiel_kategorien
+from tests.hilfe import BEISPIEL_KLASSEN, beispiel_kategorien
 from tests.test_kacheln import PRJ
 
 OFFEN = {"r0c0:1|r0c0:2", "r0c0:1|r1c0:10", "r0c0:2|r0c1:20"}
@@ -245,6 +245,31 @@ class EinigungTest(unittest.TestCase):
             self.assertEqual(main(aufruf), 1)
         self.assertIn("Abgelehnt", fehler.getvalue())
         self.assertFalse(ziel.exists(), "abgelehnte Abgabe wird nicht geschrieben")
+
+    def test_freie_fassung_einigt_auf_garten_unter_dauergruenland(self):
+        """Fassung A/B: die zusammengelegte Liste führt Garten unter Dauergrünland, die Einigung bietet ihn an."""
+        pfad = self.ordner / "kategorien-a.json"
+        dateien.schreibe_json(pfad, {"classes": BEISPIEL_KLASSEN + [
+            {"code": "4", "name": "Dauergrünland", "parent": None, "level": 1},
+            {"code": "4.1", "name": "Garten", "parent": "4", "level": 2}]})
+        self.kat = kategorien.laden(pfad)
+        self.assertEqual(self.kat.garten_maengel(), [])
+        f = self.laden()
+        finden(f, self.bild, self.einst, self.ordner / "einigung")
+        auftrag = dateien.lese_json(self.ordner / "einigung" / "X-01" / "auftrag.json")
+        self.assertTrue(auftrag["kategorien"].endswith("kategorien-a.json"))
+        self.assertIn({"code": "4.1", "name": "Garten", "parent": "4", "level": 2}, auftrag["klassen"])
+        nr = {p["paar"]: p["nr"] for p in auftrag["paare"]}
+        abgabe, probe = abgabe_bauen(f, self.ordner / "einigung", "X-01", "einigung-X-01", [
+            [nr["r0c0:1|r0c0:2"], "gleich", "4.1", "ein Hausgarten über die Viertelgrenze"],
+            [nr["r0c0:1|r1c0:10"], "grenze", "Gartenzaun"], [nr["r0c0:2|r0c1:20"], "grenze", "Hecke"]])
+        self.assertEqual(abgabe["paare"][0]["klasse"], "4.1")
+        self.assertEqual(probe["gleich"], 1)
+        anwenden(f, [abgabe], self.ordner / "einigung")
+        segmente = dateien.lese_json(self.fassung / "r0c0" / "segmente.json")["segmente"]
+        self.assertEqual({s["klasse"] for s in segmente if s["id"] in (1, 2)}, {"4.1"})
+        self.assertTrue(pruefen(dateien.lese_labels(self.fassung / "r0c0" / "labels.tif"),
+                                dateien.lese_json(self.fassung / "r0c0" / "segmente.json"), self.kat, frei=True).ok)
 
     def test_nur_kern(self):
         f = self.laden()

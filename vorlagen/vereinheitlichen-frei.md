@@ -5,6 +5,11 @@ segmentiert und eine eigene, gestufte Liste angelegt (`kategorien-teil.json`). D
 Merkmalen zu einer Liste für den ganzen Ausschnitt zusammen und bildest jeden Code jeder Teilkachel-Liste auf einen
 Code der neuen Liste ab. Du urteilst nicht neu am Bild und änderst keine Abgabe.
 
+Pflicht beim Zusammenlegen (Regel L14 des Skills): Die neue Liste führt die Klasse „Garten“ unter der
+Ebene-1-Klasse „Dauergrünland“ (genau diese Namen, Zusatz in Klammern erlaubt), auch wenn sie keiner trägt.
+Jeder Name für Haus- und Hofgärten (Garten, Gartenland, Grün im Ort am Haus und ähnliche) geht auf sie über;
+Hof, Gartenbaum, Hecke und Gartenweg nicht. `zusammenfuehren` lehnt eine Liste ohne diese Klasse ab.
+
 ## Hinweis des Laufs
 
 {{HINWEIS}}

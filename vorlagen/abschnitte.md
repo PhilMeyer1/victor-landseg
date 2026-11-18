@@ -5,7 +5,8 @@ Bausteine, die `landseg vorbereiten` je nach Fassung in `urteil-viertel.md` und 
 `<!-- abschnitt: … -->`.
 
 <!-- abschnitt: kategorien-fest -->
-`{{REPO}}/kategorien.json` und `{{REPO}}/KATEGORIEN.md`: die gültigen Klassen und Regeln.
+`{{REPO}}/kategorien.json` und `{{REPO}}/KATEGORIEN.md`: die gültigen Klassen und Regeln. Gärten nach Regel L14 des Skills: krautige Grünfläche und Beet im Haus- oder Hofgarten = 3.6 Garten;
+  Wiese/Weide oder Acker mit `im_siedlung: ja` ist nur ein Kandidat, entschieden wird am Bild.
 <!-- abschnitt: kategorien-frei -->
 `{{REPO}}/kategorien.json` und `{{REPO}}/KATEGORIEN.md`: nur Anregung; in dieser Fassung benennst du die Klassen
   selbst (Abschnitt „Klassen frei“).
@@ -21,7 +22,9 @@ die Klassen nicht aus `kategorien.json`, sondern benennst jede Fläche selbst, g
 sicher erkennbar; sonst wiederholt `fein` die mittlere Ebene). Kurze deutsche Namen, gleiche Dinge gleich benannt.
 `klasse_heute` ist der Code der Vorstufe und nur ein Hinweis; `klasse_vorschlag` bleibt `null`; braucht ein
 Eingriff eine Klasse, nimm den Code des geteilten Segments. Unter `klassen_frei` stehen alle Namen, die du benutzt
-hast, je mit `name`, `ebene` (grob, mittel, fein), `eltern` und `merkmal` (woran im Bild erkennbar). Nach allen
+hast, je mit `name`, `ebene` (grob, mittel, fein), `eltern` und `merkmal` (woran im Bild erkennbar). Gärten
+(Regel L14 des Skills: krautige Grünfläche und Beet im Haus- oder Hofgarten) benennst du immer gleich: `grob`
+„Dauergrünland“, `mittel` und `fein` „Garten“; Wiese oder Acker mit `im_siedlung: ja` ist nur ein Kandidat. Nach allen
 Vierteln gleicht ein eigener Agent die Namen zu einer Liste an. Alle übrigen Regeln gelten wie in der festen Liste.
 <!-- abschnitt: gegenprobe -->
 

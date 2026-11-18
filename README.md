@@ -20,7 +20,7 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `landseg/kante.py` | W4 `kante`: Grenze zweier Nachbarsegmente im engen Band auf die Bildkante einrasten; Strecken ohne Bildkante bleiben stehen und werden als „geschätzt“ gemeldet |
 | `einstellungen/` | Einstellungen der Werkzeuge als JSON (`ansicht.json`, `kante.json`, `seite.json`, `einigung.json`, `zoom.json`, `lauf.json`): Schwellen, Größen, Farben; `--einstellungen <datei>` überschreibt einzelne Schlüssel |
 | `landseg/eingriff.py` | W5 `eingriff`: Bearbeiten der Label-Karte (verschmelzen, teilen, Grenze verschieben, Klasse setzen, Polygon zuweisen), immer lückenlos, mit Verlauf |
-| `landseg/pruefen.py` | W6 `pruefen`: Wächter der Lückenlosigkeit (H × W ohne 0, Zusammenhang je Segment, gültige Klassen) |
+| `landseg/pruefen.py` | W6 `pruefen`: Wächter der Lückenlosigkeit (H × W ohne 0, Zusammenhang je Segment, gültige Klassen); mit `--frei` für die Liste einer freien Fassung (A, B) zusätzlich: Klasse „Garten“ unter der Ebene-1-Klasse „Dauergrünland“ (Skill `landseg-agent`, L14) |
 | `landseg/zusammentragen.py` | W7 `zusammentragen`: Abgaben der Teilkacheln (je Teilkachel die letzte Runde, nur der Kern) zur Label-Karte des Ausschnitts; Einheiten, Klassen des Nutzers und offene Fragen aus einem JSON-Auftrag |
 | `landseg/seite.py`, `landseg/seite_vorlage/` | W8 `seite`: Übersichtsseite als eine HTML-Datei (je Bild das Ergebnis, Umschalter zwischen den Fassungen A/B/C mit je eigener Kategorienliste, Ebenen grob/mittel/fein, Lücken, Nähte, Kategorienliste, Kommentare mit Export); Vorlage aus HTML, CSS und JavaScript |
 | `landseg/naht.py` | Nahtregel: an jeder Kerngrenze gleiche ID oder echte Bildkante, gleiche Klasse |

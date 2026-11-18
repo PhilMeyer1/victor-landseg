@@ -94,12 +94,12 @@ def befehl_vorstufe(a) -> int:
 def befehl_pruefen(a) -> int:
     karte = dateien.lese_labels(a.labels)
     segmente = dateien.lese_segmente(a.segmente) if a.segmente else None
-    kat = kategorien.laden(a.kategorien) if segmente is not None else None
+    kat = kategorien.laden(a.kategorien) if segmente is not None or a.frei else None
     form = a.form
     if a.bild:
         with Image.open(a.bild) as bild:
             form = (bild.height, bild.width)
-    befund = pruefen(karte, segmente, kat, form=form, mindestflaeche=a.mindestflaeche)
+    befund = pruefen(karte, segmente, kat, form=form, mindestflaeche=a.mindestflaeche, frei=a.frei)
     return _befund_ausgeben(befund, a.json)
 
 
@@ -519,6 +519,8 @@ def parser() -> argparse.ArgumentParser:
     form.add_argument("--form", type=_form, help="erwartete Form HxW, z. B. 628x628")
     form.add_argument("--bild", help="Bild, dessen Größe die Karte haben muss")
     pr.add_argument("--mindestflaeche", type=int, help="kleinste erlaubte Segmentfläche")
+    pr.add_argument("--frei", action="store_true",
+                    help="Liste einer freien Fassung (A, B): Klasse „Garten“ muss unter „Dauergrünland“ stehen")
     pr.add_argument("--json", action="store_true", help="Befund als JSON")
     pr.set_defaults(fn=befehl_pruefen)
 

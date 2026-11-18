@@ -12,7 +12,7 @@ from pathlib import Path
 
 import numpy as np
 
-from landseg import dateien, lauf, vorbereiten, zusammenfuehren
+from landseg import dateien, kategorien, lauf, vorbereiten, zusammenfuehren
 from landseg.__main__ import main
 from landseg.lauf import LaufFehler
 from tests.hilfe import mini_lauf, mini_urteile
@@ -237,6 +237,28 @@ class LaufTest(unittest.TestCase):
         self.assertEqual(rc, 1, err)
         self.assertIn("ohne Abbildung", err)
         self.assertEqual(_stand(self.daten), vorher)
+
+    def test_freie_liste_ohne_garten_unter_dauergruenland(self):
+        plan = self.vorbereiten()
+        for fassung in ("A", "B"):
+            with self.subTest(fassung=fassung):
+                mini_urteile(plan)
+                ziel = Path(next(v["ergebnis"] for v in plan["vereinheitlichen"] if v["fassung"] == fassung))
+                liste = dateien.lese_json(ziel / "kategorien-entwurf.json")
+                garten = next(k for k in liste["classes"] if k["name"] == "Garten")
+                garten.update(parent="2")   # Garten unter „Offen“ statt unter „Dauergrünland“
+                dateien.schreibe_json(ziel / "kategorien-entwurf.json", liste)
+                vorher = _stand(self.daten)
+                rc, _, err = self.ruf("zusammenfuehren", "--manifest", str(self.manifest), "--ziel", str(self.ziel))
+                self.assertEqual(rc, 1, err)
+                self.assertIn("„Garten“ steht unter 2 „Offen“", err)
+                self.assertEqual(_stand(self.daten), vorher)
+        mini_urteile(plan)
+        rc, aus, err = self.ruf("zusammenfuehren", "--manifest", str(self.manifest), "--ziel", str(self.ziel), "--json")
+        self.assertEqual(rc, 0, err)
+        for k, ordner in (("a", "a-alles-frei"), ("b", "b-kategorien-frei")):
+            kat = kategorien.laden(self.daten / ordner / f"kategorien-{k}.json")
+            self.assertEqual(kat.garten_maengel(), [], k)
 
 
 if __name__ == "__main__":
