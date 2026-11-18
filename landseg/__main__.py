@@ -226,7 +226,11 @@ def befehl_seite(a) -> int:
                      f"{t['id']} {t['segmente']} Segmente, pruefen {'ok' if t['pruefen_ok'] else 'FEHLER'}"
                      for t in f["teilkacheln"]]
             naht_text = "nicht geprüft" if f["naht"] is None else f["naht"]
-            print(f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Nahtverstöße {naht_text}")
+            e = f["einigung"]
+            einigung_text = ("nicht gezählt" if e is None else
+                             f"{e['stellen']} (davon {e['unsicher']} unsicher belegt)")
+            print(f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Schnittlinien ohne Bildkante "
+                  f"{naht_text}; gleiche Fläche, verschiedene Klasse {einigung_text}")
         print(f"Seite: {erg['ziel']} ({erg['groesse'] // 1024} KiB)")
     if a.oeffnen:
         import webbrowser

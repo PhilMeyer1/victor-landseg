@@ -201,7 +201,10 @@ Die Maus nennt für die Stelle unter ihr das Segment mit allen Ebenen
 Segment („Gewählt“), die Leiste zeigt es im selben Format samt aller Felder aus `segmente.json`.
 Schalter: Ebene (grob/mittel/fein, soweit die Fassung sie hat), Flächen (mit Deckkraft), Umriss,
 Lücken (Bildpunkte ohne Segment rot), Nähte (Verstöße der Nahtregel an den Kerngrenzen, auf den
-zusammengesetzten Kernen geprüft, sobald alle Teilkacheln einer Fassung vorliegen), Nur unsicher,
+zusammengesetzten Kernen geprüft, sobald alle Teilkacheln einer Fassung vorliegen; dazu zwei getrennte Zahlen
+je Teilkachel und für den ganzen Ausschnitt: „Schnittlinien an Nähten ohne Bildkante“ wie `naht` und „Stellen, an
+denen gleiche Flächen verschiedene Klassen haben (davon unsicher belegt)“ wie `einigung messen`, ein Segment-Paar
+je Stelle, Nähte und Viertelgrenzen; das Luftbild liest die Seite mit `naht.lese_bild`), Nur unsicher,
 Gitter (alle `gitter_abstand` Bildpunkte), Kategorien (Liste mit Segmentzahl und Flächenanteil;
 Klick hebt eine Kategorie hervor). Unter dem Kopf liegt die Kachel-Wahl in fester Höhe: „vorige“,
 „Ganzer Ausschnitt“, je Teilkachel ein Reiter mit Nummer, Miniatur des Kerns, Raster-Symbol und Lage in

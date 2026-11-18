@@ -2,7 +2,9 @@
 
 Je Bild ein Stand, das Ergebnis, in einem großen Bild: Ebene grob/mittel/fein umschaltbar, Klassifikation
 jedes Segments unter der Maus und per Klick, Kategorienliste mit Segmentzahl und Flächenanteil, Lückenkarte,
-Naht-Ebene (Nahtregel auf den zusammengesetzten Kernen), Übersicht des ganzen Ausschnitts und Kommentare mit
+Naht-Ebene (Nahtregel auf den zusammengesetzten Kernen) mit zwei Zahlen: Schnittlinien ohne Bildkante
+(``naht``) und Stellen, an denen gleiche Flächen verschiedene Klassen haben (``einigung``, davon unsicher
+belegt), Übersicht des ganzen Ausschnitts und Kommentare mit
 Export als JSON. Ein Umschalter wechselt zwischen den Fassungen desselben Ausschnitts (Einstellung
 ``fassungen``: Kennung, Name, Beschreibung, Ordner mit ``<teilkachel>/labels.tif`` und ``segmente.json``,
 eigene Kategorienliste); eine Fassung ohne Daten erscheint ausgegraut.
@@ -23,7 +25,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from . import dateien, einstellungen, naht
+from . import dateien, einigung, einstellungen, naht
 from . import kategorien as kategorien_modul
 from .kategorien import Kategorien
 from .pruefen import pruefen
@@ -60,9 +62,10 @@ def labels_als_rgb(karte: np.ndarray) -> np.ndarray:
     return np.stack([(k & 255), (k >> 8) & 255, (k >> 16) & 255], axis=-1).astype(np.uint8)
 
 
-def _lese_bild(pfad: Path) -> np.ndarray:
-    with Image.open(pfad) as bild:
-        return np.asarray(bild.convert("RGB"))
+def _als_bild(bild: np.ndarray) -> np.ndarray:
+    """Bild aus ``naht.lese_bild`` (float32, ein oder drei Kanäle) als uint8 zum Einbetten."""
+    feld = np.clip(np.rint(bild), 0, 255).astype(np.uint8)
+    return feld[:, :, 0] if feld.shape[2] == 1 else feld
 
 
 def _stand_lesen(ordner: Path, teilkachel: dict, kat: Kategorien) -> dict | None:
@@ -106,6 +109,35 @@ def _naht(manifest: dict, gesamt: np.ndarray | None, ausschnitt_bild: np.ndarray
     return befund.als_dict()
 
 
+def _einigung(kennung: str, ordner: Path, kat: Kategorien, manifest: dict, basis: Path,
+              staende: dict[str, dict | None], ausschnitt_bild: np.ndarray,
+              einst: dict) -> tuple[list[dict] | None, str | None]:
+    """Stellen der Einigung (``einigung.stellen``) auf den schon gelesenen Ständen, mit der Nahtregel der Seite.
+
+    ``(None, None)``, wenn eine Teilkachel fehlt; ``(None, Grund)``, wenn die Daten nicht zählbar sind (etwa ein
+    Segment der Karte fehlt in ``segmente.json``; das zeigt die Seite schon über ``pruefen``)."""
+    if any(staende.get(t["id"]) is None for t in manifest["teilkacheln"]):
+        return None, None
+    f = einigung.Fassung(kennung, ordner, kat, manifest, basis,
+                         {tk: s["karte"] for tk, s in staende.items()},
+                         {tk: s["segmente"] for tk, s in staende.items()})
+    try:
+        return einigung.stellen(f, ausschnitt_bild, {"naht": einst.get("naht")}), None
+    except einigung.EinigungFehler as fehler:
+        return None, str(fehler)
+
+
+def _einigung_zahl(liste: list[dict] | None, teilkachel: str | None = None) -> dict | None:
+    """Zahlen wie ``einigung messen``, wahlweise nur für Paare mit einem Segment dieser Teilkachel; dazu
+    ``stellen`` = gleiche Fläche, verschiedene Klasse (offen und unsicher belegt)."""
+    if liste is None:
+        return None
+    if teilkachel is not None:
+        liste = [p for p in liste if any(s.split(":", 1)[0] == teilkachel for s in p["segmente"])]
+    z = einigung.zahlen(liste)
+    return {**z, "stellen": z["offen"]["paare"] + z["unsicher"]["paare"]}
+
+
 def _segment_liste(daten: dict) -> list[dict]:
     """Segmente für die Seite: alle Felder aus ``segmente.json``, dazu die Eingriffe aus dem Verlauf,
     die das Segment nennen."""
@@ -130,7 +162,8 @@ def _segment_liste(daten: dict) -> list[dict]:
     return liste
 
 
-def _stand_fuer_seite(stand: dict | None, naht_befund: dict | None, teilkachel: dict) -> dict | None:
+def _stand_fuer_seite(stand: dict | None, naht_befund: dict | None, teilkachel: dict,
+                      stellen: list[dict] | None) -> dict | None:
     if stand is None:
         return None
     verstoesse = []
@@ -143,7 +176,7 @@ def _stand_fuer_seite(stand: dict | None, naht_befund: dict | None, teilkachel: 
                                "bis": [v["bis"][0] - dx, v["bis"][1] - dy]})
     return {"labels": _png(labels_als_rgb(stand["karte"])), "segmente": _segment_liste(stand["segmente"]),
             "pruefen": stand["befund"], "kandidaten": stand["kandidaten"], "naht": verstoesse,
-            "quelle": stand["quelle"]}
+            "einigung": _einigung_zahl(stellen, teilkachel["id"]), "quelle": stand["quelle"]}
 
 
 def lage_in_worten(zeile: int, spalte: int, zeilen: int, spalten: int) -> str:
@@ -201,6 +234,7 @@ def _fassung_lesen(eintrag: dict, basis: Path, kat_standard: Kategorien, manifes
         return {**kopf, "vorhanden": False}
     gesamt = _zusammensetzen(manifest, staende)
     naht_befund = _naht(manifest, gesamt, ausschnitt_bild, einst)
+    stellen, einigung_fehler = _einigung(kennung, ordner, kat, manifest, basis, staende, ausschnitt_bild, einst)
     # Klassen je Ebene wie in der Kategorienliste gezählt: die Klassen dieser Ebene und die Blätter darüber
     eltern = {k.get("parent") for k in kat.klassen.values()}
     ebenen = {e: sum(1 for code, k in kat.klassen.items()
@@ -215,7 +249,10 @@ def _fassung_lesen(eintrag: dict, basis: Path, kat_standard: Kategorien, manifes
                    for e, n in sorted(ebenen.items())],
         "gesamt": _png(labels_als_rgb(gesamt)) if gesamt is not None else None,
         "naht": naht_befund,
-        "teilkacheln": {t["id"]: _stand_fuer_seite(staende[t["id"]], naht_befund, t) for t in manifest["teilkacheln"]},
+        "einigung": _einigung_zahl(stellen),
+        "einigung_fehler": einigung_fehler,
+        "teilkacheln": {t["id"]: _stand_fuer_seite(staende[t["id"]], naht_befund, t, stellen)
+                        for t in manifest["teilkacheln"]},
     }
 
 
@@ -230,7 +267,7 @@ def seite_daten(manifest_pfad: str | Path, kat: Kategorien, kommentare: str | Pa
     if not isinstance(liste, list) or not liste:
         raise SeiteFehler("Einstellung 'fassungen' fehlt oder ist leer")
     ausschnitt = manifest["ausschnitt"]
-    ausschnitt_bild = _lese_bild(basis / ausschnitt["bild"])
+    ausschnitt_bild = naht.lese_bild(basis / ausschnitt["bild"])  # derselbe Leser wie naht und einigung
     fassungen = [_fassung_lesen(e, basis, kat, manifest, ausschnitt_bild, einst) for e in liste]
     kennungen = [f["kennung"] for f in fassungen]
     if len(set(kennungen)) != len(kennungen):
@@ -247,13 +284,14 @@ def seite_daten(manifest_pfad: str | Path, kat: Kategorien, kommentare: str | Pa
     teilkacheln = [{"id": t["id"], "zeile": t["zeile"], "spalte": t["spalte"], "nummer": nummer[t["id"]],
                     "lage": lage_in_worten(t["zeile"], t["spalte"], zeilen, spalten),
                     "kern": t["kern"], "kontext": t["kontext"], "kern_im_bild": t["kern_im_bild"],
-                    "bild": _png(_lese_bild(basis / t["bild"]))} for t in manifest["teilkacheln"]]
+                    "bild": _png(_als_bild(naht.lese_bild(basis / t["bild"])))} for t in manifest["teilkacheln"]]
     return {
         "schema": "landseg-seite/2",
         "erstellt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "name": ausschnitt.get("name", manifest_pfad.parent.name),
         "manifest": _pfad_text(manifest_pfad),
-        "ausschnitt": {"breite": ausschnitt["breite"], "hoehe": ausschnitt["hoehe"], "bild": _png(ausschnitt_bild)},
+        "ausschnitt": {"breite": ausschnitt["breite"], "hoehe": ausschnitt["hoehe"],
+                       "bild": _png(_als_bild(ausschnitt_bild))},
         "teilkacheln": teilkacheln,
         "fassungen": fassungen,
         "kommentare": _kommentare_lesen(Path(kommentare) if kommentare else None),
@@ -290,6 +328,8 @@ def seite(manifest_pfad: str | Path, ziel: str | Path, kat: Kategorien, kommenta
         zeile = {"kennung": f["kennung"], "name": f["name"], "vorhanden": f["vorhanden"], "quelle": f["quelle"]}
         if f["vorhanden"]:
             zeile["naht"] = None if f["naht"] is None else len(f["naht"]["verstoesse"])
+            e = f["einigung"]
+            zeile["einigung"] = None if e is None else {"stellen": e["stellen"], "unsicher": e["unsicher"]["paare"]}
             zeile["teilkacheln"] = [
                 {"id": tk, "segmente": len(s["segmente"]), "pruefen_ok": s["pruefen"]["ok"], "naht": len(s["naht"])}
                 if s else {"id": tk} for tk, s in f["teilkacheln"].items()]
