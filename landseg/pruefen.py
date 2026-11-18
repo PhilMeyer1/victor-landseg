@@ -4,7 +4,9 @@ Geprüft wird: Form H × W (wenn erwartet), kein Bildpunkt mit ID 0, jede ID ein
 Gebiet (4er-Nachbarschaft), und mit ``segmente.json`` und Kategorienliste: jede ID der Karte hat
 genau einen Eintrag mit gültiger Klasse, kein Eintrag ohne Bildpunkte, ``grob`` passt zur Klasse, ``im_siedlung`` ist ``ja``, ``nein`` oder fehlt.
 Optional: Mindestfläche je Segment; ``frei``: die Liste einer freien Fassung (A, B) führt die Klasse „Garten“
-unter der Ebene-1-Klasse „Dauergrünland“ (``kategorien.garten_maengel``).
+unter der Ebene-1-Klasse „Dauergrünland“ (``kategorien.garten_maengel``); ``richtwert``: mehr Segmente (im Kern,
+wenn ``kern`` genannt ist) als dieser Richtwert der Bildart ergeben einen Hinweis, keinen Mangel (``ok`` und
+Exit-Code bleiben).
 """
 
 from __future__ import annotations
@@ -28,6 +30,7 @@ class Befund:
     segmentzahl: int = 0
     nicht_zusammenhaengend: list[int] = field(default_factory=list)
     maengel: list[str] = field(default_factory=list)
+    hinweise: list[str] = field(default_factory=list)  # Warnungen, ändern ``ok`` nicht
 
     @property
     def ok(self) -> bool:
@@ -47,6 +50,7 @@ class Befund:
             "segmentzahl": self.segmentzahl,
             "nicht_zusammenhaengend": self.nicht_zusammenhaengend,
             "maengel": self.maengel,
+            "hinweise": self.hinweise,
         }
 
     def als_text(self) -> str:
@@ -60,6 +64,7 @@ class Befund:
         else:
             zeilen.append(f"FEHLER: {len(self.maengel)} Mängel")
             zeilen.extend(f"- {m}" for m in self.maengel)
+        zeilen.extend(f"Hinweis: {h}" for h in self.hinweise)
         return "\n".join(zeilen)
 
 
@@ -88,6 +93,8 @@ def pruefen(
     form: tuple[int, int] | None = None,
     mindestflaeche: int | None = None,
     frei: bool = False,
+    richtwert: int | None = None,
+    kern: dict | None = None,
 ) -> Befund:
     hoehe, breite = karte.shape
     befund = Befund(hoehe=hoehe, breite=breite)
@@ -122,6 +129,18 @@ def pruefen(
                 befund.maengel.append(
                     f"Mindestfläche: Segment {sid} hat {fl} Bildpunkte (< {mindestflaeche})"
                 )
+
+    if richtwert:
+        if kern:
+            ausschnitt = karte[kern["y"]:kern["y"] + kern["hoehe"], kern["x"]:kern["x"] + kern["breite"]]
+            zahl, wo = len(np.unique(ausschnitt[ausschnitt != 0])), "im Kern"
+        else:
+            zahl, wo = befund.segmentzahl, "in der Karte"
+        if zahl > richtwert:
+            befund.hinweise.append(
+                f"Richtwert: {zahl} Segmente {wo} > {richtwert} (Bildart mit Richtwert, einstellungen/bildarten.json); "
+                f"kleine unklare Flächen mit dem Nachbarn zusammenlegen"
+            )
 
     if frei:
         if kategorien is None:

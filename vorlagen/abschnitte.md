@@ -2,7 +2,19 @@
 
 Bausteine, die `landseg vorbereiten` je nach Fassung in `urteil-viertel.md` und `frei.md` einsetzt (Platzhalter
 `{{KATEGORIEN}}`, `{{FASSUNG_ABSCHNITT}}`, `{{GEGENPROBE}}`). Ein Abschnitt reicht bis zum nächsten Kopf
-`<!-- abschnitt: … -->`.
+`<!-- abschnitt: … -->`. `feinheit-<bildart>` setzt `{{FEINHEIT}}` je Bildart (`einstellungen/bildarten.json`; Farbe:
+leer, der Auftrag bleibt wie bisher), mit `{{RICHTWERT}}`, `{{MINDESTFLAECHE_QM}}`, `{{MINDESTFLAECHE_PX}}`.
+
+<!-- abschnitt: feinheit-farbe -->
+<!-- abschnitt: feinheit-sw -->
+**Feinheit auf diesem Schwarz-Weiß-Scan (Regel L15):** Das Bild ist alt und niedrig aufgelöst; Korn und Rauschen
+sind keine Flächen. Richtwert für die Teilkachel: höchstens rund {{RICHTWERT}} Segmente im Kern. Kleiner als
+{{MINDESTFLAECHE_QM}} m² ({{MINDESTFLAECHE_PX}} Bildpunkte) bleibt eine Fläche nur, wenn sie ein klar erkennbares
+Objekt ist (Haus, Einzelbaum, schmaler Weg, Garten am Haus) und du sie mit `sicher: ja` urteilst; ein klar
+erkennbarer Garten am Haus bleibt eigene Fläche „Garten“ (L14), ein unklarer geht in die Nachbarfläche. Jede
+andere kleinere Fläche legst du mit dem passenden Nachbarn zusammen (`eingriff verschmelzen`, Klasse der größeren
+Fläche). Nachsegmentieren nur für klar erkennbare Objekte, nie für Helligkeitsflecken. `pruefen --manifest …
+--teilkachel …` meldet ein Überschreiten des Richtwerts als Hinweis.
 
 <!-- abschnitt: kategorien-fest -->
 `{{REPO}}/kategorien.json` und `{{REPO}}/KATEGORIEN.md`: die gültigen Klassen und Regeln. Gärten nach Regel L14 des Skills: krautige Grünfläche und Beet im Haus- oder Hofgarten = 3.6 Garten;

@@ -5,7 +5,8 @@ Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``ansicht`` (W3), ``kante`` (W4), 
 ``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``abgabe``, ``messen``),
 ``urteil`` (``urteil.json`` aus kurzer Liste bauen, prüfen), ``zoom`` (Ausschnitt einer Stelle mit Umriss und
 Nummern), ``messung`` (Kosten eines Agent-Laufs aus den Transkripten), ``plan`` (Urteils-Agents eines Laufs:
-ein Agent je Viertel, Fassung A je Teilkachel, mit Prompt). Exit-Code 0 = ok, 1 = Befund,
+ein Agent je Viertel, Fassung A je Teilkachel, mit Prompt), ``bildart`` (Feinheit der Bildart: Richtwert,
+Mindestfläche), ``vergroebern`` (kleine Flächen einer Fassung mit dem Nachbarn zusammenlegen). Exit-Code 0 = ok, 1 = Befund,
 Nahtverstoß, offene Stellen oder Eingriff/Abgabe/Urteil abgelehnt, 2 = Aufruf- oder Lesefehler.
 """
 
@@ -19,6 +20,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
+from . import bildart as bildart_modul
 from . import dateien, einstellungen, kategorien, naht
 from . import urteil as urteil_modul
 from . import zoom as zoom_modul
@@ -81,7 +83,8 @@ def befehl_vorstufe(a) -> int:
     else:
         if not a.ziel or a.teilkachel:
             raise VorstufeFehler("--bild braucht --ziel und kennt keine --teilkachel")
-        auftraege = [Auftrag(name=Path(a.bild).stem, bild=Path(a.bild), ziel=Path(a.ziel))]
+        auftraege = [Auftrag(name=Path(a.bild).stem, bild=Path(a.bild), ziel=Path(a.ziel),
+                             bildart=bildart_modul.bildart_von_bild(a.bild))]
 
     def modell_laden():
         from .sam3 import Sam3Vorschlag
@@ -99,8 +102,96 @@ def befehl_pruefen(a) -> int:
     if a.bild:
         with Image.open(a.bild) as bild:
             form = (bild.height, bild.width)
-    befund = pruefen(karte, segmente, kat, form=form, mindestflaeche=a.mindestflaeche, frei=a.frei)
+    richtwert, kern = a.richtwert, None
+    if a.manifest:
+        if not a.teilkachel:
+            raise ValueError("--manifest braucht --teilkachel (Richtwert und Kern der Teilkachel)")
+        manifest = dateien.lese_json(a.manifest)
+        fein = bildart_modul.feinheit_aus_manifest(manifest, a.teilkachel)
+        richtwert = richtwert or fein["richtwert"]
+        kern = next(t["kern_im_bild"] for t in manifest["teilkacheln"] if t["id"] == a.teilkachel)
+    befund = pruefen(karte, segmente, kat, form=form, mindestflaeche=a.mindestflaeche, frei=a.frei,
+                     richtwert=richtwert, kern=kern)
     return _befund_ausgeben(befund, a.json)
+
+
+def befehl_bildart(a) -> int:
+    manifest = dateien.lese_json(a.manifest)
+    fein = bildart_modul.feinheit_aus_manifest(manifest, a.teilkachel)
+    if a.auftrag:
+        print(bildart_modul.auftrag_block(fein).strip())
+    else:
+        print(json.dumps(fein, ensure_ascii=False) if a.json else bildart_modul.feinheit_text(fein))
+    return 0
+
+
+def _fassungs_kategorien(ordner: Path, pfad: str | None):
+    if pfad:
+        return kategorien.laden(pfad)
+    listen = sorted(ordner.glob("kategorien-*.json"))
+    return kategorien.laden(listen[0] if len(listen) == 1 else None)
+
+
+def befehl_vergroebern(a) -> int:
+    """Alle Teilkacheln der Fassung bleiben bis zum Schreiben gesperrt und geladen: Beschlüsse der Einigung nennen
+    Segmente der Nachbarn, ``einigung_umbenennen`` stellt sie in der ganzen Fassung um."""
+    from contextlib import ExitStack
+    manifest = dateien.lese_json(a.manifest)
+    ordner = Path(a.ordner)
+    kat = _fassungs_kategorien(ordner, a.kategorien)
+    teil = {t["id"]: t for t in manifest["teilkacheln"]}
+    for tk in a.teilkachel or []:
+        if tk not in teil:
+            raise ValueError(f"Teilkachel {tk!r} fehlt im Manifest")
+    fehler = 0
+    with ExitStack() as sperren:
+        arbeiten: dict[str, Bearbeitung] = {}
+        for tk in teil:
+            labels = ordner / tk / "labels.tif"
+            if labels.exists():
+                sperren.enter_context(dateien.karte_sperren(labels))
+                arbeiten[tk] = Bearbeitung(dateien.lese_labels(labels), dateien.lese_segmente(
+                    ordner / tk / "segmente.json"), kat, a.bearbeiter)
+        ersetzt: dict[str, dict[int, int]] = {}
+        zeilen: dict[str, tuple[dict, dict]] = {}
+        for tk in a.teilkachel or list(teil):
+            fein = bildart_modul.feinheit_aus_manifest(manifest, tk)
+            if not fein["mindest_px"]:
+                print(f"{tk}: {bildart_modul.feinheit_text(fein)}; nichts zusammenzulegen")
+                continue
+            if tk not in arbeiten:
+                raise ValueError(f"{ordner / tk / 'labels.tif'} fehlt")
+            erg = bildart_modul.kleine_zusammenlegen(arbeiten[tk], fein["mindest_px"], fein["schutz"],
+                                                     teil[tk]["kern_im_bild"], kat)
+            ersetzt[tk] = erg["ersetzt"]
+            zeilen[tk] = (fein, erg)
+        umbenannt = bildart_modul.einigung_umbenennen(arbeiten, ersetzt)
+        for tk, (fein, erg) in zeilen.items():
+            arbeit, kern = arbeiten[tk], teil[tk]["kern_im_bild"]
+            befund = pruefen(arbeit.karte, arbeit.segmente, kat, richtwert=fein["richtwert"], kern=kern)
+            im_kern = len(np.unique(arbeit.karte[kern["y"]:kern["y"] + kern["hoehe"],
+                                                  kern["x"]:kern["x"] + kern["breite"]]))
+            b = erg["bleiben_unter_mindest"]
+            print(f"{tk}: Segmente {erg['vorher']} -> {erg['nachher']} (im Kern {im_kern}, Richtwert {fein['richtwert']}), "
+                  f"zusammengelegt {erg['zusammengelegt']}, davon an Kern- und Viertelgrenzen {erg['an_der_naht']} "
+                  f"(Einigung mitgenommen {erg['einigung_umgezogen']}); unter {fein['mindest_px']} Bildpunkten "
+                  f"bleiben: geschützt {b['schutz']}, an der Grenze ohne Nachbarn gleicher Klasse {b['naht']}; "
+                  f"pruefen {'ok' if befund.ok else 'FEHLER'}" + (" (Probe, nichts geschrieben)" if a.probe else ""))
+            for h in befund.hinweise:
+                print(f"  Hinweis: {h}")
+            if not befund.ok:
+                print(befund.als_text())
+                fehler += 1
+        print(f"Einigung: {sum(umbenannt.values())} Beschlüsse auf die zusammengelegten Segmente umgestellt")
+        if not a.probe and not fehler:
+            for tk, arbeit in arbeiten.items():
+                if tk in zeilen:
+                    dateien.schreibe_labels(ordner / tk / "labels.tif", arbeit.karte)
+                if tk in zeilen or umbenannt.get(tk):
+                    dateien.schreibe_json(ordner / tk / "segmente.json", arbeit.segmente)
+        elif fehler:
+            print("nichts geschrieben (pruefen meldet Fehler)")
+    return 1 if fehler else 0
 
 
 def befehl_eingriff(a) -> int:
@@ -522,7 +613,28 @@ def parser() -> argparse.ArgumentParser:
     pr.add_argument("--frei", action="store_true",
                     help="Liste einer freien Fassung (A, B): Klasse „Garten“ muss unter „Dauergrünland“ stehen")
     pr.add_argument("--json", action="store_true", help="Befund als JSON")
+    pr.add_argument("--manifest", help="manifest.json (mit --teilkachel): Richtwert der Bildart für den Kern melden")
+    pr.add_argument("--teilkachel", help="ID der Teilkachel im Manifest, z. B. r0c1")
+    pr.add_argument("--richtwert", type=int, help="Hinweis, wenn mehr Segmente (im Kern) als dieser Wert")
     pr.set_defaults(fn=befehl_pruefen)
+
+    ba = befehle.add_parser("bildart", help="Bildart und Feinheit (Richtwert, Mindestfläche) aus dem Manifest")
+    ba.add_argument("--manifest", required=True, help="manifest.json von kacheln")
+    ba.add_argument("--teilkachel", help="Richtwert für den Kern dieser Teilkachel (sonst für den Ausschnitt)")
+    ba.add_argument("--json", action="store_true", help="als JSON")
+    ba.add_argument("--auftrag", action="store_true", help="Text für {{FEINHEIT}} der Vorlagen (Farbe: leer)")
+    ba.set_defaults(fn=befehl_bildart)
+
+    vg = befehle.add_parser("vergroebern", help="kleine Flächen einer Fassung mit dem Nachbarn zusammenlegen "
+                                                 "(Bildart mit Mindestfläche, über eingriff verschmelzen)")
+    vg.add_argument("--manifest", required=True, help="manifest.json von kacheln")
+    vg.add_argument("--ordner", required=True, help="Fassungsordner mit <teilkachel>/labels.tif und segmente.json")
+    vg.add_argument("--teilkachel", action="append", help="ID aus dem Manifest, mehrfach; Standard alle")
+    vg.add_argument("--kategorien", help="Kategorienliste der Fassung (Standard: die eine kategorien-*.json im "
+                                         "Ordner, sonst die des Repos)")
+    vg.add_argument("--bearbeiter", default="vergroebern", help="Name im Verlauf (Standard vergroebern)")
+    vg.add_argument("--probe", action="store_true", help="nur zählen, nichts schreiben")
+    vg.set_defaults(fn=befehl_vergroebern)
 
     an = befehle.add_parser("ansicht", help="W3: Standardbilder je Teilkachel und Segment")
     quelle = an.add_mutually_exclusive_group(required=True)
@@ -757,7 +869,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Abgelehnt: {fehler}", file=sys.stderr)
         return 1
     except (KachelFehler, VorstufeFehler, AnsichtFehler, ZusammenFehler, SeiteFehler, ValueError, OSError,
-            KeyError) as fehler:
+            KeyError, bildart_modul.BildartFehler, EingriffFehler) as fehler:
         print(f"Fehler: {fehler}", file=sys.stderr)
         return 2
 

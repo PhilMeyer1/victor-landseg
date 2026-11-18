@@ -81,6 +81,16 @@ Stitcher-Methode übernommen und auf Landschaft umgestellt (Ermittlung `landseg-
   freie Liste führt die Klasse „Garten“ unter der Ebene-1-Klasse „Dauergrünland“ (genau diese Namen, ein
   Zusatz in Klammern ist erlaubt), auch wenn noch kein Segment sie trägt; wer Listen zusammenlegt, erhält
   sie dort und bildet jeden Gartennamen der Teil-Listen auf sie ab. `pruefen --frei` meldet sonst einen Fehler.
+- **L15 Feinheit je Bildart.** L5 meint die Genauigkeit der Grenzen, nicht die Größe der Flächen. Wie klein
+  Flächen werden dürfen, hängt an der Bildart (`einstellungen/bildarten.json`, aus dem Manifest; Aufruf
+  `landseg bildart --manifest … --teilkachel …`). Farb-Orthofoto: so fein, wie sicher erkennbar, ohne Richtwert.
+  Schwarz-Weiß-Scan (alt, niedrig aufgelöst, ein Kanal): Richtwert rund 600 Segmente je Ausschnitt von
+  1000 × 1000 Bildpunkten (Teilkachel mit Kern 500 × 500: 150), Mindestfläche 100 m²; kleiner nur ein klar
+  erkennbares Objekt (Haus, Einzelbaum, schmaler Weg, Garten am Haus), das du mit `sicher: ja` urteilst. Ein klar
+  erkennbarer Garten am Haus bleibt eigene Fläche „Garten“ (L14), ein unklarer geht in die Nachbarfläche. Korn,
+  Rauschen und Helligkeitsflecken sind keine Flächen: zusammenlegen (`eingriff verschmelzen`, Klasse der größeren
+  Fläche), nachsegmentieren nur klar erkennbare Objekte. Die Zahlen setzt der Auftrag ein (`{{FEINHEIT}}`);
+  `pruefen --manifest … --teilkachel …` meldet ein Überschreiten als Hinweis.
 
 ## Abgabe und Rückgabe
 

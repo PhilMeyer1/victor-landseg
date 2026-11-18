@@ -4,7 +4,7 @@ Lies zuerst den Skill `landseg-agent` (`{{REPO}}/.claude/skills/landseg-agent/SK
 Regeln gelten hier. Antworte auf Deutsch.
 
 Gegenstand: Teilkachel `{{TEILKACHEL}}` des Ausschnitts in `{{DATEN}}`. Der Nutzer hat die Vorlagen
-des Urteils geprüft und bestätigt. Was er anders will: {{ABWEICHUNGEN}}
+des Urteils geprüft und bestätigt. Was er anders will: {{ABWEICHUNGEN}}{{FEINHEIT}}
 
 ## Daten (eingefrorener Stand, nur lesen)
 

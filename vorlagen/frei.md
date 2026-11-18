@@ -20,7 +20,7 @@ mit Grenzen der Vorstufe `{{TEILKACHEL_BILD}}`), und nennst beide in `arbeitswei
 
 ## Hinweis des Laufs
 
-{{HINWEIS}}
+{{HINWEIS}}{{FEINHEIT}}
 {{GEGENPROBE}}
 ## Daten (nur lesen)
 

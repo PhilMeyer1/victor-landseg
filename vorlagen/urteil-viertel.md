@@ -26,7 +26,7 @@ Grenzen, Nummern, Viertel v1–v4; `{{TEILKACHEL_ROH}}` unverändert). Beide ste
 
 ## Hinweis des Laufs
 
-{{HINWEIS}}
+{{HINWEIS}}{{FEINHEIT}}
 
 ## Dein Viertel
 

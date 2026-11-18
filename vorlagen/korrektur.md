@@ -6,7 +6,7 @@ Regeln gelten hier. Antworte auf Deutsch.
 Gegenstand: Teilkachel `{{TEILKACHEL}}` des Ausschnitts in `{{DATEN}}`. Der Nutzer hat den
 zusammengetragenen Stand auf der Prüfseite angesehen und kommentiert. Deine Kommentare, wörtlich:
 
-{{KOMMENTARE}}
+{{KOMMENTARE}}{{FEINHEIT}}
 
 ## Daten (eingefrorener Stand, nur lesen)
 

@@ -31,6 +31,7 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 
+from . import bildart
 from . import dateien, einstellungen, kategorien, lauf, naht
 from .ansicht import Ansicht, Fenster, _text, grenzen
 from .ansicht import ansicht as ansicht_schreiben
@@ -346,6 +347,7 @@ def bauen(manifest: str | Path, ziel: str | Path, *, werte: dict | None = None, 
 
     # 3. Aufträge aus den Vorlagen
     basis = _werte_basis(l, py, hinweis)
+    feinheit = {tk: bildart.auftrag_block(bildart.feinheit_aus_manifest(l.manifest, tk)) for tk in l.tks}
     plan = {"schema": SCHEMA, "erstellt": time.strftime("%Y-%m-%dT%H:%M:%S%z"), "lauf": lauf_name,
             "manifest": p(l.manifest_pfad), "ganz_ausschnitt": p(l.daten / l.manifest["ausschnitt"]["bild"]),
             "ganz_raster": raster, "ganz_teilkachel": {tk: erg[tk]["ganz"] for tk in l.tks},
@@ -357,7 +359,8 @@ def bauen(manifest: str | Path, ziel: str | Path, *, werte: dict | None = None, 
         ein, t = erg[tk]["ein"], l.teil[tk]
         liste = ein["liste"][v]
         x, y, bb, hh = ein["rechtecke"][v]
-        w = {**basis, "TEILKACHEL": tk, "VIERTEL": v, "VIERTEL_LAGE": LAGE[v], "SEGMENTZAHL": str(len(liste)),
+        w = {**basis, "TEILKACHEL": tk, "FEINHEIT": feinheit[tk],
+             "VIERTEL": v, "VIERTEL_LAGE": LAGE[v], "SEGMENTZAHL": str(len(liste)),
              "FASSUNG_NAME": (f"Gegenprobe (Zweitagent, {f.titel})" if gp else f.titel),
              "LABELS": p((karte / "labels.tif").relative_to(l.daten)),
              "SEGMENTE": p((karte / "segmente.json").relative_to(l.daten)),
@@ -387,7 +390,7 @@ def bauen(manifest: str | Path, ziel: str | Path, *, werte: dict | None = None, 
         else:
             for tk in l.tks:
                 ergebnis = f.unter("ergebnis", "abgabe") / tk
-                w = {**basis, "TEILKACHEL": tk, "FASSUNG_NAME": f.titel, "ERGEBNIS": p(ergebnis),
+                w = {**basis, "TEILKACHEL": tk, "FEINHEIT": feinheit[tk], "FASSUNG_NAME": f.titel, "ERGEBNIS": p(ergebnis),
                      "AUSSCHNITT_BILD": raster, "TEILKACHEL_BILD": erg[tk]["ganz"]["nummern"],
                      "TEILKACHEL_ROH": erg[tk]["ganz"]["roh"], "TEILKACHEL_DATEI": l.teil[tk]["bild"],
                      "LABELS": p((l.vorstufe / tk / "labels.tif").relative_to(l.daten)),

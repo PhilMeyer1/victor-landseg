@@ -5,7 +5,7 @@ Regeln gelten hier. Antworte auf Deutsch.
 
 Gegenstand: Teilkachel `{{TEILKACHEL}}` des Ausschnitts in `{{DATEN}}`. Du urteilst über jedes
 Segment, das im Kern dieser Teilkachel liegt, ob Grenze und Klasse stimmen, und zeichnest ein, was
-du ändern würdest. Die Label-Karte änderst du nicht.
+du ändern würdest. Die Label-Karte änderst du nicht.{{FEINHEIT}}
 
 ## Daten (eingefrorener Stand, nur lesen)
 

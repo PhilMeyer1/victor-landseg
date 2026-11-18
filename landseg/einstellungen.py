@@ -19,9 +19,16 @@ def laden(werkzeug: str, pfad: str | Path | None = None) -> dict:
     """Standard-Einstellungen des Werkzeugs, mit ``pfad`` überschrieben."""
     werte = lese_json(STANDARD_ORDNER / f"{werkzeug}.json")
     if pfad:
-        for schluessel, wert in lese_json(pfad).items():
-            if isinstance(wert, dict) and isinstance(werte.get(schluessel), dict):
-                werte[schluessel] = {**werte[schluessel], **wert}
-            else:
-                werte[schluessel] = wert
+        werte = ueberschreiben(werte, lese_json(pfad))
+    return werte
+
+
+def ueberschreiben(werte: dict, ueber: dict) -> dict:
+    """``werte`` mit den Schlüsseln aus ``ueber``; Abschnitte (dict) eine Ebene tief zusammengeführt."""
+    werte = dict(werte)
+    for schluessel, wert in ueber.items():
+        if isinstance(wert, dict) and isinstance(werte.get(schluessel), dict):
+            werte[schluessel] = {**werte[schluessel], **wert}
+        else:
+            werte[schluessel] = wert
     return werte

@@ -1,0 +1,33 @@
+{
+  "_hinweis": "Feinheit je Bildart (Lader landseg/einstellungen.py, Modul landseg/bildart.py). Die Bildart kommt aus dem Manifest: Feld bildart, sonst quelle.kanaele 1 = sw, sonst farbe. Eine weitere Bildart ist ein Abschnitt mehr hier und in vorlagen/abschnitte.md (feinheit-<bildart>), kein neuer Code.",
+  "bildarten": {
+    "farbe": {
+      "name": "Farb-Orthofoto",
+      "richtwert_je_mio_px": null,
+      "mindestflaeche_m2": null,
+      "_farbe": "so fein, wie im Bild sicher erkennbar (Grundsatz F1); Vorstufe mit vorstufe.json unverändert",
+      "vorstufe": {}
+    },
+    "sw": {
+      "name": "Schwarz-Weiß-Scan (alt, niedrig aufgelöst)",
+      "richtwert_je_mio_px": 600,
+      "_richtwert_je_mio_px": "Richtwert Segmente je 1 000 000 Bildpunkte Kern (Ausschnitt 1000 × 1000 = 600, Teilkachel mit Kern 500 × 500 = 150); pruefen meldet ein Überschreiten als Hinweis",
+      "mindestflaeche_m2": 100,
+      "_mindestflaeche_m2": "kleinere Flächen nur für klar erkennbare Objekte (schutz); umgerechnet über die Bildpunktgröße (transform im Manifest, sonst bildpunkt_m)",
+      "bildpunkt_m": 0.45,
+      "_bildpunkt_m": "Bildpunktgröße der Scans ohne Georeferenz (Luftbild 1968, rund 0,45 m)",
+      "schutz": {
+        "nur_sicher": true,
+        "namen": ["gebäude", "haus", "baum", "weg", "garten"],
+        "lagewoerter": ["zwischen", "an", "am", "auf", "im", "in", "mit", "neben", "vor", "hinter", "über", "unter", "bei", "aus", "von", "vom", "zum", "zur", "entlang", "um", "ohne", "für", "eines", "einer", "des", "der", "dem", "den"],
+        "_lagewoerter": "Wörter, ab denen ein Klassenname nur noch die Lage beschreibt (Schattenfuge zwischen Gebäuden); Schutzwörter zählen nur davor",
+        "_namen": "klar erkennbares Objekt: Segment mit sicher ja, dessen Klassenname im Kopf (bis zur ersten Klammer oder zum ersten Lagewort) eines dieser Wörter enthält (Gebäude (Dachfläche), langes Haus auf dem Anger, Baumreihe an der Dorfstraße; nicht Schattenfuge zwischen Gebäuden) (Groß-/Kleinschreibung egal; gilt für feste und freie Listen); es bleibt auch unter der Mindestfläche"
+      },
+      "vorstufe": {
+        "uebersegmentierung": {"flaeche_px": 256},
+        "siedlung": {"bildpunkt_m": 0.45},
+        "_vorstufe": "überschreibt einzelne Schlüssel aus vorstufe.json; sam3 und prompts nie hier ändern (sonst passen die gespeicherten Rohdaten nicht mehr)"
+      }
+    }
+  }
+}

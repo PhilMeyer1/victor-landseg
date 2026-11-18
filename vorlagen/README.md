@@ -17,7 +17,7 @@ und wiederholen sie nicht.
 | `urteil-viertel.md` | ein Agent je Viertel urteilt über die Segmente seines Viertels und teilt grob zusammengefasste nach (Fassungen mit Urteil und Gegenprobe; gefüllt von `landseg vorbereiten`) | Bilder + `urteil.json` mit `eingriffe` |
 | `frei.md` | ein Agent je Teilkachel segmentiert und klassifiziert frei (Fassung „Alles frei“; gefüllt von `landseg vorbereiten`) | `labels.tif`, `segmente.json`, `kategorien-teil.json` |
 | `vereinheitlichen-urteil.md`, `vereinheitlichen-frei.md` | ein Agent legt die freien Klassen einer Fassung zu einer Liste zusammen (Viertel-Urteile bzw. Listen je Teilkachel; gefüllt von `landseg vorbereiten`) | `kategorien-entwurf.json` (+ `codes.json` bzw. `abbildung_teilkacheln`) |
-| `abschnitte.md` | Bausteine je Fassung, die `landseg vorbereiten` in die Aufträge einsetzt (`{{KATEGORIEN}}`, `{{FASSUNG_ABSCHNITT}}`, `{{GEGENPROBE}}`) | – |
+| `abschnitte.md` | Bausteine je Fassung und Bildart, die `landseg vorbereiten` in die Aufträge einsetzt (`{{KATEGORIEN}}`, `{{FASSUNG_ABSCHNITT}}`, `{{GEGENPROBE}}`, `{{FEINHEIT}}`) | – |
 | `einigung.md` | ein Agent je Bündel aus `einigung finden` einigt die Klassen an den Übergängen der Teilkacheln (Urteil im Verbund: Bilder beider Seiten, ein Urteil je Stelle für alle Beteiligten, nur Klassen im Kern) | `einigung_abgabe.json` |
 
 Die beiden `agent-urteil-*.md` füllt nicht die Hauptsession, sondern `python -m landseg plan` (README, „plan“):
@@ -68,6 +68,8 @@ Agents nur für Fälle, die kein Befehl deckt.
 | `{{KATEGORIEN}}`, `{{FASSUNG_ABSCHNITT}}`, `{{GEGENPROBE}}` | Abschnitte aus `abschnitte.md` je Fassung | – |
 | `{{ID_GRENZE}}` | IDs der freien Abgabe bleiben darunter (`id_versatz` in `einstellungen/lauf.json`) | `100000` |
 | `{{ABGABEN}}` | Tabelle der Abgaben, die eine Vereinheitlichung liest (Markdown) | – |
+| `{{FEINHEIT}}` | Feinheit der Bildart: Abschnitt `feinheit-<bildart>` aus `abschnitte.md` mit Richtwert und Mindestfläche aus `einstellungen/bildarten.json`, für Farbbilder leer; Text: `landseg bildart --manifest … --teilkachel … --auftrag` | Absatz „Feinheit auf diesem Schwarz-Weiß-Scan …“ oder leer |
+| `{{RICHTWERT}}`, `{{MINDESTFLAECHE_QM}}`, `{{MINDESTFLAECHE_PX}}` | Richtwert der Segmente im Kern und Mindestfläche der Bildart (nur in `abschnitte.md`, `feinheit-<bildart>`) | `150`, `100`, `494` |
 | `{{ZUSAMMEN}}` | Ordner des zusammengetragenen Stands mit `labels.tif`, `segmente.json`, `naht.json` (relativ zu `{{DATEN}}`) | `zusammen` |
 
 Nach dem Rücklauf trägt die Hauptsession jede Abgabe als Einheit in `zusammentragen.json` ein
