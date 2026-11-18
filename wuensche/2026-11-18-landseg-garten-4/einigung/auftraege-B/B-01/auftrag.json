@@ -1,0 +1,441 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-01",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Gebäudeschatten",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Heckenschatten",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "1",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Baum",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Einzelbaum",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Baumgruppe",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Wald",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Wald belichtet",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Wald beschattet",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.3",
+      "name": "Gebüsch",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.4",
+      "name": "Hecke",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "2",
+      "name": "Dauergrünland",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Wiese",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Wiese gemäht",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Wiese ungemäht",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Rasen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Saum und Randstreifen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4",
+      "name": "Garten (Haus- und Hofgarten: Grünfläche, Beet)",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4.1",
+      "name": "Beete",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.2",
+      "name": "Parzelle gemischt",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "3",
+      "name": "Feld und offener Boden",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Feld",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Feld abgeerntet",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Offener Boden",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Gebäude",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Wohnhaus",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Nebengebäude",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.3",
+      "name": "Gewächshaus",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Mauer",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Kleinobjekt",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3.1",
+      "name": "Frühbeet",
+      "parent": "4.3",
+      "level": 3
+    },
+    {
+      "code": "4.4",
+      "name": "Lagerfläche",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4.1",
+      "name": "Holzlager",
+      "parent": "4.4",
+      "level": 3
+    },
+    {
+      "code": "5",
+      "name": "Wasser",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Schwimmbecken",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Verkehr und befestigte Fläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Straße",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.1.1",
+      "name": "Asphaltstraße",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.1.2",
+      "name": "Betonstraße",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.2",
+      "name": "Weg",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2.1",
+      "name": "Gartenweg",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.2.2",
+      "name": "Feld- und Erdweg",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.2.3",
+      "name": "Trampelpfad",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.3",
+      "name": "Hof und Zufahrt",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.4",
+      "name": "Terrasse",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Randstein und Bankett",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c1:200143|r0c1:200149",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            700,
+            250
+          ],
+          "bis": [
+            700,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 23.7
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200143",
+          "teilkachel": "r0c1",
+          "id": 200143,
+          "klasse": "2.4",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.898
+          },
+          "instanz": {
+            "text": "lawn",
+            "eingerastet": true
+          },
+          "flaeche": 7361,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Großer gepflegter Rasen östlich des Pools mit einem weißen Gegenstand (Liege oder Abdeckung), reicht in alle Viertel.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Grasland",
+            "mittel": "Rasen",
+            "fein": "Rasen"
+          },
+          "einigung": [
+            {
+              "paar": "r0c1:200143|r0c1:200171",
+              "mit": "r0c1:200171",
+              "entscheidung": "grenze",
+              "grund": "Gleichmäßiger kurzer Rasen gegen rauen Gras- und Krautsaum mit Zaunlinie am Feldrand; die Grenze folgt der dunklen Zaun- bzw. Schattenlinie.",
+              "bearbeiter": "agent:einigung-B-03:20261118e",
+              "buendel": "B-03",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r0c1:200092|r0c1:200143",
+              "mit": "r0c1:200092",
+              "entscheidung": "grenze",
+              "grund": "Gartengehölz mit dunklen Strauchkronen oben gegen glatten Rasen unten: echter Wechsel der Oberfläche, nur schwache Helligkeitskante.",
+              "bearbeiter": "agent:einigung-B-03:20261118e",
+              "buendel": "B-03",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r0c1:200143|r0c1:200146",
+              "mit": "r0c1:200146",
+              "entscheidung": "grenze",
+              "grund": "Glatter Rasen gegen den Rand einer dunklen, körnigen Baumkrone: echte Grenze Rasen zu Gehölz.",
+              "bearbeiter": "agent:einigung-B-03:20261118e",
+              "buendel": "B-03",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            }
+          ]
+        },
+        {
+          "segment": "r0c1:200149",
+          "teilkachel": "r0c1",
+          "id": 200149,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.491
+          },
+          "instanz": {
+            "text": "sports field",
+            "eingerastet": true
+          },
+          "flaeche": 156,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.4",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grasstreifen zwischen Gartengehölz 92 und Rasen 143, Fortsetzung des Gartenwegs 144.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Grüner Streifen (258/318) ist Rasen bzw. Rasenweg, kein Sport- oder Spielplatz.",
+              "flaeche_px": 156
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grasland",
+            "mittel": "Rasen",
+            "fein": "Rasen"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-01",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c1:200143|r0c1:200149",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

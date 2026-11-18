@@ -1,0 +1,1301 @@
+{
+ "teilkachel": "r0c1",
+ "viertel": "v1",
+ "bearbeiter": "urt-b-r0c1-v1",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/H0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/H0_raster.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r0c1/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r0c1/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_vorschlag.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_maengel.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_kontrast.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_gitter.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/umriss.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/maengel.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/vorschlag.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah4_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_2.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_3.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_5.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_7.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/probe_4.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/probe_65.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 200019,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helles Wohnhaus links der Kerngrenze (in r0c0); im Kern von r0c1 liegt nur sein dunkler Schlagschatten (x 64–77, y 64–88).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Wohnhaus, helles Dach"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Der Kernteil in r0c1 (x 64–77, y 64–88) ist Schatten, kein Dach; die Trennung liegt an der Traufkante bei x 57–62 im Kern von r0c0 und gehört dorthin.",
+     "flaeche_px": 146
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_5.jpg"
+   ]
+  },
+  {
+   "id": 200025,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Mittelgraue Ausbuchtung am Südrand der Straße an der Kreuzung, mit dünnem Ausläufer auf die Dachkante eines Langhauses.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Straßenrand",
+    "fein": "Randstreifen (Bankett oder Gehweg)"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Ausläufer x 300–325, y 100–125 liegt auf der hellen Dachkante des Nachbarhauses (16), nicht auf der Straße.",
+     "flaeche_px": 60
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 200004,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Nach dem Teilen nur noch der dunkle Schatten zwischen den Langhäusern oben links (x 64–166, y 64–161); der übrige Häuserblock steht in eigenen Segmenten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schatten zwischen Häusern"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200027,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Mittelgrauer Fleck mit dunklem Kern am Nordrand der Straße vor einem Hausgiebel: Einfahrt, Vorgarten oder Baum, auf dem Scan nicht zu trennen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Freifläche",
+    "mittel": "Hof oder Vorgarten",
+    "fein": "Hof oder Vorgarten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 200043,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Zwei Bildpunkte der hellen Fahrbahn an der linken Kerngrenze (x 64, y 177–178); Rest in r0c0.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200042,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Heller Fahrbahnstreifen der nach Nordwesten laufenden Straße an der linken Kerngrenze.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200031,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Heller Streifen der nach Nordwesten laufenden Straße zwischen Häuserblock und Fahrbahn 49; ohne Kante zu 42 und 49.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200052,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Schmaler heller Rand der Fahrbahn an der Einmündung, gleicher Grauton wie Straße 5 und 49.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200040,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Mittelgrauer Fleck am Nordrand der Straße vor dem Häuserblock, gleiche Fläche wie der Vorbereich 165.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Freifläche",
+    "mittel": "Hof oder Vorgarten",
+    "fein": "Hof oder Vorgarten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200005,
+   "klasse_heute": "1.2.2",
+   "was_ist_es": "Fahrbahn der Ortsstraße (Südwest–Nordost), hell und gleichmäßig; Belag nicht bestimmbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200038,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Heller Fleck am Südrand der Straße vor einem Langhaus, mit Ausläufer auf dessen hellen Dachstreifen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Straßenrand",
+    "fein": "Randstreifen (Bankett oder Gehweg)"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 3,
+     "art": "grenze",
+     "text": "Ausläufer x 215–230, y 168–182 liegt auf dem hellen Dachstreifen des Langhauses in 16.",
+     "flaeche_px": 50
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 200053,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Kleiner dunkelgrauer Fleck zwischen Fahrbahnrand und Häuserzeile: Bewuchs oder Schatten am Straßenrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Freifläche",
+    "mittel": "Randstreifen",
+    "fein": "Randstreifen, dunkel (Bewuchs?)"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200048,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Helle, ebene, rechteckige Fläche an der Straßeneinmündung ohne eigenen Schatten: Vorplatz; ein flaches Gebäude ist nicht ausgeschlossen.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Platz",
+    "fein": "Vorplatz"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200062,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Dunkler fleckiger Fleck am Südwestrand der Fahrbahn 49: Strauch oder kleiner Baum mit Schatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum oder Strauch",
+    "fein": "Strauch am Straßenrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200056,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Heller Randstreifen längs der Nordostseite der Fahrbahn 49, oben mit dunklerem Band (Graben oder Bewuchs).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehrsfläche",
+    "mittel": "Straßenrand",
+    "fein": "Randstreifen (Bankett oder Gehweg)"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 4,
+     "art": "sonstiges",
+     "text": "Oberer Teil x 115–150, y 215–250 enthält ein dunkleres Band zwischen Fahrbahn und Häusern; ohne klare Kante nicht geteilt.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah3_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200065,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Nach dem Teilen der dunkle Schlagschatten nordöstlich des hellen Nebengebäudes 191.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schatten zwischen Häusern"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah4_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200191,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Sehr helles, scharf begrenztes Rechteck (etwa 11 × 5 m) mit Schatten auf der Nordostseite: Nebengebäude mit hellem Dach.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Nebengebäude, helles Dach"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah4_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_7.jpg"
+   ]
+  },
+  {
+   "id": 200160,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Großer dunkler Schatten zwischen den Langhäusern oben rechts im Block (x 142–261, y 64–128).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schatten zwischen Häusern"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200162,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Langer heller Dachstreifen eines Langhauses mit hellem Querbau am Straßenende (x 91–211, y 64–146).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Langhaus, Dach Sonnenseite"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200164,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Heller Dachstreifen eines Langhauses in der Blockmitte (x 87–169, y 88–157).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Langhaus, Dach Sonnenseite"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200165,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgraue, leicht fleckige Fläche zwischen den Hausgiebeln und der Straße: Hof oder Vorgarten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Freifläche",
+    "mittel": "Hof oder Vorgarten",
+    "fein": "Hof oder Vorgarten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200166,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkles Schattenband zwischen zwei hellen Dachstreifen oben (x 116–190, y 64–127).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schatten zwischen Häusern"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200167,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkles Schattenband zwischen Dachstreifen 164 und 162 (x 116–176, y 85–145).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schatten zwischen Häusern"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200169,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkles Schattenband zwischen Dachstreifen 170 und 171 links (x 64–118, y 120–166).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schatten zwischen Häusern"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200170,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Heller Dachstreifen eines Langhauses links (x 70–128, y 105–156).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Langhaus, Dach Sonnenseite"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200171,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Heller Dachstreifen eines Langhauses an der linken Kerngrenze (x 64–105, y 127–173).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Langhaus, Dach Sonnenseite"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200172,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgraue unruhige Fläche oben links zwischen Schatten und Dachstreifen: Hof oder Dachseite.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200173,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgrauer Streifen neben dem hellen Dachblock 174: wohl dessen Schattenseite.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200174,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kurzer heller Dachblock (x 196–222, y 91–115), Teil eines Langhauses nahe der Straße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Langhaus, Dach Sonnenseite"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200175,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dunkler Schatten unten links am Blockrand (x 76–96, y 153–189).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schatten zwischen Häusern"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200177,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgrauer Streifen am oberen Kernrand rechts: Dachseite oder Hof.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200178,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Heller Dachstreifen am oberen Kernrand (x 160–196, y 64–91).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Langhaus, Dach Sonnenseite"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200179,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgrauer Streifen neben einem hellen Dachstreifen oben rechts: Dachseite oder Hof.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200180,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgraue Fläche an der linken Kerngrenze (x 64–79, y 141–163): Dachseite oder Hof.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200181,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgrauer Fleck am Straßenrand vor dem Querbau (x 168–188, y 143–156): Hof oder Vorgarten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Freifläche",
+    "mittel": "Hof oder Vorgarten",
+    "fein": "Hof oder Vorgarten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200182,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelheller Streifen am oberen Kernrand rechts (Grauwert 116): Dachseite, schwächer beleuchtet.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Bebaut",
+    "mittel": "Gebäude",
+    "fein": "Langhaus, Dach Sonnenseite"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200183,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgraue Insel zwischen zwei Dachstreifen (x 100–117, y 100–116): Dachseite oder Hof.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200184,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgrauer Streifen am oberen Kernrand (x 99–122, y 64–74): Dachseite oder Hof.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200185,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgrauer Fleck vor den Hausgiebeln an der Straße (x 199–215, y 122–136): Hof oder Vorgarten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Freifläche",
+    "mittel": "Hof oder Vorgarten",
+    "fein": "Hof oder Vorgarten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200186,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgrauer Fleck an der linken Kerngrenze (x 64–80, y 111–124): Dachseite oder Hof.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200187,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner dunkler Schatten am oberen Kernrand (x 248–265, y 64–74).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schatten zwischen Häusern"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200188,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner mittelgrauer Rest am oberen Kernrand (x 188–202, y 64–72).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200189,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleiner mittelgrauer Fleck unten links im Schatten (x 83–92, y 165–174).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200190,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleine mittelgraue Insel im Schattenband 169 (x 103–111, y 147–155): Gegenstand oder Lücke im Schatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Unklar",
+    "mittel": "Halbschatten",
+    "fein": "Dachseite oder Hof"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 200019,
+   "seite": "links",
+   "text": "Segment reicht über die Kerngrenze: Dach in r0c0, Schatten in r0c1; die Trennung an der Traufkante (x 57–62) liegt im Kern von r0c0. Klasse einmal: Gebäude (unsicher)."
+  },
+  {
+   "id": 200169,
+   "seite": "links",
+   "text": "Neues Teilstück aus 4 grenzt an der Kerngrenze x 64 an den Teil von 4 in r0c0, wo 4 noch der ganze Häuserblock ist; gleiche Fläche (Schatten bzw. Dach) beiderseits ohne Bildkante: r0c0 sollte 4 entlang derselben Hell-dunkel-Kanten teilen."
+  },
+  {
+   "id": 200171,
+   "seite": "links",
+   "text": "Neues Teilstück aus 4 grenzt an der Kerngrenze x 64 an den Teil von 4 in r0c0, wo 4 noch der ganze Häuserblock ist; gleiche Fläche (Schatten bzw. Dach) beiderseits ohne Bildkante: r0c0 sollte 4 entlang derselben Hell-dunkel-Kanten teilen."
+  },
+  {
+   "id": 200180,
+   "seite": "links",
+   "text": "Neues Teilstück aus 4 grenzt an der Kerngrenze x 64 an den Teil von 4 in r0c0, wo 4 noch der ganze Häuserblock ist; gleiche Fläche (Schatten bzw. Dach) beiderseits ohne Bildkante: r0c0 sollte 4 entlang derselben Hell-dunkel-Kanten teilen."
+  },
+  {
+   "id": 200186,
+   "seite": "links",
+   "text": "Neues Teilstück aus 4 grenzt an der Kerngrenze x 64 an den Teil von 4 in r0c0, wo 4 noch der ganze Häuserblock ist; gleiche Fläche (Schatten bzw. Dach) beiderseits ohne Bildkante: r0c0 sollte 4 entlang derselben Hell-dunkel-Kanten teilen."
+  },
+  {
+   "id": 200004,
+   "seite": "links",
+   "text": "4 behält die ID für den Schatten oben links; der Teil in r0c0 ist der ganze Häuserblock. Klasse hier Schatten, in r0c0 vermutlich Gebäude: an der Naht zu einigen, nachdem r0c0 geteilt hat."
+  },
+  {
+   "id": 200031,
+   "seite": "links",
+   "text": "Straßenstreifen 31, 42, 43 und Fahrbahn 49 sind eine Fläche ohne Kante; gleiche Klasse Straße für alle, auch in r0c0."
+  }
+ ],
+ "unsicher": [
+  "200016 (Viertel v2): der Häuserblock südöstlich der Straße ist wie 4 ein Sammelsegment vieler Langhäuser und Schatten.",
+  "200049 (Viertel v3): Fahrbahn; 31, 42, 52 grenzen ohne Bildkante an, gleiche Klasse Straße nötig.",
+  "200047 (Viertel v3): großes Sammelsegment westlich der Straße 49 (Häuser, Höfe, Gärten)."
+ ],
+ "nicht_geprueft": [
+  "Kontextrand (y < 64 und x < 64) nur angesehen, nicht geurteilt; dort trägt 4 noch den ganzen Häuserblock.",
+  "Das Werkzeug kante wurde nicht benutzt: die neuen Grenzen kommen aus einer Wasserscheide auf dem Grauwert-Gradienten und liegen schon auf den Hell-dunkel-Kanten."
+ ],
+ "offen": [
+  "Schattenbänder (Klasse Schatten zwischen Häusern) alle unsicher: bei Satteldächern mit Sonne aus Südwest ist die Nordostseite des Daches selbst dunkel; die dunklen Bänder sind breiter als die hellen Dachseiten und enthalten wohl Schattenseite des Daches plus Schlagschatten im Hof. Die Grenze zwischen beiden gibt der Scan nicht her; Farbbild oder Stereo entscheidet.",
+  "Halbschatten-Streifen (Klasse Dachseite oder Hof, 11 Teile aus 4): ob Schattenseite des Daches oder Hof, entscheidet das Farbbild oder ein Stereo-Paar.",
+  "Die hellen Dachstreifen zeigen nur die Sonnenseite der Langhäuser; der Gebäudeumriss ist breiter und reicht in den angrenzenden Schatten- oder Halbschattenstreifen. Eine Trennung Dach-Schattenseite gegen Schlagschatten gibt der Scan nicht her.",
+  "Vorbereich 165, 181, 185, 40, 27 zwischen Giebeln und Straße: Hof, Vorgarten oder Einfahrt; das Farbbild entscheidet (Grün gegen Pflaster).",
+  "48: Vorplatz oder flaches helles Gebäude; im Farbbild Dachfarbe gegen Pflaster prüfen.",
+  "56: Bankett, Gehweg oder Grünstreifen; der Belag ist auf dem Scan nicht bestimmbar.",
+  "62: Strauch oder dunkler Fleck am Fahrbahnrand; das Farbbild entscheidet.",
+  "182: mittelhell am oberen Kernrand, Dachseite angenommen; Farbbild oder Kontextteil entscheidet.",
+  "Die neuen IDs aus polygon_zuweisen tragen in segmente.json kein Feld im_kern (Werkzeugverhalten); sie liegen alle im Kern. Ihr technischer Code dort ist 1.1.1 (Code des geteilten Segments), die Klasse steht nur hier im Urteil."
+ ],
+ "eingriffe": [
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200004
+   ],
+   "nachher": [
+    200004,
+    200160,
+    200162,
+    200164,
+    200165,
+    200166,
+    200167,
+    200169,
+    200170,
+    200171,
+    200172,
+    200173,
+    200174,
+    200175,
+    200177,
+    200178,
+    200179,
+    200180,
+    200181,
+    200182,
+    200183,
+    200184,
+    200185,
+    200186,
+    200187,
+    200188,
+    200189,
+    200190
+   ],
+   "grund": "Segment 4 fasste eine ganze Reihe Langhäuser mit Schatten und Vorbereich zusammen; nach den klaren Hell-dunkel-Kanten (Wasserscheide auf dem Gradienten) in Dachstreifen, Schatten- und Halbschattenbänder sowie Vorbereich geteilt (27 Polygone, Kontextteil unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200065
+   ],
+   "nachher": [
+    200065,
+    200191
+   ],
+   "grund": "Segment 65 umfasste ein sehr helles Nebengebäude und seinen dunklen Schlagschatten; an der scharfen Kante getrennt."
+  }
+ ],
+ "klassen_frei": [
+  {
+   "name": "Bebaut",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Gebäude; in der Draufsicht scharf begrenzte Dachflächen mit Schattenwurf"
+  },
+  {
+   "name": "Gebäude",
+   "ebene": "mittel",
+   "eltern": "Bebaut",
+   "merkmal": "scharf begrenzte helle bis mittelgraue Dachfläche, Schatten auf der sonnenabgewandten Seite"
+  },
+  {
+   "name": "Wohnhaus, helles Dach",
+   "ebene": "fein",
+   "eltern": "Gebäude",
+   "merkmal": "breiter heller Block mit klarer Traufkante"
+  },
+  {
+   "name": "Verkehrsfläche",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "helle, gleichmäßige, bandförmige oder offene Flächen für Verkehr"
+  },
+  {
+   "name": "Straßenrand",
+   "ebene": "mittel",
+   "eltern": "Verkehrsfläche",
+   "merkmal": "schmaler Streifen längs der Fahrbahn, Grauton etwas anders als die Fahrbahn"
+  },
+  {
+   "name": "Randstreifen (Bankett oder Gehweg)",
+   "ebene": "fein",
+   "eltern": "Straßenrand",
+   "merkmal": "heller Streifen neben der Fahrbahn, durch feine Linie abgesetzt"
+  },
+  {
+   "name": "Schatten",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "sehr dunkle Fläche (Grauwert unter etwa 60), Boden darunter nicht erkennbar"
+  },
+  {
+   "name": "Schlagschatten",
+   "ebene": "mittel",
+   "eltern": "Schatten",
+   "merkmal": "dunkler Streifen auf der Schattenseite eines Gebäudes"
+  },
+  {
+   "name": "Schatten zwischen Häusern",
+   "ebene": "fein",
+   "eltern": "Schlagschatten",
+   "merkmal": "sehr dunkles Band zwischen zwei Langhäusern"
+  },
+  {
+   "name": "Freifläche",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "unbebaute Flächen an Häusern: Hof, Garten, Randstreifen; mittelgrau, unruhig"
+  },
+  {
+   "name": "Hof oder Vorgarten",
+   "ebene": "mittel",
+   "eltern": "Freifläche",
+   "merkmal": "mittelgraue, leicht fleckige Fläche zwischen Hausgiebeln und Straße oder zwischen Häusern"
+  },
+  {
+   "name": "Straße",
+   "ebene": "mittel",
+   "eltern": "Verkehrsfläche",
+   "merkmal": "breites helles durchgehendes Band zwischen den Häuserzeilen"
+  },
+  {
+   "name": "Dorfstraße",
+   "ebene": "fein",
+   "eltern": "Straße",
+   "merkmal": "Fahrbahn der Ortsstraße, Belag auf dem Scan nicht bestimmbar"
+  },
+  {
+   "name": "Randstreifen",
+   "ebene": "mittel",
+   "eltern": "Freifläche",
+   "merkmal": "schmaler unbefestigter Streifen zwischen Fahrbahn und Häusern"
+  },
+  {
+   "name": "Randstreifen, dunkel (Bewuchs?)",
+   "ebene": "fein",
+   "eltern": "Randstreifen",
+   "merkmal": "dunkelgrauer Fleck am Fahrbahnrand, wohl Gras oder Gestrüpp"
+  },
+  {
+   "name": "Platz",
+   "ebene": "mittel",
+   "eltern": "Verkehrsfläche",
+   "merkmal": "helle ebene Fläche ohne Schattenwurf, offen an die Straße angeschlossen"
+  },
+  {
+   "name": "Vorplatz",
+   "ebene": "fein",
+   "eltern": "Platz",
+   "merkmal": "heller ebener Platz vor den Häusern an der Straße"
+  },
+  {
+   "name": "Gehölz",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Bäume und Sträucher: körnig-fleckig, rundliche Kronen mit Eigenschatten"
+  },
+  {
+   "name": "Baum oder Strauch",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "rundliche dunkle Krone mit hellem Rand und eigenem Schatten"
+  },
+  {
+   "name": "Strauch am Straßenrand",
+   "ebene": "fein",
+   "eltern": "Baum oder Strauch",
+   "merkmal": "kleiner dunkler Fleck am Fahrbahnrand mit Schatten"
+  },
+  {
+   "name": "Nebengebäude, helles Dach",
+   "ebene": "fein",
+   "eltern": "Gebäude",
+   "merkmal": "kurzer, sehr heller rechteckiger Block mit Schatten daneben"
+  },
+  {
+   "name": "Langhaus, Dach Sonnenseite",
+   "ebene": "fein",
+   "eltern": "Gebäude",
+   "merkmal": "langer schmaler heller Streifen quer zur Straße in der Reihe der Streckhöfe"
+  },
+  {
+   "name": "Unklar",
+   "ebene": "mittel",
+   "eltern": "Unklar",
+   "merkmal": "Fleck ohne eindeutiges Merkmal"
+  },
+  {
+   "name": "Halbschatten",
+   "ebene": "mittel",
+   "eltern": "Unklar",
+   "merkmal": "mittelgrauer Streifen zwischen heller Dachseite und Schatten: Dachseite im Schatten oder Hof"
+  },
+  {
+   "name": "Dachseite oder Hof",
+   "ebene": "fein",
+   "eltern": "Halbschatten",
+   "merkmal": "mittelgraues Band neben einem hellen Dachstreifen"
+  }
+ ]
+}

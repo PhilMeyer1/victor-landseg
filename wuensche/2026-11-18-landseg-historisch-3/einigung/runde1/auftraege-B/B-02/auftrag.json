@@ -1,0 +1,2675 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-02",
+  "uebergross": true,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100143|r0c0:100167",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            406,
+            250
+          ],
+          "bis": [
+            406,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 13.0
+        },
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            408,
+            250
+          ],
+          "bis": [
+            408,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 20.0
+        },
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            421,
+            250
+          ],
+          "bis": [
+            422,
+            250
+          ],
+          "laenge": 2,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100143",
+          "teilkachel": "r0c0",
+          "id": 100143,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.453,
+            "abstand": 0.324
+          },
+          "flaeche": 6487,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 6436,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Beschattete Hofflächen zwischen den Längsbauten in v2 und ein großer dunkler Keil östlich der Straße; das helle Straßenband ist als 276/279 abgetrennt.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "sonstiges",
+              "text": "Dunkler Keil 470–530/300–390 ist Schlagschatten der Bauten oder dunkler Boden; ohne Bildkante dazwischen nicht teilbar, darum im Hofsegment gelassen.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c0:100167",
+          "teilkachel": "r0c0",
+          "id": 100167,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.414
+          },
+          "instanz": {
+            "text": "shed",
+            "eingerastet": true
+          },
+          "flaeche": 980,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 980,
+          "urteil": "sauber",
+          "was_ist_es": "Langes mittelgraues Dach mit hellerem Teil zwischen dunklen Streifen.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Gebäude",
+            "mittel": "Dach",
+            "fein": "Längsbau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100153|r0c0:100274",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            472,
+            250
+          ],
+          "bis": [
+            474,
+            250
+          ],
+          "laenge": 3,
+          "kante_max": 13.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100153",
+          "teilkachel": "r0c0",
+          "id": 100153,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.475
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2010,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 708,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Hof mit dunklem Fleck am rechten unteren Rand; das helle Dachstück 274 abgetrennt.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helles Dachstück 532–555/289–313 steckte im Hof; abgetrennt als 100274.",
+              "flaeche_px": 255
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c0:100274",
+          "teilkachel": "r0c0",
+          "id": 100274,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "eingriff:teilen aus 100153",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.475
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 255,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 255,
+          "urteil": "sauber",
+          "was_ist_es": "Helles Dachstück (neu aus 153).",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Gebäude",
+            "mittel": "Dach",
+            "fein": "Längsbau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100111|r0c1:200042",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            117
+          ],
+          "bis": [
+            500,
+            117
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100111",
+          "teilkachel": "r0c0",
+          "id": 100111,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.586,
+            "abstand": 0.302
+          },
+          "flaeche": 1459,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 1026,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Beschatteter Hof am rechten Kernrand mit schmalem hellem Bau 534–547/183–210.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Schmaler heller Bau 534–547/183–210 steckt im Hof; nicht geteilt, weil der Schnitt das Segment über den Kernrand zerlegt hätte.",
+              "flaeche_px": 167
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200042",
+          "teilkachel": "r0c1",
+          "id": 200042,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.551
+          },
+          "instanz": {
+            "text": "road",
+            "eingerastet": true
+          },
+          "flaeche": 232,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 138,
+          "urteil": "sauber",
+          "was_ist_es": "Heller Fahrbahnstreifen der nach Nordwesten laufenden Straße an der linken Kerngrenze.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100112|r0c1:200310",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 15,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            118
+          ],
+          "bis": [
+            500,
+            132
+          ],
+          "laenge": 15,
+          "kante_max": 10.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100112",
+          "teilkachel": "r0c0",
+          "id": 100112,
+          "klasse": "0.4",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.511,
+            "abstand": 0.085
+          },
+          "flaeche": 188,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 56,
+          "urteil": "sauber",
+          "was_ist_es": "Fast schwarzer Fleck am rechten Kernrand neben einem Bau in r0c1.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Schatten",
+            "fein": "Schlagschatten"
+          }
+        },
+        {
+          "segment": "r0c1:200310",
+          "teilkachel": "r0c1",
+          "id": 200310,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 603,
+          "flaeche_kern": 603,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche oben links an der Straße 81 und der linken Kerngrenze: Schatten. (x 64–96, y 182–234)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100111|r0c1:200310",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 19,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            133
+          ],
+          "bis": [
+            500,
+            151
+          ],
+          "laenge": 19,
+          "kante_max": 11.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100111",
+          "teilkachel": "r0c0",
+          "id": 100111,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.586,
+            "abstand": 0.302
+          },
+          "flaeche": 1459,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 1026,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Beschatteter Hof am rechten Kernrand mit schmalem hellem Bau 534–547/183–210.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Schmaler heller Bau 534–547/183–210 steckt im Hof; nicht geteilt, weil der Schnitt das Segment über den Kernrand zerlegt hätte.",
+              "flaeche_px": 167
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200310",
+          "teilkachel": "r0c1",
+          "id": 200310,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 603,
+          "flaeche_kern": 603,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche oben links an der Straße 81 und der linken Kerngrenze: Schatten. (x 64–96, y 182–234)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c0:100128|r0c1:200310",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            152
+          ],
+          "bis": [
+            500,
+            155
+          ],
+          "laenge": 4,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100128",
+          "teilkachel": "r0c0",
+          "id": 100128,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.402
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2174,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2069,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Hofstreifen zwischen den Längsbauten 127 und 142 und Hof rechts davon; das helle Dachstück dem Bau 142 zugeschlagen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helles Dachstück 472–518/226–254 steckte im Hof; abgetrennt und mit dem Dach 142 verschmolzen.",
+              "flaeche_px": 421
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200310",
+          "teilkachel": "r0c1",
+          "id": 200310,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 603,
+          "flaeche_kern": 603,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche oben links an der Straße 81 und der linken Kerngrenze: Schatten. (x 64–96, y 182–234)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c0:100128|r0c1:200312",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 14,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            156
+          ],
+          "bis": [
+            500,
+            169
+          ],
+          "laenge": 14,
+          "kante_max": 21.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100128",
+          "teilkachel": "r0c0",
+          "id": 100128,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.402
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2174,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2069,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Hofstreifen zwischen den Längsbauten 127 und 142 und Hof rechts davon; das helle Dachstück dem Bau 142 zugeschlagen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helles Dachstück 472–518/226–254 steckte im Hof; abgetrennt und mit dem Dach 142 verschmolzen.",
+              "flaeche_px": 421
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200312",
+          "teilkachel": "r0c1",
+          "id": 200312,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 445,
+          "flaeche_kern": 445,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelhelle Fläche oben links an der Straße 81: Dach oder Hof. (x 64–91, y 220–258)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Bebaut",
+            "mittel": "Gebäude",
+            "fein": "Wohnhaus, helles Dach"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c0:100143|r0c1:200312",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 7,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            170
+          ],
+          "bis": [
+            500,
+            176
+          ],
+          "laenge": 7,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100143",
+          "teilkachel": "r0c0",
+          "id": 100143,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.453,
+            "abstand": 0.324
+          },
+          "flaeche": 6487,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 6436,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Beschattete Hofflächen zwischen den Längsbauten in v2 und ein großer dunkler Keil östlich der Straße; das helle Straßenband ist als 276/279 abgetrennt.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "sonstiges",
+              "text": "Dunkler Keil 470–530/300–390 ist Schlagschatten der Bauten oder dunkler Boden; ohne Bildkante dazwischen nicht teilbar, darum im Hofsegment gelassen.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200312",
+          "teilkachel": "r0c1",
+          "id": 200312,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 445,
+          "flaeche_kern": 445,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelhelle Fläche oben links an der Straße 81: Dach oder Hof. (x 64–91, y 220–258)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Bebaut",
+            "mittel": "Gebäude",
+            "fein": "Wohnhaus, helles Dach"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c0:100144|r0c1:200298",
+      "art": "naht",
+      "bild": "paar_09.jpg",
+      "randpunkte": 6,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            195
+          ],
+          "bis": [
+            500,
+            200
+          ],
+          "laenge": 6,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100144",
+          "teilkachel": "r0c0",
+          "id": 100144,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.571
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 1840,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1150,
+          "urteil": "sauber",
+          "was_ist_es": "Langes helles Dach am rechten Kernrand.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Gebäude",
+            "mittel": "Dach",
+            "fein": "Längsbau"
+          }
+        },
+        {
+          "segment": "r0c1:200298",
+          "teilkachel": "r0c1",
+          "id": 200298,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1616,
+          "flaeche_kern": 1616,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Mischfläche oben links aus Dächern und Höfen. (x 64–118, y 241–299)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r0c0:100143|r0c1:200298",
+      "art": "naht",
+      "bild": "paar_10.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            201
+          ],
+          "bis": [
+            500,
+            208
+          ],
+          "laenge": 8,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            213
+          ],
+          "bis": [
+            500,
+            214
+          ],
+          "laenge": 2,
+          "kante_max": 17.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100143",
+          "teilkachel": "r0c0",
+          "id": 100143,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.453,
+            "abstand": 0.324
+          },
+          "flaeche": 6487,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 6436,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Beschattete Hofflächen zwischen den Längsbauten in v2 und ein großer dunkler Keil östlich der Straße; das helle Straßenband ist als 276/279 abgetrennt.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "sonstiges",
+              "text": "Dunkler Keil 470–530/300–390 ist Schlagschatten der Bauten oder dunkler Boden; ohne Bildkante dazwischen nicht teilbar, darum im Hofsegment gelassen.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200298",
+          "teilkachel": "r0c1",
+          "id": 200298,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1616,
+          "flaeche_kern": 1616,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Mischfläche oben links aus Dächern und Höfen. (x 64–118, y 241–299)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r0c0:100153|r0c1:200298",
+      "art": "naht",
+      "bild": "paar_11.jpg",
+      "randpunkte": 16,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            215
+          ],
+          "bis": [
+            500,
+            230
+          ],
+          "laenge": 16,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100153",
+          "teilkachel": "r0c0",
+          "id": 100153,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.475
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2010,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 708,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Hof mit dunklem Fleck am rechten unteren Rand; das helle Dachstück 274 abgetrennt.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helles Dachstück 532–555/289–313 steckte im Hof; abgetrennt als 100274.",
+              "flaeche_px": 255
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200298",
+          "teilkachel": "r0c1",
+          "id": 200298,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1616,
+          "flaeche_kern": 1616,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Mischfläche oben links aus Dächern und Höfen. (x 64–118, y 241–299)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r0c0:100153|r0c1:200317",
+      "art": "naht",
+      "bild": "paar_12.jpg",
+      "randpunkte": 7,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            232
+          ],
+          "bis": [
+            500,
+            238
+          ],
+          "laenge": 7,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100153",
+          "teilkachel": "r0c0",
+          "id": 100153,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.475
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2010,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 708,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Hof mit dunklem Fleck am rechten unteren Rand; das helle Dachstück 274 abgetrennt.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helles Dachstück 532–555/289–313 steckte im Hof; abgetrennt als 100274.",
+              "flaeche_px": 255
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200317",
+          "teilkachel": "r0c1",
+          "id": 200317,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 274,
+          "flaeche_kern": 274,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkles Band zwischen zwei Häusern an der linken Kerngrenze: Schatten. (x 64–102, y 269–302)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 13,
+      "paar": "r0c0:100153|r0c1:200299",
+      "art": "naht",
+      "bild": "paar_13.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            239
+          ],
+          "bis": [
+            500,
+            239
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100153",
+          "teilkachel": "r0c0",
+          "id": 100153,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.475
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2010,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 708,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Hof mit dunklem Fleck am rechten unteren Rand; das helle Dachstück 274 abgetrennt.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helles Dachstück 532–555/289–313 steckte im Hof; abgetrennt als 100274.",
+              "flaeche_px": 255
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200299",
+          "teilkachel": "r0c1",
+          "id": 200299,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1254,
+          "flaeche_kern": 1254,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Mischfläche an der linken Kerngrenze. (x 64–95, y 294–364)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 14,
+      "paar": "r0c0:100165|r0c1:200299",
+      "art": "naht",
+      "bild": "paar_14.jpg",
+      "randpunkte": 23,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            240
+          ],
+          "bis": [
+            500,
+            253
+          ],
+          "laenge": 14,
+          "kante_max": 20.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            255
+          ],
+          "bis": [
+            500,
+            263
+          ],
+          "laenge": 9,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100165",
+          "teilkachel": "r0c0",
+          "id": 100165,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.409
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 1791,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 173,
+          "urteil": "sauber",
+          "was_ist_es": "Kernstück (551–563/318–338) eines Baus, dessen Hauptteil in r0c1 liegt; im Kern vor allem Schattenseite.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude"
+          }
+        },
+        {
+          "segment": "r0c1:200299",
+          "teilkachel": "r0c1",
+          "id": 200299,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1254,
+          "flaeche_kern": 1254,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Mischfläche an der linken Kerngrenze. (x 64–95, y 294–364)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 15,
+      "paar": "r0c0:100176|r0c1:200299",
+      "art": "naht",
+      "bild": "paar_15.jpg",
+      "randpunkte": 15,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            264
+          ],
+          "bis": [
+            500,
+            265
+          ],
+          "laenge": 2,
+          "kante_max": 13.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            288
+          ],
+          "bis": [
+            500,
+            300
+          ],
+          "laenge": 13,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100176",
+          "teilkachel": "r0c0",
+          "id": 100176,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477,
+            "abstand": 0.335
+          },
+          "flaeche": 14219,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4869,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Höfe mit hellen Längsbauten (Streckhöfe) östlich der Straße, Hauptteil im Kontextrand (r0c1/r1c1).",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helle Längsbauten 535–563/387–424 und 544–563/442–486 stecken im Hofsegment; nicht geteilt, weil sie über den Kernrand reichen und ein Schnitt nur im Kern die Naht verletzen würde.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200299",
+          "teilkachel": "r0c1",
+          "id": 200299,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1254,
+          "flaeche_kern": 1254,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Mischfläche an der linken Kerngrenze. (x 64–95, y 294–364)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 16,
+      "paar": "r0c0:100176|r0c1:200331",
+      "art": "naht",
+      "bild": "paar_16.jpg",
+      "randpunkte": 22,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            266
+          ],
+          "bis": [
+            500,
+            287
+          ],
+          "laenge": 22,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100176",
+          "teilkachel": "r0c0",
+          "id": 100176,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477,
+            "abstand": 0.335
+          },
+          "flaeche": 14219,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4869,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Höfe mit hellen Längsbauten (Streckhöfe) östlich der Straße, Hauptteil im Kontextrand (r0c1/r1c1).",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helle Längsbauten 535–563/387–424 und 544–563/442–486 stecken im Hofsegment; nicht geteilt, weil sie über den Kernrand reichen und ein Schnitt nur im Kern die Naht verletzen würde.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200331",
+          "teilkachel": "r0c1",
+          "id": 200331,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 119,
+          "flaeche_kern": 119,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner dunkler Streifen an der linken Kerngrenze: Schatten. (x 64–70, y 330–351)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 17,
+      "paar": "r0c0:100176|r0c1:200304",
+      "art": "naht",
+      "bild": "paar_17.jpg",
+      "randpunkte": 8,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            301
+          ],
+          "bis": [
+            500,
+            308
+          ],
+          "laenge": 8,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100176",
+          "teilkachel": "r0c0",
+          "id": 100176,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477,
+            "abstand": 0.335
+          },
+          "flaeche": 14219,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4869,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Höfe mit hellen Längsbauten (Streckhöfe) östlich der Straße, Hauptteil im Kontextrand (r0c1/r1c1).",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helle Längsbauten 535–563/387–424 und 544–563/442–486 stecken im Hofsegment; nicht geteilt, weil sie über den Kernrand reichen und ein Schnitt nur im Kern die Naht verletzen würde.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200304",
+          "teilkachel": "r0c1",
+          "id": 200304,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 795,
+          "flaeche_kern": 795,
+          "sicher": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Heller langer Dachstreifen (Ost-West) an der linken Kerngrenze. (x 64–122, y 343–373)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Bebaut",
+            "mittel": "Gebäude",
+            "fein": "Wohnhaus, helles Dach"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 18,
+      "paar": "r0c0:100176|r0c1:200289",
+      "art": "naht",
+      "bild": "paar_18.jpg",
+      "randpunkte": 74,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            309
+          ],
+          "bis": [
+            500,
+            314
+          ],
+          "laenge": 6,
+          "kante_max": 19.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            316
+          ],
+          "bis": [
+            500,
+            354
+          ],
+          "laenge": 39,
+          "kante_max": 23.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            356
+          ],
+          "bis": [
+            500,
+            384
+          ],
+          "laenge": 29,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100176",
+          "teilkachel": "r0c0",
+          "id": 100176,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477,
+            "abstand": 0.335
+          },
+          "flaeche": 14219,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4869,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Höfe mit hellen Längsbauten (Streckhöfe) östlich der Straße, Hauptteil im Kontextrand (r0c1/r1c1).",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helle Längsbauten 535–563/387–424 und 544–563/442–486 stecken im Hofsegment; nicht geteilt, weil sie über den Kernrand reichen und ein Schnitt nur im Kern die Naht verletzen würde.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200289",
+          "teilkachel": "r0c1",
+          "id": 200289,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 5711,
+          "flaeche_kern": 5711,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Große mittelgraue Mischfläche in der Blockmitte: Dächer mit Schattenseite und Höfe ohne trennbare Kante. (x 64–183, y 314–449)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 19,
+      "paar": "r0c0:100176|r0c1:200047",
+      "art": "naht",
+      "bild": "paar_19.jpg",
+      "randpunkte": 41,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            385
+          ],
+          "bis": [
+            500,
+            425
+          ],
+          "laenge": 41,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100176",
+          "teilkachel": "r0c0",
+          "id": 100176,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477,
+            "abstand": 0.335
+          },
+          "flaeche": 14219,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4869,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Höfe mit hellen Längsbauten (Streckhöfe) östlich der Straße, Hauptteil im Kontextrand (r0c1/r1c1).",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helle Längsbauten 535–563/387–424 und 544–563/442–486 stecken im Hofsegment; nicht geteilt, weil sie über den Kernrand reichen und ein Schnitt nur im Kern die Naht verletzen würde.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200047",
+          "teilkachel": "r0c1",
+          "id": 200047,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.484,
+            "abstand": 0.322
+          },
+          "flaeche": 22311,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 6753,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nach dem Teilen die große helle Fläche in der Blockmitte (x 64–217, y 376–489): ein sehr helles Gebäude (etwa 35 × 8 m) zusammen mit hellen Hofflächen; Grenze dazwischen ohne klare Kante.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 2,
+              "art": "trennen",
+              "text": "Helles Gebäude x 120–200, y 395–430 und helle Hofflächen links davon gleich hell; ohne Kante nicht getrennt.",
+              "flaeche_px": 6753
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebaut",
+            "mittel": "Gebäude",
+            "fein": "Wohnhaus, helles Dach"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 20,
+      "paar": "r0c0:100176|r0c1:200290",
+      "art": "naht",
+      "bild": "paar_20.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            427
+          ],
+          "bis": [
+            500,
+            427
+          ],
+          "laenge": 1,
+          "kante_max": 14.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            440
+          ],
+          "bis": [
+            500,
+            448
+          ],
+          "laenge": 9,
+          "kante_max": 20.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100176",
+          "teilkachel": "r0c0",
+          "id": 100176,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477,
+            "abstand": 0.335
+          },
+          "flaeche": 14219,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4869,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Höfe mit hellen Längsbauten (Streckhöfe) östlich der Straße, Hauptteil im Kontextrand (r0c1/r1c1).",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helle Längsbauten 535–563/387–424 und 544–563/442–486 stecken im Hofsegment; nicht geteilt, weil sie über den Kernrand reichen und ein Schnitt nur im Kern die Naht verletzen würde.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200290",
+          "teilkachel": "r0c1",
+          "id": 200290,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 5633,
+          "flaeche_kern": 5633,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Breites dunkles, fleckiges Band quer durch den Block (y 440–524): Gärten mit Bäumen und Schatten. (x 64–240, y 440–524)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Garten",
+            "fein": "Garten, dunkel (Bäume oder Schatten)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 21,
+      "paar": "r0c0:100209|r0c1:200290",
+      "art": "naht",
+      "bild": "paar_21.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            428
+          ],
+          "bis": [
+            500,
+            428
+          ],
+          "laenge": 1,
+          "kante_max": 20.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100209",
+          "teilkachel": "r0c0",
+          "id": 100209,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.272,
+            "abstand": 0.069
+          },
+          "flaeche": 1019,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4,
+          "urteil": "sauber",
+          "was_ist_es": "Nur 4 Bildpunkte im Kern; Rand einer dunklen Gehölzgruppe in r0c1.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Gebüsch",
+            "fein": "Gebüsch"
+          }
+        },
+        {
+          "segment": "r0c1:200290",
+          "teilkachel": "r0c1",
+          "id": 200290,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 5633,
+          "flaeche_kern": 5633,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Breites dunkles, fleckiges Band quer durch den Block (y 440–524): Gärten mit Bäumen und Schatten. (x 64–240, y 440–524)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Garten",
+            "fein": "Garten, dunkel (Bäume oder Schatten)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 22,
+      "paar": "r0c0:100211|r0c1:200290",
+      "art": "naht",
+      "bild": "paar_22.jpg",
+      "randpunkte": 11,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            429
+          ],
+          "bis": [
+            500,
+            439
+          ],
+          "laenge": 11,
+          "kante_max": 17.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100211",
+          "teilkachel": "r0c0",
+          "id": 100211,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.339,
+            "abstand": 0.074
+          },
+          "flaeche": 208,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 197,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkler Streifen am rechten Kernrand östlich der Straße, Rand der Gehölzgruppe 209 oder Schatten.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Gebüsch",
+            "fein": "Gebüsch"
+          }
+        },
+        {
+          "segment": "r0c1:200290",
+          "teilkachel": "r0c1",
+          "id": 200290,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 5633,
+          "flaeche_kern": 5633,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Breites dunkles, fleckiges Band quer durch den Block (y 440–524): Gärten mit Bäumen und Schatten. (x 64–240, y 440–524)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Garten",
+            "fein": "Garten, dunkel (Bäume oder Schatten)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 23,
+      "paar": "r0c0:100215|r0c1:200290",
+      "art": "naht",
+      "bild": "paar_23.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            451
+          ],
+          "bis": [
+            500,
+            451
+          ],
+          "laenge": 1,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100215",
+          "teilkachel": "r0c0",
+          "id": 100215,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.479
+          },
+          "instanz": {
+            "text": "shed",
+            "eingerastet": true
+          },
+          "flaeche": 923,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 22,
+          "urteil": "sauber",
+          "was_ist_es": "Nur 22 Bildpunkte im Kern; Rand einer grauen Fläche östlich der Straße in r0c1.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200290",
+          "teilkachel": "r0c1",
+          "id": 200290,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 5633,
+          "flaeche_kern": 5633,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Breites dunkles, fleckiges Band quer durch den Block (y 440–524): Gärten mit Bäumen und Schatten. (x 64–240, y 440–524)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Garten",
+            "fein": "Garten, dunkel (Bäume oder Schatten)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 24,
+      "paar": "r0c0:100215|r0c1:200106",
+      "art": "naht",
+      "bild": "paar_24.jpg",
+      "randpunkte": 9,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            452
+          ],
+          "bis": [
+            500,
+            460
+          ],
+          "laenge": 9,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100215",
+          "teilkachel": "r0c0",
+          "id": 100215,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.479
+          },
+          "instanz": {
+            "text": "shed",
+            "eingerastet": true
+          },
+          "flaeche": 923,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 22,
+          "urteil": "sauber",
+          "was_ist_es": "Nur 22 Bildpunkte im Kern; Rand einer grauen Fläche östlich der Straße in r0c1.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c1:200106",
+          "teilkachel": "r0c1",
+          "id": 200106,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.626,
+            "abstand": 0.158
+          },
+          "flaeche": 182,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 158,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgrauer Fleck am Ostrand der Straße 81 an der linken Kerngrenze: Straßenrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 25,
+      "paar": "r0c0:100198|r0c1:200106",
+      "art": "naht",
+      "bild": "paar_25.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            461
+          ],
+          "bis": [
+            500,
+            463
+          ],
+          "laenge": 3,
+          "kante_max": 21.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100198",
+          "teilkachel": "r0c0",
+          "id": 100198,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.441
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 4785,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1875,
+          "urteil": "sauber",
+          "was_ist_es": "Breite helle Straße nach Südost von der Einmündung bis über den unteren Kernrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße",
+            "fein": "Straße"
+          }
+        },
+        {
+          "segment": "r0c1:200106",
+          "teilkachel": "r0c1",
+          "id": 200106,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.626,
+            "abstand": 0.158
+          },
+          "flaeche": 182,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 158,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgrauer Fleck am Ostrand der Straße 81 an der linken Kerngrenze: Straßenrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 26,
+      "paar": "r0c1:200054|r0c1:200289",
+      "art": "viertel",
+      "bild": "paar_26.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            578,
+            250
+          ],
+          "bis": [
+            578,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200054",
+          "teilkachel": "r0c1",
+          "id": 200054,
+          "klasse": "0.1.2",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.348,
+            "abstand": 0.151
+          },
+          "flaeche": 3870,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3870,
+          "urteil": "sauber",
+          "was_ist_es": "Sehr dunkles, unregelmäßig begrenztes Band längs der Westseite der Straße 49: Schatten einer Baumreihe oder hoher Häuser.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten oder Baumreihe"
+          }
+        },
+        {
+          "segment": "r0c1:200289",
+          "teilkachel": "r0c1",
+          "id": 200289,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 5711,
+          "flaeche_kern": 5711,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Große mittelgraue Mischfläche in der Blockmitte: Dächer mit Schattenseite und Höfe ohne trennbare Kante. (x 64–183, y 314–449)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-02",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100143|r0c0:100167",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100153|r0c0:100274",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100111|r0c1:200042",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100112|r0c1:200310",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100111|r0c1:200310",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100128|r0c1:200310",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100128|r0c1:200312",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100143|r0c1:200312",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100144|r0c1:200298",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100143|r0c1:200298",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100153|r0c1:200298",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100153|r0c1:200317",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100153|r0c1:200299",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100165|r0c1:200299",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100176|r0c1:200299",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100176|r0c1:200331",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100176|r0c1:200304",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100176|r0c1:200289",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100176|r0c1:200047",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100176|r0c1:200290",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100209|r0c1:200290",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100211|r0c1:200290",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100215|r0c1:200290",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100215|r0c1:200106",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100198|r0c1:200106",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200054|r0c1:200289",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

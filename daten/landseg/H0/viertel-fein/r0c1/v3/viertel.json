@@ -1,0 +1,2152 @@
+{
+  "schema": "landseg-h0-viertelbilder/1",
+  "teilkachel": "r0c1",
+  "viertel": "v3",
+  "lage": "unten links",
+  "viertel_im_bild": {
+    "x": 64,
+    "y": 314,
+    "breite": 250,
+    "hoehe": 250
+  },
+  "kern_im_bild": {
+    "x": 64,
+    "y": 64,
+    "breite": 500,
+    "hoehe": 500
+  },
+  "koordinaten": "x_teilkachel = fenster.x + x_bild // faktor (im Gitterbild vorher 40 px links und 16 px oben abziehen; im Mängelbild steht die Legende unten)",
+  "nummer": "Nummer im Bild = ID mod 100000; weiß = Segment dieses Viertels, grau = Kernsegment eines Nachbarviertels, ohne Nummer = Kontextrand",
+  "bilder": {
+    "uebersicht_nummern.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_roh.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_vorschlag.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_maengel.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_kontrast.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_gitter.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3,
+        "rand_links": 40,
+        "rand_oben": 16
+      }
+    },
+    "nah1_roh.jpg": {
+      "fenster": {
+        "x": 52,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah1_nummern.jpg": {
+      "fenster": {
+        "x": 52,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_roh.jpg": {
+      "fenster": {
+        "x": 177,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_nummern.jpg": {
+      "fenster": {
+        "x": 177,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_roh.jpg": {
+      "fenster": {
+        "x": 52,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_nummern.jpg": {
+      "fenster": {
+        "x": 52,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_roh.jpg": {
+      "fenster": {
+        "x": 177,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_nummern.jpg": {
+      "fenster": {
+        "x": 177,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    }
+  },
+  "segmente": [
+    {
+      "id": 200325,
+      "nr": 325,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 70,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        66,
+        335
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200285,
+      "nr": 285,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 638,
+      "anteil": 0.544,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        71,
+        321
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200327,
+      "nr": 327,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1215,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        81,
+        343
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200301,
+      "nr": 301,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 174,
+      "anteil": 0.626,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        90,
+        317
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200304,
+      "nr": 304,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 198,
+      "anteil": 0.742,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        101,
+        318
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200332,
+      "nr": 332,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 141,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        103,
+        338
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200326,
+      "nr": 326,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 166,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        114,
+        334
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200292,
+      "nr": 292,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 659,
+      "anteil": 0.697,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        116,
+        320
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200317,
+      "nr": 317,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 847,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        132,
+        342
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200305,
+      "nr": 305,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 108,
+      "anteil": 0.676,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        138,
+        317
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200311,
+      "nr": 311,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 543,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        154,
+        348
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200306,
+      "nr": 306,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 208,
+      "anteil": 0.832,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        160,
+        319
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200322,
+      "nr": 322,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 587,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        167,
+        334
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200338,
+      "nr": 338,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 143,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        182,
+        348
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200315,
+      "nr": 315,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 146,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        193,
+        320
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200286,
+      "nr": 286,
+      "klasse": "4.2.4",
+      "name": "Gebüsch / Strauchfläche",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 1492,
+      "anteil": 0.805,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        220,
+        330
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200339,
+      "nr": 339,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 267,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        246,
+        348
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200318,
+      "nr": 318,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 417,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        248,
+        333
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200296,
+      "nr": 296,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 347,
+      "anteil": 0.746,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        259,
+        322
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200330,
+      "nr": 330,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 167,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        265,
+        335
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200273,
+      "nr": 273,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 2819,
+      "anteil": 0.584,
+      "auch_in": [
+        "v1",
+        "v2",
+        "v4"
+      ],
+      "punkt": [
+        279,
+        348
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200312,
+      "nr": 312,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 345,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        286,
+        327
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200298,
+      "nr": 298,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 124,
+      "anteil": 0.508,
+      "auch_in": [
+        "v1",
+        "v2",
+        "v4"
+      ],
+      "punkt": [
+        308,
+        316
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200361,
+      "nr": 361,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 70,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        67,
+        374
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200377,
+      "nr": 377,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 329,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        78,
+        396
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200340,
+      "nr": 340,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 686,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        85,
+        362
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200356,
+      "nr": 356,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1193,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        92,
+        385
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200341,
+      "nr": 341,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1312,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        144,
+        370
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200359,
+      "nr": 359,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 317,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        165,
+        377
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200368,
+      "nr": 368,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 878,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        175,
+        389
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200345,
+      "nr": 345,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 343,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        180,
+        362
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200365,
+      "nr": 365,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 919,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        197,
+        383
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200380,
+      "nr": 380,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 206,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        209,
+        396
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200357,
+      "nr": 357,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 142,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        231,
+        375
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200351,
+      "nr": 351,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 702,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        246,
+        382
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200346,
+      "nr": 346,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 130,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        291,
+        365
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200362,
+      "nr": 362,
+      "klasse": "4.2.1",
+      "name": "Einzelbaum",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 1057,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        293,
+        397
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200337,
+      "nr": 337,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 177,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        297,
+        350
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200360,
+      "nr": 360,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 413,
+      "anteil": 0.978,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        302,
+        378
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200384,
+      "nr": 384,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 609,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        72,
+        434
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200400,
+      "nr": 400,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 499,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        86,
+        422
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200385,
+      "nr": 385,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 193,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        90,
+        409
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200395,
+      "nr": 395,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 167,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        114,
+        415
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200371,
+      "nr": 371,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1400,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        122,
+        400
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200388,
+      "nr": 388,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 2984,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        140,
+        430
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200383,
+      "nr": 383,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 546,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        159,
+        414
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200419,
+      "nr": 419,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 193,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        211,
+        439
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200391,
+      "nr": 391,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 583,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        221,
+        425
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200350,
+      "nr": 350,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1672,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        236,
+        405
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200410,
+      "nr": 410,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 283,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        253,
+        427
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante"
+      ]
+    },
+    {
+      "id": 200424,
+      "nr": 424,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 892,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        263,
+        443
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200370,
+      "nr": 370,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 906,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        268,
+        401
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200394,
+      "nr": 394,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 207,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        279,
+        421
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200398,
+      "nr": 398,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 88,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        291,
+        424
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200411,
+      "nr": 411,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1093,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        291,
+        449
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200381,
+      "nr": 381,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1118,
+      "anteil": 0.562,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        304,
+        419
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200428,
+      "nr": 428,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 187,
+      "anteil": 0.754,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        304,
+        441
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200454,
+      "nr": 454,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 32,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        65,
+        493
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200433,
+      "nr": 433,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1036,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        77,
+        460
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200448,
+      "nr": 448,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 2413,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        100,
+        486
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200446,
+      "nr": 446,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 77,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        116,
+        463
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200415,
+      "nr": 415,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1359,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        152,
+        453
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200458,
+      "nr": 458,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 101,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        153,
+        481
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200432,
+      "nr": 432,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1814,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        167,
+        470
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200459,
+      "nr": 459,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1533,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        191,
+        491
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200450,
+      "nr": 450,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 418,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        204,
+        470
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200401,
+      "nr": 401,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 312,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        215,
+        450
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200464,
+      "nr": 464,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 286,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        220,
+        487
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200439,
+      "nr": 439,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 679,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        223,
+        468
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200451,
+      "nr": 451,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 98,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        237,
+        474
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200457,
+      "nr": 457,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 200,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        247,
+        490
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200437,
+      "nr": 437,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 679,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        289,
+        475
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200441,
+      "nr": 441,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 315,
+      "anteil": 0.905,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        307,
+        460
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200488,
+      "nr": 488,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1103,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        85,
+        528
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200465,
+      "nr": 465,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1821,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        117,
+        519
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200504,
+      "nr": 504,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 784,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        137,
+        541
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200491,
+      "nr": 491,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 170,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        154,
+        517
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200517,
+      "nr": 517,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 164,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        154,
+        544
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200486,
+      "nr": 486,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 158,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        176,
+        510
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200498,
+      "nr": 498,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 726,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        177,
+        533
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200510,
+      "nr": 510,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 433,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        194,
+        542
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200484,
+      "nr": 484,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 634,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        196,
+        513
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200493,
+      "nr": 493,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 108,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        211,
+        521
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200470,
+      "nr": 470,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 565,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        224,
+        504
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200485,
+      "nr": 485,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1127,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        227,
+        525
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200508,
+      "nr": 508,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 283,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        230,
+        543
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200472,
+      "nr": 472,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 753,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        255,
+        508
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200489,
+      "nr": 489,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 126,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        272,
+        528
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200414,
+      "nr": 414,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 3696,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        291,
+        510
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200497,
+      "nr": 497,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 53,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        65,
+        550
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200533,
+      "nr": 533,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 21,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        65,
+        558
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200397,
+      "nr": 397,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 423,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        77,
+        556
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200539,
+      "nr": 539,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 22,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        88,
+        562
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante"
+      ]
+    },
+    {
+      "id": 200516,
+      "nr": 516,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 494,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        94,
+        554
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200534,
+      "nr": 534,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 151,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        116,
+        559
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200521,
+      "nr": 521,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 90,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        127,
+        552
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200525,
+      "nr": 525,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 76,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        134,
+        553
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200526,
+      "nr": 526,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 360,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        155,
+        556
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200540,
+      "nr": 540,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 8,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        160,
+        562
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200518,
+      "nr": 518,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 639,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        196,
+        556
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200502,
+      "nr": 502,
+      "klasse": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1389,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        249,
+        552
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200527,
+      "nr": 527,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 111,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        267,
+        558
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 200535,
+      "nr": 535,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 74,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        274,
+        560
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200507,
+      "nr": 507,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 596,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        286,
+        552
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200522,
+      "nr": 522,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 76,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        311,
+        561
+      ],
+      "kandidaten": []
+    }
+  ]
+}

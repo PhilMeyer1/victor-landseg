@@ -1,0 +1,7085 @@
+{
+  "schema": "landseg-segmente/1",
+  "verlauf": [
+    {
+      "zeit": "2026-11-17T16:58:41+00:00",
+      "bearbeiter": "vorstufe",
+      "op": "vorstufe",
+      "konfig": "efd5251383c0"
+    },
+    {
+      "nr": 2,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100056,
+        "klasse": "2.1"
+      },
+      "ergebnis": {
+        "alt": "2.1.2",
+        "neu": "2.1"
+      }
+    },
+    {
+      "nr": 3,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100056,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 4,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100166,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 5,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100056,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100056|r0c0:100166",
+              "mit": "r0c0:100166",
+              "entscheidung": "gleich",
+              "grund": "Beide Seiten der Viertelgrenze zeigen dieselbe hellgrüne, feinkörnige Hangwiese mit kleinen dunklen Büschen ohne Kante; gemäht oder ungemäht ist nicht sicher, daher Wiese wie in der Kette mit 300015.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "2.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 6,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100135,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 7,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100175,
+        "klasse": "2.1"
+      },
+      "ergebnis": {
+        "alt": "2.1.2",
+        "neu": "2.1"
+      }
+    },
+    {
+      "nr": 8,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100175,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 9,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100056,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100056|r0c0:100166",
+              "mit": "r0c0:100166",
+              "entscheidung": "gleich",
+              "grund": "Beide Seiten der Viertelgrenze zeigen dieselbe hellgrüne, feinkörnige Hangwiese mit kleinen dunklen Büschen ohne Kante; gemäht oder ungemäht ist nicht sicher, daher Wiese wie in der Kette mit 300015.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "2.1"
+            },
+            {
+              "paar": "r0c0:100056|r0c0:100135",
+              "mit": "r0c0:100135",
+              "entscheidung": "grenze",
+              "grund": "Links Wiese, rechts die dunkle, gekörnte Baumkrone mit Lichtflecken: echte Grenze Wiese/Baum, nur an einem Punkt ohne Farbsprung.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 10,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100056,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100056|r0c0:100166",
+              "mit": "r0c0:100166",
+              "entscheidung": "gleich",
+              "grund": "Beide Seiten der Viertelgrenze zeigen dieselbe hellgrüne, feinkörnige Hangwiese mit kleinen dunklen Büschen ohne Kante; gemäht oder ungemäht ist nicht sicher, daher Wiese wie in der Kette mit 300015.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "2.1"
+            },
+            {
+              "paar": "r0c0:100056|r0c0:100135",
+              "mit": "r0c0:100135",
+              "entscheidung": "grenze",
+              "grund": "Links Wiese, rechts die dunkle, gekörnte Baumkrone mit Lichtflecken: echte Grenze Wiese/Baum, nur an einem Punkt ohne Farbsprung.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r0c0:100056|r1c0:300015",
+              "mit": "r1c0:300015",
+              "entscheidung": "gleich",
+              "grund": "Oberhalb und unterhalb der Naht dieselbe hellgrüne Hangwiese mit kleinen Strauchflecken, keine Kante; Wiese wie 300015 und 100166.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "2.1"
+            }
+          ],
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 11,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100166,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100056|r0c0:100166",
+              "mit": "r0c0:100056",
+              "entscheidung": "gleich",
+              "grund": "Beide Seiten der Viertelgrenze zeigen dieselbe hellgrüne, feinkörnige Hangwiese mit kleinen dunklen Büschen ohne Kante; gemäht oder ungemäht ist nicht sicher, daher Wiese wie in der Kette mit 300015.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "2.1"
+            }
+          ],
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 12,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100191,
+        "klasse": "1.2.1"
+      },
+      "ergebnis": {
+        "alt": "1.1.2",
+        "neu": "1.2.1"
+      }
+    },
+    {
+      "nr": 13,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100191,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 14,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100194,
+        "klasse": "1.1"
+      },
+      "ergebnis": {
+        "alt": "1.1.1",
+        "neu": "1.1"
+      }
+    },
+    {
+      "nr": 15,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100194,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 16,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100197,
+        "klasse": "2.1"
+      },
+      "ergebnis": {
+        "alt": "2.1.2",
+        "neu": "2.1"
+      }
+    },
+    {
+      "nr": 17,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100197,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 18,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100175,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100175|r0c1:200189",
+              "mit": "r0c1:200189",
+              "entscheidung": "gleich",
+              "grund": "Derselbe grüne Wiesenstreifen zwischen Heufeld und Gehölz läuft gerade über die Naht ohne jede Bildkante; beide Teilkacheln beschreiben ihn als hohe Wiese, gemäht/ungemäht ist nicht sicher, daher Wiese für die ganze Kette mit 300013 und 400002.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "2.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 19,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100040,
+        "klasse": "1"
+      },
+      "ergebnis": {
+        "alt": "1.3",
+        "neu": "1"
+      }
+    },
+    {
+      "nr": 20,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100040,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 21,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100061,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 22,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100074,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 23,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100099,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 24,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100099,
+        "klasse": "2.3"
+      },
+      "ergebnis": {
+        "alt": "2.2",
+        "neu": "2.3"
+      }
+    },
+    {
+      "nr": 25,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100099,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100099|r0c1:200080",
+              "mit": "r0c1:200080",
+              "entscheidung": "grenze",
+              "grund": "Der graugrüne Grasstreifen am Nordrand der Straße stößt an die Unterkante einer dunklen Baumkrone; zwei verschiedene Flächen, die Klassen bleiben.",
+              "bearbeiter": "agent:einigung-B-02:20261118e",
+              "buendel": "B-02",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 26,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100099,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100099|r0c1:200080",
+              "mit": "r0c1:200080",
+              "entscheidung": "grenze",
+              "grund": "Der graugrüne Grasstreifen am Nordrand der Straße stößt an die Unterkante einer dunklen Baumkrone; zwei verschiedene Flächen, die Klassen bleiben.",
+              "bearbeiter": "agent:einigung-B-02:20261118e",
+              "buendel": "B-02",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r0c0:100099|r0c1:200099",
+              "mit": "r0c1:200099",
+              "entscheidung": "gleich",
+              "grund": "Der graugrüne Streifen zwischen Gehölz und Straße läuft ohne Kante über die Naht weiter; ein schmaler bewachsener Straßenrand, daher Saum und Randstreifen (Kette mit Paar 6).",
+              "bearbeiter": "agent:einigung-B-02:20261118e",
+              "buendel": "B-02",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "2.3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 27,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100059,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 28,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100059,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100059|r0c1:200100",
+              "mit": "r0c1:200100",
+              "entscheidung": "grenze",
+              "grund": "Die Asphaltstraße und der Randstreifen darüber berühren sich nur an einem Eckpunkt; die Straßenkante trennt beide Flächen auch westlich der Naht (dort Grasstreifen 100099), die Klassen bleiben.",
+              "bearbeiter": "agent:einigung-B-02:20261118e",
+              "buendel": "B-02",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 29,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100109,
+        "klasse": "1"
+      },
+      "ergebnis": {
+        "alt": "1.1.1",
+        "neu": "1"
+      }
+    },
+    {
+      "nr": 30,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100109,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 31,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100122,
+        "klasse": "1"
+      },
+      "ergebnis": {
+        "alt": "1.3",
+        "neu": "1"
+      }
+    },
+    {
+      "nr": 32,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100122,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 33,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100122,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r0c1:200116",
+              "mit": "r0c1:200116",
+              "entscheidung": "gleich",
+              "grund": "Die Sträucher zwischen Hauswand und Nadelbaum und der dunkle Gehölzstreifen östlich davon gehen ohne Kante ineinander über (helle Strauchteile bei y 214–232 und Schatten bei y 202–212 auf beiden Seiten); Kette 100109–200116–100122 mit Krone und Sträuchern, daher Elternklasse Gehölz.",
+              "bearbeiter": "agent:einigung-B-02:20261118e",
+              "buendel": "B-02",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 34,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100114,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 35,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-03:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100170,
+        "klasse": "1"
+      },
+      "ergebnis": {
+        "alt": "1.3",
+        "neu": "1"
+      }
+    },
+    {
+      "nr": 36,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100170,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 37,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100170,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100170|r0c1:200167",
+              "mit": "r0c1:200167",
+              "entscheidung": "gleich",
+              "grund": "Türkis ist der untere Lappen derselben Gehölzmasse, die rechts der Naht als Magenta weiterläuft; ohne Kante, Sträucher und kleine Bäume gemischt, daher nur Gehölz sicher.",
+              "bearbeiter": "agent:einigung-B-03:20261118e",
+              "buendel": "B-03",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 38,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100159,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 39,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-03:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100195,
+        "klasse": "2.1"
+      },
+      "ergebnis": {
+        "alt": "2.1.2",
+        "neu": "2.1"
+      }
+    },
+    {
+      "nr": 40,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100195,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 41,
+      "zeit": "2026-11-18T00:53:58+00:00",
+      "bearbeiter": "agent:einigung-B-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100195,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100195|r1c0:300001",
+              "mit": "r1c0:300001",
+              "entscheidung": "gleich",
+              "grund": "Die dunklere Grasstelle geht ohne Kante in dieselbe Wiese unterhalb der Naht über; beides Wiese, ob gemäht oder nicht ist nicht sicher erkennbar.",
+              "bearbeiter": "agent:einigung-B-03:20261118e",
+              "buendel": "B-03",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "2.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 42,
+      "zeit": "2026-11-18T00:59:09+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+      "op": "einigung",
+      "parameter": {
+        "id": 100040,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100040|r0c1:200058",
+              "mit": "r0c1:200058",
+              "entscheidung": "gleich",
+              "grund": "Dunkle Gehölzkronen (Sträucher und kleine Bäume) laufen am oberen Bildrand ohne Helligkeits- oder Farbsprung über die Naht; ob Gebüsch oder Baumgruppe, ist an der Stelle nicht sicher zu trennen, daher die Elternklasse Gehölz.",
+              "bearbeiter": "agent:einigung-B-02:20261118e",
+              "buendel": "B-02",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "1"
+            }
+          ],
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 43,
+      "zeit": "2026-11-18T00:59:09+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100149,
+        "klasse": "1"
+      },
+      "ergebnis": {
+        "alt": "1.1.2",
+        "neu": "1"
+      }
+    },
+    {
+      "nr": 44,
+      "zeit": "2026-11-18T00:59:09+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+      "op": "einigung",
+      "parameter": {
+        "id": 100149,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 45,
+      "zeit": "2026-11-18T01:00:00+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e-r3",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100191,
+        "klasse": "1.2"
+      },
+      "ergebnis": {
+        "alt": "1.2.1",
+        "neu": "1.2"
+      }
+    },
+    {
+      "nr": 46,
+      "zeit": "2026-11-18T01:00:00+00:00",
+      "bearbeiter": "agent:einigung-B-01:20261118e-r3",
+      "op": "einigung",
+      "parameter": {
+        "id": 100191,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100191|r1c0:300008",
+              "mit": "r1c0:300008",
+              "entscheidung": "gleich",
+              "grund": "Die hellen, besonnten Laubkronen von 100191 setzen sich ohne Kante im belichteten Kronendach des Waldes 300008 fort; es ist der Nordrand desselben Waldes, daher Wald belichtet.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "1.2.1"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "vorstufe": {
+    "teilkachel": "r0c0",
+    "bild": "r0c0.png",
+    "konfig": "efd5251383c0",
+    "sam3": "70eb88e22347",
+    "modell": "facebook/sam3",
+    "erstellt": "2026-11-17T16:58:41+00:00",
+    "messung": {
+      "segmente": 206,
+      "segmente_im_kern": 141,
+      "superpixel": 2568,
+      "instanzen": 109,
+      "segmente_instanz": 116,
+      "sicher_nein": 136,
+      "anteil_sicher_nein": 0.6602,
+      "flaeche_sicher_nein": 0.3781,
+      "kandidaten": {
+        "klasse_unsicher": 136,
+        "nicht_zusammenhaengend": 11,
+        "grenze_ohne_bildkante": 185
+      },
+      "im_siedlung_ja": 62,
+      "hoehe": 628,
+      "breite": 628,
+      "laufzeit_s": {
+        "sam3": 65.94,
+        "verschmelzen": 0.32,
+        "gesamt": 66.28
+      }
+    },
+    "pruefen": {
+      "ok": true,
+      "hoehe": 628,
+      "breite": 628,
+      "bildpunkte": 394384,
+      "ohne_segment": 0,
+      "segmentzahl": 206,
+      "nicht_zusammenhaengend": [],
+      "maengel": []
+    }
+  },
+  "stand": "Fassung B, Urteil Runde 0 (Karte der Vorstufe, Klassen aus urteil/r0c0/urteil.json)",
+  "segmente": [
+    {
+      "id": 100001,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.499,
+        "abstand": 0.171
+      },
+      "flaeche": 664,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100002,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.494
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 1123,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100003,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.458
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 222,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100004,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.566
+      },
+      "instanz": {
+        "text": "building",
+        "eingerastet": true
+      },
+      "flaeche": 731,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100005,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.785
+      },
+      "instanz": {
+        "text": "swimming pool",
+        "eingerastet": true
+      },
+      "flaeche": 1839,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.3.3",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100006,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.204,
+        "abstand": 0.076
+      },
+      "flaeche": 106,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100007,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.443,
+        "abstand": 0.293
+      },
+      "flaeche": 262,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100008,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.714,
+        "abstand": 0.487
+      },
+      "flaeche": 170,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100009,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.534
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 399,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100010,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.942
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 5251,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Unterster Teil des roten Ziegeldachs des Wohnhauses nördlich der Straße.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Bebaut",
+        "mittel": "Gebäude",
+        "fein": "Wohnhaus"
+      }
+    },
+    {
+      "id": 100011,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.365,
+        "abstand": 0.209
+      },
+      "flaeche": 3581,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Hausgarten östlich des roten Hauses mit Sträuchern, Beeten und Rasen, keine Wiese.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Hausgarten mit Sträuchern statt Wiese (268/76).",
+          "flaeche_px": 1268
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      }
+    },
+    {
+      "id": 100012,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.529
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 689,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100013,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.897
+      },
+      "instanz": {
+        "text": "building",
+        "eingerastet": true
+      },
+      "flaeche": 3532,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100014,
+      "klasse": "6.1.2",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.567
+      },
+      "instanz": {
+        "text": "paved yard",
+        "eingerastet": true
+      },
+      "flaeche": 7768,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Hell befestigte Seitenstraße, die an der Gabel nach Norden abzweigt (Beton oder heller Belag), kein Hofplatz.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Straße",
+        "fein": "Betonfahrbahn"
+      }
+    },
+    {
+      "id": 100015,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.711
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 643,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100016,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.604
+      },
+      "instanz": {
+        "text": "lawn",
+        "eingerastet": true
+      },
+      "flaeche": 2238,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100017,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.852
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 1588,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100018,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.44,
+        "abstand": 0.209
+      },
+      "flaeche": 90,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100019,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.427,
+        "abstand": 0.285
+      },
+      "flaeche": 395,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100020,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.566
+      },
+      "instanz": {
+        "text": "building",
+        "eingerastet": true
+      },
+      "flaeche": 528,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100021,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.138,
+        "abstand": 0.083
+      },
+      "flaeche": 361,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100022,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.076,
+        "abstand": 0.034
+      },
+      "flaeche": 315,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100023,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.354,
+        "abstand": 0.114
+      },
+      "flaeche": 128,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100024,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.401
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 991,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100025,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.43
+      },
+      "instanz": {
+        "text": "paved path",
+        "eingerastet": true
+      },
+      "flaeche": 306,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100026,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.296,
+        "abstand": 0.11
+      },
+      "flaeche": 114,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100027,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.413
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 4359,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkler Kronenbereich der Baumgruppe 100048 in der Ecke oben links, kein Wolkenschatten.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kronenrest in der Kernecke gehört zur Baumgruppe 100048, mit ihr verschmelzen (66/66).",
+          "flaeche_px": 86
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100028,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.124,
+        "abstand": 0.073
+      },
+      "flaeche": 198,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100029,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.445,
+        "abstand": 0.157
+      },
+      "flaeche": 437,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100030,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.127,
+        "abstand": 0.075
+      },
+      "flaeche": 314,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100031,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.583
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1014,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkler Saum westlich des Dachs 100033 am Kernoberrand: Hausschatten auf Garten und Hecke.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Schatten ist keine Klasse; was darunter liegt, ist Garten oder Hecke (448/66).",
+          "flaeche_px": 44
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      }
+    },
+    {
+      "id": 100032,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.462,
+        "abstand": 0.205
+      },
+      "flaeche": 259,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100033,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.946
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 6434,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Wohnhaus mit braungrauem Satteldach, Gauben und Dachfenstern.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Bebaut",
+        "mittel": "Gebäude",
+        "fein": "Wohnhaus"
+      }
+    },
+    {
+      "id": 100034,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.319,
+        "abstand": 0.266
+      },
+      "flaeche": 162,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100035,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.727,
+        "abstand": 0.111
+      },
+      "flaeche": 422,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100036,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.28,
+        "abstand": 0.121
+      },
+      "flaeche": 544,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Kleiner Rest Garten am Kernoberrand nordöstlich des Hauses, fast ganz im Kontextrand.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      }
+    },
+    {
+      "id": 100037,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.566
+      },
+      "instanz": {
+        "text": "building",
+        "eingerastet": true
+      },
+      "flaeche": 190,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100038,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.438
+      },
+      "instanz": {
+        "text": "lawn",
+        "eingerastet": true
+      },
+      "flaeche": 1930,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Gemähter Grasstreifen zwischen Straße und Hecke am Grundstück nördlich der Straße.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Grünstreifen",
+        "fein": "Straßenbegleitgrün"
+      }
+    },
+    {
+      "id": 100039,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.642,
+        "abstand": 0.306
+      },
+      "flaeche": 155,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.4",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100040,
+      "klasse": "1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.406,
+        "abstand": 0.107
+      },
+      "flaeche": 2062,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Dunkle Sträucher östlich des Hauses 100033 am Kernrand.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100040|r0c1:200058",
+          "mit": "r0c1:200058",
+          "entscheidung": "gleich",
+          "grund": "Dunkle Gehölzkronen (Sträucher und kleine Bäume) laufen am oberen Bildrand ohne Helligkeits- oder Farbsprung über die Naht; ob Gebüsch oder Baumgruppe, ist an der Stelle nicht sicher zu trennen, daher die Elternklasse Gehölz.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "1"
+        },
+        {
+          "paar": "r0c0:100040|r0c1:200043",
+          "mit": "r0c1:200043",
+          "entscheidung": "unklar",
+          "grund": "Die dunklen Sträucher von 100040 laufen bei y 0–30 ohne Kante in das Gartensammelsegment 200043 weiter (einigung_01.jpg), doch 200043 ist als Ganzes eine gemischte Gartenfläche mit Flachdach, Terrassen und Gartenboden und hängt über 100061/100074 an Parzelle gemischt, 100040 über 200058 an Gehölz; eine gemeinsame Klasse für die ganze Kette wäre für eine Seite falsch, bevor 200043 nach den Punkten 1–4 im Urteil r0c1 getrennt ist.",
+          "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:59:09+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100041,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.264,
+        "abstand": 0.154
+      },
+      "flaeche": 115,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100042,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.07,
+        "abstand": 0.026
+      },
+      "flaeche": 147,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100043,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.691,
+        "abstand": 0.112
+      },
+      "flaeche": 239,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100044,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.356,
+        "abstand": 0.287
+      },
+      "flaeche": 130,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100045,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.641,
+        "abstand": 0.346
+      },
+      "flaeche": 123,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100046,
+      "klasse": "1.4",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.343,
+        "abstand": 0.246
+      },
+      "flaeche": 580,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Sträucher und Hecke am Rand des Grundstücks nördlich der Straßengabel, zum großen Teil im Kontextrand.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Hecke",
+        "fein": "Hecke"
+      }
+    },
+    {
+      "id": 100047,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.516
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 3216,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Gemähter Hausrasen im Garten westlich des Hauses 100033 mit Sandkiste und kleinen Gartengeräten, kein Acker.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Rasen eines Hausgartens statt Acker (404/96).",
+          "flaeche_px": 3019
+        },
+        {
+          "nr": 2,
+          "art": "fehlt",
+          "text": "Kleines dunkles Objekt (Hütte oder Trampolin, etwa 2 × 2 m) nicht abgegrenzt (432/102).",
+          "flaeche_px": 80
+        },
+        {
+          "nr": 3,
+          "art": "verschmelzen",
+          "text": "Grenze zu 100070 liegt ohne Bildkante im selben Rasen; den Rasenteil von 100070 hierher nehmen (420/118).",
+          "flaeche_px": null
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Rasen",
+        "fein": "Hausrasen"
+      }
+    },
+    {
+      "id": 100048,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.693
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 6465,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Geschlossene Gruppe mehrerer Laubbaumkronen am oberen linken Rand, südlich der Straße.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Mehrere Kronen statt eines Einzelbaums, Klasse Baumgruppe (91/91).",
+          "flaeche_px": 5751
+        },
+        {
+          "nr": 2,
+          "art": "verschmelzen",
+          "text": "Die Kronenränder 100084, 100079, 100072 am Unterrand und 100067, 100054, 100027 gehören zu dieser Gruppe (110/128).",
+          "flaeche_px": 776
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100049,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.808
+      },
+      "instanz": {
+        "text": "forest",
+        "eingerastet": true
+      },
+      "flaeche": 129,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100050,
+      "klasse": "1.4",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.779,
+        "abstand": 0.393
+      },
+      "flaeche": 114,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Splitter am Kernoberrand im dunklen Heckenband nördlich des Gartens.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Splitter von 48 Bildpunkten, mit der Hecke 100058 verschmelzen (410/66).",
+          "flaeche_px": 48
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Hecke",
+        "fein": "Hecke"
+      }
+    },
+    {
+      "id": 100051,
+      "klasse": "1.4",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.442,
+        "abstand": 0.385
+      },
+      "flaeche": 255,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkles Band unter dem roten Dach, Hecke bzw. Grundstücksgrenze mit Schatten, kein Gebäude.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kein Hauptgebäude: dunkelgrünes Band mit Schatten entlang der Grundstücksgrenze, Hecke oder Mauer (236/70).",
+          "flaeche_px": 179
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Hecke",
+        "fein": "Hecke"
+      }
+    },
+    {
+      "id": 100052,
+      "klasse": "4.2",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.2,
+        "abstand": 0.158
+      },
+      "flaeche": 521,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Schmales graubraunes Band schräg zwischen Garten und Zufahrt, vermutlich Mauerkrone einer Stützmauer, sonst ein Kiesweg.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Bebaut",
+        "mittel": "Mauer",
+        "fein": "Stützmauer"
+      }
+    },
+    {
+      "id": 100053,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.369,
+        "abstand": 0.315
+      },
+      "flaeche": 145,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Heller Streifen an der Ostkante des Dachs 100033 mit etwas Grün, Dachrand oder Gartenrand.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Bebaut",
+        "mittel": "Gebäude",
+        "fein": "Wohnhaus"
+      }
+    },
+    {
+      "id": 100054,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.685,
+        "abstand": 0.084
+      },
+      "flaeche": 95,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schmaler dunkler Streifen zwischen Kronenrand und Straßenbeginn am Kernoberrand, eher Kronenüberhang mit Schatten als Asphalt.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Splitter von 69 Bildpunkten, mit Baumgruppe 100048 verschmelzen, falls doch Asphalt mit Straße 100059 (157/66).",
+          "flaeche_px": 69
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100055,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.313,
+        "abstand": 0.161
+      },
+      "flaeche": 212,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100056,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 118149,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Große ungemähte Wiese am Hang mit Altgras, kleinen Gebüschen und hellen Trockenstellen; reicht über alle vier Viertel.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "fehlt",
+          "text": "Dunkles Gebüsch oberhalb von 100125 nicht abgegrenzt, eigenes Segment Gebüsch (108/261).",
+          "flaeche_px": 300
+        },
+        {
+          "nr": 2,
+          "art": "fehlt",
+          "text": "Dunkles Gebüsch rechts unterhalb von 100123 nicht abgegrenzt (195/288).",
+          "flaeche_px": 150
+        },
+        {
+          "nr": 3,
+          "art": "sonstiges",
+          "text": "Ein Segment über 90 000 Bildpunkte und alle Viertel, nicht zusammenhängend; Teile in v2 bis v4 gesondert prüfen (238/230).",
+          "flaeche_px": null
+        },
+        {
+          "nr": 4,
+          "art": "trennen",
+          "text": "Der Teil in v3 (rund 38 000 Bildpunkte zwischen den dunklen Kronen) ist dichtes, grob gekörntes Gebüsch mit Jungwuchs, keine Wiese; als eigenes Segment Gebüschfläche abtrennen, Grenze grob entlang des Übergangs zur glatten Wiese 100166 (200/420).",
+          "flaeche_px": 38000
+        },
+        {
+          "nr": 5,
+          "art": "fehlt",
+          "text": "Heller Trampelpfad schräg durch das Gebüsch in v3 von (234/437) bis (318/527) nicht abgegrenzt (260/470).",
+          "flaeche_px": 250
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Altgras mit Gebüsch"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100056|r0c0:100166",
+          "mit": "r0c0:100166",
+          "entscheidung": "gleich",
+          "grund": "Beide Seiten der Viertelgrenze zeigen dieselbe hellgrüne, feinkörnige Hangwiese mit kleinen dunklen Büschen ohne Kante; gemäht oder ungemäht ist nicht sicher, daher Wiese wie in der Kette mit 300015.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        },
+        {
+          "paar": "r0c0:100056|r0c0:100135",
+          "mit": "r0c0:100135",
+          "entscheidung": "grenze",
+          "grund": "Links Wiese, rechts die dunkle, gekörnte Baumkrone mit Lichtflecken: echte Grenze Wiese/Baum, nur an einem Punkt ohne Farbsprung.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r0c0:100056|r1c0:300015",
+          "mit": "r1c0:300015",
+          "entscheidung": "gleich",
+          "grund": "Oberhalb und unterhalb der Naht dieselbe hellgrüne Hangwiese mit kleinen Strauchflecken, keine Kante; Wiese wie 300015 und 100166.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        },
+        {
+          "paar": "r0c0:100056|r1c0:300008",
+          "mit": "r1c0:300008",
+          "entscheidung": "unklar",
+          "grund": "An der Naht liegen oben im Wiesen-Segment 100056 dieselben hellen, knolligen Laubkronen bzw. dichtes Jungwuchs-Gebüsch wie im Wald 300008 darunter (einigung_05.jpg); 100056 ist als Ganzes aber Wiese, 300008 Wald, keine gemeinsame Klasse passt, bevor der Gebüschteil von 100056 abgetrennt ist (Punkt 4 im Urteil r0c0).",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100057,
+      "klasse": "4.3",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.577,
+        "abstand": 0.291
+      },
+      "flaeche": 270,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Helle Holzumrandung im Rasen, Sandkiste oder Hochbeet, keine Wiese.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Helles Holzviereck mit Inhalt, Sandkiste oder Hochbeet statt Wiese (430/73).",
+          "flaeche_px": 270
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Gartenausstattung"
+      }
+    },
+    {
+      "id": 100058,
+      "klasse": "1.4",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.776,
+        "abstand": 0.387
+      },
+      "flaeche": 90,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkles Band am Nordrand des Gartens 100047, Fortsetzung der Gartenhecke mit Schatten.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Hecke mit Schatten statt Schatten (397/73).",
+          "flaeche_px": 90
+        },
+        {
+          "nr": 2,
+          "art": "verschmelzen",
+          "text": "Der Splitter 100050 oben gehört zur selben Hecke (410/66).",
+          "flaeche_px": 48
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Hecke",
+        "fein": "Hecke"
+      }
+    },
+    {
+      "id": 100059,
+      "klasse": "6.1.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.758
+      },
+      "instanz": {
+        "text": "road",
+        "eingerastet": true
+      },
+      "flaeche": 9919,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Asphaltierte Hauptstraße in weitem Bogen durch das Viertel; oben an der Gabel ein dunklerer Asphaltfleck.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Straße",
+        "fein": "Asphaltstraße"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100059|r0c1:200100",
+          "mit": "r0c1:200100",
+          "entscheidung": "grenze",
+          "grund": "Die Asphaltstraße und der Randstreifen darüber berühren sich nur an einem Eckpunkt; die Straßenkante trennt beide Flächen auch westlich der Naht (dort Grasstreifen 100099), die Klassen bleiben.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r0c0:100059|r0c1:200116",
+          "mit": "r0c1:200116",
+          "entscheidung": "grenze",
+          "grund": "Die Asphaltstraße endet am hellen Randstein; das Segment 200116 liegt als dunkler Kronen- und Schattenstreifen darunter, zwei verschiedene Flächen.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100060,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.693
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 152,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100061,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.146,
+        "abstand": 0.046
+      },
+      "flaeche": 2255,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Rasen und Garten östlich des Hauses mit hellen Möbeln.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100061|r0c1:200043",
+          "mit": "r0c1:200043",
+          "entscheidung": "gleich",
+          "grund": "Der grüne Garten- und Rasenstreifen östlich des Hauses setzt sich ohne Kante in das Gartensammelsegment 200043 fort (Hecken, Sträucher, Terrassen, Flachdach gemischt), das als gemischte Gartenparzelle besser passt als Gebüsch.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "3.3.2"
+        }
+      ]
+    },
+    {
+      "id": 100062,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.54
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 138,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100063,
+      "klasse": "6.1.2",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.172,
+        "abstand": 0.085
+      },
+      "flaeche": 150,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schlagschatten der Mauer 100052 auf der hellen Straße 100014, Fortsetzung von 100066.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Schatten ist keine Klasse, die helle Fahrbahn läuft durch; mit 100014 verschmelzen (316/81).",
+          "flaeche_px": 150
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Straße",
+        "fein": "Betonfahrbahn"
+      }
+    },
+    {
+      "id": 100064,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.454
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 85,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100065,
+      "klasse": "1.4",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.805,
+        "abstand": 0.456
+      },
+      "flaeche": 160,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkles Band am Westrand des Gartens 100047: niedrige Hecke mit ihrem Schatten auf der Straße.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Hecke mit Schatten, kein reiner Schatten; Vorstufe hielt das für sicher (381/86).",
+          "flaeche_px": 160
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Hecke",
+        "fein": "Hecke"
+      }
+    },
+    {
+      "id": 100066,
+      "klasse": "6.1.2",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.116,
+        "abstand": 0.065
+      },
+      "flaeche": 152,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schlagschatten der Mauer 100052 auf der hell befestigten Seitenstraße 100014.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Schatten ist keine Klasse; die helle Fahrbahn läuft im Schatten weiter, mit 100014 verschmelzen (292/91).",
+          "flaeche_px": 152
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Straße",
+        "fein": "Betonfahrbahn"
+      }
+    },
+    {
+      "id": 100067,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.677,
+        "abstand": 0.213
+      },
+      "flaeche": 135,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Kleiner heller Kronen- oder Strauchrand an der Baumgruppe 100048 am Straßenrand.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kein Wald, Rand der Baumgruppe; mit 100048 verschmelzen (168/91).",
+          "flaeche_px": 135
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100068,
+      "klasse": "6.5",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.619,
+        "abstand": 0.067
+      },
+      "flaeche": 117,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Heller Betonstreifen (Randstein oder Einfahrtskante) an der Einmündung der Zufahrt in die Straße.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Randstein",
+        "fein": "Randstein"
+      }
+    },
+    {
+      "id": 100069,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.093,
+        "abstand": 0.025
+      },
+      "flaeche": 150,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100070,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.335,
+        "abstand": 0.167
+      },
+      "flaeche": 2324,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Südlicher Teil des Gartens 100047: Rasen mit Gartenhäuschen, Spielgeräten, weißen Gegenständen und Heckenfuß an der Straße.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "fehlt",
+          "text": "Hellgraues Gartenhäuschen mit rotem Vordach (etwa 3 × 2 m) nicht als eigenes Segment (438/111).",
+          "flaeche_px": 120
+        },
+        {
+          "nr": 2,
+          "art": "grenze",
+          "text": "Grenze zu 100047 ohne Bildkante im selben Rasen (420/118).",
+          "flaeche_px": null
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      }
+    },
+    {
+      "id": 100071,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.251,
+        "abstand": 0.073
+      },
+      "flaeche": 174,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Beschatteter Strauch unter dem Gartenhäuschen, Strukturen erkennbar.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Schatten ist keine Klasse; der beschattete Strauch gehört zu 100073 (450/113).",
+          "flaeche_px": 174
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100072,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 150,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Ausläufer der Baumgruppe 100048 am Unterrand, Krone, kein Acker.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kronenstück, mit 100048 verschmelzen (150/116).",
+          "flaeche_px": 150
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100073,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.546
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 557,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Mittelgrüne Strauch- oder Baumkrone im Garten westlich des Hauses.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100074,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.237,
+        "abstand": 0.041
+      },
+      "flaeche": 102,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Helle Gartengegenstände am Rand des Rasens 100061, kein Baum.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kein Baum; mit dem Garten 100061 verschmelzen (556/114).",
+          "flaeche_px": 100
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100074|r0c1:200043",
+          "mit": "r0c1:200043",
+          "entscheidung": "gleich",
+          "grund": "Die hellen Gartengegenstände am Rasenrand reichen bei y 44–52 sichtbar über die Naht in dasselbe Gartensammelsegment; gleiche Klasse wie Paar 2 (Kette 100061–200043–100074).",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "3.3.2"
+        }
+      ]
+    },
+    {
+      "id": 100075,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.079,
+        "abstand": 0.009
+      },
+      "flaeche": 74,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100076,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.516
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 175,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Gartenfläche mit Rasen und Strauch westlich des Baums 100073, kein Acker.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Garten statt Acker (434/122).",
+          "flaeche_px": 175
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      }
+    },
+    {
+      "id": 100077,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.564
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 1153,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Dunkle Baumkrone östlich des Hauses am Kernrand.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100078,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.251,
+        "abstand": 0.065
+      },
+      "flaeche": 296,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Garten mit hellen Gegenständen und dunklem Grün zwischen Nebengebäude und Bäumen.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Eher Garten mit hellen Objekten als ein Einzelbaum (529/123).",
+          "flaeche_px": 296
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      }
+    },
+    {
+      "id": 100079,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 151,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Kronenrand der Baumgruppe 100048, kein Acker.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kronenstück, mit 100048 verschmelzen (103/126).",
+          "flaeche_px": 151
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100080,
+      "klasse": "4.4.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 409,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkler, beschatteter linker Teil des Holz- und Asthaufens, kein Acker.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Mit dem Holzstapel 100086 verschmelzen (178/152).",
+          "flaeche_px": 409
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Lagerfläche",
+        "mittel": "Holzlager",
+        "fein": "Holzstapel"
+      }
+    },
+    {
+      "id": 100081,
+      "klasse": "4.4.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 98,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Oberer Rand des Holzstapels mit dunklem Astwerk und etwas Gras, kein Acker.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Mit dem Holzstapel 100086 verschmelzen; wenn es nur Gras ist, mit 100056 (208/123).",
+          "flaeche_px": 98
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Lagerfläche",
+        "mittel": "Holzlager",
+        "fein": "Holzstapel"
+      }
+    },
+    {
+      "id": 100082,
+      "klasse": "4.1.2",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.153,
+        "abstand": 0.09
+      },
+      "flaeche": 179,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Kleines rotbraunes Dach am Haus, Schuppen oder Carport.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Bebaut",
+        "mittel": "Gebäude",
+        "fein": "Nebengebäude"
+      }
+    },
+    {
+      "id": 100083,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.274,
+        "abstand": 0.085
+      },
+      "flaeche": 501,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100084,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 134,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Kronenrand der Baumgruppe 100048, kein Acker.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kronenstück, mit 100048 verschmelzen (81/127).",
+          "flaeche_px": 134
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100085,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.144,
+        "abstand": 0.038
+      },
+      "flaeche": 88,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100086,
+      "klasse": "4.4.1",
+      "grob": "4",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.652,
+        "abstand": 0.396
+      },
+      "flaeche": 1619,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Holzstapel bzw. Asthaufen aus hellen Stämmen und Ästen auf der Wiese, kein Wald.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Helle Stämme und Äste, Holzstapel statt Wald (204/143).",
+          "flaeche_px": 1619
+        },
+        {
+          "nr": 2,
+          "art": "verschmelzen",
+          "text": "Dunkler linker Teil 100080 und oberer Rand 100081 gehören zum Haufen (180/150).",
+          "flaeche_px": 507
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Lagerfläche",
+        "mittel": "Holzlager",
+        "fein": "Holzstapel"
+      }
+    },
+    {
+      "id": 100087,
+      "klasse": "6.5",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.716,
+        "abstand": 0.066
+      },
+      "flaeche": 85,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Heller Randstein zwischen Straße und Gartenhecke an der Gabel.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Randstein",
+        "fein": "Randstein"
+      }
+    },
+    {
+      "id": 100088,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.469,
+        "abstand": 0.285
+      },
+      "flaeche": 445,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100089,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.368,
+        "abstand": 0.189
+      },
+      "flaeche": 1066,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Gartenstreifen mit Sträuchern, Stauden und Wegen zwischen Haus und Straße.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      }
+    },
+    {
+      "id": 100090,
+      "klasse": "6.3",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.528
+      },
+      "instanz": {
+        "text": "paved yard",
+        "eingerastet": true
+      },
+      "flaeche": 814,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.4",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100091,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.697
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 669,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Hellgrüne, weich gekörnte Laubbaumkrone im Vorgarten.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Laubbaum"
+      }
+    },
+    {
+      "id": 100092,
+      "klasse": "1.4",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.423,
+        "abstand": 0.157
+      },
+      "flaeche": 124,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Nordende der Grenzhecke am Straßenrand, mit Zaunpfosten und etwas Gras.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kein Wald, Anfang der Hecke 100097; mit ihr verschmelzen (318/139).",
+          "flaeche_px": 124
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Hecke",
+        "fein": "Hecke"
+      }
+    },
+    {
+      "id": 100093,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.284,
+        "abstand": 0.085
+      },
+      "flaeche": 100,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Schmaler Grasstreifen zwischen Gartenhecke und Straße.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Grünstreifen",
+        "fein": "Straßenbegleitgrün"
+      }
+    },
+    {
+      "id": 100094,
+      "klasse": "6.5",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.481,
+        "abstand": 0.068
+      },
+      "flaeche": 461,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Graubrauner, körniger Straßenrand südlich der Fahrbahn vor Hecke und Stellplatz.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Straßenrand",
+        "fein": "Schotterbankett"
+      }
+    },
+    {
+      "id": 100095,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.359,
+        "abstand": 0.067
+      },
+      "flaeche": 520,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grasstreifen am Nordrand der Straße vor dem Garten mit hellem Pfosten, kein Asphalt.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Grünstreifen statt Straße (450/151).",
+          "flaeche_px": 520
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Grünstreifen",
+        "fein": "Straßenbegleitgrün"
+      }
+    },
+    {
+      "id": 100096,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.48,
+        "abstand": 0.117
+      },
+      "flaeche": 99,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Kleiner Strauch am Nordrand der Straße.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100097,
+      "klasse": "1.4",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.632
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 237,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schmale, sehr dunkle Grenzhecke (Thuja-artig) am Westrand des Grundstücks, nördlicher Teil.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Dichte schmale Hecke mit Schatten, kein Wolkenschatten; Vorstufe hielt das für sicher (324/171).",
+          "flaeche_px": 237
+        },
+        {
+          "nr": 2,
+          "art": "verschmelzen",
+          "text": "Mit dem südlichen Heckenteil 100116 und dem Ende 100092 zu einer Hecke verschmelzen (322/185).",
+          "flaeche_px": null
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Hecke",
+        "fein": "Hecke"
+      }
+    },
+    {
+      "id": 100098,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.494
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 2909,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Gruppe dunkler, bläulichgrüner Kronen zwischen Grenzhecke, Stellplatz und Rasen.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100099,
+      "klasse": "2.3",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.427,
+        "abstand": 0.101
+      },
+      "flaeche": 315,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grasstreifen am Nordrand der Straße am Kernrand, kein Asphalt.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Graugrüner Grasstreifen statt Straße (554/158).",
+          "flaeche_px": 173
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Grünstreifen",
+        "fein": "Straßenbegleitgrün"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100099|r0c1:200080",
+          "mit": "r0c1:200080",
+          "entscheidung": "grenze",
+          "grund": "Der graugrüne Grasstreifen am Nordrand der Straße stößt an die Unterkante einer dunklen Baumkrone; zwei verschiedene Flächen, die Klassen bleiben.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        },
+        {
+          "paar": "r0c0:100099|r0c1:200099",
+          "mit": "r0c1:200099",
+          "entscheidung": "gleich",
+          "grund": "Der graugrüne Streifen zwischen Gehölz und Straße läuft ohne Kante über die Naht weiter; ein schmaler bewachsener Straßenrand, daher Saum und Randstreifen (Kette mit Paar 6).",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.3"
+        },
+        {
+          "paar": "r0c0:100099|r0c1:200100",
+          "mit": "r0c1:200100",
+          "entscheidung": "gleich",
+          "grund": "Derselbe graugrüne Randstreifen nördlich der Asphaltstraße setzt sich östlich der Naht im Segment 200100 fort (Farbe zwischen Gras und Asphalt, mit weißem Pfosten); eine Fläche mit Paar 5, Klasse Saum und Randstreifen.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.3"
+        }
+      ]
+    },
+    {
+      "id": 100100,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.178,
+        "abstand": 0.062
+      },
+      "flaeche": 80,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Schmaler Grasstreifen am Nordrand der Straße.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Grünstreifen",
+        "fein": "Straßenbegleitgrün"
+      }
+    },
+    {
+      "id": 100101,
+      "klasse": "6.5",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.436,
+        "abstand": 0.059
+      },
+      "flaeche": 89,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle Kante (Randstein mit Schatten) zwischen Straßenrand 100094 und Stellplatz 100102.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Splitter von 89 Bildpunkten, mit 100094 verschmelzen (376/160).",
+          "flaeche_px": 89
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Straßenrand",
+        "fein": "Schotterbankett"
+      }
+    },
+    {
+      "id": 100102,
+      "klasse": "6.3",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.164,
+        "abstand": 0.069
+      },
+      "flaeche": 1483,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Hell betonierter Stellplatz vor dem Flachdachhaus, kein Wald.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Glatte helle Betonfläche, Stellplatz statt Wald (390/179).",
+          "flaeche_px": 1483
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Zufahrt",
+        "fein": "Betonfläche"
+      }
+    },
+    {
+      "id": 100103,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.419
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 1389,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100104,
+      "klasse": "6.5",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.414,
+        "abstand": 0.141
+      },
+      "flaeche": 158,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Heller Randstein- oder Gehsteigstreifen am Südrand der Straße.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Randstein",
+        "fein": "Randstein"
+      }
+    },
+    {
+      "id": 100105,
+      "klasse": "6.5",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.132,
+        "abstand": 0.082
+      },
+      "flaeche": 126,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Teil desselben hellen Randsteinstreifens wie 100104 mit kleinem Strauch, kein Wald.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Heller Randstein, mit 100104 verschmelzen (445/176).",
+          "flaeche_px": 126
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Randstein",
+        "fein": "Randstein"
+      }
+    },
+    {
+      "id": 100106,
+      "klasse": "3.3.2",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.416,
+        "abstand": 0.199
+      },
+      "flaeche": 1027,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Pflanzstreifen mit Sträuchern im Schatten nördlich des Flachdachhauses, zwischen Randstein und Hauswand.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Schatten ist keine Klasse; Sträucher und Beet erkennbar, Garten mit Gehölz (503/190).",
+          "flaeche_px": 1027
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Garten",
+        "fein": "Garten mit Gehölz"
+      }
+    },
+    {
+      "id": 100107,
+      "klasse": "6.5",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.487,
+        "abstand": 0.058
+      },
+      "flaeche": 157,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Heller Randsteinstreifen am Südrand der Straße, Fortsetzung von 100104.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Mit 100104 zu einem Randstein verschmelzen (472/181).",
+          "flaeche_px": 157
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Randstein",
+        "fein": "Randstein"
+      }
+    },
+    {
+      "id": 100108,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.528,
+        "abstand": 0.213
+      },
+      "flaeche": 440,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Kleines hellgrünes Rasenstück zwischen Straße, Hausecke und Bäumen, kein Wald.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Glatt hellgrün, Rasen statt Wald (525/193).",
+          "flaeche_px": 440
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Rasen",
+        "fein": "Hausrasen"
+      }
+    },
+    {
+      "id": 100109,
+      "klasse": "1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.779,
+        "abstand": 0.253
+      },
+      "flaeche": 170,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle Baumkrone südlich der Straße am Kernrand, im Eigenschatten.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kronenstruktur erkennbar, Baum statt Schatten; Vorstufe hielt das für sicher (555/185).",
+          "flaeche_px": 164
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100109|r0c1:200116",
+          "mit": "r0c1:200116",
+          "entscheidung": "gleich",
+          "grund": "Unter dem südlichen Randstein liegt beidseits der Naht derselbe dunkle Kronen- und Schattenbereich ohne Kante; gleiche Klasse wie die Kette mit Paar 10, daher Gehölz.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "1"
+        }
+      ]
+    },
+    {
+      "id": 100110,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.688,
+        "abstand": 0.227
+      },
+      "flaeche": 576,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Rand einer Krone am rechten Kernrand, fast ganz im Kontextrand.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100111,
+      "klasse": "6.3",
+      "grob": "6",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.556,
+        "abstand": 0.409
+      },
+      "flaeche": 216,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkles Band zwischen Stellplatz und Nordwand des Hauses: Hausschatten auf dem Boden vor der Attika.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Liegt außerhalb der hellen Attika, eher Schatten auf dem Stellplatz als Dach; mit 100102 verschmelzen (419/193).",
+          "flaeche_px": 216
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Zufahrt",
+        "fein": "Betonfläche"
+      }
+    },
+    {
+      "id": 100112,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.443
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 2019,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Runde dunkle Krone mit Schatten am linken Kernrand, eher Einzelbaum als Gebüsch.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100113,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.893
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 9419,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Flachdachhaus mit hellem Kiesdach, dunklem Dachteil im Westen und angebauter heller Terrasse im Süden.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "trennen",
+          "text": "Helle Terrasse mit Möbeln, Lichtschacht und runder Treppe südlich des Dachs ist kein Dach; als eigenes Segment Terrasse abtrennen (445/255).",
+          "flaeche_px": 1900
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Bebaut",
+        "mittel": "Gebäude",
+        "fein": "Wohnhaus"
+      }
+    },
+    {
+      "id": 100114,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.692
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 883,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Laubbaumkrone mit grobem Blattbild südöstlich der Straße.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Laubbaum"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100114|r0c1:200107",
+          "mit": "r0c1:200107",
+          "entscheidung": "grenze",
+          "grund": "Die grob strukturierte olivgrüne Laubbaumkrone 100114 berührt die dunkelgrüne Kronengruppe 200107 nur an einem Eckpunkt; zwei verschiedene, im Bild getrennte Kronen.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100115,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.441
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1064,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle, große Kronen östlich des Hauses im Eigenschatten.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kronenstruktur erkennbar, Gehölz statt Schatten (538/229).",
+          "flaeche_px": 1064
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100116,
+      "klasse": "1.4",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.632
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 624,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schmale, sehr dunkle Grenzhecke am Westrand des Gartens mit hellerem Saum zur Rasenseite, südlicher Teil.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Dichte Hecke mit Schatten, kein Wolkenschatten; Vorstufe hielt das für sicher (318/220).",
+          "flaeche_px": 624
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Hecke",
+        "fein": "Hecke"
+      }
+    },
+    {
+      "id": 100117,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.408,
+        "abstand": 0.197
+      },
+      "flaeche": 147,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schlagschatten des Hauses an seiner Westseite auf dem Rasen.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Schatten ist keine Klasse; der Rasen läuft darunter durch, mit 100120 verschmelzen (378/212).",
+          "flaeche_px": 147
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Rasen",
+        "fein": "Hausrasen"
+      }
+    },
+    {
+      "id": 100118,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.919
+      },
+      "instanz": {
+        "text": "house",
+        "eingerastet": true
+      },
+      "flaeche": 4020,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.1.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100119,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.641,
+        "abstand": 0.12
+      },
+      "flaeche": 1493,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Sträucher am Südrand des Gartens mit dem Ende einer hellen Mauer, kein Wald.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "fehlt",
+          "text": "Helle schmale Mauer bzw. Stufen schräg am Südrand des Gartens nicht abgegrenzt (330/294).",
+          "flaeche_px": 120
+        },
+        {
+          "nr": 2,
+          "art": "klasse",
+          "text": "Gebüsch statt Wald (354/296).",
+          "flaeche_px": 1493
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100120,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.664
+      },
+      "instanz": {
+        "text": "lawn",
+        "eingerastet": true
+      },
+      "flaeche": 6620,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Gemähter Hausrasen südwestlich des Flachdachhauses.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Rasen",
+        "fein": "Hausrasen"
+      }
+    },
+    {
+      "id": 100121,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.451
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 777,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Bläulich-silbrige, fein gekörnte Krone, vermutlich Blaufichte.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Einzelner Nadelbaum statt Gebüsch (556/248).",
+          "flaeche_px": 681
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Nadelbaum"
+      }
+    },
+    {
+      "id": 100122,
+      "klasse": "1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.618,
+        "abstand": 0.302
+      },
+      "flaeche": 1885,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Mittelgrüne Sträucher zwischen Hauswand und Nadelbaum.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100122|r0c1:200116",
+          "mit": "r0c1:200116",
+          "entscheidung": "gleich",
+          "grund": "Die Sträucher zwischen Hauswand und Nadelbaum und der dunkle Gehölzstreifen östlich davon gehen ohne Kante ineinander über (helle Strauchteile bei y 214–232 und Schatten bei y 202–212 auf beiden Seiten); Kette 100109–200116–100122 mit Krone und Sträuchern, daher Elternklasse Gehölz.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "1"
+        },
+        {
+          "paar": "r0c0:100122|r0c1:200145",
+          "mit": "r0c1:200145",
+          "entscheidung": "grenze",
+          "grund": "Die mittelgrünen Sträucher enden an der rötlich-violetten Blutbuchenkrone 200145, die auch westlich der Naht deutlich anders gefärbt ist; zwei verschiedene Gehölze.",
+          "bearbeiter": "agent:einigung-B-02:20261118e",
+          "buendel": "B-02",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100123,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.6
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 454,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle Gehölzkrone in der Wiese, Gebüsch oder kleiner Baum, kein Wolkenschatten.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Krone mit Struktur, Gehölz statt Schatten; Vorstufe hielt das für sicher (166/276).",
+          "flaeche_px": 454
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100124,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.649,
+        "abstand": 0.264
+      },
+      "flaeche": 363,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Rasenstück mit rundem weißem Deckel (Schacht oder Tisch, etwa 1,5 m) im Westteil des Gartens.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "trennen",
+          "text": "Weißen runden Deckel als eigenes Segment abtrennen (333/272).",
+          "flaeche_px": 50
+        },
+        {
+          "nr": 2,
+          "art": "verschmelzen",
+          "text": "Das übrige Rasenstück ohne Bildkante zum Rasen 100120 nehmen (328/281).",
+          "flaeche_px": 313
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Rasen",
+        "fein": "Hausrasen"
+      }
+    },
+    {
+      "id": 100125,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.568
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 603,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle Gehölzkrone mit Schatten in der Wiese, Gebüsch oder kleiner Baum, kein Wolkenschatten.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Krone mit Struktur, Gehölz statt Schatten (112/288).",
+          "flaeche_px": 603
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100126,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.513,
+        "abstand": 0.185
+      },
+      "flaeche": 183,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100127,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.44
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1598,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Große dunkle Kronen südöstlich des Hauses, Übergang zur Blutbuche 100136.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kronenstruktur erkennbar, Gehölz statt Schatten (527/288).",
+          "flaeche_px": 1598
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100128,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.634,
+        "abstand": 0.086
+      },
+      "flaeche": 168,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100129,
+      "klasse": "5.1",
+      "grob": "5",
+      "herkunft": "semantik",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.14,
+        "abstand": 0.055
+      },
+      "flaeche": 1209,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Rechteckiges Schwimmbecken mit hellem Rand und grauer Abdeckung, im Osten von einer Krone überragt.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Schwimmbecken statt Wald (458/291).",
+          "flaeche_px": 1209
+        },
+        {
+          "nr": 2,
+          "art": "grenze",
+          "text": "Der Ostteil liegt unter der überragenden Krone (oberste Schicht ist Baum); dort an die Krone 100127 abgeben (497/292).",
+          "flaeche_px": 250
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Bebaut",
+        "mittel": "Schwimmbecken",
+        "fein": "Schwimmbecken"
+      }
+    },
+    {
+      "id": 100130,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.68
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 2931,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100131,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.786,
+        "abstand": 0.317
+      },
+      "flaeche": 147,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Grasbuckel unter dem Gartenzaun am Südrand des Rasens.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Rasen",
+        "fein": "Hausrasen"
+      }
+    },
+    {
+      "id": 100132,
+      "klasse": "2.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.798,
+        "abstand": 0.38
+      },
+      "flaeche": 138,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Grasstreifen mit hellem Zaunsockel am Südrand des Gartens.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Siedlungsgrün",
+        "mittel": "Rasen",
+        "fein": "Hausrasen"
+      }
+    },
+    {
+      "id": 100133,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.808
+      },
+      "instanz": {
+        "text": "forest",
+        "eingerastet": true
+      },
+      "flaeche": 133,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Nordrand der dunklen Krone 100135 aus v4, über den Gartenzaun ragend.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kronenrand, mit der Krone 100135 (v4) verschmelzen (370/299).",
+          "flaeche_px": 133
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100134,
+      "klasse": "2.1.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 400,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Gras und kleiner Strauch südlich des Gartenzauns, kein Acker.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Gras mit Strauch statt Acker (407/298).",
+          "flaeche_px": 400
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese gemäht",
+        "fein": "Wiesenstreifen"
+      }
+    },
+    {
+      "id": 100135,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.741
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 4748,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Hohe dunkle Krone mit hellen Lichtflecken, Nord-Süd gestreckt (etwa 12 × 19 m), ein großer Baum oder zwei.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100056|r0c0:100135",
+          "mit": "r0c0:100056",
+          "entscheidung": "grenze",
+          "grund": "Links Wiese, rechts die dunkle, gekörnte Baumkrone mit Lichtflecken: echte Grenze Wiese/Baum, nur an einem Punkt ohne Farbsprung.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100136,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.837
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 4186,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Große Blutbuche mit rotbraun-violetter Krone.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Blutbuche"
+      }
+    },
+    {
+      "id": 100137,
+      "klasse": "2.1.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.435
+      },
+      "instanz": {
+        "text": "lawn",
+        "eingerastet": true
+      },
+      "flaeche": 2628,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Hellerer, kurz gemähter Grasstreifen unterhalb des Gartenzauns, durch eine schwache Böschungslinie von der Wiese 100143 getrennt.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese gemäht",
+        "fein": "Wiese gemäht"
+      }
+    },
+    {
+      "id": 100138,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.513
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 331,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle Gehölzkrone an der Grenze zu v3, Gebüsch oder kleiner Baum, kein Wolkenschatten.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Krone mit Struktur, Gehölz statt Schatten (160/308).",
+          "flaeche_px": 331
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100139,
+      "klasse": "5.1",
+      "grob": "5",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.327,
+        "abstand": 0.148
+      },
+      "flaeche": 135,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Südkante des Schwimmbeckens mit etwas Rasen.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Heller Beckenrand, mit 100129 verschmelzen; Rasenanteil zu 100120 (466/304).",
+          "flaeche_px": 135
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Bebaut",
+        "mittel": "Schwimmbecken",
+        "fein": "Schwimmbecken"
+      }
+    },
+    {
+      "id": 100140,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.656
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1503,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle Baumkrone mit Eigenschatten im Gebüsch am oberen Rand von v3.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kronenstruktur und Lichtpunkte erkennbar, Baum statt Schatten; Vorstufe hielt das für sicher (140/340).",
+          "flaeche_px": 1503
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100141,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.685,
+        "abstand": 0.152
+      },
+      "flaeche": 91,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schmaler dunkler Kronenrand zwischen Grasstreifen 100137 und Blutbuche 100136.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kronenrand, mit der Blutbuche 100136 verschmelzen (500/332).",
+          "flaeche_px": 91
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Blutbuche"
+      }
+    },
+    {
+      "id": 100142,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.853,
+        "abstand": 0.167
+      },
+      "flaeche": 110,
+      "im_kern": false,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100143,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 5664,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Wiese mit etwas höherem Gras und kleinen dunklen Flecken zwischen Garten, Baum 100135, Blutbuche und Heufeld.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100144,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.482
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 599,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand außerhalb T0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100145,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.615
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1935,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Zwei ineinander greifende dunkle Kronen (Herzform) im Gebüsch.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kronen statt Schatten; Vorstufe hielt das für sicher (279/353).",
+          "flaeche_px": 1935
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100146,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.486
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 107,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grasstreifen am Westrand der Krone 100135, kein Schatten.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras, mit der angrenzenden Wiese (heute 100056) verschmelzen (348/344).",
+          "flaeche_px": 107
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese",
+        "fein": "Wiese"
+      }
+    },
+    {
+      "id": 100147,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.655,
+        "abstand": 0.194
+      },
+      "flaeche": 1630,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100148,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 150,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grasstück am Ostrand der Krone 100135, Teil der Wiese 100143, kein Acker.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras statt Acker; mit 100143 verschmelzen (409/341).",
+          "flaeche_px": 150
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100149,
+      "klasse": "1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.468
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 3789,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle, türkis gesprenkelte Kronen östlich der Wiese am Kernrand.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Hohe Kronen mit Schatten, Baumgruppe statt Gebüsch (550/376).",
+          "flaeche_px": 1337
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100149|r0c1:200167",
+          "mit": "r0c1:200167",
+          "entscheidung": "gleich",
+          "grund": "Ein und dieselbe dunkle Gehölzmasse über dem Feld wird von der geraden Naht ohne Bildkante halbiert; ob Baumgruppe oder Sträucher mit kleinen Bäumen, ist nicht sicher zu trennen, daher Gehölz wie in der Kette 100170–200167.",
+          "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:59:09+00:00",
+          "klasse": "1"
+        }
+      ]
+    },
+    {
+      "id": 100150,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 220,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkler Kronenteil zwischen Blutbuche und der Baumgruppe 100149.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Schatten ist keine Klasse; Kronenstruktur, mit 100149 verschmelzen (532/368).",
+          "flaeche_px": 220
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100151,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.563
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 630,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Etwas hellere, dunkle Krone unterhalb von 100140, Strauch oder Teil desselben Baums.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Gehölz statt Schatten (130/375).",
+          "flaeche_px": 630
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100152,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.662,
+        "abstand": 0.249
+      },
+      "flaeche": 85,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Graugrüner Grassaum am Fuß der Blutbuche.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Eher Gras als Wald; mit 100143 verschmelzen (520/362).",
+          "flaeche_px": 85
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100153,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 78,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grasstück zwischen Krone 100135 und dem Westende des Heufelds, kein Acker.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras, mit der angrenzenden Wiese (heute 100056) verschmelzen (361/376).",
+          "flaeche_px": 78
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese",
+        "fein": "Wiese"
+      }
+    },
+    {
+      "id": 100154,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 118,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Viereckiges Grasstück am Oberrand des Felds, gerade Grenzen ohne Bildkante.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras, mit der Wiese 100143 verschmelzen (412/379).",
+          "flaeche_px": 118
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100155,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.56,
+        "abstand": 0.16
+      },
+      "flaeche": 238,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Sträucher am Nordostende des Heufelds unter der Baumgruppe 100149.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100156,
+      "klasse": "2.1.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.924
+      },
+      "instanz": {
+        "text": "dirt path",
+        "eingerastet": true
+      },
+      "flaeche": 135,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "6.6",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Hellbraunes Stück am Westende des gemähten Felds, Heu wie in 100159, kein Weg.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gleiche Heuschwaden wie 100159, kein Weg erkennbar; mit 100159 verschmelzen (366/386).",
+          "flaeche_px": 135
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese gemäht",
+        "fein": "Mähwiese mit Heu"
+      }
+    },
+    {
+      "id": 100157,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.734
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1396,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Länglich-dunkle Krone eines Einzelbaums im Gebüsch.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Baum statt Schatten; Vorstufe hielt das für sicher (174/421).",
+          "flaeche_px": 1396
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100158,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 200,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grüner Grassaum am Oberrand des Heufelds.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras statt Acker, mit 100143 verschmelzen (461/389).",
+          "flaeche_px": 200
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100159,
+      "klasse": "2.1.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.764
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 17042,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Gemähtes Feld mit braunen, bogenförmigen Heu- oder Strohschwaden quer über den Hang.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese gemäht",
+        "fein": "Mähwiese mit Heu"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100159|r0c1:200170",
+          "mit": "r0c1:200170",
+          "entscheidung": "gleich",
+          "grund": "Dasselbe beige Feld mit bogenförmigen Schwaden läuft ohne Kante über die Naht; unregelmäßige Hangfläche zwischen Wiesen und Gärten mit Schwaden entlang der Höhenlinie, also gemähte Wiese mit Heu, kein Getreideacker.",
+          "bearbeiter": "agent:einigung-B-03:20261118e",
+          "buendel": "B-03",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1.1"
+        }
+      ]
+    },
+    {
+      "id": 100160,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.882
+      },
+      "instanz": {
+        "text": "bare soil",
+        "eingerastet": true
+      },
+      "flaeche": 78,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "6.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grüner Grassaum am Oberrand des Heufelds, keine offene Lehmstelle.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Grün, keine offene Erde; mit 100143 verschmelzen. Vorstufe hielt das für sicher (436/389).",
+          "flaeche_px": 78
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100161,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.427
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 645,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Zwei kleine dunkle Kronen nahe dem Ostrand von v3.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Gehölz statt Schatten (291/409).",
+          "flaeche_px": 645
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100162,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.737,
+        "abstand": 0.085
+      },
+      "flaeche": 75,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grüner Grassaum am Oberrand des Heufelds.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras statt Acker, mit 100143 verschmelzen (483/400).",
+          "flaeche_px": 75
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100163,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.824,
+        "abstand": 0.073
+      },
+      "flaeche": 155,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grüner Saum zwischen Heufeld, Wiese und Gebüsch 100155.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras statt Acker, mit 100143 verschmelzen (524/402).",
+          "flaeche_px": 155
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100164,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 80,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grassaum mit etwas Heu am Oberrand des Felds.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Überwiegend Gras, mit 100143 verschmelzen (513/402).",
+          "flaeche_px": 80
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100165,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.604
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 2875,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Große dunkle Krone am Westrand des Gebüschs mit Lichtpunkten, wohl ein bis zwei Bäume.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kronen statt Schatten; Vorstufe hielt das für sicher (85/436).",
+          "flaeche_px": 2706
+        },
+        {
+          "nr": 2,
+          "art": "verschmelzen",
+          "text": "Der Splitter 100168 am Nordrand gehört zur Krone (99/414).",
+          "flaeche_px": 74
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100166,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 37319,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Glatte, gleichmäßige Wiese am Südwestrand des Gebüschs, Fortsetzung der großen Hangwiese.",
+      "viertel": "v3",
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese",
+        "fein": "Wiese"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100056|r0c0:100166",
+          "mit": "r0c0:100056",
+          "entscheidung": "gleich",
+          "grund": "Beide Seiten der Viertelgrenze zeigen dieselbe hellgrüne, feinkörnige Hangwiese mit kleinen dunklen Büschen ohne Kante; gemäht oder ungemäht ist nicht sicher, daher Wiese wie in der Kette mit 300015.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        },
+        {
+          "paar": "r0c0:100166|r1c0:300008",
+          "mit": "r1c0:300008",
+          "entscheidung": "unklar",
+          "grund": "An der Naht setzt sich die glatte Wiese 100166 ohne Kante in einen Zipfel des Wald-Segments 300008 fort (einigung_06.jpg); als Ganzes sind es Wiese und Wald, eine gemeinsame Klasse wäre für eines der beiden falsch, die Grenze von 300008 muss erst nach Westen auf die Kronenkante.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100167,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.813,
+        "abstand": 0.094
+      },
+      "flaeche": 156,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grüner Saum am Westende des Heufelds mit wenig Heu.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Überwiegend Gras; mit dem Wiesenstreifen 100175 verschmelzen (351/416).",
+          "flaeche_px": 156
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100168,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.467
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 74,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Splitter am Nordrand der Krone 100165.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Splitter von 74 Bildpunkten, mit 100165 verschmelzen (99/414).",
+          "flaeche_px": 74
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100169,
+      "klasse": "3.1.1",
+      "grob": "3",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.555,
+        "abstand": 0.117
+      },
+      "flaeche": 110,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100170,
+      "klasse": "1",
+      "grob": "1",
+      "herkunft": "semantik",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.653,
+        "abstand": 0.077
+      },
+      "flaeche": 101,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Kleiner Strauchsaum am Ostrand des Heufelds am Kernrand.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Splitter von 88 Bildpunkten, mit dem Gebüsch 100155 verschmelzen (553/422).",
+          "flaeche_px": 88
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100170|r0c1:200167",
+          "mit": "r0c1:200167",
+          "entscheidung": "gleich",
+          "grund": "Türkis ist der untere Lappen derselben Gehölzmasse, die rechts der Naht als Magenta weiterläuft; ohne Kante, Sträucher und kleine Bäume gemischt, daher nur Gehölz sicher.",
+          "bearbeiter": "agent:einigung-B-03:20261118e",
+          "buendel": "B-03",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "1"
+        },
+        {
+          "paar": "r0c0:100170|r0c1:200185",
+          "mit": "r0c1:200185",
+          "entscheidung": "gleich",
+          "grund": "Türkis und Magenta liegen beide auf dem dunkelgrünen Saum derselben Gehölzmasse am Feldrand, ohne Kante dazwischen; Kette mit Paar 1, daher dieselbe Klasse Gehölz.",
+          "bearbeiter": "agent:einigung-B-03:20261118e",
+          "buendel": "B-03",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "1"
+        }
+      ]
+    },
+    {
+      "id": 100171,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.531
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1344,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle Krone mit Lichtpunkten südöstlich von 100165.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Baum statt Schatten (135/461).",
+          "flaeche_px": 1344
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100172,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 996,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Grasfläche mit einzelnen Sträuchern zwischen Gebüsch v3 und Gehölz 100177.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese",
+        "fein": "Wiese"
+      }
+    },
+    {
+      "id": 100173,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 86,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grüner Saum am Unterrand des Heufelds, kein Acker.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras, mit 100175 verschmelzen (366/426).",
+          "flaeche_px": 86
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100174,
+      "klasse": "6.2.2",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.924
+      },
+      "instanz": {
+        "text": "dirt path",
+        "eingerastet": true
+      },
+      "flaeche": 96,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "6.6",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Heller Streifen am Unterrand des Heufelds, Fahrspur oder trockener Heurest.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Weg",
+        "fein": "Erdweg"
+      }
+    },
+    {
+      "id": 100175,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.422
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 17580,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Ungemähter Wiesenstreifen am Hang zwischen Heufeld und Gehölzen.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100175|r0c1:200189",
+          "mit": "r0c1:200189",
+          "entscheidung": "gleich",
+          "grund": "Derselbe grüne Wiesenstreifen zwischen Heufeld und Gehölz läuft gerade über die Naht ohne jede Bildkante; beide Teilkacheln beschreiben ihn als hohe Wiese, gemäht/ungemäht ist nicht sicher, daher Wiese für die ganze Kette mit 300013 und 400002.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        },
+        {
+          "paar": "r0c0:100175|r1c0:300013",
+          "mit": "r1c0:300013",
+          "entscheidung": "gleich",
+          "grund": "Der Wiesenstreifen 100175 läuft ohne Kante in 300013 weiter, beide zeigen dasselbe grüne, grob gekörnte Gras; 300013 ist kein schmaler Saum, sondern der Kernzipfel der großen Hangwiese, daher Wiese.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        }
+      ]
+    },
+    {
+      "id": 100176,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 312,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "sauber",
+      "was_ist_es": "Grasfläche mit hellem Fleck zwischen Wiese 100172 und Gehölz 100177.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese",
+        "fein": "Wiese"
+      }
+    },
+    {
+      "id": 100177,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.629
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 5884,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Große Masse dunkler Baumkronen mit Lichtpunkten südlich des Heufelds.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kronenstruktur erkennbar, Baumgruppe statt Schatten; Vorstufe hielt das für sicher (352/487).",
+          "flaeche_px": 5884
+        },
+        {
+          "nr": 2,
+          "art": "verschmelzen",
+          "text": "Der Kronenrand 100187 gehört dazu (398/491).",
+          "flaeche_px": 73
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100178,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.467
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 712,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Hellere, grau-bläuliche Krone zwischen 100165 und 100171.",
+      "viertel": "v3",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100179,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 195,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grassaum zwischen Gehölz 100177 und Wiesenstreifen 100175.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras ohne Bildkante zur Wiese, mit 100175 verschmelzen (395/479).",
+          "flaeche_px": 195
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100180,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.678
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 1537,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle, große Baumkrone mit Eigenschatten am Trampelpfad.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Baum statt Schatten; Vorstufe hielt das für sicher (264/497).",
+          "flaeche_px": 1537
+        },
+        {
+          "nr": 2,
+          "art": "verschmelzen",
+          "text": "Der Kronenrand 100192 am Südrand gehört dazu (280/515).",
+          "flaeche_px": 110
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100181,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.451
+      },
+      "instanz": {
+        "text": "bush",
+        "eingerastet": true
+      },
+      "flaeche": 2179,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.4",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Mehrere dunkle Kronen mit Lichtpunkten im Süden des Gebüschs.",
+      "viertel": "v3",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100182,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 189,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grau-bläulicher Kronensaum zwischen Krone 100165 und Wiese, wie 100178.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kronensaum statt Wiese; mit 100178 verschmelzen (89/481).",
+          "flaeche_px": 189
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100183,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 340,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Hellgrüne Grasbucht zwischen den Gehölzen 100177 und 100185.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras ohne Bildkante zur Wiese, mit 100175 verschmelzen (407/487).",
+          "flaeche_px": 340
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100184,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.573
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 879,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle, längliche Krone am Wiesenrand.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Baum statt Schatten (115/513).",
+          "flaeche_px": 879
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100185,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.638
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 3249,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunkle Baumkronen mit Lichtpunkten südöstlich von 100177.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Kronen statt Schatten; Vorstufe hielt das für sicher (474/526).",
+          "flaeche_px": 3249
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100186,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 176,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Kleiner hellerer Strauch im Gebüsch direkt am Trampelpfad, keine Wiese.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Ohne Bildkante im Gebüsch; mit der Gebüschfläche (heute 100056) verschmelzen (295/488).",
+          "flaeche_px": 176
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüschfläche",
+        "fein": "Gebüschfläche"
+      }
+    },
+    {
+      "id": 100187,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.434
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 73,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Kronenrand am Ostrand von 100177.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Splitter, mit 100177 verschmelzen (398/491).",
+          "flaeche_px": 73
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      }
+    },
+    {
+      "id": 100188,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 131,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Wiesenzipfel zwischen den Kronen 100178 und 100184, Teil der Wiese 100166.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Abgetrenntes Stück derselben Wiese; mit 100166 verschmelzen (103/501).",
+          "flaeche_px": 131
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese",
+        "fein": "Wiese"
+      }
+    },
+    {
+      "id": 100189,
+      "klasse": "1.3",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 389,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grau-grüne, besonnte Strauchkronen zwischen 100177 und 100185, keine Wiese.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Strauchkronen mit Schatten statt Wiese; Vorstufe hielt das für sicher (422/514).",
+          "flaeche_px": 389
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Gebüsch",
+        "fein": "Gebüsch oder kleiner Baum"
+      }
+    },
+    {
+      "id": 100190,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 124,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grasbuckel am Nordrand der Krone 100185.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras ohne Bildkante, mit 100175 verschmelzen (497/507).",
+          "flaeche_px": 124
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100191,
+      "klasse": "1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.434
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 4409,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Mehrere hellere, besonnte Kronen südlich von 100177 und 100185 am Kernunterrand.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Mehrere Kronen statt eines Einzelbaums (410/548).",
+          "flaeche_px": 2872
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Baumgruppe",
+        "fein": "Baumgruppe"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100191|r1c0:300008",
+          "mit": "r1c0:300008",
+          "entscheidung": "gleich",
+          "grund": "Die hellen, besonnten Laubkronen von 100191 setzen sich ohne Kante im belichteten Kronendach des Waldes 300008 fort; es ist der Nordrand desselben Waldes, daher Wald belichtet.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "1.2.1"
+        },
+        {
+          "paar": "r0c0:100191|r1c0:300008",
+          "mit": "r1c0:300008",
+          "entscheidung": "gleich",
+          "grund": "Das geschlossene Laubkronendach mit hellen und dunklen Kronen läuft über die gerade Naht bei y 500 (x 293–372) ohne jede Bildkante weiter (paar_01.jpg); 100191 ist der Nordrand desselben Waldes 300008, und weil 300008 in der Kette mit 400034 und 400052 schon Wald (1.2) trägt, bekommt das ganze Glied Wald statt Wald belichtet.",
+          "bearbeiter": "agent:einigung-B-01:20261118e-r3",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T01:00:00+00:00",
+          "klasse": "1.2"
+        }
+      ]
+    },
+    {
+      "id": 100192,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.504
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 110,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Südrand der Krone 100180.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Kronenrand, mit 100180 verschmelzen (280/515).",
+          "flaeche_px": 110
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      }
+    },
+    {
+      "id": 100193,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 451,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Hellgrüner Grassaum zwischen der Krone 100181 und der Wiese.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Ohne Bildkante zur Wiese; mit 100166 verschmelzen (197/545).",
+          "flaeche_px": 451
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese",
+        "fein": "Wiese"
+      }
+    },
+    {
+      "id": 100194,
+      "klasse": "1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.46
+      },
+      "instanz": {
+        "text": "tree",
+        "eingerastet": true
+      },
+      "flaeche": 3784,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "4.2.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Dunkle Baumkrone am Kernunterrand.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Gehölz",
+        "mittel": "Einzelbaum",
+        "fein": "Einzelbaum"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100194|r1c0:300017",
+          "mit": "r1c0:300017",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe dunkle, gekörnte Kronenmasse zieht über die Naht; ob ein Einzelbaum oder eine dunkle Baumgruppe am Waldrand, ist nicht sicher, Baumkronen sind es sicher, daher Baum.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "1.1"
+        }
+      ]
+    },
+    {
+      "id": 100195,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.433
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 752,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Dunklere, glatte Grasstelle in der Wiese am Südrand von v3, keine Struktur von Gehölz.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "klasse",
+          "text": "Schatten ist keine Klasse und kein Baum steht südlich davon; dunkleres Gras, wohl höher oder feuchter (143/551).",
+          "flaeche_px": 747
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100195|r1c0:300001",
+          "mit": "r1c0:300001",
+          "entscheidung": "gleich",
+          "grund": "Die dunklere Grasstelle geht ohne Kante in dieselbe Wiese unterhalb der Naht über; beides Wiese, ob gemäht oder nicht ist nicht sicher erkennbar.",
+          "bearbeiter": "agent:einigung-B-03:20261118e",
+          "buendel": "B-03",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        },
+        {
+          "paar": "r0c0:100195|r1c0:300016",
+          "mit": "r1c0:300016",
+          "entscheidung": "gleich",
+          "grund": "Das Magenta-Stück unter der Naht ist dieselbe Wiese wie die dunklere Grasstelle darüber, ohne Kante; Kette mit Paar 4 über 100195, daher Wiese.",
+          "bearbeiter": "agent:einigung-B-03:20261118e",
+          "buendel": "B-03",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        }
+      ]
+    },
+    {
+      "id": 100196,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 126,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Grassaum am Nordrand der Krone 100194.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras ohne Bildkante, mit 100175 verschmelzen (532/543).",
+          "flaeche_px": 126
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      }
+    },
+    {
+      "id": 100197,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 234,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Kleiner Grassaum am Kernunterrand, Fortsetzung des Wiesenstreifens.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "Gras ohne Bildkante, mit 100175 verschmelzen (544/557).",
+          "flaeche_px": 112
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Grünland",
+        "mittel": "Wiese ungemäht",
+        "fein": "Wiese ungemäht"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100197|r1c0:300013",
+          "mit": "r1c0:300013",
+          "entscheidung": "gleich",
+          "grund": "Das kleine Grasstück 100197 und die krautige Fläche 300013 sind dieselbe grüne Wiese am Kronenrand, ohne Kante; Wiese wie die ganze Kette 100175-200189-300013-400002.",
+          "bearbeiter": "agent:einigung-B-01:20261118e",
+          "buendel": "B-01",
+          "zeit": "2026-11-18T00:53:58+00:00",
+          "klasse": "2.1"
+        }
+      ]
+    },
+    {
+      "id": 100198,
+      "klasse": "2.1",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.411
+      },
+      "instanz": {
+        "text": "grassland",
+        "eingerastet": true
+      },
+      "flaeche": 152,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100199,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.637
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 299,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100200,
+      "klasse": "2.3",
+      "grob": "2",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.701
+      },
+      "instanz": {
+        "text": "meadow",
+        "eingerastet": true
+      },
+      "flaeche": 161,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "3.1",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100201,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.63
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 601,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100202,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.664
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 533,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "ja",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100203,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.595
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 298,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100204,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 121,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100205,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.544
+      },
+      "instanz": {
+        "text": "shadow",
+        "eingerastet": true
+      },
+      "flaeche": 190,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "0.2",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 100206,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 137,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+ "schema": "landseg-kategorien/1",
+ "teilkachel": "r1c1",
+ "title": "Eigene Liste Fassung A für H0 r1c1 (SW-Scan 1968, ca. 0,45 m)",
+ "classes": [
+  {"code": "1", "name": "Bebaute Grundstücksfläche", "parent": null, "level": 1, "color": "#c0392b", "image_cue": "Ortslage zwischen den Straßen: Dächer, Höfe, Gärten in schmalen Parzellen quer zur Straße"},
+  {"code": "1.1", "name": "Gebäude", "parent": "1", "level": 2, "color": "#e74c3c", "image_cue": "scharf begrenzte Rechtecke mit Schlagschatten an der sonnenabgewandten Seite; Firstlinie als Helligkeitssprung"},
+  {"code": "1.1.1", "name": "Dachfläche, besonnt", "parent": "1.1", "level": 3, "color": "#ff8a80", "image_cue": "hellgraue, gleichmäßige Dachhälfte, gerade Kanten, Schatten daneben"},
+  {"code": "1.1.2", "name": "Dachfläche, im Eigenschatten", "parent": "1.1", "level": 3, "color": "#8e1b10", "image_cue": "mittel- bis dunkelgraue Dachhälfte neben einer hellen, gerade Traufkante; heller als Schlagschatten"},
+  {"code": "1.2", "name": "Hof, unbebaute befestigte oder offene Fläche im Grundstück", "parent": "1", "level": 2, "color": "#f5b041", "image_cue": "helle, unregelmäßige Fläche zwischen Gebäuden, ohne Schatten nach außen, oft zur Straße offen"},
+  {"code": "1.3", "name": "Garten, Grün im Grundstück", "parent": "1", "level": 2, "color": "#a9cc52", "image_cue": "mittelgrau, körnig oder fleckig, hinter den Gebäuden am Ende der Parzelle"},
+  {"code": "2", "name": "Verkehrsfläche", "parent": null, "level": 1, "color": "#7f8c8d", "image_cue": "durchgehende, gleichmäßig helle Bänder mit parallelen Rändern"},
+  {"code": "2.1", "name": "Straße im Ort (Belag auf SW nicht bestimmbar)", "parent": "2", "level": 2, "color": "#d5d8dc", "image_cue": "breites helles Band zwischen den Häuserzeilen, verzweigt, mit Plätzen an Einmündungen"},
+  {"code": "2.2", "name": "Landstraße / Verbindungsstraße außerorts", "parent": "2", "level": 2, "color": "#b3b6b7", "image_cue": "helles, gleich breites Band durch die Felder, gerade"},
+  {"code": "2.3", "name": "Feldweg, Trift oder Wegrain", "parent": "2", "level": 2, "color": "#9a7d5a", "image_cue": "helleres, unscharf begrenztes Band zwischen Äckern, ausgefahrene Spuren"},
+  {"code": "3", "name": "Landwirtschaftliche Fläche (Acker oder Grünland, auf SW nicht sicher getrennt)", "parent": null, "level": 1, "color": "#7a9a3a", "image_cue": "große, gleichmäßig mittelgraue Fläche außerhalb des Orts"},
+  {"code": "3.1", "name": "Acker (Streifenflur)", "parent": "3", "level": 2, "color": "#c9b458", "image_cue": "lange parallele Streifen leicht verschiedener Grautöne, feine Bearbeitungsrichtung"},
+  {"code": "4", "name": "Gehölz", "parent": null, "level": 1, "color": "#1e8449", "image_cue": "dunkle, rundliche, weich begrenzte Flecken mit Schatten, körnige Krone"},
+  {"code": "4.1", "name": "Baumreihe, Einzelbäume an Straße oder Ortsrand", "parent": "4", "level": 2, "color": "#145a32", "image_cue": "Kette dunkler Kronen mit Schlagschatten entlang einer Straße oder eines Rains"},
+  {"code": "5", "name": "Schlagschatten (Untergrund verdeckt)", "parent": null, "level": 1, "color": "#1b2631", "image_cue": "fast schwarze, scharf begrenzte Streifen an der Schattenseite von Gebäuden und Bäumen"}
+ ]
+}

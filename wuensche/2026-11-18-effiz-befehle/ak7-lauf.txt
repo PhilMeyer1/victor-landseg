@@ -1,0 +1,19 @@
+$ landseg urteil bauen ... -> Exit 0 (0.4 s)
+ok: r0c0, 141 Segmente mit Urteil -> C:\Users\Phil\Developement\Victor\daten\landseg\wegwerf-effiz-befehle\r0c0\urteil.json
+$ landseg urteil pruefen ... -> Exit 0 (0.5 s)
+ok: r0c0, 141 Segmente mit Urteil
+  Vergleich: 141 Segmente, 0 Abweichungen; neu dazu: schema landseg-urteil/1, bearbeiter probe-ak7
+$ landseg urteil bauen ... -> Exit 0 (0.6 s)
+ok: r0c0 Viertel v1, 22 Segmente mit Urteil -> C:\Users\Phil\Developement\Victor\daten\landseg\wegwerf-effiz-befehle\r0c0-v1\urteil.json
+$ landseg einigung abgabe ... -> Exit 0 (1.0 s)
+Abgabe A-01 (38 Paare: gleich 13, grenze 21, unklar 4) -> C:\Users\Phil\Developement\Victor\daten\landseg\wegwerf-effiz-befehle\einigung-A-01\einigung_abgabe.json; Probe wie anwenden --probe: ok
+$ landseg einigung anwenden ... -> Exit 0 (0.9 s)
+Fassung A: 1 Abgaben, gleich 13, grenze 21, unklar 4, Klassen gesetzt 0, Teilkacheln r0c0, r0c1, r1c0, r1c1 -> C:/Users/Phil/Developement/Victor/daten/gesamt/victor-landseg/ergebnisse/a-alles-frei (Probe, nichts geschrieben)
+  Einigung: 38 Paare, Inhalt gleich der alten Abgabe: True
+$ landseg zoom --manifest ... -> Exit 0 (0.8 s)
+C:/Users/Phil/Developement/Victor/daten/landseg/wegwerf-effiz-befehle/zoom/r0c0_ids.jpg: 1268 × 1025 px, Ausschnitt x 465, y 154, 126 × 197, 5-fach, 35 Nummern, neben dem Luftbild
+$ landseg zoom --manifest ... -> Exit 0 (0.6 s)
+C:/Users/Phil/Developement/Victor/daten/landseg/wegwerf-effiz-befehle/zoom/r0c0_punkt.jpg: 968 × 1008 px, Ausschnitt x 240, y 240, 121 × 121, 8-fach, 8 Nummern
+$ landseg zoom --manifest ... -> Exit 0 (3.3 s)
+C:/Users/Phil/Developement/Victor/daten/landseg/wegwerf-effiz-befehle/zoom/r0c0_ganz.jpg: 1264 × 668 px, Ausschnitt x 0, y 0, 628 × 628, 1-fach, 172 Nummern, neben dem Luftbild
+Exit/Abweichungen: [0, 0, 0, 0, 0, 0, 0, 0, 0] gesamt 8.1 s

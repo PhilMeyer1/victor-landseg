@@ -1,0 +1,430 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-13",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r1c1:400149|r1c1:400290",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            960,
+            750
+          ],
+          "bis": [
+            960,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 6.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400149",
+          "teilkachel": "r1c1",
+          "id": 400149,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.674
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 910,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 910,
+          "urteil": "sauber",
+          "was_ist_es": "Großes helles Rechteck am Nordostrand mit dunklem Saum: Gebäude mit hellem Dach.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude mit hellem Dach"
+          }
+        },
+        {
+          "segment": "r1c1:400290",
+          "teilkachel": "r1c1",
+          "id": 400290,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1353,
+          "flaeche_kern": 1353,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Aus 400138: Dunklerer Streifen am Nordrand des Blocks. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r1c1:400144|r1c1:400290",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            976,
+            750
+          ],
+          "bis": [
+            976,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 5.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400144",
+          "teilkachel": "r1c1",
+          "id": 400144,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.541,
+            "abstand": 0.34
+          },
+          "flaeche": 711,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 711,
+          "urteil": "sauber",
+          "was_ist_es": "Sehr dunkle Fläche östlich des hellen Dachs 400149: Schlagschatten.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Gebäudeschatten"
+          }
+        },
+        {
+          "segment": "r1c1:400290",
+          "teilkachel": "r1c1",
+          "id": 400290,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1353,
+          "flaeche_kern": 1353,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Aus 400138: Dunklerer Streifen am Nordrand des Blocks. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-13",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r1c1:400149|r1c1:400290",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400144|r1c1:400290",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

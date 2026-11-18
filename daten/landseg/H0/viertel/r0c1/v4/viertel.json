@@ -1,0 +1,685 @@
+{
+  "schema": "landseg-h0-viertelbilder/1",
+  "teilkachel": "r0c1",
+  "viertel": "v4",
+  "lage": "unten rechts",
+  "viertel_im_bild": {
+    "x": 314,
+    "y": 314,
+    "breite": 250,
+    "hoehe": 250
+  },
+  "kern_im_bild": {
+    "x": 64,
+    "y": 64,
+    "breite": 500,
+    "hoehe": 500
+  },
+  "koordinaten": "x_teilkachel = fenster.x + x_bild // faktor (im Gitterbild vorher 40 px links und 16 px oben abziehen; im Mängelbild steht die Legende unten)",
+  "nummer": "Nummer im Bild = ID mod 100000; weiß = Segment dieses Viertels, grau = Kernsegment eines Nachbarviertels, ohne Nummer = Kontextrand",
+  "bilder": {
+    "uebersicht_nummern.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_roh.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_vorschlag.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_maengel.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_kontrast.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_gitter.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3,
+        "rand_links": 40,
+        "rand_oben": 16
+      }
+    },
+    "nah1_roh.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah1_nummern.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_roh.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_nummern.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_roh.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_nummern.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_roh.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_nummern.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    }
+  },
+  "segmente": [
+    {
+      "id": 200069,
+      "nr": 69,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 572,
+      "anteil": 0.74,
+      "auch_in": [
+        "v2"
+      ],
+      "punkt": [
+        488,
+        328
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200071,
+      "nr": 71,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 5459,
+      "anteil": 0.778,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        339,
+        379
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200051,
+      "nr": 51,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 7641,
+      "anteil": 0.736,
+      "auch_in": [
+        "v2",
+        "v3"
+      ],
+      "punkt": [
+        388,
+        397
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200079,
+      "nr": 79,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 593,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        429,
+        387
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200076,
+      "nr": 76,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 221,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        452,
+        366
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200077,
+      "nr": 77,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 199,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        454,
+        385
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200075,
+      "nr": 75,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 91,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        463,
+        362
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200082,
+      "nr": 82,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 583,
+      "anteil": 0.666,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        321,
+        433
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 200083,
+      "nr": 83,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 160,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        375,
+        424
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200080,
+      "nr": 80,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 112,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        387,
+        418
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200098,
+      "nr": 98,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 149,
+      "anteil": 0.503,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        316,
+        498
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200095,
+      "nr": 95,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 2353,
+      "anteil": 0.995,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        336,
+        483
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200091,
+      "nr": 91,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 127,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        341,
+        463
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200063,
+      "nr": 63,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 36113,
+      "anteil": 0.982,
+      "auch_in": [
+        "v2"
+      ],
+      "punkt": [
+        471,
+        462
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200097,
+      "nr": 97,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 3049,
+      "anteil": 0.945,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        333,
+        527
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200116,
+      "nr": 116,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 86,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        348,
+        546
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200109,
+      "nr": 109,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 144,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        358,
+        536
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200114,
+      "nr": 114,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 239,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        465,
+        542
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200108,
+      "nr": 108,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 659,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        508,
+        545
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200105,
+      "nr": 105,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 728,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        533,
+        525
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200107,
+      "nr": 107,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 289,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        553,
+        530
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200122,
+      "nr": 122,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 95,
+      "anteil": 0.989,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        322,
+        560
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200112,
+      "nr": 112,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 647,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        443,
+        554
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200111,
+      "nr": 111,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 714,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        484,
+        553
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200124,
+      "nr": 124,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 74,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        518,
+        560
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200123,
+      "nr": 123,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 94,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        535,
+        556
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200110,
+      "nr": 110,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 332,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        559,
+        559
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 200125,
+      "nr": 125,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 2,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        562,
+        563
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    }
+  ]
+}

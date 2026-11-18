@@ -1,0 +1,429 @@
+{
+  "schema": "landseg-h0-viertelbilder/1",
+  "teilkachel": "r1c0",
+  "viertel": "v3",
+  "lage": "unten links",
+  "viertel_im_bild": {
+    "x": 64,
+    "y": 314,
+    "breite": 250,
+    "hoehe": 250
+  },
+  "kern_im_bild": {
+    "x": 64,
+    "y": 64,
+    "breite": 500,
+    "hoehe": 500
+  },
+  "koordinaten": "x_teilkachel = fenster.x + x_bild // faktor (im Gitterbild vorher 40 px links und 16 px oben abziehen; im Mängelbild steht die Legende unten)",
+  "nummer": "Nummer im Bild = ID mod 100000; weiß = Segment dieses Viertels, grau = Kernsegment eines Nachbarviertels, ohne Nummer = Kontextrand",
+  "bilder": {
+    "uebersicht_nummern.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_roh.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_vorschlag.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_maengel.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_kontrast.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_gitter.jpg": {
+      "fenster": {
+        "x": 32,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3,
+        "rand_links": 40,
+        "rand_oben": 16
+      }
+    },
+    "nah1_roh.jpg": {
+      "fenster": {
+        "x": 52,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah1_nummern.jpg": {
+      "fenster": {
+        "x": 52,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_roh.jpg": {
+      "fenster": {
+        "x": 177,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_nummern.jpg": {
+      "fenster": {
+        "x": 177,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_roh.jpg": {
+      "fenster": {
+        "x": 52,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_nummern.jpg": {
+      "fenster": {
+        "x": 52,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_roh.jpg": {
+      "fenster": {
+        "x": 177,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_nummern.jpg": {
+      "fenster": {
+        "x": 177,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    }
+  },
+  "segmente": [
+    {
+      "id": 300082,
+      "nr": 82,
+      "klasse": "2.2",
+      "name": "Acker ohne Bewuchs (gepflügt, Saatbett)",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 298,
+      "anteil": 0.923,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        70,
+        320
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 300103,
+      "nr": 103,
+      "klasse": "1.2.4",
+      "name": "Platz / Parkplatz / Hoffläche versiegelt",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1313,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        142,
+        325
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 300108,
+      "nr": 108,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 716,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        154,
+        340
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 300101,
+      "nr": 101,
+      "klasse": "2.2",
+      "name": "Acker ohne Bewuchs (gepflügt, Saatbett)",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 135,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        171,
+        317
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 300105,
+      "nr": 105,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 108,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        180,
+        320
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 300099,
+      "nr": 99,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 295,
+      "anteil": 0.664,
+      "auch_in": [
+        "v1"
+      ],
+      "punkt": [
+        226,
+        320
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 300107,
+      "nr": 107,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 2250,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        82,
+        355
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 300104,
+      "nr": 104,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 2705,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        97,
+        387
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 300102,
+      "nr": 102,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 2132,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        127,
+        386
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 300109,
+      "nr": 109,
+      "klasse": "2.2",
+      "name": "Acker ohne Bewuchs (gepflügt, Saatbett)",
+      "sicher": "nein",
+      "im_siedlung": "ja",
+      "kern_flaeche": 3010,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        228,
+        396
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 300111,
+      "nr": 111,
+      "klasse": "1.2.4",
+      "name": "Platz / Parkplatz / Hoffläche versiegelt",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 116,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        258,
+        388
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 300113,
+      "nr": 113,
+      "klasse": "5.3",
+      "name": "Feuchtgebiet / Röhricht / Ufervegetation",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 410,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        83,
+        422
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 300110,
+      "nr": 110,
+      "klasse": "1.2.4",
+      "name": "Platz / Parkplatz / Hoffläche versiegelt",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 223,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        255,
+        400
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 300106,
+      "nr": 106,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 56484,
+      "anteil": 0.729,
+      "auch_in": [
+        "v4"
+      ],
+      "punkt": [
+        154,
+        480
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    }
+  ]
+}

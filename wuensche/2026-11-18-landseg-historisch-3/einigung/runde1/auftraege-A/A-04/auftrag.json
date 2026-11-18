@@ -1,0 +1,822 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "A",
+  "buendel": "A-04",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/a-alles-frei/kategorien-a.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schatten (Untergrund nicht erkennbar)",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2",
+      "name": "Sehr dunkle Fläche unklar",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.3",
+      "name": "Kleinobjekt unklar",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Gebäude und Hofstellen",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Hauptgebäude / Längsbau (Streckhof)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Querbau",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Großbau / Halle",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.4",
+      "name": "Dachfläche im Eigenschatten",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle ungetrennt (Dach oder Hof)",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.3",
+      "name": "Mauer / Einfriedung",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof- und Freifläche im Grundstück",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2",
+      "name": "Garten / Grün im Ort",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Gartenland mit Reihen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Straße im Ort",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.1.2",
+      "name": "Landstraße außerorts",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Weg / Gasse",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand (Bankett, Gehweg, Vorplatz)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Offene Fläche (nicht Acker)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Anger / Dorfplatz",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Brache / Ödland / Weide",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Rain / Graben / Saum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Landwirtschaftliche Fläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Feld / Acker (Streifenflur)",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feld, dunkler Bestand",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Feld, mittelgrau",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.3",
+      "name": "Feld, hell (offener Boden, Stoppel)",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Einzelbaum / Busch / Baumgruppe",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2",
+      "name": "Baumreihe / Hecke",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100028|r0c1:200166",
+      "art": "naht",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            48
+          ],
+          "bis": [
+            500,
+            48
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100028",
+          "teilkachel": "r0c0",
+          "id": 100028,
+          "klasse": "1.2",
+          "grob": "1",
+          "name": "Hofstellen Block B3 (Rand)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 8031,
+          "grund": "Hofstelle: Dach und Hof auf dem Scan nicht trennbar",
+          "id_abgabe": 28,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Hofstelle ungetrennt (Dach oder Hof)",
+          "flaeche_kern": 146
+        },
+        {
+          "segment": "r0c1:200166",
+          "teilkachel": "r0c1",
+          "id": 200166,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten / Grasland im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 24,
+          "kern_px": 24,
+          "offen": "dunkelgrau, weich: Garten oder Hof im Halbschatten; Bewuchs auf SW nicht sicher, Farbbild würde entscheiden",
+          "id_abgabe": 166,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Garten / Grasland im Grundstück",
+          "flaeche": 24,
+          "flaeche_kern": 24
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100028|r0c1:200167",
+      "art": "naht",
+      "bild": "paar_02.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            52
+          ],
+          "bis": [
+            500,
+            55
+          ],
+          "laenge": 4,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100028",
+          "teilkachel": "r0c0",
+          "id": 100028,
+          "klasse": "1.2",
+          "grob": "1",
+          "name": "Hofstellen Block B3 (Rand)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 8031,
+          "grund": "Hofstelle: Dach und Hof auf dem Scan nicht trennbar",
+          "id_abgabe": 28,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Hofstelle ungetrennt (Dach oder Hof)",
+          "flaeche_kern": 146
+        },
+        {
+          "segment": "r0c1:200167",
+          "teilkachel": "r0c1",
+          "id": 200167,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten / Grasland im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 119,
+          "kern_px": 117,
+          "offen": "dunkelgrau, weich: Garten oder Hof im Halbschatten; Bewuchs auf SW nicht sicher, Farbbild würde entscheiden",
+          "id_abgabe": 167,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Garten / Grasland im Grundstück",
+          "flaeche": 119,
+          "flaeche_kern": 117
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100028|r0c1:200234",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 6,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            56
+          ],
+          "bis": [
+            500,
+            59
+          ],
+          "laenge": 4,
+          "kante_max": 20.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            61
+          ],
+          "bis": [
+            500,
+            62
+          ],
+          "laenge": 2,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100028",
+          "teilkachel": "r0c0",
+          "id": 100028,
+          "klasse": "1.2",
+          "grob": "1",
+          "name": "Hofstellen Block B3 (Rand)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 8031,
+          "grund": "Hofstelle: Dach und Hof auf dem Scan nicht trennbar",
+          "id_abgabe": 28,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Hofstelle ungetrennt (Dach oder Hof)",
+          "flaeche_kern": 146
+        },
+        {
+          "segment": "r0c1:200234",
+          "teilkachel": "r0c1",
+          "id": 200234,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 857,
+          "kern_px": 841,
+          "offen": "sehr dunkel: Schlagschatten oder Schattenseite eines Dachs, Untergrund nicht erkennbar",
+          "id_abgabe": 234,
+          "klasse_teil": "9.1",
+          "klasse_teil_name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "flaeche": 857,
+          "flaeche_kern": 841
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100028|r0c1:200230",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            63
+          ],
+          "bis": [
+            500,
+            72
+          ],
+          "laenge": 10,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100028",
+          "teilkachel": "r0c0",
+          "id": 100028,
+          "klasse": "1.2",
+          "grob": "1",
+          "name": "Hofstellen Block B3 (Rand)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 8031,
+          "grund": "Hofstelle: Dach und Hof auf dem Scan nicht trennbar",
+          "id_abgabe": 28,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Hofstelle ungetrennt (Dach oder Hof)",
+          "flaeche_kern": 146
+        },
+        {
+          "segment": "r0c1:200230",
+          "teilkachel": "r0c1",
+          "id": 200230,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Dachfläche)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 201,
+          "kern_px": 181,
+          "offen": "hell, kompakt: Dach (Kopf- oder Nebengebäude) oder offene helle Hoffläche",
+          "id_abgabe": 230,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude (Dachfläche)",
+          "flaeche": 201,
+          "flaeche_kern": 181
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100054|r0c1:200230",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            73
+          ],
+          "bis": [
+            500,
+            75
+          ],
+          "laenge": 3,
+          "kante_max": 15.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100054",
+          "teilkachel": "r0c0",
+          "id": 100054,
+          "klasse": "3.1",
+          "grob": "3",
+          "name": "Straße D (südöstlicher Teil)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 3454,
+          "id_abgabe": 54,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Straße (Fahrbahn)",
+          "flaeche_kern": 1478
+        },
+        {
+          "segment": "r0c1:200230",
+          "teilkachel": "r0c1",
+          "id": 200230,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Dachfläche)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 201,
+          "kern_px": 181,
+          "offen": "hell, kompakt: Dach (Kopf- oder Nebengebäude) oder offene helle Hoffläche",
+          "id_abgabe": 230,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude (Dachfläche)",
+          "flaeche": 201,
+          "flaeche_kern": 181
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c0:100054|r0c1:200229",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 7,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            77
+          ],
+          "bis": [
+            500,
+            83
+          ],
+          "laenge": 7,
+          "kante_max": 21.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100054",
+          "teilkachel": "r0c0",
+          "id": 100054,
+          "klasse": "3.1",
+          "grob": "3",
+          "name": "Straße D (südöstlicher Teil)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 3454,
+          "id_abgabe": 54,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Straße (Fahrbahn)",
+          "flaeche_kern": 1478
+        },
+        {
+          "segment": "r0c1:200229",
+          "teilkachel": "r0c1",
+          "id": 200229,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Dachfläche)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 296,
+          "kern_px": 104,
+          "offen": "mittelhell, lang: Dachfläche eines Längsbaus oder Hofstreifen",
+          "id_abgabe": 229,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude (Dachfläche)",
+          "flaeche": 296,
+          "flaeche_kern": 104
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c0:100054|r0c1:200227",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 7,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            88
+          ],
+          "bis": [
+            500,
+            94
+          ],
+          "laenge": 7,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100054",
+          "teilkachel": "r0c0",
+          "id": 100054,
+          "klasse": "3.1",
+          "grob": "3",
+          "name": "Straße D (südöstlicher Teil)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 3454,
+          "id_abgabe": 54,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Straße (Fahrbahn)",
+          "flaeche_kern": 1478
+        },
+        {
+          "segment": "r0c1:200227",
+          "teilkachel": "r0c1",
+          "id": 200227,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 181,
+          "kern_px": 47,
+          "offen": "sehr dunkel: Schlagschatten oder Schattenseite eines Dachs, Untergrund nicht erkennbar",
+          "id_abgabe": 227,
+          "klasse_teil": "9.1",
+          "klasse_teil_name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "flaeche": 181,
+          "flaeche_kern": 47
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c0:100054|r0c1:200283",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 6,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            95
+          ],
+          "bis": [
+            500,
+            100
+          ],
+          "laenge": 6,
+          "kante_max": 21.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100054",
+          "teilkachel": "r0c0",
+          "id": 100054,
+          "klasse": "3.1",
+          "grob": "3",
+          "name": "Straße D (südöstlicher Teil)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 3454,
+          "id_abgabe": 54,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Straße (Fahrbahn)",
+          "flaeche_kern": 1478
+        },
+        {
+          "segment": "r0c1:200283",
+          "teilkachel": "r0c1",
+          "id": 200283,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten / Grasland im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 1120,
+          "kern_px": 959,
+          "offen": "dunkelgrau, weich: Garten oder Hof im Halbschatten; Bewuchs auf SW nicht sicher, Farbbild würde entscheiden",
+          "id_abgabe": 283,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Garten / Grasland im Grundstück",
+          "flaeche": 1120,
+          "flaeche_kern": 959
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c1:200192|r0c1:200249",
+      "art": "viertel",
+      "bild": "paar_09.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            13
+          ],
+          "bis": [
+            750,
+            13
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200192",
+          "teilkachel": "r0c1",
+          "id": 200192,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten / Grasland im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 77,
+          "kern_px": 77,
+          "offen": "dunkelgrau, weich: Garten oder Hof im Halbschatten; Bewuchs auf SW nicht sicher, Farbbild würde entscheiden",
+          "id_abgabe": 192,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Garten / Grasland im Grundstück",
+          "flaeche": 77,
+          "flaeche_kern": 77
+        },
+        {
+          "segment": "r0c1:200249",
+          "teilkachel": "r0c1",
+          "id": 200249,
+          "klasse": "3.1",
+          "grob": "3",
+          "name": "Straße SW-NO oben",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche_px": 6976,
+          "kern_px": 6109,
+          "grund": "durchgehendes helles Band, in der Mitte etwas dunkler",
+          "id_abgabe": 249,
+          "klasse_teil": "1.2.1",
+          "klasse_teil_name": "Straße (Fahrbahn mit Rand)",
+          "flaeche": 6976,
+          "flaeche_kern": 6109
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "A",
+    "buendel": "A-04",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100028|r0c1:200166",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100028|r0c1:200167",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100028|r0c1:200234",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100028|r0c1:200230",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100054|r0c1:200230",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100054|r0c1:200229",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100054|r0c1:200227",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100054|r0c1:200283",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200192|r0c1:200249",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

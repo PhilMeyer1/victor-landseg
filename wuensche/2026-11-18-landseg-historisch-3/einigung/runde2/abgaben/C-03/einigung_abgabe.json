@@ -1,0 +1,55 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "C",
+  "buendel": "C-03",
+  "bearbeiter": "agent:einigung-C-03:20261118i-r2",
+  "paare": [
+    {
+      "paar": "r0c0:100229|r1c0:300004",
+      "entscheidung": "gleich",
+      "klasse": "2",
+      "grund": "Der 19 Bildpunkte kleine Kernrest von 100229 (x 480-487, y 497-499) zeigt keinen Weg, sondern denselben mittelgrauen, leicht beschatteten Ackerrand (Grauwert um 80) wie 300004 direkt darunter (82); der helle Weg liegt erst 15 Bildpunkte südlich im Kontextrand, daher Acker 2 für beide."
+    },
+    {
+      "paar": "r0c0:100229|r1c0:300079",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Nördlich der Naht liegt der mittelgraue Ackerrand (100229), südlich beginnt bei x 481-484 der sehr dunkle untere Lappen des Gehölzes (Grauwert fällt von 77 auf 58 und weiter auf 30-45), ein weicher, aber echter Übergang Acker zu Gehölz."
+    },
+    {
+      "paar": "r0c0:100219|r1c0:300079",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "An x 485-490 trifft der gleichmäßig graue Acker 100219 auf den dunklen Gehölzfleck, der von Norden über die Naht in 300079 hineinreicht (Grauwert 65-76 oben, 48-55 unten); der Übergang ist weich, aber es sind zwei verschiedene Flächen."
+    },
+    {
+      "paar": "r1c0:300079|r1c1:400064",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "An der Naht (x 500, y 510-516) liegt beiderseits dieselbe helle Straßenecke der Einmündung (Grauwert 150-180), doch 300079 besteht im Kern überwiegend aus dem dunklen Gehölzlappen (139 von 328 Bildpunkten unter 70) plus dieser Straßenecke und einem Randstreifen südlich der Straße, so dass weder eine gemeinsame Klasse noch eine echte Grenze stimmt."
+    },
+    {
+      "paar": "r1c0:300010|r1c1:400064",
+      "entscheidung": "gleich",
+      "klasse": "1.2",
+      "grund": "Beide Seiten zeigen dieselbe helle, gleich breite Landstraße, die bei x 500, y 517 in die Einmündung übergeht; der Belag (Asphalt oder Schotter) ist auf dem Schwarz-Weiß-Bild von 1968 nicht sicher zu erkennen, daher Elternklasse Verkehrsfläche 1.2."
+    },
+    {
+      "paar": "r1c0:300010|r1c1:400072",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Bei x 500, y 520-522 liegt der allmähliche Südrand der hellen Straße (300010) gegen den mittel- bis dunkelgrauen, fleckigen Randstreifen südlich davon (400072); Straße und Rain sind zwei Flächen, nur ohne harten Helligkeitssprung."
+    },
+    {
+      "paar": "r1c0:300079|r1c1:400072",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "An der Naht (x 500, y 523-531) zeigen beide Seiten denselben dunkelgrauen, fleckigen Streifen südlich der Straße (Grauwert 50-80), doch 300079 ist ein Mischsegment, dessen größerer Teil nördlich der Straße der dunkle Gehölzlappen samt Straßenecke ist, so dass eine gemeinsame Klasse einen Teil falsch machen würde; ob der Streifen Krautsaum oder Gebüsch ist, gibt das Bild zudem nicht sicher her."
+    }
+  ],
+  "offen": [
+    "r1c0:300079 ist ein Mischsegment aus drei Flächen (dunkler Gehölzlappen x 483-499/y 500-512, helle Straßenecke x 488-499/y 510-519, Randstreifen südlich der Straße x 490-499/y 523-533); eine Klasse für die Paare 4 und 7 ist erst nach Teilen entlang der Straßenkanten möglich: Straßenecke zu 300010/400064 (1.2), Randstreifen zu 400072, Rest Gehölz 4.2 (Grenzänderung, nicht Teil dieser Einigung).",
+    "Randstreifen südlich der Straße (400072 und unterer Teil von 300079): Krautsaum 3.4 oder Gebüsch/Hecke 4.2.4/4.2.3 auf dem Scan nicht sicher unterscheidbar; ein schärferes oder farbiges Bild derselben Stelle würde es klären."
+  ],
+  "nicht_geprueft": []
+}

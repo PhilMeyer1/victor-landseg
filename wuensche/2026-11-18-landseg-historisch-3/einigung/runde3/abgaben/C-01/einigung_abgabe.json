@@ -1,0 +1,34 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "C",
+ "buendel": "C-01",
+ "bearbeiter": "agent:einigung-C-01:20261118i-r3",
+ "paare": [
+  {
+   "paar": "r0c0:100198|r0c1:200106",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "An den drei Berührpunkten stößt die helle Fahrbahn der Hauptstraße (Grau um 136) an die deutlich dunklere, gleichmäßig mittelgraue Fläche zwischen Straße und Häuserblock (Grau um 104), die schon als eigene Fläche geeinigt ist: zwei verschiedene Flächen mit Helligkeitssprung, nur schwacher Kante."
+  },
+  {
+   "paar": "r0c1:200122|r1c1:400033",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Einziger Berührpunkt an der Ecke: oben das mittelgraue Stück des Einmündungsbereichs der Straße (Grau um 112), unten der dunkle Schatten- und Dachrand der Häuserzeile (Grau um 78 in der Umgebung), also Straßenfläche gegen bebaute Mischfläche."
+  },
+  {
+   "paar": "r0c1:200111|r1c1:400042",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Nur ein Eckpunkt: das helle Dach des Vorderhauses (Grau um 170) berührt die mittelgraue Rautenfläche mit dunkler Linie (Grau um 78 am Punkt), deutlich verschiedene Helligkeit und Form, zwei verschiedene Flächen."
+  },
+  {
+   "paar": "r1c1:400051|r1c1:400103",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Die helle schmale Gasse läuft an der Viertelgrenze ohne Kante in die breite helle Fahrbahn der östlichen Dorfstraße über (dieselbe Straßenkette); der Belag ist im Schwarz-Weiß-Scan nicht sicher, daher wie die übrige Kette Verkehrsfläche 1.2."
+  }
+ ],
+ "offen": [],
+ "nicht_geprueft": []
+}

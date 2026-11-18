@@ -1,0 +1,85 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-11",
+ "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+ "paare": [
+  {
+   "paar": "r1c0:300026|r1c0:300038",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die schmale helle Linie mit dunkler Furche (Feldrain 38) hebt sich als eigenes Band vom gleichmäßig gestreiften Feld 26 ab; zwei verschiedene Flächen."
+  },
+  {
+   "paar": "r1c0:300038|r1c0:300042",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der helle schmale Rainstreifen 38 läuft schräg durch und trennt ihn vom mittelgrauen, fleckigen Feld 42; echte Grenze Rain gegen Acker."
+  },
+  {
+   "paar": "r1c0:300023|r1c0:300026",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld."
+  },
+  {
+   "paar": "r1c0:300011|r1c0:300036",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das mittelgraue Feld 11 grenzt nur an einer Ecke an das deutlich hellere, geradrandige Band des Feldwegs 36; Weg gegen Acker."
+  },
+  {
+   "paar": "r1c0:300011|r1c1:400110",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das dunkle Feld 11 berührt an der Naht nur in einem Punkt das helle, fleckige Wegband 400110; deutlicher Helligkeitssprung zwischen Acker und Weg."
+  },
+  {
+   "paar": "r1c0:300036|r1c1:400118",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der helle Feldweg 36 und das mittelgraue gestreifte Feld 400118 berühren sich an der Naht nur in einem Punkt neben dem dunklen Schattenstrich; Weg gegen Acker."
+  },
+  {
+   "paar": "r1c0:300023|r1c1:400118",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld."
+  },
+  {
+   "paar": "r1c0:300023|r1c1:400202",
+   "entscheidung": "gleich",
+   "klasse": "5.1.1",
+   "grund": "Der 3-Bildpunkte-Rest 400202 sitzt direkt an der Naht auf demselben schmalen hell-dunklen Linienband wie Rain 23 und ist dessen Fortsetzung, kein eigener Wegrand (Linie liegt zwischen Feldern, nicht an einem Weg)."
+  },
+  {
+   "paar": "r1c0:300023|r1c1:400209",
+   "entscheidung": "gleich",
+   "klasse": "5.1.1",
+   "grund": "In der eigenen Vergrößerung (einigung_09.jpg) setzt sich die helle Linie mit dunkler Furche des Rains 23 bei y 950-975 ohne Unterbrechung über die Naht fort; 400209 ist dieses Stück, also derselbe Feldrain zwischen zwei Feldern."
+  },
+  {
+   "paar": "r1c0:300023|r1c1:400211",
+   "entscheidung": "gleich",
+   "klasse": "5.1.1",
+   "grund": "400211 liegt auf derselben über die Naht durchlaufenden Rainlinie wie 23 und 400209 (einigung_09.jpg), ein Feldrain zwischen Feldern, kein Wegrand."
+  },
+  {
+   "paar": "r1c0:300023|r1c1:400176",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "400176 ist die gleichmäßig graue Ackerfläche westlich der Rainlinie (fast ganz im Kontextrand), der Rain 23 ein schmales Linienband; Rain gegen Feld."
+  },
+  {
+   "paar": "r1c1:400118|r1c1:400145",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das gleichmäßig graue Feld 400118 stößt an das dunkle, körnig-fleckige Gehölzband 400145 entlang der Dorfstraße; deutlicher Wechsel von Acker zu Baumreihe."
+  }
+ ],
+ "offen": [
+  "Kette r1c0:300023 - r1c1:400202/400209/400211 einheitlich 5.1.1 Feldrain; weitere Stücke derselben Feldgrenze im Kontextrand von r1c1 (400193, 400198, 400215 laut Urteil r1c1) sind nicht in diesem Bündel und sollten dieselbe Klasse 5.1.1 bekommen.",
+  "r1c0:300036 und r1c1:400110 sind derselbe Feldweg (beide 3.2.1); als Paar nicht in diesem Bündel."
+ ],
+ "nicht_geprueft": []
+}

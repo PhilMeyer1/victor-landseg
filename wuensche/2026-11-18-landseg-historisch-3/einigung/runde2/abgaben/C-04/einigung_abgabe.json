@@ -1,0 +1,68 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "C",
+  "buendel": "C-04",
+  "bearbeiter": "agent:einigung-C-04:20261118i-r2",
+  "paare": [
+    {
+      "paar": "r0c1:200016|r0c1:200170",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Magenta ist ein schmaler, heller Dachstreifen (Grauwert um 136), türkis der dunkle Hof- und Schattenbereich daneben (um 64); die Berührung liegt nur an der Spitze des Dachstreifens im Helligkeitsübergang, die Flächen sind verschieden."
+    },
+    {
+      "paar": "r0c1:200016|r0c1:200025",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Magenta ist überwiegend der helle Fahrbahnrand der Kreuzung (Straßenfläche), türkis die dunklen Höfe zwischen den Streckhöfen; die Berührung ohne Kante liegt nur am fehlerhaften schmalen Schwanz von 200025 entlang der Dachkante, der eine Grenzfrage ist und keine Klassenfrage."
+    },
+    {
+      "paar": "r0c1:200016|r0c1:200174",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Magenta ist das große, sehr helle Hallendach (Grauwert um 200), türkis der mittelgraue bis dunkle Hof- und Anbaubereich links davon; an der Stelle läuft nur ein weicher Helligkeitsübergang am Dachrand, die Flächen sind verschieden."
+    },
+    {
+      "paar": "r0c1:200016|r0c1:200067",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Magenta ist die helle, gleichmäßige Straße (Grauwert 150 bis 190), türkis die mittelgrauen Höfe nördlich davon; die Stelle liegt im weichen Übergang am Straßenrand, beide Flächen sind verschieden."
+    },
+    {
+      "paar": "r0c1:200067|r0c1:200071",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Türkis ist die helle Straße, magenta der dunkle Block aus Dächern und Höfen südlich davon; der Helligkeitsabfall am Straßenrand ist deutlich, nur an der Viertelgrenze weich."
+    },
+    {
+      "paar": "r0c1:200071|r0c1:200082",
+      "entscheidung": "gleich",
+      "klasse": "1",
+      "grund": "Magenta ist ein dunkles Band am Südrand des dunklen Blocks, das ohne Kante in dessen Grauton übergeht und deutlich dunkler ist als die helle Fahrbahn daneben; ob Straßenrand im Schatten oder Blockrand, ist am Schwarz-Weiß-Bild nicht sicher, daher die Elternklasse 1 für beide."
+    },
+    {
+      "paar": "r0c1:200016|r0c1:200070",
+      "entscheidung": "gleich",
+      "klasse": "1",
+      "grund": "Das kleine Stück 200070 setzt den mittelhellen Streifen im Hofbereich von 200016 ohne Kante fort und liegt noch vor der hellen Querstraße; es gehört zur selben gemischten Hof- und Dachfläche, gemeinsame Klasse 1."
+    },
+    {
+      "paar": "r0c1:200097|r0c1:200098",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Magenta ist ein heller Streifen am Rand der Straßenkreuzung (Grauwert um 140, Fahrbahn daneben um 190), türkis die grauere Spitze der Angerfläche mit ihrer dunklen Randlinie (um 100); Straßenrand und Anger sind verschiedene Flächen."
+    },
+    {
+      "paar": "r0c1:200097|r1c1:400049",
+      "entscheidung": "gleich",
+      "klasse": "1",
+      "grund": "Über die Naht bei y 500 läuft derselbe helle Schrägstreifen (Grauwert 150 bis 190) neben einem dunklen Schattenstreifen ohne jede Kante: Oben gehört er zur gemischten Fläche 200097, unten ist er der Dachstreifen 400049; weil 200097 auch Anger enthält, passt für beide nur die Elternklasse 1."
+    }
+  ],
+  "offen": [
+    "r0c1:200025: Grenzfehler, keine Klassenfrage: Schwanz entlang der Dachkante (Teilkachel x 300–325, y 100–125) gehört zu 200016, Fahrbahnstück zur Straße 200005 (Urteil r0c1 v1); braucht einen Eingriff an den Grenzen.",
+    "r0c1:200097|r1c1:400049: Gerade Naht ohne Bildkante durch den hellen Dachstreifen; 200097 umfasst neben dem Anger auch Dach- und Schattenstreifen, gehört geteilt (Grenzfrage). Mit Klasse 1 verliert 400049 die feinere Klasse 1.1.",
+    "r0c1:200082: ob das dunkle Band Fahrbahnrand im Schatten oder Blockrand ist, klärt erst ein Farbbild; deshalb nur Klasse 1."
+  ],
+  "nicht_geprueft": []
+}

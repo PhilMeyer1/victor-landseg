@@ -1,0 +1,1476 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "C",
+  "buendel": "C-05",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/landseg/kategorien.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar (technisch)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Bildfehler / Scanrand / Rahmenmarke / Kratzer",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Versiegelt / bebaut (Siedlung und Verkehr)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Gewächshaus / Folientunnel",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Verkehrsfläche",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.4",
+      "name": "Platz / Parkplatz / Hoffläche versiegelt",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.5",
+      "name": "Bahnkörper",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.3",
+      "name": "Sonstige künstliche Fläche",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.3.1",
+      "name": "Lager-, Schotter-, Kiesfläche (künstlich, unversiegelt)",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.2",
+      "name": "Baustelle",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.3",
+      "name": "Schwimmbecken",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.4",
+      "name": "Sport-, Spielplatz (künstlicher Belag)",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Acker (und Dauerkulturen)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Acker mit Bewuchs",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2",
+      "name": "Acker ohne Bewuchs (gepflügt, Saatbett)",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Ackerbrache",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4",
+      "name": "Dauerkultur",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4.1",
+      "name": "Weingarten",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.2",
+      "name": "Obstanlage (intensiv, Reihen)",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.3",
+      "name": "Sonstige Dauerkultur (Beeren, Hopfen, Baumschule)",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "3",
+      "name": "Dauergrünland (krautig, nicht Acker)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Wiese (Mahdspuren sichtbar)",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.1.2",
+      "name": "Weide (Trittpfade, Zäune, Tiere)",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Trocken-/Magerrasen",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Grünlandbrache / Ruderalflur",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Krautsaum linear (Feldrain, Wegrand, Böschung)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.5",
+      "name": "Verbuschende Fläche (Grünland mit Gehölzanflug)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Wald und Gehölze",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Laubwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Nadelwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.3",
+      "name": "Mischwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.4",
+      "name": "Kahlschlag / Jungwuchs / Schlagflur",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Gehölz außerhalb Wald",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2.1",
+      "name": "Einzelbaum",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.2",
+      "name": "Baumgruppe / Feldgehölz",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.3",
+      "name": "Hecke / Baumreihe / Ufergehölz (linear)",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.4",
+      "name": "Gebüsch / Strauchfläche",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "5",
+      "name": "Gewässer / Feuchtgebiet",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Fließgewässer",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Fluss / Bach",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Graben / Kanal",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Stillgewässer (See, Teich, Weiher)",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.3",
+      "name": "Feuchtgebiet / Röhricht / Ufervegetation",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Offener Boden / Fels",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Offene Sand-, Löss-, Lehmstelle (Abbruch, Hohlweg, Grube)",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2",
+      "name": "Abbau, Halde, Deponie",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.3",
+      "name": "Fels / Geröll",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.4",
+      "name": "Kies-/Sandbank (Gewässerufer, unbewachsen)",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Schnee / Eis / Gletscher",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.6",
+      "name": "Weg, unbefestigt (Feld-, Wald-, Schotterweg)",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c1:200120|r0c1:200122",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 8,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            488
+          ],
+          "bis": [
+            750,
+            489
+          ],
+          "laenge": 2,
+          "kante_max": 23.0
+        },
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            492
+          ],
+          "bis": [
+            750,
+            492
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        },
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            494
+          ],
+          "bis": [
+            750,
+            498
+          ],
+          "laenge": 5,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200120",
+          "teilkachel": "r0c1",
+          "id": 200120,
+          "klasse": "1.2",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.447,
+            "abstand": 0.145
+          },
+          "flaeche": 134,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 76,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Südspitze der Straße 200049 am Unterrand (x 300–317, y 546–574).",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Gleiche Fahrbahn wie 200049 ohne Kante (311/561).",
+              "flaeche_px": 76
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "1.2"
+        },
+        {
+          "segment": "r0c1:200122",
+          "teilkachel": "r0c1",
+          "id": 200122,
+          "klasse": "1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.229,
+            "abstand": 0.08
+          },
+          "flaeche": 186,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 95,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Graues Stück an der Südwestecke (x 312–329, y 552–574) zwischen Straßenspitze 120 und Angerfläche 97.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Keine Baustelle (322/560); Straßenrand oder Rasen.",
+              "flaeche_px": 95
+            }
+          ],
+          "klasse_heute": "1.3.2",
+          "klasse_vorschlag": "1"
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c1:200120|r1c1:400009",
+      "art": "naht",
+      "bild": "paar_02.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            742,
+            500
+          ],
+          "bis": [
+            745,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 17.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200120",
+          "teilkachel": "r0c1",
+          "id": 200120,
+          "klasse": "1.2",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.447,
+            "abstand": 0.145
+          },
+          "flaeche": 134,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 76,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Südspitze der Straße 200049 am Unterrand (x 300–317, y 546–574).",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Gleiche Fahrbahn wie 200049 ohne Kante (311/561).",
+              "flaeche_px": 76
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "1.2"
+        },
+        {
+          "segment": "r1c1:400009",
+          "teilkachel": "r1c1",
+          "id": 400009,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.405
+          },
+          "instanz": {
+            "text": "dirt path",
+            "eingerastet": true
+          },
+          "flaeche": 1917,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "6.6",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 11,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "11 Bildpunkte am Oberrand: Rand der hellen Straße, die nach Norden weiterläuft (fast ganz im Kontextrand).",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Teil der Dorfstraße, nicht Feldweg (308/65); Belag auf Schwarz-Weiß nicht sicher.",
+              "flaeche_px": 11
+            }
+          ],
+          "klasse_heute": "6.6",
+          "klasse_vorschlag": "1.2.1"
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c1:200120|r1c1:400051",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            746,
+            500
+          ],
+          "bis": [
+            748,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200120",
+          "teilkachel": "r0c1",
+          "id": 200120,
+          "klasse": "1.2",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.447,
+            "abstand": 0.145
+          },
+          "flaeche": 134,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 76,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Südspitze der Straße 200049 am Unterrand (x 300–317, y 546–574).",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Gleiche Fahrbahn wie 200049 ohne Kante (311/561).",
+              "flaeche_px": 76
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "1.2"
+        },
+        {
+          "segment": "r1c1:400051",
+          "teilkachel": "r1c1",
+          "id": 400051,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.356,
+            "abstand": 0.143
+          },
+          "flaeche": 878,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 792,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmaler heller Streifen der östlichen Dorfstraße am Oberrand, mit einem dunklen Schattenstreifen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Straße; Belag auf Schwarz-Weiß nicht sicher (319/90).",
+              "flaeche_px": 792
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Dunkler Schattenstreifen am Ostrand (327/110) gehört nicht zur Fahrbahn.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "1.2.1"
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c1:200122|r1c1:400051",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 14,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            749,
+            500
+          ],
+          "bis": [
+            762,
+            500
+          ],
+          "laenge": 14,
+          "kante_max": 15.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200122",
+          "teilkachel": "r0c1",
+          "id": 200122,
+          "klasse": "1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.229,
+            "abstand": 0.08
+          },
+          "flaeche": 186,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 95,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Graues Stück an der Südwestecke (x 312–329, y 552–574) zwischen Straßenspitze 120 und Angerfläche 97.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Keine Baustelle (322/560); Straßenrand oder Rasen.",
+              "flaeche_px": 95
+            }
+          ],
+          "klasse_heute": "1.3.2",
+          "klasse_vorschlag": "1"
+        },
+        {
+          "segment": "r1c1:400051",
+          "teilkachel": "r1c1",
+          "id": 400051,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.356,
+            "abstand": 0.143
+          },
+          "flaeche": 878,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 792,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmaler heller Streifen der östlichen Dorfstraße am Oberrand, mit einem dunklen Schattenstreifen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Straße; Belag auf Schwarz-Weiß nicht sicher (319/90).",
+              "flaeche_px": 792
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Dunkler Schattenstreifen am Ostrand (327/110) gehört nicht zur Fahrbahn.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "1.2.1"
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r1c1:400051|r1c1:400060",
+      "art": "viertel",
+      "bild": "paar_05.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            541
+          ],
+          "bis": [
+            750,
+            541
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            546
+          ],
+          "bis": [
+            750,
+            546
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400051",
+          "teilkachel": "r1c1",
+          "id": 400051,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.356,
+            "abstand": 0.143
+          },
+          "flaeche": 878,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 792,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmaler heller Streifen der östlichen Dorfstraße am Oberrand, mit einem dunklen Schattenstreifen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Straße; Belag auf Schwarz-Weiß nicht sicher (319/90).",
+              "flaeche_px": 792
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Dunkler Schattenstreifen am Ostrand (327/110) gehört nicht zur Fahrbahn.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "1.2.1"
+        },
+        {
+          "segment": "r1c1:400060",
+          "teilkachel": "r1c1",
+          "id": 400060,
+          "klasse": "1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.563,
+            "abstand": 0.346
+          },
+          "flaeche": 3390,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 3390,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Langes Schattenband zwischen Häuserblock 6 und der östlichen Straße: Schlagschatten der Häuser, darunter nichts erkennbar.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Schatten in bebauter Umgebung, Elternklasse nach U2 (299/128).",
+              "flaeche_px": 3390
+            }
+          ],
+          "klasse_heute": "0.2",
+          "klasse_vorschlag": "1"
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c1:200049|r0c1:200056",
+      "art": "viertel",
+      "bild": "paar_06.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            617,
+            250
+          ],
+          "bis": [
+            617,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200049",
+          "teilkachel": "r0c1",
+          "id": 200049,
+          "klasse": "1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.461
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 10321,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 10321,
+          "urteil": "sauber",
+          "was_ist_es": "Hauptstraße von der Einmündung im Norden (100/200) nach Süden mit der Gabelung um den kleinen Anger (Dreieck 240–310/430–560).",
+          "viertel": "v3",
+          "klasse_heute": "1.2.2",
+          "klasse_vorschlag": "1.2"
+        },
+        {
+          "segment": "r0c1:200056",
+          "teilkachel": "r0c1",
+          "id": 200056,
+          "klasse": "1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.433,
+            "abstand": 0.082
+          },
+          "flaeche": 1610,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1610,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Langer grauer Streifen nordöstlich der Straße 200049 (x 110–235, y 211–366), 4–5 m breit, zwischen Fahrbahn und der hellen Dachkante der ersten Häuserreihe (200180, aus 16): Gehweg, Vorgarten oder Randstreifen.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Dunkler als die Fahrbahn und durch eine dünne dunkle Linie von ihr getrennt (150/260); ob Gehweg oder Vorgarten, ist auf dem Scan nicht zu sehen.",
+              "flaeche_px": 1610
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "1"
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c1:200081|r1c1:400003",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 17,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            505,
+            500
+          ],
+          "bis": [
+            521,
+            500
+          ],
+          "laenge": 17,
+          "kante_max": 20.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200081",
+          "teilkachel": "r0c1",
+          "id": 200081,
+          "klasse": "1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 4888,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 423,
+          "urteil": "sauber",
+          "was_ist_es": "Straße am Westrand des Blocks 47 (x 0–137, y 413–627), gleichmäßig hell.",
+          "viertel": "v3",
+          "klasse_heute": "1.2.2",
+          "klasse_vorschlag": "1.2"
+        },
+        {
+          "segment": "r1c1:400003",
+          "teilkachel": "r1c1",
+          "id": 400003,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.517
+          },
+          "instanz": {
+            "text": "dirt path",
+            "eingerastet": true
+          },
+          "flaeche": 5519,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "6.6",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4731,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dorfstraße westlich des Häuserblocks von der Einmündung bis zum hellen Gebäude 132; hell, gleich breit, durchgehend (jetzt mit 73, 112, 117, 121 verschmolzen).",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Erledigt: Einfahrt 73, Randstücke 112 und 117 und Südteil 121 ohne Bildkante zur Straße verschmolzen (160/210).",
+              "flaeche_px": 1940
+            },
+            {
+              "nr": 2,
+              "art": "klasse",
+              "text": "Straße statt Feldweg; Asphalt oder Schotter auf Schwarz-Weiß nicht sicher (125/110).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "6.6",
+          "klasse_vorschlag": "1.2.1"
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c1:200121|r1c1:400006",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            566,
+            500
+          ],
+          "bis": [
+            566,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 23.0
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            591,
+            500
+          ],
+          "bis": [
+            591,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200121",
+          "teilkachel": "r0c1",
+          "id": 200121,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.458
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 540,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 436,
+          "urteil": "sauber",
+          "was_ist_es": "Helles Rechteck am Unterrand (x 128–166, y 549–571), Dach.",
+          "viertel": "v3",
+          "klasse_heute": "1.1.1",
+          "klasse_vorschlag": "1.1"
+        },
+        {
+          "segment": "r1c1:400006",
+          "teilkachel": "r1c1",
+          "id": 400006,
+          "klasse": "1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.459,
+            "abstand": 0.251
+          },
+          "flaeche": 58367,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 50488,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Ganzer Häuserblock zwischen den beiden Straßen über alle vier Viertel: etwa 25 Streckhöfe mit langen Dächern, schmalen Höfen und Gärten.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Block muss in Einzeldächer, Höfe und Gärten geteilt werden (250/150); auf 0,45 m mit Handlinien in diesem Auftrag nicht verlässlich, nicht geteilt.",
+              "flaeche_px": 50144
+            },
+            {
+              "nr": 2,
+              "art": "klasse",
+              "text": "Kein einzelnes Hauptgebäude, sondern bebaute Mischfläche (230/240).",
+              "flaeche_px": null
+            },
+            {
+              "nr": 3,
+              "art": "fremdes",
+              "text": "Helle Einfahrt an der Straße (190/222) gehört zur Verkehrsfläche, nicht zum Block.",
+              "flaeche_px": 450
+            },
+            {
+              "nr": 4,
+              "art": "sonstiges",
+              "text": "Grauer Teil östlich des hellen Dachs 132 (222/280) beim Teilen von 132 hierher übernommen.",
+              "flaeche_px": 344
+            }
+          ],
+          "klasse_heute": "1.1.1",
+          "klasse_vorschlag": "1"
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r1c1:400006|r1c1:400171",
+      "art": "viertel",
+      "bild": "paar_09.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            829
+          ],
+          "bis": [
+            750,
+            829
+          ],
+          "laenge": 1,
+          "kante_max": 8.0
+        },
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            855
+          ],
+          "bis": [
+            750,
+            855
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400006",
+          "teilkachel": "r1c1",
+          "id": 400006,
+          "klasse": "1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.459,
+            "abstand": 0.251
+          },
+          "flaeche": 58367,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 50488,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Ganzer Häuserblock zwischen den beiden Straßen über alle vier Viertel: etwa 25 Streckhöfe mit langen Dächern, schmalen Höfen und Gärten.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Block muss in Einzeldächer, Höfe und Gärten geteilt werden (250/150); auf 0,45 m mit Handlinien in diesem Auftrag nicht verlässlich, nicht geteilt.",
+              "flaeche_px": 50144
+            },
+            {
+              "nr": 2,
+              "art": "klasse",
+              "text": "Kein einzelnes Hauptgebäude, sondern bebaute Mischfläche (230/240).",
+              "flaeche_px": null
+            },
+            {
+              "nr": 3,
+              "art": "fremdes",
+              "text": "Helle Einfahrt an der Straße (190/222) gehört zur Verkehrsfläche, nicht zum Block.",
+              "flaeche_px": 450
+            },
+            {
+              "nr": 4,
+              "art": "sonstiges",
+              "text": "Grauer Teil östlich des hellen Dachs 132 (222/280) beim Teilen von 132 hierher übernommen.",
+              "flaeche_px": 344
+            }
+          ],
+          "klasse_heute": "1.1.1",
+          "klasse_vorschlag": "1"
+        },
+        {
+          "segment": "r1c1:400171",
+          "teilkachel": "r1c1",
+          "id": 400171,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.464
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 944,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 944,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Graues Dach mit hellem Rand östlich der Straße, reicht nach v4.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Gebäude, Haupt- oder Nebengebäude nicht sicher (304/410).",
+              "flaeche_px": 944
+            }
+          ],
+          "klasse_heute": "1.1.1",
+          "klasse_vorschlag": "1.1"
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r1c1:400006|r1c1:400148",
+      "art": "viertel",
+      "bild": "paar_10.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            660,
+            750
+          ],
+          "bis": [
+            660,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 10.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400006",
+          "teilkachel": "r1c1",
+          "id": 400006,
+          "klasse": "1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.459,
+            "abstand": 0.251
+          },
+          "flaeche": 58367,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 50488,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Ganzer Häuserblock zwischen den beiden Straßen über alle vier Viertel: etwa 25 Streckhöfe mit langen Dächern, schmalen Höfen und Gärten.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Block muss in Einzeldächer, Höfe und Gärten geteilt werden (250/150); auf 0,45 m mit Handlinien in diesem Auftrag nicht verlässlich, nicht geteilt.",
+              "flaeche_px": 50144
+            },
+            {
+              "nr": 2,
+              "art": "klasse",
+              "text": "Kein einzelnes Hauptgebäude, sondern bebaute Mischfläche (230/240).",
+              "flaeche_px": null
+            },
+            {
+              "nr": 3,
+              "art": "fremdes",
+              "text": "Helle Einfahrt an der Straße (190/222) gehört zur Verkehrsfläche, nicht zum Block.",
+              "flaeche_px": 450
+            },
+            {
+              "nr": 4,
+              "art": "sonstiges",
+              "text": "Grauer Teil östlich des hellen Dachs 132 (222/280) beim Teilen von 132 hierher übernommen.",
+              "flaeche_px": 344
+            }
+          ],
+          "klasse_heute": "1.1.1",
+          "klasse_vorschlag": "1"
+        },
+        {
+          "segment": "r1c1:400148",
+          "teilkachel": "r1c1",
+          "id": 400148,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.517
+          },
+          "instanz": {
+            "text": "dirt path",
+            "eingerastet": true
+          },
+          "flaeche": 3509,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "6.6",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3509,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dorfstraße westlich des Häuserblocks von 146 bis zur Abzweigung der Gasse 192 (jetzt mit 178, 190 und 187 verschmolzen).",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Erledigt: Randstück 178 und Straßenstücke 190 und 187 ohne Bildkante zur Fahrbahn gelegt (285/470).",
+              "flaeche_px": 1012
+            },
+            {
+              "nr": 2,
+              "art": "klasse",
+              "text": "Straße statt Feldweg; Belag auf Schwarz-Weiß nicht sicher (253/394).",
+              "flaeche_px": null
+            },
+            {
+              "nr": 3,
+              "art": "verschmelzen",
+              "text": "Grenze zu 146 (v1) oben ohne Bildkante (212/312).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "6.6",
+          "klasse_vorschlag": "1.2.1"
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "C",
+    "buendel": "C-05",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c1:200120|r0c1:200122",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200120|r1c1:400009",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200120|r1c1:400051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200122|r1c1:400051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400051|r1c1:400060",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200049|r0c1:200056",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200081|r1c1:400003",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200121|r1c1:400006",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400006|r1c1:400171",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400006|r1c1:400148",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

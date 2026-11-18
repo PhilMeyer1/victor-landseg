@@ -1,0 +1,86 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "C",
+ "buendel": "C-01",
+ "bearbeiter": "agent:einigung-C-01:20261118i-r2",
+ "paare": [
+  {
+   "paar": "r0c0:100042|r0c1:200004",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist das sehr helle Dach (Grau um 170), das kurz vor der Naht endet; magenta ist dort der tiefe Schlagschatten des Hofs (Grau um 45), also Dach gegen Hof, zwei verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100056|r0c1:200004",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist ein langes, mittelgraues Dach zwischen zwei Schattenbändern, magenta der Hofblock im Schatten; an der Naht berühren sich nur der schwarze Ostzipfel von türkis (Schlagschatten, Grau um 30) und der Hofschatten, die Segmente selbst zeigen verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100070|r0c1:200004",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist der mittelgraue Kernsaum (45 Bildpunkte, Grau um 113) am Westende des hellen Dachs im Nachbarkern, magenta der dunklere Hof daneben (Grau um 76); Dachrand gegen Hof, verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100081|r0c1:200004",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist das mittelhelle, fleckige Westende des Dachbands, das in r0c1 als eigenes Dachsegment weiterläuft; magenta berührt es nur mit einem Saum von 1 bis 2 Bildpunkten am Rand dieses Dachs und ist sonst Hof im Schatten, die Segmente zeigen verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100092|r0c1:200004",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist der hellgraue Streifen am Straßenrand (Vorplatz oder befestigter Rand, Grau um 100), magenta der dunklere, fleckige Hof dahinter (Grau um 74); Rand gegen Hof, verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100111|r0c1:200042",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die Segmente berühren sich nur in einem Bildpunkt: türkis ist dort der schwarze Schatten der Mischfläche (Grau um 37), magenta der helle Rand der Straße (Grau um 127); Schatten gegen Fahrbahn, verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100144|r0c1:200047",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Das hellgraue Band von türkis läuft ohne Kante und mit gleichem Grauton (131 gegen 115) über die Naht in den Mischblock magenta weiter; ob das Band ein Dach (1.1) oder Hof ist, zeigt der Scan nicht sicher, und die Trennung gehört in die Grenze von 200047, nicht in die Klasse."
+  },
+  {
+   "paar": "r0c0:100153|r0c1:200047",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Die mittelgraue, körnige Fläche von türkis setzt sich ohne Kante und mit fast gleichem Grauton (104 gegen 96) im Mischblock magenta fort; ein Dach ist an der Naht nicht erkennbar (keine Schattenkante), Gebäude oder Hof bleibt offen."
+  },
+  {
+   "paar": "r0c0:100209|r0c1:200047",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Die 4 Bildpunkte von türkis sind der Westrand der dunklen, fleckigen Fläche (Baumkronen oder Schatten), die ohne Kante im Mischblock magenta weiterläuft; Gehölz oder Schatten im Siedlungsblock ist am Schwarz-Weiß-Bild nicht sicher, und der Block als Ganzes ist keine Gehölzfläche."
+  },
+  {
+   "paar": "r0c0:100211|r0c1:200047",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Türkis ist der dunkle Fleck an der Straße, der ohne Kante und mit ähnlichem Grauton (45 gegen 58) in die dunkle, fleckige Fläche im Mischblock magenta übergeht; Bäume oder Schatten ist nicht sicher, und eine gemeinsame Klasse passt nicht zum ganzen Block."
+  },
+  {
+   "paar": "r0c1:200047|r0c1:200186",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Magenta ist ein klar umrissenes, helles Winkeldach mit hellem First (Grau um 165), türkis der dunklere Hof- und Gartenblock darum (Grau um 115); Dach gegen Hof, verschiedene Flächen."
+  },
+  {
+   "paar": "r0c1:200047|r1c1:400056",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Magenta ist der kleine, sehr helle ovale Bau am Platz (Grau um 185), türkis der mittelgraue Block nördlich davon; an der Naht stößt nur ein schmaler grauer Bodensaum von magenta an, die Segmente zeigen verschiedene Flächen."
+  }
+ ],
+ "offen": [
+  "r0c1:200047 (Mischblock, Klasse 1): das hellgraue Band bei x 500–520, y 177–200 (Fortsetzung von r0c0:100144) und die mittelgraue Fläche bei x 500–515, y 215–239 (Fortsetzung von r0c0:100153) sind nicht abgetrennt; ob Dach oder Hof, im Farbbild oder mit Grenzänderung klären (Paare 7, 8 unklar).",
+  "r0c1:200047: die dunkle, fleckige Fläche bei x 500–580, y 400–450 (Bäume oder Schatten) ist Teil des Blocks; r0c0:100209 und 100211 (4.2) sind ihr Westrand. Gehölz (4.2) oder Schatten (nach U2 Klasse 1) im Farbbild klären und die Fläche als eigenes Segment über die Naht führen (Paare 9, 10 unklar).",
+  "Grenzfehler ohne Klassenwirkung: Ostzipfel von r0c0:100056 (x 490–500, y 29–37) ist Schlagschatten, nicht Dach; Saum von r0c1:200004 bei x 500–501, y 63–83 gehört zum Dachband rechts; oberer Saum von r1c1:400056 (y 500–505) ist grauer Boden. Nur mit Grenzänderung zu beheben, nicht in der Einigung."
+ ],
+ "nicht_geprueft": []
+}

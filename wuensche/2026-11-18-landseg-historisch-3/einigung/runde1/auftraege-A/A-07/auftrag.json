@@ -1,0 +1,761 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "A",
+  "buendel": "A-07",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/a-alles-frei/kategorien-a.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schatten (Untergrund nicht erkennbar)",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2",
+      "name": "Sehr dunkle Fläche unklar",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.3",
+      "name": "Kleinobjekt unklar",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Gebäude und Hofstellen",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Hauptgebäude / Längsbau (Streckhof)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Querbau",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Großbau / Halle",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.4",
+      "name": "Dachfläche im Eigenschatten",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle ungetrennt (Dach oder Hof)",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.3",
+      "name": "Mauer / Einfriedung",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof- und Freifläche im Grundstück",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2",
+      "name": "Garten / Grün im Ort",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Gartenland mit Reihen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Straße im Ort",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.1.2",
+      "name": "Landstraße außerorts",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Weg / Gasse",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand (Bankett, Gehweg, Vorplatz)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Offene Fläche (nicht Acker)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Anger / Dorfplatz",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Brache / Ödland / Weide",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Rain / Graben / Saum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Landwirtschaftliche Fläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Feld / Acker (Streifenflur)",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feld, dunkler Bestand",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Feld, mittelgrau",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.3",
+      "name": "Feld, hell (offener Boden, Stoppel)",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Einzelbaum / Busch / Baumgruppe",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2",
+      "name": "Baumreihe / Hecke",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c1:200433|r0c1:200525",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            698,
+            250
+          ],
+          "bis": [
+            698,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 20.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200433",
+          "teilkachel": "r0c1",
+          "id": 200433,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 3115,
+          "kern_px": 3115,
+          "offen": "sehr dunkel: Schlagschatten oder Schattenseite eines Dachs, Untergrund nicht erkennbar",
+          "id_abgabe": 433,
+          "klasse_teil": "9.1",
+          "klasse_teil_name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "flaeche": 3115,
+          "flaeche_kern": 3115
+        },
+        {
+          "segment": "r0c1:200525",
+          "teilkachel": "r0c1",
+          "id": 200525,
+          "klasse": "2.1",
+          "grob": "2",
+          "name": "Hof- oder Freifläche im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 581,
+          "kern_px": 581,
+          "offen": "mittelgrau ohne Dachform: Hof- oder Gartenfläche; Pflaster, Erde, Rasen auf SW nicht trennbar",
+          "id_abgabe": 525,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Hof- oder Freifläche im Grundstück",
+          "flaeche": 581,
+          "flaeche_kern": 581
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c1:200535|r0c1:200637",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            793,
+            250
+          ],
+          "bis": [
+            793,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 9.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200535",
+          "teilkachel": "r0c1",
+          "id": 200535,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten / Grasland im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 90,
+          "kern_px": 90,
+          "offen": "dunkelgrau, weich: Garten oder Hof im Halbschatten; Bewuchs auf SW nicht sicher, Farbbild würde entscheiden",
+          "id_abgabe": 535,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Garten / Grasland im Grundstück",
+          "flaeche": 90,
+          "flaeche_kern": 90
+        },
+        {
+          "segment": "r0c1:200637",
+          "teilkachel": "r0c1",
+          "id": 200637,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 909,
+          "kern_px": 909,
+          "offen": "sehr dunkel: Schlagschatten oder Schattenseite eines Dachs, Untergrund nicht erkennbar",
+          "id_abgabe": 637,
+          "klasse_teil": "9.1",
+          "klasse_teil_name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "flaeche": 909,
+          "flaeche_kern": 909
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c1:200539|r0c1:200544",
+      "art": "viertel",
+      "bild": "paar_03.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            850,
+            250
+          ],
+          "bis": [
+            850,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 17.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200539",
+          "teilkachel": "r0c1",
+          "id": 200539,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 1058,
+          "kern_px": 1058,
+          "offen": "sehr dunkel: Schlagschatten oder Schattenseite eines Dachs, Untergrund nicht erkennbar",
+          "id_abgabe": 539,
+          "klasse_teil": "9.1",
+          "klasse_teil_name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "flaeche": 1058,
+          "flaeche_kern": 1058
+        },
+        {
+          "segment": "r0c1:200544",
+          "teilkachel": "r0c1",
+          "id": 200544,
+          "klasse": "2.1",
+          "grob": "2",
+          "name": "Hof- oder Freifläche im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 87,
+          "kern_px": 87,
+          "offen": "mittelgrau ohne Dachform: Hof- oder Gartenfläche; Pflaster, Erde, Rasen auf SW nicht trennbar",
+          "id_abgabe": 544,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Hof- oder Freifläche im Grundstück",
+          "flaeche": 87,
+          "flaeche_kern": 87
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c1:200547|r0c1:200548",
+      "art": "viertel",
+      "bild": "paar_04.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            890,
+            250
+          ],
+          "bis": [
+            890,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200547",
+          "teilkachel": "r0c1",
+          "id": 200547,
+          "klasse": "2.1",
+          "grob": "2",
+          "name": "Hof- oder Freifläche im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 384,
+          "kern_px": 384,
+          "offen": "mittelgrau ohne Dachform: Hof- oder Gartenfläche; Pflaster, Erde, Rasen auf SW nicht trennbar",
+          "id_abgabe": 547,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Hof- oder Freifläche im Grundstück",
+          "flaeche": 384,
+          "flaeche_kern": 384
+        },
+        {
+          "segment": "r0c1:200548",
+          "teilkachel": "r0c1",
+          "id": 200548,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Dachfläche)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 79,
+          "kern_px": 79,
+          "offen": "dunkelgrau, lang neben hellem Dachstreifen: beschattete Dachhälfte oder Schlagschatten auf Hof",
+          "id_abgabe": 548,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude (Dachfläche)",
+          "flaeche": 79,
+          "flaeche_kern": 79
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c1:200548|r0c1:200550",
+      "art": "viertel",
+      "bild": "paar_05.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            891,
+            250
+          ],
+          "bis": [
+            892,
+            250
+          ],
+          "laenge": 2,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200548",
+          "teilkachel": "r0c1",
+          "id": 200548,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Dachfläche)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 79,
+          "kern_px": 79,
+          "offen": "dunkelgrau, lang neben hellem Dachstreifen: beschattete Dachhälfte oder Schlagschatten auf Hof",
+          "id_abgabe": 548,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude (Dachfläche)",
+          "flaeche": 79,
+          "flaeche_kern": 79
+        },
+        {
+          "segment": "r0c1:200550",
+          "teilkachel": "r0c1",
+          "id": 200550,
+          "klasse": "2.1",
+          "grob": "2",
+          "name": "Hof- oder Freifläche im Grundstück",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 328,
+          "kern_px": 328,
+          "offen": "mittelgrau ohne Dachform: Hof- oder Gartenfläche; Pflaster, Erde, Rasen auf SW nicht trennbar",
+          "id_abgabe": 550,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Hof- oder Freifläche im Grundstück",
+          "flaeche": 328,
+          "flaeche_kern": 328
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c1:200552|r0c1:200651",
+      "art": "viertel",
+      "bild": "paar_06.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            932,
+            250
+          ],
+          "bis": [
+            933,
+            250
+          ],
+          "laenge": 2,
+          "kante_max": 11.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200552",
+          "teilkachel": "r0c1",
+          "id": 200552,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Dachfläche)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 815,
+          "kern_px": 815,
+          "offen": "hell, kompakt: Dach (Kopf- oder Nebengebäude) oder offene helle Hoffläche",
+          "id_abgabe": 552,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude (Dachfläche)",
+          "flaeche": 815,
+          "flaeche_kern": 815
+        },
+        {
+          "segment": "r0c1:200651",
+          "teilkachel": "r0c1",
+          "id": 200651,
+          "klasse": "3.1",
+          "grob": "3",
+          "name": "Straße SW-NO unten",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche_px": 9197,
+          "kern_px": 7337,
+          "grund": "breite helle Fahrbahn mit schmalem hellem Randstreifen auf der Nordwestseite, getrennt nur durch eine dünne dunkle Linie (Rinne oder Bordstein)",
+          "id_abgabe": 651,
+          "klasse_teil": "1.2.1",
+          "klasse_teil_name": "Straße (Fahrbahn mit Rand)",
+          "flaeche": 9197,
+          "flaeche_kern": 7337
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c1:200553|r0c1:200556",
+      "art": "viertel",
+      "bild": "paar_07.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            983,
+            250
+          ],
+          "bis": [
+            983,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200553",
+          "teilkachel": "r0c1",
+          "id": 200553,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Dachfläche)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 565,
+          "kern_px": 529,
+          "offen": "mittelhell, lang: Dachfläche eines Längsbaus oder Hofstreifen",
+          "id_abgabe": 553,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude (Dachfläche)",
+          "flaeche": 565,
+          "flaeche_kern": 529
+        },
+        {
+          "segment": "r0c1:200556",
+          "teilkachel": "r0c1",
+          "id": 200556,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 1077,
+          "kern_px": 628,
+          "offen": "sehr dunkel: Schlagschatten oder Schattenseite eines Dachs, Untergrund nicht erkennbar",
+          "id_abgabe": 556,
+          "klasse_teil": "9.1",
+          "klasse_teil_name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+          "flaeche": 1077,
+          "flaeche_kern": 628
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c1:201169|r1c1:400188",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 6,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            541,
+            500
+          ],
+          "bis": [
+            546,
+            500
+          ],
+          "laenge": 6,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:201169",
+          "teilkachel": "r0c1",
+          "id": 201169,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Dachfläche)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche_px": 100,
+          "kern_px": 40,
+          "offen": "hell, kompakt: Dach (Kopf- oder Nebengebäude) oder offene helle Hoffläche",
+          "id_abgabe": 1169,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude (Dachfläche)",
+          "flaeche": 100,
+          "flaeche_kern": 40
+        },
+        {
+          "segment": "r1c1:400188",
+          "teilkachel": "r1c1",
+          "id": 400188,
+          "klasse": "2.1",
+          "grob": "2",
+          "name": "Hof/Platz an der Einmündung",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "hell, offen zur Straße, ohne Schlagschatten; befestigter Platz oder Hof nicht zu trennen",
+          "quelle": "korrektur",
+          "flaeche": 360,
+          "grauwert": 156.9,
+          "id_abgabe": 188,
+          "klasse_teil": "1.2",
+          "klasse_teil_name": "Hof, unbebaute befestigte oder offene Fläche im Grundstück",
+          "flaeche_kern": 339
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "A",
+    "buendel": "A-07",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c1:200433|r0c1:200525",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200535|r0c1:200637",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200539|r0c1:200544",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200547|r0c1:200548",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200548|r0c1:200550",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200552|r0c1:200651",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200553|r0c1:200556",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:201169|r1c1:400188",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

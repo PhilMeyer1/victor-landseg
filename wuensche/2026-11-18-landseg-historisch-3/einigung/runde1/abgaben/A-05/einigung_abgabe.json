@@ -1,0 +1,27 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "A",
+  "buendel": "A-05",
+  "bearbeiter": "agent:einigung-A-05:20261118i-r1",
+  "paare": [
+    {"paar": "r0c1:200305|r0c1:200367", "entscheidung": "grenze", "klasse": null,
+     "grund": "Das kleine Segment 200305 ist ein mittelheller Fleck an der unteren Schulter des hellen Dachstreifens, 200367 das fast schwarze Schattenband daneben; Grauton und Form sind verschieden, nur der Verlauf auf der Viertelgrenze ist gerade."},
+    {"paar": "r0c1:200368|r0c1:200439", "entscheidung": "gleich", "klasse": "1.1.1",
+     "grund": "200439 ist das südöstliche Ende desselben langen, gleich hellen Dachstreifens wie 200368, ohne Helligkeitssprung, nur von der Viertelgrenze gerade abgeschnitten: ein Längsbau eines Streckhofs."},
+    {"paar": "r0c1:200438|r0c1:200439", "entscheidung": "grenze", "klasse": null,
+     "grund": "200439 ist das helle Ende des Dachstreifens, 200438 eine deutlich dunklere graue Fläche daneben im Zwischenraum der Dächer; sie berühren sich nur an einem Bildpunkt."},
+    {"paar": "r0c1:200367|r0c1:200438", "entscheidung": "grenze", "klasse": null,
+     "grund": "200438 ist ein mittelgrauer Fleck mit hellem Strich, heller als das umgebende fast schwarze Schattenband 200367; sie berühren sich nur an einem Bildpunkt."},
+    {"paar": "r0c1:200531|r0c1:200635", "entscheidung": "gleich", "klasse": "3",
+     "grund": "Beide liegen im selben gleichmäßig hellen, gleich breiten Band, das im Südwesten an den Straßenkorridor 200628 (3.1) und im Nordosten an die Hintausgasse 200381 (3.2) anschließt; ohne Kante dazwischen, also Verkehrsfläche, ob Straße oder Gasse ist auf dem Schwarz-Weiß-Bild nicht sicher, darum die Elternklasse."},
+    {"paar": "r0c1:200635|r0c1:200744", "entscheidung": "grenze", "klasse": null,
+     "grund": "200635 ist Teil des hellen glatten Bandes, 200744 die große dunkle, fein gemusterte Garten- oder Gehölzfläche südlich davon; der Helligkeitsumschlag ist deutlich."}
+  ],
+  "offen": [
+    "Paar 1 (r0c1:200305|r0c1:200367): Die Grenze verläuft auf der Viertelgrenze x=750 gerade; der mittelgraue Fleck reicht links davon ein Stück in 200367 hinein. Nur Klassen entschieden, die Grenzlage bleibt (Grenzen ändert die Einigung nicht).",
+    "Paar 5 (r0c1:200531|r0c1:200635): Die Nachbarn im selben hellen Band (200633 Hof, 2.1) gehören nicht zu diesem Bündel und tragen weiter eine Hofklasse; ob das Band Straße (3.1) oder Gasse (3.2) ist, entscheidet nur ein Farbbild oder das Kataster."
+  ],
+  "nicht_geprueft": [
+    "Fassung A hat keine urteil.json; gelesen wurden arbeitsweise.md von r0c1 und die Felder in segmente.json."
+  ]
+}

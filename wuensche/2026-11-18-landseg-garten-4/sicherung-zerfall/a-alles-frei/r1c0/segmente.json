@@ -1,0 +1,2971 @@
+{
+  "schema": "landseg-segmente/1",
+  "teilkachel": "r1c0",
+  "fassung": "A",
+  "verlauf": [
+    {
+      "schritt": "eigene Pixel-Klassifikation + Regeln + Korrekturen",
+      "skripte": [
+        "schritt1_pixel.py",
+        "schritt2_segmente.py",
+        "schritt3_karte.py",
+        "schritt4_ausgabe.py",
+        "korrektur.json"
+      ]
+    },
+    {
+      "nr": 2,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300016,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 3,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300016,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100119|r1c0:300016",
+              "mit": "r0c0:100119",
+              "entscheidung": "gleich",
+              "grund": "Beidseits der Naht dieselbe hellere, glatte Wiese; das Segment unten reicht auch in raueres Gras, daher die Klasse Wiese / Grünland.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "4.1"
+            }
+          ],
+          "sicher": "ja"
+        }
+      }
+    },
+    {
+      "nr": 4,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300006,
+        "klasse": "4.3"
+      },
+      "ergebnis": {
+        "alt": "6.5",
+        "neu": "4.3"
+      }
+    },
+    {
+      "nr": 5,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300006,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 6,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300051,
+        "klasse": "6.1"
+      },
+      "ergebnis": {
+        "alt": "6.1.1",
+        "neu": "6.1"
+      }
+    },
+    {
+      "nr": 7,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 8,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300016,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100119|r1c0:300016",
+              "mit": "r0c0:100119",
+              "entscheidung": "gleich",
+              "grund": "Beidseits der Naht dieselbe hellere, glatte Wiese; das Segment unten reicht auch in raueres Gras, daher die Klasse Wiese / Grünland.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "4.1"
+            },
+            {
+              "paar": "r0c0:100103|r1c0:300016",
+              "mit": "r0c0:100103",
+              "entscheidung": "unklar",
+              "grund": "An der Naht liegt beidseits dieselbe raue Wiese mit verstreuten Sträuchern, aber das Segment unten umfasst auch die glatte Wiese im Westen, sodass weder Verbuschte Wiese noch Wiese für beide ganzen Segmente sicher passt.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 9,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 10,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100123|r1c0:300051",
+              "mit": "r0c0:100123",
+              "entscheidung": "gleich",
+              "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 11,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300009,
+        "klasse": "4.1.1"
+      },
+      "ergebnis": {
+        "alt": "4.1",
+        "neu": "4.1.1"
+      }
+    },
+    {
+      "nr": 12,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300009,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 13,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300008,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 14,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300016,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100119|r1c0:300016",
+              "mit": "r0c0:100119",
+              "entscheidung": "gleich",
+              "grund": "Beidseits der Naht dieselbe hellere, glatte Wiese; das Segment unten reicht auch in raueres Gras, daher die Klasse Wiese / Grünland.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "4.1"
+            },
+            {
+              "paar": "r0c0:100103|r1c0:300016",
+              "mit": "r0c0:100103",
+              "entscheidung": "unklar",
+              "grund": "An der Naht liegt beidseits dieselbe raue Wiese mit verstreuten Sträuchern, aber das Segment unten umfasst auch die glatte Wiese im Westen, sodass weder Verbuschte Wiese noch Wiese für beide ganzen Segmente sicher passt.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r0c0:100122|r1c0:300016",
+              "mit": "r0c0:100122",
+              "entscheidung": "grenze",
+              "grund": "Oben Kronen des Gehölzbestands, unten eine helle Wiesenzunge zwischen den Kronen; sie berühren sich nur an einer Ecke.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 15,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100123|r1c0:300051",
+              "mit": "r0c0:100123",
+              "entscheidung": "gleich",
+              "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r0c0:100120",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 16,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100123|r1c0:300051",
+              "mit": "r0c0:100123",
+              "entscheidung": "gleich",
+              "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r0c0:100120",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300051",
+              "mit": "r1c0:300016",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 17,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300054,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 18,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300038,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 19,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300045,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 20,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300016,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100119|r1c0:300016",
+              "mit": "r0c0:100119",
+              "entscheidung": "gleich",
+              "grund": "Beidseits der Naht dieselbe hellere, glatte Wiese; das Segment unten reicht auch in raueres Gras, daher die Klasse Wiese / Grünland.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "4.1"
+            },
+            {
+              "paar": "r0c0:100103|r1c0:300016",
+              "mit": "r0c0:100103",
+              "entscheidung": "unklar",
+              "grund": "An der Naht liegt beidseits dieselbe raue Wiese mit verstreuten Sträuchern, aber das Segment unten umfasst auch die glatte Wiese im Westen, sodass weder Verbuschte Wiese noch Wiese für beide ganzen Segmente sicher passt.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r0c0:100122|r1c0:300016",
+              "mit": "r0c0:100122",
+              "entscheidung": "grenze",
+              "grund": "Oben Kronen des Gehölzbestands, unten eine helle Wiesenzunge zwischen den Kronen; sie berühren sich nur an einer Ecke.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300051",
+              "mit": "r1c0:300051",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 21,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300045,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300038|r1c0:300045",
+              "mit": "r1c0:300038",
+              "entscheidung": "grenze",
+              "grund": "Beiger, vegetationsarmer Fleck gegen grünen Saum, sichtbarer Farbwechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 22,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300045,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300038|r1c0:300045",
+              "mit": "r1c0:300038",
+              "entscheidung": "grenze",
+              "grund": "Beiger, vegetationsarmer Fleck gegen grünen Saum, sichtbarer Farbwechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300045",
+              "mit": "r1c0:300016",
+              "entscheidung": "grenze",
+              "grund": "Glattere Wiese gegen rauen, verbuschenden Saum; fließender Übergang, aber zwei verschiedene Zonen.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 23,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300049,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 24,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300041,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null,
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 25,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300045,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300038|r1c0:300045",
+              "mit": "r1c0:300038",
+              "entscheidung": "grenze",
+              "grund": "Beiger, vegetationsarmer Fleck gegen grünen Saum, sichtbarer Farbwechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300045",
+              "mit": "r1c0:300016",
+              "entscheidung": "grenze",
+              "grund": "Glattere Wiese gegen rauen, verbuschenden Saum; fließender Übergang, aber zwei verschiedene Zonen.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300045|r1c0:300049",
+              "mit": "r1c0:300049",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Einzelkrone im helleren Saum, Rand sichtbar.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ],
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 26,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300034,
+        "klasse": "6.1"
+      },
+      "ergebnis": {
+        "alt": "4.3",
+        "neu": "6.1"
+      }
+    },
+    {
+      "nr": 27,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300034,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 28,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100123|r1c0:300051",
+              "mit": "r0c0:100123",
+              "entscheidung": "gleich",
+              "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r0c0:100120",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300051",
+              "mit": "r1c0:300016",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300051|r1c0:300054",
+              "mit": "r1c0:300054",
+              "entscheidung": "grenze",
+              "grund": "Großflächig dunkle Stelle im Wald gegen besonntes Kronendach; die Helligkeit unterscheidet sich deutlich.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 29,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300042,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 30,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100123|r1c0:300051",
+              "mit": "r0c0:100123",
+              "entscheidung": "gleich",
+              "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r0c0:100120",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300051",
+              "mit": "r1c0:300016",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300051|r1c0:300054",
+              "mit": "r1c0:300054",
+              "entscheidung": "grenze",
+              "grund": "Großflächig dunkle Stelle im Wald gegen besonntes Kronendach; die Helligkeit unterscheidet sich deutlich.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300034|r1c0:300051",
+              "mit": "r1c0:300034",
+              "entscheidung": "gleich",
+              "grund": "Die helle Fläche zeigt dieselbe klumpige Kronenstruktur mit Schattenlücken wie das umgebende besonnte Kronendach, keine glatte Krautfläche.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 31,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300009,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100120|r1c0:300009",
+              "mit": "r0c0:100120",
+              "entscheidung": "gleich",
+              "grund": "Dieselbe raue, ungemähte Wiese beidseits der Naht ohne Kante.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "4.1.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 32,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300009,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100120|r1c0:300009",
+              "mit": "r0c0:100120",
+              "entscheidung": "gleich",
+              "grund": "Dieselbe raue, ungemähte Wiese beidseits der Naht ohne Kante.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "4.1.1"
+            },
+            {
+              "paar": "r1c0:300009|r1c1:400017",
+              "mit": "r1c1:400017",
+              "entscheidung": "grenze",
+              "grund": "Die helle Pfadspur kreuzt hier die Naht und läuft im Pfadsegment unten weiter; daneben Wiese.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 33,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300014,
+        "klasse": "4.1.1"
+      },
+      "ergebnis": {
+        "alt": "6.5",
+        "neu": "4.1.1"
+      }
+    },
+    {
+      "nr": 34,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300014,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 35,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100123|r1c0:300051",
+              "mit": "r0c0:100123",
+              "entscheidung": "gleich",
+              "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r0c0:100120",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300051",
+              "mit": "r1c0:300016",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300051|r1c0:300054",
+              "mit": "r1c0:300054",
+              "entscheidung": "grenze",
+              "grund": "Großflächig dunkle Stelle im Wald gegen besonntes Kronendach; die Helligkeit unterscheidet sich deutlich.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300034|r1c0:300051",
+              "mit": "r1c0:300034",
+              "entscheidung": "gleich",
+              "grund": "Die helle Fläche zeigt dieselbe klumpige Kronenstruktur mit Schattenlücken wie das umgebende besonnte Kronendach, keine glatte Krautfläche.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r1c0:300042|r1c0:300051",
+              "mit": "r1c0:300042",
+              "entscheidung": "grenze",
+              "grund": "Dunkle, beschattete Stelle zwischen hellen besonnten Kronen, deutlicher Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ],
+          "sicher": "ja"
+        }
+      }
+    },
+    {
+      "nr": 36,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300021,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 37,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100123|r1c0:300051",
+              "mit": "r0c0:100123",
+              "entscheidung": "gleich",
+              "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r0c0:100120",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300051",
+              "mit": "r1c0:300016",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300051|r1c0:300054",
+              "mit": "r1c0:300054",
+              "entscheidung": "grenze",
+              "grund": "Großflächig dunkle Stelle im Wald gegen besonntes Kronendach; die Helligkeit unterscheidet sich deutlich.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300034|r1c0:300051",
+              "mit": "r1c0:300034",
+              "entscheidung": "gleich",
+              "grund": "Die helle Fläche zeigt dieselbe klumpige Kronenstruktur mit Schattenlücken wie das umgebende besonnte Kronendach, keine glatte Krautfläche.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r1c0:300042|r1c0:300051",
+              "mit": "r1c0:300042",
+              "entscheidung": "grenze",
+              "grund": "Dunkle, beschattete Stelle zwischen hellen besonnten Kronen, deutlicher Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300051|r1c1:400002",
+              "mit": "r1c1:400002",
+              "entscheidung": "unklar",
+              "grund": "Der Teil des Waldsegments an der Naht zeigt dieselbe raue Grünfläche mit einzelnen dunklen Flecken wie die Wiese daneben; ob das Krautflur oder niedrige Kronen sind, ist nicht sicher zu sagen.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 38,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300021,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300021|r1c1:400002",
+              "mit": "r1c1:400002",
+              "entscheidung": "grenze",
+              "grund": "Lichtung im Gehölz gegen offene Hangwiese, getrennt durch Kronen; Berührung nur an einer Ecke.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 39,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300022,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 40,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300051,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r0c0:100122",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100123|r1c0:300051",
+              "mit": "r0c0:100123",
+              "entscheidung": "gleich",
+              "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r0c0:100120",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300016|r1c0:300051",
+              "mit": "r1c0:300016",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300051|r1c0:300054",
+              "mit": "r1c0:300054",
+              "entscheidung": "grenze",
+              "grund": "Großflächig dunkle Stelle im Wald gegen besonntes Kronendach; die Helligkeit unterscheidet sich deutlich.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300034|r1c0:300051",
+              "mit": "r1c0:300034",
+              "entscheidung": "gleich",
+              "grund": "Die helle Fläche zeigt dieselbe klumpige Kronenstruktur mit Schattenlücken wie das umgebende besonnte Kronendach, keine glatte Krautfläche.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r1c0:300042|r1c0:300051",
+              "mit": "r1c0:300042",
+              "entscheidung": "grenze",
+              "grund": "Dunkle, beschattete Stelle zwischen hellen besonnten Kronen, deutlicher Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300051|r1c1:400002",
+              "mit": "r1c1:400002",
+              "entscheidung": "unklar",
+              "grund": "Der Teil des Waldsegments an der Naht zeigt dieselbe raue Grünfläche mit einzelnen dunklen Flecken wie die Wiese daneben; ob das Krautflur oder niedrige Kronen sind, ist nicht sicher zu sagen.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r1c0:300051|r1c1:400034",
+              "mit": "r1c1:400034",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Waldes läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 41,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 300042,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300042|r1c0:300051",
+              "mit": "r1c0:300051",
+              "entscheidung": "grenze",
+              "grund": "Dunkle, beschattete Stelle zwischen hellen besonnten Kronen, deutlicher Helligkeitswechsel.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 42,
+      "zeit": "2026-11-18T17:42:37+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300053,
+        "klasse": "4.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4.2"
+      }
+    },
+    {
+      "nr": 43,
+      "zeit": "2026-11-18T17:42:37+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300056,
+        "klasse": "4.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4.2"
+      }
+    },
+    {
+      "nr": 44,
+      "zeit": "2026-11-18T17:42:37+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300057,
+        "klasse": "4.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4.2"
+      }
+    },
+    {
+      "nr": 45,
+      "zeit": "2026-11-18T17:42:37+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300059,
+        "klasse": "4.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4.2"
+      }
+    },
+    {
+      "nr": 46,
+      "zeit": "2026-11-18T17:42:37+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300060,
+        "klasse": "4.4.2"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4.2"
+      }
+    }
+  ],
+  "stand": "Abgabe C r1c0, Codes nach kategorien-a.json, ID + 300000",
+  "segmente": [
+    {
+      "id": 300001,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Baumgruppe, freistehend",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 3678,
+      "bbox": [
+        97,
+        0,
+        206,
+        45
+      ],
+      "begruendung": "deutliche Baumgruppe am Wiesenrand",
+      "id_abgabe": 1,
+      "klasse_teil": "1.3",
+      "klasse_teil_name": "Baumgruppe, freistehend"
+    },
+    {
+      "id": 300002,
+      "klasse": "5.1",
+      "grob": "5",
+      "name": "Acker, abgeerntet (Stoppel)",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 399,
+      "bbox": [
+        594,
+        0,
+        627,
+        15
+      ],
+      "id_abgabe": 2,
+      "klasse_teil": "3.2",
+      "klasse_teil_name": "Acker, abgeerntet (Stoppel)"
+    },
+    {
+      "id": 300003,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 77,
+      "bbox": [
+        609,
+        31,
+        618,
+        41
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 3,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300004,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 40,
+      "bbox": [
+        0,
+        67,
+        6,
+        74
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 4,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300005,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 46,
+      "bbox": [
+        139,
+        46,
+        148,
+        51
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 5,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300006,
+      "klasse": "4.3",
+      "grob": "4",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 133,
+      "bbox": [
+        228,
+        56,
+        239,
+        74
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 6,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe",
+      "einigung": [
+        {
+          "paar": "r0c0:100103|r1c0:300006",
+          "mit": "r0c0:100103",
+          "entscheidung": "gleich",
+          "grund": "Der kleine Fleck unten zeigt keine abgrenzbare Strauchkrone, sondern dieselbe raue Wiese mit Gebüschflecken wie die Fläche darüber.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.3"
+        }
+      ]
+    },
+    {
+      "id": 300007,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 81,
+      "bbox": [
+        278,
+        73,
+        289,
+        83
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 7,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300008,
+      "klasse": "2.2.2",
+      "grob": "2",
+      "name": "Trampelpfad, unbefestigt",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 62,
+      "bbox": [
+        552,
+        62,
+        573,
+        74
+      ],
+      "offen": "Pfad von Hand nachgezeichnet, Verlauf nur stellenweise sichtbar",
+      "id_abgabe": 8,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Trampelpfad, unbefestigt",
+      "einigung": [
+        {
+          "paar": "r0c0:100120|r1c0:300008",
+          "mit": "r0c0:100120",
+          "entscheidung": "grenze",
+          "grund": "Heller schmaler Trampelpfad gegen Wiese, der Pfad ist als helle Spur sichtbar.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300009,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "name": "Wiese / Grünland",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 10530,
+      "bbox": [
+        504,
+        0,
+        627,
+        142
+      ],
+      "id_abgabe": 9,
+      "klasse_teil": "2.1",
+      "klasse_teil_name": "Wiese / Grünland",
+      "einigung": [
+        {
+          "paar": "r0c0:100120|r1c0:300009",
+          "mit": "r0c0:100120",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe raue, ungemähte Wiese beidseits der Naht ohne Kante.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.1.1"
+        },
+        {
+          "paar": "r1c0:300009|r1c1:400017",
+          "mit": "r1c1:400017",
+          "entscheidung": "grenze",
+          "grund": "Die helle Pfadspur kreuzt hier die Naht und läuft im Pfadsegment unten weiter; daneben Wiese.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300009|r1c1:400002",
+          "mit": "r1c1:400002",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe raue Hangwiese beidseits der Naht ohne Kante.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.1.1"
+        }
+      ]
+    },
+    {
+      "id": 300010,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 59,
+      "bbox": [
+        622,
+        43,
+        627,
+        54
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 10,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300011,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 154,
+      "bbox": [
+        45,
+        75,
+        58,
+        89
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 11,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300012,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1288,
+      "bbox": [
+        221,
+        93,
+        275,
+        147
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 12,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300013,
+      "klasse": "4.3",
+      "grob": "4",
+      "name": "Lichtung / Krautflur im Gehölz",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 306,
+      "bbox": [
+        453,
+        88,
+        480,
+        108
+      ],
+      "offen": "helle Fläche im Gehölz; Krautflur/Lichtung oder sehr helle, niedrige Gehölzkronen",
+      "id_abgabe": 13,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Lichtung / Krautflur im Gehölz"
+    },
+    {
+      "id": 300014,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 79,
+      "bbox": [
+        561,
+        76,
+        575,
+        85
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 14,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe",
+      "einigung": [
+        {
+          "paar": "r1c0:300014|r1c1:400002",
+          "mit": "r1c1:400002",
+          "entscheidung": "gleich",
+          "grund": "Die wenigen Kernbildpunkte des kleinen Flecks zeigen keine Strauchkrone, sondern dieselbe Wiese wie daneben.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.1.1"
+        }
+      ]
+    },
+    {
+      "id": 300015,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Einzelbaum, freistehend",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 594,
+      "bbox": [
+        611,
+        68,
+        627,
+        112
+      ],
+      "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+      "id_abgabe": 15,
+      "klasse_teil": "1.2",
+      "klasse_teil_name": "Einzelbaum, freistehend"
+    },
+    {
+      "id": 300016,
+      "klasse": "4.1",
+      "grob": "4",
+      "name": "Wiese / Grünland",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 68591,
+      "bbox": [
+        0,
+        0,
+        379,
+        317
+      ],
+      "id_abgabe": 16,
+      "klasse_teil": "2.1",
+      "klasse_teil_name": "Wiese / Grünland",
+      "einigung": [
+        {
+          "paar": "r0c0:100119|r1c0:300016",
+          "mit": "r0c0:100119",
+          "entscheidung": "gleich",
+          "grund": "Beidseits der Naht dieselbe hellere, glatte Wiese; das Segment unten reicht auch in raueres Gras, daher die Klasse Wiese / Grünland.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.1"
+        },
+        {
+          "paar": "r0c0:100103|r1c0:300016",
+          "mit": "r0c0:100103",
+          "entscheidung": "unklar",
+          "grund": "An der Naht liegt beidseits dieselbe raue Wiese mit verstreuten Sträuchern, aber das Segment unten umfasst auch die glatte Wiese im Westen, sodass weder Verbuschte Wiese noch Wiese für beide ganzen Segmente sicher passt.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100122|r1c0:300016",
+          "mit": "r0c0:100122",
+          "entscheidung": "grenze",
+          "grund": "Oben Kronen des Gehölzbestands, unten eine helle Wiesenzunge zwischen den Kronen; sie berühren sich nur an einer Ecke.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300016|r1c0:300051",
+          "mit": "r1c0:300051",
+          "entscheidung": "grenze",
+          "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300016|r1c0:300045",
+          "mit": "r1c0:300045",
+          "entscheidung": "grenze",
+          "grund": "Glattere Wiese gegen rauen, verbuschenden Saum; fließender Übergang, aber zwei verschiedene Zonen.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300017,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Einzelbaum, freistehend",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 4267,
+      "bbox": [
+        181,
+        110,
+        252,
+        199
+      ],
+      "begruendung": "großer freistehender Baum mit klarem Schlagschatten",
+      "id_abgabe": 17,
+      "klasse_teil": "1.2",
+      "klasse_teil_name": "Einzelbaum, freistehend"
+    },
+    {
+      "id": 300018,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 1094,
+      "bbox": [
+        0,
+        146,
+        29,
+        201
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 18,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300019,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 120,
+      "bbox": [
+        447,
+        179,
+        463,
+        188
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 19,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300020,
+      "klasse": "2.2.2",
+      "grob": "2",
+      "name": "Trampelpfad, unbefestigt",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 257,
+      "bbox": [
+        488,
+        125,
+        510,
+        211
+      ],
+      "begruendung": "Hauptpfad durchgehend sichtbar; Breite von Hand (3 px)",
+      "id_abgabe": 20,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Trampelpfad, unbefestigt"
+    },
+    {
+      "id": 300021,
+      "klasse": "4.3",
+      "grob": "4",
+      "name": "Lichtung / Krautflur im Gehölz",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 9912,
+      "bbox": [
+        421,
+        112,
+        605,
+        234
+      ],
+      "begruendung": "deutliche Gras-Lichtung mit Pfad, ringsum Gehölz",
+      "id_abgabe": 21,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Lichtung / Krautflur im Gehölz",
+      "einigung": [
+        {
+          "paar": "r1c0:300021|r1c1:400002",
+          "mit": "r1c1:400002",
+          "entscheidung": "grenze",
+          "grund": "Lichtung im Gehölz gegen offene Hangwiese, getrennt durch Kronen; Berührung nur an einer Ecke.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300021|r1c1:400034",
+          "mit": "r1c1:400034",
+          "entscheidung": "grenze",
+          "grund": "Helle Lichtung mit Pfad gegen geschlossenen Wald; die Lichtung reicht etwa 10 Bildpunkte über die Naht in das Waldsegment, die Flächen sind aber verschieden.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300022,
+      "klasse": "2.2.2",
+      "grob": "2",
+      "name": "Trampelpfad, unbefestigt",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 191,
+      "bbox": [
+        525,
+        185,
+        589,
+        202
+      ],
+      "offen": "Pfad von Hand nachgezeichnet, Verlauf nur stellenweise sichtbar",
+      "id_abgabe": 22,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Trampelpfad, unbefestigt",
+      "einigung": [
+        {
+          "paar": "r1c0:300022|r1c1:400034",
+          "mit": "r1c1:400034",
+          "entscheidung": "grenze",
+          "grund": "Heller Trampelpfad gegen Wald; der Pfad läuft jenseits der Naht im Waldsegment weiter.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300023,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 41,
+      "bbox": [
+        0,
+        214,
+        3,
+        225
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 23,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300024,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 146,
+      "bbox": [
+        9,
+        220,
+        29,
+        237
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 24,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300025,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 59,
+      "bbox": [
+        25,
+        205,
+        33,
+        214
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 25,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300026,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 73,
+      "bbox": [
+        40,
+        200,
+        48,
+        210
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 26,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300027,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 303,
+      "bbox": [
+        63,
+        200,
+        84,
+        222
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 27,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300028,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 99,
+      "bbox": [
+        172,
+        228,
+        193,
+        247
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 28,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300029,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 48,
+      "bbox": [
+        250,
+        230,
+        262,
+        239
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 29,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300030,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Einzelbaum, freistehend",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 302,
+      "bbox": [
+        0,
+        229,
+        17,
+        257
+      ],
+      "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+      "id_abgabe": 30,
+      "klasse_teil": "1.2",
+      "klasse_teil_name": "Einzelbaum, freistehend"
+    },
+    {
+      "id": 300031,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Baumgruppe, freistehend",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 694,
+      "bbox": [
+        0,
+        261,
+        40,
+        303
+      ],
+      "offen": "Gehölzgruppe; Baumgruppe oder Gebüsch nicht sicher getrennt",
+      "id_abgabe": 31,
+      "klasse_teil": "1.3",
+      "klasse_teil_name": "Baumgruppe, freistehend"
+    },
+    {
+      "id": 300032,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 108,
+      "bbox": [
+        25,
+        248,
+        36,
+        260
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 32,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300033,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 2175,
+      "bbox": [
+        169,
+        205,
+        236,
+        285
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 33,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300034,
+      "klasse": "6.1",
+      "grob": "6",
+      "name": "Lichtung / Krautflur im Gehölz",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 3839,
+      "bbox": [
+        392,
+        212,
+        469,
+        331
+      ],
+      "offen": "helle Fläche im Gehölz; Krautflur/Lichtung oder sehr helle, niedrige Gehölzkronen",
+      "id_abgabe": 34,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Lichtung / Krautflur im Gehölz",
+      "einigung": [
+        {
+          "paar": "r1c0:300034|r1c0:300051",
+          "mit": "r1c0:300051",
+          "entscheidung": "gleich",
+          "grund": "Die helle Fläche zeigt dieselbe klumpige Kronenstruktur mit Schattenlücken wie das umgebende besonnte Kronendach, keine glatte Krautfläche.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.1"
+        }
+      ]
+    },
+    {
+      "id": 300035,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Einzelbaum, freistehend",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 352,
+      "bbox": [
+        22,
+        303,
+        46,
+        328
+      ],
+      "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+      "id_abgabe": 35,
+      "klasse_teil": "1.2",
+      "klasse_teil_name": "Einzelbaum, freistehend"
+    },
+    {
+      "id": 300036,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Baumgruppe, freistehend",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1755,
+      "bbox": [
+        40,
+        253,
+        92,
+        346
+      ],
+      "offen": "Gehölzgruppe; Baumgruppe oder Gebüsch nicht sicher getrennt",
+      "id_abgabe": 36,
+      "klasse_teil": "1.3",
+      "klasse_teil_name": "Baumgruppe, freistehend"
+    },
+    {
+      "id": 300037,
+      "klasse": "4.2",
+      "grob": "4",
+      "name": "Saum / verbuschende Krautflur",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 427,
+      "bbox": [
+        56,
+        267,
+        84,
+        298
+      ],
+      "offen": "Grenze Wiese/Saum von Hand gezogen (Übergang fließend)",
+      "id_abgabe": 37,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Saum / verbuschende Krautflur"
+    },
+    {
+      "id": 300038,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 2213,
+      "bbox": [
+        85,
+        258,
+        151,
+        314
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 38,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "einigung": [
+        {
+          "paar": "r1c0:300038|r1c0:300045",
+          "mit": "r1c0:300045",
+          "entscheidung": "grenze",
+          "grund": "Beiger, vegetationsarmer Fleck gegen grünen Saum, sichtbarer Farbwechsel.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300039,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 371,
+      "bbox": [
+        169,
+        297,
+        194,
+        322
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 39,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300040,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 90,
+      "bbox": [
+        199,
+        290,
+        209,
+        301
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 40,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300041,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Einzelbaum, freistehend",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 914,
+      "bbox": [
+        265,
+        276,
+        302,
+        318
+      ],
+      "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+      "id_abgabe": 41,
+      "klasse_teil": "1.2",
+      "klasse_teil_name": "Einzelbaum, freistehend",
+      "einigung": [
+        {
+          "paar": "r1c0:300041|r1c0:300045",
+          "mit": "r1c0:300045",
+          "entscheidung": "unklar",
+          "grund": "Länglicher, etwas dunklerer und glatterer Fleck am Schattenrand; ob Krone oder dichtere Krautflur, ist am Bild nicht sicher.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300042,
+      "klasse": "6.1.2",
+      "grob": "6",
+      "name": "Kronendach beschattet / dunkler Bestand",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 5853,
+      "bbox": [
+        478,
+        241,
+        584,
+        380
+      ],
+      "offen": "dunkle Fläche: Schlagschatten im Bestand oder dunkle Baumart (Nadelholz?) nicht unterscheidbar; Wald selbst sicher",
+      "id_abgabe": 42,
+      "klasse_teil": "1.1.2",
+      "klasse_teil_name": "Kronendach beschattet / dunkler Bestand",
+      "einigung": [
+        {
+          "paar": "r1c0:300042|r1c0:300051",
+          "mit": "r1c0:300051",
+          "entscheidung": "grenze",
+          "grund": "Dunkle, beschattete Stelle zwischen hellen besonnten Kronen, deutlicher Helligkeitswechsel.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300042|r1c1:400052",
+          "mit": "r1c1:400052",
+          "entscheidung": "grenze",
+          "grund": "Dunkle, beschattete Stelle gegen helle besonnte Kronen; die dunkle Stelle reicht wenige Bildpunkte über die Naht, die Flächen sind aber verschieden.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300043,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Baumgruppe, freistehend",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 232,
+      "bbox": [
+        0,
+        321,
+        23,
+        342
+      ],
+      "offen": "Gehölzgruppe; Baumgruppe oder Gebüsch nicht sicher getrennt",
+      "id_abgabe": 43,
+      "klasse_teil": "1.3",
+      "klasse_teil_name": "Baumgruppe, freistehend"
+    },
+    {
+      "id": 300044,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 227,
+      "bbox": [
+        109,
+        344,
+        125,
+        362
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 44,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    },
+    {
+      "id": 300045,
+      "klasse": "4.2",
+      "grob": "4",
+      "name": "Saum / verbuschende Krautflur",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 22641,
+      "bbox": [
+        0,
+        231,
+        356,
+        443
+      ],
+      "offen": "Grenze Wiese/Saum von Hand gezogen (Übergang fließend)",
+      "id_abgabe": 45,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Saum / verbuschende Krautflur",
+      "einigung": [
+        {
+          "paar": "r1c0:300038|r1c0:300045",
+          "mit": "r1c0:300038",
+          "entscheidung": "grenze",
+          "grund": "Beiger, vegetationsarmer Fleck gegen grünen Saum, sichtbarer Farbwechsel.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300016|r1c0:300045",
+          "mit": "r1c0:300016",
+          "entscheidung": "grenze",
+          "grund": "Glattere Wiese gegen rauen, verbuschenden Saum; fließender Übergang, aber zwei verschiedene Zonen.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300045|r1c0:300049",
+          "mit": "r1c0:300049",
+          "entscheidung": "grenze",
+          "grund": "Dunkle Einzelkrone im helleren Saum, Rand sichtbar.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300041|r1c0:300045",
+          "mit": "r1c0:300041",
+          "entscheidung": "unklar",
+          "grund": "Länglicher, etwas dunklerer und glatterer Fleck am Schattenrand; ob Krone oder dichtere Krautflur, ist am Bild nicht sicher.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300046,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 98,
+      "bbox": [
+        159,
+        325,
+        168,
+        340
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 46,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300047,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Einzelbaum, freistehend",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 215,
+      "bbox": [
+        194,
+        339,
+        208,
+        357
+      ],
+      "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+      "id_abgabe": 47,
+      "klasse_teil": "1.2",
+      "klasse_teil_name": "Einzelbaum, freistehend"
+    },
+    {
+      "id": 300048,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 108,
+      "bbox": [
+        210,
+        324,
+        222,
+        343
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 48,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300049,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Einzelbaum, freistehend",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 863,
+      "bbox": [
+        222,
+        310,
+        250,
+        355
+      ],
+      "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+      "id_abgabe": 49,
+      "klasse_teil": "1.2",
+      "klasse_teil_name": "Einzelbaum, freistehend",
+      "einigung": [
+        {
+          "paar": "r1c0:300045|r1c0:300049",
+          "mit": "r1c0:300045",
+          "entscheidung": "grenze",
+          "grund": "Dunkle Einzelkrone im helleren Saum, Rand sichtbar.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300050,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch / Strauchgruppe",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 239,
+      "bbox": [
+        108,
+        366,
+        128,
+        383
+      ],
+      "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+      "id_abgabe": 50,
+      "klasse_teil": "1.4",
+      "klasse_teil_name": "Gebüsch / Strauchgruppe"
+    },
+    {
+      "id": 300051,
+      "klasse": "6.1",
+      "grob": "6",
+      "name": "Kronendach besonnt",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 224429,
+      "bbox": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "id_abgabe": 51,
+      "klasse_teil": "1.1.1",
+      "klasse_teil_name": "Kronendach besonnt",
+      "einigung": [
+        {
+          "paar": "r0c0:100122|r1c0:300051",
+          "mit": "r0c0:100122",
+          "entscheidung": "gleich",
+          "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.1"
+        },
+        {
+          "paar": "r0c0:100123|r1c0:300051",
+          "mit": "r0c0:100123",
+          "entscheidung": "gleich",
+          "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.1"
+        },
+        {
+          "paar": "r0c0:100120|r1c0:300051",
+          "mit": "r0c0:100120",
+          "entscheidung": "grenze",
+          "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300016|r1c0:300051",
+          "mit": "r1c0:300016",
+          "entscheidung": "grenze",
+          "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300051|r1c0:300054",
+          "mit": "r1c0:300054",
+          "entscheidung": "grenze",
+          "grund": "Großflächig dunkle Stelle im Wald gegen besonntes Kronendach; die Helligkeit unterscheidet sich deutlich.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300034|r1c0:300051",
+          "mit": "r1c0:300034",
+          "entscheidung": "gleich",
+          "grund": "Die helle Fläche zeigt dieselbe klumpige Kronenstruktur mit Schattenlücken wie das umgebende besonnte Kronendach, keine glatte Krautfläche.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.1"
+        },
+        {
+          "paar": "r1c0:300042|r1c0:300051",
+          "mit": "r1c0:300042",
+          "entscheidung": "grenze",
+          "grund": "Dunkle, beschattete Stelle zwischen hellen besonnten Kronen, deutlicher Helligkeitswechsel.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300051|r1c1:400002",
+          "mit": "r1c1:400002",
+          "entscheidung": "unklar",
+          "grund": "Der Teil des Waldsegments an der Naht zeigt dieselbe raue Grünfläche mit einzelnen dunklen Flecken wie die Wiese daneben; ob das Krautflur oder niedrige Kronen sind, ist nicht sicher zu sagen.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r1c0:300051|r1c1:400034",
+          "mit": "r1c1:400034",
+          "entscheidung": "gleich",
+          "grund": "Geschlossenes Kronendach desselben Waldes läuft ohne Kante über die Naht.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.1"
+        },
+        {
+          "paar": "r1c0:300051|r1c1:400052",
+          "mit": "r1c1:400052",
+          "entscheidung": "gleich",
+          "grund": "Geschlossenes Kronendach desselben Waldes beidseits der Naht.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.1"
+        }
+      ]
+    },
+    {
+      "id": 300052,
+      "klasse": "4.3",
+      "grob": "4",
+      "name": "Lichtung / Krautflur im Gehölz",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 203,
+      "bbox": [
+        606,
+        376,
+        627,
+        390
+      ],
+      "offen": "helle Fläche im Gehölz; Krautflur/Lichtung oder sehr helle, niedrige Gehölzkronen",
+      "id_abgabe": 52,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Lichtung / Krautflur im Gehölz"
+    },
+    {
+      "id": 300053,
+      "klasse": "4.4.2",
+      "grob": "4",
+      "name": "Gartenfläche (Rasen, Beete)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 42,
+      "bbox": [
+        619,
+        386,
+        627,
+        391
+      ],
+      "offen": "nur Kontextrand; Gartenflächen grob, Grenzen zu Gehölz und Bauten nicht geprüft",
+      "id_abgabe": 53,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Gartenfläche (Rasen, Beete)"
+    },
+    {
+      "id": 300054,
+      "klasse": "6.1.2",
+      "grob": "6",
+      "name": "Kronendach beschattet / dunkler Bestand",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 13981,
+      "bbox": [
+        142,
+        391,
+        377,
+        493
+      ],
+      "offen": "dunkle Fläche: Schlagschatten im Bestand oder dunkle Baumart (Nadelholz?) nicht unterscheidbar; Wald selbst sicher",
+      "id_abgabe": 54,
+      "klasse_teil": "1.1.2",
+      "klasse_teil_name": "Kronendach beschattet / dunkler Bestand",
+      "einigung": [
+        {
+          "paar": "r1c0:300051|r1c0:300054",
+          "mit": "r1c0:300051",
+          "entscheidung": "grenze",
+          "grund": "Großflächig dunkle Stelle im Wald gegen besonntes Kronendach; die Helligkeit unterscheidet sich deutlich.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300055,
+      "klasse": "1",
+      "grob": "1",
+      "name": "Gebäude und befestigte Flächen (Kleingarten)",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 3553,
+      "bbox": [
+        578,
+        410,
+        627,
+        510
+      ],
+      "id_abgabe": 55,
+      "klasse_teil": "5.1",
+      "klasse_teil_name": "Gebäude und befestigte Flächen (Kleingarten)"
+    },
+    {
+      "id": 300056,
+      "klasse": "4.4.2",
+      "grob": "4",
+      "name": "Gartenfläche (Rasen, Beete)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 52,
+      "bbox": [
+        579,
+        503,
+        585,
+        513
+      ],
+      "offen": "nur Kontextrand; Gartenflächen grob, Grenzen zu Gehölz und Bauten nicht geprüft",
+      "id_abgabe": 56,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Gartenfläche (Rasen, Beete)"
+    },
+    {
+      "id": 300057,
+      "klasse": "4.4.2",
+      "grob": "4",
+      "name": "Gartenfläche (Rasen, Beete)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 69,
+      "bbox": [
+        599,
+        527,
+        607,
+        544
+      ],
+      "offen": "nur Kontextrand; Gartenflächen grob, Grenzen zu Gehölz und Bauten nicht geprüft",
+      "id_abgabe": 57,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Gartenfläche (Rasen, Beete)"
+    },
+    {
+      "id": 300058,
+      "klasse": "6.1",
+      "grob": "6",
+      "name": "auffällige Einzelkrone im Bestand",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1365,
+      "bbox": [
+        369,
+        559,
+        410,
+        600
+      ],
+      "offen": "Krone deutlich abweichend gefärbt; Ursache (Baumart, Laubverfärbung, Absterben) offen, Umriss von Hand",
+      "id_abgabe": 58,
+      "klasse_teil": "1.1.3",
+      "klasse_teil_name": "auffällige Einzelkrone im Bestand"
+    },
+    {
+      "id": 300059,
+      "klasse": "4.4.2",
+      "grob": "4",
+      "name": "Gartenfläche (Rasen, Beete)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 723,
+      "bbox": [
+        580,
+        570,
+        605,
+        627
+      ],
+      "offen": "nur Kontextrand; Gartenflächen grob, Grenzen zu Gehölz und Bauten nicht geprüft",
+      "id_abgabe": 59,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Gartenfläche (Rasen, Beete)"
+    },
+    {
+      "id": 300060,
+      "klasse": "4.4.2",
+      "grob": "4",
+      "name": "Gartenfläche (Rasen, Beete)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 51,
+      "bbox": [
+        597,
+        565,
+        606,
+        574
+      ],
+      "offen": "nur Kontextrand; Gartenflächen grob, Grenzen zu Gehölz und Bauten nicht geprüft",
+      "id_abgabe": 60,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Gartenfläche (Rasen, Beete)"
+    },
+    {
+      "id": 300061,
+      "klasse": "1",
+      "grob": "1",
+      "name": "Gebäude und befestigte Flächen (Kleingarten)",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 2159,
+      "bbox": [
+        597,
+        512,
+        627,
+        627
+      ],
+      "id_abgabe": 61,
+      "klasse_teil": "5.1",
+      "klasse_teil_name": "Gebäude und befestigte Flächen (Kleingarten)"
+    },
+    {
+      "id": 300062,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Einzelbaum, freistehend",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 199,
+      "bbox": [
+        620,
+        566,
+        627,
+        601
+      ],
+      "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+      "id_abgabe": 62,
+      "klasse_teil": "1.2",
+      "klasse_teil_name": "Einzelbaum, freistehend"
+    },
+    {
+      "id": 300063,
+      "klasse": "4.3",
+      "grob": "4",
+      "name": "Lichtung / Krautflur im Gehölz",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 1026,
+      "bbox": [
+        543,
+        574,
+        593,
+        627
+      ],
+      "offen": "helle Fläche im Gehölz; Krautflur/Lichtung oder sehr helle, niedrige Gehölzkronen",
+      "id_abgabe": 63,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Lichtung / Krautflur im Gehölz"
+    },
+    {
+      "id": 300064,
+      "klasse": "5.2",
+      "grob": "5",
+      "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 89,
+      "bbox": [
+        585,
+        619,
+        597,
+        627
+      ],
+      "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+      "id_abgabe": 64,
+      "klasse_teil": "3.1",
+      "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+    }
+  ]
+}

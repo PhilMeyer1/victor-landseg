@@ -1,0 +1,39 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-07",
+ "bearbeiter": "agent:einigung-B-07:20261118i-r1",
+ "paare": [
+  {"paar": "r0c1:200095|r0c1:200098", "entscheidung": "grenze", "klasse": null,
+   "grund": "Die helle Fahrbahn 200095 (Mittel 168) berührt den mittelgrauen Randstreifen 200098 (Mittel 137) an der Spitze des Angers nur an einem Eckpunkt; Fahrbahn und Straßenrand sind dort verschiedene Flächen."},
+  {"paar": "r0c1:200097|r0c1:200098", "entscheidung": "grenze", "klasse": null,
+   "grund": "An der Viertelgrenze (y 422–427) endet der hellere Randstreifen 200098 (Grauwerte 130–160) dort, wo der dunkle Saum des Anger-Dreiecks beginnt (100–115); das ist der Übergang Straßenrand–Anger, nicht dieselbe Fläche."},
+  {"paar": "r0c1:200120|r0c1:200122", "entscheidung": "gleich", "klasse": "3.1",
+   "grund": "Beide liegen im Durchgang, in dem die Straße 49 am Südende des Angers in die östliche Dorfstraße übergeht; 200120 ist der Rand der Fahrbahn, 200122 die etwas dunklere Fortsetzung der Fahrbahn bis zur Naht, ohne Kante dazwischen (Grenze ist die gerade Viertellinie)."},
+  {"paar": "r0c1:200122|r1c1:400051", "entscheidung": "gleich", "klasse": "3.1",
+   "grund": "Über die Naht bei y 500 laufen die Grauwerte ohne Sprung weiter (beide Seiten um 100–120); 200122 und 400051 sind dasselbe Straßenband zwischen Schattenband und Häuserzeile, das nördlich in Straße 49 und südlich in die helle Dorfstraße 400088 übergeht."},
+  {"paar": "r0c1:200122|r1c1:400033", "entscheidung": "grenze", "klasse": null,
+   "grund": "Der Straßendurchgang 200122 berührt den Dachstreifen der Häuserzeile 400033 nur an einem Eckpunkt (763,500); Straße und Gebäude sind verschiedene Flächen."},
+  {"paar": "r0c1:200097|r1c1:400033", "entscheidung": "unklar", "klasse": null,
+   "grund": "Das Bild zeigt beiderseits der Naht dieselbe Häuserzeile (Dachstreifen und Schatten laufen ohne Sprung über y 500), aber das Segment 200097 umfasst nördlich davon das ganze Anger-Dreieck und dazu das Nordende dieser Häuserzeile; keine einzige Klasse passt für 200097, die Grenze von 200097 ist falsch geschnitten."},
+  {"paar": "r0c1:200097|r1c1:400053", "entscheidung": "unklar", "klasse": null,
+   "grund": "Der Schatten 400053 (Grauwert um 25) läuft nördlich der Naht ohne Kante als dunkler Streifen weiter, der dort zu 200097 (Anger) gehört; 200097 umfasst Anger und Häuserzeile zugleich, eine Klasse für beide Seiten wäre für den Anger falsch, eine Grenze liegt hier nicht."},
+  {"paar": "r0c1:200097|r1c1:400049", "entscheidung": "unklar", "klasse": null,
+   "grund": "Der helle Dachstreifen 400049 setzt sich nördlich der Naht ohne Kante innerhalb von 200097 fort; 200097 schließt dort das Nordende der Häuserzeile ein, deshalb ist weder gleich (Anger würde Gebäude) noch grenze zutreffend."},
+  {"paar": "r0c1:200097|r1c1:400045", "entscheidung": "unklar", "klasse": null,
+   "grund": "Der Schatten 400045 (Grauwert um 30) läuft über die Naht in 200097 hinein und ist dort derselbe Schatten; da 200097 sonst das Anger-Dreieck ist, lässt sich die Stelle nur durch einen neuen Schnitt von 200097, nicht über eine Klasse lösen."},
+  {"paar": "r1c1:400051|r1c1:400060", "entscheidung": "grenze", "klasse": null,
+   "grund": "An x 750 (y 541, 546) liegt der Rand des tiefschwarzen Schlagschattens 400060 (Grauwert 25–60) gegen das hellere Straßenband 400051 (90–145); das ist die Schattenkante, zwei verschiedene Flächen."},
+  {"paar": "r1c1:400060|r1c1:400105", "entscheidung": "grenze", "klasse": null,
+   "grund": "Die graue Hoffläche 400105 (Mittel 120) berührt das schwarze Schattenband 400060 (Mittel 41) nur an einem Punkt an dessen Westkante; Hof und Schatten sind verschiedene Flächen."},
+  {"paar": "r1c1:400060|r1c1:400111", "entscheidung": "gleich", "klasse": "0.1.1",
+   "grund": "400111 ist der dunkelgraue Schattensaum unter einem schmalen hellen Grat, der ohne Kante in das Schattenband 400060 übergeht (an x 750 beiderseits um 50–70); dieselbe Schattenfläche, Klasse des Schattenbands."},
+  {"paar": "r1c1:400060|r1c1:400260", "entscheidung": "grenze", "klasse": null,
+   "grund": "Der graue, fleckige Streckhof-Streifen 400260 (Grauwert um 100) endet an der Westkante des schwarzen Schattenbands 400060 (um 30–50); Hofstreifen und Schatten sind verschiedene Flächen."}
+ ],
+ "offen": [
+  "r0c1:200097 (Anger, 5.2.1) ist falsch geschnitten: es umfasst am Südende (etwa x 760–830, y 478–499 im Ausschnitt) das Nordende der Häuserzeile mit Dachstreifen und Schatten, die südlich der Naht als 400033, 400053, 400049 und 400045 weiterlaufen. Paare 6–9 deshalb unklar; zu klären durch einen Grenzschnitt von 200097 entlang der Nordkante der Häuserzeile (Korrektur r0c1, Viertel v4), danach Einigung neu.",
+  "r0c1:200098 ist ein Mischstück: oben heller Randstreifen der Straße 49, unten (y 432–441) schon die helle Innenkante der Anger-Spitze; Paare 1 und 2 als grenze entschieden, die Klasse 3.3 von 200098 bleibt dabei unsicher."
+ ],
+ "nicht_geprueft": []
+}

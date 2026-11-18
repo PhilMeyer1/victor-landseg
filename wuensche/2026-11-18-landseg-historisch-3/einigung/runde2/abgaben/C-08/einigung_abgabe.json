@@ -1,0 +1,42 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "C",
+  "buendel": "C-08",
+  "bearbeiter": "agent:einigung-C-08:20261118i-r2",
+  "paare": [
+    {
+      "paar": "r1c0:300027|r1c0:300032",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Der helle Feldweg (Grauwert um 170) grenzt hier an den deutlich dunkleren, mittelgrauen Ackerkeil darunter; zwei verschiedene Flächen, die Berührung an der Viertelgrenze sind nur zwei Randpunkte am Wegende."
+    },
+    {
+      "paar": "r1c0:300035|r1c1:400137",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "Beide Teile sind ein und derselbe scharf begrenzte, sehr dunkle Strich (etwa 7 × 2 m) am Südostrand des hellen Streifens, über die Naht durchgehend; ob Schuppen oder Wagen (1.1.2), Strauch (4.2) oder nur ein Schlagschatten, gibt das Schwarz-Weiß-Bild bei 0,45 m nicht her, und eine gemeinsame Elternklasse gibt es nicht."
+    },
+    {
+      "paar": "r1c0:300029|r1c1:400136",
+      "entscheidung": "gleich",
+      "klasse": "2",
+      "grund": "Das 13 Bildpunkte kleine Stück rechts der Naht hat denselben mittleren Grauton (um 100) und dieselbe Körnung wie der anschließende Acker, ein eigener Krautsaum ist am Rand des hellen Streifens nicht zu sehen; daher Acker in der Elternklasse 2 wie 300029."
+    },
+    {
+      "paar": "r1c1:400188|r1c1:400192",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Das Stück nördlich der Gasse ist mittelgrau (um 100) und deutlich dunkler als die helle Gasse (um 175), mit einem Helligkeitsanstieg über wenige Bildpunkte: Hof- oder Hausrand neben der Fahrbahn, also zwei verschiedene Flächen."
+    },
+    {
+      "paar": "r1c1:400138|r1c1:400149",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Der helle Winkelbau mit seinem dunklen Dachteil ist ein eigenes, klar umrissenes Gebäude innerhalb des bebauten Blocks; die einzelne Berührung an der Viertelgrenze trennt Gebäude und umgebende Mischfläche aus Höfen und Dächern, deren Klassen (1.1 und 1) ohnehin zueinander passen."
+    }
+  ],
+  "offen": [
+    "r1c0:300035|r1c1:400137: dunkler Strich am hellen Streifen, Schuppen/Wagen, Strauch oder Schatten; klären würde ein Farbbild oder ein höher aufgelöstes Bild (0,2 m) mit Schattenrichtung."
+  ],
+  "nicht_geprueft": []
+}

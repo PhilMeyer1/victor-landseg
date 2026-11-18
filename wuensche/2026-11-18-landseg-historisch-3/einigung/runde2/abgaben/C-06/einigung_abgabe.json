@@ -1,0 +1,34 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "C",
+  "buendel": "C-06",
+  "bearbeiter": "agent:einigung-C-06:20261118i-r2",
+  "paare": [
+    {"paar": "r0c1:200095|r1c1:400011", "entscheidung": "gleich", "klasse": "1.2",
+     "grund": "Derselbe helle, gleich breite Straßenstreifen entlang des dunklen Dachbandes läuft ohne Helligkeitssprung über die Naht; ob er 1968 versiegelt war, zeigt der Schwarz-Weiß-Scan nicht sicher, daher die Elternklasse Verkehrsfläche."},
+    {"paar": "r0c1:200063|r1c1:400011", "entscheidung": "grenze", "klasse": null,
+     "grund": "Oben liegt der Rest des Hof- und Gartenblocks (gemischt, meist im Schatten), unten die helle Straße; an den vier Nahtpunkten läuft nur der Straßenrand weich in den grauen Hof über, es sind zwei verschiedene Flächen."},
+    {"paar": "r0c1:200112|r1c1:400042", "entscheidung": "gleich", "klasse": "1",
+     "grund": "Beide Seiten sind dieselbe gleichmäßig mittelgraue, scharf begrenzte Rautenfläche vor den Dachenden mit Schattenkante am Unterrand; ob Dach eines Vorderhauses oder befestigter Vorplatz, ist im Grauton nicht sicher zu trennen, daher Elternklasse 1."},
+    {"paar": "r0c1:200063|r1c1:400042", "entscheidung": "grenze", "klasse": null,
+     "grund": "Einziger Berührpunkt an der Spitze des dunklen Schattenspalts (Block 63) neben der mittelgrauen Fläche 42; Spalt und Fläche sind verschiedene Dinge."},
+    {"paar": "r0c1:200124|r1c1:400055", "entscheidung": "unklar", "klasse": null,
+     "grund": "Beide Seiten gehören zur selben dunklen, fleckigen Zone unter dem hellen Vorderhausdach ohne Kante dazwischen, aber ob das Schlagschatten auf Straßenrand oder Hof (1) oder Gebüsch und Baumkrone (4.2) ist, lässt der Schwarz-Weiß-Scan nicht entscheiden."},
+    {"paar": "r0c1:200124|r1c1:400029", "entscheidung": "grenze", "klasse": null,
+     "grund": "Nur ein Eckpunkt: der dunkle Streifen 124 stößt dort an die deutlich hellere Straßenfläche 29, zwei verschiedene Flächen."},
+    {"paar": "r0c1:200110|r1c1:400029", "entscheidung": "gleich", "klasse": "1.2",
+     "grund": "Derselbe hellgraue Straßenbereich nördlich der Straßenkurve mit der Einmündung nach Nordosten läuft ohne Helligkeitssprung über die Naht; beide Seiten sahen Straße, Belag 1968 nicht sicher, daher Verkehrsfläche 1.2."},
+    {"paar": "r0c1:200123|r1c1:400029", "entscheidung": "unklar", "klasse": null,
+     "grund": "Kleiner dunkler Fleck am Rand der hellgrauen Straßenfläche mit weichem Übergang: als Schatten auf der Straße wäre er dieselbe Fläche, als kleiner Busch eine echte Grenze; das ist im Grauton nicht zu entscheiden."},
+    {"paar": "r0c1:200110|r1c1:400057", "entscheidung": "grenze", "klasse": null,
+     "grund": "Einziger Berührpunkt zwischen dem hellgrauen Straßenband 110 und dem dunklen, fleckigen Garten mit Baumkronen 57; deutlich verschiedene Flächen."},
+    {"paar": "r0c1:200125|r1c1:400057", "entscheidung": "gleich", "klasse": "4.2",
+     "grund": "Die zwei Kernpunkte von 125 liegen am Nordrand desselben dunklen, unregelmäßig gefleckten Gartens mit Kronentextur wie 57; Gehölz außerhalb Wald, Einzelbaum oder Gruppe nicht sicher, daher 4.2."}
+  ],
+  "offen": [
+    "r1c1:400011 wird hier 1.2; ihre Fortsetzung r1c1:400070 (laut Urteil r1c1 'durchgehend mit 70 behandeln') steht nicht in diesem Bündel und trägt 1.2.1 - für eine durchgehende Straße sollte 70 ebenfalls 1.2 werden oder 11 auf 1.2.1 folgen.",
+    "Paar 5 (200124|400055) und Paar 8 (200123|400029): Schatten oder Gehölz nur mit Farb- oder Stereobild bzw. anderem Befliegungsjahr klärbar.",
+    "Paar 3 (200112|400042): Dach eines Vorderhauses oder Vorplatz; Klärung würde 1.1 erlauben."
+  ],
+  "nicht_geprueft": []
+}

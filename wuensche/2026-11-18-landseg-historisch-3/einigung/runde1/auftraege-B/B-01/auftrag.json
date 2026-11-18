@@ -1,0 +1,1424 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-01",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100048|r0c0:100264",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            23
+          ],
+          "bis": [
+            250,
+            23
+          ],
+          "laenge": 1,
+          "kante_max": 20.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100048",
+          "teilkachel": "r0c0",
+          "id": 100048,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.377,
+            "abstand": 0.266
+          },
+          "flaeche": 1448,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1420,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Beschatteter Hof oben rechts plus die dunkle Linie am hinteren Ende von Garten 35, reicht in v2.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "sonstiges",
+              "text": "Mischfläche aus beschattetem Hof (285–305/64–95) und der Schattenlinie hinter Garten 35 (250–280/95–130); im Schwarz-Weiß-Bild ohne sichere Kante, nicht geteilt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c0:100264",
+          "teilkachel": "r0c0",
+          "id": 100264,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "eingriff:teilen aus 100045",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.577
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 272,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 272,
+          "urteil": "sauber",
+          "was_ist_es": "Helles schmales Dach eines Längsbaus (neu aus 45), Schattenhof 45 daneben.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Gebäude",
+            "mittel": "Dach",
+            "fein": "Längsbau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100048|r0c0:100064",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            36
+          ],
+          "bis": [
+            250,
+            36
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        },
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            43
+          ],
+          "bis": [
+            250,
+            43
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            54
+          ],
+          "bis": [
+            250,
+            54
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100048",
+          "teilkachel": "r0c0",
+          "id": 100048,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.377,
+            "abstand": 0.266
+          },
+          "flaeche": 1448,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1420,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Beschatteter Hof oben rechts plus die dunkle Linie am hinteren Ende von Garten 35, reicht in v2.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "sonstiges",
+              "text": "Mischfläche aus beschattetem Hof (285–305/64–95) und der Schattenlinie hinter Garten 35 (250–280/95–130); im Schwarz-Weiß-Bild ohne sichere Kante, nicht geteilt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Hof und Garten",
+            "mittel": "Hof",
+            "fein": "Hof"
+          }
+        },
+        {
+          "segment": "r0c0:100064",
+          "teilkachel": "r0c0",
+          "id": 100064,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.118,
+            "abstand": 0.044
+          },
+          "flaeche": 1590,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1590,
+          "urteil": "sauber",
+          "was_ist_es": "Heller Hinterweg hinter den Gärten 35/51 mit sehr hellem Fleck 298–318/105–120 (Gegenstand oder heller Boden).",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße/Weg",
+            "fein": "Feldweg"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100073|r0c0:100077",
+      "art": "viertel",
+      "bild": "paar_03.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            56
+          ],
+          "bis": [
+            250,
+            56
+          ],
+          "laenge": 1,
+          "kante_max": 8.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100073",
+          "teilkachel": "r0c0",
+          "id": 100073,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.375,
+            "abstand": 0.215
+          },
+          "flaeche": 1478,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1478,
+          "urteil": "sauber",
+          "was_ist_es": "Heller Hinterweg vom Weg 64 zur Einmündung 109, mit hellen Flecken.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße/Weg",
+            "fein": "Hinterweg"
+          }
+        },
+        {
+          "segment": "r0c0:100077",
+          "teilkachel": "r0c0",
+          "id": 100077,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.173,
+            "abstand": 0.018
+          },
+          "flaeche": 5212,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 5212,
+          "urteil": "sauber",
+          "was_ist_es": "Offene, fleckig mittelgraue Fläche hinter den Gärten mit hellen Fahrspuren (Grau 96).",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Anger/Brache",
+            "fein": "Anger"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100104|r0c0:100115",
+      "art": "viertel",
+      "bild": "paar_04.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            129
+          ],
+          "bis": [
+            250,
+            130
+          ],
+          "laenge": 2,
+          "kante_max": 10.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100104",
+          "teilkachel": "r0c0",
+          "id": 100104,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.416,
+            "abstand": 0.267
+          },
+          "flaeche": 7133,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 7133,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Offene, fleckige Fläche zwischen Hinterweg, Straße und Feld 154; die helle Fahrspur 272 abgetrennt.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helle Fahrspur 318–386/213–244 (Fortsetzung der Spur im Anger 114) abgetrennt als 100272.",
+              "flaeche_px": 792
+            },
+            {
+              "nr": 2,
+              "art": "sonstiges",
+              "text": "Dunkler Fleck 354–366/250–264 und dunkle Fläche 361–396/185–224 bleiben im Segment: Busch oder Schatten, Kante zu unscharf zum Teilen.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Anger",
+            "fein": "Anger"
+          }
+        },
+        {
+          "segment": "r0c0:100115",
+          "teilkachel": "r0c0",
+          "id": 100115,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.45
+          },
+          "instanz": {
+            "text": "shed",
+            "eingerastet": true
+          },
+          "flaeche": 231,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 231,
+          "urteil": "sauber",
+          "was_ist_es": "Weißes, scharf begrenztes Viereck 294–313/185–203 auf der offenen Fläche: kleiner Bau mit hellem Dach oder heller Haufen.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Gebäude",
+            "mittel": "Gebäude",
+            "fein": "Nebengebäude"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100104|r0c0:100148",
+      "art": "viertel",
+      "bild": "paar_05.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            205
+          ],
+          "bis": [
+            250,
+            206
+          ],
+          "laenge": 2,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100104",
+          "teilkachel": "r0c0",
+          "id": 100104,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.416,
+            "abstand": 0.267
+          },
+          "flaeche": 7133,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 7133,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Offene, fleckige Fläche zwischen Hinterweg, Straße und Feld 154; die helle Fahrspur 272 abgetrennt.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Helle Fahrspur 318–386/213–244 (Fortsetzung der Spur im Anger 114) abgetrennt als 100272.",
+              "flaeche_px": 792
+            },
+            {
+              "nr": 2,
+              "art": "sonstiges",
+              "text": "Dunkler Fleck 354–366/250–264 und dunkle Fläche 361–396/185–224 bleiben im Segment: Busch oder Schatten, Kante zu unscharf zum Teilen.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Anger",
+            "fein": "Anger"
+          }
+        },
+        {
+          "segment": "r0c0:100148",
+          "teilkachel": "r0c0",
+          "id": 100148,
+          "klasse": "0.3",
+          "grob": "0",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.452
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 598,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 598,
+          "urteil": "sauber",
+          "was_ist_es": "Fast schwarze, eckige Fläche 305–337/240–270: Schatten, dunkles Dach oder Gehölz.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Dunkle Fläche",
+            "fein": "Dunkle Fläche"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c0:100156|r0c0:100163",
+      "art": "viertel",
+      "bild": "paar_06.jpg",
+      "randpunkte": 5,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            216
+          ],
+          "bis": [
+            250,
+            220
+          ],
+          "laenge": 5,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100156",
+          "teilkachel": "r0c0",
+          "id": 100156,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.429
+          },
+          "instanz": {
+            "text": "shed",
+            "eingerastet": true
+          },
+          "flaeche": 742,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 742,
+          "urteil": "sauber",
+          "was_ist_es": "Hellgraue rechteckige Fläche mit Schattenstreifen 164 daneben: Bau mit hellem Dach.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Gebäude",
+            "mittel": "Dach",
+            "fein": "Nebengebäude"
+          }
+        },
+        {
+          "segment": "r0c0:100163",
+          "teilkachel": "r0c0",
+          "id": 100163,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.601,
+            "abstand": 0.044
+          },
+          "flaeche": 165,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 165,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgrauer Randstreifen zwischen Feld 154 und der offenen Fläche 104.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c0:100114|r0c0:100160",
+      "art": "viertel",
+      "bild": "paar_07.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            44,
+            250
+          ],
+          "bis": [
+            44,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 13.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100114",
+          "teilkachel": "r0c0",
+          "id": 100114,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.121,
+            "abstand": 0.053
+          },
+          "flaeche": 13222,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 12938,
+          "urteil": "sauber",
+          "was_ist_es": "Breiter offener Streifen zwischen Hofenden und Feld 154 mit heller, unscharfer Fahrspur; zieht nach unten links in v3.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Anger/Brache",
+            "fein": "Anger"
+          }
+        },
+        {
+          "segment": "r0c0:100160",
+          "teilkachel": "r0c0",
+          "id": 100160,
+          "klasse": "5.2.2",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.543
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2477,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1502,
+          "urteil": "sauber",
+          "was_ist_es": "Fleckig mittelgraue Fläche links des Angers 114 ohne Struktur; Brache oder Garten, Hälfte in v3.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Anger/Brache",
+            "fein": "Brache"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c0:100114|r0c0:100174",
+      "art": "viertel",
+      "bild": "paar_08.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            91,
+            250
+          ],
+          "bis": [
+            91,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 7.0
+        },
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            101,
+            250
+          ],
+          "bis": [
+            101,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 13.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100114",
+          "teilkachel": "r0c0",
+          "id": 100114,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.121,
+            "abstand": 0.053
+          },
+          "flaeche": 13222,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 12938,
+          "urteil": "sauber",
+          "was_ist_es": "Breiter offener Streifen zwischen Hofenden und Feld 154 mit heller, unscharfer Fahrspur; zieht nach unten links in v3.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Anger/Brache",
+            "fein": "Anger"
+          }
+        },
+        {
+          "segment": "r0c0:100174",
+          "teilkachel": "r0c0",
+          "id": 100174,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.283,
+            "abstand": 0.025
+          },
+          "flaeche": 204,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 204,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkler Randstreifen zwischen Anger 114 und Feld 154.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c0:100114|r0c0:100175",
+      "art": "viertel",
+      "bild": "paar_09.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            105,
+            250
+          ],
+          "bis": [
+            106,
+            250
+          ],
+          "laenge": 2,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100114",
+          "teilkachel": "r0c0",
+          "id": 100114,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.121,
+            "abstand": 0.053
+          },
+          "flaeche": 13222,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 12938,
+          "urteil": "sauber",
+          "was_ist_es": "Breiter offener Streifen zwischen Hofenden und Feld 154 mit heller, unscharfer Fahrspur; zieht nach unten links in v3.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Anger/Brache",
+            "fein": "Anger"
+          }
+        },
+        {
+          "segment": "r0c0:100175",
+          "teilkachel": "r0c0",
+          "id": 100175,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.558,
+            "abstand": 0.041
+          },
+          "flaeche": 138,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 138,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkler Randstreifen zwischen Anger 114 und Feld 154, Fortsetzung von 168.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r0c0:100154|r0c0:100168",
+      "art": "viertel",
+      "bild": "paar_10.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            121,
+            250
+          ],
+          "bis": [
+            121,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 13.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100154",
+          "teilkachel": "r0c0",
+          "id": 100154,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.755
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 92069,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 79298,
+          "urteil": "sauber",
+          "was_ist_es": "Großes, gleichmäßig dunkelgraues Feld mit schwachen Streifen nach Nordost; im oberen Teil ein hellerer Streifen entlang des Angers.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "sonstiges",
+              "text": "Hellerer Streifen im Nordwestteil des Feldes (etwa 130/390 bis 300/320) kann eine eigene Parzelle sein; Übergang ohne klare Kante, nicht geteilt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feld",
+            "fein": "Feld"
+          }
+        },
+        {
+          "segment": "r0c0:100168",
+          "teilkachel": "r0c0",
+          "id": 100168,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.221,
+            "abstand": 0.025
+          },
+          "flaeche": 518,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 518,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkler Streifen zwischen Anger 114 und Feld 154 (Grau 64 gegen 77 im Feld).",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r0c0:100154|r0c0:100172",
+      "art": "viertel",
+      "bild": "paar_11.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            359,
+            250
+          ],
+          "bis": [
+            359,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 14.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100154",
+          "teilkachel": "r0c0",
+          "id": 100154,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.755
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 92069,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 79298,
+          "urteil": "sauber",
+          "was_ist_es": "Großes, gleichmäßig dunkelgraues Feld mit schwachen Streifen nach Nordost; im oberen Teil ein hellerer Streifen entlang des Angers.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "sonstiges",
+              "text": "Hellerer Streifen im Nordwestteil des Feldes (etwa 130/390 bis 300/320) kann eine eigene Parzelle sein; Übergang ohne klare Kante, nicht geteilt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feld",
+            "fein": "Feld"
+          }
+        },
+        {
+          "segment": "r0c0:100172",
+          "teilkachel": "r0c0",
+          "id": 100172,
+          "klasse": "4.1",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.154,
+            "abstand": 0.078
+          },
+          "flaeche": 219,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 219,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle runde Krone am Westrand der Straße, Fortsetzung der Baumreihe 169.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baum",
+            "fein": "Einzelbaum"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r0c0:100149|r0c0:100172",
+      "art": "viertel",
+      "bild": "paar_12.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            366,
+            250
+          ],
+          "bis": [
+            366,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        },
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            368,
+            250
+          ],
+          "bis": [
+            369,
+            250
+          ],
+          "laenge": 2,
+          "kante_max": 12.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100149",
+          "teilkachel": "r0c0",
+          "id": 100149,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.392,
+            "abstand": 0.255
+          },
+          "flaeche": 1837,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1837,
+          "urteil": "sauber",
+          "was_ist_es": "Östliches helles Band der Straße nach Süden, reicht in v4.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße/Weg",
+            "fein": "Fahrbahn"
+          }
+        },
+        {
+          "segment": "r0c0:100172",
+          "teilkachel": "r0c0",
+          "id": 100172,
+          "klasse": "4.1",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.154,
+            "abstand": 0.078
+          },
+          "flaeche": 219,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 219,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle runde Krone am Westrand der Straße, Fortsetzung der Baumreihe 169.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baum",
+            "fein": "Einzelbaum"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-01",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100048|r0c0:100264",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100048|r0c0:100064",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100073|r0c0:100077",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100104|r0c0:100115",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100104|r0c0:100148",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100156|r0c0:100163",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100114|r0c0:100160",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100114|r0c0:100174",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100114|r0c0:100175",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100154|r0c0:100168",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100154|r0c0:100172",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100149|r0c0:100172",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

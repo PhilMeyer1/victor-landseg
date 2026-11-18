@@ -1,0 +1,1 @@
+abgenommen, keine Mängel-Kandidaten aus den Blickwinkeln wunschtext, verhalten; nicht geprüft: wunschtext: Nichts ausgeführt (Blickwinkel wunschtext führt keine Tests und Befehle aus); AK5 und AK6 gehören zu verhalten.

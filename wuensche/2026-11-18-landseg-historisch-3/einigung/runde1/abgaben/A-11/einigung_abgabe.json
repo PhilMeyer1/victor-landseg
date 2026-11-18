@@ -1,0 +1,82 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "A",
+ "buendel": "A-11",
+ "bearbeiter": "agent:einigung-A-11:20261118i-r1",
+ "paare": [
+  {
+   "paar": "r0c1:201249|r1c1:400161",
+   "entscheidung": "gleich",
+   "klasse": "2",
+   "grund": "Der dunkelgraue Zwickel am Fuß des Schattens läuft ohne Kante über die Naht in die unregelmäßige, graue, fleckige Zone zwischen den Hausgiebeln und der hellen Dorfstraße; das ist Hof- oder Gartenfläche, Hof gegen Garten ist auf SW nicht zu trennen, darum Elternklasse 2 für die ganze Kette."
+  },
+  {
+   "paar": "r0c1:201249|r1c1:400157",
+   "entscheidung": "gleich",
+   "klasse": "2",
+   "grund": "Die drei Kernbildpunkte der Schattenfuge liegen im selben dunkelgrauen Ausläufer wie der Zwickel darüber, ohne Kante zwischen beiden; als Glied der Kette um 400161 Elternklasse 2 (Hof und Garten), der dunkle Ton ist Halbschatten der Hausecke."
+  },
+  {
+   "paar": "r0c1:201249|r1c1:400158",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Berührung nur an einem Bildpunkt an der unteren Ecke des hellen Dachs; 400158 mischt den hellen Dachrand mit einem grauen Streifen davor, ob die Stelle Dach oder Hof ist, lässt sich am Bild nicht entscheiden."
+  },
+  {
+   "paar": "r0c1:201254|r1c1:400161",
+   "entscheidung": "gleich",
+   "klasse": "2",
+   "grund": "Der graue Keil unter dem hellen Dach hat denselben Grauton wie die fleckige Zone unterhalb und geht über 16 Bildpunkte ohne Kante in sie über; keine Dachform, Hof- oder Gartenfläche, Glied der Kette um 400161."
+  },
+  {
+   "paar": "r0c1:201256|r1c1:400161",
+   "entscheidung": "gleich",
+   "klasse": "2",
+   "grund": "Der hellgraue Fleck setzt sich ohne Kante in die etwas dunklere graue Zone darunter fort; keine Dachkante, keine Schattenlinie, dieselbe Hof- oder Gartenfläche vor den Giebeln, Glied der Kette um 400161."
+  },
+  {
+   "paar": "r0c1:201258|r1c1:400161",
+   "entscheidung": "gleich",
+   "klasse": "2",
+   "grund": "Mittelgraue Fläche ohne Dachform beiderseits der Naht, gleicher Ton und keine Kante; dieselbe Hof- oder Gartenfläche, Glied der Kette um 400161."
+  },
+  {
+   "paar": "r0c1:201258|r1c1:400170",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Berührung nur an einem Eckpunkt; 400170 ist ein Mischsegment aus hellerem Fleck, schmalem Streifen nach Süden und dem Rand eines dunklen runden Flecks (Baumkrone oder Schatten), seine Klasse ist auf SW nicht sicher zu bestimmen."
+  },
+  {
+   "paar": "r0c1:201140|r1c1:400079",
+   "entscheidung": "gleich",
+   "klasse": "2",
+   "grund": "Die sieben Kernbildpunkte von 400079 an der Naht haben denselben mittleren Grauton wie die unregelmäßige Fläche 201140 darüber, ohne Kante; keine Dachform, Hof- oder Gartenfläche, Hof gegen Garten auf SW nicht trennbar, darum Elternklasse 2."
+  },
+  {
+   "paar": "r0c1:201140|r1c1:400264",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Unter der Naht beginnt der große, fast schwarze runde Fleck 400264 (Grauwert um 56, Baumkrone oder Schlagschatten), darüber liegt die mittelgraue Hoffläche 201140 (um 112); zwei verschiedene Flächen, der Übergang ist nur weich."
+  },
+  {
+   "paar": "r1c0:300009|r1c0:300010",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Zwei verschiedene Feldparzellen: links unten das deutlich dunklere Feld 300010 (um 70) mit gerundetem Rand, rechts das mittelgraue Feld 300009 (um 106); sie treffen sich nur an einem Punkt am Rand des hellen Wegs."
+  },
+  {
+   "paar": "r1c0:300009|r1c0:300039",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der helle Feldweg 300039 (um 170) als breites Band gegen das mittelgraue Feld 300009 darunter; Weg und Feld sind verschiedene Flächen, die Berührung liegt am Unterrand des Wegs."
+  }
+ ],
+ "offen": [
+  "r0c1:201249|r1c1:400158: Dachrand oder Hof an der Ecke des hellen Dachs; das Farbbild (Dachrot gegen Erdgrau) würde entscheiden.",
+  "r0c1:201258|r1c1:400170: Klasse des Mischsegments 400170 (heller Fleck, Streifen, Rand eines dunklen Flecks); Farbbild oder Schnitt des Segments würde entscheiden.",
+  "Kette um 400161 und 201140/400079: Hof gegen Garten (2.1 gegen 2.2) auf SW nicht trennbar, darum Elternklasse 2."
+ ],
+ "nicht_geprueft": [
+  "Kontextteile der Segmente 400157, 400079 und 400264 (größtenteils außerhalb des Kerns) nur angesehen, nicht beurteilt."
+ ]
+}

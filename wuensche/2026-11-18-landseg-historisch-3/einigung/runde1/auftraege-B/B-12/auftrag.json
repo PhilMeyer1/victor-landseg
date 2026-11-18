@@ -1,0 +1,1270 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-12",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r1c0:300035|r1c1:400137",
+      "art": "naht",
+      "bild": "paar_01.jpg",
+      "randpunkte": 5,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            705
+          ],
+          "bis": [
+            500,
+            709
+          ],
+          "laenge": 5,
+          "kante_max": 21.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300035",
+          "teilkachel": "r1c0",
+          "id": 300035,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.409
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 87,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 55,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner, sehr dunkler, länglicher Gegenstand (etwa 14 × 5 Bildpunkte, 6 × 2 m) am Südostrand des hellen Wegs: Hütte, Wagen oder dessen Schatten.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Kleinbau",
+            "fein": "Kleinbau oder Fahrzeug"
+          }
+        },
+        {
+          "segment": "r1c1:400137",
+          "teilkachel": "r1c1",
+          "id": 400137,
+          "klasse": "0.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.339,
+            "abstand": 0.092
+          },
+          "flaeche": 84,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "6.6",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 30,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Kurzer dunkler Strich am Südrand des Wegs: Schatten, Graben oder Fahrzeug.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 18,
+              "art": "klasse",
+              "text": "Vorstufe Feldweg; dunkler Strich (66/269).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schlagschatten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r1c0:300029|r1c1:400136",
+      "art": "naht",
+      "bild": "paar_02.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            712
+          ],
+          "bis": [
+            500,
+            715
+          ],
+          "laenge": 4,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300029",
+          "teilkachel": "r1c0",
+          "id": 300029,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.42
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 29578,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 8970,
+          "urteil": "sauber",
+          "was_ist_es": "Feld östlich des Rains 23 und südlich des hellen Wegs 36, mittelgrau mit hellen runden Flecken (Haufen oder kahle Stellen) bei (520–575, 355–410).",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        },
+        {
+          "segment": "r1c1:400136",
+          "teilkachel": "r1c1",
+          "id": 400136,
+          "klasse": "5.1.2",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.825,
+            "abstand": 0.061
+          },
+          "flaeche": 117,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 13,
+          "urteil": "sauber",
+          "was_ist_es": "Graue Kante am Südrand des breiten Wegs 400110, fast ganz im Kontextrand.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feldrain",
+            "fein": "Rain/Wegrand"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r1c1:400171|r1c1:400244",
+      "art": "viertel",
+      "bild": "paar_03.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            829
+          ],
+          "bis": [
+            750,
+            829
+          ],
+          "laenge": 1,
+          "kante_max": 8.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400171",
+          "teilkachel": "r1c1",
+          "id": 400171,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.464
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 944,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 944,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Dachfläche östlich der Straße mit hellem Westteil und Schatten an der Ostseite.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude mit mittelgrauem Dach"
+          }
+        },
+        {
+          "segment": "r1c1:400244",
+          "teilkachel": "r1c1",
+          "id": 400244,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:teilen aus 400006",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.459,
+            "abstand": 0.251
+          },
+          "flaeche": 2790,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2790,
+          "urteil": "sauber",
+          "was_ist_es": "Streifen mit hellem Dachabschnitt. Streifen eines Streckhofs aus dem Nachsegmentieren von 400006: Dach und Hof zwischen zwei dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r1c1:400171|r1c1:400266",
+      "art": "viertel",
+      "bild": "paar_04.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            855
+          ],
+          "bis": [
+            750,
+            855
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400171",
+          "teilkachel": "r1c1",
+          "id": 400171,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.464
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 944,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 944,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Dachfläche östlich der Straße mit hellem Westteil und Schatten an der Ostseite.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude mit mittelgrauem Dach"
+          }
+        },
+        {
+          "segment": "r1c1:400266",
+          "teilkachel": "r1c1",
+          "id": 400266,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1411,
+          "flaeche_kern": 1411,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Streifen an der Quergasse. Streifen eines Streckhofs aus dem Nachsegmentieren von 400006: Dach und Hof zwischen zwei dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r1c1:400188|r1c1:400239",
+      "art": "viertel",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            891
+          ],
+          "bis": [
+            750,
+            891
+          ],
+          "laenge": 1,
+          "kante_max": 14.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400188",
+          "teilkachel": "r1c1",
+          "id": 400188,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.709,
+            "abstand": 0.077
+          },
+          "flaeche": 144,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 144,
+          "urteil": "sauber",
+          "was_ist_es": "Kleines graues Stück an der Einmündung der Quergasse.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Straße",
+            "fein": "Straßenrand"
+          }
+        },
+        {
+          "segment": "r1c1:400239",
+          "teilkachel": "r1c1",
+          "id": 400239,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:teilen aus 400006",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.459,
+            "abstand": 0.251
+          },
+          "flaeche": 2382,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2382,
+          "urteil": "sauber",
+          "was_ist_es": "Dunklerer Streifen mit Schattenlinie. Streifen eines Streckhofs aus dem Nachsegmentieren von 400006: Dach und Hof zwischen zwei dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r1c1:400188|r1c1:400192",
+      "art": "viertel",
+      "bild": "paar_06.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            902
+          ],
+          "bis": [
+            750,
+            902
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400188",
+          "teilkachel": "r1c1",
+          "id": 400188,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.709,
+            "abstand": 0.077
+          },
+          "flaeche": 144,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 144,
+          "urteil": "sauber",
+          "was_ist_es": "Kleines graues Stück an der Einmündung der Quergasse.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Straße",
+            "fein": "Straßenrand"
+          }
+        },
+        {
+          "segment": "r1c1:400192",
+          "teilkachel": "r1c1",
+          "id": 400192,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.463
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 921,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 921,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Helle Quergasse zwischen den beiden Dorfstraßen.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 5,
+              "art": "klasse",
+              "text": "Vorstufe Weg befestigt; Gasse/Straße im Ort (325/472).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r1c1:400303|r1c1:400304",
+      "art": "viertel",
+      "bild": "paar_07.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            960
+          ],
+          "bis": [
+            750,
+            960
+          ],
+          "laenge": 1,
+          "kante_max": 6.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400303",
+          "teilkachel": "r1c1",
+          "id": 400303,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 758,
+          "flaeche_kern": 758,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Aus 400196: Streifen an der Einmündung mit kleinem hellem Dach (305/487). Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        },
+        {
+          "segment": "r1c1:400304",
+          "teilkachel": "r1c1",
+          "id": 400304,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 952,
+          "flaeche_kern": 952,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Aus 400196: dunkle fleckige Fläche zwischen Quergasse und Gebäude 400204: Garten mit Schatten.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Garten",
+            "fein": "Garten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r1c1:400207|r1c1:400216",
+      "art": "viertel",
+      "bild": "paar_08.jpg",
+      "randpunkte": 5,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            993
+          ],
+          "bis": [
+            750,
+            993
+          ],
+          "laenge": 1,
+          "kante_max": 12.0
+        },
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            995
+          ],
+          "bis": [
+            750,
+            998
+          ],
+          "laenge": 4,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400207",
+          "teilkachel": "r1c1",
+          "id": 400207,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.326,
+            "abstand": 0.13
+          },
+          "flaeche": 622,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 620,
+          "urteil": "sauber",
+          "was_ist_es": "Helle Straße nach Süden mit Randanteil.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        },
+        {
+          "segment": "r1c1:400216",
+          "teilkachel": "r1c1",
+          "id": 400216,
+          "klasse": "0.4",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.242,
+            "abstand": 0.141
+          },
+          "flaeche": 690,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 88,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Graue Fläche am Südrand östlich der Straße, meist im Kontextrand.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 21,
+              "art": "klasse",
+              "text": "Vorstufe Baustelle; Hof-/Hausfläche (310/560).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Siedlung",
+            "fein": "Siedlung"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r1c1:400148|r1c1:400264",
+      "art": "viertel",
+      "bild": "paar_09.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            660,
+            750
+          ],
+          "bis": [
+            660,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 10.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400148",
+          "teilkachel": "r1c1",
+          "id": 400148,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.517
+          },
+          "instanz": {
+            "text": "dirt path",
+            "eingerastet": true
+          },
+          "flaeche": 2497,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "6.6",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2497,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Die helle Dorfstraße am Westrand des Orts.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 7,
+              "art": "klasse",
+              "text": "Vorstufe Feldweg; Dorfstraße (253/394).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        },
+        {
+          "segment": "r1c1:400264",
+          "teilkachel": "r1c1",
+          "id": 400264,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 937,
+          "flaeche_kern": 937,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Westteil eines Streifens mit hellen Flecken. Streifen eines Streckhofs aus dem Nachsegmentieren von 400006: Dach und Hof zwischen zwei dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r1c1:400130|r1c1:400283",
+      "art": "viertel",
+      "bild": "paar_10.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            866,
+            750
+          ],
+          "bis": [
+            866,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400130",
+          "teilkachel": "r1c1",
+          "id": 400130,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.418
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2837,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2837,
+          "urteil": "sauber",
+          "was_ist_es": "Langes gleichmäßig mittelgraues Band (etwa 55 × 9 m): langes Dach (Stall/Scheune oder Häuserzeile).",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude mit mittelgrauem Dach"
+          }
+        },
+        {
+          "segment": "r1c1:400283",
+          "teilkachel": "r1c1",
+          "id": 400283,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 786,
+          "flaeche_kern": 786,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Streifen an der Südwestecke des Blocks. Streifen eines Streckhofs aus dem Nachsegmentieren von 400092: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r1c1:400130|r1c1:400292",
+      "art": "viertel",
+      "bild": "paar_11.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            900,
+            750
+          ],
+          "bis": [
+            900,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            918,
+            750
+          ],
+          "bis": [
+            918,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 14.0
+        },
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            923,
+            750
+          ],
+          "bis": [
+            923,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 15.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400130",
+          "teilkachel": "r1c1",
+          "id": 400130,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.418
+          },
+          "instanz": {
+            "text": "house",
+            "eingerastet": true
+          },
+          "flaeche": 2837,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2837,
+          "urteil": "sauber",
+          "was_ist_es": "Langes gleichmäßig mittelgraues Band (etwa 55 × 9 m): langes Dach (Stall/Scheune oder Häuserzeile).",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude mit mittelgrauem Dach"
+          }
+        },
+        {
+          "segment": "r1c1:400292",
+          "teilkachel": "r1c1",
+          "id": 400292,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1786,
+          "flaeche_kern": 1786,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Aus 400138: Streifen an der Dorfstraße im Norden. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-12",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r1c0:300035|r1c1:400137",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300029|r1c1:400136",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400171|r1c1:400244",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400171|r1c1:400266",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400188|r1c1:400239",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400188|r1c1:400192",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400303|r1c1:400304",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400207|r1c1:400216",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400148|r1c1:400264",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400130|r1c1:400283",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400130|r1c1:400292",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

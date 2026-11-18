@@ -1,0 +1,619 @@
+{
+  "schema": "landseg-h0-viertelbilder/1",
+  "teilkachel": "r1c1",
+  "viertel": "v4",
+  "lage": "unten rechts",
+  "viertel_im_bild": {
+    "x": 314,
+    "y": 314,
+    "breite": 250,
+    "hoehe": 250
+  },
+  "kern_im_bild": {
+    "x": 64,
+    "y": 64,
+    "breite": 500,
+    "hoehe": 500
+  },
+  "koordinaten": "x_teilkachel = fenster.x + x_bild // faktor (im Gitterbild vorher 40 px links und 16 px oben abziehen; im Mängelbild steht die Legende unten)",
+  "nummer": "Nummer im Bild = ID mod 100000; weiß = Segment dieses Viertels, grau = Kernsegment eines Nachbarviertels, ohne Nummer = Kontextrand",
+  "bilder": {
+    "uebersicht_nummern.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_roh.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_vorschlag.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_maengel.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_kontrast.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3
+      }
+    },
+    "uebersicht_gitter.jpg": {
+      "fenster": {
+        "x": 282,
+        "y": 282,
+        "breite": 314,
+        "hoehe": 314,
+        "faktor": 3,
+        "rand_links": 40,
+        "rand_oben": 16
+      }
+    },
+    "nah1_roh.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah1_nummern.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_roh.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah2_nummern.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 302,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_roh.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah3_nummern.jpg": {
+      "fenster": {
+        "x": 302,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_roh.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    },
+    "nah4_nummern.jpg": {
+      "fenster": {
+        "x": 427,
+        "y": 427,
+        "breite": 149,
+        "hoehe": 149,
+        "faktor": 6
+      }
+    }
+  },
+  "segmente": [
+    {
+      "id": 400147,
+      "nr": 147,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 169,
+      "anteil": 0.544,
+      "auch_in": [
+        "v2"
+      ],
+      "punkt": [
+        387,
+        319
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400151,
+      "nr": 151,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 236,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        388,
+        329
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400157,
+      "nr": 157,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 258,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        392,
+        346
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400152,
+      "nr": 152,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 233,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        425,
+        346
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400156,
+      "nr": 156,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 127,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        506,
+        341
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400149,
+      "nr": 149,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 910,
+      "anteil": 0.977,
+      "auch_in": [
+        "v2"
+      ],
+      "punkt": [
+        537,
+        338
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400144,
+      "nr": 144,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 711,
+      "anteil": 0.532,
+      "auch_in": [
+        "v2"
+      ],
+      "punkt": [
+        548,
+        321
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400160,
+      "nr": 160,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 347,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        390,
+        363
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400159,
+      "nr": 159,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 118,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        498,
+        353
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400161,
+      "nr": 161,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 263,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        541,
+        370
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400167,
+      "nr": 167,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 38,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        561,
+        392
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400138,
+      "nr": 138,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 26027,
+      "anteil": 0.955,
+      "auch_in": [
+        "v2"
+      ],
+      "punkt": [
+        494,
+        413
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400184,
+      "nr": 184,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 389,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        551,
+        444
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400188,
+      "nr": 188,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 144,
+      "anteil": 0.569,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        318,
+        462
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400192,
+      "nr": 192,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 921,
+      "anteil": 0.82,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        325,
+        472
+      ],
+      "kandidaten": [
+        "grenze_ohne_bildkante",
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 400195,
+      "nr": 195,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 222,
+      "anteil": 0.937,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        329,
+        489
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400194,
+      "nr": 194,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 211,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        375,
+        480
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400172,
+      "nr": 172,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 1840,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        420,
+        460
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400212,
+      "nr": 212,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 281,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        332,
+        542
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400204,
+      "nr": 204,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 675,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        336,
+        526
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400196,
+      "nr": 196,
+      "klasse": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 4307,
+      "anteil": 0.836,
+      "auch_in": [
+        "v3"
+      ],
+      "punkt": [
+        362,
+        543
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400201,
+      "nr": 201,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 177,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        399,
+        508
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400205,
+      "nr": 205,
+      "klasse": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "sicher": "ja",
+      "im_siedlung": "nein",
+      "kern_flaeche": 977,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        399,
+        540
+      ],
+      "kandidaten": []
+    },
+    {
+      "id": 400103,
+      "nr": 103,
+      "klasse": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 10727,
+      "anteil": 0.735,
+      "auch_in": [
+        "v2"
+      ],
+      "punkt": [
+        441,
+        522
+      ],
+      "kandidaten": [
+        "klasse_unsicher",
+        "nicht_zusammenhaengend"
+      ]
+    },
+    {
+      "id": 400206,
+      "nr": 206,
+      "klasse": "1.3.2",
+      "name": "Baustelle",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 263,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        481,
+        527
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    },
+    {
+      "id": 400213,
+      "nr": 213,
+      "klasse": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "sicher": "nein",
+      "im_siedlung": "nein",
+      "kern_flaeche": 405,
+      "anteil": 1.0,
+      "auch_in": [],
+      "punkt": [
+        431,
+        552
+      ],
+      "kandidaten": [
+        "klasse_unsicher"
+      ]
+    }
+  ]
+}

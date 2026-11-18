@@ -1,0 +1,141 @@
+{
+ "schema": "landseg-h0-fassungen/1",
+ "zeit": "2026-11-18T13:12:45+00:00",
+ "A": {
+  "r0c0": {
+   "kern": 91,
+   "segmente": 111,
+   "versatz": 100000,
+   "sicher_ja": 12,
+   "sicher_nein": 79,
+   "fehler": []
+  },
+  "r0c1": {
+   "kern": 872,
+   "segmente": 1363,
+   "versatz": 200000,
+   "sicher_ja": 41,
+   "sicher_nein": 831,
+   "fehler": []
+  },
+  "r1c0": {
+   "kern": 44,
+   "segmente": 49,
+   "versatz": 300000,
+   "sicher_ja": 3,
+   "sicher_nein": 41,
+   "fehler": []
+  },
+  "r1c1": {
+   "kern": 816,
+   "segmente": 1092,
+   "versatz": 400000,
+   "sicher_ja": 244,
+   "sicher_nein": 572,
+   "fehler": []
+  }
+ },
+ "B": {
+  "r0c0": {
+   "kern": 188,
+   "segmente": 263,
+   "sicher_ja": 12,
+   "sicher_nein": 176,
+   "kontext_nachbar": 39,
+   "kontext_ausserhalb": 36,
+   "eingriffe_urteil": 16,
+   "eingriffe_verlauf": 58,
+   "urteil_nicht_im_kern": [],
+   "fehler": []
+  },
+  "r0c1": {
+   "kern": 276,
+   "segmente": 344,
+   "sicher_ja": 54,
+   "sicher_nein": 222,
+   "kontext_nachbar": 43,
+   "kontext_ausserhalb": 25,
+   "eingriffe_urteil": 10,
+   "eingriffe_verlauf": 184,
+   "urteil_nicht_im_kern": [],
+   "fehler": []
+  },
+  "r1c0": {
+   "kern": 21,
+   "segmente": 48,
+   "sicher_ja": 3,
+   "sicher_nein": 18,
+   "kontext_nachbar": 11,
+   "kontext_ausserhalb": 16,
+   "eingriffe_urteil": 34,
+   "eingriffe_verlauf": 34,
+   "urteil_nicht_im_kern": [],
+   "fehler": []
+  },
+  "r1c1": {
+   "kern": 223,
+   "segmente": 294,
+   "sicher_ja": 34,
+   "sicher_nein": 189,
+   "kontext_nachbar": 41,
+   "kontext_ausserhalb": 30,
+   "eingriffe_urteil": 77,
+   "eingriffe_verlauf": 77,
+   "urteil_nicht_im_kern": [],
+   "fehler": []
+  }
+ },
+ "C": {
+  "r0c0": {
+   "kern": 155,
+   "segmente": 230,
+   "sicher_ja": 15,
+   "sicher_nein": 140,
+   "kontext_nachbar": 39,
+   "kontext_ausserhalb": 36,
+   "eingriffe_urteil": 22,
+   "eingriffe_verlauf": 24,
+   "urteil_nicht_im_kern": [],
+   "fehler": []
+  },
+  "r0c1": {
+   "kern": 132,
+   "segmente": 200,
+   "sicher_ja": 34,
+   "sicher_nein": 98,
+   "kontext_nachbar": 43,
+   "kontext_ausserhalb": 25,
+   "eingriffe_urteil": 52,
+   "eingriffe_verlauf": 52,
+   "urteil_nicht_im_kern": [
+    200019
+   ],
+   "fehler": []
+  },
+  "r1c0": {
+   "kern": 26,
+   "segmente": 53,
+   "sicher_ja": 0,
+   "sicher_nein": 26,
+   "kontext_nachbar": 11,
+   "kontext_ausserhalb": 16,
+   "eingriffe_urteil": 26,
+   "eingriffe_verlauf": 38,
+   "urteil_nicht_im_kern": [],
+   "fehler": []
+  },
+  "r1c1": {
+   "kern": 144,
+   "segmente": 215,
+   "sicher_ja": 0,
+   "sicher_nein": 144,
+   "kontext_nachbar": 41,
+   "kontext_ausserhalb": 30,
+   "eingriffe_urteil": 10,
+   "eingriffe_verlauf": 10,
+   "urteil_nicht_im_kern": [],
+   "fehler": []
+  }
+ },
+ "fehler": 0
+}

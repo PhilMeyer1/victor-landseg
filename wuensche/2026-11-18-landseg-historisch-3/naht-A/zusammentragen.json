@@ -1,0 +1,36 @@
+{
+ "schema": "landseg-zusammentragen/1",
+ "manifest": "../../../daten/landseg/H0/manifest.json",
+ "einheiten": [
+  {
+   "teilkachel": "r0c0",
+   "labels": "../../../daten/landseg/H0/a-alles-frei/r0c0/labels.tif",
+   "segmente": "../../../daten/landseg/H0/a-alles-frei/r0c0/segmente.json",
+   "runde": 0,
+   "name": "a-r0c0"
+  },
+  {
+   "teilkachel": "r0c1",
+   "labels": "../../../daten/landseg/H0/a-alles-frei/r0c1/labels.tif",
+   "segmente": "../../../daten/landseg/H0/a-alles-frei/r0c1/segmente.json",
+   "runde": 0,
+   "name": "a-r0c1"
+  },
+  {
+   "teilkachel": "r1c0",
+   "labels": "../../../daten/landseg/H0/a-alles-frei/r1c0/labels.tif",
+   "segmente": "../../../daten/landseg/H0/a-alles-frei/r1c0/segmente.json",
+   "runde": 0,
+   "name": "a-r1c0"
+  },
+  {
+   "teilkachel": "r1c1",
+   "labels": "../../../daten/landseg/H0/a-alles-frei/r1c1/labels.tif",
+   "segmente": "../../../daten/landseg/H0/a-alles-frei/r1c1/segmente.json",
+   "runde": 0,
+   "name": "a-r1c1"
+  }
+ ],
+ "ziel": "probe",
+ "naht_bestaetigt": []
+}

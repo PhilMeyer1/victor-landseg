@@ -1,0 +1,1009 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-08",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c1:200318|r0c1:200335",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            535,
+            250
+          ],
+          "bis": [
+            535,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 21.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200318",
+          "teilkachel": "r0c1",
+          "id": 200318,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 268,
+          "flaeche_kern": 268,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkles Band nördlich des Dachs 302: Schatten. (x 78–110, y 298–327)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        },
+        {
+          "segment": "r0c1:200335",
+          "teilkachel": "r0c1",
+          "id": 200335,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 107,
+          "flaeche_kern": 107,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Kleine mittelgraue Insel im Schatten. (x 87–102, y 314–327)",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c1:200049|r0c1:200056",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            617,
+            250
+          ],
+          "bis": [
+            617,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200049",
+          "teilkachel": "r0c1",
+          "id": 200049,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.461
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 10321,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 10321,
+          "urteil": "sauber",
+          "was_ist_es": "Fahrbahn der Straße 49 (Nordwest–Südost) mit der Gabelung um den Anger, hell und gleichmäßig.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        },
+        {
+          "segment": "r0c1:200056",
+          "teilkachel": "r0c1",
+          "id": 200056,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.433,
+            "abstand": 0.082
+          },
+          "flaeche": 1610,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1610,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Heller Randstreifen längs der Nordostseite der Fahrbahn 49, oben mit dunklerem Band (Graben oder Bewuchs).",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 4,
+              "art": "sonstiges",
+              "text": "Oberer Teil x 115–150, y 215–250 enthält ein dunkleres Band zwischen Fahrbahn und Häusern; ohne klare Kante nicht geteilt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c1:200056|r0c1:200202",
+      "art": "viertel",
+      "bild": "paar_03.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            629,
+            250
+          ],
+          "bis": [
+            629,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 9.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200056",
+          "teilkachel": "r0c1",
+          "id": 200056,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.433,
+            "abstand": 0.082
+          },
+          "flaeche": 1610,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1610,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Heller Randstreifen längs der Nordostseite der Fahrbahn 49, oben mit dunklerem Band (Graben oder Bewuchs).",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 4,
+              "art": "sonstiges",
+              "text": "Oberer Teil x 115–150, y 215–250 enthält ein dunkleres Band zwischen Fahrbahn und Häusern; ohne klare Kante nicht geteilt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        },
+        {
+          "segment": "r0c1:200202",
+          "teilkachel": "r0c1",
+          "id": 200202,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 3047,
+          "flaeche_kern": 3047,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Große dunkle, fleckige Fläche am Südwestende der Grundstücke an der Straße 49: Gärten mit Schatten. (x 132–242, y 207–359)",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Garten",
+            "fein": "Garten, dunkel (Bäume oder Schatten)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c1:200197|r0c1:200230",
+      "art": "viertel",
+      "bild": "paar_04.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            850,
+            250
+          ],
+          "bis": [
+            850,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 17.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200197",
+          "teilkachel": "r0c1",
+          "id": 200197,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 4767,
+          "flaeche_kern": 4767,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkles Schattenband östlich des langen Dachstreifens 59 im Block südlich der Gasse. (x 372–485, y 216–334)",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        },
+        {
+          "segment": "r0c1:200230",
+          "teilkachel": "r0c1",
+          "id": 200230,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1056,
+          "flaeche_kern": 1056,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Fläche östlich des Schattens 12: Hof. (x 400–448, y 289–362)",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Hof oder Vorgarten",
+            "fein": "Hof oder Vorgarten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c1:200070|r0c1:200218",
+      "art": "viertel",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            890,
+            250
+          ],
+          "bis": [
+            890,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200070",
+          "teilkachel": "r0c1",
+          "id": 200070,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.164,
+            "abstand": 0.03
+          },
+          "flaeche": 109,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 109,
+          "urteil": "sauber",
+          "was_ist_es": "Kurzer heller Streifen am unteren Rand von v2 (x 440–456, y 304–322): Stück eines Dachstreifens.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Bebaut",
+            "mittel": "Gebäude",
+            "fein": "Langhaus, Dach Sonnenseite"
+          }
+        },
+        {
+          "segment": "r0c1:200218",
+          "teilkachel": "r0c1",
+          "id": 200218,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1753,
+          "flaeche_kern": 1753,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Große mittelgraue, fleckige Fläche südlich der Gasse vor dem Garten 58: Hof oder Garten. (x 411–509, y 256–319)",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Garten",
+            "fein": "Garten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c1:200068|r0c1:200365",
+      "art": "viertel",
+      "bild": "paar_06.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            970,
+            250
+          ],
+          "bis": [
+            970,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200068",
+          "teilkachel": "r0c1",
+          "id": 200068,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.221,
+            "abstand": 0.051
+          },
+          "flaeche": 193,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 193,
+          "urteil": "sauber",
+          "was_ist_es": "Heller Fleck am Südrand der Straße 51 vor einem Langhaus: Giebel oder Hofeinfahrt.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Bebaut",
+            "mittel": "Gebäude",
+            "fein": "Langhaus, Dach Sonnenseite"
+          }
+        },
+        {
+          "segment": "r0c1:200365",
+          "teilkachel": "r0c1",
+          "id": 200365,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 862,
+          "flaeche_kern": 862,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkles Schattenband rechts oben. (x 521–563, y 308–372)",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c1:200372|r0c1:200384",
+      "art": "viertel",
+      "bild": "paar_07.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            983,
+            250
+          ],
+          "bis": [
+            983,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200372",
+          "teilkachel": "r0c1",
+          "id": 200372,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 755,
+          "flaeche_kern": 755,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkles Schattenband rechts oben. (x 535–563, y 278–335)",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        },
+        {
+          "segment": "r0c1:200384",
+          "teilkachel": "r0c1",
+          "id": 200384,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 219,
+          "flaeche_kern": 219,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Kurzer heller Streifen am rechten Kernrand: Dach. (x 539–563, y 311–345)",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Bebaut",
+            "mittel": "Gebäude",
+            "fein": "Langhaus, Dach Sonnenseite"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c1:200081|r1c1:400046",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            522,
+            500
+          ],
+          "bis": [
+            522,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 13.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200081",
+          "teilkachel": "r0c1",
+          "id": 200081,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.477
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 4888,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 423,
+          "urteil": "sauber",
+          "was_ist_es": "Helle Fahrbahn der Straße 81 am linken unteren Kernrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        },
+        {
+          "segment": "r1c1:400046",
+          "teilkachel": "r1c1",
+          "id": 400046,
+          "klasse": "3.4",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.435,
+            "abstand": 0.126
+          },
+          "flaeche": 723,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 519,
+          "urteil": "sauber",
+          "was_ist_es": "Etwas dunklere Fläche in der Straßengabel neben dem dunklen Bereich 400054; Teil der Verkehrsfläche oder Grasinsel.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Platz",
+            "fein": "Anger/Platz"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c1:200126|r1c1:400046",
+      "art": "naht",
+      "bild": "paar_09.jpg",
+      "randpunkte": 6,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            523,
+            500
+          ],
+          "bis": [
+            528,
+            500
+          ],
+          "laenge": 6,
+          "kante_max": 14.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200126",
+          "teilkachel": "r0c1",
+          "id": 200126,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.619,
+            "abstand": 0.111
+          },
+          "flaeche": 152,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 22,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner heller Rest am Ostrand der Straße 81 am unteren Kernrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        },
+        {
+          "segment": "r1c1:400046",
+          "teilkachel": "r1c1",
+          "id": 400046,
+          "klasse": "3.4",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.435,
+            "abstand": 0.126
+          },
+          "flaeche": 723,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 519,
+          "urteil": "sauber",
+          "was_ist_es": "Etwas dunklere Fläche in der Straßengabel neben dem dunklen Bereich 400054; Teil der Verkehrsfläche oder Grasinsel.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Platz",
+            "fein": "Anger/Platz"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-08",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c1:200318|r0c1:200335",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200049|r0c1:200056",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200056|r0c1:200202",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200197|r0c1:200230",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200070|r0c1:200218",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200068|r0c1:200365",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200372|r0c1:200384",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200081|r1c1:400046",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200126|r1c1:400046",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

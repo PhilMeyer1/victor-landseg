@@ -1,0 +1,1023 @@
+{
+ "teilkachel": "r1c1",
+ "viertel": "v3",
+ "bearbeiter": "urt-b-r1c1-v3",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/H0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/H0_raster.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c1/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c1/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_roh.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/kontrast_1.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 400145,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Langes dunkles, fleckiges Band am Westrand der Dorfstraße: Baum-/Gebüschreihe mit Schatten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baumreihe/Hecke",
+    "fein": "Baumreihe/Hecke"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Vorstufe Schatten; körnige Kronenreihe (198/321).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400154,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Kleiner dunkler Fleck am Ostrand der Dorfstraße.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; dunkler Fleck (239/341).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400153,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Dunkelgrauer Saum zwischen Feld 400118 und der Gehölzreihe: Feldrain.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400155,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Graues Stück zwischen Gehölzreihe und Fahrbahn: Bankett.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 3,
+     "art": "klasse",
+     "text": "Vorstufe Straße; dunkler als die Fahrbahn, Randstreifen (226/350).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400162,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Dunkler Fleck am Westrand der Dorfstraße: Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 4,
+     "art": "klasse",
+     "text": "Vorstufe Straße; dunkler Gebüschfleck (234/372).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400168,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Dunkler Fleck am Westrand der Dorfstraße: Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 5,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; Gebüsch (235/392).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400164,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Graues Stück zwischen Gebüschen und Fahrbahn: Bankett.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 6,
+     "art": "klasse",
+     "text": "Vorstufe Straße; Randstreifen (241/378).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400148,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Die helle Dorfstraße am Westrand des Orts.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 7,
+     "art": "klasse",
+     "text": "Vorstufe Feldweg; Dorfstraße (253/394).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 400163,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Sehr dunkle kleine Fläche östlich der Straße neben 400257: Schatten oder Baumkrone.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 8,
+     "art": "klasse",
+     "text": "Vorstufe Nebengebäude; sehr dunkel, kein Dach (267/376).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400170,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Graue Fläche zwischen Straße und Häusern: Vorplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hof/Freifläche",
+    "fein": "Vorplatz"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 9,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; Vorplatz (280/398).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400165,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Kleiner dunkler Fleck östlich der Straße.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 10,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; dunkel (289/385).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400173,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dunkelgrauer Fleck am Westrand der Dorfstraße: Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 11,
+     "art": "klasse",
+     "text": "Vorstufe Wiese; Gebüsch (238/401).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400175,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Graues Stück zwischen Gebüschen und Fahrbahn: Bankett.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 12,
+     "art": "klasse",
+     "text": "Vorstufe Acker; Randstreifen (245/413).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400180,
+   "klasse_heute": "3.1",
+   "was_ist_es": "Dunkler Fleck am Westrand der Dorfstraße: Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 13,
+     "art": "klasse",
+     "text": "Vorstufe Wiese; Gebüsch (250/424).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400178,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Hellgrauer Randstreifen der Dorfstraße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Straßenrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 400181,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Dunkle Flecken am Westrand der Dorfstraße: Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 14,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; Gebüsch (265/445).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400177,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Hellgraue Fläche am Ostrand der Straße vor den Häusern.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hof/Freifläche",
+    "fein": "Vorplatz"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400182,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Sehr helle Fläche am Ostrand der Straße vor den Häusern: heller Vorplatz oder kleines helles Dach.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hof/Freifläche",
+    "fein": "Vorplatz"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400171,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgraue Dachfläche östlich der Straße mit hellem Westteil und Schatten an der Ostseite.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Gebäude",
+    "fein": "Gebäude mit mittelgrauem Dach"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah2_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400118,
+   "klasse_heute": "2.2",
+   "was_ist_es": "Großes Feld westlich der Dorfstraße mit schrägen Bewirtschaftungsstreifen (Streifenflur) und einem schwachen dunklen Rechteckumriss.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Acker",
+    "fein": "Acker"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400186,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Dunkelgrauer Fleck am Feldrand an der Straße: Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 15,
+     "art": "klasse",
+     "text": "Vorstufe Acker; Gebüsch (258/455).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400189,
+   "klasse_heute": "4.2.4",
+   "was_ist_es": "Dunkle Flecken am Westrand der Straße: Gebüsch.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400197,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Graues Stück am Feldrand an der Straße: Rain.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400200,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Dunkler runder Fleck am Straßenrand: Baum/Gebüsch.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 16,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; dunkle Krone (282/498).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400187,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Helle Straßenfläche an der Einmündung der Quergasse 400192.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400190,
+   "klasse_heute": "6.6",
+   "was_ist_es": "Kleines helles Stück der Straße an der Einmündung.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 400202,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Stück der dunklen Feldgrenze am linken Rand (3 px im Kern).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400209,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Stück der dunklen Feldgrenze (Rain/Graben) am linken Kernrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 17,
+     "art": "klasse",
+     "text": "Vorstufe Sportplatz; Feldrain (66/524).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400176,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Feld westlich der Feldgrenze, fast ganz im Kontextrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Acker",
+    "fein": "Acker"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400211,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Stück der Feldgrenze am linken Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400208,
+   "klasse_heute": "6.1",
+   "was_ist_es": "Graues Stück am Feldrand an der Straße.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 18,
+     "art": "klasse",
+     "text": "Vorstufe Sandstelle; Feldrain (281/522).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400203,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Hellgrauer Streifen am Straßenrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Straßenrand"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 19,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; Straßenrand (291/505).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400214,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Sehr dunkler Fleck am Westrand der Straße: Baumkrone mit Schatten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Gehölz",
+    "mittel": "Baum/Gebüsch",
+    "fein": "Baum/Gebüsch"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 20,
+     "art": "klasse",
+     "text": "Vorstufe Schatten; runde Krone (299/546).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400207,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Helle Straße nach Süden mit Randanteil.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400215,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Stück der Feldgrenze am linken Kernrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v3/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400210,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Grauer, teils dunkler Saum am Feldrand an der Straße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Landwirtschaft",
+    "mittel": "Feldrain",
+    "fein": "Rain/Wegrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 400216,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Graue Fläche am Südrand östlich der Straße, meist im Kontextrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Siedlung",
+    "fein": "Siedlung"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 21,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; Hof-/Hausfläche (310/560).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v3/nah4_nummern.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 400118,
+   "seite": "links",
+   "text": "Feld reicht über die linke Kerngrenze nach r1c0 und nach oben in v1; dort dieselbe Klasse Acker."
+  },
+  {
+   "id": 400176,
+   "seite": "links",
+   "text": "Feld westlich der Feldgrenze liegt fast ganz in r1c0; Klasse Acker dort bestätigen."
+  },
+  {
+   "id": 400216,
+   "seite": "unten",
+   "text": "Reicht über die untere Kerngrenze (Rand des Ausschnitts); nur 88 px im Kern."
+  }
+ ],
+ "unsicher": [
+  "400196 (v4): enthält das kleine helle Dach an der Einmündung (305/487), das an 400187 grenzt.",
+  "400257 (v1-Liste, aus 400006): dunkle Fläche neben 400163, gemeinsam Schatten oder Baumgruppe klären.",
+  "400193, 400198 (Kontextrand links): weitere Stücke derselben Feldgrenze wie 400202/400209/400211/400215."
+ ],
+ "nicht_geprueft": [
+  "nah1 und nah3 (vorbereitet, Feldinneres) nicht eigens angesehen; das Feld ist in kontrast_1 ganz beurteilt.",
+  "uebersicht_vorschlag, uebersicht_maengel, uebersicht_kontrast, uebersicht_gitter nicht angesehen."
+ ],
+ "offen": [
+  "400118: Streifenflur mit hellen und dunklen schrägen Streifen; ob es mehrere Felder (Besitzstreifen) sind, ist ohne klare Kante nicht zu entscheiden, daher nicht geteilt. Der schwache dunkle Rechteckumriss (etwa 135-175/400-440) und kurze dunkle Striche (etwa 200-225/530-550) sind nicht gedeutet.",
+  "Acker gegen Grünland für 400118 und 400176 nur im Farbbild sicher.",
+  "Gebüschflecken am Westrand der Dorfstraße (400162, 400168, 400173, 400180, 400181, 400186, 400189, 400200, 400214): einzelne Sträucher oder Bäume mit Schatten, Größe im Schwarz-Weiß nicht sicher."
+ ],
+ "eingriffe": [],
+ "klassen_frei": [
+  {
+   "name": "Gehölz",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Dunkle, körnig-wolkige Kronen, oft mit Schatten daneben."
+  },
+  {
+   "name": "Landwirtschaft",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Große, gleichmäßig mittelgraue Flächen außerhalb des Orts, teils mit Bearbeitungsstreifen."
+  },
+  {
+   "name": "Schatten",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Sehr dunkle, glatte Flächen neben hohen Objekten; Untergrund nicht erkennbar."
+  },
+  {
+   "name": "Siedlung",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Bebaute Flächen und Hofflächen im Ort: Dächer, Höfe, Gärten in kleinteiligem Muster."
+  },
+  {
+   "name": "Verkehr",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Helle, lange, gleichmäßige Bänder oder Flächen ohne Dachstruktur."
+  },
+  {
+   "name": "Acker",
+   "ebene": "mittel",
+   "eltern": "Landwirtschaft",
+   "merkmal": "Große Fläche mit parallelen Bearbeitungsstreifen; Acker oder Grünland ist im Schwarz-Weiß nur über die Streifen zu vermuten."
+  },
+  {
+   "name": "Baum/Gebüsch",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "Einzelne dunkle, runde Krone oder Gebüschfleck."
+  },
+  {
+   "name": "Baumreihe/Hecke",
+   "ebene": "mittel",
+   "eltern": "Gehölz",
+   "merkmal": "Kette dunkler Kronen entlang eines Wegs oder Feldrands."
+  },
+  {
+   "name": "Feldrain",
+   "ebene": "mittel",
+   "eltern": "Landwirtschaft",
+   "merkmal": "Schmaler Saum am Feld- oder Wegrand, anderer Grauton als das Feld."
+  },
+  {
+   "name": "Gebäude",
+   "ebene": "mittel",
+   "eltern": "Siedlung",
+   "merkmal": "Rechteckige Fläche mit scharfen Kanten, oft mit Schlagschatten an einer Seite."
+  },
+  {
+   "name": "Hof/Freifläche",
+   "ebene": "mittel",
+   "eltern": "Siedlung",
+   "merkmal": "Unbebaute helle bis mittelgraue Fläche zwischen Gebäuden oder an der Straße."
+  },
+  {
+   "name": "Schlagschatten",
+   "ebene": "mittel",
+   "eltern": "Schatten",
+   "merkmal": "Sehr dunkle Fläche an der Schattenseite von Gebäuden oder Bäumen."
+  },
+  {
+   "name": "Siedlung",
+   "ebene": "mittel",
+   "eltern": "Siedlung",
+   "merkmal": "Fläche im Ort, Art nicht bestimmbar."
+  },
+  {
+   "name": "Straße",
+   "ebene": "mittel",
+   "eltern": "Verkehr",
+   "merkmal": "Breites helles Band, durchgehend, verbindet Ortsteile."
+  },
+  {
+   "name": "Dorfstraße",
+   "ebene": "fein",
+   "eltern": "Straße",
+   "merkmal": "Helle Straße im Ort zwischen den Häuserzeilen."
+  },
+  {
+   "name": "Gebäude mit mittelgrauem Dach",
+   "ebene": "fein",
+   "eltern": "Gebäude",
+   "merkmal": "Mittelgraue Rechteckfläche mit scharfen Kanten und Schatten."
+  },
+  {
+   "name": "Rain/Wegrand",
+   "ebene": "fein",
+   "eltern": "Feldrain",
+   "merkmal": "Schmaler Saum zwischen Weg und Feld."
+  },
+  {
+   "name": "Straßenrand",
+   "ebene": "fein",
+   "eltern": "Straße",
+   "merkmal": "Schmaler Saum am Straßenrand, etwas dunkler als die Fahrbahn."
+  },
+  {
+   "name": "Vorplatz",
+   "ebene": "fein",
+   "eltern": "Hof/Freifläche",
+   "merkmal": "Helle Fläche zwischen Straße und Hauswand."
+  }
+ ]
+}

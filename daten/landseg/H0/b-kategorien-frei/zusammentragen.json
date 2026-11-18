@@ -1,0 +1,136 @@
+{
+ "schema": "landseg-zusammentragen/1",
+ "manifest": "../manifest.json",
+ "einheiten": [
+  {
+   "teilkachel": "r0c0",
+   "labels": "r0c0/labels.tif",
+   "segmente": "r0c0/segmente.json",
+   "runde": 0,
+   "name": "b-r0c0"
+  },
+  {
+   "teilkachel": "r0c1",
+   "labels": "r0c1/labels.tif",
+   "segmente": "r0c1/segmente.json",
+   "runde": 0,
+   "name": "b-r0c1"
+  },
+  {
+   "teilkachel": "r1c0",
+   "labels": "r1c0/labels.tif",
+   "segmente": "r1c0/segmente.json",
+   "runde": 0,
+   "name": "b-r1c0"
+  },
+  {
+   "teilkachel": "r1c1",
+   "labels": "r1c1/labels.tif",
+   "segmente": "r1c1/segmente.json",
+   "runde": 0,
+   "name": "b-r1c1"
+  }
+ ],
+ "ziel": "zusammen",
+ "naht_bestaetigt": [
+  {
+   "naht": "r0c0|r0c1",
+   "ids": [
+    100111,
+    200042
+   ],
+   "grund": "Die Ecke der dunklen Hoffläche stößt an das helle Straßenband; die Kante kreuzt die Naht schräg und ist im Scan um einen Bildpunkt verwischt.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r0c0|r0c1",
+   "ids": [
+    100215,
+    200290
+   ],
+   "grund": "Der Unterrand des dunklen Gartens kreuzt die Naht neben dem hellen Hofstreifen; echte, im Scan weiche Kante.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200333,
+    400039
+   ],
+   "grund": "Der linke Rand des schwarzen Schattenblocks kreuzt die Naht senkrecht; daneben liegt die mittelgraue Fläche, die Kante ist nur weich.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200333,
+    400006
+   ],
+   "grund": "Das rechte Ende des Schattenblocks stößt schräg an das helle Dach; Übergang dunkel–hell kreuzt die Naht, im Scan verwischt.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200121,
+    400006
+   ],
+   "grund": "Das linke Ende des hellen Langhausdachs stößt an den dunklen Schatten; die Dachkante kreuzt die Naht schräg und weich.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200121,
+    400268
+   ],
+   "grund": "Die Unterkante des hellen Langhausdachs liegt an dieser Stelle auf der Naht; der Bildpunkt darunter ist schon Übergangsgrau zum Hof.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200111,
+    400042
+   ],
+   "grund": "Die helle Hoffläche stößt an den dunklen schrägen Streifen; deren Kante kreuzt die Naht und ist im Scan um einen Bildpunkt verwischt.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200124,
+    400029
+   ],
+   "grund": "Der Unterrand des Schattens liegt an dieser Stelle auf der Naht, darunter beginnt die mittelgraue Straße; weiche, aber echte Kante.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r1c0|r1c1",
+   "ids": [
+    300010,
+    400072
+   ],
+   "grund": "Der Unterrand der hellen Straße kreuzt die Naht schräg zum dunkleren Wegrain; der Übergang ist im Scan drei Bildpunkte breit verwischt.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r1c0|r1c1",
+   "ids": [
+    300011,
+    400110
+   ],
+   "grund": "Der Oberrand des hellen Feldwegs kreuzt die Naht schräg zum dunklen Feld; echte Kante, an der Naht verwischt.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  },
+  {
+   "naht": "r1c0|r1c1",
+   "ids": [
+    300036,
+    400118
+   ],
+   "grund": "Der Unterrand des hellen Feldwegs kreuzt die Naht schräg zum Feld; echte Kante, an der Naht verwischt.",
+   "quelle": "naht-B Runde 1, agent:naht-B:20261118i"
+  }
+ ]
+}

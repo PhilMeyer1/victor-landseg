@@ -1,0 +1,92 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "A",
+ "buendel": "A-12",
+ "bearbeiter": "agent:einigung-A-12:20261118i-r1",
+ "paare": [
+  {
+   "paar": "r1c0:300006|r1c0:300034",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Mittelgraues Feld gegen schmale helle Linie mit dunklen Rändern (Weg oder Rain), ein eigenes Linienobjekt am Feldrand."
+  },
+  {
+   "paar": "r1c0:300007|r1c0:300030",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunkleres Feld gegen den deutlich helleren, gleichmäßig breiten Streifen; der Helligkeitsumschlag ist im Bild klar."
+  },
+  {
+   "paar": "r1c0:300006|r1c1:400187",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunkles Feld gegen einen schmalen hellen Saum am Rand der hellen Straße; nur eine Ecke berührt sich, verschiedene Flächen."
+  },
+  {
+   "paar": "r1c0:300006|r1c1:400360",
+   "entscheidung": "gleich",
+   "klasse": "5.1.2",
+   "grund": "Dasselbe mittelgraue Feld mit schwacher Streifung läuft ohne Kante über die Naht, beidseitig zwischen Straße und hellem Streifen."
+  },
+  {
+   "paar": "r1c0:300006|r1c1:400488",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunkles Feld gegen ein winziges Stück im hellen Straßen- bzw. Streifenrand; nur eine Ecke berührt sich, verschiedene Flächen."
+  },
+  {
+   "paar": "r1c0:300030|r1c1:400491",
+   "entscheidung": "gleich",
+   "klasse": "3.2",
+   "grund": "Derselbe etwa 10 m breite helle Streifen läuft ohne Kante über die Naht; er beginnt an der Dorfstraße, ist gleichmäßig breit, trägt dunkle Kleinobjekte und endet am Feldweg im Westen, also ein Weg bzw. eine Trift."
+  },
+  {
+   "paar": "r1c0:300030|r1c1:400492",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Heller Streifen gegen den schmalen mittelgrauen Saum an seinem Südrand; Saum deutlich dunkler, Berührung nur an einem Punkt."
+  },
+  {
+   "paar": "r1c0:300045|r1c1:400489",
+   "entscheidung": "gleich",
+   "klasse": "0.3",
+   "grund": "Dasselbe dunkle längliche Objekt (rund 12 m lang, 1,5 m breit) am Südrand des hellen Streifens reicht über die Naht; Art (Fuhrwerk, Haufen oder Grabenstück) auf dem Scan nicht bestimmbar."
+  },
+  {
+   "paar": "r1c0:300045|r1c1:400832",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das dunkle Kleinobjekt berührt den mittelgrauen Acker nur an einem Punkt; Objekt deutlich dunkler als das Feld."
+  },
+  {
+   "paar": "r1c0:300007|r1c1:400832",
+   "entscheidung": "gleich",
+   "klasse": "5.1",
+   "grund": "Dasselbe Feld östlich des Rainwegs, die schrägen Streifen der Streifenflur laufen ohne Kante über die Naht; gemeinsame Klasse der Kette mit 300004, weil 400832 Streifen verschiedener Grautöne umfasst."
+  },
+  {
+   "paar": "r1c0:300025|r1c1:400832",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Heller Fleck offenen Bodens gegen den übrigen Acker; der helle Fleck setzt sich jenseits der Naht fort, ist dort aber nicht eigenes Segment, die Klassen 5.1.3 und 5.1 widersprechen sich nicht."
+  },
+  {
+   "paar": "r1c0:300034|r1c1:400832",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Schmale helle Linie mit dunklen Rändern (Weg oder Rain) gegen den Acker; die Linie quert die Naht bei y≈960 und läuft in r1c1 weiter, wo sie im Acker-Segment liegt."
+  },
+  {
+   "paar": "r1c0:300004|r1c1:400832",
+   "entscheidung": "gleich",
+   "klasse": "5.1",
+   "grund": "Dasselbe Feld westlich des Rainwegs mit fleckigem Mittelgrau reicht ohne Kante über die Naht; Kette mit 300007 über 400832, darum gemeinsam 5.1."
+  }
+ ],
+ "offen": [
+  "Paar 6: Klasse des hellen breiten Streifens (Weg/Trift 3.2 gegen hellen Brach- oder Stoppelstreifen) nur aus Form und Lage geschlossen; ein Farbbild oder ein anderer Jahrgang würde es klären.",
+  "r1c1:400832 enthält ohne eigenes Segment den hellen Fleck bei x≈501–511, y≈795–806 (Fortsetzung von r1c0:300025) und das Stück der Weg- bzw. Rainlinie von r1c0:300034 zwischen x≈500 und 512, y≈960–1000 (Grenzfrage, nicht Klasse).",
+  "r1c1:400187 und r1c1:400488 (Grauregel ‚Gebäude‘) liegen im hellen Straßen- bzw. Streifenrand, nicht auf einem Dach; ihre Klasse ist nicht Gegenstand dieser Paare."
+ ],
+ "nicht_geprueft": []
+}

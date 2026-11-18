@@ -1,0 +1,200 @@
+{
+ "schema": "landseg-kategorien/1",
+ "teilkachel": "r0c0",
+ "fassung": "A (Alles frei)",
+ "hinweis": "Eigene Liste für den Schwarz-Weiß-Scan von 1968; Farben nur für die Darstellung.",
+ "classes": [
+  {
+   "code": "1",
+   "name": "Siedlung / Hofstellen",
+   "parent": null,
+   "level": 1,
+   "color": "#c0392b",
+   "image_cue": "Häuser, Höfe und Gärten im Ort: kleinteilige Wechsel von hell und dunkel, gerade Kanten"
+  },
+  {
+   "code": "1.1",
+   "name": "Gebäude",
+   "parent": "1",
+   "level": 2,
+   "color": "#e74c3c",
+   "image_cue": "Dachfläche mit geraden Kanten; Satteldach als heller und dunkler Streifen nebeneinander, Schlagschatten an der Nordostseite"
+  },
+  {
+   "code": "1.1.1",
+   "name": "Hauptgebäude (langes Haus eines Streckhofs)",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#ff6f61",
+   "image_cue": "langer, schmaler Baukörper quer zur Straße oder entlang der Parzelle, durchgehende Dachkante"
+  },
+  {
+   "code": "1.1.2",
+   "name": "Nebengebäude / Schuppen",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#ff9e80",
+   "image_cue": "kleiner, freistehender heller Baukörper mit Schatten"
+  },
+  {
+   "code": "1.2",
+   "name": "Hofraum",
+   "parent": "1",
+   "level": 2,
+   "color": "#f5b7b1",
+   "image_cue": "offene, mittelgraue Fläche zwischen Gebäuden einer Hofstelle"
+  },
+  {
+   "code": "1.3",
+   "name": "Hofstelle ungetrennt (Dach oder Hof)",
+   "parent": "1",
+   "level": 2,
+   "color": "#d98880",
+   "image_cue": "Parzellenstreifen zwischen dunklen Grenzlinien, Dach und Hof auf dem Scan nicht trennbar"
+  },
+  {
+   "code": "1.4",
+   "name": "Garten / Grünfläche im Ort",
+   "parent": "1",
+   "level": 2,
+   "color": "#a9cce3",
+   "image_cue": "gleichmäßig dunkelgraue, feinkörnige Fläche zwischen Straßen, ohne Bauten"
+  },
+  {
+   "code": "1.5",
+   "name": "Mauer / Einfriedung",
+   "parent": "1",
+   "level": 2,
+   "color": "#7b241c",
+   "image_cue": "schmale, durchgehende dunkle Linie an Parzellengrenzen (Mauer, Zaun oder Hecke samt Schatten)"
+  },
+  {
+   "code": "2",
+   "name": "Verkehrsfläche",
+   "parent": null,
+   "level": 1,
+   "color": "#7f8c8d",
+   "image_cue": "helle, lange Bänder mit parallelen Kanten"
+  },
+  {
+   "code": "2.1",
+   "name": "Straße (Fahrbahn)",
+   "parent": "2",
+   "level": 2,
+   "color": "#bdc3c7",
+   "image_cue": "breites, sehr helles Band mit gleichbleibender Breite"
+  },
+  {
+   "code": "2.2",
+   "name": "Weg / Gasse",
+   "parent": "2",
+   "level": 2,
+   "color": "#d5dbdb",
+   "image_cue": "schmales helles Band, oft weicher Rand"
+  },
+  {
+   "code": "2.3",
+   "name": "Straßenrand (Bankett, Gehweg, Vorplatz)",
+   "parent": "2",
+   "level": 2,
+   "color": "#aab7b8",
+   "image_cue": "schmaler mittelgrauer Streifen parallel zur Fahrbahn"
+  },
+  {
+   "code": "3",
+   "name": "Landwirtschaftliche Fläche",
+   "parent": null,
+   "level": 1,
+   "color": "#b7950b",
+   "image_cue": "große gleichmäßige Flächen außerhalb des Orts, mit Bearbeitungsstreifen"
+  },
+  {
+   "code": "3.1",
+   "name": "Acker (Streifenparzelle)",
+   "parent": "3",
+   "level": 2,
+   "color": "#f4d03f",
+   "image_cue": "lange, parallele Streifen gleicher Richtung, feine Längsstruktur; Grenzen als hellere Raine"
+  },
+  {
+   "code": "4",
+   "name": "Gehölz",
+   "parent": null,
+   "level": 1,
+   "color": "#1e8449",
+   "image_cue": "dunkle, runde oder gereihte Flecken mit weichem Rand und Schatten"
+  },
+  {
+   "code": "4.1",
+   "name": "Einzelbaum / Busch",
+   "parent": "4",
+   "level": 2,
+   "color": "#27ae60",
+   "image_cue": "einzelner dunkler runder Fleck, Schatten daneben"
+  },
+  {
+   "code": "4.2",
+   "name": "Baumreihe / Hecke",
+   "parent": "4",
+   "level": 2,
+   "color": "#52be80",
+   "image_cue": "Reihe dunkler Flecken entlang einer Straße oder Feldgrenze"
+  },
+  {
+   "code": "5",
+   "name": "Offene Fläche (unbebaut, nicht Acker)",
+   "parent": null,
+   "level": 1,
+   "color": "#8e44ad",
+   "image_cue": "unregelmäßig helle Flächen ohne Streifen und ohne Bauten"
+  },
+  {
+   "code": "5.1",
+   "name": "Anger / Dorfplatz / Freifläche",
+   "parent": "5",
+   "level": 2,
+   "color": "#c39bd3",
+   "image_cue": "offene, fleckig helle Fläche im Ort mit Trittspuren und Wegen"
+  },
+  {
+   "code": "5.2",
+   "name": "Brache / Weide am Ortsrand",
+   "parent": "5",
+   "level": 2,
+   "color": "#d7bde2",
+   "image_cue": "helle, fleckige Fläche mit einzelnen Büschen am Ortsrand"
+  },
+  {
+   "code": "9",
+   "name": "Unklar",
+   "parent": null,
+   "level": 1,
+   "color": "#2c3e50",
+   "image_cue": "Fläche, deren Art auf dem Scan nicht erkennbar ist"
+  },
+  {
+   "code": "9.1",
+   "name": "Schatten (Untergrund nicht erkennbar)",
+   "parent": "9",
+   "level": 2,
+   "color": "#34495e",
+   "image_cue": "tiefschwarze Fläche an der Nordostseite eines Baukörpers oder Baums"
+  },
+  {
+   "code": "9.2",
+   "name": "dunkle Fläche unklar (Baumgruppe oder dunkles Dach)",
+   "parent": "9",
+   "level": 2,
+   "color": "#566573",
+   "image_cue": "dunkler Block ohne erkennbare Dach- oder Kronenform"
+  },
+  {
+   "code": "9.3",
+   "name": "helles Kleinobjekt unklar (Schuppen, Haufen)",
+   "parent": "9",
+   "level": 2,
+   "color": "#f7dc6f",
+   "image_cue": "kleiner sehr heller Fleck ohne erkennbare Form"
+  }
+ ]
+}

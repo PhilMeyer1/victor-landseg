@@ -1,0 +1,144 @@
+{
+ "schema": "landseg-kategorien/1",
+ "teilkachel": "r0c1",
+ "fassung": "A alles frei",
+ "hinweis": "Eigene Liste für einen Schwarz-Weiß-Scan von 1968 (0,45 m je Bildpunkt), Ortskern mit Streckhöfen. Gestuft: Ebene 1 grob, Ebene 2 Art, Ebene 3 nur wo die Form es trägt.",
+ "classes": [
+  {
+   "code": "1",
+   "name": "Siedlung, bebaut oder befestigt",
+   "parent": null,
+   "level": 1,
+   "color": "#bd2835",
+   "image_cue": "Dächer, Straßen, Höfe: scharfe gerade Kanten, glatte helle oder durch Schatten begrenzte Flächen"
+  },
+  {
+   "code": "1.1",
+   "name": "Gebäude (Dachfläche)",
+   "parent": "1",
+   "level": 2,
+   "color": "#eb21ed",
+   "image_cue": "geschlossene Fläche mit geraden Kanten, auf einer Seite Schlagschatten; gleichmäßiger Grauton"
+  },
+  {
+   "code": "1.1.1",
+   "name": "Längsbau eines Streckhofs (heller Dachstreifen)",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#e61382",
+   "image_cue": "heller, langer schmaler Streifen quer zur Straße, Giebel an der Straße, parallel zu den Nachbarn; daneben dunkler Streifen (Schattenseite)"
+  },
+  {
+   "code": "1.1.2",
+   "name": "Nebengebäude, Scheune, Querbau",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#d370f3",
+   "image_cue": "kürzerer heller Block am Ende oder quer zum Grundstück, mit eigenem Schatten"
+  },
+  {
+   "code": "1.1.3",
+   "name": "Großbau / Halle",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#ff8c00",
+   "image_cue": "großes, breites Dach deutlich über Hausbreite, einheitlich hell"
+  },
+  {
+   "code": "1.2",
+   "name": "Verkehrsfläche",
+   "parent": "1",
+   "level": 2,
+   "color": "#f584cd",
+   "image_cue": "zusammenhängendes helles Band ohne Schatten in der Fläche, verbindet Grundstücke"
+  },
+  {
+   "code": "1.2.1",
+   "name": "Straße (Fahrbahn mit Rand)",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#f0e68c",
+   "image_cue": "breites (über 10 m) helles, glattes Band zwischen den Häuserzeilen; Belag auf SW nicht erkennbar"
+  },
+  {
+   "code": "1.2.2",
+   "name": "Gasse, Weg, Hintausweg",
+   "parent": "1.2",
+   "level": 3,
+   "color": "#d4aee0",
+   "image_cue": "schmales (unter 6 m) mittel- bis hellgraues Band hinter oder zwischen Grundstücken"
+  },
+  {
+   "code": "1.3",
+   "name": "Hof- oder Freifläche im Grundstück",
+   "parent": "1",
+   "level": 2,
+   "color": "#3aa0ff",
+   "image_cue": "mittelhelle Fläche zwischen Dächern ohne Dachform; Belag (Pflaster, Erde, Rasen) auf SW nicht trennbar"
+  },
+  {
+   "code": "2",
+   "name": "Grün- und Gehölzfläche im Ort",
+   "parent": null,
+   "level": 1,
+   "color": "#4caf50",
+   "image_cue": "dunklerer, weicher Grauton mit Körnung, unscharfe Ränder"
+  },
+  {
+   "code": "2.1",
+   "name": "Garten / Grasland im Grundstück",
+   "parent": "2",
+   "level": 2,
+   "color": "#3de723",
+   "image_cue": "dunkelgraue, gleichmäßige oder fein gekörnte Fläche am rückwärtigen Ende der Grundstücke"
+  },
+  {
+   "code": "2.2",
+   "name": "Gehölz",
+   "parent": "2",
+   "level": 2,
+   "color": "#1d7239",
+   "image_cue": "dunkle, wolkig-körnige Fläche mit rundlichen Rändern und Schatten"
+  },
+  {
+   "code": "2.2.1",
+   "name": "Baum / Baumgruppe",
+   "parent": "2.2",
+   "level": 3,
+   "color": "#15bc58",
+   "image_cue": "rundliche dunkle Krone mit hellerem Rand und Schlagschatten"
+  },
+  {
+   "code": "2.3",
+   "name": "Anger / Platzgrün",
+   "parent": "2",
+   "level": 2,
+   "color": "#a1df19",
+   "image_cue": "mittelgraue Fläche zwischen Straßenästen, ohne Dächer"
+  },
+  {
+   "code": "2.4",
+   "name": "Gartenland mit Reihen (Beete, Rebzeilen)",
+   "parent": "2",
+   "level": 2,
+   "color": "#9b9b27",
+   "image_cue": "dunkle Fläche mit feinen parallelen Streifen und geradem Rand, ohne Schlagschatten"
+  },
+  {
+   "code": "9",
+   "name": "Nicht bestimmbar",
+   "parent": null,
+   "level": 1,
+   "color": "#808080",
+   "image_cue": "Bildinhalt reicht für keine Klasse"
+  },
+  {
+   "code": "9.1",
+   "name": "Schatten (Schlagschatten oder Schattenseite eines Dachs)",
+   "parent": "9",
+   "level": 2,
+   "color": "#202060",
+   "image_cue": "fast schwarze Fläche neben hellen Dachstreifen; ob Dach im Eigenschatten oder Boden im Schlagschatten, ist auf SW nicht zu trennen"
+  }
+ ]
+}

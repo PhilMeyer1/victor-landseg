@@ -1,0 +1,1545 @@
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\r0c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\r0c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\kategorien-a.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r0c0.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 134, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\r0c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\r0c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\kategorien-a.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r0c1.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 274, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\r1c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\r1c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\kategorien-a.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r1c0.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 69, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\r1c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\r1c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\kategorien-a.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r1c1.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 423, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ zusammentragen --datei C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\zusammentragen.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\a-alles-frei\kategorien-a.json
+Zusammengetragen: 4 Teilkacheln (r0c0 Runde 0, r0c1 Runde 0, r1c0 Runde 0, r1c1 Runde 0) -> C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/a-alles-frei/zusammen
+Umbenannt: 0 neue IDs, Klassenkonflikte: 0
+Nähte: 4 Kerngrenzen, 2000 Positionen, Verstöße: 308, bestätigt: 0
+- Naht r0c0|r0c1: Segmente 100034 | 200055 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 0 bis x 500, y 0
+- Naht r0c0|r0c1: Segmente 100034 | 200208 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 2 bis x 500, y 2
+- Naht r0c0|r0c1: Segmente 100034 | 200208 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 10 bis x 500, y 11
+- Naht r0c0|r0c1: Segmente 100130 | 200208 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 17 bis x 500, y 17
+- Naht r0c0|r0c1: Segmente 100130 | 200208 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 20 bis x 500, y 20
+- Naht r0c0|r0c1: Segmente 100130 | 200208 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 22 bis x 500, y 25
+- Naht r0c0|r0c1: Segmente 100130 | 200208 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 30 bis x 500, y 30
+- Naht r0c0|r0c1: Segmente 100044 | 200208 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 31 bis x 500, y 31
+- Naht r0c0|r0c1: Segmente 100044 | 200208 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 38 bis x 500, y 38
+- Naht r0c0|r0c1: Segmente 100044 | 200208 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 42 bis x 500, y 42
+- Naht r0c0|r0c1: Segmente 100044 | 200208 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 47 bis x 500, y 48
+- Naht r0c0|r0c1: Segmente 100043 | 200208 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 52 bis x 500, y 52
+- Naht r0c0|r0c1: Segmente 100057 | 200071 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 56 bis x 500, y 66
+- Naht r0c0|r0c1: Segmente 100057 | 200071 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 68 bis x 500, y 68
+- Naht r0c0|r0c1: Segmente 100057 | 200071 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 70 bis x 500, y 80
+- Naht r0c0|r0c1: Segmente 100057 | 200071 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 83 bis x 500, y 88
+- Naht r0c0|r0c1: Segmente 100058 | 200071 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 89 bis x 500, y 89
+- Naht r0c0|r0c1: Segmente 100058 | 200087 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 90 bis x 500, y 90
+- Naht r0c0|r0c1: Segmente 100058 | 200082 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 92 bis x 500, y 93
+- Naht r0c0|r0c1: Segmente 100058 | 200082 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 95 bis x 500, y 96
+- Naht r0c0|r0c1: Segmente 100049 | 200082 grenzen ohne Bildkante aneinander, 23 Bildpunkte von x 500, y 97 bis x 500, y 119
+- Naht r0c0|r0c1: Segmente 100049 | 200274 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 120 bis x 500, y 120
+- Naht r0c0|r0c1: Segmente 100067 | 200274 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 121 bis x 500, y 122
+- Naht r0c0|r0c1: Segmente 100076 | 200092 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 129 bis x 500, y 129
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 130 bis x 500, y 131
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 133 bis x 500, y 136
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 138 bis x 500, y 138
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 140 bis x 500, y 140
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 144 bis x 500, y 144
+- Naht r0c0|r0c1: Segmente 100131 | 200105 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 145 bis x 500, y 145
+- Naht r0c0|r0c1: Segmente 100131 | 200105 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 148 bis x 500, y 149
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 150 bis x 500, y 157
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 159 bis x 500, y 162
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 165 bis x 500, y 165
+- Naht r0c0|r0c1: Segmente 100076 | 200105 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 167 bis x 500, y 168
+- Naht r0c0|r0c1: Segmente 100082 | 200114 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 169 bis x 500, y 174
+- Naht r0c0|r0c1: Segmente 100082 | 200114 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 177 bis x 500, y 177
+- Naht r0c0|r0c1: Segmente 100082 | 200114 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 181 bis x 500, y 181
+- Naht r0c0|r0c1: Segmente 100082 | 200114 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 184 bis x 500, y 184
+- Naht r0c0|r0c1: Segmente 100082 | 200114 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 186 bis x 500, y 187
+- Naht r0c0|r0c1: Segmente 100082 | 200114 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 191 bis x 500, y 192
+- Naht r0c0|r0c1: Segmente 100082 | 200114 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 194 bis x 500, y 195
+- Naht r0c0|r0c1: Segmente 100081 | 200100 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 204 bis x 500, y 209
+- Naht r0c0|r0c1: Segmente 100081 | 200100 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 211 bis x 500, y 213
+- Naht r0c0|r0c1: Segmente 100081 | 200100 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 216 bis x 500, y 216
+- Naht r0c0|r0c1: Segmente 100081 | 200100 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 221 bis x 500, y 223
+- Naht r0c0|r0c1: Segmente 100081 | 200127 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 234 bis x 500, y 235
+- Naht r0c0|r0c1: Segmente 100100 | 200127 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 238 bis x 500, y 238
+- Naht r0c0|r0c1: Segmente 100100 | 200127 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 240 bis x 500, y 240
+- Naht r0c0|r0c1: Segmente 100100 | 200127 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 242 bis x 500, y 242
+- Naht r0c0|r0c1: Segmente 100100 | 200127 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 245 bis x 500, y 249
+- Naht r0c0|r0c1: Segmente 100100 | 200127 grenzen ohne Bildkante aneinander, 43 Bildpunkte von x 500, y 251 bis x 500, y 293
+- Naht r0c0|r0c1: Segmente 100100 | 200127 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 296 bis x 500, y 296
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 301 bis x 500, y 306
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 308 bis x 500, y 315
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 317 bis x 500, y 326
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 329 bis x 500, y 330
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 333 bis x 500, y 334
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 338 bis x 500, y 338
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 341 bis x 500, y 341
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 343 bis x 500, y 351
+- Naht r0c0|r0c1: Segmente 100105 | 200143 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 353 bis x 500, y 357
+- Naht r0c0|r0c1: Segmente 100110 | 200143 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 358 bis x 500, y 358
+- Naht r0c0|r0c1: Segmente 100110 | 200160 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 359 bis x 500, y 362
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 365 bis x 500, y 368
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 372 bis x 500, y 375
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 378 bis x 500, y 385
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 387 bis x 500, y 389
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 395 bis x 500, y 395
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 397 bis x 500, y 402
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 404 bis x 500, y 408
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 411 bis x 500, y 414
+- Naht r0c0|r0c1: Segmente 100110 | 200146 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 417 bis x 500, y 418
+- Naht r0c0|r0c1: Segmente 100110 | 200269 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 419 bis x 500, y 424
+- Naht r0c0|r0c1: Segmente 100110 | 200269 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 427 bis x 500, y 427
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 429 bis x 500, y 430
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 432 bis x 500, y 440
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 442 bis x 500, y 457
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 462 bis x 500, y 463
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 465 bis x 500, y 466
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 468 bis x 500, y 469
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 471 bis x 500, y 483
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 485 bis x 500, y 488
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 490 bis x 500, y 495
+- Naht r0c0|r0c1: Segmente 100120 | 200164 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 497 bis x 500, y 499
+- Naht r0c0|r1c0: Segmente 100119 | 300016 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 0, y 500 bis x 6, y 500
+- Naht r0c0|r1c0: Segmente 100119 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 11, y 500 bis x 11, y 500
+- Naht r0c0|r1c0: Segmente 100119 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 16, y 500 bis x 16, y 500
+- Naht r0c0|r1c0: Segmente 100119 | 300016 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 18, y 500 bis x 22, y 500
+- Naht r0c0|r1c0: Segmente 100119 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 24, y 500 bis x 24, y 500
+- Naht r0c0|r1c0: Segmente 100119 | 300016 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 27, y 500 bis x 29, y 500
+- Naht r0c0|r1c0: Segmente 100119 | 300016 grenzen ohne Bildkante aneinander, 37 Bildpunkte von x 31, y 500 bis x 67, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 68, y 500 bis x 68, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 70, y 500 bis x 70, y 500
+- Naht r0c0|r1c0: Segmente 100134 | 300016 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 71, y 500 bis x 75, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 76, y 500 bis x 82, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 85, y 500 bis x 97, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 100, y 500 bis x 106, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 111, y 500 bis x 111, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 113, y 500 bis x 126, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 128, y 500 bis x 138, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 141, y 500 bis x 141, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 143, y 500 bis x 145, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 149, y 500 bis x 150, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 152, y 500 bis x 154, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 156, y 500 bis x 156, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 161, y 500 bis x 165, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 173, y 500 bis x 173, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 175, y 500 bis x 175, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 177, y 500 bis x 179, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 181, y 500 bis x 184, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 188, y 500 bis x 193, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 195, y 500 bis x 195, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 197, y 500 bis x 197, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 206, y 500 bis x 206, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 209, y 500 bis x 209, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 211, y 500 bis x 211, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 214, y 500 bis x 216, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 219, y 500 bis x 222, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 225, y 500 bis x 225, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 227, y 500 bis x 227, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 229, y 500 bis x 229, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 235, y 500 bis x 238, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 242, y 500 bis x 248, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 250, y 500 bis x 255, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 257, y 500 bis x 260, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 265, y 500 bis x 267, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 269, y 500 bis x 272, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 274, y 500 bis x 274, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 278, y 500 bis x 278, y 500
+- Naht r0c0|r1c0: Segmente 100103 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 280, y 500 bis x 280, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300068 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 283, y 500 bis x 283, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300068 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 293, y 500 bis x 293, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300068 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 297, y 500 bis x 297, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300068 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 300, y 500 bis x 300, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300068 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 302, y 500 bis x 303, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300068 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 305, y 500 bis x 308, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 310, y 500 bis x 310, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 314, y 500 bis x 315, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 317, y 500 bis x 319, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 323, y 500 bis x 325, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 329, y 500 bis x 333, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 338, y 500 bis x 339, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 341, y 500 bis x 350, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 353, y 500 bis x 355, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 363, y 500 bis x 364, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 369, y 500 bis x 372, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 376, y 500 bis x 385, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 387, y 500 bis x 390, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 392, y 500 bis x 399, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 403, y 500 bis x 403, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 406, y 500 bis x 410, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 417, y 500 bis x 426, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 428, y 500 bis x 428, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 438, y 500 bis x 438, y 500
+- Naht r0c0|r1c0: Segmente 100122 | 300051 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 440, y 500 bis x 440, y 500
+- Naht r0c0|r1c0: Segmente 100123 | 300051 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 446, y 500 bis x 446, y 500
+- Naht r0c0|r1c0: Segmente 100123 | 300051 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 449, y 500 bis x 449, y 500
+- Naht r0c0|r1c0: Segmente 100123 | 300051 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 452, y 500 bis x 452, y 500
+- Naht r0c0|r1c0: Segmente 100123 | 300051 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 457, y 500 bis x 468, y 500
+- Naht r0c0|r1c0: Segmente 100123 | 300051 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 470, y 500 bis x 476, y 500
+- Naht r0c0|r1c0: Segmente 100120 | 300051 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 477, y 500 bis x 478, y 500
+- Naht r0c0|r1c0: Segmente 100120 | 300051 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 480, y 500 bis x 480, y 500
+- Naht r0c0|r1c0: Segmente 100120 | 300009 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 483, y 500 bis x 483, y 500
+- Naht r0c0|r1c0: Segmente 100120 | 300009 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 486, y 500 bis x 488, y 500
+- Naht r0c0|r1c0: Segmente 100120 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 489, y 500 bis x 489, y 500
+- Naht r0c0|r1c0: Segmente 100120 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 491, y 500 bis x 491, y 500
+- Naht r0c0|r1c0: Segmente 100120 | 300065 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 492, y 500 bis x 493, y 500
+- Naht r0c0|r1c0: Segmente 100120 | 300065 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 496, y 500 bis x 499, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 500 bis x 500, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400017 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 502, y 500 bis x 510, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400017 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 512, y 500 bis x 514, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400017 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 516, y 500 bis x 517, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 518, y 500 bis x 519, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 523, y 500 bis x 524, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 15 Bildpunkte von x 527, y 500 bis x 541, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 543, y 500 bis x 543, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 545, y 500 bis x 553, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 28 Bildpunkte von x 555, y 500 bis x 582, y 500
+- Naht r0c1|r1c1: Segmente 200176 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 583, y 500 bis x 583, y 500
+- Naht r0c1|r1c1: Segmente 200176 | 400018 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 584, y 500 bis x 586, y 500
+- Naht r0c1|r1c1: Segmente 200176 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 589, y 500 bis x 589, y 500
+- Naht r0c1|r1c1: Segmente 200176 | 400018 grenzen ohne Bildkante aneinander, 41 Bildpunkte von x 592, y 500 bis x 632, y 500
+- Naht r0c1|r1c1: Segmente 200176 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 634, y 500 bis x 634, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 639, y 500 bis x 639, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 641, y 500 bis x 651, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 653, y 500 bis x 658, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 660, y 500 bis x 660, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 663, y 500 bis x 664, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 667, y 500 bis x 676, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 678, y 500 bis x 680, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 683, y 500 bis x 687, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 689, y 500 bis x 696, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400002 grenzen ohne Bildkante aneinander, 18 Bildpunkte von x 698, y 500 bis x 715, y 500
+- Naht r0c1|r1c1: Segmente 200164 | 400011 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 721, y 500 bis x 721, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400011 grenzen ohne Bildkante aneinander, 36 Bildpunkte von x 722, y 500 bis x 757, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400019 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 758, y 500 bis x 758, y 500
+- Naht r0c1|r1c1: Segmente 200175 | 400019 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 759, y 500 bis x 760, y 500
+- Naht r0c1|r1c1: Segmente 200175 | 400019 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 762, y 500 bis x 762, y 500
+- Naht r0c1|r1c1: Segmente 200175 | 400019 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 767, y 500 bis x 771, y 500
+- Naht r0c1|r1c1: Segmente 200175 | 400002 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 773, y 500 bis x 780, y 500
+- Naht r0c1|r1c1: Segmente 200175 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 783, y 500 bis x 783, y 500
+- Naht r0c1|r1c1: Segmente 200179 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 784, y 500 bis x 784, y 500
+- Naht r0c1|r1c1: Segmente 200179 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 787, y 500 bis x 787, y 500
+- Naht r0c1|r1c1: Segmente 200179 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 791, y 500 bis x 793, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 821, y 500 bis x 823, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 826, y 500 bis x 829, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 834, y 500 bis x 835, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 842, y 500 bis x 846, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 848, y 500 bis x 848, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 851, y 500 bis x 851, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 854, y 500 bis x 854, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 859, y 500 bis x 860, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 873, y 500 bis x 881, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 885, y 500 bis x 885, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 889, y 500 bis x 889, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 897, y 500 bis x 901, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 905, y 500 bis x 905, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 908, y 500 bis x 913, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 930, y 500 bis x 930, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 936, y 500 bis x 936, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 939, y 500 bis x 940, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 948, y 500 bis x 948, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 960, y 500 bis x 964, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 977, y 500 bis x 978, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 981, y 500 bis x 990, y 500
+- Naht r0c1|r1c1: Segmente 200146 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 992, y 500 bis x 992, y 500
+- Naht r1c0|r1c1: Segmente 300065 | 400017 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 500 bis x 500, y 504
+- Naht r1c0|r1c1: Segmente 300008 | 400017 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 505 bis x 500, y 507
+- Naht r1c0|r1c1: Segmente 300009 | 400017 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 508 bis x 500, y 509
+- Naht r1c0|r1c1: Segmente 300009 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 511 bis x 500, y 511
+- Naht r1c0|r1c1: Segmente 300014 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 513 bis x 500, y 515
+- Naht r1c0|r1c1: Segmente 300009 | 400002 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 516 bis x 500, y 521
+- Naht r1c0|r1c1: Segmente 300009 | 400002 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 523 bis x 500, y 527
+- Naht r1c0|r1c1: Segmente 300009 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 529 bis x 500, y 531
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 532 bis x 500, y 533
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 541 bis x 500, y 543
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 545 bis x 500, y 545
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 547 bis x 500, y 548
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 550 bis x 500, y 553
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 555 bis x 500, y 555
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 557 bis x 500, y 557
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 561 bis x 500, y 562
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 570 bis x 500, y 570
+- Naht r1c0|r1c1: Segmente 300051 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 573 bis x 500, y 575
+- Naht r1c0|r1c1: Segmente 300021 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 580 bis x 500, y 581
+- Naht r1c0|r1c1: Segmente 300069 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 587 bis x 500, y 588
+- Naht r1c0|r1c1: Segmente 300069 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 590 bis x 500, y 590
+- Naht r1c0|r1c1: Segmente 300069 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 598 bis x 500, y 600
+- Naht r1c0|r1c1: Segmente 300069 | 400002 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 606 bis x 500, y 611
+- Naht r1c0|r1c1: Segmente 300069 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 613 bis x 500, y 613
+- Naht r1c0|r1c1: Segmente 300021 | 400034 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 614 bis x 500, y 623
+- Naht r1c0|r1c1: Segmente 300022 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 625 bis x 500, y 625
+- Naht r1c0|r1c1: Segmente 300021 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 627 bis x 500, y 627
+- Naht r1c0|r1c1: Segmente 300021 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 630 bis x 500, y 631
+- Naht r1c0|r1c1: Segmente 300021 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 638 bis x 500, y 638
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 640 bis x 500, y 640
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 643 bis x 500, y 643
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 647 bis x 500, y 648
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 650 bis x 500, y 651
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 653 bis x 500, y 653
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 656 bis x 500, y 656
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 659 bis x 500, y 660
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 662 bis x 500, y 662
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 664 bis x 500, y 667
+- Naht r1c0|r1c1: Segmente 300051 | 400052 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 673 bis x 500, y 677
+- Naht r1c0|r1c1: Segmente 300051 | 400052 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 679 bis x 500, y 682
+- Naht r1c0|r1c1: Segmente 300051 | 400052 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 685 bis x 500, y 691
+- Naht r1c0|r1c1: Segmente 300051 | 400052 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 696 bis x 500, y 700
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 26 Bildpunkte von x 500, y 701 bis x 500, y 726
+- Naht r1c0|r1c1: Segmente 300051 | 400052 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 727 bis x 500, y 735
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 739 bis x 500, y 743
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 745 bis x 500, y 746
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 752 bis x 500, y 764
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 766 bis x 500, y 767
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 771 bis x 500, y 771
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 773 bis x 500, y 778
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 784 bis x 500, y 784
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 792 bis x 500, y 796
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 798 bis x 500, y 798
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 801 bis x 500, y 801
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 804 bis x 500, y 806
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 808 bis x 500, y 810
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 816 bis x 500, y 819
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 822 bis x 500, y 824
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 827 bis x 500, y 829
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 831 bis x 500, y 831
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 500, y 837 bis x 500, y 848
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 851 bis x 500, y 855
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 857 bis x 500, y 859
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 862 bis x 500, y 864
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 866 bis x 500, y 866
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 868 bis x 500, y 871
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 875 bis x 500, y 878
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 880 bis x 500, y 881
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 883 bis x 500, y 887
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 890 bis x 500, y 890
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 905 bis x 500, y 905
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 913 bis x 500, y 914
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 918 bis x 500, y 928
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 930 bis x 500, y 930
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 932 bis x 500, y 941
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 500, y 944 bis x 500, y 960
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 970 bis x 500, y 970
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 973 bis x 500, y 983
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 985 bis x 500, y 992
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 997 bis x 500, y 997
+- Naht r1c0|r1c1: Segmente 300051 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 999 bis x 500, y 999
+H × W: 1000 × 1000 = 1000000 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 626, nicht zusammenhängend: 0
+ok
+Zusammentragen FEHLER: 308 Nahtverstöße, 0 Mängel, pruefen ok
+[exit 1]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\r0c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\r0c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\kategorien-b.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r0c0.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 210, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\r0c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\r0c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\kategorien-b.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r0c1.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 236, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\r1c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\r1c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\kategorien-b.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r1c0.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 88, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\r1c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\r1c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\kategorien-b.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r1c1.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 414, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ zusammentragen --datei C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\zusammentragen.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\b-kategorien-frei\kategorien-b.json
+Zusammengetragen: 4 Teilkacheln (r0c0 Runde 0, r0c1 Runde 0, r1c0 Runde 0, r1c1 Runde 0) -> C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/b-kategorien-frei/zusammen
+Umbenannt: 0 neue IDs, Klassenkonflikte: 0
+Nähte: 4 Kerngrenzen, 2000 Positionen, Verstöße: 306, bestätigt: 0
+- Naht r0c0|r0c1: Segmente 100040 | 200058 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 0 bis x 500, y 0
+- Naht r0c0|r0c1: Segmente 100040 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 2 bis x 500, y 2
+- Naht r0c0|r0c1: Segmente 100040 | 200043 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 10 bis x 500, y 11
+- Naht r0c0|r0c1: Segmente 100208 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 17 bis x 500, y 17
+- Naht r0c0|r0c1: Segmente 100208 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 20 bis x 500, y 20
+- Naht r0c0|r0c1: Segmente 100208 | 200043 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 22 bis x 500, y 25
+- Naht r0c0|r0c1: Segmente 100208 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 30 bis x 500, y 30
+- Naht r0c0|r0c1: Segmente 100061 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 31 bis x 500, y 31
+- Naht r0c0|r0c1: Segmente 100061 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 38 bis x 500, y 38
+- Naht r0c0|r0c1: Segmente 100061 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 42 bis x 500, y 42
+- Naht r0c0|r0c1: Segmente 100061 | 200043 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 47 bis x 500, y 48
+- Naht r0c0|r0c1: Segmente 100074 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 52 bis x 500, y 52
+- Naht r0c0|r0c1: Segmente 100077 | 200080 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 56 bis x 500, y 66
+- Naht r0c0|r0c1: Segmente 100077 | 200080 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 68 bis x 500, y 68
+- Naht r0c0|r0c1: Segmente 100077 | 200080 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 70 bis x 500, y 80
+- Naht r0c0|r0c1: Segmente 100077 | 200080 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 83 bis x 500, y 88
+- Naht r0c0|r0c1: Segmente 100099 | 200080 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 89 bis x 500, y 89
+- Naht r0c0|r0c1: Segmente 100099 | 200099 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 90 bis x 500, y 90
+- Naht r0c0|r0c1: Segmente 100099 | 200100 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 92 bis x 500, y 93
+- Naht r0c0|r0c1: Segmente 100099 | 200100 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 95 bis x 500, y 96
+- Naht r0c0|r0c1: Segmente 100059 | 200100 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 97 bis x 500, y 97
+- Naht r0c0|r0c1: Segmente 100059 | 200093 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 500, y 98 bis x 500, y 119
+- Naht r0c0|r0c1: Segmente 100059 | 200236 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 120 bis x 500, y 120
+- Naht r0c0|r0c1: Segmente 100109 | 200236 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 121 bis x 500, y 122
+- Naht r0c0|r0c1: Segmente 100114 | 200107 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 129 bis x 500, y 129
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 130 bis x 500, y 131
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 133 bis x 500, y 136
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 138 bis x 500, y 138
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 140 bis x 500, y 140
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 144 bis x 500, y 144
+- Naht r0c0|r0c1: Segmente 100110 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 145 bis x 500, y 145
+- Naht r0c0|r0c1: Segmente 100110 | 200122 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 148 bis x 500, y 149
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 150 bis x 500, y 157
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 159 bis x 500, y 162
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 165 bis x 500, y 165
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 167 bis x 500, y 168
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 169 bis x 500, y 174
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 177 bis x 500, y 177
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 181 bis x 500, y 181
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 184 bis x 500, y 184
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 186 bis x 500, y 187
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 191 bis x 500, y 192
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 194 bis x 500, y 195
+- Naht r0c0|r0c1: Segmente 100122 | 200116 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 204 bis x 500, y 209
+- Naht r0c0|r0c1: Segmente 100122 | 200116 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 211 bis x 500, y 213
+- Naht r0c0|r0c1: Segmente 100122 | 200116 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 216 bis x 500, y 216
+- Naht r0c0|r0c1: Segmente 100122 | 200116 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 221 bis x 500, y 223
+- Naht r0c0|r0c1: Segmente 100122 | 200145 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 234 bis x 500, y 235
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 238 bis x 500, y 238
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 240 bis x 500, y 240
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 242 bis x 500, y 242
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 245 bis x 500, y 249
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 43 Bildpunkte von x 500, y 251 bis x 500, y 293
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 296 bis x 500, y 296
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 301 bis x 500, y 306
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 308 bis x 500, y 315
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 317 bis x 500, y 326
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 329 bis x 500, y 330
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 333 bis x 500, y 334
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 338 bis x 500, y 338
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 341 bis x 500, y 341
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 343 bis x 500, y 351
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 353 bis x 500, y 357
+- Naht r0c0|r0c1: Segmente 100170 | 200167 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 358 bis x 500, y 358
+- Naht r0c0|r0c1: Segmente 100170 | 200185 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 359 bis x 500, y 362
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 365 bis x 500, y 368
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 372 bis x 500, y 375
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 378 bis x 500, y 385
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 387 bis x 500, y 389
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 395 bis x 500, y 395
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 397 bis x 500, y 402
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 404 bis x 500, y 408
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 411 bis x 500, y 414
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 417 bis x 500, y 424
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 427 bis x 500, y 427
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 429 bis x 500, y 430
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 432 bis x 500, y 440
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 442 bis x 500, y 457
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 462 bis x 500, y 463
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 465 bis x 500, y 466
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 468 bis x 500, y 469
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 471 bis x 500, y 483
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 485 bis x 500, y 488
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 490 bis x 500, y 495
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 497 bis x 500, y 499
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 0, y 500 bis x 6, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 11, y 500 bis x 11, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 16, y 500 bis x 16, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 18, y 500 bis x 22, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 24, y 500 bis x 24, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 27, y 500 bis x 29, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 37 Bildpunkte von x 31, y 500 bis x 67, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 68, y 500 bis x 68, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300001 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 70, y 500 bis x 77, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300016 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 78, y 500 bis x 82, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 85, y 500 bis x 85, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300016 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 86, y 500 bis x 89, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300001 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 90, y 500 bis x 97, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300001 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 100, y 500 bis x 106, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 111, y 500 bis x 111, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300001 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 113, y 500 bis x 126, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300001 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 128, y 500 bis x 138, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 141, y 500 bis x 141, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300001 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 143, y 500 bis x 145, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300001 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 149, y 500 bis x 150, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300018 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 152, y 500 bis x 154, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 156, y 500 bis x 156, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300018 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 161, y 500 bis x 163, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 164, y 500 bis x 165, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 173, y 500 bis x 173, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 175, y 500 bis x 175, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 177, y 500 bis x 179, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 181, y 500 bis x 184, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 188, y 500 bis x 193, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 195, y 500 bis x 195, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 197, y 500 bis x 197, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 206, y 500 bis x 206, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 209, y 500 bis x 209, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 211, y 500 bis x 211, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 214, y 500 bis x 216, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 219, y 500 bis x 222, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 225, y 500 bis x 225, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 227, y 500 bis x 227, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 229, y 500 bis x 229, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 235, y 500 bis x 238, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 242, y 500 bis x 246, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 247, y 500 bis x 248, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 250, y 500 bis x 255, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 257, y 500 bis x 260, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300008 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 265, y 500 bis x 267, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300008 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 269, y 500 bis x 272, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 274, y 500 bis x 274, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 278, y 500 bis x 278, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 280, y 500 bis x 280, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 283, y 500 bis x 283, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 293, y 500 bis x 293, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 297, y 500 bis x 297, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 300, y 500 bis x 300, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 302, y 500 bis x 303, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 305, y 500 bis x 308, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 310, y 500 bis x 310, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 314, y 500 bis x 315, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 317, y 500 bis x 319, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 323, y 500 bis x 325, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 329, y 500 bis x 333, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 338, y 500 bis x 339, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 341, y 500 bis x 350, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 353, y 500 bis x 355, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 363, y 500 bis x 364, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 369, y 500 bis x 372, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 376, y 500 bis x 385, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 387, y 500 bis x 390, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 392, y 500 bis x 399, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 403, y 500 bis x 403, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 406, y 500 bis x 410, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 417, y 500 bis x 426, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 428, y 500 bis x 428, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 438, y 500 bis x 438, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 440, y 500 bis x 440, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 446, y 500 bis x 446, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 449, y 500 bis x 449, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 452, y 500 bis x 452, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 457, y 500 bis x 468, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 470, y 500 bis x 476, y 500
+- Naht r0c0|r1c0: Segmente 100197 | 300013 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 477, y 500 bis x 478, y 500
+- Naht r0c0|r1c0: Segmente 100197 | 300013 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 480, y 500 bis x 480, y 500
+- Naht r0c0|r1c0: Segmente 100197 | 300013 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 483, y 500 bis x 483, y 500
+- Naht r0c0|r1c0: Segmente 100197 | 300013 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 486, y 500 bis x 486, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300013 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 487, y 500 bis x 489, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300013 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 491, y 500 bis x 493, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300013 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 496, y 500 bis x 499, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 500 bis x 500, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400017 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 502, y 500 bis x 510, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400017 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 512, y 500 bis x 514, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400017 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 516, y 500 bis x 517, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 518, y 500 bis x 519, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 523, y 500 bis x 524, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 15 Bildpunkte von x 527, y 500 bis x 541, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 543, y 500 bis x 543, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 545, y 500 bis x 553, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 28 Bildpunkte von x 555, y 500 bis x 582, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 583, y 500 bis x 583, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400018 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 584, y 500 bis x 586, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 589, y 500 bis x 589, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400018 grenzen ohne Bildkante aneinander, 41 Bildpunkte von x 592, y 500 bis x 632, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 634, y 500 bis x 634, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 639, y 500 bis x 639, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 641, y 500 bis x 651, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 653, y 500 bis x 658, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 660, y 500 bis x 660, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 663, y 500 bis x 664, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 667, y 500 bis x 676, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 678, y 500 bis x 680, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 683, y 500 bis x 687, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 689, y 500 bis x 696, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 18 Bildpunkte von x 698, y 500 bis x 715, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400011 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 721, y 500 bis x 721, y 500
+- Naht r0c1|r1c1: Segmente 200197 | 400011 grenzen ohne Bildkante aneinander, 36 Bildpunkte von x 722, y 500 bis x 757, y 500
+- Naht r0c1|r1c1: Segmente 200197 | 400019 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 758, y 500 bis x 758, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400019 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 759, y 500 bis x 760, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400019 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 762, y 500 bis x 762, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400019 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 767, y 500 bis x 771, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400002 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 773, y 500 bis x 780, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 783, y 500 bis x 783, y 500
+- Naht r0c1|r1c1: Segmente 200211 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 784, y 500 bis x 784, y 500
+- Naht r0c1|r1c1: Segmente 200211 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 787, y 500 bis x 787, y 500
+- Naht r0c1|r1c1: Segmente 200211 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 791, y 500 bis x 793, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 821, y 500 bis x 823, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 826, y 500 bis x 829, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 834, y 500 bis x 835, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 842, y 500 bis x 846, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 848, y 500 bis x 848, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 851, y 500 bis x 851, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 854, y 500 bis x 854, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 859, y 500 bis x 860, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 873, y 500 bis x 881, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 885, y 500 bis x 885, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 889, y 500 bis x 889, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 897, y 500 bis x 901, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 905, y 500 bis x 905, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 908, y 500 bis x 913, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 930, y 500 bis x 930, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 936, y 500 bis x 936, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 939, y 500 bis x 940, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 948, y 500 bis x 948, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 960, y 500 bis x 964, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 977, y 500 bis x 978, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 981, y 500 bis x 990, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 992, y 500 bis x 992, y 500
+- Naht r1c0|r1c1: Segmente 300013 | 400017 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 500 bis x 500, y 509
+- Naht r1c0|r1c1: Segmente 300013 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 511 bis x 500, y 511
+- Naht r1c0|r1c1: Segmente 300013 | 400002 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 513 bis x 500, y 521
+- Naht r1c0|r1c1: Segmente 300013 | 400002 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 523 bis x 500, y 527
+- Naht r1c0|r1c1: Segmente 300013 | 400002 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 529 bis x 500, y 533
+- Naht r1c0|r1c1: Segmente 300017 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 541 bis x 500, y 543
+- Naht r1c0|r1c1: Segmente 300017 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 545 bis x 500, y 545
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 547 bis x 500, y 548
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 550 bis x 500, y 553
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 555 bis x 500, y 555
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 557 bis x 500, y 557
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 561 bis x 500, y 562
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 570 bis x 500, y 570
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 573 bis x 500, y 575
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 580 bis x 500, y 581
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 587 bis x 500, y 588
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 590 bis x 500, y 590
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 598 bis x 500, y 600
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 606 bis x 500, y 611
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 613 bis x 500, y 623
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 625 bis x 500, y 625
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 627 bis x 500, y 627
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 630 bis x 500, y 631
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 638 bis x 500, y 638
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 640 bis x 500, y 640
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 643 bis x 500, y 643
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 647 bis x 500, y 648
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 650 bis x 500, y 651
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 653 bis x 500, y 653
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 656 bis x 500, y 656
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 659 bis x 500, y 660
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 662 bis x 500, y 662
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 664 bis x 500, y 664
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 665 bis x 500, y 667
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 673 bis x 500, y 677
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 679 bis x 500, y 682
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 685 bis x 500, y 691
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 40 Bildpunkte von x 500, y 696 bis x 500, y 735
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 739 bis x 500, y 743
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 745 bis x 500, y 746
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 752 bis x 500, y 764
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 766 bis x 500, y 767
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 771 bis x 500, y 771
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 773 bis x 500, y 778
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 784 bis x 500, y 784
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 792 bis x 500, y 795
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 796 bis x 500, y 796
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 798 bis x 500, y 798
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 801 bis x 500, y 801
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 804 bis x 500, y 806
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 808 bis x 500, y 810
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 816 bis x 500, y 819
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 822 bis x 500, y 824
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 827 bis x 500, y 829
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 831 bis x 500, y 831
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 500, y 837 bis x 500, y 848
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 851 bis x 500, y 855
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 857 bis x 500, y 859
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 862 bis x 500, y 864
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 866 bis x 500, y 866
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 868 bis x 500, y 871
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 875 bis x 500, y 878
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 880 bis x 500, y 881
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 883 bis x 500, y 887
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 890 bis x 500, y 890
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 905 bis x 500, y 905
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 913 bis x 500, y 914
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 918 bis x 500, y 928
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 930 bis x 500, y 930
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 932 bis x 500, y 932
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 933 bis x 500, y 941
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 500, y 944 bis x 500, y 960
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 970 bis x 500, y 970
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 973 bis x 500, y 983
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 985 bis x 500, y 992
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 997 bis x 500, y 997
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 999 bis x 500, y 999
+H × W: 1000 × 1000 = 1000000 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 655, nicht zusammenhängend: 0
+ok
+Zusammentragen FEHLER: 306 Nahtverstöße, 0 Mängel, pruefen ok
+[exit 1]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\r0c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\r0c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\kategorien-c.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r0c0.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 212, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\r0c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\r0c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\kategorien-c.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r0c1.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 235, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\r1c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\r1c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\kategorien-c.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r1c0.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 89, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\r1c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\r1c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\kategorien-c.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\teilkacheln\r1c1.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 413, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ zusammentragen --datei C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\zusammentragen.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\c-feste-liste\kategorien-c.json
+Zusammengetragen: 4 Teilkacheln (r0c0 Runde 0, r0c1 Runde 0, r1c0 Runde 0, r1c1 Runde 0) -> C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/c-feste-liste/zusammen
+Umbenannt: 0 neue IDs, Klassenkonflikte: 0
+Nähte: 4 Kerngrenzen, 2000 Positionen, Verstöße: 306, bestätigt: 0
+- Naht r0c0|r0c1: Segmente 100040 | 200058 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 0 bis x 500, y 0
+- Naht r0c0|r0c1: Segmente 100040 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 2 bis x 500, y 2
+- Naht r0c0|r0c1: Segmente 100040 | 200043 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 10 bis x 500, y 11
+- Naht r0c0|r0c1: Segmente 100208 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 17 bis x 500, y 17
+- Naht r0c0|r0c1: Segmente 100208 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 20 bis x 500, y 20
+- Naht r0c0|r0c1: Segmente 100208 | 200043 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 22 bis x 500, y 25
+- Naht r0c0|r0c1: Segmente 100208 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 30 bis x 500, y 30
+- Naht r0c0|r0c1: Segmente 100061 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 31 bis x 500, y 31
+- Naht r0c0|r0c1: Segmente 100061 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 38 bis x 500, y 38
+- Naht r0c0|r0c1: Segmente 100061 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 42 bis x 500, y 42
+- Naht r0c0|r0c1: Segmente 100061 | 200043 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 47 bis x 500, y 48
+- Naht r0c0|r0c1: Segmente 100074 | 200043 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 52 bis x 500, y 52
+- Naht r0c0|r0c1: Segmente 100077 | 200080 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 56 bis x 500, y 66
+- Naht r0c0|r0c1: Segmente 100077 | 200080 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 68 bis x 500, y 68
+- Naht r0c0|r0c1: Segmente 100077 | 200080 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 70 bis x 500, y 80
+- Naht r0c0|r0c1: Segmente 100077 | 200080 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 83 bis x 500, y 88
+- Naht r0c0|r0c1: Segmente 100099 | 200080 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 89 bis x 500, y 89
+- Naht r0c0|r0c1: Segmente 100099 | 200099 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 90 bis x 500, y 90
+- Naht r0c0|r0c1: Segmente 100099 | 200100 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 92 bis x 500, y 93
+- Naht r0c0|r0c1: Segmente 100099 | 200100 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 95 bis x 500, y 96
+- Naht r0c0|r0c1: Segmente 100059 | 200100 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 97 bis x 500, y 97
+- Naht r0c0|r0c1: Segmente 100059 | 200093 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 500, y 98 bis x 500, y 119
+- Naht r0c0|r0c1: Segmente 100059 | 200107 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 120 bis x 500, y 120
+- Naht r0c0|r0c1: Segmente 100109 | 200107 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 121 bis x 500, y 122
+- Naht r0c0|r0c1: Segmente 100114 | 200107 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 129 bis x 500, y 129
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 130 bis x 500, y 131
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 133 bis x 500, y 136
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 138 bis x 500, y 138
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 140 bis x 500, y 140
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 144 bis x 500, y 144
+- Naht r0c0|r0c1: Segmente 100110 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 145 bis x 500, y 145
+- Naht r0c0|r0c1: Segmente 100110 | 200122 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 148 bis x 500, y 149
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 150 bis x 500, y 157
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 159 bis x 500, y 162
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 165 bis x 500, y 165
+- Naht r0c0|r0c1: Segmente 100114 | 200122 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 167 bis x 500, y 168
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 169 bis x 500, y 174
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 177 bis x 500, y 177
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 181 bis x 500, y 181
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 184 bis x 500, y 184
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 186 bis x 500, y 187
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 191 bis x 500, y 192
+- Naht r0c0|r0c1: Segmente 100121 | 200132 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 194 bis x 500, y 195
+- Naht r0c0|r0c1: Segmente 100122 | 200116 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 204 bis x 500, y 209
+- Naht r0c0|r0c1: Segmente 100122 | 200116 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 211 bis x 500, y 213
+- Naht r0c0|r0c1: Segmente 100122 | 200116 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 216 bis x 500, y 216
+- Naht r0c0|r0c1: Segmente 100122 | 200116 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 221 bis x 500, y 223
+- Naht r0c0|r0c1: Segmente 100122 | 200145 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 234 bis x 500, y 235
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 238 bis x 500, y 238
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 240 bis x 500, y 240
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 242 bis x 500, y 242
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 245 bis x 500, y 249
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 43 Bildpunkte von x 500, y 251 bis x 500, y 293
+- Naht r0c0|r0c1: Segmente 100136 | 200145 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 296 bis x 500, y 296
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 301 bis x 500, y 306
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 308 bis x 500, y 315
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 317 bis x 500, y 326
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 329 bis x 500, y 330
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 333 bis x 500, y 334
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 338 bis x 500, y 338
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 341 bis x 500, y 341
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 343 bis x 500, y 351
+- Naht r0c0|r0c1: Segmente 100149 | 200167 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 353 bis x 500, y 357
+- Naht r0c0|r0c1: Segmente 100170 | 200167 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 358 bis x 500, y 358
+- Naht r0c0|r0c1: Segmente 100170 | 200185 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 359 bis x 500, y 362
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 365 bis x 500, y 368
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 372 bis x 500, y 375
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 378 bis x 500, y 385
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 387 bis x 500, y 389
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 395 bis x 500, y 395
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 397 bis x 500, y 402
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 404 bis x 500, y 408
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 411 bis x 500, y 414
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 417 bis x 500, y 424
+- Naht r0c0|r0c1: Segmente 100159 | 200170 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 427 bis x 500, y 427
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 429 bis x 500, y 430
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 432 bis x 500, y 440
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 442 bis x 500, y 457
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 462 bis x 500, y 463
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 465 bis x 500, y 466
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 468 bis x 500, y 469
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 471 bis x 500, y 483
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 485 bis x 500, y 488
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 490 bis x 500, y 495
+- Naht r0c0|r0c1: Segmente 100175 | 200189 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 497 bis x 500, y 499
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 0, y 500 bis x 6, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 11, y 500 bis x 11, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 16, y 500 bis x 16, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 18, y 500 bis x 22, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 24, y 500 bis x 24, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 27, y 500 bis x 29, y 500
+- Naht r0c0|r1c0: Segmente 100166 | 300001 grenzen ohne Bildkante aneinander, 37 Bildpunkte von x 31, y 500 bis x 67, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 68, y 500 bis x 68, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300001 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 70, y 500 bis x 77, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300016 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 78, y 500 bis x 82, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300016 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 85, y 500 bis x 85, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300016 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 86, y 500 bis x 89, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300001 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 90, y 500 bis x 97, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300001 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 100, y 500 bis x 106, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300001 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 111, y 500 bis x 111, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300001 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 113, y 500 bis x 126, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300001 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 128, y 500 bis x 138, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300089 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 141, y 500 bis x 141, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300089 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 143, y 500 bis x 145, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300089 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 149, y 500 bis x 150, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300018 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 152, y 500 bis x 154, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 156, y 500 bis x 156, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300018 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 161, y 500 bis x 163, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300015 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 164, y 500 bis x 165, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 173, y 500 bis x 173, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 175, y 500 bis x 175, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300015 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 177, y 500 bis x 179, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300015 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 181, y 500 bis x 184, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300015 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 188, y 500 bis x 193, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 195, y 500 bis x 195, y 500
+- Naht r0c0|r1c0: Segmente 100193 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 197, y 500 bis x 197, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 206, y 500 bis x 206, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 209, y 500 bis x 209, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300015 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 211, y 500 bis x 211, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 214, y 500 bis x 216, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 219, y 500 bis x 222, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 225, y 500 bis x 225, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 227, y 500 bis x 227, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300087 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 229, y 500 bis x 229, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300087 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 235, y 500 bis x 238, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300087 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 242, y 500 bis x 246, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300015 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 247, y 500 bis x 248, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300015 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 250, y 500 bis x 255, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300015 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 257, y 500 bis x 260, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300008 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 265, y 500 bis x 267, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300008 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 269, y 500 bis x 272, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 274, y 500 bis x 274, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 278, y 500 bis x 278, y 500
+- Naht r0c0|r1c0: Segmente 100212 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 280, y 500 bis x 280, y 500
+- Naht r0c0|r1c0: Segmente 100056 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 283, y 500 bis x 283, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 293, y 500 bis x 293, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 297, y 500 bis x 297, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 300, y 500 bis x 300, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 302, y 500 bis x 303, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 305, y 500 bis x 308, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 310, y 500 bis x 310, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 314, y 500 bis x 315, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 317, y 500 bis x 319, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 323, y 500 bis x 325, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 329, y 500 bis x 333, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 338, y 500 bis x 339, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 341, y 500 bis x 350, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 353, y 500 bis x 355, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 363, y 500 bis x 364, y 500
+- Naht r0c0|r1c0: Segmente 100191 | 300008 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 369, y 500 bis x 372, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 376, y 500 bis x 385, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 387, y 500 bis x 390, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 392, y 500 bis x 399, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 403, y 500 bis x 403, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 406, y 500 bis x 410, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 417, y 500 bis x 426, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 428, y 500 bis x 428, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 438, y 500 bis x 438, y 500
+- Naht r0c0|r1c0: Segmente 100210 | 300008 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 440, y 500 bis x 440, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 446, y 500 bis x 446, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 449, y 500 bis x 449, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 452, y 500 bis x 452, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 457, y 500 bis x 468, y 500
+- Naht r0c0|r1c0: Segmente 100194 | 300017 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 470, y 500 bis x 476, y 500
+- Naht r0c0|r1c0: Segmente 100197 | 300013 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 477, y 500 bis x 478, y 500
+- Naht r0c0|r1c0: Segmente 100197 | 300013 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 480, y 500 bis x 480, y 500
+- Naht r0c0|r1c0: Segmente 100197 | 300013 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 483, y 500 bis x 483, y 500
+- Naht r0c0|r1c0: Segmente 100197 | 300013 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 486, y 500 bis x 486, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300013 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 487, y 500 bis x 489, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300013 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 491, y 500 bis x 493, y 500
+- Naht r0c0|r1c0: Segmente 100175 | 300013 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 496, y 500 bis x 499, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400017 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 500 bis x 500, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400017 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 502, y 500 bis x 510, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400017 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 512, y 500 bis x 514, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400017 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 516, y 500 bis x 517, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 518, y 500 bis x 519, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 523, y 500 bis x 524, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 15 Bildpunkte von x 527, y 500 bis x 541, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 543, y 500 bis x 543, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 545, y 500 bis x 553, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 28 Bildpunkte von x 555, y 500 bis x 582, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 583, y 500 bis x 583, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400018 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 584, y 500 bis x 586, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 589, y 500 bis x 589, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400018 grenzen ohne Bildkante aneinander, 41 Bildpunkte von x 592, y 500 bis x 632, y 500
+- Naht r0c1|r1c1: Segmente 200207 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 634, y 500 bis x 634, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400018 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 639, y 500 bis x 639, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 641, y 500 bis x 651, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 653, y 500 bis x 658, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 660, y 500 bis x 660, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 663, y 500 bis x 664, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 667, y 500 bis x 676, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 678, y 500 bis x 680, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 683, y 500 bis x 687, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 689, y 500 bis x 696, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400002 grenzen ohne Bildkante aneinander, 18 Bildpunkte von x 698, y 500 bis x 715, y 500
+- Naht r0c1|r1c1: Segmente 200189 | 400011 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 721, y 500 bis x 721, y 500
+- Naht r0c1|r1c1: Segmente 200197 | 400011 grenzen ohne Bildkante aneinander, 36 Bildpunkte von x 722, y 500 bis x 757, y 500
+- Naht r0c1|r1c1: Segmente 200197 | 400019 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 758, y 500 bis x 758, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400019 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 759, y 500 bis x 760, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400019 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 762, y 500 bis x 762, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400019 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 767, y 500 bis x 771, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400002 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 773, y 500 bis x 780, y 500
+- Naht r0c1|r1c1: Segmente 200206 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 783, y 500 bis x 783, y 500
+- Naht r0c1|r1c1: Segmente 200211 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 784, y 500 bis x 784, y 500
+- Naht r0c1|r1c1: Segmente 200211 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 787, y 500 bis x 787, y 500
+- Naht r0c1|r1c1: Segmente 200211 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 791, y 500 bis x 793, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 821, y 500 bis x 823, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 826, y 500 bis x 829, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 834, y 500 bis x 835, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 842, y 500 bis x 846, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 848, y 500 bis x 848, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 851, y 500 bis x 851, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 854, y 500 bis x 854, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 859, y 500 bis x 860, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 873, y 500 bis x 881, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 885, y 500 bis x 885, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 889, y 500 bis x 889, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 897, y 500 bis x 901, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 905, y 500 bis x 905, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 908, y 500 bis x 913, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 930, y 500 bis x 930, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 936, y 500 bis x 936, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 939, y 500 bis x 940, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 948, y 500 bis x 948, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 960, y 500 bis x 964, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 977, y 500 bis x 978, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 981, y 500 bis x 990, y 500
+- Naht r0c1|r1c1: Segmente 200170 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 992, y 500 bis x 992, y 500
+- Naht r1c0|r1c1: Segmente 300013 | 400017 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 500 bis x 500, y 509
+- Naht r1c0|r1c1: Segmente 300013 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 511 bis x 500, y 511
+- Naht r1c0|r1c1: Segmente 300013 | 400002 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 513 bis x 500, y 521
+- Naht r1c0|r1c1: Segmente 300013 | 400002 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 523 bis x 500, y 527
+- Naht r1c0|r1c1: Segmente 300013 | 400002 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 529 bis x 500, y 533
+- Naht r1c0|r1c1: Segmente 300017 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 541 bis x 500, y 543
+- Naht r1c0|r1c1: Segmente 300017 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 545 bis x 500, y 545
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 547 bis x 500, y 548
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 550 bis x 500, y 553
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 555 bis x 500, y 555
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 557 bis x 500, y 557
+- Naht r1c0|r1c1: Segmente 300088 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 561 bis x 500, y 562
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 570 bis x 500, y 570
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 573 bis x 500, y 575
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 580 bis x 500, y 581
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 587 bis x 500, y 588
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 590 bis x 500, y 590
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 598 bis x 500, y 600
+- Naht r1c0|r1c1: Segmente 300008 | 400002 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 606 bis x 500, y 611
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 613 bis x 500, y 623
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 625 bis x 500, y 625
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 627 bis x 500, y 627
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 630 bis x 500, y 631
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 638 bis x 500, y 638
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 640 bis x 500, y 640
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 643 bis x 500, y 643
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 647 bis x 500, y 648
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 650 bis x 500, y 651
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 653 bis x 500, y 653
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 656 bis x 500, y 656
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 659 bis x 500, y 660
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 662 bis x 500, y 662
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 664 bis x 500, y 664
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 665 bis x 500, y 667
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 673 bis x 500, y 677
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 679 bis x 500, y 682
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 685 bis x 500, y 691
+- Naht r1c0|r1c1: Segmente 300042 | 400052 grenzen ohne Bildkante aneinander, 40 Bildpunkte von x 500, y 696 bis x 500, y 735
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 739 bis x 500, y 743
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 745 bis x 500, y 746
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 752 bis x 500, y 764
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 766 bis x 500, y 767
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 771 bis x 500, y 771
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 773 bis x 500, y 778
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 784 bis x 500, y 784
+- Naht r1c0|r1c1: Segmente 300042 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 792 bis x 500, y 795
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 796 bis x 500, y 796
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 798 bis x 500, y 798
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 801 bis x 500, y 801
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 804 bis x 500, y 806
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 808 bis x 500, y 810
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 816 bis x 500, y 819
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 822 bis x 500, y 824
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 827 bis x 500, y 829
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 831 bis x 500, y 831
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 500, y 837 bis x 500, y 848
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 851 bis x 500, y 855
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 857 bis x 500, y 859
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 862 bis x 500, y 864
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 866 bis x 500, y 866
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 868 bis x 500, y 871
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 875 bis x 500, y 878
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 880 bis x 500, y 881
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 883 bis x 500, y 887
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 890 bis x 500, y 890
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 905 bis x 500, y 905
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 913 bis x 500, y 914
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 918 bis x 500, y 928
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 930 bis x 500, y 930
+- Naht r1c0|r1c1: Segmente 300008 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 932 bis x 500, y 932
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 933 bis x 500, y 941
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 500, y 944 bis x 500, y 960
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 970 bis x 500, y 970
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 973 bis x 500, y 983
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 985 bis x 500, y 992
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 997 bis x 500, y 997
+- Naht r1c0|r1c1: Segmente 300072 | 400034 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 999 bis x 500, y 999
+H × W: 1000 × 1000 = 1000000 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 656, nicht zusammenhängend: 0
+ok
+Zusammentragen FEHLER: 306 Nahtverstöße, 0 Mängel, pruefen ok
+[exit 1]
+
+$ einigung messen --manifest C:\Users\Phil\Developement\Victor\daten\landseg\uebergabe\landseg-t0\T0\manifest.json
+Fassung A: gleiche Fläche, verschiedene Klasse: offen 6 Paare (30 Randpunkte), unsicher belegt 6 (168), geklärt 59 (676); Schnittlinien ohne Bildkante: 89 Paare
+Fassung B: gleiche Fläche, verschiedene Klasse: offen 5 Paare (69 Randpunkte), unsicher belegt 4 (34), geklärt 55 (754); Schnittlinien ohne Bildkante: 84 Paare
+Fassung C: gleiche Fläche, verschiedene Klasse: offen 10 Paare (110 Randpunkte), unsicher belegt 7 (38), geklärt 46 (572); Schnittlinien ohne Bildkante: 90 Paare
+[exit 1]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\r0c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\r0c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\kategorien-a.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r0c0.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 99, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\r0c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\r0c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\kategorien-a.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r0c1.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 555, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\r1c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\r1c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\kategorien-a.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r1c0.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 43, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\r1c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\r1c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\kategorien-a.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r1c1.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 329, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ zusammentragen --datei C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\zusammentragen.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\a-alles-frei\kategorien-a.json
+Zusammengetragen: 4 Teilkacheln (r0c0 Runde 0, r0c1 Runde 0, r1c0 Runde 0, r1c1 Runde 0) -> C:/Users/Phil/Developement/Victor/daten/landseg/H0/a-alles-frei/zusammen
+Umbenannt: 0 neue IDs, Klassenkonflikte: 0
+Nähte: 4 Kerngrenzen, 2000 Positionen, Verstöße: 163, bestätigt: 0
+- Naht r0c0|r0c1: Segmente 100029 | 200089 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 0 bis x 500, y 1
+- Naht r0c0|r0c1: Segmente 100083 | 200089 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 2 bis x 500, y 4
+- Naht r0c0|r0c1: Segmente 100083 | 200089 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 12 bis x 500, y 12
+- Naht r0c0|r0c1: Segmente 100031 | 200089 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 23 bis x 500, y 24
+- Naht r0c0|r0c1: Segmente 100085 | 200089 grenzen ohne Bildkante aneinander, 15 Bildpunkte von x 500, y 25 bis x 500, y 39
+- Naht r0c0|r0c1: Segmente 100085 | 200167 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 40 bis x 500, y 47
+- Naht r0c0|r0c1: Segmente 100028 | 200167 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 48 bis x 500, y 48
+- Naht r0c0|r0c1: Segmente 100028 | 200167 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 52 bis x 500, y 55
+- Naht r0c0|r0c1: Segmente 100028 | 200234 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 56 bis x 500, y 59
+- Naht r0c0|r0c1: Segmente 100028 | 200234 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 61 bis x 500, y 62
+- Naht r0c0|r0c1: Segmente 100028 | 200230 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 63 bis x 500, y 72
+- Naht r0c0|r0c1: Segmente 100054 | 200230 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 73 bis x 500, y 75
+- Naht r0c0|r0c1: Segmente 100054 | 200229 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 77 bis x 500, y 83
+- Naht r0c0|r0c1: Segmente 100054 | 200227 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 88 bis x 500, y 94
+- Naht r0c0|r0c1: Segmente 100054 | 200283 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 95 bis x 500, y 100
+- Naht r0c0|r0c1: Segmente 100009 | 200283 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 101 bis x 500, y 104
+- Naht r0c0|r0c1: Segmente 100009 | 200226 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 105 bis x 500, y 107
+- Naht r0c0|r0c1: Segmente 100032 | 200226 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 108 bis x 500, y 115
+- Naht r0c0|r0c1: Segmente 100032 | 200345 grenzen ohne Bildkante aneinander, 40 Bildpunkte von x 500, y 116 bis x 500, y 155
+- Naht r0c0|r0c1: Segmente 100032 | 200342 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 500, y 156 bis x 500, y 169
+- Naht r0c0|r0c1: Segmente 100032 | 200341 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 170 bis x 500, y 172
+- Naht r0c0|r0c1: Segmente 100088 | 200341 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 173 bis x 500, y 176
+- Naht r0c0|r0c1: Segmente 100088 | 200410 grenzen ohne Bildkante aneinander, 25 Bildpunkte von x 500, y 177 bis x 500, y 201
+- Naht r0c0|r0c1: Segmente 100088 | 200487 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 202 bis x 500, y 203
+- Naht r0c0|r0c1: Segmente 100112 | 200487 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 204 bis x 500, y 208
+- Naht r0c0|r0c1: Segmente 100089 | 200415 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 213 bis x 500, y 219
+- Naht r0c0|r0c1: Segmente 100089 | 200485 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 220 bis x 500, y 230
+- Naht r0c0|r0c1: Segmente 100089 | 200489 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 232 bis x 500, y 238
+- Naht r0c0|r0c1: Segmente 100089 | 200415 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 239 bis x 500, y 240
+- Naht r0c0|r0c1: Segmente 100035 | 200415 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 241 bis x 500, y 241
+- Naht r0c0|r0c1: Segmente 100035 | 200491 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 242 bis x 500, y 248
+- Naht r0c0|r0c1: Segmente 100090 | 200491 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 249 bis x 500, y 250
+- Naht r0c0|r0c1: Segmente 100090 | 200585 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 251 bis x 500, y 253
+- Naht r0c0|r0c1: Segmente 100090 | 200585 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 255 bis x 500, y 257
+- Naht r0c0|r0c1: Segmente 100091 | 200585 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 258 bis x 500, y 265
+- Naht r0c0|r0c1: Segmente 100091 | 200583 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 266 bis x 500, y 267
+- Naht r0c0|r0c1: Segmente 100090 | 200583 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 500, y 268 bis x 500, y 281
+- Naht r0c0|r0c1: Segmente 100032 | 200583 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 282 bis x 500, y 282
+- Naht r0c0|r0c1: Segmente 100032 | 200581 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 283 bis x 500, y 284
+- Naht r0c0|r0c1: Segmente 100093 | 200581 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 285 bis x 500, y 287
+- Naht r0c0|r0c1: Segmente 100111 | 200584 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 500, y 288 bis x 500, y 299
+- Naht r0c0|r0c1: Segmente 100092 | 200584 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 300 bis x 500, y 300
+- Naht r0c0|r0c1: Segmente 100092 | 200688 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 301 bis x 500, y 308
+- Naht r0c0|r0c1: Segmente 100092 | 200691 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 309 bis x 500, y 310
+- Naht r0c0|r0c1: Segmente 100033 | 200691 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 311 bis x 500, y 314
+- Naht r0c0|r0c1: Segmente 100033 | 200691 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 316 bis x 500, y 321
+- Naht r0c0|r0c1: Segmente 100033 | 200690 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 500, y 322 bis x 500, y 335
+- Naht r0c0|r0c1: Segmente 100095 | 200690 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 336 bis x 500, y 351
+- Naht r0c0|r0c1: Segmente 100095 | 200786 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 352 bis x 500, y 354
+- Naht r0c0|r0c1: Segmente 100095 | 200786 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 356 bis x 500, y 356
+- Naht r0c0|r0c1: Segmente 100033 | 200786 grenzen ohne Bildkante aneinander, 27 Bildpunkte von x 500, y 357 bis x 500, y 383
+- Naht r0c0|r0c1: Segmente 100033 | 200876 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 384 bis x 500, y 389
+- Naht r0c0|r0c1: Segmente 100096 | 200876 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 390 bis x 500, y 390
+- Naht r0c0|r0c1: Segmente 100096 | 200879 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 391 bis x 500, y 400
+- Naht r0c0|r0c1: Segmente 100033 | 200879 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 401 bis x 500, y 406
+- Naht r0c0|r0c1: Segmente 100033 | 200877 grenzen ohne Bildkante aneinander, 19 Bildpunkte von x 500, y 407 bis x 500, y 425
+- Naht r0c0|r0c1: Segmente 100033 | 200966 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 427 bis x 500, y 434
+- Naht r0c0|r0c1: Segmente 100033 | 200960 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 435 bis x 500, y 438
+- Naht r0c0|r0c1: Segmente 100033 | 200966 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 439 bis x 500, y 448
+- Naht r0c0|r0c1: Segmente 100059 | 200966 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 451 bis x 500, y 451
+- Naht r0c0|r0c1: Segmente 100059 | 201047 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 452 bis x 500, y 461
+- Naht r0c0|r0c1: Segmente 100059 | 201164 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 462 bis x 500, y 472
+- Naht r0c0|r0c1: Segmente 100059 | 201159 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 489 bis x 500, y 497
+- Naht r0c0|r0c1: Segmente 100057 | 201159 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 498 bis x 500, y 499
+- Naht r0c0|r1c0: Segmente 100006 | 300011 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 0, y 500 bis x 2, y 500
+- Naht r0c0|r1c0: Segmente 100006 | 300011 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 4, y 500 bis x 10, y 500
+- Naht r0c0|r1c0: Segmente 100006 | 300011 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 15, y 500 bis x 27, y 500
+- Naht r0c0|r1c0: Segmente 100051 | 300011 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 28, y 500 bis x 34, y 500
+- Naht r0c0|r1c0: Segmente 100042 | 300011 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 35, y 500 bis x 39, y 500
+- Naht r0c0|r1c0: Segmente 100042 | 300032 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 40, y 500 bis x 45, y 500
+- Naht r0c0|r1c0: Segmente 100042 | 300012 grenzen ohne Bildkante aneinander, 58 Bildpunkte von x 46, y 500 bis x 103, y 500
+- Naht r0c0|r1c0: Segmente 100043 | 300012 grenzen ohne Bildkante aneinander, 184 Bildpunkte von x 104, y 500 bis x 287, y 500
+- Naht r0c0|r1c0: Segmente 100043 | 300028 grenzen ohne Bildkante aneinander, 19 Bildpunkte von x 288, y 500 bis x 306, y 500
+- Naht r0c0|r1c0: Segmente 100043 | 300029 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 307, y 500 bis x 311, y 500
+- Naht r0c0|r1c0: Segmente 100043 | 300029 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 318, y 500 bis x 318, y 500
+- Naht r0c0|r1c0: Segmente 100043 | 300029 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 321, y 500 bis x 321, y 500
+- Naht r0c0|r1c0: Segmente 100043 | 300038 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 328, y 500 bis x 332, y 500
+- Naht r0c0|r1c0: Segmente 100043 | 300015 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 333, y 500 bis x 345, y 500
+- Naht r0c0|r1c0: Segmente 100044 | 300015 grenzen ohne Bildkante aneinander, 73 Bildpunkte von x 346, y 500 bis x 418, y 500
+- Naht r0c0|r1c0: Segmente 100044 | 300036 grenzen ohne Bildkante aneinander, 15 Bildpunkte von x 419, y 500 bis x 433, y 500
+- Naht r0c0|r1c0: Segmente 100044 | 300014 grenzen ohne Bildkante aneinander, 50 Bildpunkte von x 434, y 500 bis x 483, y 500
+- Naht r0c0|r1c0: Segmente 100057 | 300014 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 484, y 500 bis x 486, y 500
+- Naht r0c0|r1c0: Segmente 100057 | 300016 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 487, y 500 bis x 499, y 500
+- Naht r0c1|r1c1: Segmente 201159 | 400099 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 500 bis x 502, y 500
+- Naht r0c1|r1c1: Segmente 201156 | 400099 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 503, y 500 bis x 503, y 500
+- Naht r0c1|r1c1: Segmente 201156 | 400419 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 504, y 500 bis x 507, y 500
+- Naht r0c1|r1c1: Segmente 201164 | 400419 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 508, y 500 bis x 523, y 500
+- Naht r0c1|r1c1: Segmente 201164 | 400004 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 524, y 500 bis x 524, y 500
+- Naht r0c1|r1c1: Segmente 201166 | 400004 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 525, y 500 bis x 528, y 500
+- Naht r0c1|r1c1: Segmente 201056 | 400004 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 529, y 500 bis x 530, y 500
+- Naht r0c1|r1c1: Segmente 201367 | 400004 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 531, y 500 bis x 532, y 500
+- Naht r0c1|r1c1: Segmente 201056 | 400004 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 533, y 500 bis x 540, y 500
+- Naht r0c1|r1c1: Segmente 201056 | 400193 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 541, y 500 bis x 546, y 500
+- Naht r0c1|r1c1: Segmente 201056 | 400103 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 547, y 500 bis x 548, y 500
+- Naht r0c1|r1c1: Segmente 201173 | 400104 grenzen ohne Bildkante aneinander, 15 Bildpunkte von x 549, y 500 bis x 563, y 500
+- Naht r0c1|r1c1: Segmente 201173 | 400107 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 564, y 500 bis x 566, y 500
+- Naht r0c1|r1c1: Segmente 201067 | 400107 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 567, y 500 bis x 588, y 500
+- Naht r0c1|r1c1: Segmente 201067 | 400107 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 591, y 500 bis x 591, y 500
+- Naht r0c1|r1c1: Segmente 201182 | 400110 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 599, y 500 bis x 600, y 500
+- Naht r0c1|r1c1: Segmente 201189 | 400113 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 601, y 500 bis x 607, y 500
+- Naht r0c1|r1c1: Segmente 201189 | 400113 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 610, y 500 bis x 614, y 500
+- Naht r0c1|r1c1: Segmente 201189 | 400113 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 616, y 500 bis x 616, y 500
+- Naht r0c1|r1c1: Segmente 201196 | 400117 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 623, y 500 bis x 623, y 500
+- Naht r0c1|r1c1: Segmente 201196 | 400120 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 624, y 500 bis x 639, y 500
+- Naht r0c1|r1c1: Segmente 201093 | 400120 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 641, y 500 bis x 641, y 500
+- Naht r0c1|r1c1: Segmente 201108 | 400210 grenzen ohne Bildkante aneinander, 39 Bildpunkte von x 643, y 500 bis x 681, y 500
+- Naht r0c1|r1c1: Segmente 201108 | 400127 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 682, y 500 bis x 682, y 500
+- Naht r0c1|r1c1: Segmente 201108 | 400127 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 685, y 500 bis x 685, y 500
+- Naht r0c1|r1c1: Segmente 201108 | 400127 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 688, y 500 bis x 689, y 500
+- Naht r0c1|r1c1: Segmente 201215 | 400127 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 698, y 500 bis x 698, y 500
+- Naht r0c1|r1c1: Segmente 201219 | 400127 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 699, y 500 bis x 701, y 500
+- Naht r0c1|r1c1: Segmente 201219 | 400210 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 702, y 500 bis x 709, y 500
+- Naht r0c1|r1c1: Segmente 201219 | 400214 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 710, y 500 bis x 715, y 500
+- Naht r0c1|r1c1: Segmente 201223 | 400130 grenzen ohne Bildkante aneinander, 23 Bildpunkte von x 716, y 500 bis x 738, y 500
+- Naht r0c1|r1c1: Segmente 201223 | 400218 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 739, y 500 bis x 739, y 500
+- Naht r0c1|r1c1: Segmente 200826 | 400218 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 742, y 500 bis x 749, y 500
+- Naht r0c1|r1c1: Segmente 201115 | 400218 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 750, y 500 bis x 750, y 500
+- Naht r0c1|r1c1: Segmente 201115 | 400135 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 751, y 500 bis x 763, y 500
+- Naht r0c1|r1c1: Segmente 201228 | 400135 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 764, y 500 bis x 765, y 500
+- Naht r0c1|r1c1: Segmente 201228 | 400135 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 767, y 500 bis x 773, y 500
+- Naht r0c1|r1c1: Segmente 201229 | 400136 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 778, y 500 bis x 780, y 500
+- Naht r0c1|r1c1: Segmente 201230 | 400136 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 782, y 500 bis x 783, y 500
+- Naht r0c1|r1c1: Segmente 201230 | 400229 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 784, y 500 bis x 797, y 500
+- Naht r0c1|r1c1: Segmente 201233 | 400141 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 801, y 500 bis x 807, y 500
+- Naht r0c1|r1c1: Segmente 201236 | 400143 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 813, y 500 bis x 828, y 500
+- Naht r0c1|r1c1: Segmente 201241 | 400146 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 833, y 500 bis x 833, y 500
+- Naht r0c1|r1c1: Segmente 201120 | 400146 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 834, y 500 bis x 834, y 500
+- Naht r0c1|r1c1: Segmente 201120 | 400149 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 835, y 500 bis x 844, y 500
+- Naht r0c1|r1c1: Segmente 201120 | 400149 grenzen ohne Bildkante aneinander, 25 Bildpunkte von x 851, y 500 bis x 875, y 500
+- Naht r0c1|r1c1: Segmente 201128 | 400149 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 876, y 500 bis x 897, y 500
+- Naht r0c1|r1c1: Segmente 201128 | 400156 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 899, y 500 bis x 899, y 500
+- Naht r0c1|r1c1: Segmente 201249 | 400161 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 901, y 500 bis x 906, y 500
+- Naht r0c1|r1c1: Segmente 201249 | 400160 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 908, y 500 bis x 908, y 500
+- Naht r0c1|r1c1: Segmente 201129 | 400160 grenzen ohne Bildkante aneinander, 24 Bildpunkte von x 909, y 500 bis x 932, y 500
+- Naht r0c1|r1c1: Segmente 201129 | 400164 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 934, y 500 bis x 934, y 500
+- Naht r0c1|r1c1: Segmente 201140 | 400161 grenzen ohne Bildkante aneinander, 32 Bildpunkte von x 941, y 500 bis x 972, y 500
+- Naht r0c1|r1c1: Segmente 201140 | 400170 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 973, y 500 bis x 973, y 500
+- Naht r0c1|r1c1: Segmente 201261 | 400170 grenzen ohne Bildkante aneinander, 15 Bildpunkte von x 974, y 500 bis x 988, y 500
+- Naht r0c1|r1c1: Segmente 201261 | 400170 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 990, y 500 bis x 990, y 500
+- Naht r0c1|r1c1: Segmente 201261 | 400170 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 992, y 500 bis x 992, y 500
+- Naht r0c1|r1c1: Segmente 201140 | 400079 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 994, y 500 bis x 996, y 500
+- Naht r0c1|r1c1: Segmente 201140 | 401093 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 997, y 500 bis x 999, y 500
+- Naht r1c0|r1c1: Segmente 300016 | 400099 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 500 bis x 500, y 507
+- Naht r1c0|r1c1: Segmente 300016 | 400186 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 508 bis x 500, y 509
+- Naht r1c0|r1c1: Segmente 300040 | 400186 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 510 bis x 500, y 516
+- Naht r1c0|r1c1: Segmente 300006 | 400102 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 517 bis x 500, y 517
+- Naht r1c0|r1c1: Segmente 300006 | 400360 grenzen ohne Bildkante aneinander, 157 Bildpunkte von x 500, y 520 bis x 500, y 676
+- Naht r1c0|r1c1: Segmente 300006 | 400488 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 677 bis x 500, y 677
+- Naht r1c0|r1c1: Segmente 300030 | 400491 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 678 bis x 500, y 678
+- Naht r1c0|r1c1: Segmente 300030 | 400491 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 680 bis x 500, y 680
+- Naht r1c0|r1c1: Segmente 300030 | 400491 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 685 bis x 500, y 700
+- Naht r1c0|r1c1: Segmente 300030 | 400492 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 701 bis x 500, y 701
+- Naht r1c0|r1c1: Segmente 300045 | 400489 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 705 bis x 500, y 708
+- Naht r1c0|r1c1: Segmente 300045 | 400832 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 709 bis x 500, y 709
+- Naht r1c0|r1c1: Segmente 300007 | 400832 grenzen ohne Bildkante aneinander, 19 Bildpunkte von x 500, y 712 bis x 500, y 730
+- Naht r1c0|r1c1: Segmente 300007 | 400832 grenzen ohne Bildkante aneinander, 62 Bildpunkte von x 500, y 734 bis x 500, y 795
+- Naht r1c0|r1c1: Segmente 300025 | 400832 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 796 bis x 500, y 796
+- Naht r1c0|r1c1: Segmente 300025 | 400832 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 799 bis x 500, y 800
+- Naht r1c0|r1c1: Segmente 300025 | 400832 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 802 bis x 500, y 805
+- Naht r1c0|r1c1: Segmente 300007 | 400832 grenzen ohne Bildkante aneinander, 135 Bildpunkte von x 500, y 806 bis x 500, y 940
+- Naht r1c0|r1c1: Segmente 300034 | 400832 grenzen ohne Bildkante aneinander, 18 Bildpunkte von x 500, y 941 bis x 500, y 958
+- Naht r1c0|r1c1: Segmente 300004 | 400832 grenzen ohne Bildkante aneinander, 18 Bildpunkte von x 500, y 959 bis x 500, y 976
+- Naht r1c0|r1c1: Segmente 300004 | 400832 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 500, y 978 bis x 500, y 999
+H × W: 1000 × 1000 = 1000000 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 566, nicht zusammenhängend: 0
+ok
+Zusammentragen FEHLER: 163 Nahtverstöße, 0 Mängel, pruefen ok
+[exit 1]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r0c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r0c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\kategorien-b.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r0c0.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 156, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r0c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r0c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\kategorien-b.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r0c1.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 227, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r1c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r1c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\kategorien-b.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r1c0.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 38, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r1c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r1c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\kategorien-b.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r1c1.png --frei
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 195, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ zusammentragen --datei C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\zusammentragen.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\kategorien-b.json
+Zusammengetragen: 4 Teilkacheln (r0c0 Runde 0, r0c1 Runde 0, r1c0 Runde 0, r1c1 Runde 0) -> C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/zusammen
+Umbenannt: 0 neue IDs, Klassenkonflikte: 0
+Nähte: 4 Kerngrenzen, 2000 Positionen, Verstöße: 141, bestätigt: 10
+- Naht r0c0|r0c1: Segmente 100042 | 200019 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 0 bis x 500, y 4
+- Naht r0c0|r0c1: Segmente 100042 | 200019 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 12 bis x 500, y 12
+- Naht r0c0|r0c1: Segmente 100056 | 200019 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 23 bis x 500, y 24
+- Naht r0c0|r0c1: Segmente 100056 | 200004 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 25 bis x 500, y 37
+- Naht r0c0|r0c1: Segmente 100063 | 200004 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 38 bis x 500, y 39
+- Naht r0c0|r0c1: Segmente 100032 | 200004 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 40 bis x 500, y 41
+- Naht r0c0|r0c1: Segmente 100070 | 200004 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 42 bis x 500, y 47
+- Naht r0c0|r0c1: Segmente 100070 | 200186 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 48 bis x 500, y 48
+- Naht r0c0|r0c1: Segmente 100070 | 200186 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 52 bis x 500, y 52
+- Naht r0c0|r0c1: Segmente 100032 | 200186 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 53 bis x 500, y 55
+- Naht r0c0|r0c1: Segmente 100032 | 200169 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 56 bis x 500, y 59
+- Naht r0c0|r0c1: Segmente 100032 | 200169 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 61 bis x 500, y 62
+- Naht r0c0|r0c1: Segmente 100081 | 200171 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 63 bis x 500, y 75
+- Naht r0c0|r0c1: Segmente 100081 | 200180 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 77 bis x 500, y 83
+- Naht r0c0|r0c1: Segmente 100032 | 200180 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 88 bis x 500, y 91
+- Naht r0c0|r0c1: Segmente 100092 | 200180 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 92 bis x 500, y 96
+- Naht r0c0|r0c1: Segmente 100092 | 200031 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 97 bis x 500, y 103
+- Naht r0c0|r0c1: Segmente 100030 | 200031 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 104 bis x 500, y 105
+- Naht r0c0|r0c1: Segmente 100030 | 200049 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 106 bis x 500, y 116
+- Naht r0c0|r0c1: Segmente 100111 | 200049 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 117 bis x 500, y 117
+- Naht r0c0|r0c1: Segmente 100112 | 200310 grenzen ohne Bildkante aneinander, 15 Bildpunkte von x 500, y 118 bis x 500, y 132
+- Naht r0c0|r0c1: Segmente 100111 | 200310 grenzen ohne Bildkante aneinander, 19 Bildpunkte von x 500, y 133 bis x 500, y 151
+- Naht r0c0|r0c1: Segmente 100128 | 200310 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 152 bis x 500, y 155
+- Naht r0c0|r0c1: Segmente 100128 | 200312 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 500, y 156 bis x 500, y 169
+- Naht r0c0|r0c1: Segmente 100143 | 200312 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 170 bis x 500, y 176
+- Naht r0c0|r0c1: Segmente 100144 | 200312 grenzen ohne Bildkante aneinander, 18 Bildpunkte von x 500, y 177 bis x 500, y 194
+- Naht r0c0|r0c1: Segmente 100144 | 200298 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 195 bis x 500, y 200
+- Naht r0c0|r0c1: Segmente 100143 | 200298 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 201 bis x 500, y 208
+- Naht r0c0|r0c1: Segmente 100143 | 200298 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 213 bis x 500, y 214
+- Naht r0c0|r0c1: Segmente 100153 | 200298 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 215 bis x 500, y 230
+- Naht r0c0|r0c1: Segmente 100153 | 200317 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 232 bis x 500, y 238
+- Naht r0c0|r0c1: Segmente 100153 | 200299 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 239 bis x 500, y 239
+- Naht r0c0|r0c1: Segmente 100165 | 200299 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 500, y 240 bis x 500, y 253
+- Naht r0c0|r0c1: Segmente 100165 | 200299 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 255 bis x 500, y 263
+- Naht r0c0|r0c1: Segmente 100176 | 200299 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 264 bis x 500, y 265
+- Naht r0c0|r0c1: Segmente 100176 | 200331 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 500, y 266 bis x 500, y 287
+- Naht r0c0|r0c1: Segmente 100176 | 200299 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 288 bis x 500, y 300
+- Naht r0c0|r0c1: Segmente 100176 | 200304 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 301 bis x 500, y 308
+- Naht r0c0|r0c1: Segmente 100176 | 200289 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 309 bis x 500, y 314
+- Naht r0c0|r0c1: Segmente 100176 | 200289 grenzen ohne Bildkante aneinander, 39 Bildpunkte von x 500, y 316 bis x 500, y 354
+- Naht r0c0|r0c1: Segmente 100176 | 200289 grenzen ohne Bildkante aneinander, 29 Bildpunkte von x 500, y 356 bis x 500, y 384
+- Naht r0c0|r0c1: Segmente 100176 | 200047 grenzen ohne Bildkante aneinander, 41 Bildpunkte von x 500, y 385 bis x 500, y 425
+- Naht r0c0|r0c1: Segmente 100176 | 200290 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 427 bis x 500, y 427
+- Naht r0c0|r0c1: Segmente 100209 | 200290 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 500, y 428 bis x 500, y 439
+- Naht r0c0|r0c1: Segmente 100215 | 200106 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 452 bis x 500, y 460
+- Naht r0c0|r0c1: Segmente 100198 | 200106 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 461 bis x 500, y 463
+- Naht r0c0|r0c1: Segmente 100198 | 200081 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 464 bis x 500, y 472
+- Naht r0c0|r0c1: Segmente 100218 | 200100 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 489 bis x 500, y 490
+- Naht r0c0|r0c1: Segmente 100218 | 200115 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 491 bis x 500, y 499
+- Naht r0c0|r1c0: Segmente 100202 | 300001 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 0, y 500 bis x 2, y 500
+- Naht r0c0|r1c0: Segmente 100202 | 300001 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 4, y 500 bis x 10, y 500
+- Naht r0c0|r1c0: Segmente 100202 | 300001 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 15, y 500 bis x 28, y 500
+- Naht r0c0|r1c0: Segmente 100223 | 300001 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 29, y 500 bis x 42, y 500
+- Naht r0c0|r1c0: Segmente 100223 | 300002 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 43, y 500 bis x 43, y 500
+- Naht r0c0|r1c0: Segmente 100154 | 300002 grenzen ohne Bildkante aneinander, 254 Bildpunkte von x 44, y 500 bis x 297, y 500
+- Naht r0c0|r1c0: Segmente 100154 | 300073 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 298, y 500 bis x 310, y 500
+- Naht r0c0|r1c0: Segmente 100220 | 300073 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 311, y 500 bis x 311, y 500
+- Naht r0c0|r1c0: Segmente 100220 | 300073 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 318, y 500 bis x 318, y 500
+- Naht r0c0|r1c0: Segmente 100220 | 300073 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 321, y 500 bis x 321, y 500
+- Naht r0c0|r1c0: Segmente 100220 | 300073 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 328, y 500 bis x 332, y 500
+- Naht r0c0|r1c0: Segmente 100225 | 300073 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 333, y 500 bis x 333, y 500
+- Naht r0c0|r1c0: Segmente 100225 | 300070 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 334, y 500 bis x 339, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300070 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 340, y 500 bis x 345, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300006 grenzen ohne Bildkante aneinander, 83 Bildpunkte von x 346, y 500 bis x 428, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300004 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 429, y 500 bis x 433, y 500
+- Naht r0c0|r1c0: Segmente 100219 | 300004 grenzen ohne Bildkante aneinander, 46 Bildpunkte von x 434, y 500 bis x 479, y 500
+- Naht r0c0|r1c0: Segmente 100229 | 300004 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 480, y 500 bis x 484, y 500
+- Naht r0c0|r1c0: Segmente 100219 | 300004 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 485, y 500 bis x 490, y 500
+- Naht r0c0|r1c0: Segmente 100218 | 300004 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 491, y 500 bis x 499, y 500
+- Naht r0c1|r1c1: Segmente 200115 | 400037 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 500 bis x 500, y 500
+- Naht r0c1|r1c1: Segmente 200100 | 400037 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 501, y 500 bis x 504, y 500
+- Naht r0c1|r1c1: Segmente 200081 | 400003 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 505, y 500 bis x 521, y 500
+- Naht r0c1|r1c1: Segmente 200081 | 400046 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 522, y 500 bis x 522, y 500
+- Naht r0c1|r1c1: Segmente 200126 | 400046 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 523, y 500 bis x 528, y 500
+- Naht r0c1|r1c1: Segmente 200292 | 400026 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 529, y 500 bis x 538, y 500
+- Naht r0c1|r1c1: Segmente 200292 | 400056 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 539, y 500 bis x 547, y 500
+- Naht r0c1|r1c1: Segmente 200292 | 400306 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 548, y 500 bis x 548, y 500
+- Naht r0c1|r1c1: Segmente 200333 | 400306 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 549, y 500 bis x 550, y 500
+- Naht r0c1|r1c1: Segmente 200333 | 400054 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 551, y 500 bis x 563, y 500
+- Naht r0c1|r1c1: Segmente 200121 | 400047 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 567, y 500 bis x 568, y 500
+- Naht r0c1|r1c1: Segmente 200121 | 400048 grenzen ohne Bildkante aneinander, 20 Bildpunkte von x 569, y 500 bis x 588, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400268 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 599, y 500 bis x 607, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400268 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 610, y 500 bis x 614, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400268 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 616, y 500 bis x 616, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400268 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 623, y 500 bis x 639, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400268 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 641, y 500 bis x 641, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400268 grenzen ohne Bildkante aneinander, 31 Bildpunkte von x 643, y 500 bis x 673, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400267 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 674, y 500 bis x 682, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400267 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 685, y 500 bis x 685, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400267 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 688, y 500 bis x 689, y 500
+- Naht r0c1|r1c1: Segmente 200295 | 400267 grenzen ohne Bildkante aneinander, 19 Bildpunkte von x 698, y 500 bis x 716, y 500
+- Naht r0c1|r1c1: Segmente 200113 | 400035 grenzen ohne Bildkante aneinander, 23 Bildpunkte von x 717, y 500 bis x 739, y 500
+- Naht r0c1|r1c1: Segmente 200049 | 400009 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 742, y 500 bis x 745, y 500
+- Naht r0c1|r1c1: Segmente 200049 | 400051 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 746, y 500 bis x 762, y 500
+- Naht r0c1|r1c1: Segmente 200049 | 400033 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 763, y 500 bis x 763, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 764, y 500 bis x 765, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 767, y 500 bis x 773, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 778, y 500 bis x 780, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 782, y 500 bis x 784, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400053 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 785, y 500 bis x 797, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 801, y 500 bis x 807, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400045 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 813, y 500 bis x 828, y 500
+- Naht r0c1|r1c1: Segmente 200095 | 400011 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 833, y 500 bis x 844, y 500
+- Naht r0c1|r1c1: Segmente 200095 | 400011 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 851, y 500 bis x 859, y 500
+- Naht r0c1|r1c1: Segmente 200112 | 400042 grenzen ohne Bildkante aneinander, 38 Bildpunkte von x 860, y 500 bis x 897, y 500
+- Naht r0c1|r1c1: Segmente 200112 | 400042 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 899, y 500 bis x 899, y 500
+- Naht r0c1|r1c1: Segmente 200112 | 400042 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 901, y 500 bis x 904, y 500
+- Naht r0c1|r1c1: Segmente 200350 | 400042 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 905, y 500 bis x 905, y 500
+- Naht r0c1|r1c1: Segmente 200399 | 400042 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 906, y 500 bis x 906, y 500
+- Naht r0c1|r1c1: Segmente 200399 | 400042 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 908, y 500 bis x 908, y 500
+- Naht r0c1|r1c1: Segmente 200111 | 400041 grenzen ohne Bildkante aneinander, 23 Bildpunkte von x 910, y 500 bis x 932, y 500
+- Naht r0c1|r1c1: Segmente 200111 | 400041 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 934, y 500 bis x 934, y 500
+- Naht r0c1|r1c1: Segmente 200124 | 400055 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 941, y 500 bis x 954, y 500
+- Naht r0c1|r1c1: Segmente 200398 | 400029 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 956, y 500 bis x 965, y 500
+- Naht r0c1|r1c1: Segmente 200123 | 400029 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 966, y 500 bis x 972, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400029 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 973, y 500 bis x 988, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400029 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 990, y 500 bis x 990, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400029 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 992, y 500 bis x 992, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400029 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 994, y 500 bis x 996, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400057 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 997, y 500 bis x 997, y 500
+- Naht r0c1|r1c1: Segmente 200125 | 400057 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 998, y 500 bis x 999, y 500
+- Naht r1c0|r1c1: Segmente 300004 | 400037 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 500 bis x 500, y 509
+- Naht r1c0|r1c1: Segmente 300004 | 400064 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 510 bis x 500, y 516
+- Naht r1c0|r1c1: Segmente 300010 | 400064 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 517 bis x 500, y 517
+- Naht r1c0|r1c1: Segmente 300011 | 400072 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 523 bis x 500, y 531
+- Naht r1c0|r1c1: Segmente 300011 | 400078 grenzen ohne Bildkante aneinander, 146 Bildpunkte von x 500, y 532 bis x 500, y 677
+- Naht r1c0|r1c1: Segmente 300036 | 400110 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 680 bis x 500, y 680
+- Naht r1c0|r1c1: Segmente 300036 | 400110 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 685 bis x 500, y 700
+- Naht r1c0|r1c1: Segmente 300035 | 400137 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 705 bis x 500, y 709
+- Naht r1c0|r1c1: Segmente 300029 | 400118 grenzen ohne Bildkante aneinander, 19 Bildpunkte von x 500, y 712 bis x 500, y 730
+- Naht r1c0|r1c1: Segmente 300029 | 400118 grenzen ohne Bildkante aneinander, 63 Bildpunkte von x 500, y 734 bis x 500, y 796
+- Naht r1c0|r1c1: Segmente 300029 | 400118 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 799 bis x 500, y 800
+- Naht r1c0|r1c1: Segmente 300029 | 400118 grenzen ohne Bildkante aneinander, 137 Bildpunkte von x 500, y 802 bis x 500, y 938
+- Naht r1c0|r1c1: Segmente 300023 | 400118 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 939 bis x 500, y 940
+- Naht r1c0|r1c1: Segmente 300023 | 400191 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 941 bis x 500, y 943
+- Naht r1c0|r1c1: Segmente 300023 | 400118 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 944 bis x 500, y 952
+- Naht r1c0|r1c1: Segmente 300023 | 400209 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 500, y 953 bis x 500, y 974
+- Naht r1c0|r1c1: Segmente 300023 | 400176 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 975 bis x 500, y 976
+- Naht r1c0|r1c1: Segmente 300026 | 400176 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 978 bis x 500, y 981
+- Naht r1c0|r1c1: Segmente 300074 | 400176 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 982 bis x 500, y 985
+- Naht r1c0|r1c1: Segmente 300026 | 400176 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 500, y 986 bis x 500, y 999
+H × W: 1000 × 1000 = 1000000 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 468, nicht zusammenhängend: 0
+ok
+Zusammentragen FEHLER: 141 Nahtverstöße, 0 Mängel, pruefen ok
+[exit 1]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r0c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r0c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\kategorien-c.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r0c0.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 148, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r0c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r0c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\kategorien-c.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r0c1.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 141, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r1c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r1c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\kategorien-c.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r1c0.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 50, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ pruefen --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r1c1\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r1c1\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\kategorien-c.json --bild C:\Users\Phil\Developement\Victor\daten\landseg\H0\teilkacheln\r1c1.png
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 119, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+$ zusammentragen --datei C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\zusammentragen.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\kategorien-c.json
+Zusammengetragen: 4 Teilkacheln (r0c0 Runde 0, r0c1 Runde 0, r1c0 Runde 0, r1c1 Runde 0) -> C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/zusammen
+Umbenannt: 0 neue IDs, Klassenkonflikte: 0
+Nähte: 4 Kerngrenzen, 2000 Positionen, Verstöße: 105, bestätigt: 28
+- Naht r0c0|r0c1: Segmente 100256 | 200004 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 500, y 23 bis x 500, y 28
+- Naht r0c0|r0c1: Segmente 100056 | 200004 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 29 bis x 500, y 37
+- Naht r0c0|r0c1: Segmente 100063 | 200004 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 38 bis x 500, y 39
+- Naht r0c0|r0c1: Segmente 100032 | 200004 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 40 bis x 500, y 41
+- Naht r0c0|r0c1: Segmente 100070 | 200004 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 42 bis x 500, y 48
+- Naht r0c0|r0c1: Segmente 100070 | 200004 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 52 bis x 500, y 52
+- Naht r0c0|r0c1: Segmente 100032 | 200004 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 53 bis x 500, y 59
+- Naht r0c0|r0c1: Segmente 100032 | 200004 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 61 bis x 500, y 62
+- Naht r0c0|r0c1: Segmente 100081 | 200004 grenzen ohne Bildkante aneinander, 13 Bildpunkte von x 500, y 63 bis x 500, y 75
+- Naht r0c0|r0c1: Segmente 100081 | 200004 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 77 bis x 500, y 83
+- Naht r0c0|r0c1: Segmente 100032 | 200004 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 88 bis x 500, y 91
+- Naht r0c0|r0c1: Segmente 100030 | 200004 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 92 bis x 500, y 96
+- Naht r0c0|r0c1: Segmente 100030 | 200031 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 97 bis x 500, y 105
+- Naht r0c0|r0c1: Segmente 100030 | 200049 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 500, y 106 bis x 500, y 116
+- Naht r0c0|r0c1: Segmente 100111 | 200049 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 117 bis x 500, y 117
+- Naht r0c0|r0c1: Segmente 100111 | 200047 grenzen ohne Bildkante aneinander, 34 Bildpunkte von x 500, y 118 bis x 500, y 151
+- Naht r0c0|r0c1: Segmente 100128 | 200047 grenzen ohne Bildkante aneinander, 18 Bildpunkte von x 500, y 152 bis x 500, y 169
+- Naht r0c0|r0c1: Segmente 100143 | 200047 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 170 bis x 500, y 176
+- Naht r0c0|r0c1: Segmente 100144 | 200047 grenzen ohne Bildkante aneinander, 24 Bildpunkte von x 500, y 177 bis x 500, y 200
+- Naht r0c0|r0c1: Segmente 100143 | 200047 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 201 bis x 500, y 208
+- Naht r0c0|r0c1: Segmente 100143 | 200047 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 213 bis x 500, y 214
+- Naht r0c0|r0c1: Segmente 100153 | 200047 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 215 bis x 500, y 230
+- Naht r0c0|r0c1: Segmente 100153 | 200047 grenzen ohne Bildkante aneinander, 8 Bildpunkte von x 500, y 232 bis x 500, y 239
+- Naht r0c0|r0c1: Segmente 100165 | 200047 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 500, y 240 bis x 500, y 253
+- Naht r0c0|r0c1: Segmente 100165 | 200047 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 255 bis x 500, y 263
+- Naht r0c0|r0c1: Segmente 100176 | 200047 grenzen ohne Bildkante aneinander, 51 Bildpunkte von x 500, y 264 bis x 500, y 314
+- Naht r0c0|r0c1: Segmente 100176 | 200047 grenzen ohne Bildkante aneinander, 39 Bildpunkte von x 500, y 316 bis x 500, y 354
+- Naht r0c0|r0c1: Segmente 100176 | 200047 grenzen ohne Bildkante aneinander, 70 Bildpunkte von x 500, y 356 bis x 500, y 425
+- Naht r0c0|r0c1: Segmente 100176 | 200047 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 427 bis x 500, y 427
+- Naht r0c0|r0c1: Segmente 100209 | 200047 grenzen ohne Bildkante aneinander, 12 Bildpunkte von x 500, y 428 bis x 500, y 439
+- Naht r0c0|r0c1: Segmente 100198 | 200047 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 461 bis x 500, y 463
+- Naht r0c0|r0c1: Segmente 100198 | 200081 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 464 bis x 500, y 472
+- Naht r0c0|r0c1: Segmente 100218 | 200115 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 491 bis x 500, y 499
+- Naht r0c0|r1c0: Segmente 100202 | 300001 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 0, y 500 bis x 2, y 500
+- Naht r0c0|r1c0: Segmente 100202 | 300001 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 4, y 500 bis x 10, y 500
+- Naht r0c0|r1c0: Segmente 100202 | 300001 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 15, y 500 bis x 28, y 500
+- Naht r0c0|r1c0: Segmente 100223 | 300001 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 29, y 500 bis x 42, y 500
+- Naht r0c0|r1c0: Segmente 100154 | 300002 grenzen ohne Bildkante aneinander, 251 Bildpunkte von x 44, y 500 bis x 294, y 500
+- Naht r0c0|r1c0: Segmente 100154 | 300084 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 295, y 500 bis x 300, y 500
+- Naht r0c0|r1c0: Segmente 100154 | 300075 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 301, y 500 bis x 310, y 500
+- Naht r0c0|r1c0: Segmente 100225 | 300080 grenzen ohne Bildkante aneinander, 6 Bildpunkte von x 333, y 500 bis x 338, y 500
+- Naht r0c0|r1c0: Segmente 100195 | 300006 grenzen ohne Bildkante aneinander, 89 Bildpunkte von x 340, y 500 bis x 428, y 500
+- Naht r0c0|r1c0: Segmente 100219 | 300004 grenzen ohne Bildkante aneinander, 46 Bildpunkte von x 434, y 500 bis x 479, y 500
+- Naht r0c0|r1c0: Segmente 100229 | 300079 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 481, y 500 bis x 484, y 500
+- Naht r0c0|r1c0: Segmente 100218 | 300079 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 491, y 500 bis x 499, y 500
+- Naht r0c1|r1c1: Segmente 200115 | 400037 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 500 bis x 500, y 500
+- Naht r0c1|r1c1: Segmente 200081 | 400003 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 505, y 500 bis x 521, y 500
+- Naht r0c1|r1c1: Segmente 200081 | 400046 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 522, y 500 bis x 528, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400026 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 529, y 500 bis x 538, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400056 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 539, y 500 bis x 547, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400054 grenzen ohne Bildkante aneinander, 18 Bildpunkte von x 548, y 500 bis x 565, y 500
+- Naht r0c1|r1c1: Segmente 200121 | 400054 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 566, y 500 bis x 566, y 500
+- Naht r0c1|r1c1: Segmente 200121 | 400048 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 567, y 500 bis x 588, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 599, y 500 bis x 607, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 610, y 500 bis x 614, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 616, y 500 bis x 616, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 623, y 500 bis x 639, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 641, y 500 bis x 641, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 40 Bildpunkte von x 643, y 500 bis x 682, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 685, y 500 bis x 685, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 688, y 500 bis x 689, y 500
+- Naht r0c1|r1c1: Segmente 200047 | 400006 grenzen ohne Bildkante aneinander, 19 Bildpunkte von x 698, y 500 bis x 716, y 500
+- Naht r0c1|r1c1: Segmente 200113 | 400035 grenzen ohne Bildkante aneinander, 23 Bildpunkte von x 717, y 500 bis x 739, y 500
+- Naht r0c1|r1c1: Segmente 200049 | 400009 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 742, y 500 bis x 745, y 500
+- Naht r0c1|r1c1: Segmente 200049 | 400051 grenzen ohne Bildkante aneinander, 17 Bildpunkte von x 746, y 500 bis x 762, y 500
+- Naht r0c1|r1c1: Segmente 200049 | 400033 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 763, y 500 bis x 763, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 764, y 500 bis x 765, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 767, y 500 bis x 773, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 778, y 500 bis x 780, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 782, y 500 bis x 797, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400033 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 801, y 500 bis x 807, y 500
+- Naht r0c1|r1c1: Segmente 200097 | 400045 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 813, y 500 bis x 828, y 500
+- Naht r0c1|r1c1: Segmente 200095 | 400011 grenzen ohne Bildkante aneinander, 11 Bildpunkte von x 833, y 500 bis x 843, y 500
+- Naht r0c1|r1c1: Segmente 200112 | 400042 grenzen ohne Bildkante aneinander, 38 Bildpunkte von x 860, y 500 bis x 897, y 500
+- Naht r0c1|r1c1: Segmente 200112 | 400042 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 899, y 500 bis x 899, y 500
+- Naht r0c1|r1c1: Segmente 200112 | 400042 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 901, y 500 bis x 904, y 500
+- Naht r0c1|r1c1: Segmente 200111 | 400041 grenzen ohne Bildkante aneinander, 23 Bildpunkte von x 910, y 500 bis x 932, y 500
+- Naht r0c1|r1c1: Segmente 200111 | 400041 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 934, y 500 bis x 934, y 500
+- Naht r0c1|r1c1: Segmente 200124 | 400055 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 941, y 500 bis x 954, y 500
+- Naht r0c1|r1c1: Segmente 200225 | 400029 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 956, y 500 bis x 965, y 500
+- Naht r0c1|r1c1: Segmente 200105 | 400029 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 966, y 500 bis x 972, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400029 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 973, y 500 bis x 988, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400029 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 990, y 500 bis x 990, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400029 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 992, y 500 bis x 992, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400029 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 994, y 500 bis x 996, y 500
+- Naht r0c1|r1c1: Segmente 200110 | 400062 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 997, y 500 bis x 997, y 500
+- Naht r0c1|r1c1: Segmente 200125 | 400062 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 998, y 500 bis x 999, y 500
+- Naht r1c0|r1c1: Segmente 300079 | 400037 grenzen ohne Bildkante aneinander, 10 Bildpunkte von x 500, y 500 bis x 500, y 509
+- Naht r1c0|r1c1: Segmente 300079 | 400064 grenzen ohne Bildkante aneinander, 7 Bildpunkte von x 500, y 510 bis x 500, y 516
+- Naht r1c0|r1c1: Segmente 300010 | 400064 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 517 bis x 500, y 517
+- Naht r1c0|r1c1: Segmente 300083 | 400072 grenzen ohne Bildkante aneinander, 9 Bildpunkte von x 500, y 523 bis x 500, y 531
+- Naht r1c0|r1c1: Segmente 300011 | 400078 grenzen ohne Bildkante aneinander, 146 Bildpunkte von x 500, y 532 bis x 500, y 677
+- Naht r1c0|r1c1: Segmente 300024 | 400110 grenzen ohne Bildkante aneinander, 1 Bildpunkte von x 500, y 680 bis x 500, y 680
+- Naht r1c0|r1c1: Segmente 300030 | 400110 grenzen ohne Bildkante aneinander, 16 Bildpunkte von x 500, y 685 bis x 500, y 700
+- Naht r1c0|r1c1: Segmente 300035 | 400137 grenzen ohne Bildkante aneinander, 5 Bildpunkte von x 500, y 705 bis x 500, y 709
+- Naht r1c0|r1c1: Segmente 300029 | 400118 grenzen ohne Bildkante aneinander, 19 Bildpunkte von x 500, y 712 bis x 500, y 730
+- Naht r1c0|r1c1: Segmente 300029 | 400118 grenzen ohne Bildkante aneinander, 63 Bildpunkte von x 500, y 734 bis x 500, y 796
+- Naht r1c0|r1c1: Segmente 300029 | 400118 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 799 bis x 500, y 800
+- Naht r1c0|r1c1: Segmente 300029 | 400118 grenzen ohne Bildkante aneinander, 137 Bildpunkte von x 500, y 802 bis x 500, y 938
+- Naht r1c0|r1c1: Segmente 300023 | 400191 grenzen ohne Bildkante aneinander, 3 Bildpunkte von x 500, y 941 bis x 500, y 943
+- Naht r1c0|r1c1: Segmente 300023 | 400209 grenzen ohne Bildkante aneinander, 22 Bildpunkte von x 500, y 953 bis x 500, y 974
+- Naht r1c0|r1c1: Segmente 300023 | 400176 grenzen ohne Bildkante aneinander, 2 Bildpunkte von x 500, y 975 bis x 500, y 976
+- Naht r1c0|r1c1: Segmente 300026 | 400176 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 978 bis x 500, y 981
+- Naht r1c0|r1c1: Segmente 300082 | 400176 grenzen ohne Bildkante aneinander, 4 Bildpunkte von x 500, y 982 bis x 500, y 985
+- Naht r1c0|r1c1: Segmente 300026 | 400176 grenzen ohne Bildkante aneinander, 14 Bildpunkte von x 500, y 986 bis x 500, y 999
+H × W: 1000 × 1000 = 1000000 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 297, nicht zusammenhängend: 0
+ok
+Zusammentragen FEHLER: 105 Nahtverstöße, 0 Mängel, pruefen ok
+[exit 1]
+
+$ einigung messen --manifest C:\Users\Phil\Developement\Victor\daten\landseg\H0\manifest.json
+Fassung A: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 33 (173), geklärt 144 (1647); Schnittlinien ohne Bildkante: 188 Paare
+Fassung B: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 16 (273), geklärt 128 (1206); Schnittlinien ohne Bildkante: 175 Paare
+Fassung C: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 12 (146), geklärt 81 (661); Schnittlinien ohne Bildkante: 133 Paare
+[exit 0]
+

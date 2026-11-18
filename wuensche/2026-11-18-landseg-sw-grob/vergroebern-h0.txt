@@ -1,0 +1,52 @@
+### vergroebern (H0-grob2)
+== a-alles-frei
+r0c0: Segmente 113 -> 99 (im Kern 81, Richtwert 150), zusammengelegt 14, davon an Kern- und Viertelgrenzen 2 (Einigung mitgenommen 0); unter 494 Bildpunkten bleiben: geschützt 1, an der Grenze ohne Nachbarn gleicher Klasse 16; pruefen ok
+r0c1: Segmente 1367 -> 555 (im Kern 269, Richtwert 150), zusammengelegt 812, davon an Kern- und Viertelgrenzen 245 (Einigung mitgenommen 37); unter 494 Bildpunkten bleiben: geschützt 0, an der Grenze ohne Nachbarn gleicher Klasse 296; pruefen ok
+  Hinweis: Richtwert: 269 Segmente im Kern > 150 (Bildart mit Richtwert, einstellungen/bildarten.json); kleine unklare Flächen mit dem Nachbarn zusammenlegen
+r1c0: Segmente 49 -> 43 (im Kern 38, Richtwert 150), zusammengelegt 6, davon an Kern- und Viertelgrenzen 0 (Einigung mitgenommen 0); unter 494 Bildpunkten bleiben: geschützt 0, an der Grenze ohne Nachbarn gleicher Klasse 4; pruefen ok
+r1c1: Segmente 1096 -> 329 (im Kern 178, Richtwert 150), zusammengelegt 767, davon an Kern- und Viertelgrenzen 201 (Einigung mitgenommen 44); unter 494 Bildpunkten bleiben: geschützt 7, an der Grenze ohne Nachbarn gleicher Klasse 167; pruefen ok
+  Hinweis: Richtwert: 178 Segmente im Kern > 150 (Bildart mit Richtwert, einstellungen/bildarten.json); kleine unklare Flächen mit dem Nachbarn zusammenlegen
+Einigung: 130 Beschlüsse auf die zusammengelegten Segmente umgestellt
+exit 0
+== b-kategorien-frei
+r0c0: Segmente 266 -> 156 (im Kern 113, Richtwert 150), zusammengelegt 110, davon an Kern- und Viertelgrenzen 44 (Einigung mitgenommen 7); unter 494 Bildpunkten bleiben: geschützt 6, an der Grenze ohne Nachbarn gleicher Klasse 26; pruefen ok
+r0c1: Segmente 350 -> 227 (im Kern 179, Richtwert 150), zusammengelegt 123, davon an Kern- und Viertelgrenzen 33 (Einigung mitgenommen 9); unter 494 Bildpunkten bleiben: geschützt 9, an der Grenze ohne Nachbarn gleicher Klasse 50; pruefen ok
+  Hinweis: Richtwert: 179 Segmente im Kern > 150 (Bildart mit Richtwert, einstellungen/bildarten.json); kleine unklare Flächen mit dem Nachbarn zusammenlegen
+r1c0: Segmente 49 -> 38 (im Kern 22, Richtwert 150), zusammengelegt 11, davon an Kern- und Viertelgrenzen 11 (Einigung mitgenommen 0); unter 494 Bildpunkten bleiben: geschützt 0, an der Grenze ohne Nachbarn gleicher Klasse 13; pruefen ok
+r1c1: Segmente 304 -> 195 (im Kern 154, Richtwert 150), zusammengelegt 109, davon an Kern- und Viertelgrenzen 37 (Einigung mitgenommen 8); unter 494 Bildpunkten bleiben: geschützt 3, an der Grenze ohne Nachbarn gleicher Klasse 33; pruefen ok
+  Hinweis: Richtwert: 154 Segmente im Kern > 150 (Bildart mit Richtwert, einstellungen/bildarten.json); kleine unklare Flächen mit dem Nachbarn zusammenlegen
+Einigung: 48 Beschlüsse auf die zusammengelegten Segmente umgestellt
+exit 0
+== c-feste-liste
+r0c0: Segmente 233 -> 148 (im Kern 101, Richtwert 150), zusammengelegt 85, davon an Kern- und Viertelgrenzen 42 (Einigung mitgenommen 9); unter 494 Bildpunkten bleiben: geschützt 0, an der Grenze ohne Nachbarn gleicher Klasse 28; pruefen ok
+r0c1: Segmente 206 -> 141 (im Kern 93, Richtwert 150), zusammengelegt 65, davon an Kern- und Viertelgrenzen 35 (Einigung mitgenommen 13); unter 494 Bildpunkten bleiben: geschützt 11, an der Grenze ohne Nachbarn gleicher Klasse 21; pruefen ok
+r1c0: Segmente 56 -> 50 (im Kern 29, Richtwert 150), zusammengelegt 6, davon an Kern- und Viertelgrenzen 6 (Einigung mitgenommen 0); unter 494 Bildpunkten bleiben: geschützt 0, an der Grenze ohne Nachbarn gleicher Klasse 18; pruefen ok
+r1c1: Segmente 216 -> 119 (im Kern 74, Richtwert 150), zusammengelegt 97, davon an Kern- und Viertelgrenzen 40 (Einigung mitgenommen 7); unter 494 Bildpunkten bleiben: geschützt 0, an der Grenze ohne Nachbarn gleicher Klasse 28; pruefen ok
+Einigung: 61 Beschlüsse auf die zusammengelegten Segmente umgestellt
+exit 0
+### H0-vorher
+r0c0:93 r0c1:876 r1c0:44 r1c1:820  Kern gesamt a-alles-frei: 1833
+Zusammentragen FEHLER: 187 Nahtverstöße, 0 Mängel, pruefen ok
+Naht-Verstoesse: 187
+Fassung a-alles-frei: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 35 (173), geklärt 178 (1629); Schnittlinien ohne Bildkante: 248 Paare
+r0c0:191 r0c1:282 r1c0:22 r1c1:233  Kern gesamt b-kategorien-frei: 728
+Zusammentragen FEHLER: 152 Nahtverstöße, 0 Mängel, pruefen ok
+Naht-Verstoesse: 152
+Fassung b-kategorien-frei: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 17 (273), geklärt 136 (734); Schnittlinien ohne Bildkante: 192 Paare
+r0c0:158 r0c1:138 r1c0:29 r1c1:145  Kern gesamt c-feste-liste: 470
+Zusammentragen FEHLER: 119 Nahtverstöße, 0 Mängel, pruefen ok
+Naht-Verstoesse: 119
+Fassung c-feste-liste: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 13 (145), geklärt 88 (410); Schnittlinien ohne Bildkante: 158 Paare
+### H0-grob2
+r0c0:81 r0c1:269 r1c0:38 r1c1:178  Kern gesamt a-alles-frei: 566
+Zusammentragen FEHLER: 163 Nahtverstöße, 0 Mängel, pruefen ok
+Naht-Verstoesse: 163
+Fassung a-alles-frei: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 33 (173), geklärt 144 (1647); Schnittlinien ohne Bildkante: 188 Paare
+r0c0:113 r0c1:179 r1c0:22 r1c1:154  Kern gesamt b-kategorien-frei: 468
+Zusammentragen FEHLER: 141 Nahtverstöße, 0 Mängel, pruefen ok
+Naht-Verstoesse: 141
+Fassung b-kategorien-frei: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 16 (273), geklärt 128 (1206); Schnittlinien ohne Bildkante: 175 Paare
+r0c0:101 r0c1:93 r1c0:29 r1c1:74  Kern gesamt c-feste-liste: 297
+Zusammentragen FEHLER: 105 Nahtverstöße, 0 Mängel, pruefen ok
+Naht-Verstoesse: 105
+Fassung c-feste-liste: gleiche Fläche, verschiedene Klasse: offen 0 Paare (0 Randpunkte), unsicher belegt 12 (146), geklärt 81 (661); Schnittlinien ohne Bildkante: 133 Paare

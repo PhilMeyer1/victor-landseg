@@ -1,0 +1,15 @@
+[
+ {"id": 100045, "art": "gt", "t": 110, "grund": "Helles Dach neben dunkler Schattenzone in einem Segment."},
+ {"id": 100037, "art": "gt", "t": 120, "grund": "Heller Dachstreifen neben Schatten in einem Segment."},
+ {"id": 100056, "art": "gt", "t": 120, "grund": "Heller Dachstreifen neben Schatten in einem Segment."},
+ {"id": 100066, "art": "gt", "t": 115, "grund": "Heller schmaler Bau im dunklen Innenhof."},
+ {"id": 100100, "art": "gt", "t": 110, "grund": "Heller L-förmiger Bau neben dunkler Schattenzone."},
+ {"id": 100104, "art": "gt", "t": 140, "roi": "310,200;400,200;400,252;310,252", "grund": "Langer heller Bau in einer großen Mischfläche aus Hof, Bauten und Schatten."},
+ {"id": 100104, "art": "lt", "t": 55, "roi": "345,242;375,242;375,270;345,270", "grund": "Dunkles Quadrat (Baumkrone oder Schatten) in der Mischfläche."},
+ {"id": 100128, "art": "lt", "t": 95, "roi": "525,205;563,205;563,250;525,250", "grund": "Dunkler Hofteil bzw. Schatten getrennt von den hellen Dächern."},
+ {"op": "verschmelzen", "ids": [100030, 100109, 100117, 100084, 100086], "ziel": 100030, "grund": "Stücke derselben Straße bzw. Kreuzung ohne Bildkante."},
+ {"op": "verschmelzen", "ids": [100083, 100095, 100087], "ziel": 100083, "grund": "Dunkle Flecken am Rand derselben Fläche ohne klare Kante."},
+ {"op": "verschmelzen", "ids": [100012, 100053, 100054], "ziel": 100012, "grund": "Stücke derselben Garten-/Grünfläche nördlich der Kreuzung ohne Kante."},
+ {"op": "verschmelzen", "ids": [100145, 100141, 100139], "ziel": 100145, "grund": "Teile derselben dunklen Fläche ohne Bildkante."},
+ {"op": "verschmelzen", "ids": [100169, 100166], "ziel": 100169, "grund": "Zwei Teile desselben dunklen Gehölzes am Straßenrand."}
+]

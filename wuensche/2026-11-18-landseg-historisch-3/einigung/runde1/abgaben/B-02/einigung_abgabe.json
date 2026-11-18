@@ -1,0 +1,171 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-02",
+ "bearbeiter": "agent:einigung-B-02:20261118i-r1",
+ "paare": [
+  {
+   "paar": "r0c0:100143|r0c0:100167",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helles Dach 167 mit scharfen Kanten liegt im dunklen, beschatteten Hof 143; an den vier Randpunkten wechselt hell zu dunkel, zwei verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100153|r0c0:100274",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das helle Dachstück 274 endet an der Viertelgrenze, darunter beginnt der dunklere, schattige Saum von 153; Helligkeitsabfall sichtbar, zwei Flächen."
+  },
+  {
+   "paar": "r0c0:100111|r0c1:200042",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Nur ein Eckpunkt: der beschattete, dunkle Hof 111 stößt schräg an das sehr helle Fahrbahnband 200042; klar verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100112|r0c1:200310",
+   "entscheidung": "gleich",
+   "klasse": "0.1",
+   "grund": "Der fast schwarze Fleck 112 ist das linke Ende desselben breiten schwarzen Schattenbands, das rechts als 310 weiterläuft; zwischen Hofenden und Straße, nicht zwischen zwei Dächern, daher Schlagschatten ohne Unterklasse."
+  },
+  {
+   "paar": "r0c0:100111|r0c1:200310",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "An der Naht zeigen beide Seiten dasselbe schwarze Schattenband, aber 111 umfasst links davon auch einen beleuchteten mittelgrauen Hof mit hellem Fleck; eine gemeinsame Klasse würde eine der beiden Flächen falsch führen."
+  },
+  {
+   "paar": "r0c0:100128|r0c1:200310",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der mittelgraue Hof 128 endet an der Naht am linken Rand des schwarzen Schattenbands 310; Hof und Schlagschatten sind verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100128|r0c1:200312",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "312 ist das Ende des hellen Dachstreifens rechts der Naht und reicht nur mit einem etwa 3 Bildpunkte schmalen Saum an den dunklen Hof 128 hoch; die eigentliche Grenze ist die Dachkante."
+  },
+  {
+   "paar": "r0c0:100143|r0c1:200312",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "An der Naht trifft das mittelgraue, schattige Hofstück 143 auf die obere Ecke des hellen Dachendes 312; Helligkeitsstufe zur Dachkante sichtbar."
+  },
+  {
+   "paar": "r0c0:100144|r0c1:200298",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das helle Dach 144 endet an der Kontaktstelle an der dunklen Schattenlinie; 298 ist die mittelgraue Mischfläche rechts darunter, die Grenze Dach/Schattenlinie läuft schräg durch die Stelle."
+  },
+  {
+   "paar": "r0c0:100143|r0c1:200298",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Links der Naht hellgrauer Streifen mit hellem Fleck (143), rechts setzt sich der Streifen deutlich dunkler mittelgrau fort (298); Helligkeitsstufe genau an der Naht, verschiedene Dach- oder Hofflächen."
+  },
+  {
+   "paar": "r0c0:100153|r0c1:200298",
+   "entscheidung": "gleich",
+   "klasse": "0.2.1",
+   "grund": "Derselbe mittelgraue Streifen zwischen zwei dunklen Schattenlinien läuft ohne Kante über die Naht; er wirft selbst einen Schatten und liegt neben hellen Dächern, Dachseite im Halbschatten oder Hof nicht zu trennen."
+  },
+  {
+   "paar": "r0c0:100153|r0c1:200317",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "317 ist die schwarze Schattenlinie zwischen zwei Häusern; sie läuft schräg durch die Kontaktstelle, 153 ist der mittelgraue Streifen darüber mit nur einem schmalen Schattensaum."
+  },
+  {
+   "paar": "r0c0:100153|r0c1:200299",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Nur ein Eckpunkt über die Schattenlinie 317 hinweg: 153 liegt oberhalb, 299 unterhalb der Linie, zwei getrennte mittelgraue Streifen."
+  },
+  {
+   "paar": "r0c0:100165|r0c1:200299",
+   "entscheidung": "gleich",
+   "klasse": "0.2.1",
+   "grund": "Derselbe mittelgraue Block zwischen dunkler Schattenlinie und hellem Dachstreifen läuft ohne Kante über die Naht; beide Seiten sehen darin eine Dachseite im Schatten, Dach oder Hof ist im Schwarz-Weiß nicht sicher zu trennen."
+  },
+  {
+   "paar": "r0c0:100176|r0c1:200299",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "An der Naht unterhalb des schwarzen Flecks beidseits mittelgrau ohne Kante, aber 299 ist eine Mischfläche aus Dachseite und Hof und 176 ein großer Hof mit Schattenfleck und Dachende; keine gemeinsame Klasse sicher."
+  },
+  {
+   "paar": "r0c0:100176|r0c1:200331",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Der schwarze Schattenfleck liegt auf beiden Seiten der Naht: rechts als 331, links ist er Teil des großen Hofs 176; eine gemeinsame Klasse würde entweder den Hof oder den Schatten falsch führen."
+  },
+  {
+   "paar": "r0c0:100176|r0c1:200304",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Der helle Dachstreifen 304 setzt sich etwa 10 bis 12 Bildpunkte über die Naht in 176 fort und wird dort allmählich grauer; das Dachende liegt im Hofsegment 176, eine gemeinsame Klasse passt nicht."
+  },
+  {
+   "paar": "r0c0:100176|r0c1:200289",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Entlang der ganzen Strecke beidseits gleichmäßig mittelgraue, offene Fläche ohne Kante; 176 führt sie als Hof, 289 als Mischfläche aus Dachseiten und Höfen, und beide Segmente enthalten weitere Flächenarten, daher keine sichere gemeinsame Klasse."
+  },
+  {
+   "paar": "r0c0:100176|r0c1:200047",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "An der Naht beidseits dieselbe mittelgraue bis helle Hoffläche, aber 47 umfasst auch ein sehr helles Gebäude von etwa 35 mal 8 Metern und ist als Wohnhaus geführt; eine gemeinsame Klasse würde Hof oder Gebäude falsch führen."
+  },
+  {
+   "paar": "r0c0:100176|r0c1:200290",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der mittelgraue Hof 176 endet am oberen Rand des dunklen, fleckigen Gehölzbands 290 und reicht nur mit einem dunklen Randsaum an die Naht; Hof und Gehölz sind verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100209|r0c1:200290",
+   "entscheidung": "gleich",
+   "klasse": "4.4",
+   "grund": "Die 4 Kernbildpunkte von 209 sind der Rand derselben dunklen, fleckigen Fläche aus rundlichen Kronen mit Schlagschatten, die rechts als 290 weiterläuft; Baum und Gebüsch nicht zu trennen."
+  },
+  {
+   "paar": "r0c0:100211|r0c1:200290",
+   "entscheidung": "gleich",
+   "klasse": "4.4",
+   "grund": "Der dunkle Streifen 211 geht an der Naht ohne Kante in die dunkle Fläche aus rundlichen Kronen 290 über; für alle drei Glieder Gehölz, Baum und Gebüsch nicht zu trennen, für Gartenbeete zu dunkel und zu geschlossen."
+  },
+  {
+   "paar": "r0c0:100215|r0c1:200290",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Nur ein Eckpunkt: 215 ist die mittelgraue Fläche unter dem unteren Rand des dunklen Gehölzbands 290; verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100215|r0c1:200106",
+   "entscheidung": "gleich",
+   "klasse": "2.1.1",
+   "grund": "215 und 106 sind dieselbe glatte, mittelgraue Fläche östlich der Straße ohne Kante an der Naht; 106 ist kein schmaler Randstreifen, sondern ein Stück einer breiteren offenen Hoffläche, die an die Straße grenzt."
+  },
+  {
+   "paar": "r0c0:100198|r0c1:200106",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das sehr helle Straßenband 198 grenzt an die mittelgraue Hoffläche 106; Helligkeitsstufe am Fahrbahnrand sichtbar."
+  },
+  {
+   "paar": "r0c1:200054|r0c1:200289",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Nur ein Eckpunkt: das schwarze Schattenband 54 längs der Straße stößt an die mittelgraue Fläche 289; klar verschiedene Flächen."
+  }
+ ],
+ "offen": [
+  "r0c0:100176 (Hof, 4869 Kernbildpunkte) ist eine Mischfläche aus schwarzem Schattenfleck (setzt sich in r0c1:200331 fort), Dachende von r0c1:200304 und offener Hoffläche; Paare 15–19 bleiben unklar, bis 176 an den Bildkanten geteilt ist (Schattenfleck, Dachende, Hof).",
+  "r0c0:100111 enthält links den beleuchteten Hof und rechts einen etwa 20 Bildpunkte breiten Teil des Schattenbands von r0c1:200310 (Paar 5); Teilung am Rand des Schattenbands würde die Stelle klären.",
+  "r0c1:200047 (als Wohnhaus geführt) umfasst ein sehr helles Gebäude und große Hofflächen ohne trennbare Kante (Paar 19); für eine Einigung mit 176 müsste das Gebäude abgetrennt werden.",
+  "Ob die mittelgrauen Streifen zwischen den Schattenlinien (153/298, 165/299, 289) Dachseiten im Schatten oder Höfe sind, ist im Schwarz-Weiß-Scan nicht sicher; deshalb 0.2.1 als gemeinsame Klasse."
+ ],
+ "nicht_geprueft": []
+}

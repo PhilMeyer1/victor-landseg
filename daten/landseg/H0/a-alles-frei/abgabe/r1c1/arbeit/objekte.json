@@ -1,0 +1,1024 @@
+{
+ "mindestflaeche": 12,
+ "objekte": [
+  {
+   "art": "feld",
+   "name": "Acker Südwest (Streifenflur)",
+   "klasse": "3.1",
+   "polygone": [
+    [
+     [
+      0,
+      627
+     ],
+     [
+      0,
+      325
+     ],
+     [
+      50,
+      288
+     ],
+     [
+      100,
+      250
+     ],
+     [
+      145,
+      215
+     ],
+     [
+      155,
+      240
+     ],
+     [
+      168,
+      275
+     ],
+     [
+      182,
+      310
+     ],
+     [
+      198,
+      350
+     ],
+     [
+      218,
+      388
+     ],
+     [
+      243,
+      420
+     ],
+     [
+      257,
+      455
+     ],
+     [
+      268,
+      495
+     ],
+     [
+      278,
+      535
+     ],
+     [
+      288,
+      575
+     ],
+     [
+      296,
+      627
+     ]
+    ]
+   ]
+  },
+  {
+   "art": "feld",
+   "name": "Feld nordwestlich der Trift",
+   "klasse": "3",
+   "sicher": false,
+   "grund": "Acker oder Grünland auf SW nicht zu trennen; Streifung nur schwach",
+   "polygone": [
+    [
+     [
+      0,
+      128
+     ],
+     [
+      45,
+      98
+     ],
+     [
+      75,
+      80
+     ],
+     [
+      100,
+      112
+     ],
+     [
+      122,
+      148
+     ],
+     [
+      138,
+      178
+     ],
+     [
+      100,
+      208
+     ],
+     [
+      50,
+      245
+     ],
+     [
+      0,
+      282
+     ]
+    ]
+   ]
+  },
+  {
+   "art": "feld",
+   "name": "Feld Nordwestecke",
+   "klasse": "3",
+   "sicher": false,
+   "grund": "nur Kontextrand; Acker oder Grünland auf SW nicht zu trennen",
+   "polygone": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      50,
+      0
+     ],
+     [
+      54,
+      30
+     ],
+     [
+      44,
+      60
+     ],
+     [
+      0,
+      96
+     ]
+    ]
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Rain und Gehölzsaum westlich der Dorfstraße",
+   "klasse": "3",
+   "sicher": false,
+   "grund": "Saum zwischen Acker und Straße: Gras, Gebüsch oder Ackerrand auf SW nicht zu trennen",
+   "polygone": [
+    [
+     [
+      140,
+      195
+     ],
+     [
+      152,
+      230
+     ],
+     [
+      165,
+      265
+     ],
+     [
+      178,
+      300
+     ],
+     [
+      192,
+      340
+     ],
+     [
+      212,
+      380
+     ],
+     [
+      235,
+      415
+     ],
+     [
+      250,
+      450
+     ],
+     [
+      262,
+      490
+     ],
+     [
+      272,
+      530
+     ],
+     [
+      282,
+      570
+     ],
+     [
+      290,
+      627
+     ],
+     [
+      330,
+      627
+     ],
+     [
+      312,
+      570
+     ],
+     [
+      302,
+      530
+     ],
+     [
+      294,
+      490
+     ],
+     [
+      286,
+      460
+     ],
+     [
+      273,
+      425
+     ],
+     [
+      259,
+      395
+     ],
+     [
+      242,
+      360
+     ],
+     [
+      224,
+      320
+     ],
+     [
+      207,
+      280
+     ],
+     [
+      192,
+      242
+     ],
+     [
+      174,
+      212
+     ],
+     [
+      156,
+      185
+     ]
+    ]
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Baumreihe an der Dorfstraße (West)",
+   "klasse": "4.1",
+   "polygone": [
+    [
+     [
+      138,
+      190
+     ],
+     [
+      152,
+      230
+     ],
+     [
+      165,
+      265
+     ],
+     [
+      178,
+      300
+     ],
+     [
+      192,
+      340
+     ],
+     [
+      212,
+      380
+     ],
+     [
+      235,
+      415
+     ],
+     [
+      250,
+      450
+     ],
+     [
+      262,
+      490
+     ],
+     [
+      272,
+      530
+     ],
+     [
+      282,
+      570
+     ],
+     [
+      290,
+      627
+     ],
+     [
+      330,
+      627
+     ],
+     [
+      312,
+      570
+     ],
+     [
+      302,
+      530
+     ],
+     [
+      294,
+      490
+     ],
+     [
+      286,
+      460
+     ],
+     [
+      273,
+      425
+     ],
+     [
+      259,
+      395
+     ],
+     [
+      242,
+      360
+     ],
+     [
+      224,
+      320
+     ],
+     [
+      207,
+      280
+     ],
+     [
+      192,
+      242
+     ],
+     [
+      174,
+      212
+     ],
+     [
+      156,
+      185
+     ]
+    ]
+   ],
+   "grau_max": 88,
+   "oeffnen": 1,
+   "min_stueck": 20,
+   "loecher_fuellen": 30
+  },
+  {
+   "art": "pixel",
+   "name": "Rain an der Dorfstraße (Nordwest)",
+   "klasse": "3",
+   "sicher": false,
+   "grund": "Saum zwischen Feld und Straße: Gras oder Gebüsch auf SW nicht zu trennen",
+   "polygone": [
+    [
+     [
+      70,
+      84
+     ],
+     [
+      90,
+      100
+     ],
+     [
+      104,
+      124
+     ],
+     [
+      116,
+      150
+     ],
+     [
+      127,
+      172
+     ],
+     [
+      137,
+      192
+     ],
+     [
+      158,
+      186
+     ],
+     [
+      146,
+      160
+     ],
+     [
+      136,
+      132
+     ],
+     [
+      124,
+      108
+     ],
+     [
+      104,
+      86
+     ],
+     [
+      84,
+      70
+     ]
+    ]
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Bäume/Gebüsch an der Dorfstraße (Nordwest)",
+   "klasse": "4.1",
+   "sicher": false,
+   "grund": "dunkle Flecken mit Schatten, Baum oder Strauch nicht zu trennen",
+   "polygone": [
+    [
+     [
+      70,
+      84
+     ],
+     [
+      90,
+      100
+     ],
+     [
+      104,
+      124
+     ],
+     [
+      116,
+      150
+     ],
+     [
+      127,
+      172
+     ],
+     [
+      137,
+      192
+     ],
+     [
+      158,
+      186
+     ],
+     [
+      146,
+      160
+     ],
+     [
+      136,
+      132
+     ],
+     [
+      124,
+      108
+     ],
+     [
+      104,
+      86
+     ],
+     [
+      84,
+      70
+     ]
+    ]
+   ],
+   "grau_max": 92,
+   "oeffnen": 1,
+   "min_stueck": 15,
+   "loecher_fuellen": 20
+  },
+  {
+   "art": "pixel",
+   "name": "Landstraße von Südwest",
+   "klasse": "2.2",
+   "grau_min": 135,
+   "an_linie": true,
+   "loecher_fuellen": 40,
+   "korridore": [
+    {
+     "linie": [
+      [
+       0,
+       115
+      ],
+      [
+       30,
+       92
+      ],
+      [
+       60,
+       70
+      ]
+     ],
+     "hw": 12
+    }
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Breiter Feldweg / Trift nach Südwest",
+   "klasse": "2.3",
+   "grau_min": 132,
+   "an_linie": true,
+   "loecher_fuellen": 60,
+   "oeffnen": 1,
+   "sicher": false,
+   "grund": "breites helles Band: Feldweg, Viehtrift oder Brache; Breite (ca. 10 m) spricht für Trift",
+   "korridore": [
+    {
+     "linie": [
+      [
+       0,
+       305
+      ],
+      [
+       20,
+       290
+      ],
+      [
+       48,
+       270
+      ],
+      [
+       65,
+       255
+      ],
+      [
+       85,
+       240
+      ],
+      [
+       100,
+       225
+      ],
+      [
+       115,
+       210
+      ],
+      [
+       135,
+       188
+      ],
+      [
+       145,
+       178
+      ]
+     ],
+     "hw": 17
+    }
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Dorfstraße West",
+   "klasse": "2.1",
+   "grau_min": 138,
+   "an_linie": true,
+   "loecher_fuellen": 60,
+   "korridore": [
+    {
+     "linie": [
+      [
+       66,
+       0
+      ],
+      [
+       70,
+       30
+      ],
+      [
+       78,
+       60
+      ],
+      [
+       100,
+       85
+      ],
+      [
+       122,
+       105
+      ],
+      [
+       128,
+       120
+      ],
+      [
+       132,
+       135
+      ],
+      [
+       139,
+       150
+      ],
+      [
+       150,
+       165
+      ],
+      [
+       157,
+       180
+      ],
+      [
+       170,
+       195
+      ],
+      [
+       174,
+       210
+      ],
+      [
+       178,
+       225
+      ],
+      [
+       190,
+       240
+      ],
+      [
+       194,
+       255
+      ],
+      [
+       206,
+       270
+      ],
+      [
+       212,
+       285
+      ],
+      [
+       210,
+       300
+      ],
+      [
+       218,
+       315
+      ],
+      [
+       223,
+       330
+      ],
+      [
+       232,
+       345
+      ],
+      [
+       242,
+       360
+      ],
+      [
+       249,
+       375
+      ],
+      [
+       253,
+       390
+      ],
+      [
+       257,
+       405
+      ],
+      [
+       268,
+       420
+      ],
+      [
+       277,
+       435
+      ],
+      [
+       284,
+       450
+      ],
+      [
+       296,
+       465
+      ]
+     ],
+     "hw": 13
+    }
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Dorfstraße West, Fortsetzung nach Süden",
+   "klasse": "2.1",
+   "grau_min": 138,
+   "an_linie": true,
+   "loecher_fuellen": 30,
+   "korridore": [
+    {
+     "linie": [
+      [
+       292,
+       470
+      ],
+      [
+       290,
+       480
+      ],
+      [
+       298,
+       500
+      ],
+      [
+       302,
+       525
+      ],
+      [
+       309,
+       540
+      ],
+      [
+       317,
+       555
+      ],
+      [
+       326,
+       578
+      ],
+      [
+       335,
+       600
+      ],
+      [
+       350,
+       627
+      ]
+     ],
+     "hw": 9
+    }
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Querstraße zur Dorfstraße Mitte",
+   "klasse": "2.1",
+   "grau_min": 138,
+   "an_linie": true,
+   "loecher_fuellen": 40,
+   "korridore": [
+    {
+     "linie": [
+      [
+       296,
+       468
+      ],
+      [
+       320,
+       476
+      ],
+      [
+       355,
+       490
+      ],
+      [
+       380,
+       505
+      ],
+      [
+       410,
+       518
+      ],
+      [
+       440,
+       524
+      ]
+     ],
+     "hw": 10
+    }
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Dorfstraße Mitte",
+   "klasse": "2.1",
+   "grau_min": 138,
+   "an_linie": true,
+   "loecher_fuellen": 60,
+   "korridore": [
+    {
+     "linie": [
+      [
+       300,
+       0
+      ],
+      [
+       305,
+       40
+      ],
+      [
+       313,
+       70
+      ],
+      [
+       316,
+       115
+      ],
+      [
+       322,
+       140
+      ],
+      [
+       327,
+       160
+      ],
+      [
+       338,
+       180
+      ],
+      [
+       345,
+       200
+      ],
+      [
+       355,
+       220
+      ],
+      [
+       366,
+       235
+      ],
+      [
+       376,
+       250
+      ],
+      [
+       386,
+       265
+      ],
+      [
+       395,
+       290
+      ],
+      [
+       400,
+       315
+      ],
+      [
+       405,
+       340
+      ],
+      [
+       411,
+       360
+      ],
+      [
+       416,
+       380
+      ],
+      [
+       421,
+       400
+      ],
+      [
+       428,
+       415
+      ],
+      [
+       432,
+       430
+      ],
+      [
+       436,
+       450
+      ],
+      [
+       438,
+       475
+      ],
+      [
+       442,
+       490
+      ],
+      [
+       441,
+       505
+      ],
+      [
+       445,
+       520
+      ]
+     ],
+     "hw": 11
+    },
+    {
+     "linie": [
+      [
+       445,
+       520
+      ],
+      [
+       444,
+       535
+      ],
+      [
+       459,
+       550
+      ],
+      [
+       480,
+       565
+      ],
+      [
+       490,
+       580
+      ],
+      [
+       510,
+       595
+      ],
+      [
+       522,
+       610
+      ],
+      [
+       538,
+       627
+      ]
+     ],
+     "hw": 22
+    }
+   ]
+  },
+  {
+   "art": "pixel",
+   "name": "Straße im Bogen nach Nordost",
+   "klasse": "2.1",
+   "grau_min": 138,
+   "an_linie": true,
+   "loecher_fuellen": 40,
+   "korridore": [
+    {
+     "linie": [
+      [
+       627,
+       150
+      ],
+      [
+       580,
+       125
+      ],
+      [
+       550,
+       105
+      ],
+      [
+       525,
+       95
+      ],
+      [
+       480,
+       95
+      ],
+      [
+       440,
+       88
+      ]
+     ],
+     "hw": 13
+    }
+   ]
+  }
+ ],
+ "grauregel": [
+  {
+   "bis": 52,
+   "klasse": "5",
+   "name": "Schlagschatten",
+   "sicher": true
+  },
+  {
+   "bis": 90,
+   "klasse": "1.1.2",
+   "name": "Dach im Eigenschatten (Grauregel)",
+   "sicher": false,
+   "grund": "nur nach Grauton vorklassifiziert"
+  },
+  {
+   "bis": 140,
+   "klasse": "1.1",
+   "name": "Gebäude (Grauregel)",
+   "sicher": false,
+   "grund": "nur nach Grauton vorklassifiziert"
+  },
+  {
+   "bis": 999,
+   "klasse": "1.1.1",
+   "name": "Dach besonnt (Grauregel)",
+   "sicher": false,
+   "grund": "nur nach Grauton vorklassifiziert"
+  }
+ ]
+}

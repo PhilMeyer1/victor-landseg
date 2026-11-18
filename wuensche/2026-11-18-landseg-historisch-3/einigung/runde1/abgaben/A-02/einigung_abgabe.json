@@ -1,0 +1,488 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "A",
+ "buendel": "A-02",
+ "bearbeiter": "agent:einigung-A-02:20261118i-r1",
+ "paare": [
+  {
+   "paar": "r0c0:100058|r0c0:100059",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Heller Fahrbahnstreifen der Straße C und matter, etwas dunklerer Randstreifen daneben; zwei verschiedene Flächen, nur ein Randpunkt an der Viertellinie."
+  },
+  {
+   "paar": "r0c0:100032|r0c0:100059",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helles Band der Straße C gegen die dunklere Hoffläche des Blocks; deutlicher Helligkeitsunterschied entlang der Straßenkante."
+  },
+  {
+   "paar": "r0c0:100032|r0c0:100089",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Grauer Dachstreifen mit dunkler Mitte (Haus B4 4) gegen die hellere offene Hoffläche daneben; verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100009|r0c1:200226",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Mittelgraue Dreiecksfläche (Garten) gegen das helle Straßenband, das an der Naht nach Südosten weiterläuft; verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100032|r0c1:200226",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helles Straßenband rechts gegen die Hofstelle links; die Spitze von r0c0:100032 reicht an der Naht etwa 6 Bildpunkte in Straßenrand und Schatten hinein (Grenzlage, nicht Klasse)."
+  },
+  {
+   "paar": "r0c0:100032|r0c1:200345",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Hofstelle (Höfe zwischen den Häusern) und Schlagschattenband sind verschiedene Flächen; das dunkle Schattenband läuft aber bei y 110–170 etwa 20 Bildpunkte über die Naht in r0c0:100032 hinein (Grenzlage, nicht Klasse)."
+  },
+  {
+   "paar": "r0c0:100032|r0c1:200342",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Beidseits der Naht dieselbe dunkle Fläche im Schattenband; ob darunter Garten (r0c1) oder Hof (r0c0) liegt, ist im Scan nicht zu sehen."
+  },
+  {
+   "paar": "r0c0:100032|r0c1:200341",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Das kleine Hofstück rechts setzt die mittelgraue Hoffläche der Hofstelle links ohne Kante fort; gemeinsame Klasse Hofstelle ungetrennt, die Hof einschließt."
+  },
+  {
+   "paar": "r0c0:100088|r0c1:200341",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Ecke zwischen Dachstreifen und Hofstück, nur 4 Randpunkte im Übergang von dunkel zu hell; Dachrand oder Hof ist nicht zu trennen."
+  },
+  {
+   "paar": "r0c0:100088|r0c1:200410",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Der hellgraue Dachstreifen von Haus B4 3 läuft ohne Kante und mit gleichem Grauton über die Naht weiter; beide Seiten lesen ihn als Gebäude, Untertyp über den Schnitt nicht sicher, daher Elternklasse."
+  },
+  {
+   "paar": "r0c0:100088|r0c1:200411",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Kleines Dachstück am Unterrand desselben grauen Dachstreifens, gleicher Ton ohne Kante; gleiche Kette wie Haus B4 3."
+  },
+  {
+   "paar": "r0c0:100088|r0c1:200413",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Schmaler heller Dachstreifen, der an der Unterecke von Haus B4 3 ohne Kante anschließt; gleiche Kette, Klasse Gebäude."
+  },
+  {
+   "paar": "r0c0:100032|r0c1:200413",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Heller schmaler Dachstreifen rechts gegen die dunklere Fuge der Hofstelle links; Helligkeitsumschlag an der Stelle."
+  },
+  {
+   "paar": "r0c0:100089|r0c1:200415",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Derselbe mittelgraue, lange Streifen läuft ohne Kante über die Naht; links als Hausdach, rechts als Garten gelesen, und ob es Dach oder Garten ist, gibt der Scan nicht her."
+  },
+  {
+   "paar": "r0c0:100089|r0c1:200485",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Dasselbe mittelgraue Streifenstück beidseits der Naht; Dach (r0c0) oder Hof (r0c1) ist am Grauton nicht zu entscheiden."
+  },
+  {
+   "paar": "r0c0:100089|r0c1:200489",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Unterer Rand desselben grauen Streifens beidseits gleich hell und ohne Kante; beide Seiten lesen ihn als Gebäude, daher Elternklasse Gebäude."
+  },
+  {
+   "paar": "r0c0:100089|r0c1:200490",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Kleines mittelgraues Stück am Unterrand des Streifens, nur 2 Randpunkte; Dach oder Garten nicht zu trennen."
+  },
+  {
+   "paar": "r0c0:100035|r0c1:200490",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Ein Randpunkt zwischen der dunklen Fuge (Hofstelle) und einem mittelgrauen Fleck (Garten); welche Fläche es ist, gibt das Bild nicht her."
+  },
+  {
+   "paar": "r0c0:100035|r0c1:200491",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Mittelgraue offene Fläche läuft ohne Kante von der Hofstelle links in das Hofstück rechts; gemeinsame Klasse Hofstelle ungetrennt, die Hof einschließt."
+  },
+  {
+   "paar": "r0c0:100090|r0c1:200491",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Beidseits dieselbe mittelgraue Fläche ohne Kante; links Teil von Haus B4 5, rechts Hof, und Dach oder Hof ist nicht zu entscheiden."
+  },
+  {
+   "paar": "r0c0:100090|r0c1:200585",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Mittelgraue Fläche oberhalb des dunklen Flecks setzt sich ohne Kante fort; links Haus B4 5, rechts Garten, nicht zu entscheiden."
+  },
+  {
+   "paar": "r0c0:100091|r0c1:200585",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunklerer Kronenrand links gegen die gleichmäßig mittelgraue Gartenfläche rechts; Helligkeitsunterschied am Rand des Baums."
+  },
+  {
+   "paar": "r0c0:100091|r0c1:200583",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Zwei Randpunkte an einer Ecke im dunklen Fleck; ob dort Baumkrone oder ihr Schatten liegt, ist nicht zu trennen."
+  },
+  {
+   "paar": "r0c0:100090|r0c1:200583",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Haus B4 5 und Schatten sind verschiedene Flächen; der dunkle Fleck an der Naht liegt aber links in r0c0:100090 mit drin und setzt sich rechts als Schatten fort (Grenzlage, nicht Klasse)."
+  },
+  {
+   "paar": "r0c0:100032|r0c1:200583",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Ein Randpunkt an der Ecke zwischen dunkler Fuge und Schatten; beides dunkel, nicht zu trennen."
+  },
+  {
+   "paar": "r0c0:100032|r0c1:200581",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Zwei Randpunkte an einer Ecke zwischen Fuge und einem winzigen Gebäudestück im Übergang zum dunklen Fleck; Fläche nicht deutbar."
+  },
+  {
+   "paar": "r0c0:100093|r0c1:200581",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Zwei winzige Gebäudestücke mit gleichem Grauton stoßen ohne Kante zusammen; beide Seiten lesen Gebäude."
+  },
+  {
+   "paar": "r0c0:100111|r0c1:200584",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Derselbe helle schmale Streifen läuft ohne Kante über die Naht; links Weg (schon dort als Weg oder Hof beschrieben), rechts Hof, nicht zu entscheiden."
+  },
+  {
+   "paar": "r0c0:100092|r0c1:200584",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Mittelgraue Fläche von Haus B4 6 gegen den hellen Streifen; Helligkeitsumschlag am Berührpunkt."
+  },
+  {
+   "paar": "r0c0:100092|r0c1:200688",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Beidseits dieselbe mittelgraue Fläche ohne Kante, links als Haus (fast nur Kontext), rechts als Hof gelesen; gemeinsame Klasse Hofstelle ungetrennt (Dach oder Hof)."
+  },
+  {
+   "paar": "r0c0:100092|r0c1:200691",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Mittelgraues Stück an zwei Randpunkten; Hausfläche oder Garten nicht zu entscheiden."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200691",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Dieselbe mittelgraue Fläche ohne Kante; links Hofstelle, rechts Garten, und Hof oder Garten ist im Scan nicht zu trennen."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200690",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Mittelgraue Hoffläche läuft ohne Kante von der Hofstelle links in das Hofstück rechts; gemeinsame Klasse Hofstelle ungetrennt."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200689",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Ein Randpunkt, beidseits dieselbe mittelgraue Hoffläche; gleiche Kette wie die Hofstelle Block B4 Teil 2."
+  },
+  {
+   "paar": "r0c0:100095|r0c1:200689",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Das Kernstück von Haus B4 7 an der Naht ist mittelgrau wie das Hofstück rechts, ohne Kante; das helle Dach liegt erst rechts davon, daher Hofstelle ungetrennt (Dach oder Hof)."
+  },
+  {
+   "paar": "r0c0:100095|r0c1:200787",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Dieselbe mittelgraue Fläche links vom hellen Dach von Haus B4 7 auf beiden Seiten; gemeinsame Klasse Hofstelle ungetrennt."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200786",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Mittelgraue Hoffläche zwischen hellen Dächern läuft auf 27 Randpunkten ohne Kante über die Naht; gemeinsame Klasse Hofstelle ungetrennt."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200876",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Heller Längsbau-Streifen rechts gegen die Hofstelle; der helle Streifen läuft aber links als Aufhellung in r0c0:100033 weiter (Grenzlage, nicht Klasse; Hofstelle schließt Dach ein)."
+  },
+  {
+   "paar": "r0c0:100096|r0c1:200879",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Kernsplitter von Haus B4 8 und das Gebäudestück rechts haben denselben mittelhellen Ton ohne Kante; beide Seiten lesen Gebäude."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200879",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Beidseits mittelgrau ohne klare Kante; ob das Stück rechts Dach oder Hof ist, ist nicht zu entscheiden."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200877",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Mittelgraue Hoffläche läuft ohne Kante über die Naht; gemeinsame Klasse Hofstelle ungetrennt."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200966",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Mittelgraue Hofstelle links gegen die dunkle, nicht bestimmbare Fläche rechts; die Kante des dunklen Bandes liegt nahe an der Naht."
+  },
+  {
+   "paar": "r0c0:100033|r0c1:200960",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Mittelgraue Hofstelle gegen einen dunklen Schattenfleck; Helligkeitsumschlag an der Stelle."
+  },
+  {
+   "paar": "r0c0:100059|r0c1:200966",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helle Straße C gegen die dunkle, nicht bestimmbare Fläche; ein Randpunkt an der Ecke."
+  },
+  {
+   "paar": "r0c0:100059|r0c1:200959",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helle Straße C gegen ein winziges Hofstück; die Straßenkante liegt knapp rechts der Naht."
+  },
+  {
+   "paar": "r0c0:100059|r0c1:201047",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helle Straße C gegen mittelgraue Hoffläche; die Straßenkante liegt wenige Bildpunkte rechts der Naht."
+  },
+  {
+   "paar": "r0c0:100059|r0c1:201159",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Straße C und Schlagschatten sind verschiedene Flächen; der Schatten reicht wenige Bildpunkte in die Spitze von r0c0:100059 hinein (Grenzlage, nicht Klasse)."
+  },
+  {
+   "paar": "r0c0:100057|r0c1:201159",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Zwei Randpunkte im dunklen Fleck am Ende der Baumreihe; Krone oder Schatten ist nicht zu trennen."
+  },
+  {
+   "paar": "r0c0:100051|r1c0:300011",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunkle Hecken-/Grabenlinie gegen die helle, fleckige Brache; verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100042|r1c0:300011",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Streifenacker gegen helle fleckige Brache, getrennt von der dunklen Rainlinie; verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100042|r1c0:300032",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Gleichmäßiger Acker gegen die dunkle schmale Rain-/Grabenlinie; verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100042|r1c0:300012",
+   "entscheidung": "gleich",
+   "klasse": "5.1",
+   "grund": "Derselbe gleichmäßig dunkelgraue Acker läuft auf 58 Randpunkten ohne Kante über die Naht; Kette der Feldsegmente, gemeinsame Elternklasse Feld/Acker."
+  },
+  {
+   "paar": "r0c0:100043|r1c0:300012",
+   "entscheidung": "gleich",
+   "klasse": "5.1",
+   "grund": "Gleichmäßig dunkelgraue Ackerfläche ohne Kante auf 184 Randpunkten; gleiche Kette, Klasse Feld/Acker."
+  },
+  {
+   "paar": "r0c0:100043|r1c0:300028",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Ackerfläche oben gegen das dunkle Dach am Hof unten; deutliche Kante an der Oberkante des Gebäudes."
+  },
+  {
+   "paar": "r0c0:100043|r1c0:300029",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Ackerfläche gegen den fast schwarzen Fleck neben dem Gebäude; deutlicher Helligkeitssprung."
+  },
+  {
+   "paar": "r0c0:100043|r1c0:300038",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Acker und heller Zufahrtsweg sind verschiedene Flächen; der Weg setzt sich nördlich der Naht als heller Streifen in r0c0:100043 fort (Grenzlage, nicht Klasse)."
+  },
+  {
+   "paar": "r0c0:100043|r1c0:300015",
+   "entscheidung": "gleich",
+   "klasse": "5.1",
+   "grund": "Beidseits derselbe mittel- bis dunkelgraue Ackerboden östlich des Wegs ohne Kante; gleiche Kette, Klasse Feld/Acker."
+  },
+  {
+   "paar": "r0c0:100044|r1c0:300015",
+   "entscheidung": "gleich",
+   "klasse": "5.1",
+   "grund": "Die umrandete Ackerparzelle läuft auf 73 Randpunkten ohne Kante über die Naht; gleiche Kette, Klasse Feld/Acker."
+  },
+  {
+   "paar": "r0c0:100044|r1c0:300036",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Ackerparzelle gegen die schmale dunkle Graben-/Rainlinie; die Linie scheint schwach nördlich der Naht in r0c0:100044 weiterzulaufen (Grenzlage, nicht Klasse)."
+  },
+  {
+   "paar": "r0c0:100044|r1c0:300014",
+   "entscheidung": "gleich",
+   "klasse": "5.1",
+   "grund": "Derselbe Ackerstreifen der Parzelle 5 läuft ohne Kante über die Naht; gleiche Kette, Klasse Feld/Acker."
+  },
+  {
+   "paar": "r0c0:100057|r1c0:300014",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunkle Baumreihe gegen den mittelgrauen Acker; drei Randpunkte an der Ecke."
+  },
+  {
+   "paar": "r0c0:100057|r1c0:300016",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Beidseits dunkle Fläche am Fuß der Baumreihe; ob Krone oder Schatten, ist nicht zu trennen."
+  },
+  {
+   "paar": "r0c1:201159|r1c1:400101",
+   "entscheidung": "gleich",
+   "klasse": "0.1",
+   "grund": "Beidseits derselbe dunkle Rand des Schlagschattens an der Kreuzung; kein Dach zu sehen, daher gemeinsam Schatten."
+  },
+  {
+   "paar": "r0c1:201156|r1c1:400101",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helle Fahrbahn gegen den dunklen Schattenrand; ein Randpunkt."
+  },
+  {
+   "paar": "r0c1:201156|r1c1:400419",
+   "entscheidung": "gleich",
+   "klasse": "3.1.1",
+   "grund": "Dieselbe helle Fahrbahn läuft ohne Kante über die Naht; Straße zwischen den Höfen, daher Straße im Ort."
+  },
+  {
+   "paar": "r0c1:201164|r1c1:400419",
+   "entscheidung": "gleich",
+   "klasse": "3.1.1",
+   "grund": "Dieselbe helle Fahrbahn auf 16 Randpunkten ohne Kante; gleiche Kette, Straße im Ort."
+  },
+  {
+   "paar": "r0c1:201164|r1c1:400004",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helle Fahrbahn gegen mittelgraue Fläche neben der Kreuzung; ein Randpunkt mit Helligkeitsumschlag."
+  },
+  {
+   "paar": "r0c1:201166|r1c1:400004",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Beidseits dieselbe mittelgraue Fläche, nicht fahrbahnhell; links Straße, rechts Gebäude (nur nach Grauton), keines ist sicher."
+  },
+  {
+   "paar": "r0c1:201056|r1c1:400004",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Dieselbe flache mittelgraue Fläche ohne Kante; rechts nur nach Grauton als Gebäude eingestuft, ohne Dachkanten, daher gemeinsam Hof-/Freifläche."
+  },
+  {
+   "paar": "r1c0:300012|r1c0:300026",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunkler Acker gegen helle, körnige Lagerfläche; deutlicher Helligkeitsunterschied."
+  },
+  {
+   "paar": "r1c0:300002|r1c0:300040",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunkler Feldstreifen gegen die helle Landstraße; deutliche Kante."
+  },
+  {
+   "paar": "r1c0:300002|r1c0:300003",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunklerer und hellerer Feldstreifen mit schräger Tongrenze; zwei Streifen, nur 2 Randpunkte an der Viertellinie."
+  },
+  {
+   "paar": "r1c0:300003|r1c0:300033",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Mittelgrauer Acker gegen den schmalen Weg/Rain mit hellen und dunklen Rändern."
+  },
+  {
+   "paar": "r1c0:300001|r1c0:300033",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Mittelgrauer Acker gegen den schmalen Weg/Rain; verschiedene Flächen."
+  },
+  {
+   "paar": "r1c0:300016|r1c1:400099",
+   "entscheidung": "gleich",
+   "klasse": "0.1",
+   "grund": "Der dunkle Kernrand der Ortsrandfläche ist derselbe Schlagschatten, den die Nachbarkachel als Schatten führt; kein Gebäude zu sehen."
+  },
+  {
+   "paar": "r1c0:300016|r1c1:400101",
+   "entscheidung": "gleich",
+   "klasse": "0.1",
+   "grund": "Beidseits derselbe dunkle Schattenrand ohne Kante; gleiche Kette wie der Schatten an der Kreuzung."
+  },
+  {
+   "paar": "r1c0:300016|r1c1:400186",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Dunkler Schattenrand gegen die helle Landstraße; deutlicher Helligkeitssprung."
+  },
+  {
+   "paar": "r1c0:300040|r1c1:400186",
+   "entscheidung": "gleich",
+   "klasse": "3.1.2",
+   "grund": "Dieselbe helle Landstraße zwischen den Feldern läuft ohne Kante über die Naht; Landstraße außerorts."
+  }
+ ],
+ "offen": [
+  "Grenzkorrektur r0c0:100032/r0c1:200345 (Paar 6): Schlagschattenband reicht bei x≈478–500, y≈110–170 in die Hofstelle; Grenze müsste auf die Schattenkante, nicht die Klasse.",
+  "Grenzkorrektur r0c0:100032/r0c1:200226 (Paar 5): Spitze der Hofstelle bei x≈494–500, y≈108–116 liegt auf Straßenrand und Schatten.",
+  "Grenzkorrektur r0c0:100090/r0c1:200583 (Paar 24): dunkler Fleck (Krone oder Schatten) bei x≈490–500, y≈265–285 steckt im Haus B4 5.",
+  "Grenzkorrektur r0c0:100033/r0c1:200876 (Paar 38): heller Längsbau-Streifen läuft westlich der Naht in der Hofstelle weiter.",
+  "Grenzkorrektur r0c0:100059/r0c1:201159 (Paar 47): Schatten reicht wenige Bildpunkte in die Spitze der Straße C.",
+  "Grenzkorrektur r0c0:100043/r1c0:300038 (Paar 56): Zufahrtsweg setzt sich nördlich der Naht (x≈300–330) als heller Streifen im Acker fort, in r0c0 nicht abgetrennt.",
+  "Prüfen r0c0:100044/r1c0:300036 (Paar 59): Graben-/Rainlinie scheint schwach nördlich der Naht in der Parzelle weiterzulaufen.",
+  "Hinweis r0c0:100051/r1c0:300032 (Paare 49–51): Hecke (6.2) und Rain/Graben (4.3) sind wohl dieselbe dunkle Linie, an der Naht um etwa 8–10 Bildpunkte versetzt; sie berühren sich nicht und sind kein Paar dieses Bündels.",
+  "Streifen r0c0:100089 / r0c1:200415 (Paare 14–17): langer mittelgrauer Streifen, links Haus, rechts Garten/Hof; Dach oder Garten am Scan nicht entscheidbar (Ansicht einigung_14.jpg)."
+ ],
+ "nicht_geprueft": []
+}

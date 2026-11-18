@@ -1,0 +1,86 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "A",
+ "buendel": "A-13",
+ "bearbeiter": "agent:einigung-A-13:20261118i-r1",
+ "paare": [
+  {
+   "paar": "r1c1:400302|r1c1:400380",
+   "entscheidung": "gleich",
+   "klasse": "0.1",
+   "grund": "Das türkise Stück ist ein ein bis drei Bildpunkte schmaler Grauverlauf (35 bis 140) am rechten Rand des schwarzen Schlagschattens, ohne eigene Form und ohne gerade Dachkante; am Kontakt gehen beide ohne Sprung ineinander über (33 gegen 35), es ist der weiche Rand desselben Schattens, keine Dachfläche im Eigenschatten."
+  },
+  {
+   "paar": "r1c1:400379|r1c1:400380",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das türkise Y-förmige Stück ist mittelgrau und beleuchtet (Mittel 107, bis 164) mit hellem Fleck, der magenta Streifen ist der fast schwarze Schlagschatten (Mittel 44); der Helligkeitsumschlag von rund 100 auf 30 liegt in zwei bis drei Bildpunkten, also zwei verschiedene Flächen."
+  },
+  {
+   "paar": "r1c1:400516|r1c1:400521",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Das magenta Stück ist ein kleiner dunkler Fleck von 15 Bildpunkten mitten in der langen Dachfläche der Häuserzeile, ringsum Dach; es ist ein Kamin- oder Gaubenschatten auf demselben Dach, der Untergrund ist das Dach selbst."
+  },
+  {
+   "paar": "r1c1:400516|r1c1:400523",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der magenta Streifen ist die schwarze Schattenfuge (Mittel 43) entlang der unteren Traufkante der Häuserzeile, das türkise Segment die graue Dachfläche (Mittel 103); Dach und Fuge zwischen den Häuserzeilen sind verschiedene Flächen, nur am Viertelrand ist der Übergang weich."
+  },
+  {
+   "paar": "r1c1:400516|r1c1:400600",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die beiden Segmente sind Dachstreifen zweier verschiedener Häuserzeilen, die sonst überall durch die schwarze Schattenfuge getrennt sind; sie berühren sich nur an einem Bildpunkt, wo die Fuge aussetzt, und unterscheiden sich im Grauton (103 gegen 77)."
+  },
+  {
+   "paar": "r1c1:400597|r1c1:400600",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das türkise Rechteck ist ein heller Dachabschnitt mit Firstlicht am Rand (Mittel 111), daneben beginnt das magenta Segment mit einem fast schwarzen Schattenstreifen (30 bis 50); der Umschlag von rund 100 auf 35 in ein bis zwei Bildpunkten ist eine echte Kante."
+  },
+  {
+   "paar": "r1c1:400588|r1c1:400594",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das türkise Segment ist ein hell besonntes Dach (Mittel 151), das magenta Segment die dunkle Schattenfuge an seiner unteren Traufe (Mittel 62); der Grauton fällt am Kontakt von rund 130 auf 50, also Dach gegen Fuge."
+  },
+  {
+   "paar": "r1c1:400583|r1c1:400588",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das winzige türkise Stück (20 Bildpunkte) ist ein dunklerer Haken um einen weißen Kleinkörper im fleckigen Hof oberhalb des gleichmäßig hellen, geradlinig begrenzten Dachstreifens (magenta); Hof mit Kleinbauten und Dach sind verschiedene Flächen, die Kante ist nur schwach."
+  },
+  {
+   "paar": "r1c1:400587|r1c1:400588",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das türkise Stück ist ein fleckiger Ring um einen dunklen Kern mit weißem Fleck im Hof, das magenta Segment der gleichmäßig helle Dachstreifen der Häuserzeile; die Berührung liegt an der Oberkante des Streifens, die Texturen sind verschieden (fleckig gegen glatt)."
+  },
+  {
+   "paar": "r1c1:400677|r1c1:400735",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das türkise Segment ist die schmale dunkle Schattenfuge zwischen zwei Häuserzeilen (Mittel 66), das magenta Segment das graue Dach daneben (Mittel 118); die Fuge setzt am Viertelrand nur kurz aus, Dach und Fuge bleiben getrennt."
+  },
+  {
+   "paar": "r1c1:400777|r1c1:400782",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das türkise Segment ist die gleichmäßig graue Dachfläche (Mittel 133), das magenta Stück ein ein bis zwei Bildpunkte schmales dunkleres Band an ihrer geraden unteren Traufkante (59 bis 101); an der Traufe fällt der Grauton deutlich ab, das Band gehört nicht mehr zur Dachfläche."
+  },
+  {
+   "paar": "r1c1:400782|r1c1:400785",
+   "entscheidung": "gleich",
+   "klasse": "0.1",
+   "grund": "Das türkise Band (58 Bildpunkte, ein bis zwei breit, Grauverlauf 59 bis 101) liegt zwischen Traufkante und dem schwarzen Schlagschatten und geht ohne Kante in ihn über; es ist der weiche Rand desselben Schattens ohne eigene Form, keine Dachfläche."
+  }
+ ],
+ "offen": [
+  "Paare 1 und 12: die schmalen Grauverlauf-Bänder zwischen Schlagschatten und heller Fläche sind Mischbildpunkte; gleich 0.1 bedeutet nur, dass sie keine eigene Dachfläche sind. Ein Farbbild oder eine feinere Auflösung würde zeigen, ob dort eine dunkle Traufe liegt.",
+  "Segment r1c1:400588 (Paare 7 bis 9) reicht an seinem unteren linken Ende in den fleckigen Hof mit Kleinkörpern; die Klasse Gebäude trifft dort nur den Dachstreifen, eine Grenze dazwischen wäre nur mit neuem Schnitt möglich (nicht Gegenstand der Einigung).",
+  "Segment r1c1:400380 (Schlagschatten, Paare 1 und 2) umfasst unten links auch eine mittelgraue Fläche, die kaum schwarz ist; nur gemeldet, Grenzen sind nicht Gegenstand der Einigung."
+ ],
+ "nicht_geprueft": []
+}

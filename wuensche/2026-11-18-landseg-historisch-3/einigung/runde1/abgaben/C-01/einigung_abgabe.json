@@ -1,0 +1,55 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "C",
+ "buendel": "C-01",
+ "bearbeiter": "agent:einigung-C-01:20261118i-r1",
+ "paare": [
+  {
+   "paar": "r0c0:100045|r0c0:100048",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist ein länglicher Dachblock mit geraden Kanten und heller Südwest-Dachseite (Gebäude), magenta der Schlagschatten und der helle Boden der Gasse nordwestlich davor; zwei verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100048|r0c0:100064",
+   "entscheidung": "gleich",
+   "klasse": "6.6",
+   "grund": "Am Viertelrand setzt sich derselbe helle Hintausweg ohne Kante von magenta in den hellen Teil von türkis fort; die Ränder sind unruhig und gehen in Gras über wie bei Feldwegen, der dunkle Streifen in 100048 ist Schatten auf diesem Wegrand (U2)."
+  },
+  {
+   "paar": "r0c0:100073|r0c0:100077",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist die helle, lineare Gasse, magenta die mittelgraue, fleckige offene Fläche daneben; sie berühren sich nur an einem Punkt am hellen Fleck, Grauton und Form sind verschieden."
+  },
+  {
+   "paar": "r0c0:100104|r0c0:100115",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Magenta ist ein heller, scharf begrenzter Quader mit schwarzem Schlagschatten (kleines Gebäude), türkis die mittelgraue Hoffläche um ihn herum."
+  },
+  {
+   "paar": "r0c0:100156|r0c0:100163",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist das helle Rechteck mit geraden Kanten und dunklem Saum (Gebäude), magenta der mittelgraue Splitter am Ackerrand links davon; am Rand springt der Grauton von hell zu mittelgrau."
+  },
+  {
+   "paar": "r0c0:100114|r0c0:100174",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist die helle, fleckige offene Fläche, magenta ein dunkler, rundlicher Fleck in der Reihe dunkler Flecken am Rand zum Acker; Grauton deutlich dunkler, eigene Fläche."
+  },
+  {
+   "paar": "r0c0:100114|r0c0:100175",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Türkis ist die helle, fleckige offene Fläche, magenta ein dunkler Fleck derselben dunklen Fleckenreihe am Ackerrand östlich von 174; Grauton deutlich dunkler, eigene Fläche."
+  }
+ ],
+ "offen": [
+  "Belag des Wegnetzes am Hintausweg: 100064/100048 hier als 6.6 (unbefestigt) geeinigt, die anschließende Gasse 100073 steht auf 1.2 (Verkehrsfläche, versiegelt oder unbefestigt offen); versiegelt oder unbefestigt ist auf dem SW-Bild nicht sicher, klären mit Farbbild oder Ortskenntnis, beide Segmente bleiben sicher: nein.",
+  "100048 ist eine Mischfläche aus Schatten und Weg (Urteil v1, nicht geteilt); die Klasse 6.6 gilt für die ganze Fläche, eine Teilung wäre eine Grenzänderung und gehört nicht in die Einigung."
+ ],
+ "nicht_geprueft": []
+}

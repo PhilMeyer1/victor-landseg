@@ -1,0 +1,1534 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-11",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r1c0:300026|r1c0:300038",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 5,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            949
+          ],
+          "bis": [
+            250,
+            950
+          ],
+          "laenge": 2,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            958
+          ],
+          "bis": [
+            250,
+            958
+          ],
+          "laenge": 1,
+          "kante_max": 10.0
+        },
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            963
+          ],
+          "bis": [
+            250,
+            963
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        },
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            175,
+            750
+          ],
+          "bis": [
+            175,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300026",
+          "teilkachel": "r1c0",
+          "id": 300026,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.511
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 87818,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 73424,
+          "urteil": "sauber",
+          "was_ist_es": "Großes Feld zwischen den Rainen 38 und 23 südlich der Straße (über alle vier Viertel), mit mehreren parallelen hellen und dunklen Streifen (Streifenflur) ohne scharfe Kanten; Kleinstücke 34, 37, 31, 47 jetzt darin.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        },
+        {
+          "segment": "r1c0:300038",
+          "teilkachel": "r1c0",
+          "id": 300038,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 4224,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3882,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmale helle Linie (3–5 Bildpunkte, etwa 2 m) mit dunkler Furche an der Westseite von der Straße schräg nach Süden bis an den Bildrand: Feldrain zwischen Feld 42 und Feld 26; jetzt mit 46 vereint.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "38 und 46 waren derselbe Rain, getrennt durch eine Lücke in Feld 42 bei (286/471); Lücke dem Rain zugewiesen und vereint.",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Oben enthält 38 einen Streifen am Südostrand der Straße (x 187–255, y 294–345), der kein Rain ist (Straßenrand oder Feldrand); nicht abgetrennt.",
+              "flaeche_px": 600
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Rain",
+            "fein": "Feldrain"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r1c0:300038|r1c0:300042",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            980
+          ],
+          "bis": [
+            250,
+            982
+          ],
+          "laenge": 3,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300038",
+          "teilkachel": "r1c0",
+          "id": 300038,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 4224,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3882,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmale helle Linie (3–5 Bildpunkte, etwa 2 m) mit dunkler Furche an der Westseite von der Straße schräg nach Süden bis an den Bildrand: Feldrain zwischen Feld 42 und Feld 26; jetzt mit 46 vereint.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "38 und 46 waren derselbe Rain, getrennt durch eine Lücke in Feld 42 bei (286/471); Lücke dem Rain zugewiesen und vereint.",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Oben enthält 38 einen Streifen am Südostrand der Straße (x 187–255, y 294–345), der kein Rain ist (Straßenrand oder Feldrand); nicht abgetrennt.",
+              "flaeche_px": 600
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Rain",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c0:300042",
+          "teilkachel": "r1c0",
+          "id": 300042,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.482
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 62368,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 39711,
+          "urteil": "sauber",
+          "was_ist_es": "Großes Feld südöstlich der Straße bis zum Rain 38, mittelgrau mit einer hellen Spur parallel zur Straße und einer helleren, fleckigen Zone im Süden; Kleinstücke 43, 44, 45, 49 jetzt darin.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r1c0:300023|r1c0:300026",
+      "art": "viertel",
+      "bild": "paar_03.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            393,
+            750
+          ],
+          "bis": [
+            393,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300023",
+          "teilkachel": "r1c0",
+          "id": 300023,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 5892,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4110,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.",
+              "flaeche_px": 300
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Rain",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c0:300026",
+          "teilkachel": "r1c0",
+          "id": 300026,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.511
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 87818,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 73424,
+          "urteil": "sauber",
+          "was_ist_es": "Großes Feld zwischen den Rainen 38 und 23 südlich der Straße (über alle vier Viertel), mit mehreren parallelen hellen und dunklen Streifen (Streifenflur) ohne scharfe Kanten; Kleinstücke 34, 37, 31, 47 jetzt darin.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r1c0:300011|r1c0:300036",
+      "art": "viertel",
+      "bild": "paar_04.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            420,
+            750
+          ],
+          "bis": [
+            420,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300011",
+          "teilkachel": "r1c0",
+          "id": 300011,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.593
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 27906,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 21560,
+          "urteil": "sauber",
+          "was_ist_es": "Großes mittelgraues Feld südöstlich der Straße zwischen dem Rain 23 und dem hellen Weg 36, mit schwachen Streifen parallel zur Straße; Kleinstücke 21 und 28 jetzt darin.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        },
+        {
+          "segment": "r1c0:300036",
+          "teilkachel": "r1c0",
+          "id": 300036,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.409
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 4713,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2968,
+          "urteil": "sauber",
+          "was_ist_es": "Heller, fleckiger Streifen mit geraden, parallelen Rändern (15–18 Bildpunkte, 7–8 m breit) vom Dorfrand nach Südwesten; jetzt mit 30 und 24 vereint: breiter Feldweg oder Viehtrift.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "30, 24 und 36 zeigten denselben hellen Streifen ohne Kante dazwischen (x 474–563, y 243–349); verschmolzen. Das Stück 41 (v4) gehört ebenfalls dazu.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Weg",
+            "fein": "breiter Feldweg"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r1c0:300011|r1c1:400110",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            678
+          ],
+          "bis": [
+            500,
+            678
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300011",
+          "teilkachel": "r1c0",
+          "id": 300011,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.593
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 27906,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 21560,
+          "urteil": "sauber",
+          "was_ist_es": "Großes mittelgraues Feld südöstlich der Straße zwischen dem Rain 23 und dem hellen Weg 36, mit schwachen Streifen parallel zur Straße; Kleinstücke 21 und 28 jetzt darin.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        },
+        {
+          "segment": "r1c1:400110",
+          "teilkachel": "r1c1",
+          "id": 400110,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.555
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 4530,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2358,
+          "urteil": "sauber",
+          "was_ist_es": "Breites helles fleckiges Band nach Südwesten zwischen den Feldern: Weg, Belag nicht erkennbar.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Weg",
+            "fein": "Weg breit"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r1c0:300036|r1c1:400118",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            701
+          ],
+          "bis": [
+            500,
+            701
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300036",
+          "teilkachel": "r1c0",
+          "id": 300036,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.409
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 4713,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2968,
+          "urteil": "sauber",
+          "was_ist_es": "Heller, fleckiger Streifen mit geraden, parallelen Rändern (15–18 Bildpunkte, 7–8 m breit) vom Dorfrand nach Südwesten; jetzt mit 30 und 24 vereint: breiter Feldweg oder Viehtrift.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "30, 24 und 36 zeigten denselben hellen Streifen ohne Kante dazwischen (x 474–563, y 243–349); verschmolzen. Das Stück 41 (v4) gehört ebenfalls dazu.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Weg",
+            "fein": "breiter Feldweg"
+          }
+        },
+        {
+          "segment": "r1c1:400118",
+          "teilkachel": "r1c1",
+          "id": 400118,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.882
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 73905,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 52197,
+          "urteil": "sauber",
+          "was_ist_es": "Großes Feld westlich der Dorfstraße mit schrägen Bewirtschaftungsstreifen (Streifenflur) und einem schwachen dunklen Rechteckumriss.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r1c0:300023|r1c1:400118",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 11,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            939
+          ],
+          "bis": [
+            500,
+            940
+          ],
+          "laenge": 2,
+          "kante_max": 12.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            944
+          ],
+          "bis": [
+            500,
+            952
+          ],
+          "laenge": 9,
+          "kante_max": 11.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300023",
+          "teilkachel": "r1c0",
+          "id": 300023,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 5892,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4110,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.",
+              "flaeche_px": 300
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Rain",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c1:400118",
+          "teilkachel": "r1c1",
+          "id": 400118,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.882
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 73905,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 52197,
+          "urteil": "sauber",
+          "was_ist_es": "Großes Feld westlich der Dorfstraße mit schrägen Bewirtschaftungsstreifen (Streifenflur) und einem schwachen dunklen Rechteckumriss.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r1c0:300023|r1c1:400202",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            941
+          ],
+          "bis": [
+            500,
+            943
+          ],
+          "laenge": 3,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300023",
+          "teilkachel": "r1c0",
+          "id": 300023,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 5892,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4110,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.",
+              "flaeche_px": 300
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Rain",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c1:400202",
+          "teilkachel": "r1c1",
+          "id": 400202,
+          "klasse": "5.1.2",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.916
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 170,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 3,
+          "urteil": "sauber",
+          "was_ist_es": "Stück der dunklen Feldgrenze am linken Rand (3 px im Kern).",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feldrain",
+            "fein": "Rain/Wegrand"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r1c0:300023|r1c1:400209",
+      "art": "naht",
+      "bild": "paar_09.jpg",
+      "randpunkte": 13,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            953
+          ],
+          "bis": [
+            500,
+            965
+          ],
+          "laenge": 13,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300023",
+          "teilkachel": "r1c0",
+          "id": 300023,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 5892,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4110,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.",
+              "flaeche_px": 300
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Rain",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c1:400209",
+          "teilkachel": "r1c1",
+          "id": 400209,
+          "klasse": "5.1.2",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.639
+          },
+          "instanz": {
+            "text": "sports field",
+            "eingerastet": true
+          },
+          "flaeche": 146,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.4",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 52,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Stück der dunklen Feldgrenze (Rain/Graben) am linken Kernrand.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 17,
+              "art": "klasse",
+              "text": "Vorstufe Sportplatz; Feldrain (66/524).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feldrain",
+            "fein": "Rain/Wegrand"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r1c0:300023|r1c1:400211",
+      "art": "naht",
+      "bild": "paar_10.jpg",
+      "randpunkte": 9,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            966
+          ],
+          "bis": [
+            500,
+            974
+          ],
+          "laenge": 9,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300023",
+          "teilkachel": "r1c0",
+          "id": 300023,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 5892,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4110,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.",
+              "flaeche_px": 300
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Rain",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c1:400211",
+          "teilkachel": "r1c1",
+          "id": 400211,
+          "klasse": "5.1.2",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.916
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 133,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 106,
+          "urteil": "sauber",
+          "was_ist_es": "Stück der Feldgrenze am linken Kernrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feldrain",
+            "fein": "Rain/Wegrand"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r1c0:300023|r1c1:400176",
+      "art": "naht",
+      "bild": "paar_11.jpg",
+      "randpunkte": 6,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            975
+          ],
+          "bis": [
+            500,
+            976
+          ],
+          "laenge": 2,
+          "kante_max": 19.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            982
+          ],
+          "bis": [
+            500,
+            985
+          ],
+          "laenge": 4,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300023",
+          "teilkachel": "r1c0",
+          "id": 300023,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 5892,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 4110,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.",
+              "flaeche_px": 300
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Rain",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c1:400176",
+          "teilkachel": "r1c1",
+          "id": 400176,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.474
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 12418,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 237,
+          "urteil": "sauber",
+          "was_ist_es": "Feld westlich der Feldgrenze, fast ganz im Kontextrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r1c1:400118|r1c1:400145",
+      "art": "viertel",
+      "bild": "paar_12.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            619,
+            750
+          ],
+          "bis": [
+            619,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 8.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400118",
+          "teilkachel": "r1c1",
+          "id": 400118,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.882
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 73905,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 52197,
+          "urteil": "sauber",
+          "was_ist_es": "Großes Feld westlich der Dorfstraße mit schrägen Bewirtschaftungsstreifen (Streifenflur) und einem schwachen dunklen Rechteckumriss.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        },
+        {
+          "segment": "r1c1:400145",
+          "teilkachel": "r1c1",
+          "id": 400145,
+          "klasse": "4.3",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.405,
+            "abstand": 0.107
+          },
+          "flaeche": 1461,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1461,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Langes dunkles, fleckiges Band am Westrand der Dorfstraße: Baum-/Gebüschreihe mit Schatten.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Vorstufe Schatten; körnige Kronenreihe (198/321).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumreihe/Hecke",
+            "fein": "Baumreihe/Hecke"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-11",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r1c0:300026|r1c0:300038",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300038|r1c0:300042",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300023|r1c0:300026",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300011|r1c0:300036",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300011|r1c1:400110",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300036|r1c1:400118",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300023|r1c1:400118",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300023|r1c1:400202",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300023|r1c1:400209",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300023|r1c1:400211",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300023|r1c1:400176",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400118|r1c1:400145",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

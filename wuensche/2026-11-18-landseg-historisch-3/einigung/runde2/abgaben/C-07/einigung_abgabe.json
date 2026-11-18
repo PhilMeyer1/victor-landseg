@@ -1,0 +1,42 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "C",
+ "buendel": "C-07",
+ "bearbeiter": "agent:einigung-C-07:20261118i-r2",
+ "paare": [
+  {"paar": "r1c0:300026|r1c0:300038", "entscheidung": "grenze", "klasse": null,
+   "grund": "Die schmale helle Rainlinie 300038 läuft als eigenes Band schräg zwischen den Äckern; östlich davon liegt die gleichmäßig graue Ackerfläche 300026, also Rain gegen Feld."},
+  {"paar": "r1c0:300038|r1c0:300042", "entscheidung": "grenze", "klasse": null,
+   "grund": "In der Vergrößerung (einigung_02.jpg) ist der Rain 300038 eine helle Linie mit dunkler Seite, westlich davon der fleckige Acker 300042 mit hellen Stellen; Rain gegen Feld, nur die Kante ist an dieser Stelle schwach."},
+  {"paar": "r1c0:300023|r1c0:300026", "entscheidung": "grenze", "klasse": null,
+   "grund": "Die helle Rainlinie 300023 ist als schmales Band klar vom dunkleren Acker 300026 westlich davon zu unterscheiden; Rain gegen Feld."},
+  {"paar": "r1c0:300011|r1c0:300030", "entscheidung": "grenze", "klasse": null,
+   "grund": "Der breite, sehr helle Streifen 300030 mit parallelen Rändern hebt sich deutlich vom mittelgrauen Acker 300011 ab; Weg gegen Feld."},
+  {"paar": "r1c0:300011|r1c1:400110", "entscheidung": "grenze", "klasse": null,
+   "grund": "Der graue Acker 300011 berührt an der Naht nur in einem Punkt das helle, fleckige Wegband 400110; deutlicher Helligkeitsunterschied zwischen Feld und Weg."},
+  {"paar": "r1c0:300024|r1c1:400110", "entscheidung": "gleich", "klasse": "1.2",
+   "grund": "Dasselbe helle, gleich breite Wegband läuft ohne Kante über die Naht; ob es befestigt ist, gibt der Schwarz-Weiß-Scan nicht her, darum Verkehrsfläche 1.2 (KATEGORIEN: unsicherer Belag wird 1.2) für die ganze Kette 300024-400110-300030."},
+  {"paar": "r1c0:300030|r1c1:400110", "entscheidung": "gleich", "klasse": "1.2",
+   "grund": "Das helle Band mit parallelen Rändern setzt sich ohne Helligkeitssprung über die Naht fort, es ist derselbe 7-9 m breite Weg; Belag nicht erkennbar, darum 1.2 wie die ganze Kette."},
+  {"paar": "r1c0:300030|r1c1:400118", "entscheidung": "grenze", "klasse": null,
+   "grund": "An der Naht stößt das helle Wegband 300030 neben einem dunklen Schattenstrich an die mittelgraue Ackerfläche 400118; Weg gegen Feld."},
+  {"paar": "r1c0:300023|r1c1:400118", "entscheidung": "grenze", "klasse": null,
+   "grund": "Die schmale helle Rainlinie 300023 liegt hier knapp westlich der Naht (einigung_11.jpg), östlich davon die dunklere, gleichmäßige Ackerfläche 400118; Rain gegen Feld."},
+  {"paar": "r1c0:300023|r1c1:400202", "entscheidung": "gleich", "klasse": "3.4",
+   "grund": "In der Vergrößerung (einigung_12.jpg) liegt 400202 genau auf der hellen Rainlinie, die von 300023 her über die Naht läuft; dasselbe Linienband, also Krautsaum 3.4 wie der Rain."},
+  {"paar": "r1c0:300023|r1c1:400209", "entscheidung": "gleich", "klasse": "3.4",
+   "grund": "400209 deckt das Stück der hellen Rainlinie, an dem sie bei y 952-968 die Naht kreuzt (einigung_11.jpg, einigung_12.jpg); derselbe Feldrain, Krautsaum 3.4."},
+  {"paar": "r1c0:300023|r1c1:400211", "entscheidung": "gleich", "klasse": "3.4",
+   "grund": "400211 liegt auf der Fortsetzung derselben hellen Rainlinie östlich der Naht (y 964-975, einigung_12.jpg); Feldrain zwischen zwei Äckern, Krautsaum 3.4."},
+  {"paar": "r1c0:300023|r1c1:400176", "entscheidung": "grenze", "klasse": null,
+   "grund": "400176 ist die gleichmäßig graue Ackerfläche westlich der Rainlinie, die Linie selbst liegt hier schon einige Bildpunkte östlich der Naht (einigung_12.jpg); Rain gegen Feld, Segment 300023 ist an dieser Stelle breiter als die sichtbare Linie."},
+  {"paar": "r1c1:400118|r1c1:400145", "entscheidung": "grenze", "klasse": null,
+   "grund": "Das dunkle Band aus Kronen und Schatten 400145 am Straßenrand hebt sich klar vom gleichmäßig grauen Acker 400118 ab; Baumreihe gegen Feld."}
+ ],
+ "offen": [
+  "Kette Weg r1c0:300024 - r1c1:400110 - r1c0:300030 einheitlich 1.2 (Belag auf Schwarz-Weiß nicht sicher); r1c1 hatte 6.6 vorgeschlagen. Ob der Weg unbefestigt ist (dann 6.6 für alle drei), klärt nur ein Farb- oder neueres Bild.",
+  "Kette Rain r1c0:300023 - r1c1:400202/400209/400211 einheitlich 3.4; ein Feldweg (6.6) ist für die schmale helle Linie nicht ganz auszuschließen. Weitere Stücke derselben Feldgrenze in r1c1 (laut Urteil 400193, 400198, 400215) sind nicht in diesem Bündel und sollten dieselbe Klasse bekommen.",
+  "Grenzlage, nicht Klasse: Die Rain-Segmente 300023 und 300038 sind stellenweise einige Bildpunkte breiter als die sichtbare Linie (bei Paar 13 und Paar 2); Grenzen wurden hier nicht geändert."
+ ],
+ "nicht_geprueft": []
+}

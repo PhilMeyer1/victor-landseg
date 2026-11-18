@@ -1,0 +1,37 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-01",
+ "bearbeiter": "agent:einigung-B-01:20261118i-r1",
+ "paare": [
+  {"paar": "r0c0:100048|r0c0:100264", "entscheidung": "grenze", "klasse": null,
+   "grund": "Am Berührpunkt liegt die helle, schmale Dachfläche des Längsbaus (Grau um 160) neben dem dunkleren Streifen im Schattenhof (Grau um 120); Dach und Hof sind verschiedene Flächen."},
+  {"paar": "r0c0:100048|r0c0:100064", "entscheidung": "unklar", "klasse": null,
+   "grund": "100048 ist laut Urteil eine Mischfläche aus Schattenhof und Schattenlinie; an zwei Berührpunkten liegt ihr dunklerer Streifen neben dem hellen Weg, am unteren Punkt aber ein gleich heller Bodenlappen (Grau um 190 auf beiden Seiten), ob Hof oder Weg ist im Schwarz-Weiß nicht zu trennen."},
+  {"paar": "r0c0:100073|r0c0:100077", "entscheidung": "grenze", "klasse": null,
+   "grund": "Das helle Band des Hinterwegs (Grau um 137) grenzt an die dunklere, fleckige offene Fläche (Grau um 94); der Helligkeitsumschlag läuft am Wegrand entlang."},
+  {"paar": "r0c0:100104|r0c0:100115", "entscheidung": "grenze", "klasse": null,
+   "grund": "Das weiße, scharf begrenzte Viereck (Grau um 160) hebt sich deutlich von der dunkleren, fleckigen offenen Fläche mit Schatten daneben ab."},
+  {"paar": "r0c0:100104|r0c0:100148", "entscheidung": "grenze", "klasse": null,
+   "grund": "Die fast schwarze, eckige Fläche (Grau um 60) grenzt mit scharfem Umschlag an die hellere offene Fläche (Grau um 125)."},
+  {"paar": "r0c0:100156|r0c0:100163", "entscheidung": "grenze", "klasse": null,
+   "grund": "Rechts beginnt die helle rechteckige Fläche des Kleinbaus (Grau um 130), links liegt der gleichmäßig mittelgraue Randstreifen (Grau um 94); die Helligkeitskante liegt ein bis zwei Bildpunkte neben der Viertelgrenze."},
+  {"paar": "r0c0:100114|r0c0:100160", "entscheidung": "grenze", "klasse": null,
+   "grund": "Die dunklere, gleichmäßige Fläche mit gerader schräger Kante (Grau um 84) setzt sich vom helleren Anger mit Fahrspur (Grau um 103) ab; zwei verschiedene Flächen."},
+  {"paar": "r0c0:100114|r0c0:100174", "entscheidung": "grenze", "klasse": null,
+   "grund": "Der Anger ist als Ganzes hell (Grau um 102), der Feldrain ein dunkler Streifen (Grau um 66); am Berührpunkt reicht nur ein dunkler Zipfel des Angersegments in den Rainstreifen, die eigentliche Grenze ist der Umschlag hell–dunkel wenige Bildpunkte darüber."},
+  {"paar": "r0c0:100114|r0c0:100175", "entscheidung": "grenze", "klasse": null,
+   "grund": "Heller Anger gegen dunklen Feldrainstreifen mit Buschflecken; am Berührpunkt liegt ein fast schwarzer Buschfleck (Grau um 45), der noch zum Angersegment gehört, die Klassen beider Segmente als Ganzes sind aber verschieden."},
+  {"paar": "r0c0:100154|r0c0:100168", "entscheidung": "grenze", "klasse": null,
+   "grund": "Der dunkle, fleckige Rainstreifen mit Buschflecken (Grau um 61) liegt neben dem gleichmäßig feinkörnigen, etwas helleren Feld (Grau um 76); weicher, aber durchgehender Umschlag entlang des Feldrands."},
+  {"paar": "r0c0:100154|r0c0:100172", "entscheidung": "grenze", "klasse": null,
+   "grund": "Die dunkle Krone am Straßenrand (Grau um 60) hebt sich vom gleichmäßig mittelgrauen Feld (Grau um 85) ab."},
+  {"paar": "r0c0:100149|r0c0:100172", "entscheidung": "grenze", "klasse": null,
+   "grund": "Das helle Straßenband (Grau um 105 bis 120) grenzt an die dunklen Kronen bzw. ihren Schatten am Westrand (Grau um 55)."}
+ ],
+ "offen": [
+  "r0c0:100114 (Anger) enthält bei x 99–116, y 240–250 (Ausschnitt) dunkle Stücke des Feldrain- bzw. Buschstreifens; an den Berührpunkten zu 100174 und 100175 liegen beide Seiten im Dunkeln. Klassen bleiben richtig, die Segmentgrenze wäre in einer Korrektur an den Umschlag hell–dunkel zu legen.",
+  "r0c0:100048 ist eine Mischfläche aus Schattenhof, Schattenlinie und hellem Bodenlappen; das Paar mit 100064 bleibt unklar, bis die Fläche geteilt ist (Lappen bei x 250–271, y 39–57)."
+ ],
+ "nicht_geprueft": []
+}

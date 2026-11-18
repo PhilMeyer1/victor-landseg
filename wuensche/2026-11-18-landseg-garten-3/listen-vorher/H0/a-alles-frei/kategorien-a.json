@@ -1,0 +1,675 @@
+{
+ "schema": "landseg-kategorien/1",
+ "title": "Gestufte Kategorienliste H0, Fassung A (aus den vier freien Listen der Teilkacheln zusammengelegt)",
+ "date": "2026-11-18",
+ "source": "a-alles-frei/abgabe/*/kategorien-teil.json",
+ "counts": {
+  "level_1": 7,
+  "level_2": 18,
+  "leaves": 24,
+  "rules_g": 2,
+  "rules_u": 0
+ },
+ "status": {
+  "bw": "nicht beurteilt: freie Liste einer Vergleichsfassung; die SW-Spalte steht überall auf 'eing.' als Platzhalter und ist ungeprüft.",
+  "mappings": "keine Zuordnungen: freie Liste, gegen CORINE, CLC+, FLAIR, DKM und Bericht 48 nicht abgebildet (Listen leer); die Regel bericht48 ist eine Näherung des Umsetzers.",
+  "colors": "vom Umsetzer je Ebene-1-Klasse eine Farbfamilie, Mindestabstand prüft tools/pruefe_kategorien.py"
+ },
+ "bw_values": {
+  "ja": "erkennbar",
+  "eing.": "eingeschränkt",
+  "nein": "nicht erkennbar"
+ },
+ "classes": [
+  {
+   "code": "0",
+   "name": "Nicht bestimmbar",
+   "parent": null,
+   "level": 1,
+   "color": "#383838",
+   "image_cue": "Fläche, deren Untergrund im Scan nicht zu sehen oder nicht zu deuten ist",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "0.1",
+   "name": "Schatten (Untergrund nicht erkennbar)",
+   "parent": "0",
+   "level": 2,
+   "color": "#d1d1d1",
+   "image_cue": "sehr dunkles Band oder Fleck neben Gebäude oder Gehölz",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "0.2",
+   "name": "Sehr dunkle Fläche unklar",
+   "parent": "0",
+   "level": 2,
+   "color": "#808080",
+   "image_cue": "dunkler Fleck: Baumkrone, dunkles Dach oder Schatten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "0.3",
+   "name": "Kleinobjekt unklar",
+   "parent": "0",
+   "level": 2,
+   "color": "#a8a8a8",
+   "image_cue": "kleiner heller Fleck: Schuppen, Haufen, Fahrzeug",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1",
+   "name": "Gebäude und Hofstellen",
+   "parent": null,
+   "level": 1,
+   "color": "#f90606",
+   "image_cue": "Dächer und Bauwerke mit geraden Kanten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1",
+   "name": "Gebäude",
+   "parent": "1",
+   "level": 2,
+   "color": "#fa429e",
+   "image_cue": "Dachfläche mit geraden Kanten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1.1",
+   "name": "Hauptgebäude / Längsbau (Streckhof)",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#fba856",
+   "image_cue": "langer heller Dachstreifen an der Straße",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1.2",
+   "name": "Nebengebäude / Schuppen / Querbau",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#810318",
+   "image_cue": "kleineres Dach am Grundstücksende oder quer",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1.3",
+   "name": "Großbau / Halle",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#fc929a",
+   "image_cue": "großes zusammenhängendes Dach",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.1.4",
+   "name": "Dachfläche im Eigenschatten",
+   "parent": "1.1",
+   "level": 3,
+   "color": "#865727",
+   "image_cue": "dunkle Dachseite mit geraden Kanten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.2",
+   "name": "Hofstelle ungetrennt (Dach oder Hof)",
+   "parent": "1",
+   "level": 2,
+   "color": "#f90657",
+   "image_cue": "Streifen aus Dach und Hof, im Scan nicht getrennt",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "1.3",
+   "name": "Mauer / Einfriedung",
+   "parent": "1",
+   "level": 2,
+   "color": "#962c61",
+   "image_cue": "schmale gerade Linie, oft mit Schatten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2",
+   "name": "Hof und Garten",
+   "parent": null,
+   "level": 1,
+   "color": "#7f20df",
+   "image_cue": "unbebaute Flächen im Grundstück",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.1",
+   "name": "Hof- und Freifläche im Grundstück",
+   "parent": "2",
+   "level": 2,
+   "color": "#bd8bee",
+   "image_cue": "helle offene Fläche an den Gebäuden, auch Lagerfläche",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.2",
+   "name": "Garten / Grün im Ort",
+   "parent": "2",
+   "level": 2,
+   "color": "#421174",
+   "image_cue": "fleckige oder feinkörnige Fläche hinter den Höfen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "2.3",
+   "name": "Gartenland mit Reihen",
+   "parent": "2",
+   "level": 2,
+   "color": "#df20cf",
+   "image_cue": "Beete oder Rebzeilen in Reihen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3",
+   "name": "Verkehrsfläche",
+   "parent": null,
+   "level": 1,
+   "color": "#dfd920",
+   "image_cue": "glatte helle Bänder",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3.1",
+   "name": "Straße",
+   "parent": "3",
+   "level": 2,
+   "color": "#f1ee9d",
+   "image_cue": "breites helles Band",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3.1.1",
+   "name": "Straße im Ort",
+   "parent": "3.1",
+   "level": 3,
+   "color": "#96932c",
+   "image_cue": "breite Fahrbahn zwischen den Höfen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3.1.2",
+   "name": "Landstraße außerorts",
+   "parent": "3.1",
+   "level": 3,
+   "color": "#cd521d",
+   "image_cue": "breite Fahrbahn zwischen den Feldern",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3.2",
+   "name": "Weg / Gasse",
+   "parent": "3",
+   "level": 2,
+   "color": "#ddb088",
+   "image_cue": "schmaler Feld-, Hof-, Gras- oder Hintausweg",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "3.3",
+   "name": "Straßenrand (Bankett, Gehweg, Vorplatz)",
+   "parent": "3",
+   "level": 2,
+   "color": "#75383a",
+   "image_cue": "schmaler Streifen an der Fahrbahn",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4",
+   "name": "Offene Fläche (nicht Acker)",
+   "parent": null,
+   "level": 1,
+   "color": "#4ce619",
+   "image_cue": "unbebaute Fläche ohne Bewirtschaftungsmuster",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4.1",
+   "name": "Anger / Dorfplatz",
+   "parent": "4",
+   "level": 2,
+   "color": "#355d28",
+   "image_cue": "offene Fläche im Ort, oft mit Fahrspuren",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4.2",
+   "name": "Brache / Ödland / Weide",
+   "parent": "4",
+   "level": 2,
+   "color": "#409c11",
+   "image_cue": "fleckige Fläche ohne Streifen am Ortsrand",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "4.3",
+   "name": "Rain / Graben / Saum",
+   "parent": "4",
+   "level": 2,
+   "color": "#a2f288",
+   "image_cue": "schmaler Streifen zwischen Feldern oder an Wegen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "5",
+   "name": "Landwirtschaftliche Fläche",
+   "parent": null,
+   "level": 1,
+   "color": "#bdfa2e",
+   "image_cue": "Acker oder Grünland, im Schwarz-Weiß nicht sicher getrennt",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "5.1",
+   "name": "Feld / Acker (Streifenflur)",
+   "parent": "5",
+   "level": 2,
+   "color": "#f9b406",
+   "image_cue": "gleichmäßiges Korn mit Längsstreifen",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "5.1.1",
+   "name": "Feld, dunkler Bestand",
+   "parent": "5.1",
+   "level": 3,
+   "color": "#9cc639",
+   "image_cue": "dunkle gleichmäßige Parzelle",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "5.1.2",
+   "name": "Feld, mittelgrau",
+   "parent": "5.1",
+   "level": 3,
+   "color": "#a96d04",
+   "image_cue": "mittelgraue gleichmäßige Parzelle",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "5.1.3",
+   "name": "Feld, hell (offener Boden, Stoppel)",
+   "parent": "5.1",
+   "level": 3,
+   "color": "#e7ca55",
+   "image_cue": "helle gleichmäßige Parzelle",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6",
+   "name": "Gehölz",
+   "parent": null,
+   "level": 1,
+   "color": "#2fbc98",
+   "image_cue": "Kronen mit Textur und Schatten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.1",
+   "name": "Einzelbaum / Busch / Baumgruppe",
+   "parent": "6",
+   "level": 2,
+   "color": "#b6edc3",
+   "image_cue": "runde dunkle Krone mit Schatten",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  },
+  {
+   "code": "6.2",
+   "name": "Baumreihe / Hecke",
+   "parent": "6",
+   "level": 2,
+   "color": "#19e66f",
+   "image_cue": "Kette von Kronen entlang Straße, Weg oder Ortsrand",
+   "bw": "eing.",
+   "mappings": {
+    "corine": [],
+    "clc_plus": [],
+    "flair": [],
+    "dkm": [],
+    "bericht48": []
+   }
+  }
+ ],
+ "rules": [
+  {
+   "id": "G1",
+   "kind": "grundsatz",
+   "title": "Lückenlos",
+   "text": "Jeder Bildpunkt gehört zu genau einem Segment mit genau einer Klasse dieser Liste. Für eine Auswertung nach Bericht 48 zählen Segmente unter bericht48.im_siedlung_klassen mit im_siedlung: ja zu bericht48.im_siedlung_ziel (Näherung, ungeprüft).",
+   "source": "wuensche/entscheidungen.md 2026-11-17 (drei Fassungen, lückenlos in allen dreien)",
+   "bericht48": {
+    "im_siedlung_klassen": [
+     "2"
+    ],
+    "im_siedlung_ziel": "1"
+   }
+  },
+  {
+   "id": "G2",
+   "kind": "grundsatz",
+   "title": "Freie Arbeitsweise, Liste nachträglich vereinheitlicht",
+   "text": "Jede Teilkachel hat ein Agent frei bearbeitet (eigene Kategorien, eigene Arbeitsweise, Beschreibung in abgabe/<teilkachel>/arbeitsweise.md). Die vier eigenen Listen hat der Umsetzer nach Namen und Merkmalen zu dieser Liste zusammengelegt; der ursprüngliche Code steht je Segment unter klasse_teil, die Abbildung unter abbildung_teilkacheln.",
+   "source": "a-alles-frei/abgabe/<teilkachel>/kategorien-teil.json"
+  }
+ ],
+ "abbildung_teilkacheln": {
+  "r0c0": {
+   "1": "1",
+   "1.1": "1.1",
+   "1.1.1": "1.1.1",
+   "1.1.2": "1.1.2",
+   "1.2": "2.1",
+   "1.3": "1.2",
+   "1.4": "2.2",
+   "1.5": "1.3",
+   "2": "3",
+   "2.1": "3.1",
+   "2.2": "3.2",
+   "2.3": "3.3",
+   "3": "5",
+   "3.1": "5.1",
+   "4": "6",
+   "4.1": "6.1",
+   "4.2": "6.2",
+   "5": "4",
+   "5.1": "4.1",
+   "5.2": "4.2",
+   "9": "0",
+   "9.1": "0.1",
+   "9.2": "0.2",
+   "9.3": "0.3"
+  },
+  "r0c1": {
+   "1": "1",
+   "1.1": "1.1",
+   "1.1.1": "1.1.1",
+   "1.1.2": "1.1.2",
+   "1.1.3": "1.1.3",
+   "1.2": "3",
+   "1.2.1": "3.1",
+   "1.2.2": "3.2",
+   "1.3": "2.1",
+   "2": "2.2",
+   "2.1": "2.2",
+   "2.2": "6",
+   "2.2.1": "6.1",
+   "2.3": "4.1",
+   "2.4": "2.3",
+   "9": "0",
+   "9.1": "0.1"
+  },
+  "r1c0": {
+   "1": "3",
+   "1.1": "3.1",
+   "1.2": "3.2",
+   "2": "1",
+   "2.1": "1.1",
+   "2.2": "2.1",
+   "3": "5",
+   "3.1": "5.1",
+   "3.1.1": "5.1.1",
+   "3.1.2": "5.1.2",
+   "3.1.3": "5.1.3",
+   "3.2": "4.2",
+   "4": "6",
+   "4.1": "6.1",
+   "4.2": "4.3",
+   "5": "0",
+   "5.1": "0.2",
+   "5.2": "0.3"
+  },
+  "r1c1": {
+   "1": "1",
+   "1.1": "1.1",
+   "1.1.1": "1.1",
+   "1.1.2": "1.1.4",
+   "1.2": "2.1",
+   "1.3": "2.2",
+   "2": "3",
+   "2.1": "3.1.1",
+   "2.2": "3.1.2",
+   "2.3": "3.2",
+   "3": "5",
+   "3.1": "5.1",
+   "4": "6",
+   "4.1": "6.2",
+   "5": "0.1"
+  }
+ }
+}

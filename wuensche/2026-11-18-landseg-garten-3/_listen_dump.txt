@@ -1,0 +1,312 @@
+master class keys dict_keys(['code', 'name', 'parent', 'level', 'color', 'image_cue', 'bw', 'mappings', 'deviation', 'deviation_note'])
+ M 2 Acker (und Dauerkulturen) None 1
+ M 2.1 Acker mit Bewuchs 2 2
+ M 2.2 Acker ohne Bewuchs (gepflügt, Saatbett) 2 2
+ M 2.3 Ackerbrache 2 2
+ M 2.4 Dauerkultur 2 2
+ M 2.4.1 Weingarten 2.4 3
+ M 2.4.2 Obstanlage (intensiv, Reihen) 2.4 3
+ M 2.4.3 Sonstige Dauerkultur (Beeren, Hopfen, Baumschule) 2.4 3
+ M 3 Dauergrünland (krautig, nicht Acker) None 1
+ M 3.1 Wiese / Weide (gemeinsam) 3 2
+ M 3.1.1 Wiese (Mahdspuren sichtbar) 3.1 3
+ M 3.1.2 Weide (Trittpfade, Zäune, Tiere) 3.1 3
+ M 3.2 Trocken-/Magerrasen 3 2
+ M 3.3 Grünlandbrache / Ruderalflur 3 2
+ M 3.4 Krautsaum linear (Feldrain, Wegrand, Böschung) 3 2
+ M 3.5 Verbuschende Fläche (Grünland mit Gehölzanflug) 3 2
+ M 3.6 Garten (Haus- und Hofgarten: Grünfläche, Beet) 3 2
+{'level_1': 7, 'level_2': 26, 'leaves': 44, 'rules_g': 5, 'rules_u': 5}
+== uebergabe/landseg-t0/T0 a-alles-frei {'level_1': 7, 'level_2': 18, 'leaves': 32, 'rules_g': 2, 'rules_u': 0} {'bw': "nicht beurteilt: freie Liste einer Vergleichsfassung; die SW-Spalte steht überall auf 'eing.' als Platzhalter und ist ungeprüft.", 'mappings': 'keine Zuordnungen: freie Liste, gegen CORINE, CLC+, FLAIR, DKM und Bericht 48 nicht abgebildet (Listen leer); die Regel bericht48 ist eine Näherung des Umsetzers.', 'colors': 'B: Farben der Vereinheitlichung; C: vom Umsetzer je Ebene-1-Klasse eine Farbfamilie, Mindestabstand prüft tools/pruefe_kategorien.py'}
+   0 Schatten / nicht bestimmbar None 1
+   0.1 Schlagschatten 0 2
+   0.1.1 Schlagschatten von Gebäude 0.1 3
+   0.1.2 Schlagschatten von Gehölz 0.1 3
+   1 Gebäude und bauliche Anlagen None 1
+   1.1 Gebäude 1 2
+   1.1.1 Wohnhaus (Hauptgebäude) 1.1 3
+   1.1.2 Nebengebäude / Anbau / Schuppen 1.1 3
+   1.1.3 Gartenhaus / Laube 1.1 3
+   1.1.4 Gewächshaus / Glas- oder Foliendach 1.1 3
+   1.2 Bauliche Anlagen und Objekte 1 2
+   1.2.1 Schwimmbecken 1.2 3
+   1.2.2 Mauer / Stützmauer / Einfassung 1.2 3
+   1.2.3 Kleinobjekt 1.2 3
+   1.2.4 Holzhaufen / Schnittgut 1.2 3
+   2 Wege und befestigte Flächen None 1
+   2.1 Befestigt 2 2
+   2.1.1 Straße / Fahrweg 2.1 3
+   2.1.2 Hof / Zufahrt / Terrasse / Vorplatz 2.1 3
+   2.1.3 Gartenweg / Stufen / Platten 2.1 3
+   2.2 Unbefestigt 2 2
+   2.2.1 Wiesenweg 2.2 3
+   2.2.2 Trampelpfad / Erdweg 2.2 3
+   3 Garten / Siedlungsgrün None 1
+   3.1 Gartenrasen 3 2
+   3.2 Gemischte Gartenfläche 3 2
+   3.3 Gemüse- und Nutzbeete 3 2
+   4 Krautige Vegetation None 1
+   4.1 Wiese / Grünland 4 2
+   4.1.1 Wiese ungemäht / langgrasig 4.1 3
+   4.1.2 Wiese niedrig 4.1 3
+   4.2 Saum / Feldrain / Böschung 4 2
+   4.3 Verbuschte Wiese / Lichtung 4 2
+   5 Feld und offener Boden None 1
+   5.1 Feld gemäht / abgeerntet 5 2
+   5.2 Offener Boden / vegetationsarm 5 2
+   6 Gehölz None 1
+   6.1 Wald / geschlossener Bestand 6 2
+   6.1.1 Kronendach besonnt 6.1 3
+   6.1.2 Kronendach beschattet 6.1 3
+   6.2 Baumgruppe / Feldgehölz 6 2
+   6.3 Einzelbaum 6 2
+   6.3.1 Laubbaum 6.3 3
+   6.3.2 Laubbaum rotlaubig 6.3 3
+   6.3.3 Nadelbaum / Konifere 6.3 3
+   6.4 Hecke / Gehölzstreifen 6 2
+   6.5 Strauch / Gebüsch 6 2
+== uebergabe/landseg-t0/T0 b-kategorien-frei {'level_1': 7, 'level_2': 21, 'leaves': 31, 'rules_g': 2, 'rules_u': 0} {'bw': "nicht beurteilt: freie Liste einer Vergleichsfassung; die SW-Spalte steht überall auf 'eing.' als Platzhalter und ist ungeprüft.", 'mappings': 'keine Zuordnungen: freie Liste, gegen CORINE, CLC+, FLAIR, DKM und Bericht 48 nicht abgebildet (Listen leer); die Regel bericht48 ist eine Näherung des Umsetzers.', 'colors': 'B: Farben der Vereinheitlichung; C: vom Umsetzer je Ebene-1-Klasse eine Farbfamilie, Mindestabstand prüft tools/pruefe_kategorien.py'}
+   0 Nicht bestimmbar None 1
+   0.1 Schlagschatten 0 2
+   0.1.1 Gebäudeschatten 0.1 3
+   0.1.2 Heckenschatten 0.1 3
+   1 Gehölz None 1
+   1.1 Baum 1 2
+   1.1.1 Einzelbaum 1.1 3
+   1.1.2 Baumgruppe 1.1 3
+   1.2 Wald 1 2
+   1.2.1 Wald belichtet 1.2 3
+   1.2.2 Wald beschattet 1.2 3
+   1.3 Gebüsch 1 2
+   1.4 Hecke 1 2
+   2 Grünland None 1
+   2.1 Wiese 2 2
+   2.1.1 Wiese gemäht 2.1 3
+   2.1.2 Wiese ungemäht 2.1 3
+   2.2 Rasen 2 2
+   2.3 Saum und Randstreifen 2 2
+   3 Feld, Garten und offener Boden None 1
+   3.1 Feld 3 2
+   3.1.1 Feld abgeerntet 3.1 3
+   3.2 Offener Boden 3 2
+   3.3 Gartenparzelle 3 2
+   3.3.1 Beete 3.3 3
+   3.3.2 Parzelle gemischt 3.3 3
+   4 Bebauung None 1
+   4.1 Gebäude 4 2
+   4.1.1 Wohnhaus 4.1 3
+   4.1.2 Nebengebäude 4.1 3
+   4.1.3 Gewächshaus 4.1 3
+   4.2 Mauer 4 2
+   4.3 Kleinobjekt 4 2
+   4.3.1 Frühbeet 4.3 3
+   4.4 Lagerfläche 4 2
+   4.4.1 Holzlager 4.4 3
+   5 Wasser None 1
+   5.1 Schwimmbecken 5 2
+   6 Verkehr und befestigte Fläche None 1
+   6.1 Straße 6 2
+   6.1.1 Asphaltstraße 6.1 3
+   6.1.2 Betonstraße 6.1 3
+   6.2 Weg 6 2
+   6.2.1 Gartenweg 6.2 3
+   6.2.2 Feld- und Erdweg 6.2 3
+   6.2.3 Trampelpfad 6.2 3
+   6.3 Hof und Zufahrt 6 2
+   6.4 Terrasse 6 2
+   6.5 Randstein und Bankett 6 2
+== uebergabe/landseg-t0/T0 c-feste-liste {'level_1': 7, 'level_2': 25, 'leaves': 43, 'rules_g': 5, 'rules_u': 5} {'bw': 'VERMUTUNG bis zum Test: Die SW-Spalte ist Expertenurteil aus Bericht 48 bzw. vermutet und noch nicht am Bild geprüft (Test T0 / historischer Ausschnitt).', 'mappings': 'eigene Zuordnung, nicht gegen amtliche Tabellen geprüft (CORINE, CLC+, FLAIR, DKM; CORINE-Codes aus dem Gedächtnis der 44er-Liste). Bericht 48 nach dessen Klassenliste.', 'colors': 'vom Umsetzer festgelegt: eine Farbfamilie je Ebene-1-Klasse, Klasse 0 grau; Mindestabstand prüft tools/pruefe_kategorien.py'}
+   0 Nicht bestimmbar (technisch) None 1
+   0.1 Bildfehler / Scanrand / Rahmenmarke / Kratzer 0 2
+   0.2 Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund 0 2
+   1 Versiegelt / bebaut (Siedlung und Verkehr) None 1
+   1.1 Gebäude 1 2
+   1.1.1 Hauptgebäude (Wohn-, Betriebsgebäude) 1.1 3
+   1.1.2 Nebengebäude / Schuppen / Stadel 1.1 3
+   1.1.3 Gewächshaus / Folientunnel 1.1 3
+   1.2 Verkehrsfläche 1 2
+   1.2.1 Straße (versiegelt) 1.2 3
+   1.2.2 Weg, befestigt (Asphalt, Pflaster) 1.2 3
+   1.2.4 Platz / Parkplatz / Hoffläche versiegelt 1.2 3
+   1.2.5 Bahnkörper 1.2 3
+   1.3 Sonstige künstliche Fläche 1 2
+   1.3.1 Lager-, Schotter-, Kiesfläche (künstlich, unversiegelt) 1.3 3
+   1.3.2 Baustelle 1.3 3
+   1.3.3 Schwimmbecken 1.3 3
+   1.3.4 Sport-, Spielplatz (künstlicher Belag) 1.3 3
+   2 Acker (und Dauerkulturen) None 1
+   2.1 Acker mit Bewuchs 2 2
+   2.2 Acker ohne Bewuchs (gepflügt, Saatbett) 2 2
+   2.3 Ackerbrache 2 2
+   2.4 Dauerkultur 2 2
+   2.4.1 Weingarten 2.4 3
+   2.4.2 Obstanlage (intensiv, Reihen) 2.4 3
+   2.4.3 Sonstige Dauerkultur (Beeren, Hopfen, Baumschule) 2.4 3
+   3 Dauergrünland (krautig, nicht Acker) None 1
+   3.1 Wiese / Weide (gemeinsam) 3 2
+   3.1.1 Wiese (Mahdspuren sichtbar) 3.1 3
+   3.1.2 Weide (Trittpfade, Zäune, Tiere) 3.1 3
+   3.2 Trocken-/Magerrasen 3 2
+   3.3 Grünlandbrache / Ruderalflur 3 2
+   3.4 Krautsaum linear (Feldrain, Wegrand, Böschung) 3 2
+   3.5 Verbuschende Fläche (Grünland mit Gehölzanflug) 3 2
+   4 Wald und Gehölze None 1
+   4.1 Wald (geschlossener Bestand) 4 2
+   4.1.1 Laubwald 4.1 3
+   4.1.2 Nadelwald 4.1 3
+   4.1.3 Mischwald 4.1 3
+   4.1.4 Kahlschlag / Jungwuchs / Schlagflur 4.1 3
+   4.2 Gehölz außerhalb Wald 4 2
+   4.2.1 Einzelbaum 4.2 3
+   4.2.2 Baumgruppe / Feldgehölz 4.2 3
+   4.2.3 Hecke / Baumreihe / Ufergehölz (linear) 4.2 3
+   4.2.4 Gebüsch / Strauchfläche 4.2 3
+   5 Gewässer / Feuchtgebiet None 1
+   5.1 Fließgewässer 5 2
+   5.1.1 Fluss / Bach 5.1 3
+   5.1.2 Graben / Kanal 5.1 3
+   5.2 Stillgewässer (See, Teich, Weiher) 5 2
+   5.3 Feuchtgebiet / Röhricht / Ufervegetation 5 2
+   6 Offener Boden / Fels None 1
+   6.1 Offene Sand-, Löss-, Lehmstelle (Abbruch, Hohlweg, Grube) 6 2
+   6.2 Abbau, Halde, Deponie 6 2
+   6.3 Fels / Geröll 6 2
+   6.4 Kies-/Sandbank (Gewässerufer, unbewachsen) 6 2
+   6.5 Schnee / Eis / Gletscher 6 2
+   6.6 Weg, unbefestigt (Feld-, Wald-, Schotterweg) 6 2
+== H0 a-alles-frei {'level_1': 7, 'level_2': 18, 'leaves': 24, 'rules_g': 2, 'rules_u': 0} {'bw': "nicht beurteilt: freie Liste einer Vergleichsfassung; die SW-Spalte steht überall auf 'eing.' als Platzhalter und ist ungeprüft.", 'mappings': 'keine Zuordnungen: freie Liste, gegen CORINE, CLC+, FLAIR, DKM und Bericht 48 nicht abgebildet (Listen leer); die Regel bericht48 ist eine Näherung des Umsetzers.', 'colors': 'vom Umsetzer je Ebene-1-Klasse eine Farbfamilie, Mindestabstand prüft tools/pruefe_kategorien.py'}
+   0 Nicht bestimmbar None 1
+   0.1 Schatten (Untergrund nicht erkennbar) 0 2
+   0.2 Sehr dunkle Fläche unklar 0 2
+   0.3 Kleinobjekt unklar 0 2
+   1 Gebäude und Hofstellen None 1
+   1.1 Gebäude 1 2
+   1.1.1 Hauptgebäude / Längsbau (Streckhof) 1.1 3
+   1.1.2 Nebengebäude / Schuppen / Querbau 1.1 3
+   1.1.3 Großbau / Halle 1.1 3
+   1.1.4 Dachfläche im Eigenschatten 1.1 3
+   1.2 Hofstelle ungetrennt (Dach oder Hof) 1 2
+   1.3 Mauer / Einfriedung 1 2
+   2 Hof und Garten None 1
+   2.1 Hof- und Freifläche im Grundstück 2 2
+   2.2 Garten / Grün im Ort 2 2
+   2.3 Gartenland mit Reihen 2 2
+   3 Verkehrsfläche None 1
+   3.1 Straße 3 2
+   3.1.1 Straße im Ort 3.1 3
+   3.1.2 Landstraße außerorts 3.1 3
+   3.2 Weg / Gasse 3 2
+   3.3 Straßenrand (Bankett, Gehweg, Vorplatz) 3 2
+   4 Offene Fläche (nicht Acker) None 1
+   4.1 Anger / Dorfplatz 4 2
+   4.2 Brache / Ödland / Weide 4 2
+   4.3 Rain / Graben / Saum 4 2
+   5 Landwirtschaftliche Fläche None 1
+   5.1 Feld / Acker (Streifenflur) 5 2
+   5.1.1 Feld, dunkler Bestand 5.1 3
+   5.1.2 Feld, mittelgrau 5.1 3
+   5.1.3 Feld, hell (offener Boden, Stoppel) 5.1 3
+   6 Gehölz None 1
+   6.1 Einzelbaum / Busch / Baumgruppe 6 2
+   6.2 Baumreihe / Hecke 6 2
+== H0 b-kategorien-frei {'level_1': 7, 'level_2': 19, 'leaves': 26, 'rules_g': 1, 'rules_u': 1} {'bw': 'VERMUTUNG: aus den Urteilen der Viertel-Agents am Schwarz-Weiß-Scan 1968 abgeleitet (ja = dort sicher benannt, eing. = feinere Stufe unsicher), nicht gegen eine Expertenliste geprüft.', 'mappings': 'leer: Fassung B ordnet keine amtlichen Schemata (CORINE, CLC+, FLAIR, DKM) zu; die Spalte steht nur, weil das Format sie verlangt.', 'colors': 'vom Vereinheitlicher festgelegt, Mindestabstand prüft tools/pruefe_kategorien.py'}
+   0 Nicht bestimmbar None 1
+   0.1 Schlagschatten 0 2
+   0.1.1 Schatten zwischen Gebäuden 0.1 3
+   0.1.2 Schatten von Gehölz oder Gebäude (unklar) 0.1 3
+   0.2 Halbschatten 0 2
+   0.2.1 Dachseite oder Hof im Halbschatten 0.2 3
+   0.3 Dunkle Fläche 0 2
+   0.4 Fläche unbestimmt 0 2
+   1 Bebauung None 1
+   1.1 Gebäude 1 2
+   1.1.1 Wohn- oder Langhaus 1.1 3
+   1.1.2 Nebengebäude 1.1 3
+   1.2 Hofstelle 1 2
+   1.2.1 Streckhof-Streifen 1.2 3
+   2 Hof und Garten None 1
+   2.1 Hof 2 2
+   2.1.1 Hof (offen) 2.1 3
+   2.1.2 Hof im Schatten 2.1 3
+   2.1.3 Lagerplatz 2.1 3
+   2.2 Garten 2 2
+   3 Verkehrsfläche None 1
+   3.1 Straße 3 2
+   3.2 Weg 3 2
+   3.2.1 Feldweg 3.2 3
+   3.2.2 Gasse oder Hofweg 3.2 3
+   3.3 Straßenrand 3 2
+   3.4 Platz oder Vorplatz 3 2
+   4 Gehölz None 1
+   4.1 Baum 4 2
+   4.2 Gebüsch 4 2
+   4.3 Baumreihe oder Hecke 4 2
+   4.4 Baum oder Gebüsch (nicht trennbar) 4 2
+   5 Grünfläche None 1
+   5.1 Saum 5 2
+   5.1.1 Feldrain 5.1 3
+   5.1.2 Wegrain 5.1 3
+   5.2 Anger und Brache 5 2
+   5.2.1 Anger 5.2 3
+   5.2.2 Brache 5.2 3
+   6 Landwirtschaft None 1
+   6.1 Feld 6 2
+== H0 c-feste-liste {'level_1': 7, 'level_2': 25, 'leaves': 43, 'rules_g': 5, 'rules_u': 5} {'bw': 'VERMUTUNG bis zum Test: Die SW-Spalte ist Expertenurteil aus Bericht 48 bzw. vermutet und noch nicht am Bild geprüft (Test T0 / historischer Ausschnitt).', 'mappings': 'eigene Zuordnung, nicht gegen amtliche Tabellen geprüft (CORINE, CLC+, FLAIR, DKM; CORINE-Codes aus dem Gedächtnis der 44er-Liste). Bericht 48 nach dessen Klassenliste.', 'colors': 'vom Umsetzer festgelegt: eine Farbfamilie je Ebene-1-Klasse, Klasse 0 grau; Mindestabstand prüft tools/pruefe_kategorien.py'}
+   0 Nicht bestimmbar (technisch) None 1
+   0.1 Bildfehler / Scanrand / Rahmenmarke / Kratzer 0 2
+   0.2 Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund 0 2
+   1 Versiegelt / bebaut (Siedlung und Verkehr) None 1
+   1.1 Gebäude 1 2
+   1.1.1 Hauptgebäude (Wohn-, Betriebsgebäude) 1.1 3
+   1.1.2 Nebengebäude / Schuppen / Stadel 1.1 3
+   1.1.3 Gewächshaus / Folientunnel 1.1 3
+   1.2 Verkehrsfläche 1 2
+   1.2.1 Straße (versiegelt) 1.2 3
+   1.2.2 Weg, befestigt (Asphalt, Pflaster) 1.2 3
+   1.2.4 Platz / Parkplatz / Hoffläche versiegelt 1.2 3
+   1.2.5 Bahnkörper 1.2 3
+   1.3 Sonstige künstliche Fläche 1 2
+   1.3.1 Lager-, Schotter-, Kiesfläche (künstlich, unversiegelt) 1.3 3
+   1.3.2 Baustelle 1.3 3
+   1.3.3 Schwimmbecken 1.3 3
+   1.3.4 Sport-, Spielplatz (künstlicher Belag) 1.3 3
+   2 Acker (und Dauerkulturen) None 1
+   2.1 Acker mit Bewuchs 2 2
+   2.2 Acker ohne Bewuchs (gepflügt, Saatbett) 2 2
+   2.3 Ackerbrache 2 2
+   2.4 Dauerkultur 2 2
+   2.4.1 Weingarten 2.4 3
+   2.4.2 Obstanlage (intensiv, Reihen) 2.4 3
+   2.4.3 Sonstige Dauerkultur (Beeren, Hopfen, Baumschule) 2.4 3
+   3 Dauergrünland (krautig, nicht Acker) None 1
+   3.1 Wiese / Weide (gemeinsam) 3 2
+   3.1.1 Wiese (Mahdspuren sichtbar) 3.1 3
+   3.1.2 Weide (Trittpfade, Zäune, Tiere) 3.1 3
+   3.2 Trocken-/Magerrasen 3 2
+   3.3 Grünlandbrache / Ruderalflur 3 2
+   3.4 Krautsaum linear (Feldrain, Wegrand, Böschung) 3 2
+   3.5 Verbuschende Fläche (Grünland mit Gehölzanflug) 3 2
+   4 Wald und Gehölze None 1
+   4.1 Wald (geschlossener Bestand) 4 2
+   4.1.1 Laubwald 4.1 3
+   4.1.2 Nadelwald 4.1 3
+   4.1.3 Mischwald 4.1 3
+   4.1.4 Kahlschlag / Jungwuchs / Schlagflur 4.1 3
+   4.2 Gehölz außerhalb Wald 4 2
+   4.2.1 Einzelbaum 4.2 3
+   4.2.2 Baumgruppe / Feldgehölz 4.2 3
+   4.2.3 Hecke / Baumreihe / Ufergehölz (linear) 4.2 3
+   4.2.4 Gebüsch / Strauchfläche 4.2 3
+   5 Gewässer / Feuchtgebiet None 1
+   5.1 Fließgewässer 5 2
+   5.1.1 Fluss / Bach 5.1 3
+   5.1.2 Graben / Kanal 5.1 3
+   5.2 Stillgewässer (See, Teich, Weiher) 5 2
+   5.3 Feuchtgebiet / Röhricht / Ufervegetation 5 2
+   6 Offener Boden / Fels None 1
+   6.1 Offene Sand-, Löss-, Lehmstelle (Abbruch, Hohlweg, Grube) 6 2
+   6.2 Abbau, Halde, Deponie 6 2
+   6.3 Fels / Geröll 6 2
+   6.4 Kies-/Sandbank (Gewässerufer, unbewachsen) 6 2
+   6.5 Schnee / Eis / Gletscher 6 2
+   6.6 Weg, unbefestigt (Feld-, Wald-, Schotterweg) 6 2

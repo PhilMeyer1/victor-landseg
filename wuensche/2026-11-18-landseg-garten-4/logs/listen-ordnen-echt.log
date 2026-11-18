@@ -1,0 +1,88 @@
+T0 A: umbenennen [('4', 'Dauergrünland (Krautige Vegetation)', 'Dauergrünland')]
+T0 A: neue Klassen [('4.4.1', 'Gartenrasen'), ('4.4.2', 'Gemischte Gartenfläche'), ('4.4.3', 'Gemüse- und Nutzbeete')]
+T0 A: Umstellung {'3.1': '4.4.1 (45 Segmente)', '3.2': '4.4.2 (23 Segmente)', '3.3': '4.4.3 (2 Segmente)'} je Teilkachel {'r0c0': 4, 'r0c1': 43, 'r1c0': 5, 'r1c1': 18}
+  eingriff T0 A r0c0: 4 Schritte, Exit 0 . klasse_setzen: {"alt": "3.1", "neu": "4.4.1"}
+4. klasse_setzen: {"alt": "3.2", "neu": "4.4.2"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 128, nicht zusammenhängend: 0
+ok
+  eingriff T0 A r0c1: 43 Schritte, Exit 0  klasse_setzen: {"alt": "3.2", "neu": "4.4.2"}
+43. klasse_setzen: {"alt": "3.1", "neu": "4.4.1"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 272, nicht zusammenhängend: 0
+ok
+  eingriff T0 A r1c0: 5 Schritte, Exit 0 4. klasse_setzen: {"alt": "3.2", "neu": "4.4.2"}
+5. klasse_setzen: {"alt": "3.2", "neu": "4.4.2"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 64, nicht zusammenhängend: 0
+ok
+  eingriff T0 A r1c1: 18 Schritte, Exit 0  klasse_setzen: {"alt": "3.1", "neu": "4.4.1"}
+18. klasse_setzen: {"alt": "3.1", "neu": "4.4.1"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 417, nicht zusammenhängend: 0
+ok
+  T0 A: counts {'level_1': 6, 'level_2': 16, 'leaves': 32, 'rules_g': 2, 'rules_u': 0}, garten_maengel []
+T0 B: umbenennen [('2', 'Dauergrünland (Grünland)', 'Dauergrünland'), ('3', 'Feld, Garten und offener Boden', 'Feld und offener Boden')]
+T0 B: neue Klassen [('2.4.1', 'Beete'), ('2.4.2', 'Parzelle gemischt')]
+T0 B: Umstellung {'3.3.1': '2.4.1 (4 Segmente)', '3.3.2': '2.4.2 (8 Segmente)', '3.3': '2.4 (0 Segmente)'} je Teilkachel {'r0c0': 2, 'r0c1': 0, 'r1c0': 4, 'r1c1': 6}
+  eingriff T0 B r0c0: 2 Schritte, Exit 0 asse_setzen: {"alt": "3.3.2", "neu": "2.4.2"}
+2. klasse_setzen: {"alt": "3.3.2", "neu": "2.4.2"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 206, nicht zusammenhängend: 0
+ok
+  eingriff T0 B r1c0: 4 Schritte, Exit 0 lasse_setzen: {"alt": "3.3.2", "neu": "2.4.2"}
+4. klasse_setzen: {"alt": "3.3.2", "neu": "2.4.2"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 86, nicht zusammenhängend: 0
+ok
+  eingriff T0 B r1c1: 6 Schritte, Exit 0 asse_setzen: {"alt": "3.3.1", "neu": "2.4.1"}
+6. klasse_setzen: {"alt": "3.3.1", "neu": "2.4.1"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 408, nicht zusammenhängend: 0
+ok
+  T0 B: counts {'level_1': 7, 'level_2': 21, 'leaves': 31, 'rules_g': 2, 'rules_u': 0}, garten_maengel []
+H0 A: umbenennen [('4', 'Dauergrünland (Offene Fläche (nicht Acker))', 'Dauergrünland')]
+H0 A: neue Klassen [('4.4.1', 'Garten / Grün im Ort'), ('4.4.2', 'Gartenland mit Reihen')]
+H0 A: Umstellung {'2.2': '4.4.1 (138 Segmente)', '2.3': '4.4.2 (0 Segmente)'} je Teilkachel {'r0c0': 2, 'r0c1': 129, 'r1c0': 0, 'r1c1': 7}
+  eingriff H0 A r0c0: 2 Schritte, Exit 0 1. klasse_setzen: {"alt": "2.2", "neu": "4.4.1"}
+2. klasse_setzen: {"alt": "2.2", "neu": "4.4.1"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 99, nicht zusammenhängend: 0
+ok
+  eingriff H0 A r0c1: 129 Schritte, Exit 0 klasse_setzen: {"alt": "2.2", "neu": "4.4.1"}
+129. klasse_setzen: {"alt": "2.2", "neu": "4.4.1"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 555, nicht zusammenhängend: 0
+ok
+  eingriff H0 A r1c1: 7 Schritte, Exit 0 . klasse_setzen: {"alt": "2.2", "neu": "4.4.1"}
+7. klasse_setzen: {"alt": "2.2", "neu": "4.4.1"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 329, nicht zusammenhängend: 0
+ok
+  H0 A: counts {'level_1': 7, 'level_2': 17, 'leaves': 24, 'rules_g': 2, 'rules_u': 0}, garten_maengel []
+H0 B: umbenennen [('5', 'Dauergrünland (Grünfläche)', 'Dauergrünland'), ('2', 'Hof und Garten', 'Hof')]
+H0 B: neue Klassen []
+H0 B: Umstellung {'2.2': '5.3 (20 Segmente)'} je Teilkachel {'r0c0': 5, 'r0c1': 11, 'r1c0': 1, 'r1c1': 3}
+  eingriff H0 B r0c0: 5 Schritte, Exit 0 "}
+4. klasse_setzen: {"alt": "2.2", "neu": "5.3"}
+5. klasse_setzen: {"alt": "2.2", "neu": "5.3"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 156, nicht zusammenhängend: 0
+ok
+  eingriff H0 B r0c1: 11 Schritte, Exit 0 
+10. klasse_setzen: {"alt": "2.2", "neu": "5.3"}
+11. klasse_setzen: {"alt": "2.2", "neu": "5.3"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 227, nicht zusammenhängend: 0
+ok
+  eingriff H0 B r1c0: 1 Schritte, Exit 0 1. klasse_setzen: {"alt": "2.2", "neu": "5.3"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 38, nicht zusammenhängend: 0
+ok
+  eingriff H0 B r1c1: 3 Schritte, Exit 0 "}
+2. klasse_setzen: {"alt": "2.2", "neu": "5.3"}
+3. klasse_setzen: {"alt": "2.2", "neu": "5.3"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 195, nicht zusammenhängend: 0
+ok
+  H0 B: counts {'level_1': 7, 'level_2': 19, 'leaves': 26, 'rules_g': 1, 'rules_u': 1}, garten_maengel []

@@ -1,0 +1,16 @@
+{"schema": "landseg-einigung-abgabe/1", "fassung": "A", "buendel": "A-03",
+ "bearbeiter": "agent:einigung-A-03:20261118i-r1",
+ "paare": [
+  {"paar": "r0c0:100029|r0c1:200089", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Im Kern liegen von r0c0:100029 nur 6 Bildpunkte (x 497–499, y 0–1) in der fast schwarzen Lücke rechts des hellen Dachs B3 (Grau 46 gegen 47 im Schatten r0c1:200089, keine Kante), also dieselbe Schattenfläche; der mittelgraue Hauptteil des Segments liegt nur im Kontextrand (eigenes Bild einigung_01.jpg)."},
+  {"paar": "r0c0:100083|r0c1:200089", "entscheidung": "grenze", "klasse": null,
+   "grund": "Links der helle, gerade begrenzte Dachkörper des Hauses B3 (Grau 152–183), rechts der fast schwarze Schatten neben dem Dach (Grau 49): Dach und Schatten sind verschiedene Flächen, die Kante liegt nur wenige Bildpunkte vor der Naht."},
+  {"paar": "r0c0:100031|r0c1:200171", "entscheidung": "grenze", "klasse": null,
+   "grund": "Links der mittelgraue Streifen unter dem hellen Dach B3 (Grau 105), rechts die fast schwarze, senkrechte Lücke (Grau 45); deutlicher Grauton-Unterschied, die Berührung ist nur eine Ecke von 2 Bildpunkten."},
+  {"paar": "r0c0:100085|r0c1:200171", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Beide Seiten sind dieselbe fast schwarze, schmale Lücke zwischen den Dächern (Grau 32 links, 45 rechts, ohne Kante über 15 Bildpunkte); in der Form ein Schatten- bzw. Gassenstreifen neben hellen Dächern, Untergrund nicht erkennbar, daher Schatten 0.1 für beide."},
+  {"paar": "r0c0:100085|r0c1:200165", "entscheidung": "unklar", "klasse": null,
+   "grund": "An der Naht (y 40–47) sind beide Seiten mittelgrau ohne Kante (Grau 91 gegen 105), doch r0c0:100085 ist überwiegend der dunkle Schattenstreifen und r0c1:200165 ein kleiner mittelgrauer Fleck am Kopf eines hellen Dachs; ob Garten, Hof oder Schattenrand, gibt der Schwarz-Weiß-Scan nicht her."}
+ ],
+ "offen": ["r0c0:100085|r0c1:200165: Garten/Hof gegen Schattenrand auf Schwarz-Weiß nicht trennbar; ein Farbbild würde entscheiden. Zudem ist r0c0:100085 gemischt (oberer Teil fast schwarz, unterer Teil mittelgrau), das kann nur eine Grenzänderung lösen, nicht eine Klasse."],
+ "nicht_geprueft": ["r0c1:200171 rechts von x 600 (Kern reicht bis x 626) und im Kontextrand nur über Grauwert (Mittel 43 im Kern) geprüft, nicht im Bild angesehen."]}

@@ -1,0 +1,248 @@
+{
+  "schema": "landseg-vorstufe/1",
+  "_hinweis": "Einstellungen der Vorstufe (W2, python -m landseg vorstufe). Ablauf nach Bericht landseg-methode 3.2 Schritt 3: a Übersegmentierung (SLIC in Lab), b SAM 3 mit Text je Kategorie (Instanzmasken), c Semantikkopf mal Presence je Text, argmax je Klasse (Nachbau SegEarth-OV3), d Instanzen auf Superpixel einrasten, übrige Superpixel nach der Semantikkarte klassifizieren und mit gleichklassigen Nachbarn verbinden, e pruefen. Schwellen sind erste Setzungen, am Test T0 nicht abgestimmt.",
+  "uebersegmentierung": {
+    "verfahren": "slic",
+    "flaeche_px": 144,
+    "_flaeche_px": "mittlere Superpixel-Fläche; 144 px = 12 × 12 px = 2,4 × 2,4 m bei 0,2 m",
+    "kompaktheit": 10,
+    "sigma": 1.0
+  },
+  "sam3": {
+    "modell": "facebook/sam3",
+    "revision": null,
+    "fenster_px": 420,
+    "_fenster_px": "Teilkacheln bis zu dieser Seite laufen in einem Fenster (SAM 3 sieht intern 1008 × 1008), größere im Schiebefenster",
+    "ueberlapp": 0.25,
+    "instanz_schwelle": 0.2,
+    "maskenschwelle": 0.5,
+    "instanz_doppelt_iou": 0.5,
+    "_instanz_doppelt_iou": "gleiche Klasse (auch aus zwei Texten oder zwei Fenstern) und IoU darüber = derselbe Fund, der stärkere bleibt"
+  },
+  "verschmelzen": {
+    "instanz_mehrheit": 0.5,
+    "_instanz_mehrheit": "ein Superpixel gehört zur Instanz, wenn mindestens dieser Anteil seiner Fläche in ihrer Maske liegt",
+    "instanz_reihenfolge": "flaeche",
+    "_instanz_reihenfolge": "flaeche = kleinste Instanz rastet zuerst ein (Baum und Haus vor der Wiese, deren Maske sie umschließt); wert = stärkste zuerst",
+    "instanz_klein_max_px": 300,
+    "instanz_min_px": 16,
+    "_instanz_klein": "eine Instanz bis instanz_klein_max_px, die keinen Superpixel einrastet (kleiner als die Superpixel), wird bildpunktgenau eingetragen, je zusammenhängendem Teil ab instanz_min_px; größere ohne Superpixel lagen unter stärkeren Instanzen und entfallen"
+  },
+  "sicherheit": {
+    "semantik_wert": 0.5,
+    "semantik_abstand": 0.15,
+    "_semantik": "sicher: ja, wenn im Mittel des Segments der beste Klassenwert mindestens semantik_wert und der Abstand zum zweitbesten mindestens semantik_abstand ist",
+    "instanz_wert": 0.6
+  },
+  "kandidaten": {
+    "zu_klein_px": 64,
+    "kante_min": 0.04,
+    "_kante_min": "mittlere Gradientstärke (Grauwert 0..1, Sobel / 8) entlang einer gemeinsamen Grenze; darunter: Grenze ohne Bildkante",
+    "kante_min_laenge_px": 10
+  },
+  "siedlung": {
+    "zone_klassen": [
+      "1.1",
+      "1.2.1",
+      "1.2.2",
+      "1.2.4"
+    ],
+    "_zone_klassen": "Siedlungszone: Segmente dieser Klassen (samt Unterklassen; Gebäude, befestigte Verkehrs- und Hofflächen), um puffer_m aufgeweitet. Bahn (1.2.5) und sonstige künstliche Flächen (1.3) zählen nicht",
+    "puffer_m": 20,
+    "_puffer_m": "Aufweitung der Zone in Metern, umgerechnet über die Bildpunktgröße der Teilkachel (transform im Manifest). 20 m ≈ Tiefe eines Hausgartens hinter Haus oder Hof; am Test T0 nicht abgestimmt",
+    "anteil": 0.5,
+    "_anteil": "im_siedlung: ja, wenn mindestens dieser Anteil der Fläche des Segments in der aufgeweiteten Zone liegt (überwiegend); nur für Klassen aus kategorien.json, Regel G1, bericht48.im_siedlung_klassen (Acker, Grünland, Gehölz außerhalb Wald); alle anderen nein. Am Test T0 nicht abgestimmt",
+    "bildpunkt_m": 0.45,
+    "_bildpunkt_m": "Bildpunktgröße in Metern, nur wenn die Teilkachel keine Georeferenz hat (Bild ohne Manifest); sonst gilt der transform"
+  },
+  "id_block": 100000,
+  "_id_block": "Segment-IDs einer Teilkachel: Nummer im Manifest (ab 1) × id_block + laufende Nummer; so sind die IDs im ganzen Ausschnitt eindeutig. Ohne Manifest: laufende Nummer.",
+  "arbeiter": 4,
+  "_arbeiter": "Teilkacheln, deren Bildpunkt-Schritte (Übersegmentierung, Verschmelzen) gleichzeitig laufen; SAM 3 läuft Teilkachel nach Teilkachel auf der einen GPU",
+  "prompts": [
+    {
+      "klasse": "1.1.1",
+      "texte": [
+        "house",
+        "building"
+      ]
+    },
+    {
+      "klasse": "1.1.2",
+      "texte": [
+        "shed"
+      ]
+    },
+    {
+      "klasse": "1.1.3",
+      "texte": [
+        "greenhouse"
+      ]
+    },
+    {
+      "klasse": "1.2.1",
+      "texte": [
+        "road"
+      ]
+    },
+    {
+      "klasse": "1.2.2",
+      "texte": [
+        "paved path"
+      ]
+    },
+    {
+      "klasse": "1.2.4",
+      "texte": [
+        "parking lot",
+        "paved yard"
+      ]
+    },
+    {
+      "klasse": "1.2.5",
+      "texte": [
+        "railway"
+      ]
+    },
+    {
+      "klasse": "1.3.1",
+      "texte": [
+        "gravel area"
+      ]
+    },
+    {
+      "klasse": "1.3.2",
+      "texte": [
+        "construction site"
+      ]
+    },
+    {
+      "klasse": "1.3.3",
+      "texte": [
+        "swimming pool"
+      ]
+    },
+    {
+      "klasse": "1.3.4",
+      "texte": [
+        "sports field"
+      ]
+    },
+    {
+      "klasse": "2.1",
+      "texte": [
+        "crop field",
+        "vegetable garden"
+      ]
+    },
+    {
+      "klasse": "2.2",
+      "texte": [
+        "plowed field",
+        "bare field"
+      ]
+    },
+    {
+      "klasse": "2.3",
+      "texte": [
+        "fallow field"
+      ]
+    },
+    {
+      "klasse": "2.4.1",
+      "texte": [
+        "vineyard"
+      ]
+    },
+    {
+      "klasse": "2.4.2",
+      "texte": [
+        "orchard"
+      ]
+    },
+    {
+      "klasse": "3.1",
+      "texte": [
+        "meadow",
+        "grassland",
+        "lawn"
+      ]
+    },
+    {
+      "klasse": "3.4",
+      "texte": [
+        "grass strip"
+      ]
+    },
+    {
+      "klasse": "4.1",
+      "texte": [
+        "forest"
+      ]
+    },
+    {
+      "klasse": "4.2.1",
+      "texte": [
+        "tree"
+      ]
+    },
+    {
+      "klasse": "4.2.3",
+      "texte": [
+        "hedge",
+        "tree row"
+      ]
+    },
+    {
+      "klasse": "4.2.4",
+      "texte": [
+        "bush"
+      ]
+    },
+    {
+      "klasse": "5.1.1",
+      "texte": [
+        "river"
+      ]
+    },
+    {
+      "klasse": "5.1.2",
+      "texte": [
+        "ditch"
+      ]
+    },
+    {
+      "klasse": "5.2",
+      "texte": [
+        "pond",
+        "lake"
+      ]
+    },
+    {
+      "klasse": "5.3",
+      "texte": [
+        "reeds"
+      ]
+    },
+    {
+      "klasse": "6.1",
+      "texte": [
+        "bare soil"
+      ]
+    },
+    {
+      "klasse": "6.6",
+      "texte": [
+        "dirt path",
+        "dirt road"
+      ]
+    },
+    {
+      "klasse": "0.2",
+      "texte": [
+        "shadow"
+      ]
+    }
+  ],
+  "_h0": "Kopie von C:/Users/Phil/Developement/Victor/landseg/vorstufe.json für den Ausschnitt H0 (Scan 1968 ohne Georeferenz); geändert nur siedlung.bildpunkt_m 0.2 -> 0.45; sam3.fenster_px 1008 -> 420 (Schiebefenster 2 x 2 je Teilkachel: SAM 3 sieht den Scan 2,4fach statt 1,6fach vergroessert, Haeuser etwa so gross wie im Orthofoto T0); sam3.instanz_schwelle 0.4 -> 0.2 (auf Schwarz-Weiss sind die Hausfunde schwach)"
+}

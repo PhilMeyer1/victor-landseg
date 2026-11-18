@@ -1,0 +1,39 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "A",
+ "buendel": "A-06",
+ "bearbeiter": "agent:einigung-A-06:20261118i-r1",
+ "paare": [
+  {"paar": "r0c1:200826|r0c1:201115", "entscheidung": "grenze", "klasse": null,
+   "grund": "Helles breites Straßenband (Grauwert um 168) gegen das mittelgraue Dreieck der Insel (um 108) mit eigener Form und hellem Pfad: zwei verschiedene Flächen, der Übergang ist nur weich."},
+  {"paar": "r0c1:200515|r0c1:200826", "entscheidung": "grenze", "klasse": null,
+   "grund": "Neben der hellen Fahrbahn (um 168) liegt ein dunkelgrauer Längsstreifen (um 81), beschattete Dachhälfte oder Schatten, aber sicher nicht Straße; der Helligkeitsabfall über 3 bis 4 Bildpunkte ist die Straßenkante."},
+  {"paar": "r0c1:201223|r1c1:400129", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "400129 ist der 2 Bildpunkte breite Saum (Grauwert 50 bis 90) am Westrand derselben fast schwarzen Schattenfläche, die oben als 201223 und unten als 400130 (beide Schatten) weiterläuft; oberhalb der Naht gehört derselbe Saum zu 201223."},
+  {"paar": "r0c1:201223|r1c1:400032", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Der einzige Kernbildpunkt von 400032 (x 738, y 500) hat Grauwert 37 und liegt mitten im Schatten, der oberhalb als 201223 und unterhalb als 400130 weiterläuft; kein Gebäude zu sehen."},
+  {"paar": "r0c1:201223|r1c1:400218", "entscheidung": "grenze", "klasse": null,
+   "grund": "Schwarzer Schatten (um 32) gegen den hellen Straßenstreifen (um 127 bis 160): echte Grenze zwischen Schatten und Fahrbahn, die Naht trifft nur einen Randbildpunkt des Übergangs."},
+  {"paar": "r0c1:200826|r1c1:400218", "entscheidung": "gleich", "klasse": "3.1.1",
+   "grund": "Dasselbe helle Straßenband läuft ohne Sprung über die Naht nach Süden weiter, zwischen Häuserzeilen im Ortskern, darum Straße im Ort für beide Teile."},
+  {"paar": "r0c1:201115|r1c1:400218", "entscheidung": "grenze", "klasse": null,
+   "grund": "Am Berührpunkt (x 750) stoßen die helle Straße und die Südspitze des mittelgrauen Angers aneinander; wie oberhalb der Naht (Paar 1) sind es zwei verschiedene Flächen."},
+  {"paar": "r0c1:201115|r1c1:400135", "entscheidung": "grenze", "klasse": null,
+   "grund": "Das Mittelgrau des Angers läuft noch etwa 5 Zeilen über die Naht in 400135 hinein, dann folgt ab y 505 der dunkle Dachstreifen (um 40 bis 50), der den Großteil von 400135 ausmacht: verschiedene Flächen, die wirkliche Kante liegt wenige Bildpunkte südlich der Naht."},
+  {"paar": "r0c1:201228|r1c1:400135", "entscheidung": "unklar", "klasse": null,
+   "grund": "Der kleine dunkelgraue Fleck 201228 (um 75 bis 100) geht ohne Kante in den Kopf des dunklen Dachstreifens 400135 über; ob er das obere Ende dieses Dachs im Eigenschatten oder Hof bzw. Garten im Halbschatten davor ist, gibt das Schwarz-Weiß-Bild nicht her."},
+  {"paar": "r0c1:200499|r0c1:200594", "entscheidung": "grenze", "klasse": null,
+   "grund": "200499 ist der dunkle Schattenstreifen zwischen zwei Dächern (um 66), 200594 der mittelgraue Streifen parallel daneben (um 115); sie berühren sich nur an der Viertellinie, Grauton und Lage unterscheiden sie."},
+  {"paar": "r0c1:200510|r0c1:200603", "entscheidung": "unklar", "klasse": null,
+   "grund": "Das kleine mittelhelle Stück 200510 (um 133) sitzt zwischen dem Ende des hellen Längsstreifens 200603 (um 163) und einem quer stehenden hellen Dach, mit nur weichem Abfall; ob es das abgeschattete Dachende oder eine Hoflücke ist, entscheidet das Bild nicht."},
+  {"paar": "r0c1:200512|r0c1:200513", "entscheidung": "gleich", "klasse": "1.1",
+   "grund": "200513 (23 Bildpunkte, um 75) ist ein etwas hellerer Fleck im selben dunklen Längsstreifen 200512 (um 69) neben dem hellen Dachstreifen, ohne Kante dazwischen; die Klasse folgt dem Streifen, Dachhälfte gegen Schlagschatten bleibt unsicher."}
+ ],
+ "offen": [
+  "r1c1:400135: die obersten etwa 5 Zeilen (y 500 bis 504, x 751 bis 777) zeigen noch das Mittelgrau des Angers r0c1:201115; die Grenze liegt dort nicht auf der Bildkante (ab y 505). Nur Klassen waren Auftrag, darum nicht geändert.",
+  "r0c1:201228|r1c1:400135: Dachende im Eigenschatten oder Hof/Garten im Halbschatten, im Farbbild zu entscheiden.",
+  "r0c1:200510|r0c1:200603: abgeschattetes Dachende oder Hoflücke zwischen zwei Dächern.",
+  "r0c1:200512 mit 200513: beschattete Dachhälfte (1.1) oder Schlagschatten (0.1) bleibt offen, wie schon in r0c1 vermerkt."
+ ],
+ "nicht_geprueft": []
+}

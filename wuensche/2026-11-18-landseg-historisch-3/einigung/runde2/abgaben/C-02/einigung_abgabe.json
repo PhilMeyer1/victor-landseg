@@ -1,0 +1,67 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "C",
+  "buendel": "C-02",
+  "bearbeiter": "agent:einigung-C-02:20261118i-r2",
+  "paare": [
+    {
+      "paar": "r0c0:100215|r0c1:200106",
+      "entscheidung": "gleich",
+      "klasse": "1",
+      "grund": "Beide Seiten zeigen dieselbe gleichmäßig mittelgraue Fläche (Mittel 109 und 104) zwischen der hellen Straße und dem Siedlungsblock 200047 ohne Kante an der Naht; ob Hof, Vorplatz oder Straßenrand, ist im SW-Scan nicht zu trennen, daher die gemeinsame Elternklasse Versiegelt/bebaut wie der Block."
+    },
+    {
+      "paar": "r0c0:100218|r0c1:200100",
+      "entscheidung": "gleich",
+      "klasse": "4.2",
+      "grund": "An der Naht (y 489–490) ist es auf beiden Seiten derselbe sehr dunkle Fleck (Grauwerte 24–35), 200100 ist der weiche Rand dieses Gehölzes zur Straße hin; Ring mit 200115 und 400037, alle Glieder 4.2 wie die dunkle Krone auch in r1c0 (300079) beurteilt ist."
+    },
+    {
+      "paar": "r0c0:100218|r0c1:200115",
+      "entscheidung": "gleich",
+      "klasse": "4.2",
+      "grund": "Der Kernteil von 200115 (21 px, Mittel 34) ist kein Teil der hellen Straße und kein Gebäude, sondern die Fortsetzung des dunklen Gehölzflecks 100218 (Mittel 37) über die Naht ohne jede Kante."
+    },
+    {
+      "paar": "r0c1:200115|r1c1:400037",
+      "entscheidung": "gleich",
+      "klasse": "4.2",
+      "grund": "Am Eckpunkt x 500/y 500 setzt sich der dunkle Gehölzrand ohne Sprung fort (42 über der Naht, 54 darunter); 400037 ist in r1c1 selbst als dunkle Krone beurteilt, Kette mit 100218 und 200100 einheitlich 4.2."
+    },
+    {
+      "paar": "r0c1:200100|r1c1:400037",
+      "entscheidung": "gleich",
+      "klasse": "4.2",
+      "grund": "Beide Segmente sind derselbe 4–5 px breite Übergangsstreifen vom dunklen Gehölz zur hellen Straße, über und unter der Naht mit gleichem Verlauf der Grauwerte (etwa 45 bis 140 von West nach Ost), daher eine Klasse wie das Gehölz."
+    },
+    {
+      "paar": "r0c0:100202|r1c0:300001",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "Die helle Fläche mit dunklen runden Kronen von 100202 läuft ohne Kante über die Naht in den oberen Teil von 300001 (y 500–570, Mittel 110–119), während 300001 darunter ein gleichmäßig dunklerer Ackerstreifen ist (y 570–742, Mittel etwa 85); 300001 vereint also zwei Flächen, so dass weder eine gemeinsame Klasse noch eine echte Grenze an der Naht passt."
+    },
+    {
+      "paar": "r0c0:100221|r1c0:300001",
+      "entscheidung": "gleich",
+      "klasse": "2",
+      "grund": "Der Randstreifen 100221 (Mittel 70) setzt sich ohne Kante in den Ostrand von 300001 fort und hat denselben Grauton wie der Acker östlich der dunklen Grabenlinie; ein eigener Rain ist bei 0,45 m nicht belegt, daher Elternklasse Acker wie 300001 und 300002."
+    },
+    {
+      "paar": "r0c0:100223|r1c0:300001",
+      "entscheidung": "gleich",
+      "klasse": "2",
+      "grund": "100223 (Mittel 70) ist derselbe Ackerrand wie 100221 und geht an der Naht (x 31–42) gleichtönig in 300001 über; Kette 100221–100223–300001–300002 einheitlich Acker (2)."
+    },
+    {
+      "paar": "r0c0:100223|r1c0:300002",
+      "entscheidung": "gleich",
+      "klasse": "2",
+      "grund": "Am Punkt x 43 liegt auf beiden Seiten derselbe gleichmäßig mittelgraue Acker (100223 Mittel 70, 300002 Mittel 76) ohne Kante; Elternklasse 2, weil mit oder ohne Bewuchs im SW-Scan nicht zu trennen ist."
+    }
+  ],
+  "offen": [
+    "r0c0:100202|r1c0:300001: 300001 müsste bei etwa y 570 geteilt werden (oben helle Fläche mit Kronen wie 100202, unten Ackerstreifen); erst dann lässt sich die Naht als gleich entscheiden.",
+    "Die dunkle Fläche an der Straßenkreuzung (100218, 200115, 200100, 400037, 300079) ist als Gehölz mit Schatten gedeutet; ein kleiner Teich wäre im SW-Scan ähnlich dunkel, die Baumreihe entlang der Straßen spricht aber für Gehölz."
+  ],
+  "nicht_geprueft": []
+}

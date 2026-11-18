@@ -1,0 +1,245 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "A",
+  "buendel": "A-01",
+  "bearbeiter": "agent:einigung-A-01:20261118e",
+  "paare": [
+    {
+      "paar": "r0c0:100070|r0c0:100103",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Offene ungemähte Wiese im Norden und Wiese mit vielen dunklen Kronen im Süden; der Übergang ist ohne Kante von Hand gezogen, aber die Dichte der Sträucher unterscheidet zwei Zonen."
+    },
+    {
+      "paar": "r0c0:100070|r0c0:100098",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Dunkle große Baumkrone gegen helle Wiese mit deutlichem Helligkeitswechsel am Kronenrand."
+    },
+    {
+      "paar": "r0c0:100119|r1c0:300016",
+      "entscheidung": "gleich",
+      "klasse": "4.1",
+      "grund": "Beidseits der Naht dieselbe hellere, glatte Wiese; das Segment unten reicht auch in raueres Gras, daher die Klasse Wiese / Grünland."
+    },
+    {
+      "paar": "r0c0:100103|r1c0:300016",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "An der Naht liegt beidseits dieselbe raue Wiese mit verstreuten Sträuchern, aber das Segment unten umfasst auch die glatte Wiese im Westen, sodass weder Verbuschte Wiese noch Wiese für beide ganzen Segmente sicher passt."
+    },
+    {
+      "paar": "r0c0:100103|r1c0:300006",
+      "entscheidung": "gleich",
+      "klasse": "4.3",
+      "grund": "Der kleine Fleck unten zeigt keine abgrenzbare Strauchkrone, sondern dieselbe raue Wiese mit Gebüschflecken wie die Fläche darüber."
+    },
+    {
+      "paar": "r0c0:100122|r1c0:300051",
+      "entscheidung": "gleich",
+      "klasse": "6.1",
+      "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht."
+    },
+    {
+      "paar": "r0c0:100122|r1c0:300016",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Oben Kronen des Gehölzbestands, unten eine helle Wiesenzunge zwischen den Kronen; sie berühren sich nur an einer Ecke."
+    },
+    {
+      "paar": "r0c0:100123|r1c0:300051",
+      "entscheidung": "gleich",
+      "klasse": "6.1",
+      "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand."
+    },
+    {
+      "paar": "r0c0:100120|r1c0:300051",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden."
+    },
+    {
+      "paar": "r0c0:100120|r1c0:300009",
+      "entscheidung": "gleich",
+      "klasse": "4.1.1",
+      "grund": "Dieselbe raue, ungemähte Wiese beidseits der Naht ohne Kante."
+    },
+    {
+      "paar": "r0c0:100120|r1c0:300008",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Heller schmaler Trampelpfad gegen Wiese, der Pfad ist als helle Spur sichtbar."
+    },
+    {
+      "paar": "r0c1:200164|r1c1:400017",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Unten das Segment des schwachen hellen Pfads, der nach Süden weiterläuft, oben die offene Wiese; Pfad und Wiese sind verschiedene Flächen, auch wenn das Pfadsegment breit ist."
+    },
+    {
+      "paar": "r0c1:200176|r1c1:400002",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Dunkle Krone der Baumgruppe gegen Wiese, Berührung nur an der Ecke am Kronenrand."
+    },
+    {
+      "paar": "r0c1:200164|r1c1:400018",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Wiese gegen dunkle Baumgruppe, Berührung nur an einer Ecke am Kronenrand."
+    },
+    {
+      "paar": "r0c1:200164|r1c1:400011",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Wiese gegen dunkles Gehölzband, Berührung nur an einer Ecke am Rand des Bandes."
+    },
+    {
+      "paar": "r0c1:200170|r1c1:400011",
+      "entscheidung": "gleich",
+      "klasse": "6.2",
+      "grund": "Dasselbe dunkle Gehölzband aus Kronen und Schlagschatten läuft ohne Kante über die Naht; zusammen mehrere Kronen, daher Baumgruppe."
+    },
+    {
+      "paar": "r0c1:200170|r1c1:400019",
+      "entscheidung": "gleich",
+      "klasse": "6.2",
+      "grund": "Glied derselben Baumgruppe wie Paar 16 und 18: das dunkle Band oben geht in die grünen Kronen unten über."
+    },
+    {
+      "paar": "r0c1:200175|r1c1:400019",
+      "entscheidung": "gleich",
+      "klasse": "6.2",
+      "grund": "Grüne Kronen am Feldrand setzen sich ohne Kante unter der Naht in derselben Baumgruppe fort."
+    },
+    {
+      "paar": "r0c1:200175|r1c1:400002",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "Am Ostende der Kronen am Feldrand ist nicht zu erkennen, ob dort noch Krone oder schon Wiese liegt; beide Seiten sehen gleich mittelgrün aus."
+    },
+    {
+      "paar": "r1c0:300016|r1c0:300051",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Dunkle Kronengruppe gegen helle Wiese mit deutlichem Helligkeitswechsel."
+    },
+    {
+      "paar": "r1c0:300051|r1c0:300054",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Großflächig dunkle Stelle im Wald gegen besonntes Kronendach; die Helligkeit unterscheidet sich deutlich."
+    },
+    {
+      "paar": "r1c0:300038|r1c0:300045",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Beiger, vegetationsarmer Fleck gegen grünen Saum, sichtbarer Farbwechsel."
+    },
+    {
+      "paar": "r1c0:300016|r1c0:300045",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Glattere Wiese gegen rauen, verbuschenden Saum; fließender Übergang, aber zwei verschiedene Zonen."
+    },
+    {
+      "paar": "r1c0:300045|r1c0:300049",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Dunkle Einzelkrone im helleren Saum, Rand sichtbar."
+    },
+    {
+      "paar": "r1c0:300041|r1c0:300045",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "Länglicher, etwas dunklerer und glatterer Fleck am Schattenrand; ob Krone oder dichtere Krautflur, ist am Bild nicht sicher."
+    },
+    {
+      "paar": "r1c0:300034|r1c0:300051",
+      "entscheidung": "gleich",
+      "klasse": "6.1",
+      "grund": "Die helle Fläche zeigt dieselbe klumpige Kronenstruktur mit Schattenlücken wie das umgebende besonnte Kronendach, keine glatte Krautfläche."
+    },
+    {
+      "paar": "r1c0:300042|r1c0:300051",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Dunkle, beschattete Stelle zwischen hellen besonnten Kronen, deutlicher Helligkeitswechsel."
+    },
+    {
+      "paar": "r1c0:300009|r1c1:400017",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Die helle Pfadspur kreuzt hier die Naht und läuft im Pfadsegment unten weiter; daneben Wiese."
+    },
+    {
+      "paar": "r1c0:300009|r1c1:400002",
+      "entscheidung": "gleich",
+      "klasse": "4.1.1",
+      "grund": "Dieselbe raue Hangwiese beidseits der Naht ohne Kante."
+    },
+    {
+      "paar": "r1c0:300014|r1c1:400002",
+      "entscheidung": "gleich",
+      "klasse": "4.1.1",
+      "grund": "Die wenigen Kernbildpunkte des kleinen Flecks zeigen keine Strauchkrone, sondern dieselbe Wiese wie daneben."
+    },
+    {
+      "paar": "r1c0:300051|r1c1:400002",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "Der Teil des Waldsegments an der Naht zeigt dieselbe raue Grünfläche mit einzelnen dunklen Flecken wie die Wiese daneben; ob das Krautflur oder niedrige Kronen sind, ist nicht sicher zu sagen."
+    },
+    {
+      "paar": "r1c0:300021|r1c1:400002",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Lichtung im Gehölz gegen offene Hangwiese, getrennt durch Kronen; Berührung nur an einer Ecke."
+    },
+    {
+      "paar": "r1c0:300051|r1c1:400034",
+      "entscheidung": "gleich",
+      "klasse": "6.1",
+      "grund": "Geschlossenes Kronendach desselben Waldes läuft ohne Kante über die Naht."
+    },
+    {
+      "paar": "r1c0:300021|r1c1:400034",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Helle Lichtung mit Pfad gegen geschlossenen Wald; die Lichtung reicht etwa 10 Bildpunkte über die Naht in das Waldsegment, die Flächen sind aber verschieden."
+    },
+    {
+      "paar": "r1c0:300022|r1c1:400034",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Heller Trampelpfad gegen Wald; der Pfad läuft jenseits der Naht im Waldsegment weiter."
+    },
+    {
+      "paar": "r1c0:300051|r1c1:400052",
+      "entscheidung": "gleich",
+      "klasse": "6.1",
+      "grund": "Geschlossenes Kronendach desselben Waldes beidseits der Naht."
+    },
+    {
+      "paar": "r1c0:300042|r1c1:400052",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Dunkle, beschattete Stelle gegen helle besonnte Kronen; die dunkle Stelle reicht wenige Bildpunkte über die Naht, die Flächen sind aber verschieden."
+    },
+    {
+      "paar": "r1c1:400002|r1c1:400019",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Wiese gegen dunkle Krone der Baumgruppe am Kronenrand."
+    }
+  ],
+  "offen": [
+    "Paar 4 (r0c0:100103|r1c0:300016): gemeinsame Klasse nicht entscheidbar, weil r1c0:300016 glatte und raue Wiese zusammenfasst; klären würde eine Teilung von 300016 entlang des Übergangs glatt/rau (etwa x 100 bis 140), dann raue Hälfte mit 100103.",
+    "Paar 19 (r0c1:200175|r1c1:400002): Ostende der Kronen am Feldrand (x 773 bis 783) nicht von Wiese zu trennen.",
+    "Paar 25 (r1c0:300041|r1c0:300045): Krone oder dichtere Krautflur nicht entscheidbar.",
+    "Paar 31 (r1c0:300051|r1c1:400002): der Streifen von 300051 an der Naht (etwa x 465 bis 500, y 500 bis 580) sieht wie die Wiese 400002 aus; das ist eine Grenzfrage, die mit Klassen allein nicht zu lösen ist.",
+    "Grenzlage, nicht Klasse: r1c1:400034 enthält an der Naht (x 500 bis etwa 512, y 610 bis 640) noch Lichtung und Pfad aus r1c0 (Paare 34, 35); r1c0:300051 reicht an der Naht wenige Bildpunkte in die Wiese 100120 (Paar 9); die dunkle Stelle r1c0:300042 reicht wenige Bildpunkte in r1c1:400052 (Paar 37).",
+    "Ketten: Wald {r1c0:300051, r0c0:100122, r0c0:100123, r1c0:300034, r1c1:400034, r1c1:400052} auf 6.1 (statt 6.1.1, weil 100123 und Teile von 300051 dunkel sind); Wiese {r0c0:100120, r1c0:300009, r1c0:300014, r1c1:400002} auf 4.1.1; Baumgruppe {r0c1:200170, r0c1:200175, r1c1:400011, r1c1:400019} auf 6.2."
+  ],
+  "nicht_geprueft": []
+}

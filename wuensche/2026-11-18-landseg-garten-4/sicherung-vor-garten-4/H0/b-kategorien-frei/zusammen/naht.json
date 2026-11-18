@@ -1,0 +1,5545 @@
+{
+  "ok": false,
+  "ziel": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/zusammen",
+  "einheiten": {
+    "r0c0": {
+      "runde": 0,
+      "labels": "r0c0/labels.tif",
+      "segmente": "r0c0/segmente.json"
+    },
+    "r0c1": {
+      "runde": 0,
+      "labels": "r0c1/labels.tif",
+      "segmente": "r0c1/segmente.json"
+    },
+    "r1c0": {
+      "runde": 0,
+      "labels": "r1c0/labels.tif",
+      "segmente": "r1c0/segmente.json"
+    },
+    "r1c1": {
+      "runde": 0,
+      "labels": "r1c1/labels.tif",
+      "segmente": "r1c1/segmente.json"
+    }
+  },
+  "umbenannt": [],
+  "maengel": [],
+  "verstoesse": [
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100042,
+        200019
+      ],
+      "laenge": 5,
+      "von": [
+        500,
+        0
+      ],
+      "bis": [
+        500,
+        4
+      ],
+      "kante_max": 13.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100042,
+        200019
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        12
+      ],
+      "bis": [
+        500,
+        12
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100056,
+        200019
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        23
+      ],
+      "bis": [
+        500,
+        24
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100056,
+        200004
+      ],
+      "laenge": 13,
+      "von": [
+        500,
+        25
+      ],
+      "bis": [
+        500,
+        37
+      ],
+      "kante_max": 10.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100063,
+        200004
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        38
+      ],
+      "bis": [
+        500,
+        39
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100032,
+        200004
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        40
+      ],
+      "bis": [
+        500,
+        41
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100070,
+        200004
+      ],
+      "laenge": 6,
+      "von": [
+        500,
+        42
+      ],
+      "bis": [
+        500,
+        47
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100070,
+        200186
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        48
+      ],
+      "bis": [
+        500,
+        48
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100070,
+        200186
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        52
+      ],
+      "bis": [
+        500,
+        52
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100032,
+        200186
+      ],
+      "laenge": 3,
+      "von": [
+        500,
+        53
+      ],
+      "bis": [
+        500,
+        55
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100032,
+        200169
+      ],
+      "laenge": 4,
+      "von": [
+        500,
+        56
+      ],
+      "bis": [
+        500,
+        59
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100032,
+        200169
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        61
+      ],
+      "bis": [
+        500,
+        62
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100081,
+        200171
+      ],
+      "laenge": 13,
+      "von": [
+        500,
+        63
+      ],
+      "bis": [
+        500,
+        75
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100081,
+        200180
+      ],
+      "laenge": 7,
+      "von": [
+        500,
+        77
+      ],
+      "bis": [
+        500,
+        83
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100032,
+        200180
+      ],
+      "laenge": 4,
+      "von": [
+        500,
+        88
+      ],
+      "bis": [
+        500,
+        91
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100092,
+        200180
+      ],
+      "laenge": 5,
+      "von": [
+        500,
+        92
+      ],
+      "bis": [
+        500,
+        96
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100092,
+        200031
+      ],
+      "laenge": 7,
+      "von": [
+        500,
+        97
+      ],
+      "bis": [
+        500,
+        103
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100030,
+        200031
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        104
+      ],
+      "bis": [
+        500,
+        105
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100030,
+        200049
+      ],
+      "laenge": 11,
+      "von": [
+        500,
+        106
+      ],
+      "bis": [
+        500,
+        116
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100111,
+        200049
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        117
+      ],
+      "bis": [
+        500,
+        117
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100112,
+        200310
+      ],
+      "laenge": 15,
+      "von": [
+        500,
+        118
+      ],
+      "bis": [
+        500,
+        132
+      ],
+      "kante_max": 10.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100111,
+        200310
+      ],
+      "laenge": 19,
+      "von": [
+        500,
+        133
+      ],
+      "bis": [
+        500,
+        151
+      ],
+      "kante_max": 11.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100128,
+        200310
+      ],
+      "laenge": 4,
+      "von": [
+        500,
+        152
+      ],
+      "bis": [
+        500,
+        155
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100128,
+        200312
+      ],
+      "laenge": 14,
+      "von": [
+        500,
+        156
+      ],
+      "bis": [
+        500,
+        169
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100143,
+        200312
+      ],
+      "laenge": 7,
+      "von": [
+        500,
+        170
+      ],
+      "bis": [
+        500,
+        176
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100144,
+        200312
+      ],
+      "laenge": 18,
+      "von": [
+        500,
+        177
+      ],
+      "bis": [
+        500,
+        194
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100144,
+        200298
+      ],
+      "laenge": 6,
+      "von": [
+        500,
+        195
+      ],
+      "bis": [
+        500,
+        200
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100143,
+        200298
+      ],
+      "laenge": 8,
+      "von": [
+        500,
+        201
+      ],
+      "bis": [
+        500,
+        208
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100143,
+        200298
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        213
+      ],
+      "bis": [
+        500,
+        214
+      ],
+      "kante_max": 17.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100153,
+        200298
+      ],
+      "laenge": 16,
+      "von": [
+        500,
+        215
+      ],
+      "bis": [
+        500,
+        230
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100153,
+        200317
+      ],
+      "laenge": 7,
+      "von": [
+        500,
+        232
+      ],
+      "bis": [
+        500,
+        238
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100153,
+        200299
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        239
+      ],
+      "bis": [
+        500,
+        239
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100165,
+        200299
+      ],
+      "laenge": 14,
+      "von": [
+        500,
+        240
+      ],
+      "bis": [
+        500,
+        253
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100165,
+        200299
+      ],
+      "laenge": 9,
+      "von": [
+        500,
+        255
+      ],
+      "bis": [
+        500,
+        263
+      ],
+      "kante_max": 16.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200299
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        264
+      ],
+      "bis": [
+        500,
+        265
+      ],
+      "kante_max": 13.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200331
+      ],
+      "laenge": 22,
+      "von": [
+        500,
+        266
+      ],
+      "bis": [
+        500,
+        287
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200299
+      ],
+      "laenge": 13,
+      "von": [
+        500,
+        288
+      ],
+      "bis": [
+        500,
+        300
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200304
+      ],
+      "laenge": 8,
+      "von": [
+        500,
+        301
+      ],
+      "bis": [
+        500,
+        308
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200289
+      ],
+      "laenge": 6,
+      "von": [
+        500,
+        309
+      ],
+      "bis": [
+        500,
+        314
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200289
+      ],
+      "laenge": 39,
+      "von": [
+        500,
+        316
+      ],
+      "bis": [
+        500,
+        354
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200289
+      ],
+      "laenge": 29,
+      "von": [
+        500,
+        356
+      ],
+      "bis": [
+        500,
+        384
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200047
+      ],
+      "laenge": 41,
+      "von": [
+        500,
+        385
+      ],
+      "bis": [
+        500,
+        425
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100176,
+        200290
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        427
+      ],
+      "bis": [
+        500,
+        427
+      ],
+      "kante_max": 14.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100209,
+        200290
+      ],
+      "laenge": 12,
+      "von": [
+        500,
+        428
+      ],
+      "bis": [
+        500,
+        439
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100215,
+        200106
+      ],
+      "laenge": 9,
+      "von": [
+        500,
+        452
+      ],
+      "bis": [
+        500,
+        460
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100198,
+        200106
+      ],
+      "laenge": 3,
+      "von": [
+        500,
+        461
+      ],
+      "bis": [
+        500,
+        463
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100198,
+        200081
+      ],
+      "laenge": 9,
+      "von": [
+        500,
+        464
+      ],
+      "bis": [
+        500,
+        472
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100218,
+        200100
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        489
+      ],
+      "bis": [
+        500,
+        490
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r0c1",
+      "ids": [
+        100218,
+        200115
+      ],
+      "laenge": 9,
+      "von": [
+        500,
+        491
+      ],
+      "bis": [
+        500,
+        499
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100202,
+        300001
+      ],
+      "laenge": 3,
+      "von": [
+        0,
+        500
+      ],
+      "bis": [
+        2,
+        500
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100202,
+        300001
+      ],
+      "laenge": 7,
+      "von": [
+        4,
+        500
+      ],
+      "bis": [
+        10,
+        500
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100202,
+        300001
+      ],
+      "laenge": 14,
+      "von": [
+        15,
+        500
+      ],
+      "bis": [
+        28,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100223,
+        300001
+      ],
+      "laenge": 14,
+      "von": [
+        29,
+        500
+      ],
+      "bis": [
+        42,
+        500
+      ],
+      "kante_max": 16.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100223,
+        300002
+      ],
+      "laenge": 1,
+      "von": [
+        43,
+        500
+      ],
+      "bis": [
+        43,
+        500
+      ],
+      "kante_max": 13.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100154,
+        300002
+      ],
+      "laenge": 254,
+      "von": [
+        44,
+        500
+      ],
+      "bis": [
+        297,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100154,
+        300073
+      ],
+      "laenge": 13,
+      "von": [
+        298,
+        500
+      ],
+      "bis": [
+        310,
+        500
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100220,
+        300073
+      ],
+      "laenge": 1,
+      "von": [
+        311,
+        500
+      ],
+      "bis": [
+        311,
+        500
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100220,
+        300073
+      ],
+      "laenge": 1,
+      "von": [
+        318,
+        500
+      ],
+      "bis": [
+        318,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100220,
+        300073
+      ],
+      "laenge": 1,
+      "von": [
+        321,
+        500
+      ],
+      "bis": [
+        321,
+        500
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100220,
+        300073
+      ],
+      "laenge": 5,
+      "von": [
+        328,
+        500
+      ],
+      "bis": [
+        332,
+        500
+      ],
+      "kante_max": 16.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100225,
+        300073
+      ],
+      "laenge": 1,
+      "von": [
+        333,
+        500
+      ],
+      "bis": [
+        333,
+        500
+      ],
+      "kante_max": 15.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100225,
+        300070
+      ],
+      "laenge": 6,
+      "von": [
+        334,
+        500
+      ],
+      "bis": [
+        339,
+        500
+      ],
+      "kante_max": 9.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100195,
+        300070
+      ],
+      "laenge": 6,
+      "von": [
+        340,
+        500
+      ],
+      "bis": [
+        345,
+        500
+      ],
+      "kante_max": 14.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100195,
+        300006
+      ],
+      "laenge": 83,
+      "von": [
+        346,
+        500
+      ],
+      "bis": [
+        428,
+        500
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100195,
+        300004
+      ],
+      "laenge": 5,
+      "von": [
+        429,
+        500
+      ],
+      "bis": [
+        433,
+        500
+      ],
+      "kante_max": 17.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100219,
+        300004
+      ],
+      "laenge": 46,
+      "von": [
+        434,
+        500
+      ],
+      "bis": [
+        479,
+        500
+      ],
+      "kante_max": 16.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100229,
+        300004
+      ],
+      "laenge": 5,
+      "von": [
+        480,
+        500
+      ],
+      "bis": [
+        484,
+        500
+      ],
+      "kante_max": 14.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100219,
+        300004
+      ],
+      "laenge": 6,
+      "von": [
+        485,
+        500
+      ],
+      "bis": [
+        490,
+        500
+      ],
+      "kante_max": 16.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c0|r1c0",
+      "ids": [
+        100218,
+        300004
+      ],
+      "laenge": 9,
+      "von": [
+        491,
+        500
+      ],
+      "bis": [
+        499,
+        500
+      ],
+      "kante_max": 11.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200115,
+        400037
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        500
+      ],
+      "bis": [
+        500,
+        500
+      ],
+      "kante_max": 12.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200100,
+        400037
+      ],
+      "laenge": 4,
+      "von": [
+        501,
+        500
+      ],
+      "bis": [
+        504,
+        500
+      ],
+      "kante_max": 14.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200081,
+        400003
+      ],
+      "laenge": 17,
+      "von": [
+        505,
+        500
+      ],
+      "bis": [
+        521,
+        500
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200081,
+        400046
+      ],
+      "laenge": 1,
+      "von": [
+        522,
+        500
+      ],
+      "bis": [
+        522,
+        500
+      ],
+      "kante_max": 13.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200126,
+        400046
+      ],
+      "laenge": 6,
+      "von": [
+        523,
+        500
+      ],
+      "bis": [
+        528,
+        500
+      ],
+      "kante_max": 14.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200292,
+        400026
+      ],
+      "laenge": 10,
+      "von": [
+        529,
+        500
+      ],
+      "bis": [
+        538,
+        500
+      ],
+      "kante_max": 15.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200292,
+        400056
+      ],
+      "laenge": 9,
+      "von": [
+        539,
+        500
+      ],
+      "bis": [
+        547,
+        500
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200292,
+        400306
+      ],
+      "laenge": 1,
+      "von": [
+        548,
+        500
+      ],
+      "bis": [
+        548,
+        500
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200333,
+        400306
+      ],
+      "laenge": 2,
+      "von": [
+        549,
+        500
+      ],
+      "bis": [
+        550,
+        500
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200333,
+        400054
+      ],
+      "laenge": 13,
+      "von": [
+        551,
+        500
+      ],
+      "bis": [
+        563,
+        500
+      ],
+      "kante_max": 16.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200121,
+        400047
+      ],
+      "laenge": 2,
+      "von": [
+        567,
+        500
+      ],
+      "bis": [
+        568,
+        500
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200121,
+        400048
+      ],
+      "laenge": 20,
+      "von": [
+        569,
+        500
+      ],
+      "bis": [
+        588,
+        500
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400268
+      ],
+      "laenge": 9,
+      "von": [
+        599,
+        500
+      ],
+      "bis": [
+        607,
+        500
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400268
+      ],
+      "laenge": 5,
+      "von": [
+        610,
+        500
+      ],
+      "bis": [
+        614,
+        500
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400268
+      ],
+      "laenge": 1,
+      "von": [
+        616,
+        500
+      ],
+      "bis": [
+        616,
+        500
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400268
+      ],
+      "laenge": 17,
+      "von": [
+        623,
+        500
+      ],
+      "bis": [
+        639,
+        500
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400268
+      ],
+      "laenge": 1,
+      "von": [
+        641,
+        500
+      ],
+      "bis": [
+        641,
+        500
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400268
+      ],
+      "laenge": 31,
+      "von": [
+        643,
+        500
+      ],
+      "bis": [
+        673,
+        500
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400267
+      ],
+      "laenge": 9,
+      "von": [
+        674,
+        500
+      ],
+      "bis": [
+        682,
+        500
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400267
+      ],
+      "laenge": 1,
+      "von": [
+        685,
+        500
+      ],
+      "bis": [
+        685,
+        500
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400267
+      ],
+      "laenge": 2,
+      "von": [
+        688,
+        500
+      ],
+      "bis": [
+        689,
+        500
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200295,
+        400267
+      ],
+      "laenge": 19,
+      "von": [
+        698,
+        500
+      ],
+      "bis": [
+        716,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200113,
+        400035
+      ],
+      "laenge": 23,
+      "von": [
+        717,
+        500
+      ],
+      "bis": [
+        739,
+        500
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200049,
+        400009
+      ],
+      "laenge": 4,
+      "von": [
+        742,
+        500
+      ],
+      "bis": [
+        745,
+        500
+      ],
+      "kante_max": 17.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200049,
+        400051
+      ],
+      "laenge": 17,
+      "von": [
+        746,
+        500
+      ],
+      "bis": [
+        762,
+        500
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200049,
+        400033
+      ],
+      "laenge": 1,
+      "von": [
+        763,
+        500
+      ],
+      "bis": [
+        763,
+        500
+      ],
+      "kante_max": 9.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200097,
+        400033
+      ],
+      "laenge": 2,
+      "von": [
+        764,
+        500
+      ],
+      "bis": [
+        765,
+        500
+      ],
+      "kante_max": 17.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200097,
+        400033
+      ],
+      "laenge": 7,
+      "von": [
+        767,
+        500
+      ],
+      "bis": [
+        773,
+        500
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200097,
+        400033
+      ],
+      "laenge": 3,
+      "von": [
+        778,
+        500
+      ],
+      "bis": [
+        780,
+        500
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200097,
+        400033
+      ],
+      "laenge": 3,
+      "von": [
+        782,
+        500
+      ],
+      "bis": [
+        784,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200097,
+        400053
+      ],
+      "laenge": 13,
+      "von": [
+        785,
+        500
+      ],
+      "bis": [
+        797,
+        500
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200097,
+        400033
+      ],
+      "laenge": 7,
+      "von": [
+        801,
+        500
+      ],
+      "bis": [
+        807,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200097,
+        400045
+      ],
+      "laenge": 16,
+      "von": [
+        813,
+        500
+      ],
+      "bis": [
+        828,
+        500
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200095,
+        400011
+      ],
+      "laenge": 12,
+      "von": [
+        833,
+        500
+      ],
+      "bis": [
+        844,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200095,
+        400011
+      ],
+      "laenge": 9,
+      "von": [
+        851,
+        500
+      ],
+      "bis": [
+        859,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200112,
+        400042
+      ],
+      "laenge": 38,
+      "von": [
+        860,
+        500
+      ],
+      "bis": [
+        897,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200112,
+        400042
+      ],
+      "laenge": 1,
+      "von": [
+        899,
+        500
+      ],
+      "bis": [
+        899,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200112,
+        400042
+      ],
+      "laenge": 4,
+      "von": [
+        901,
+        500
+      ],
+      "bis": [
+        904,
+        500
+      ],
+      "kante_max": 16.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200350,
+        400042
+      ],
+      "laenge": 1,
+      "von": [
+        905,
+        500
+      ],
+      "bis": [
+        905,
+        500
+      ],
+      "kante_max": 13.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200399,
+        400042
+      ],
+      "laenge": 1,
+      "von": [
+        906,
+        500
+      ],
+      "bis": [
+        906,
+        500
+      ],
+      "kante_max": 11.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200399,
+        400042
+      ],
+      "laenge": 1,
+      "von": [
+        908,
+        500
+      ],
+      "bis": [
+        908,
+        500
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200111,
+        400041
+      ],
+      "laenge": 23,
+      "von": [
+        910,
+        500
+      ],
+      "bis": [
+        932,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200111,
+        400041
+      ],
+      "laenge": 1,
+      "von": [
+        934,
+        500
+      ],
+      "bis": [
+        934,
+        500
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200124,
+        400055
+      ],
+      "laenge": 14,
+      "von": [
+        941,
+        500
+      ],
+      "bis": [
+        954,
+        500
+      ],
+      "kante_max": 24.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200398,
+        400029
+      ],
+      "laenge": 10,
+      "von": [
+        956,
+        500
+      ],
+      "bis": [
+        965,
+        500
+      ],
+      "kante_max": 20.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200123,
+        400029
+      ],
+      "laenge": 7,
+      "von": [
+        966,
+        500
+      ],
+      "bis": [
+        972,
+        500
+      ],
+      "kante_max": 12.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200110,
+        400029
+      ],
+      "laenge": 16,
+      "von": [
+        973,
+        500
+      ],
+      "bis": [
+        988,
+        500
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200110,
+        400029
+      ],
+      "laenge": 1,
+      "von": [
+        990,
+        500
+      ],
+      "bis": [
+        990,
+        500
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200110,
+        400029
+      ],
+      "laenge": 1,
+      "von": [
+        992,
+        500
+      ],
+      "bis": [
+        992,
+        500
+      ],
+      "kante_max": 17.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200110,
+        400029
+      ],
+      "laenge": 3,
+      "von": [
+        994,
+        500
+      ],
+      "bis": [
+        996,
+        500
+      ],
+      "kante_max": 15.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200110,
+        400057
+      ],
+      "laenge": 1,
+      "von": [
+        997,
+        500
+      ],
+      "bis": [
+        997,
+        500
+      ],
+      "kante_max": 8.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r0c1|r1c1",
+      "ids": [
+        200125,
+        400057
+      ],
+      "laenge": 2,
+      "von": [
+        998,
+        500
+      ],
+      "bis": [
+        999,
+        500
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300004,
+        400037
+      ],
+      "laenge": 10,
+      "von": [
+        500,
+        500
+      ],
+      "bis": [
+        500,
+        509
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300004,
+        400064
+      ],
+      "laenge": 7,
+      "von": [
+        500,
+        510
+      ],
+      "bis": [
+        500,
+        516
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300010,
+        400064
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        517
+      ],
+      "bis": [
+        500,
+        517
+      ],
+      "kante_max": 11.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300011,
+        400072
+      ],
+      "laenge": 9,
+      "von": [
+        500,
+        523
+      ],
+      "bis": [
+        500,
+        531
+      ],
+      "kante_max": 18.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300011,
+        400078
+      ],
+      "laenge": 146,
+      "von": [
+        500,
+        532
+      ],
+      "bis": [
+        500,
+        677
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300036,
+        400110
+      ],
+      "laenge": 1,
+      "von": [
+        500,
+        680
+      ],
+      "bis": [
+        500,
+        680
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300036,
+        400110
+      ],
+      "laenge": 16,
+      "von": [
+        500,
+        685
+      ],
+      "bis": [
+        500,
+        700
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300035,
+        400137
+      ],
+      "laenge": 5,
+      "von": [
+        500,
+        705
+      ],
+      "bis": [
+        500,
+        709
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300029,
+        400118
+      ],
+      "laenge": 19,
+      "von": [
+        500,
+        712
+      ],
+      "bis": [
+        500,
+        730
+      ],
+      "kante_max": 22.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300029,
+        400118
+      ],
+      "laenge": 63,
+      "von": [
+        500,
+        734
+      ],
+      "bis": [
+        500,
+        796
+      ],
+      "kante_max": 21.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300029,
+        400118
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        799
+      ],
+      "bis": [
+        500,
+        800
+      ],
+      "kante_max": 15.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300029,
+        400118
+      ],
+      "laenge": 137,
+      "von": [
+        500,
+        802
+      ],
+      "bis": [
+        500,
+        938
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300023,
+        400118
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        939
+      ],
+      "bis": [
+        500,
+        940
+      ],
+      "kante_max": 12.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300023,
+        400191
+      ],
+      "laenge": 3,
+      "von": [
+        500,
+        941
+      ],
+      "bis": [
+        500,
+        943
+      ],
+      "kante_max": 16.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300023,
+        400118
+      ],
+      "laenge": 9,
+      "von": [
+        500,
+        944
+      ],
+      "bis": [
+        500,
+        952
+      ],
+      "kante_max": 11.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300023,
+        400209
+      ],
+      "laenge": 22,
+      "von": [
+        500,
+        953
+      ],
+      "bis": [
+        500,
+        974
+      ],
+      "kante_max": 23.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300023,
+        400176
+      ],
+      "laenge": 2,
+      "von": [
+        500,
+        975
+      ],
+      "bis": [
+        500,
+        976
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300026,
+        400176
+      ],
+      "laenge": 4,
+      "von": [
+        500,
+        978
+      ],
+      "bis": [
+        500,
+        981
+      ],
+      "kante_max": 15.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300074,
+        400176
+      ],
+      "laenge": 4,
+      "von": [
+        500,
+        982
+      ],
+      "bis": [
+        500,
+        985
+      ],
+      "kante_max": 19.0
+    },
+    {
+      "art": "ohne_kante",
+      "naht": "r1c0|r1c1",
+      "ids": [
+        300026,
+        400176
+      ],
+      "laenge": 14,
+      "von": [
+        500,
+        986
+      ],
+      "bis": [
+        500,
+        999
+      ],
+      "kante_max": 15.0
+    }
+  ],
+  "naht": {
+    "ok": false,
+    "einstellungen": {
+      "kante_schwelle": 25.0,
+      "kante_band": 1,
+      "mindestlaenge": 1
+    },
+    "naehte": [
+      {
+        "naht": "r0c0|r0c1",
+        "richtung": "senkrecht",
+        "lage": 500,
+        "positionen": 500,
+        "gleiche_id": 0,
+        "andere_id_mit_kante": 53,
+        "ohne_kante": 447,
+        "verstoesse": 49,
+        "kurz": 0
+      },
+      {
+        "naht": "r0c0|r1c0",
+        "richtung": "waagrecht",
+        "lage": 500,
+        "positionen": 500,
+        "gleiche_id": 0,
+        "andere_id_mit_kante": 19,
+        "ohne_kante": 481,
+        "verstoesse": 20,
+        "kurz": 0
+      },
+      {
+        "naht": "r0c1|r1c1",
+        "richtung": "waagrecht",
+        "lage": 500,
+        "positionen": 500,
+        "gleiche_id": 0,
+        "andere_id_mit_kante": 71,
+        "ohne_kante": 429,
+        "verstoesse": 52,
+        "kurz": 0
+      },
+      {
+        "naht": "r1c0|r1c1",
+        "richtung": "senkrecht",
+        "lage": 500,
+        "positionen": 500,
+        "gleiche_id": 0,
+        "andere_id_mit_kante": 19,
+        "ohne_kante": 481,
+        "verstoesse": 20,
+        "kurz": 0
+      }
+    ],
+    "verstoesse": [
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100042,
+          200019
+        ],
+        "laenge": 5,
+        "von": [
+          500,
+          0
+        ],
+        "bis": [
+          500,
+          4
+        ],
+        "kante_max": 13.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100042,
+          200019
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          12
+        ],
+        "bis": [
+          500,
+          12
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100056,
+          200019
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          23
+        ],
+        "bis": [
+          500,
+          24
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100056,
+          200004
+        ],
+        "laenge": 13,
+        "von": [
+          500,
+          25
+        ],
+        "bis": [
+          500,
+          37
+        ],
+        "kante_max": 10.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100063,
+          200004
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          38
+        ],
+        "bis": [
+          500,
+          39
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100032,
+          200004
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          40
+        ],
+        "bis": [
+          500,
+          41
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100070,
+          200004
+        ],
+        "laenge": 6,
+        "von": [
+          500,
+          42
+        ],
+        "bis": [
+          500,
+          47
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100070,
+          200186
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          48
+        ],
+        "bis": [
+          500,
+          48
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100070,
+          200186
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          52
+        ],
+        "bis": [
+          500,
+          52
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100032,
+          200186
+        ],
+        "laenge": 3,
+        "von": [
+          500,
+          53
+        ],
+        "bis": [
+          500,
+          55
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100032,
+          200169
+        ],
+        "laenge": 4,
+        "von": [
+          500,
+          56
+        ],
+        "bis": [
+          500,
+          59
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100032,
+          200169
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          61
+        ],
+        "bis": [
+          500,
+          62
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100081,
+          200171
+        ],
+        "laenge": 13,
+        "von": [
+          500,
+          63
+        ],
+        "bis": [
+          500,
+          75
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100081,
+          200180
+        ],
+        "laenge": 7,
+        "von": [
+          500,
+          77
+        ],
+        "bis": [
+          500,
+          83
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100032,
+          200180
+        ],
+        "laenge": 4,
+        "von": [
+          500,
+          88
+        ],
+        "bis": [
+          500,
+          91
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100092,
+          200180
+        ],
+        "laenge": 5,
+        "von": [
+          500,
+          92
+        ],
+        "bis": [
+          500,
+          96
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100092,
+          200031
+        ],
+        "laenge": 7,
+        "von": [
+          500,
+          97
+        ],
+        "bis": [
+          500,
+          103
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100030,
+          200031
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          104
+        ],
+        "bis": [
+          500,
+          105
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100030,
+          200049
+        ],
+        "laenge": 11,
+        "von": [
+          500,
+          106
+        ],
+        "bis": [
+          500,
+          116
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100111,
+          200049
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          117
+        ],
+        "bis": [
+          500,
+          117
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100112,
+          200310
+        ],
+        "laenge": 15,
+        "von": [
+          500,
+          118
+        ],
+        "bis": [
+          500,
+          132
+        ],
+        "kante_max": 10.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100111,
+          200310
+        ],
+        "laenge": 19,
+        "von": [
+          500,
+          133
+        ],
+        "bis": [
+          500,
+          151
+        ],
+        "kante_max": 11.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100128,
+          200310
+        ],
+        "laenge": 4,
+        "von": [
+          500,
+          152
+        ],
+        "bis": [
+          500,
+          155
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100128,
+          200312
+        ],
+        "laenge": 14,
+        "von": [
+          500,
+          156
+        ],
+        "bis": [
+          500,
+          169
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100143,
+          200312
+        ],
+        "laenge": 7,
+        "von": [
+          500,
+          170
+        ],
+        "bis": [
+          500,
+          176
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100144,
+          200312
+        ],
+        "laenge": 18,
+        "von": [
+          500,
+          177
+        ],
+        "bis": [
+          500,
+          194
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100144,
+          200298
+        ],
+        "laenge": 6,
+        "von": [
+          500,
+          195
+        ],
+        "bis": [
+          500,
+          200
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100143,
+          200298
+        ],
+        "laenge": 8,
+        "von": [
+          500,
+          201
+        ],
+        "bis": [
+          500,
+          208
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100143,
+          200298
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          213
+        ],
+        "bis": [
+          500,
+          214
+        ],
+        "kante_max": 17.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100153,
+          200298
+        ],
+        "laenge": 16,
+        "von": [
+          500,
+          215
+        ],
+        "bis": [
+          500,
+          230
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100153,
+          200317
+        ],
+        "laenge": 7,
+        "von": [
+          500,
+          232
+        ],
+        "bis": [
+          500,
+          238
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100153,
+          200299
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          239
+        ],
+        "bis": [
+          500,
+          239
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100165,
+          200299
+        ],
+        "laenge": 14,
+        "von": [
+          500,
+          240
+        ],
+        "bis": [
+          500,
+          253
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100165,
+          200299
+        ],
+        "laenge": 9,
+        "von": [
+          500,
+          255
+        ],
+        "bis": [
+          500,
+          263
+        ],
+        "kante_max": 16.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200299
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          264
+        ],
+        "bis": [
+          500,
+          265
+        ],
+        "kante_max": 13.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200331
+        ],
+        "laenge": 22,
+        "von": [
+          500,
+          266
+        ],
+        "bis": [
+          500,
+          287
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200299
+        ],
+        "laenge": 13,
+        "von": [
+          500,
+          288
+        ],
+        "bis": [
+          500,
+          300
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200304
+        ],
+        "laenge": 8,
+        "von": [
+          500,
+          301
+        ],
+        "bis": [
+          500,
+          308
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200289
+        ],
+        "laenge": 6,
+        "von": [
+          500,
+          309
+        ],
+        "bis": [
+          500,
+          314
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200289
+        ],
+        "laenge": 39,
+        "von": [
+          500,
+          316
+        ],
+        "bis": [
+          500,
+          354
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200289
+        ],
+        "laenge": 29,
+        "von": [
+          500,
+          356
+        ],
+        "bis": [
+          500,
+          384
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200047
+        ],
+        "laenge": 41,
+        "von": [
+          500,
+          385
+        ],
+        "bis": [
+          500,
+          425
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100176,
+          200290
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          427
+        ],
+        "bis": [
+          500,
+          427
+        ],
+        "kante_max": 14.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100209,
+          200290
+        ],
+        "laenge": 12,
+        "von": [
+          500,
+          428
+        ],
+        "bis": [
+          500,
+          439
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100215,
+          200106
+        ],
+        "laenge": 9,
+        "von": [
+          500,
+          452
+        ],
+        "bis": [
+          500,
+          460
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100198,
+          200106
+        ],
+        "laenge": 3,
+        "von": [
+          500,
+          461
+        ],
+        "bis": [
+          500,
+          463
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100198,
+          200081
+        ],
+        "laenge": 9,
+        "von": [
+          500,
+          464
+        ],
+        "bis": [
+          500,
+          472
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100218,
+          200100
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          489
+        ],
+        "bis": [
+          500,
+          490
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100218,
+          200115
+        ],
+        "laenge": 9,
+        "von": [
+          500,
+          491
+        ],
+        "bis": [
+          500,
+          499
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100202,
+          300001
+        ],
+        "laenge": 3,
+        "von": [
+          0,
+          500
+        ],
+        "bis": [
+          2,
+          500
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100202,
+          300001
+        ],
+        "laenge": 7,
+        "von": [
+          4,
+          500
+        ],
+        "bis": [
+          10,
+          500
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100202,
+          300001
+        ],
+        "laenge": 14,
+        "von": [
+          15,
+          500
+        ],
+        "bis": [
+          28,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100223,
+          300001
+        ],
+        "laenge": 14,
+        "von": [
+          29,
+          500
+        ],
+        "bis": [
+          42,
+          500
+        ],
+        "kante_max": 16.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100223,
+          300002
+        ],
+        "laenge": 1,
+        "von": [
+          43,
+          500
+        ],
+        "bis": [
+          43,
+          500
+        ],
+        "kante_max": 13.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100154,
+          300002
+        ],
+        "laenge": 254,
+        "von": [
+          44,
+          500
+        ],
+        "bis": [
+          297,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100154,
+          300073
+        ],
+        "laenge": 13,
+        "von": [
+          298,
+          500
+        ],
+        "bis": [
+          310,
+          500
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100220,
+          300073
+        ],
+        "laenge": 1,
+        "von": [
+          311,
+          500
+        ],
+        "bis": [
+          311,
+          500
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100220,
+          300073
+        ],
+        "laenge": 1,
+        "von": [
+          318,
+          500
+        ],
+        "bis": [
+          318,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100220,
+          300073
+        ],
+        "laenge": 1,
+        "von": [
+          321,
+          500
+        ],
+        "bis": [
+          321,
+          500
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100220,
+          300073
+        ],
+        "laenge": 5,
+        "von": [
+          328,
+          500
+        ],
+        "bis": [
+          332,
+          500
+        ],
+        "kante_max": 16.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100225,
+          300073
+        ],
+        "laenge": 1,
+        "von": [
+          333,
+          500
+        ],
+        "bis": [
+          333,
+          500
+        ],
+        "kante_max": 15.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100225,
+          300070
+        ],
+        "laenge": 6,
+        "von": [
+          334,
+          500
+        ],
+        "bis": [
+          339,
+          500
+        ],
+        "kante_max": 9.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100195,
+          300070
+        ],
+        "laenge": 6,
+        "von": [
+          340,
+          500
+        ],
+        "bis": [
+          345,
+          500
+        ],
+        "kante_max": 14.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100195,
+          300006
+        ],
+        "laenge": 83,
+        "von": [
+          346,
+          500
+        ],
+        "bis": [
+          428,
+          500
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100195,
+          300004
+        ],
+        "laenge": 5,
+        "von": [
+          429,
+          500
+        ],
+        "bis": [
+          433,
+          500
+        ],
+        "kante_max": 17.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100219,
+          300004
+        ],
+        "laenge": 46,
+        "von": [
+          434,
+          500
+        ],
+        "bis": [
+          479,
+          500
+        ],
+        "kante_max": 16.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100229,
+          300004
+        ],
+        "laenge": 5,
+        "von": [
+          480,
+          500
+        ],
+        "bis": [
+          484,
+          500
+        ],
+        "kante_max": 14.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100219,
+          300004
+        ],
+        "laenge": 6,
+        "von": [
+          485,
+          500
+        ],
+        "bis": [
+          490,
+          500
+        ],
+        "kante_max": 16.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r1c0",
+        "ids": [
+          100218,
+          300004
+        ],
+        "laenge": 9,
+        "von": [
+          491,
+          500
+        ],
+        "bis": [
+          499,
+          500
+        ],
+        "kante_max": 11.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200115,
+          400037
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          500
+        ],
+        "bis": [
+          500,
+          500
+        ],
+        "kante_max": 12.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200100,
+          400037
+        ],
+        "laenge": 4,
+        "von": [
+          501,
+          500
+        ],
+        "bis": [
+          504,
+          500
+        ],
+        "kante_max": 14.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200081,
+          400003
+        ],
+        "laenge": 17,
+        "von": [
+          505,
+          500
+        ],
+        "bis": [
+          521,
+          500
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200081,
+          400046
+        ],
+        "laenge": 1,
+        "von": [
+          522,
+          500
+        ],
+        "bis": [
+          522,
+          500
+        ],
+        "kante_max": 13.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200126,
+          400046
+        ],
+        "laenge": 6,
+        "von": [
+          523,
+          500
+        ],
+        "bis": [
+          528,
+          500
+        ],
+        "kante_max": 14.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200292,
+          400026
+        ],
+        "laenge": 10,
+        "von": [
+          529,
+          500
+        ],
+        "bis": [
+          538,
+          500
+        ],
+        "kante_max": 15.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200292,
+          400056
+        ],
+        "laenge": 9,
+        "von": [
+          539,
+          500
+        ],
+        "bis": [
+          547,
+          500
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200292,
+          400306
+        ],
+        "laenge": 1,
+        "von": [
+          548,
+          500
+        ],
+        "bis": [
+          548,
+          500
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200333,
+          400306
+        ],
+        "laenge": 2,
+        "von": [
+          549,
+          500
+        ],
+        "bis": [
+          550,
+          500
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200333,
+          400054
+        ],
+        "laenge": 13,
+        "von": [
+          551,
+          500
+        ],
+        "bis": [
+          563,
+          500
+        ],
+        "kante_max": 16.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200121,
+          400047
+        ],
+        "laenge": 2,
+        "von": [
+          567,
+          500
+        ],
+        "bis": [
+          568,
+          500
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200121,
+          400048
+        ],
+        "laenge": 20,
+        "von": [
+          569,
+          500
+        ],
+        "bis": [
+          588,
+          500
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400268
+        ],
+        "laenge": 9,
+        "von": [
+          599,
+          500
+        ],
+        "bis": [
+          607,
+          500
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400268
+        ],
+        "laenge": 5,
+        "von": [
+          610,
+          500
+        ],
+        "bis": [
+          614,
+          500
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400268
+        ],
+        "laenge": 1,
+        "von": [
+          616,
+          500
+        ],
+        "bis": [
+          616,
+          500
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400268
+        ],
+        "laenge": 17,
+        "von": [
+          623,
+          500
+        ],
+        "bis": [
+          639,
+          500
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400268
+        ],
+        "laenge": 1,
+        "von": [
+          641,
+          500
+        ],
+        "bis": [
+          641,
+          500
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400268
+        ],
+        "laenge": 31,
+        "von": [
+          643,
+          500
+        ],
+        "bis": [
+          673,
+          500
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400267
+        ],
+        "laenge": 9,
+        "von": [
+          674,
+          500
+        ],
+        "bis": [
+          682,
+          500
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400267
+        ],
+        "laenge": 1,
+        "von": [
+          685,
+          500
+        ],
+        "bis": [
+          685,
+          500
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400267
+        ],
+        "laenge": 2,
+        "von": [
+          688,
+          500
+        ],
+        "bis": [
+          689,
+          500
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200295,
+          400267
+        ],
+        "laenge": 19,
+        "von": [
+          698,
+          500
+        ],
+        "bis": [
+          716,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200113,
+          400035
+        ],
+        "laenge": 23,
+        "von": [
+          717,
+          500
+        ],
+        "bis": [
+          739,
+          500
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200049,
+          400009
+        ],
+        "laenge": 4,
+        "von": [
+          742,
+          500
+        ],
+        "bis": [
+          745,
+          500
+        ],
+        "kante_max": 17.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200049,
+          400051
+        ],
+        "laenge": 17,
+        "von": [
+          746,
+          500
+        ],
+        "bis": [
+          762,
+          500
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200049,
+          400033
+        ],
+        "laenge": 1,
+        "von": [
+          763,
+          500
+        ],
+        "bis": [
+          763,
+          500
+        ],
+        "kante_max": 9.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200097,
+          400033
+        ],
+        "laenge": 2,
+        "von": [
+          764,
+          500
+        ],
+        "bis": [
+          765,
+          500
+        ],
+        "kante_max": 17.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200097,
+          400033
+        ],
+        "laenge": 7,
+        "von": [
+          767,
+          500
+        ],
+        "bis": [
+          773,
+          500
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200097,
+          400033
+        ],
+        "laenge": 3,
+        "von": [
+          778,
+          500
+        ],
+        "bis": [
+          780,
+          500
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200097,
+          400033
+        ],
+        "laenge": 3,
+        "von": [
+          782,
+          500
+        ],
+        "bis": [
+          784,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200097,
+          400053
+        ],
+        "laenge": 13,
+        "von": [
+          785,
+          500
+        ],
+        "bis": [
+          797,
+          500
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200097,
+          400033
+        ],
+        "laenge": 7,
+        "von": [
+          801,
+          500
+        ],
+        "bis": [
+          807,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200097,
+          400045
+        ],
+        "laenge": 16,
+        "von": [
+          813,
+          500
+        ],
+        "bis": [
+          828,
+          500
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200095,
+          400011
+        ],
+        "laenge": 12,
+        "von": [
+          833,
+          500
+        ],
+        "bis": [
+          844,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200095,
+          400011
+        ],
+        "laenge": 9,
+        "von": [
+          851,
+          500
+        ],
+        "bis": [
+          859,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200112,
+          400042
+        ],
+        "laenge": 38,
+        "von": [
+          860,
+          500
+        ],
+        "bis": [
+          897,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200112,
+          400042
+        ],
+        "laenge": 1,
+        "von": [
+          899,
+          500
+        ],
+        "bis": [
+          899,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200112,
+          400042
+        ],
+        "laenge": 4,
+        "von": [
+          901,
+          500
+        ],
+        "bis": [
+          904,
+          500
+        ],
+        "kante_max": 16.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200350,
+          400042
+        ],
+        "laenge": 1,
+        "von": [
+          905,
+          500
+        ],
+        "bis": [
+          905,
+          500
+        ],
+        "kante_max": 13.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200399,
+          400042
+        ],
+        "laenge": 1,
+        "von": [
+          906,
+          500
+        ],
+        "bis": [
+          906,
+          500
+        ],
+        "kante_max": 11.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200399,
+          400042
+        ],
+        "laenge": 1,
+        "von": [
+          908,
+          500
+        ],
+        "bis": [
+          908,
+          500
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200111,
+          400041
+        ],
+        "laenge": 23,
+        "von": [
+          910,
+          500
+        ],
+        "bis": [
+          932,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200111,
+          400041
+        ],
+        "laenge": 1,
+        "von": [
+          934,
+          500
+        ],
+        "bis": [
+          934,
+          500
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200124,
+          400055
+        ],
+        "laenge": 14,
+        "von": [
+          941,
+          500
+        ],
+        "bis": [
+          954,
+          500
+        ],
+        "kante_max": 24.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200398,
+          400029
+        ],
+        "laenge": 10,
+        "von": [
+          956,
+          500
+        ],
+        "bis": [
+          965,
+          500
+        ],
+        "kante_max": 20.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200123,
+          400029
+        ],
+        "laenge": 7,
+        "von": [
+          966,
+          500
+        ],
+        "bis": [
+          972,
+          500
+        ],
+        "kante_max": 12.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200110,
+          400029
+        ],
+        "laenge": 16,
+        "von": [
+          973,
+          500
+        ],
+        "bis": [
+          988,
+          500
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200110,
+          400029
+        ],
+        "laenge": 1,
+        "von": [
+          990,
+          500
+        ],
+        "bis": [
+          990,
+          500
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200110,
+          400029
+        ],
+        "laenge": 1,
+        "von": [
+          992,
+          500
+        ],
+        "bis": [
+          992,
+          500
+        ],
+        "kante_max": 17.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200110,
+          400029
+        ],
+        "laenge": 3,
+        "von": [
+          994,
+          500
+        ],
+        "bis": [
+          996,
+          500
+        ],
+        "kante_max": 15.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200110,
+          400057
+        ],
+        "laenge": 1,
+        "von": [
+          997,
+          500
+        ],
+        "bis": [
+          997,
+          500
+        ],
+        "kante_max": 8.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200125,
+          400057
+        ],
+        "laenge": 2,
+        "von": [
+          998,
+          500
+        ],
+        "bis": [
+          999,
+          500
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300004,
+          400037
+        ],
+        "laenge": 10,
+        "von": [
+          500,
+          500
+        ],
+        "bis": [
+          500,
+          509
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300004,
+          400064
+        ],
+        "laenge": 7,
+        "von": [
+          500,
+          510
+        ],
+        "bis": [
+          500,
+          516
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300010,
+          400064
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          517
+        ],
+        "bis": [
+          500,
+          517
+        ],
+        "kante_max": 11.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300011,
+          400072
+        ],
+        "laenge": 9,
+        "von": [
+          500,
+          523
+        ],
+        "bis": [
+          500,
+          531
+        ],
+        "kante_max": 18.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300011,
+          400078
+        ],
+        "laenge": 146,
+        "von": [
+          500,
+          532
+        ],
+        "bis": [
+          500,
+          677
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300036,
+          400110
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          680
+        ],
+        "bis": [
+          500,
+          680
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300036,
+          400110
+        ],
+        "laenge": 16,
+        "von": [
+          500,
+          685
+        ],
+        "bis": [
+          500,
+          700
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300035,
+          400137
+        ],
+        "laenge": 5,
+        "von": [
+          500,
+          705
+        ],
+        "bis": [
+          500,
+          709
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300029,
+          400118
+        ],
+        "laenge": 19,
+        "von": [
+          500,
+          712
+        ],
+        "bis": [
+          500,
+          730
+        ],
+        "kante_max": 22.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300029,
+          400118
+        ],
+        "laenge": 63,
+        "von": [
+          500,
+          734
+        ],
+        "bis": [
+          500,
+          796
+        ],
+        "kante_max": 21.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300029,
+          400118
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          799
+        ],
+        "bis": [
+          500,
+          800
+        ],
+        "kante_max": 15.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300029,
+          400118
+        ],
+        "laenge": 137,
+        "von": [
+          500,
+          802
+        ],
+        "bis": [
+          500,
+          938
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300023,
+          400118
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          939
+        ],
+        "bis": [
+          500,
+          940
+        ],
+        "kante_max": 12.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300023,
+          400191
+        ],
+        "laenge": 3,
+        "von": [
+          500,
+          941
+        ],
+        "bis": [
+          500,
+          943
+        ],
+        "kante_max": 16.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300023,
+          400118
+        ],
+        "laenge": 9,
+        "von": [
+          500,
+          944
+        ],
+        "bis": [
+          500,
+          952
+        ],
+        "kante_max": 11.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300023,
+          400209
+        ],
+        "laenge": 22,
+        "von": [
+          500,
+          953
+        ],
+        "bis": [
+          500,
+          974
+        ],
+        "kante_max": 23.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300023,
+          400176
+        ],
+        "laenge": 2,
+        "von": [
+          500,
+          975
+        ],
+        "bis": [
+          500,
+          976
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300026,
+          400176
+        ],
+        "laenge": 4,
+        "von": [
+          500,
+          978
+        ],
+        "bis": [
+          500,
+          981
+        ],
+        "kante_max": 15.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300074,
+          400176
+        ],
+        "laenge": 4,
+        "von": [
+          500,
+          982
+        ],
+        "bis": [
+          500,
+          985
+        ],
+        "kante_max": 19.0
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300026,
+          400176
+        ],
+        "laenge": 14,
+        "von": [
+          500,
+          986
+        ],
+        "bis": [
+          500,
+          999
+        ],
+        "kante_max": 15.0
+      }
+    ],
+    "bestaetigt": [
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100215,
+          200290
+        ],
+        "laenge": 9,
+        "von": [
+          500,
+          440
+        ],
+        "bis": [
+          500,
+          448
+        ],
+        "kante_max": 20.0,
+        "grund": "Der Unterrand des dunklen Gartens kreuzt die Naht neben dem hellen Hofstreifen; echte, im Scan weiche Kante."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c0|r0c1",
+        "ids": [
+          100215,
+          200290
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          451
+        ],
+        "bis": [
+          500,
+          451
+        ],
+        "kante_max": 23.0,
+        "grund": "Der Unterrand des dunklen Gartens kreuzt die Naht neben dem hellen Hofstreifen; echte, im Scan weiche Kante."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200333,
+          400006
+        ],
+        "laenge": 2,
+        "von": [
+          564,
+          500
+        ],
+        "bis": [
+          565,
+          500
+        ],
+        "kante_max": 22.0,
+        "grund": "Das rechte Ende des Schattenblocks stößt schräg an das helle Dach; Übergang dunkel–hell kreuzt die Naht, im Scan verwischt."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200121,
+          400006
+        ],
+        "laenge": 1,
+        "von": [
+          566,
+          500
+        ],
+        "bis": [
+          566,
+          500
+        ],
+        "kante_max": 23.0,
+        "grund": "Das linke Ende des hellen Langhausdachs stößt an den dunklen Schatten; die Dachkante kreuzt die Naht schräg und weich."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200121,
+          400268
+        ],
+        "laenge": 1,
+        "von": [
+          591,
+          500
+        ],
+        "bis": [
+          591,
+          500
+        ],
+        "kante_max": 22.0,
+        "grund": "Die Unterkante des hellen Langhausdachs liegt an dieser Stelle auf der Naht; der Bildpunkt darunter ist schon Übergangsgrau zum Hof."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200111,
+          400042
+        ],
+        "laenge": 1,
+        "von": [
+          909,
+          500
+        ],
+        "bis": [
+          909,
+          500
+        ],
+        "kante_max": 21.0,
+        "grund": "Die helle Hoffläche stößt an den dunklen schrägen Streifen; deren Kante kreuzt die Naht und ist im Scan um einen Bildpunkt verwischt."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r0c1|r1c1",
+        "ids": [
+          200124,
+          400029
+        ],
+        "laenge": 1,
+        "von": [
+          955,
+          500
+        ],
+        "bis": [
+          955,
+          500
+        ],
+        "kante_max": 19.0,
+        "grund": "Der Unterrand des Schattens liegt an dieser Stelle auf der Naht, darunter beginnt die mittelgraue Straße; weiche, aber echte Kante."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300010,
+          400072
+        ],
+        "laenge": 3,
+        "von": [
+          500,
+          520
+        ],
+        "bis": [
+          500,
+          522
+        ],
+        "kante_max": 15.0,
+        "grund": "Der Unterrand der hellen Straße kreuzt die Naht schräg zum dunkleren Wegrain; der Übergang ist im Scan drei Bildpunkte breit verwischt."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300011,
+          400110
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          678
+        ],
+        "bis": [
+          500,
+          678
+        ],
+        "kante_max": 18.0,
+        "grund": "Der Oberrand des hellen Feldwegs kreuzt die Naht schräg zum dunklen Feld; echte Kante, an der Naht verwischt."
+      },
+      {
+        "art": "ohne_kante",
+        "naht": "r1c0|r1c1",
+        "ids": [
+          300036,
+          400118
+        ],
+        "laenge": 1,
+        "von": [
+          500,
+          701
+        ],
+        "bis": [
+          500,
+          701
+        ],
+        "kante_max": 22.0,
+        "grund": "Der Unterrand des hellen Feldwegs kreuzt die Naht schräg zum Feld; echte Kante, an der Naht verwischt."
+      }
+    ]
+  },
+  "klassen_konflikte": [],
+  "pruefen": {
+    "ok": false,
+    "hoehe": 1000,
+    "breite": 1000,
+    "bildpunkte": 1000000,
+    "ohne_segment": 0,
+    "segmentzahl": 468,
+    "nicht_zusammenhaengend": [],
+    "maengel": [
+      "Klasse: Segment 100007 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100010 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100020 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100028 hat ungültige Klasse '2.1.2'",
+      "Klasse: Segment 100034 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100037 hat ungültige Klasse '2.1.2'",
+      "Klasse: Segment 100041 hat ungültige Klasse '2.1.2'",
+      "Klasse: Segment 100043 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100045 hat ungültige Klasse '2.1.2'",
+      "Klasse: Segment 100048 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100049 hat ungültige Klasse '2.1.2'",
+      "Klasse: Segment 100064 hat ungültige Klasse '3.2.1'",
+      "Klasse: Segment 100065 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100070 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 100073 hat ungültige Klasse '3.2.1'",
+      "Klasse: Segment 100075 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100076 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100077 hat ungültige Klasse '5.2.1'",
+      "Klasse: Segment 100078 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100093 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100099 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100100 hat ungültige Klasse '0.3'",
+      "Klasse: Segment 100104 hat ungültige Klasse '5.2.1'",
+      "Klasse: Segment 100105 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100106 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100111 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100114 hat ungültige Klasse '5.2.1'",
+      "Klasse: Segment 100116 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100128 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100129 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100132 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 100136 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 100143 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100145 hat ungültige Klasse '0.3'",
+      "Klasse: Segment 100148 hat ungültige Klasse '0.3'",
+      "Klasse: Segment 100153 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 100160 hat ungültige Klasse '5.2.2'",
+      "Klasse: Segment 100165 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 100173 hat ungültige Klasse '5.2.1'",
+      "Klasse: Segment 100176 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100178 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100181 hat ungültige Klasse '5.2.2'",
+      "Klasse: Segment 100183 hat ungültige Klasse '4.3'",
+      "Klasse: Segment 100189 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100202 hat ungültige Klasse '5.2.2'",
+      "Klasse: Segment 100209 hat ungültige Klasse '4.4'",
+      "Klasse: Segment 100210 hat ungültige Klasse '4.3'",
+      "Klasse: Segment 100215 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 100220 hat ungültige Klasse '3.2.1'",
+      "Klasse: Segment 100272 hat ungültige Klasse '3.2.1'",
+      "Klasse: Segment 200007 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200029 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200036 hat ungültige Klasse '0.1.2'",
+      "Klasse: Segment 200045 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200054 hat ungültige Klasse '0.1.2'",
+      "Klasse: Segment 200065 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200074 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200094 hat ungültige Klasse '5.2.1'",
+      "Klasse: Segment 200097 hat ungültige Klasse '5.2.1'",
+      "Klasse: Segment 200105 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200106 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200112 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200113 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200123 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200160 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200165 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200166 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200167 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200172 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200177 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200179 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200180 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200184 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200186 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200187 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200188 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200192 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200196 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200197 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200200 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200207 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200209 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200212 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200213 hat ungültige Klasse '3.2.2'",
+      "Klasse: Segment 200214 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200219 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200222 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200229 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200230 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200231 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200234 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200239 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200240 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200241 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200244 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200247 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200249 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200251 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200277 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200280 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200282 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200286 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200289 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200290 hat ungültige Klasse '4.4'",
+      "Klasse: Segment 200292 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200298 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200299 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200308 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200309 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200311 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200317 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200318 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200322 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200331 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200335 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200342 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200345 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200348 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200350 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200352 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200360 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 200361 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200362 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200365 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200372 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 200375 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200389 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 200396 hat ungültige Klasse '0.1.2'",
+      "Klasse: Segment 200397 hat ungültige Klasse '0.1.2'",
+      "Klasse: Segment 200399 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 300027 hat ungültige Klasse '3.2.1'",
+      "Klasse: Segment 300035 hat ungültige Klasse '0.3'",
+      "Klasse: Segment 300036 hat ungültige Klasse '3.2.1'",
+      "Klasse: Segment 300066 hat ungültige Klasse '5.2.2'",
+      "Klasse: Segment 300069 hat ungültige Klasse '2.1.3'",
+      "Klasse: Segment 300070 hat ungültige Klasse '3.2.1'",
+      "Klasse: Segment 400026 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 400035 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400042 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 400045 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400047 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400053 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400060 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400061 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400062 hat ungültige Klasse '4.4'",
+      "Klasse: Segment 400067 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 400073 hat ungültige Klasse '3.2.2'",
+      "Klasse: Segment 400086 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400087 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400089 hat ungültige Klasse '4.4'",
+      "Klasse: Segment 400090 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400092 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400096 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400104 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400105 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 400106 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400110 hat ungültige Klasse '3.2.1'",
+      "Klasse: Segment 400115 hat ungültige Klasse '4.4'",
+      "Klasse: Segment 400124 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400126 hat ungültige Klasse '4.3'",
+      "Klasse: Segment 400137 hat ungültige Klasse '0.3'",
+      "Klasse: Segment 400144 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400145 hat ungültige Klasse '4.3'",
+      "Klasse: Segment 400172 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400181 hat ungültige Klasse '4.4'",
+      "Klasse: Segment 400189 hat ungültige Klasse '4.4'",
+      "Klasse: Segment 400195 hat ungültige Klasse '0.1.1'",
+      "Klasse: Segment 400213 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 400216 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400257 hat ungültige Klasse '4.4'",
+      "Klasse: Segment 400285 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 400287 hat ungültige Klasse '2.1.1'",
+      "Klasse: Segment 400306 hat ungültige Klasse '0.2.1'",
+      "Klasse: Segment 400309 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400310 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400311 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400312 hat ungültige Klasse '0.4'",
+      "Klasse: Segment 400315 hat ungültige Klasse '0.4'"
+    ],
+    "hinweise": []
+  }
+}

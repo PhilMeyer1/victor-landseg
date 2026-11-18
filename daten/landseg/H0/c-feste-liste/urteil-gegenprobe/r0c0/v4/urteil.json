@@ -1,0 +1,797 @@
+{
+ "teilkachel": "r0c0",
+ "viertel": "v4",
+ "bearbeiter": "gegen-c-r0c0-v4",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/H0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/H0_raster.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r0c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r0c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_roh.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/kontrast_1.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 100172,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Dunkler Fleck am Westrand der Straße (432/318), Fortsetzung des Gehölzes 100169.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Baustelle: dunkle Krone/Gebüsch wie 100169; Schatten möglich.",
+     "flaeche_px": null
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Gehört zum Gehölz 100169 (v2); nicht verschmolzen, um das bereits geurteilte Segment nicht zu ändern.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100180,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Dunklerer Grasstreifen zwischen Acker 100154 und Straße 100149 (439/339).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Linearer Rain/Grünstreifen zwischen Acker und Straße.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100143,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Nach Teilen: dunkle Schattenzone östlich der Straße und schmale Schattenlinien zwischen den Dächern in v2 (489/349).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Heller Streifen parallel östlich der Straße in zwei Stücken abgetrennt (100287, 100288).",
+     "flaeche_px": 973
+    },
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Kein Hauptgebäude: Schatten bzw. dunkle Zone neben Bauten; nach U2 Ebene 1.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100178,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Graue, gleichmäßige Fläche nordöstlich der Einmündung (530/348): Hof oder Platz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Dach erkennbar (keine Schattenkante); Hof/Platz, Dach nicht ausgeschlossen; Ebene 1.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100165,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Dachteil an der oberen rechten Ecke (557/318), großteils im Kontextrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helles Dach wahrscheinlich; Hauptgebäude nicht belegbar.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100185,
+   "klasse_heute": "1.3.4",
+   "was_ist_es": "Grasstreifen am Ackerrand mit kleinem hellem Gegenstand (434/364).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Sportplatz: Rain mit kleinem hellem Objekt (Schuppen/Trog, 440/366), zu klein zum Teilen.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100187,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Grasstreifen am Ackerrand (442/379).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Linearer Rain/Grünstreifen zwischen Acker und Straße.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100183,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Gras mit dunklen Büschen/Bäumen und kleinen hellen Bauteilen westlich der Einmündung (476/395).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.5",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Baustelle: Gras mit verstreuten Gehölzen; kleine helle Bauteile (465/385) zu klein zum Teilen.",
+     "flaeche_px": null
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Dunkle Gehölzflecken (470/400, 485/410) unscharf begrenzt, nicht geteilt.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100189,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "Graue gleichmäßige Fläche südöstlich der Einmündung (521/397): Hof oder flaches Dach.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Nebengebäude nicht belegbar; Hof oder Dach; Ebene 1.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100186,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Heller Weg von der Einmündung nach Nordosten (528/368).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Baustelle: schmaler heller Weg; befestigt oder nicht unklar (U1).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 100194,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Grasstreifen am Ackerrand (458/407).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Linearer Rain/Grünstreifen zwischen Acker und Straße.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100199,
+   "klasse_heute": "2.2",
+   "was_ist_es": "Grasstreifen am Ackerrand (462/425).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Linearer Rain/Grünstreifen zwischen Acker und Straße.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100198,
+   "klasse_heute": "1.2.2",
+   "was_ist_es": "Nach Verschmelzen: Straße nach Süden ab der Einmündung (513/445).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "100191 und 100193 (Straßenstücke an der Einmündung) ohne Kante angefügt.",
+     "flaeche_px": 245
+    },
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Straße, befestigt oder Schotter nicht entscheidbar (U1: 1.2).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100196,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleines dunkleres Stück neben Hof 100189 (519/414).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Schatten bzw. dunkle Zone neben Bauten; nach U2 Ebene 1.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 100192,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Kleines graues Stück östlich von 100189 (536/406).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Hof/Schatten, kein Hauptgebäude.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 100176,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Höfe, Dächer und Schatten östlich der Straße (543/434), großteils im Kontextrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Enthält helle Dachstreifen (545/440), Höfe und die dunkle Linie am Straßenrand; großteils im Kontextrand, im Kern nicht geteilt.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 100210,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Nach Verschmelzen: dunkle Gehölzreihe am Westrand der Straße entlang des Ackers 100195 (534/510).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2.3",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "100201 und 100207 (Teile derselben Reihe) ohne Kante angefügt.",
+     "flaeche_px": 752
+    },
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Kein Acker: dunkle, gereihte Kronen; Hecke wahrscheinlich, Graben möglich.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100209,
+   "klasse_heute": "0.2",
+   "was_ist_es": "4 Bildpunkte am rechten Kernrand (562/492), Segment liegt im Kontextrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "zu_klein",
+     "text": "Nur 4 Bildpunkte; Schatten neben Bauten, nicht 0.2.",
+     "flaeche_px": 4
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100216,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Dunkler Fleck an der Südwestecke des Ackers 100195 (379/529): Baumkrone.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Acker: dunkle runde Krone; Gebüsch oder Baum.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100195,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Acker südöstlich des Ackers 100154 (457/508).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Acker sicher (Form, Streifen); bewachsen oder gepflügt nicht zu entscheiden, daher Elternklasse.",
+     "flaeche_px": null
+    },
+    {
+     "nr": 2,
+     "art": "grenze",
+     "text": "Grenze zu 100154 gezackt und ohne Bildkante; die Parzellengrenze liegt vermutlich auf dem feinen hellen Streifen von 370/503 nach 447/410. Nicht verschoben, weil beide Segmente in den Kontextrand reichen.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/kontrast_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100214,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Grauer Streifen zwischen Gehölzreihe 100210 und Straße (552/526).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Straße: Rain am Straßenrand.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 100211,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Dunkle Zone am Ostrand der Straße (557/500).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Straße: dunkle Linie/Schatten am Straßenrand vor den Höfen; Gehölz möglich.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 100218,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Dunkle Kronen östlich der Ackerecke an der Straße (557/542).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Baustelle: dunkle rundliche Kronen.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_roh.jpg"
+   ]
+  },
+  {
+   "id": 100215,
+   "klasse_heute": "1.1.2",
+   "was_ist_es": "22 Bildpunkte am rechten Kernrand (562/520), Segment liegt im Kontextrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "zu_klein",
+     "text": "Nur 22 Bildpunkte; Teil der Höfe östlich der Straße.",
+     "flaeche_px": 22
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100224,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Randstück an der Südwestecke (369/559).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "3.4",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Rain zwischen den Äckern, kein eigener Acker.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100220,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Heller Streifen an der Südwestecke des Ackers (382/557): Feldweg.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "6.6",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Baustelle: heller schmaler Streifen zwischen Äckern, unbefestigter Weg wahrscheinlich.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100225,
+   "klasse_heute": "2.1",
+   "was_ist_es": "Dunkles kleines Stück am unteren Kernrand (398/558).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Acker: dunkle Krone/Gebüsch.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100219,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Hellerer Acker südlich der klaren Feldgrenze (537/551), großteils im Kontextrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Kein Hauptgebäude: gleichmäßige Ackerfläche, heller als 100195, gerade Feldgrenze.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 100228,
+   "klasse_heute": "2.2",
+   "was_ist_es": "21 Bildpunkte am unteren Kernrand (542/562).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "zu_klein",
+     "text": "Nur 21 Bildpunkte; Teil des Ackers 100219.",
+     "flaeche_px": 21
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100229,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "19 Bildpunkte am unteren Kernrand (545/562), Straßenrand.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "zu_klein",
+     "text": "Nur 19 Bildpunkte; Rand der Straße 100198.",
+     "flaeche_px": 19
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah4_nummern.jpg"
+   ]
+  },
+  {
+   "id": 100287,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Abgetrennt aus 100143: heller Streifen östlich der Straße, unterer Teil (475/360).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Langes schmales Dach (Schatten östlich) oder Gehweg; beides Ebene 1.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c0/v4/nah2_roh.jpg"
+   ]
+  },
+  {
+   "id": 100288,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Abgetrennt aus 100143: heller Streifen östlich der Straße, oberer Teil (450/295).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Langes schmales Dach oder Gehweg; Ebene 1.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil-gegenprobe/r0c0/v4/nah_1.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 100195,
+   "seite": "unten",
+   "text": "Acker reicht über die Teilkachelgrenze nach r1c1; Klasse 2 halten."
+  },
+  {
+   "id": 100198,
+   "seite": "unten",
+   "text": "Straße reicht nach r1c1; Klasse 1.2 halten."
+  },
+  {
+   "id": 100176,
+   "seite": "rechts",
+   "text": "Höfe östlich der Straße größtenteils im Kontextrand; Kernanteil schmal."
+  }
+ ],
+ "unsicher": [
+  "100149 (v2): Straße; der parallele helle Streifen 100287/100288 ist durch einen Teil von 100149 unterbrochen (Grenze ohne Bildkante bei 470/335).",
+  "100154 (v3): Grenze zu 100195 ohne Bildkante."
+ ],
+ "nicht_geprueft": [
+  "Kontextrand-Anteile von 100165, 100176, 100209, 100215, 100219, 100228, 100229 nur als Umgebung gesehen."
+ ],
+ "offen": [
+  "Heller Streifen 100287/100288: Dach oder Gehweg im Farbbild bzw. an Schatten im besseren Scan prüfen.",
+  "Höfe 100178, 100189: Hof oder flaches Dach im Farbbild entscheidbar.",
+  "Äcker 100195, 100219: bewachsen oder gepflügt im Farbbild entscheidbar.",
+  "Gehölzreihe 100210: Hecke oder Graben im Farbbild entscheidbar."
+ ],
+ "eingriffe": [
+  {
+   "schritt": "teilen",
+   "vorher": [
+    100143
+   ],
+   "nachher": [
+    100143,
+    100287
+   ],
+   "grund": "Heller Streifen parallel östlich der Straße (Dach oder Gehweg), unterer Teil, getrennt von der dunklen Schattenzone. Splitter des Schnitts (11 Stücke, IDs 100286–100297) sofort wieder angefügt."
+  },
+  {
+   "schritt": "teilen",
+   "vorher": [
+    100143
+   ],
+   "nachher": [
+    100143,
+    100288
+   ],
+   "grund": "Heller Streifen parallel östlich der Straße, oberer Teil. Splitter des Schnitts (7 Stücke, IDs 100289–100295) sofort wieder angefügt."
+  },
+  {
+   "schritt": "verschmelzen",
+   "vorher": [
+    100198,
+    100191,
+    100193
+   ],
+   "nachher": [
+    100198
+   ],
+   "grund": "Stücke derselben Straße an der Einmündung ohne Bildkante."
+  },
+  {
+   "schritt": "verschmelzen",
+   "vorher": [
+    100210,
+    100201,
+    100207
+   ],
+   "nachher": [
+    100210
+   ],
+   "grund": "Drei Stücke derselben dunklen Gehölzreihe am Westrand der Straße ohne Bildkante."
+  }
+ ]
+}

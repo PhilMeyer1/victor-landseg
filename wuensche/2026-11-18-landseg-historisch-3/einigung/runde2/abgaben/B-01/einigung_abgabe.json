@@ -1,0 +1,22 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-01",
+ "bearbeiter": "agent:einigung-B-01:20261118i-r2",
+ "paare": [
+  {
+   "paar": "r0c0:100042|r0c1:200019",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "100042 ist das helle Dach (Median Grauwert 200), 200019 im Kern von r0c1 nur sein dunkler Schlagschatten (Median 50); die echte Hell-Dunkel-Kante (Traufe) liegt 1–3 Bildpunkte links der Naht bei x 496–498 in r0c0, an x 499/500 ist beiderseits schon Schatten (45–70), darum kein Farbsprung an der Naht, aber zwei verschiedene Flächen: Wohn- oder Langhaus und Schlagschatten bleiben (passt zur Kette 100032|200019 = Schlagschatten aus Runde 1)."
+  },
+  {
+   "paar": "r0c0:100030|r0c1:200031",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die helle Fahrbahn 100030 (Median 156) setzt sich jenseits der Naht in 200042 und 200049 fort (Median 150–155); 200031 ist der schmale, deutlich dunklere mittelgraue Streifen am Rand der Fahrbahn (Median 105), der nur bei y 104–105 über Eck an sie stößt und in r0c0 als 100092 weiterläuft (in Runde 1 gleich Straßenrand), darum Straße und Straßenrand bleiben."
+  }
+ ],
+ "offen": [],
+ "nicht_geprueft": []
+}

@@ -1,0 +1,1439 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-05",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100202|r1c0:300001",
+      "art": "naht",
+      "bild": "paar_01.jpg",
+      "randpunkte": 24,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            0,
+            500
+          ],
+          "bis": [
+            2,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 20.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            4,
+            500
+          ],
+          "bis": [
+            10,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 23.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            15,
+            500
+          ],
+          "bis": [
+            28,
+            500
+          ],
+          "laenge": 14,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100202",
+          "teilkachel": "r0c0",
+          "id": 100202,
+          "klasse": "5.2.2",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.126,
+            "abstand": 0.058
+          },
+          "flaeche": 15635,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1692,
+          "urteil": "sauber",
+          "was_ist_es": "Heller offener Boden mit dunklen runden Flecken (Büsche oder Bäume) unten links, Hauptteil im Kontextrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Anger/Brache",
+            "fein": "Brache"
+          }
+        },
+        {
+          "segment": "r1c0:300001",
+          "teilkachel": "r1c0",
+          "id": 300001,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 38266,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 20660,
+          "urteil": "sauber",
+          "was_ist_es": "Nach der Teilung: Feld links mit hellen und dunklen Streifen in Richtung Nordwest–Südost (Streifenflur), zwischen Graben oben, Brache 66 rechts und Feldweg 27 unten; oben links eine hellere Ecke ohne Kante.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100221|r1c0:300001",
+      "art": "naht",
+      "bild": "paar_02.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            29,
+            500
+          ],
+          "bis": [
+            30,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 16.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            36,
+            500
+          ],
+          "bis": [
+            37,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 7.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100221",
+          "teilkachel": "r0c0",
+          "id": 100221,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.433,
+            "abstand": 0.081
+          },
+          "flaeche": 365,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 214,
+          "urteil": "sauber",
+          "was_ist_es": "Randstreifen an der Westkante des Feldes, unten am Kernrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c0:300001",
+          "teilkachel": "r1c0",
+          "id": 300001,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 38266,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 20660,
+          "urteil": "sauber",
+          "was_ist_es": "Nach der Teilung: Feld links mit hellen und dunklen Streifen in Richtung Nordwest–Südost (Streifenflur), zwischen Graben oben, Brache 66 rechts und Feldweg 27 unten; oben links eine hellere Ecke ohne Kante.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100223|r1c0:300001",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            31,
+            500
+          ],
+          "bis": [
+            35,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 15.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            38,
+            500
+          ],
+          "bis": [
+            42,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 13.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100223",
+          "teilkachel": "r0c0",
+          "id": 100223,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.87
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 160,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 149,
+          "urteil": "sauber",
+          "was_ist_es": "Randstreifen an der Westkante des Feldes, unten am Kernrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c0:300001",
+          "teilkachel": "r1c0",
+          "id": 300001,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 38266,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 20660,
+          "urteil": "sauber",
+          "was_ist_es": "Nach der Teilung: Feld links mit hellen und dunklen Streifen in Richtung Nordwest–Südost (Streifenflur), zwischen Graben oben, Brache 66 rechts und Feldweg 27 unten; oben links eine hellere Ecke ohne Kante.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100223|r1c0:300002",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            43,
+            500
+          ],
+          "bis": [
+            43,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 13.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100223",
+          "teilkachel": "r0c0",
+          "id": 100223,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.87
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 160,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 149,
+          "urteil": "sauber",
+          "was_ist_es": "Randstreifen an der Westkante des Feldes, unten am Kernrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c0:300002",
+          "teilkachel": "r1c0",
+          "id": 300002,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.583
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 27002,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 10060,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkles, gleichmäßiges Feld oben im Viertel mit schwachen Bearbeitungsstreifen Richtung Südwest–Nordost, links vom Graben (x 95–125) begrenzt; Teil des großen Feldes nördlich in r0c0.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100224|r1c0:300002",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            296,
+            500
+          ],
+          "bis": [
+            297,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100224",
+          "teilkachel": "r0c0",
+          "id": 100224,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.367,
+            "abstand": 0.083
+          },
+          "flaeche": 165,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 120,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner grauer Randstreifen links des Feldwegs 220 am unteren Kernrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c0:300002",
+          "teilkachel": "r1c0",
+          "id": 300002,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.583
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 27002,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 10060,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkles, gleichmäßiges Feld oben im Viertel mit schwachen Bearbeitungsstreifen Richtung Südwest–Nordost, links vom Graben (x 95–125) begrenzt; Teil des großen Feldes nördlich in r0c0.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c0:100224|r1c0:300073",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 13,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            298,
+            500
+          ],
+          "bis": [
+            310,
+            500
+          ],
+          "laenge": 13,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100224",
+          "teilkachel": "r0c0",
+          "id": 100224,
+          "klasse": "5.1.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.367,
+            "abstand": 0.083
+          },
+          "flaeche": 165,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 120,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner grauer Randstreifen links des Feldwegs 220 am unteren Kernrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Grünfläche",
+            "mittel": "Saum",
+            "fein": "Feldrain"
+          }
+        },
+        {
+          "segment": "r1c0:300073",
+          "teilkachel": "r1c0",
+          "id": 300073,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 2049,
+          "flaeche_kern": 2015,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Neu aus 4 und einer Ecke von 2: mittelgraues Rechteck mit geraden Kanten und hellem Fleck, daneben sehr dunkler Block: kleines Gebäude (Feldscheune); der dunkle Teil ist dunkles Dach, Schlagschatten oder Bäume.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Umriss von Hand nach den geraden Kanten gesetzt (x 333–397, y 63–105), Strecke an der Südseite geschätzt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c0:100220|r1c0:300073",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 8,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            311,
+            500
+          ],
+          "bis": [
+            311,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            318,
+            500
+          ],
+          "bis": [
+            318,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            321,
+            500
+          ],
+          "bis": [
+            321,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            328,
+            500
+          ],
+          "bis": [
+            332,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100220",
+          "teilkachel": "r0c0",
+          "id": 100220,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.191,
+            "abstand": 0.088
+          },
+          "flaeche": 386,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 342,
+          "urteil": "sauber",
+          "was_ist_es": "Heller schmaler Streifen nach Süden an der Feldecke unten links.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Weg",
+            "fein": "Feldweg"
+          }
+        },
+        {
+          "segment": "r1c0:300073",
+          "teilkachel": "r1c0",
+          "id": 300073,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 2049,
+          "flaeche_kern": 2015,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Neu aus 4 und einer Ecke von 2: mittelgraues Rechteck mit geraden Kanten und hellem Fleck, daneben sehr dunkler Block: kleines Gebäude (Feldscheune); der dunkle Teil ist dunkles Dach, Schlagschatten oder Bäume.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Umriss von Hand nach den geraden Kanten gesetzt (x 333–397, y 63–105), Strecke an der Südseite geschätzt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c0:100225|r1c0:300073",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            333,
+            500
+          ],
+          "bis": [
+            333,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 15.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100225",
+          "teilkachel": "r0c0",
+          "id": 100225,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.528,
+            "abstand": 0.103
+          },
+          "flaeche": 116,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 66,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner dunkler Fleck am unteren Kernrand rechts des Feldwegs.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Gebüsch",
+            "fein": "Gebüsch"
+          }
+        },
+        {
+          "segment": "r1c0:300073",
+          "teilkachel": "r1c0",
+          "id": 300073,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 2049,
+          "flaeche_kern": 2015,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Neu aus 4 und einer Ecke von 2: mittelgraues Rechteck mit geraden Kanten und hellem Fleck, daneben sehr dunkler Block: kleines Gebäude (Feldscheune); der dunkle Teil ist dunkles Dach, Schlagschatten oder Bäume.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Umriss von Hand nach den geraden Kanten gesetzt (x 333–397, y 63–105), Strecke an der Südseite geschätzt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Bebauung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c0:100225|r1c0:300070",
+      "art": "naht",
+      "bild": "paar_09.jpg",
+      "randpunkte": 6,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            334,
+            500
+          ],
+          "bis": [
+            339,
+            500
+          ],
+          "laenge": 6,
+          "kante_max": 9.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100225",
+          "teilkachel": "r0c0",
+          "id": 100225,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.528,
+            "abstand": 0.103
+          },
+          "flaeche": 116,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 66,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner dunkler Fleck am unteren Kernrand rechts des Feldwegs.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Gebüsch",
+            "fein": "Gebüsch"
+          }
+        },
+        {
+          "segment": "r1c0:300070",
+          "teilkachel": "r1c0",
+          "id": 300070,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "eingriff:teilen aus 300004",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 2762,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1503,
+          "urteil": "sauber",
+          "was_ist_es": "Neu aus 4 (mit Mittelstück aus 6): helles, etwa 8–10 Bildpunkte breites Band von Norden an der Scheune vorbei zur Landstraße: Feldweg bzw. Zufahrt.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Weg",
+            "fein": "Feldweg"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r0c0:100195|r1c0:300070",
+      "art": "naht",
+      "bild": "paar_10.jpg",
+      "randpunkte": 6,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            340,
+            500
+          ],
+          "bis": [
+            345,
+            500
+          ],
+          "laenge": 6,
+          "kante_max": 14.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100195",
+          "teilkachel": "r0c0",
+          "id": 100195,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.45
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 18523,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 16486,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Großes gleichmäßig graues Feld mit feinen hellen Linien südöstlich von Feld 154.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Grenze zu 154 läuft zackig ohne Bildkante (etwa 340/450 bis 440/400) durch eine einheitliche Fläche; ein dunklerer Bewirtschaftungsstreifen läuft ungebrochen von 195 nach 154.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feld",
+            "fein": "Feld"
+          }
+        },
+        {
+          "segment": "r1c0:300070",
+          "teilkachel": "r1c0",
+          "id": 300070,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "eingriff:teilen aus 300004",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 2762,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1503,
+          "urteil": "sauber",
+          "was_ist_es": "Neu aus 4 (mit Mittelstück aus 6): helles, etwa 8–10 Bildpunkte breites Band von Norden an der Scheune vorbei zur Landstraße: Feldweg bzw. Zufahrt.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Weg",
+            "fein": "Feldweg"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r0c1:200025|r0c1:200219",
+      "art": "viertel",
+      "bild": "paar_11.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            50
+          ],
+          "bis": [
+            750,
+            50
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200025",
+          "teilkachel": "r0c1",
+          "id": 200025,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.528,
+            "abstand": 0.161
+          },
+          "flaeche": 285,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 285,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Mittelgraue Ausbuchtung am Südrand der Straße an der Kreuzung, mit dünnem Ausläufer auf die Dachkante eines Langhauses.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 2,
+              "art": "grenze",
+              "text": "Ausläufer x 300–325, y 100–125 liegt auf der hellen Dachkante des Nachbarhauses (16), nicht auf der Straße.",
+              "flaeche_px": 60
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        },
+        {
+          "segment": "r0c1:200219",
+          "teilkachel": "r0c1",
+          "id": 200219,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1721,
+          "flaeche_kern": 1721,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkles Schattenband zwischen den Dachstreifen 43 und 41. (x 283–391, y 95–204)",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r0c1:200192|r0c1:200211",
+      "art": "viertel",
+      "bild": "paar_12.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            119
+          ],
+          "bis": [
+            750,
+            120
+          ],
+          "laenge": 2,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            122
+          ],
+          "bis": [
+            750,
+            122
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200192",
+          "teilkachel": "r0c1",
+          "id": 200192,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 6396,
+          "flaeche_kern": 6396,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Großes dunkles Schattenband zwischen den Langhäusern der Blockmitte (um das helle Nebengebäude 59). (x 246–395, y 109–296)",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        },
+        {
+          "segment": "r0c1:200211",
+          "teilkachel": "r0c1",
+          "id": 200211,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 2051,
+          "flaeche_kern": 2051,
+          "sicher": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Sehr helles, großes Dach (etwa 40 × 9 m) mitten im Block: Halle oder Scheune mit hellem Dach. (x 287–371, y 137–235)",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Bebaut",
+            "mittel": "Gebäude",
+            "fein": "Halle oder Scheune, helles Dach"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-05",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100202|r1c0:300001",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100221|r1c0:300001",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100223|r1c0:300001",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100223|r1c0:300002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100224|r1c0:300002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100224|r1c0:300073",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100220|r1c0:300073",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100225|r1c0:300073",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100225|r1c0:300070",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100195|r1c0:300070",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200025|r0c1:200219",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200192|r0c1:200211",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

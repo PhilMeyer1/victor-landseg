@@ -1,0 +1,15 @@
+{"name": "v3", "fenster": [32, 282, 314, 314], "faktor": 3, "viertel": [64, 314, 250, 250],
+ "eigene": [300032, 300038, 300042],
+ "maengel": [
+  [1, 78, 318, "Kleinstück 40 am Wegrand in Feld 32 verschmolzen"],
+  [2, 160, 367, "Kleinstücke 43, 44, 45 am Straßenrand in Feld 42 verschmolzen"],
+  [3, 298, 522, "Kleinstück 49 am Rain in Feld 42 verschmolzen"],
+  [4, 286, 471, "Lücke im Rain geschlossen, 38 und 46 zu einem Rain vereint"],
+  [5, 205, 335, "Rain 38 enthält oben einen Streifen am Straßenrand (kein Rain), nicht abgetrennt"],
+  [6, 230, 520, "Hellere, fleckige Fläche in Feld 42 ohne Kante: nicht geteilt, unsicher"],
+  [7, 140, 445, "Helle Spur in Feld 42 (Fahrspur?), belassen"],
+  [8, 90, 360, "Acker 67 (aus v1): dunkles Feld und hellerer Streifen zur Straße ohne klare Kante, nicht geteilt"]
+ ],
+ "klassen": {"300032": "Acker", "300038": "Feldrain", "300042": "Acker", "300067": "Acker"},
+ "klassen_lang": {"300032": "Offenland › Acker › Acker", "300038": "Offenland › Rain › Feldrain", "300042": "Offenland › Acker › Acker", "300067": "Offenland › Acker › Acker (Urteil in v1)"},
+ "vermerk": "Klassen nach Grauton, Textur und Form (SW-Scan 1968)"}

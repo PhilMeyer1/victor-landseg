@@ -1,0 +1,1521 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-04",
+  "uebergross": true,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100218|r0c1:200100",
+      "art": "naht",
+      "bild": "paar_01.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            489
+          ],
+          "bis": [
+            500,
+            490
+          ],
+          "laenge": 2,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100218",
+          "teilkachel": "r0c0",
+          "id": 100218,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.146,
+            "abstand": 0.049
+          },
+          "flaeche": 416,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 248,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle rundliche Flecken am unteren rechten Kernrand neben der Straße.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Gebüsch",
+            "fein": "Gebüsch"
+          }
+        },
+        {
+          "segment": "r0c1:200100",
+          "teilkachel": "r0c1",
+          "id": 200100,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.414,
+            "abstand": 0.074
+          },
+          "flaeche": 554,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 53,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche westlich der Straße 81, im Kern nur 53 Bildpunkte an der linken Kerngrenze: Schatten.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100218|r0c1:200115",
+      "art": "naht",
+      "bild": "paar_02.jpg",
+      "randpunkte": 9,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            491
+          ],
+          "bis": [
+            500,
+            499
+          ],
+          "laenge": 9,
+          "kante_max": 20.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100218",
+          "teilkachel": "r0c0",
+          "id": 100218,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.146,
+            "abstand": 0.049
+          },
+          "flaeche": 416,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 248,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle rundliche Flecken am unteren rechten Kernrand neben der Straße.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Gebüsch",
+            "fein": "Gebüsch"
+          }
+        },
+        {
+          "segment": "r0c1:200115",
+          "teilkachel": "r0c1",
+          "id": 200115,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.358,
+            "abstand": 0.21
+          },
+          "flaeche": 2229,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 21,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Fläche an der linken unteren Ecke des Kerns (21 Bildpunkte): Hof oder Dach westlich der Straße 81.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100229|r1c0:300004",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 5,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            480,
+            500
+          ],
+          "bis": [
+            484,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 14.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100229",
+          "teilkachel": "r0c0",
+          "id": 100229,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.447,
+            "abstand": 0.071
+          },
+          "flaeche": 794,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 19,
+          "urteil": "sauber",
+          "was_ist_es": "Nur 19 Bildpunkte im Kern am unteren Kernrand neben der Straße.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Bankett"
+          }
+        },
+        {
+          "segment": "r1c0:300004",
+          "teilkachel": "r1c0",
+          "id": 300004,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 8857,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 5154,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nach den Teilungen: helleres Rechteckfeld zwischen der Hecke im Nordwesten, dem Graben im Südwesten und der Straße; die schmalen dunklen Ränder (Hecke, Gehölz an der Nordostecke) stecken noch darin.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Schmale dunkle Hecke am Nordwestrand (x 425–550, y 64–105) liegt im Feld; nicht abgetrennt, weil nur 4–6 Bildpunkte breit.",
+              "flaeche_px": null
+            },
+            {
+              "nr": 2,
+              "art": "trennen",
+              "text": "Gehölz und Ecke der Dorfstraße im Nordosten (x 545–563, y 64–83) gehören nicht zum Feld; Hauptteil im Kontextrand.",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100218|r1c0:300004",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 9,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            491,
+            500
+          ],
+          "bis": [
+            499,
+            500
+          ],
+          "laenge": 9,
+          "kante_max": 11.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100218",
+          "teilkachel": "r0c0",
+          "id": 100218,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.146,
+            "abstand": 0.049
+          },
+          "flaeche": 416,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 248,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle rundliche Flecken am unteren rechten Kernrand neben der Straße.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Gebüsch",
+            "fein": "Gebüsch"
+          }
+        },
+        {
+          "segment": "r1c0:300004",
+          "teilkachel": "r1c0",
+          "id": 300004,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 8857,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 5154,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nach den Teilungen: helleres Rechteckfeld zwischen der Hecke im Nordwesten, dem Graben im Südwesten und der Straße; die schmalen dunklen Ränder (Hecke, Gehölz an der Nordostecke) stecken noch darin.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Schmale dunkle Hecke am Nordwestrand (x 425–550, y 64–105) liegt im Feld; nicht abgetrennt, weil nur 4–6 Bildpunkte breit.",
+              "flaeche_px": null
+            },
+            {
+              "nr": 2,
+              "art": "trennen",
+              "text": "Gehölz und Ecke der Dorfstraße im Nordosten (x 545–563, y 64–83) gehören nicht zum Feld; Hauptteil im Kontextrand.",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c1:200115|r1c1:400037",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            500,
+            500
+          ],
+          "bis": [
+            500,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 12.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200115",
+          "teilkachel": "r0c1",
+          "id": 200115,
+          "klasse": "0.2.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.358,
+            "abstand": 0.21
+          },
+          "flaeche": 2229,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 21,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Fläche an der linken unteren Ecke des Kerns (21 Bildpunkte): Hof oder Dach westlich der Straße 81.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Unklar",
+            "mittel": "Unklar",
+            "fein": "Hof oder Dach, mittelgrau"
+          }
+        },
+        {
+          "segment": "r1c1:400037",
+          "teilkachel": "r1c1",
+          "id": 400037,
+          "klasse": "0.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.526,
+            "abstand": 0.221
+          },
+          "flaeche": 643,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 37,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche an der Ecke Landstraße/Dorfstraße, fast ganz im Kontextrand; Schatten oder Baumkrone.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schlagschatten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c1:200100|r1c1:400037",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            501,
+            500
+          ],
+          "bis": [
+            504,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 14.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200100",
+          "teilkachel": "r0c1",
+          "id": 200100,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.414,
+            "abstand": 0.074
+          },
+          "flaeche": 554,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 53,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche westlich der Straße 81, im Kern nur 53 Bildpunkte an der linken Kerngrenze: Schatten.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schatten zwischen Häusern"
+          }
+        },
+        {
+          "segment": "r1c1:400037",
+          "teilkachel": "r1c1",
+          "id": 400037,
+          "klasse": "0.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.526,
+            "abstand": 0.221
+          },
+          "flaeche": 643,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 37,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche an der Ecke Landstraße/Dorfstraße, fast ganz im Kontextrand; Schatten oder Baumkrone.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schlagschatten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r1c0:300027|r1c0:300032",
+      "art": "viertel",
+      "bild": "paar_07.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            8,
+            750
+          ],
+          "bis": [
+            9,
+            750
+          ],
+          "laenge": 2,
+          "kante_max": 17.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300027",
+          "teilkachel": "r1c0",
+          "id": 300027,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.422
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 3744,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1789,
+          "urteil": "sauber",
+          "was_ist_es": "Helles, etwa 6–8 Bildpunkte (3 m) breites Band zwischen den Feldern, das von Westen auf die Straße trifft: Feldweg; jetzt bis an die Straße verlängert.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fehlt",
+              "text": "Der Weg endete bei x 191 vor der Straße; das Stück bis zur Straße (x 186–198, y 302–317) gehörte zu Acker 1 und verband zwei Felder, jetzt dem Weg zugewiesen.",
+              "flaeche_px": 223
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Weg",
+            "fein": "Feldweg"
+          }
+        },
+        {
+          "segment": "r1c0:300032",
+          "teilkachel": "r1c0",
+          "id": 300032,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.475
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 6366,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 298,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraues Feld westlich des dunklen Feldes 67 und südlich des Feldwegs, im Kern nur eine kleine Ecke (Hauptteil im Kontextrand); Kleinstück 40 am Wegrand jetzt darin.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r1c0:300027|r1c0:300066",
+      "art": "viertel",
+      "bild": "paar_08.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            133,
+            750
+          ],
+          "bis": [
+            133,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300027",
+          "teilkachel": "r1c0",
+          "id": 300027,
+          "klasse": "3.2.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.422
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 3744,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1789,
+          "urteil": "sauber",
+          "was_ist_es": "Helles, etwa 6–8 Bildpunkte (3 m) breites Band zwischen den Feldern, das von Westen auf die Straße trifft: Feldweg; jetzt bis an die Straße verlängert.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fehlt",
+              "text": "Der Weg endete bei x 191 vor der Straße; das Stück bis zur Straße (x 186–198, y 302–317) gehörte zu Acker 1 und verband zwei Felder, jetzt dem Weg zugewiesen.",
+              "flaeche_px": 223
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Weg",
+            "fein": "Feldweg"
+          }
+        },
+        {
+          "segment": "r1c0:300066",
+          "teilkachel": "r1c0",
+          "id": 300066,
+          "klasse": "5.2.2",
+          "grob": "5",
+          "herkunft": "eingriff:teilen aus 300001",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 11756,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 11756,
+          "urteil": "sauber",
+          "was_ist_es": "Neu aus 1: helle, fleckige Fläche ohne Bearbeitungsstreifen mit einzelnen dunklen Flecken (Büsche oder kleine Gruben), rechts der Graben zu Feld 15, unten bis an die Straße.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Grenze zu 1 links (x 133–190, y 135–315) von Hand auf den weichen Hell-dunkel-Übergang gesetzt, Strecke geschätzt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Brache",
+            "fein": "Brache mit Gebüsch"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r1c0:300010|r1c0:300066",
+      "art": "viertel",
+      "bild": "paar_09.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            136,
+            750
+          ],
+          "bis": [
+            136,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300010",
+          "teilkachel": "r1c0",
+          "id": 300010,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.556
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 9386,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 8305,
+          "urteil": "sauber",
+          "was_ist_es": "Helles, gleichmäßig breites Band (etwa 12 Bildpunkte, gut 5 m) quer durch die Teilkachel: Landstraße vom Dorf nach Südwesten.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße",
+            "fein": "Landstraße"
+          }
+        },
+        {
+          "segment": "r1c0:300066",
+          "teilkachel": "r1c0",
+          "id": 300066,
+          "klasse": "5.2.2",
+          "grob": "5",
+          "herkunft": "eingriff:teilen aus 300001",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 11756,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 11756,
+          "urteil": "sauber",
+          "was_ist_es": "Neu aus 1: helle, fleckige Fläche ohne Bearbeitungsstreifen mit einzelnen dunklen Flecken (Büsche oder kleine Gruben), rechts der Graben zu Feld 15, unten bis an die Straße.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Grenze zu 1 links (x 133–190, y 135–315) von Hand auf den weichen Hell-dunkel-Übergang gesetzt, Strecke geschätzt.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Brache",
+            "fein": "Brache mit Gebüsch"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r1c0:300004|r1c1:400037",
+      "art": "naht",
+      "bild": "paar_10.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            500
+          ],
+          "bis": [
+            500,
+            509
+          ],
+          "laenge": 10,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300004",
+          "teilkachel": "r1c0",
+          "id": 300004,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 8857,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 5154,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nach den Teilungen: helleres Rechteckfeld zwischen der Hecke im Nordwesten, dem Graben im Südwesten und der Straße; die schmalen dunklen Ränder (Hecke, Gehölz an der Nordostecke) stecken noch darin.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Schmale dunkle Hecke am Nordwestrand (x 425–550, y 64–105) liegt im Feld; nicht abgetrennt, weil nur 4–6 Bildpunkte breit.",
+              "flaeche_px": null
+            },
+            {
+              "nr": 2,
+              "art": "trennen",
+              "text": "Gehölz und Ecke der Dorfstraße im Nordosten (x 545–563, y 64–83) gehören nicht zum Feld; Hauptteil im Kontextrand.",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        },
+        {
+          "segment": "r1c1:400037",
+          "teilkachel": "r1c1",
+          "id": 400037,
+          "klasse": "0.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.526,
+            "abstand": 0.221
+          },
+          "flaeche": 643,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 37,
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche an der Ecke Landstraße/Dorfstraße, fast ganz im Kontextrand; Schatten oder Baumkrone.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schlagschatten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r1c0:300004|r1c1:400064",
+      "art": "naht",
+      "bild": "paar_11.jpg",
+      "randpunkte": 7,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            510
+          ],
+          "bis": [
+            500,
+            516
+          ],
+          "laenge": 7,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300004",
+          "teilkachel": "r1c0",
+          "id": 300004,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 8857,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 5154,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nach den Teilungen: helleres Rechteckfeld zwischen der Hecke im Nordwesten, dem Graben im Südwesten und der Straße; die schmalen dunklen Ränder (Hecke, Gehölz an der Nordostecke) stecken noch darin.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Schmale dunkle Hecke am Nordwestrand (x 425–550, y 64–105) liegt im Feld; nicht abgetrennt, weil nur 4–6 Bildpunkte breit.",
+              "flaeche_px": null
+            },
+            {
+              "nr": 2,
+              "art": "trennen",
+              "text": "Gehölz und Ecke der Dorfstraße im Nordosten (x 545–563, y 64–83) gehören nicht zum Feld; Hauptteil im Kontextrand.",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        },
+        {
+          "segment": "r1c1:400064",
+          "teilkachel": "r1c1",
+          "id": 400064,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.406
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 987,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 66,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Die breite, sehr helle Landstraße nach Südwesten (nur 66 px im Kern).",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Vorstufe 1.2.2 Weg; es ist die breite Landstraße (66/77).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Straße",
+            "fein": "Landstraße"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r1c0:300010|r1c1:400072",
+      "art": "naht",
+      "bild": "paar_12.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            520
+          ],
+          "bis": [
+            500,
+            522
+          ],
+          "laenge": 3,
+          "kante_max": 15.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300010",
+          "teilkachel": "r1c0",
+          "id": 300010,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.556
+          },
+          "instanz": {
+            "text": "paved path",
+            "eingerastet": true
+          },
+          "flaeche": 9386,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 8305,
+          "urteil": "sauber",
+          "was_ist_es": "Helles, gleichmäßig breites Band (etwa 12 Bildpunkte, gut 5 m) quer durch die Teilkachel: Landstraße vom Dorf nach Südwesten.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße",
+            "fein": "Landstraße"
+          }
+        },
+        {
+          "segment": "r1c1:400072",
+          "teilkachel": "r1c1",
+          "id": 400072,
+          "klasse": "5.1.2",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.635,
+            "abstand": 0.065
+          },
+          "flaeche": 292,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 246,
+          "urteil": "sauber",
+          "was_ist_es": "Dunklerer Saum am oberen Rand des Feldes 400078 unter der Landstraße.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feldrain",
+            "fein": "Rain/Wegrand"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 13,
+      "paar": "r1c0:300004|r1c1:400072",
+      "art": "naht",
+      "bild": "paar_13.jpg",
+      "randpunkte": 9,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            523
+          ],
+          "bis": [
+            500,
+            531
+          ],
+          "laenge": 9,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300004",
+          "teilkachel": "r1c0",
+          "id": 300004,
+          "klasse": "6.1",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 8857,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 5154,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nach den Teilungen: helleres Rechteckfeld zwischen der Hecke im Nordwesten, dem Graben im Südwesten und der Straße; die schmalen dunklen Ränder (Hecke, Gehölz an der Nordostecke) stecken noch darin.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Schmale dunkle Hecke am Nordwestrand (x 425–550, y 64–105) liegt im Feld; nicht abgetrennt, weil nur 4–6 Bildpunkte breit.",
+              "flaeche_px": null
+            },
+            {
+              "nr": 2,
+              "art": "trennen",
+              "text": "Gehölz und Ecke der Dorfstraße im Nordosten (x 545–563, y 64–83) gehören nicht zum Feld; Hauptteil im Kontextrand.",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenland",
+            "mittel": "Acker",
+            "fein": "Acker"
+          }
+        },
+        {
+          "segment": "r1c1:400072",
+          "teilkachel": "r1c1",
+          "id": 400072,
+          "klasse": "5.1.2",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.635,
+            "abstand": 0.065
+          },
+          "flaeche": 292,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 246,
+          "urteil": "sauber",
+          "was_ist_es": "Dunklerer Saum am oberen Rand des Feldes 400078 unter der Landstraße.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Landwirtschaft",
+            "mittel": "Feldrain",
+            "fein": "Rain/Wegrand"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-04",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100218|r0c1:200100",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100218|r0c1:200115",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100229|r1c0:300004",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100218|r1c0:300004",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200115|r1c1:400037",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200100|r1c1:400037",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300027|r1c0:300032",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300027|r1c0:300066",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300010|r1c0:300066",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300004|r1c1:400037",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300004|r1c1:400064",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300010|r1c1:400072",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300004|r1c1:400072",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

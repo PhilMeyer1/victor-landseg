@@ -1,0 +1,1 @@
+abgenommen, keine Mängel-Kandidaten aus den Blickwinkeln wunschtext, verhalten; nicht geprüft: wunschtext: Testläufe (unittest) führt der Blickwinkel wunschtext nicht aus; das Ergebnis der Tests belegt nur der Bericht und gehört zu verhalten.

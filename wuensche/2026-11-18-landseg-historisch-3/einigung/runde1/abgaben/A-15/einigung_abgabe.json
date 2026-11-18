@@ -1,0 +1,10 @@
+{"schema": "landseg-einigung-abgabe/1", "fassung": "A", "buendel": "A-15",
+ "bearbeiter": "agent:einigung-A-15:20261118i-r1",
+ "paare": [
+  {"paar": "r1c1:400627|r1c1:400699", "entscheidung": "gleich", "klasse": "1.1",
+   "grund": "An der Berührstelle (x 918, y 750) gehen das mittelgraue lange Dachband (Grauwert um 90–105) und der fleckige Teil darunter (85–95) ohne Helligkeitssprung ineinander über, beide sind Dachfläche desselben Gebäudeblocks; die Grauregel trennte nur an der Schwelle 90, und das magentafarbene Segment enthält auch ein besonntes helles Rechteckdach, so dass 1.1.4 zu eng ist und die gemeinsame Elternklasse Gebäude passt."},
+  {"paar": "r1c1:400629|r1c1:400630", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Das 35 Bildpunkte kleine türkise Stück ist ein ein bis zwei Bildpunkte breiter Halbton-Saum (Grauwert 70–100) entlang derselben schmalen Schattenfuge zwischen den Dächern, ohne Kante zu ihr und ohne eigene Dachform; es gehört zum Schatten, unter dem der Untergrund nicht erkennbar ist."}
+ ],
+ "offen": ["r1c1:400699 umfasst neben Dachfläche auch einen dunklen Streifen unten links am langen Dachband (vermutlich Schlagschatten); das ist eine Grenzfrage, keine Klassenfrage, und bleibt hier ungeändert."],
+ "nicht_geprueft": []}

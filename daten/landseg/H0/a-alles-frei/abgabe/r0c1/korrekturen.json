@@ -1,0 +1,417 @@
+{
+ "polygone": [
+  {
+   "name": "Hintausgasse zwischen den Blöcken",
+   "klasse": "1.2.2",
+   "sicher": false,
+   "grund": "schmales mittelgraues Band parallel zur unteren Straße, Lage und Breite von Hand geschätzt; ob Weg oder Grundstücksstreifen, entscheidet nur ein Farbbild oder Kataster",
+   "punkte": [
+    [
+     320,
+     292
+    ],
+    [
+     360,
+     262
+    ],
+    [
+     400,
+     229
+    ],
+    [
+     440,
+     200
+    ],
+    [
+     475,
+     184
+    ],
+    [
+     500,
+     178
+    ],
+    [
+     503,
+     188
+    ],
+    [
+     480,
+     196
+    ],
+    [
+     448,
+     212
+    ],
+    [
+     408,
+     242
+    ],
+    [
+     370,
+     272
+    ],
+    [
+     330,
+     302
+    ]
+   ]
+  },
+  {
+   "name": "dunkle Fläche am Blockkopf",
+   "klasse": "9",
+   "sicher": false,
+   "grund": "dunkelgraue, gleichmäßig körnige Fläche ohne Dachform: dichter Garten, dunkles Flachdach oder Schatten; im Farbbild prüfen",
+   "punkte": [
+    [
+     236,
+     134
+    ],
+    [
+     258,
+     118
+    ],
+    [
+     276,
+     107
+    ],
+    [
+     288,
+     110
+    ],
+    [
+     285,
+     125
+    ],
+    [
+     290,
+     140
+    ],
+    [
+     270,
+     150
+    ],
+    [
+     252,
+     150
+    ],
+    [
+     242,
+     145
+    ]
+   ]
+  }
+ ],
+ "punkte": [
+  {
+   "xy": [
+    266,
+    454
+   ],
+   "klasse": "1.1",
+   "sicher": false,
+   "grund": "dunkles, eckiges Objekt auf der Insel: kleines Gebäude im Schatten oder Baum",
+   "name": "Objekt auf der Insel"
+  },
+  {
+   "xy": [
+    509,
+    253
+   ],
+   "klasse": "2.4",
+   "sicher": false,
+   "grund": "dunkle Fläche mit feinen parallelen Streifen, geradem Rand und gezähnter Kante, ohne Schlagschatten: Beete oder Rebzeilen; ein großes dunkles Dach ist nicht ganz ausgeschlossen",
+   "name": "Gartenland mit Reihen"
+  },
+  {
+   "xy": [
+    474,
+    249
+   ],
+   "klasse": "1.3",
+   "sicher": false,
+   "grund": "helle offene Fläche zwischen dunklen Bauten: Hof",
+   "name": "Hof"
+  },
+  {
+   "xy": [
+    340,
+    365
+   ],
+   "klasse": "2",
+   "sicher": false,
+   "grund": "dunkle, fein gemusterte Fläche mit schwachen Linien: Garten mit Bäumen oder Beeten; Gehölz nicht ausgeschlossen",
+   "name": "Garten/Gehölz"
+  }
+ ],
+ "verschmelzen": [
+  {
+   "punkte": [
+    [
+     249,
+     419
+    ],
+    [
+     251,
+     469
+    ],
+    [
+     249,
+     445
+    ],
+    [
+     251,
+     454
+    ],
+    [
+     216,
+     394
+    ]
+   ],
+   "klasse": "1.2.1",
+   "sicher": true,
+   "grund": "breites helles Band, Fahrbahn beidseits der Insel",
+   "name": "Hauptstraße mit Westast um die Insel"
+  },
+  {
+   "punkte": [
+    [
+     285,
+     431
+    ],
+    [
+     271,
+     390
+    ]
+   ],
+   "klasse": "1.2.1",
+   "sicher": false,
+   "grund": "heller Streifen östlich der Fahrbahn ohne Trennkante: Fahrbahnteil oder Gehweg; ein Längsbau mit Schatten östlich ist nicht ausgeschlossen",
+   "name": "Ostrand Hauptstraße"
+  },
+  {
+   "punkte": [
+    [
+     308,
+     411
+    ],
+    [
+     315,
+     423
+    ]
+   ],
+   "klasse": "2.2.1",
+   "sicher": false,
+   "grund": "rundliche, wolkig-körnige dunkle Krone mit hellem Rand: Baum oder Baumgruppe; Gebüsch nicht ausgeschlossen",
+   "name": "Baum an der Kreuzung"
+  },
+  {
+   "punkte": [
+    [
+     276,
+     473
+    ],
+    [
+     275,
+     483
+    ],
+    [
+     283,
+     483
+    ],
+    [
+     271,
+     489
+    ]
+   ],
+   "klasse": "2.3",
+   "sicher": false,
+   "grund": "mittelgraue Fläche auf der Verkehrsinsel mit dunklem Fleck: Platzgrün; ob Rasen oder Pflaster, zeigt nur Farbe",
+   "name": "Inselgrün"
+  },
+  {
+   "punkte": [
+    [
+     329,
+     539
+    ],
+    [
+     318,
+     488
+    ],
+    [
+     318,
+     500
+    ],
+    [
+     327,
+     506
+    ]
+   ],
+   "klasse": "2.3",
+   "sicher": false,
+   "grund": "mittelgraues Dreieck zwischen zwei Straßenästen ohne Dächer, mit hellem Pfad: Anger; Belag auf SW nicht erkennbar",
+   "name": "Anger"
+  },
+  {
+   "punkte": [
+    [
+     364,
+     243
+    ],
+    [
+     359,
+     229
+    ],
+    [
+     358,
+     219
+    ]
+   ],
+   "klasse": "1.1.2",
+   "sicher": false,
+   "grund": "heller Block quer am Ende der Halle mit eigenem Schatten: Querbau; ob angebaut oder eigenes Gebäude, ist nicht sicher",
+   "name": "Querbau an der Halle"
+  },
+  {
+   "punkte": [
+    [
+     290,
+     80
+    ],
+    [
+     252,
+     117
+    ],
+    [
+     240,
+     113
+    ],
+    [
+     217,
+     141
+    ],
+    [
+     85,
+     204
+    ]
+   ],
+   "klasse": "1.2.1",
+   "sicher": true,
+   "grund": "durchgehendes helles Band, in der Mitte etwas dunkler",
+   "name": "Straße SW-NO oben"
+  },
+  {
+   "punkte": [
+    [
+     362,
+     20
+    ],
+    [
+     346,
+     36
+    ],
+    [
+     361,
+     41
+    ]
+   ],
+   "klasse": "1.2.1",
+   "sicher": true,
+   "grund": "helles Band, Einmündung",
+   "name": "Nordstich mit Einmündung"
+  },
+  {
+   "punkte": [
+    [
+     540,
+     262
+    ],
+    [
+     434,
+     369
+    ],
+    [
+     416,
+     363
+    ],
+    [
+     335,
+     432
+    ],
+    [
+     341,
+     413
+    ],
+    [
+     354,
+     404
+    ],
+    [
+     366,
+     402
+    ],
+    [
+     365,
+     398
+    ]
+   ],
+   "klasse": "1.2.1",
+   "sicher": true,
+   "grund": "breite helle Fahrbahn mit schmalem hellem Randstreifen auf der Nordwestseite, getrennt nur durch eine dünne dunkle Linie (Rinne oder Bordstein)",
+   "name": "Straße SW-NO unten"
+  },
+  {
+   "punkte": [
+    [
+     325,
+     190
+    ],
+    [
+     296,
+     150
+    ]
+   ],
+   "klasse": "1.1.3",
+   "sicher": true,
+   "grund": "großes, breites, einheitlich helles Dach, doppelt so breit wie die Streckhöfe; Nordwestende mit schwacher Naht gehört dazu",
+   "name": "Halle"
+  }
+ ],
+ "fein": [
+  {
+   "name": "Westblock, Dächer quer",
+   "punkte": [
+    [
+     0,
+     290
+    ],
+    [
+     165,
+     290
+    ],
+    [
+     200,
+     340
+    ],
+    [
+     225,
+     420
+    ],
+    [
+     255,
+     520
+    ],
+    [
+     265,
+     628
+    ],
+    [
+     0,
+     628
+    ]
+   ],
+   "h": 2,
+   "rag": 9
+  }
+ ]
+}

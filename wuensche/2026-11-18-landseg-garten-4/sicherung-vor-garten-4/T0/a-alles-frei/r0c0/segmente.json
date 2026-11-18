@@ -1,0 +1,3561 @@
+{
+  "schema": "landseg-segmente/1",
+  "teilkachel": "r0c0",
+  "fassung": "A",
+  "verlauf": [
+    {
+      "zeit": "2026-11-17T18:46:55+00:00",
+      "bearbeiter": "a-alles-frei-r0c0",
+      "op": "neu_aufgebaut",
+      "beschreibung": "Vorstufe als Ausgang, alle IDs neu zugeordnet und verschmolzen, große Wiese per Linienzug geteilt, Hecke/Schatten zeilenweise nach Helligkeit getrennt, Terrasse, Gartenhaus, Mauer, rundes Objekt per Polygon; Splitter unter 75 Bildpunkten an den Nachbarn mit der längsten Grenze (Skripte bauen.py, abschluss.py)"
+    },
+    {
+      "nr": 2,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100070,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 3,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100103,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 4,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100070,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100070|r0c0:100103",
+              "mit": "r0c0:100103",
+              "entscheidung": "grenze",
+              "grund": "Offene ungemähte Wiese im Norden und Wiese mit vielen dunklen Kronen im Süden; der Übergang ist ohne Kante von Hand gezogen, aber die Dichte der Sträucher unterscheidet zwei Zonen.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 5,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100098,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 6,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100119,
+        "klasse": "4.1"
+      },
+      "ergebnis": {
+        "alt": "4.1.2",
+        "neu": "4.1"
+      }
+    },
+    {
+      "nr": 7,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100119,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 8,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100103,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100070|r0c0:100103",
+              "mit": "r0c0:100070",
+              "entscheidung": "grenze",
+              "grund": "Offene ungemähte Wiese im Norden und Wiese mit vielen dunklen Kronen im Süden; der Übergang ist ohne Kante von Hand gezogen, aber die Dichte der Sträucher unterscheidet zwei Zonen.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ],
+          "sicher": "ja"
+        }
+      }
+    },
+    {
+      "nr": 9,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100103,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100070|r0c0:100103",
+              "mit": "r0c0:100070",
+              "entscheidung": "grenze",
+              "grund": "Offene ungemähte Wiese im Norden und Wiese mit vielen dunklen Kronen im Süden; der Übergang ist ohne Kante von Hand gezogen, aber die Dichte der Sträucher unterscheidet zwei Zonen.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r0c0:100103|r1c0:300016",
+              "mit": "r1c0:300016",
+              "entscheidung": "unklar",
+              "grund": "An der Naht liegt beidseits dieselbe raue Wiese mit verstreuten Sträuchern, aber das Segment unten umfasst auch die glatte Wiese im Westen, sodass weder Verbuschte Wiese noch Wiese für beide ganzen Segmente sicher passt.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 10,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100122,
+        "klasse": "6.1"
+      },
+      "ergebnis": {
+        "alt": "6.2",
+        "neu": "6.1"
+      }
+    },
+    {
+      "nr": 11,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100122,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 12,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100122,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100122|r1c0:300051",
+              "mit": "r1c0:300051",
+              "entscheidung": "gleich",
+              "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 13,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100123,
+        "klasse": "6.1"
+      },
+      "ergebnis": {
+        "alt": "6.2",
+        "neu": "6.1"
+      }
+    },
+    {
+      "nr": 14,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100123,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 15,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100120,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 16,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100120,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r1c0:300051",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 17,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-01:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100120,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100120|r1c0:300051",
+              "mit": "r1c0:300051",
+              "entscheidung": "grenze",
+              "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r0c0:100120|r1c0:300009",
+              "mit": "r1c0:300009",
+              "entscheidung": "gleich",
+              "grund": "Dieselbe raue, ungemähte Wiese beidseits der Naht ohne Kante.",
+              "bearbeiter": "agent:einigung-A-01:20261118e",
+              "buendel": "A-01",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "4.1.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 18,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-02:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100034,
+        "klasse": "6"
+      },
+      "ergebnis": {
+        "alt": "6.5",
+        "neu": "6"
+      }
+    },
+    {
+      "nr": 19,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100034,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 20,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100034,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100034|r0c1:200055",
+              "mit": "r0c1:200055",
+              "entscheidung": "gleich",
+              "grund": "Am Nordrand (y 0–1) läuft dieselbe dunkelgrüne Gehölzmasse ohne Kante über die Naht; r0c0 hat die Fläche von 200055 in ihrem Kontextrand selbst zu 100034 gezählt (595 Bildpunkte Überdeckung), Baum oder Großstrauch ist bei rund 25 m² Krone auf 20 cm nicht sicher, daher die gemeinsame Elternklasse Gehölz.",
+              "bearbeiter": "agent:einigung-A-02:20261118e",
+              "buendel": "A-02",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6"
+            }
+          ],
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 21,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-02:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100057,
+        "klasse": "6.3"
+      },
+      "ergebnis": {
+        "alt": "6.5",
+        "neu": "6.3"
+      }
+    },
+    {
+      "nr": 22,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100057,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 23,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100058,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 24,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100058,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100058|r0c1:200071",
+              "mit": "r0c1:200071",
+              "entscheidung": "grenze",
+              "grund": "Die beiden Segmente berühren sich nur über Eck an einem Punkt (x 500, y 89): oben endet die dunkle Baumkrone, darunter beginnt der helle, niedrige Grünstreifen am Nordrand der Straße, also zwei verschiedene Flächen.",
+              "bearbeiter": "agent:einigung-A-02:20261118e",
+              "buendel": "A-02",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 25,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-02:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100058,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100058|r0c1:200071",
+              "mit": "r0c1:200071",
+              "entscheidung": "grenze",
+              "grund": "Die beiden Segmente berühren sich nur über Eck an einem Punkt (x 500, y 89): oben endet die dunkle Baumkrone, darunter beginnt der helle, niedrige Grünstreifen am Nordrand der Straße, also zwei verschiedene Flächen.",
+              "bearbeiter": "agent:einigung-A-02:20261118e",
+              "buendel": "A-02",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r0c0:100058|r0c1:200087",
+              "mit": "r0c1:200087",
+              "entscheidung": "gleich",
+              "grund": "200087 liegt mit 109 von 114 Bildpunkten genau auf dem Grünstreifen 100058 und ragt nur mit 4 Bildpunkten (x 500–502, y 90–91) in den Kern, wo das Bild denselben hellgrünen, niedrigen Straßenrandstreifen zeigt; die Baumgruppen-Klasse war nur grob aus der Vorstufe übernommen.",
+              "bearbeiter": "agent:einigung-A-02:20261118e",
+              "buendel": "A-02",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "4.2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 26,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100049,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 27,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100067,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null,
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 28,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100076,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 29,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100076,
+        "klasse": "6.3.1"
+      },
+      "ergebnis": {
+        "alt": "6.5",
+        "neu": "6.3.1"
+      }
+    },
+    {
+      "nr": 30,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100076,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100076|r0c1:200092",
+              "mit": "r0c1:200092",
+              "entscheidung": "grenze",
+              "grund": "Die helle, grob gekörnte Krone des Gartenbaums stößt am oberen Kronenrand nur in einem Punkt an die dunkelgrüne, glattere Baumgruppe im Nordosten; es sind zwei verschiedene Kronen.",
+              "bearbeiter": "agent:einigung-A-03:20261118e",
+              "buendel": "A-03",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 31,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100067,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100067|r0c1:200100",
+              "mit": "r0c1:200100",
+              "entscheidung": "unklar",
+              "grund": "Beide Seiten zeigen dasselbe gleichmäßig dunkle Band an der Bordkante, das auch auf die Fahrbahn ausgreift; ob es dunkles Gehölz oder der Schlagschatten des hellen Gartenbaums südlich davon ist, lässt das Bild nicht sicher erkennen.",
+              "bearbeiter": "agent:einigung-A-03:20261118e",
+              "buendel": "A-03",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ],
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 32,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100081,
+        "klasse": "6"
+      },
+      "ergebnis": {
+        "alt": "6.5",
+        "neu": "6"
+      }
+    },
+    {
+      "nr": 33,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100081,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 34,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100081,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100081|r0c1:200100",
+              "mit": "r0c1:200100",
+              "entscheidung": "gleich",
+              "grund": "Entlang der Naht zeigen beide Seiten dasselbe dunkelgrüne, teils beschattete Gartengehölz zwischen Konifere und Hauswand, das nach Süden in dunkle Kronen übergeht; ob Strauch oder Baumgruppe, ist nicht sicher, daher die Elternklasse Gehölz.",
+              "bearbeiter": "agent:einigung-A-03:20261118e",
+              "buendel": "A-03",
+              "zeit": "2026-11-18T00:53:57+00:00",
+              "klasse": "6"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 35,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100100,
+        "klasse": "6.3.2"
+      },
+      "ergebnis": {
+        "alt": "6.3.1",
+        "neu": "6.3.2"
+      }
+    },
+    {
+      "nr": 36,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100100,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 37,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100082,
+        "klasse": "6.3.3"
+      },
+      "ergebnis": {
+        "alt": "6.5",
+        "neu": "6.3.3"
+      }
+    },
+    {
+      "nr": 38,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100082,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 39,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100110,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 40,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100110,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100110|r0c1:200143",
+              "mit": "r0c1:200143",
+              "entscheidung": "grenze",
+              "grund": "Das braune Feld mit Schwaden und der dunkelgrüne Gehölzbestand berühren sich nur an einem Eckpunkt; Farbe und Textur sind klar verschieden.",
+              "bearbeiter": "agent:einigung-A-03:20261118e",
+              "buendel": "A-03",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ],
+          "sicher": "ja"
+        }
+      }
+    },
+    {
+      "nr": 41,
+      "zeit": "2026-11-18T00:53:57+00:00",
+      "bearbeiter": "agent:einigung-A-03:20261118e",
+      "op": "einigung",
+      "parameter": {
+        "id": 100110,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100110|r0c1:200143",
+              "mit": "r0c1:200143",
+              "entscheidung": "grenze",
+              "grund": "Das braune Feld mit Schwaden und der dunkelgrüne Gehölzbestand berühren sich nur an einem Eckpunkt; Farbe und Textur sind klar verschieden.",
+              "bearbeiter": "agent:einigung-A-03:20261118e",
+              "buendel": "A-03",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            },
+            {
+              "paar": "r0c0:100110|r0c1:200160",
+              "mit": "r0c1:200160",
+              "entscheidung": "unklar",
+              "grund": "Der kleine bräunlich-grüne Fleck am Nordrand des Felds liegt im Schatten der Bäume; ob es beschatteter Feldrand oder ein schmaler Grassaum ist, lässt sich auf 2 bis 3 m Breite nicht erkennen.",
+              "bearbeiter": "agent:einigung-A-03:20261118e",
+              "buendel": "A-03",
+              "zeit": "2026-11-18T00:53:57+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 42,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100020,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "4.2",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 43,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100022,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 44,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100033,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 45,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100040,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.1",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 46,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100043,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 47,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100044,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 48,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100050,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 49,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100055,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.2",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 50,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100079,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.1",
+        "neu": "4.4"
+      }
+    },
+    {
+      "nr": 51,
+      "zeit": "2026-11-18T17:34:05+00:00",
+      "bearbeiter": "wf:garten:20261118n",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100099,
+        "klasse": "4.4"
+      },
+      "ergebnis": {
+        "alt": "3.1",
+        "neu": "4.4"
+      }
+    }
+  ],
+  "offen": [
+    "Segment 21 (Gartenhecke (geschnitten, linear), Hecke/Zaun an der Grundgrenze): Hecke oder Zaun mit Schatten",
+    "Segment 22 (Ziergarten gemischt, Garten am Hang mit Sträuchern): Rasen und Gehölz gemischt, Grenze zur Böschung geschätzt",
+    "Segment 24 (Terrasse / Gartenweg / Beckenumrandung, Gartenweg/Treppe, Pflaster rötlich): Weg oder Mauerkrone",
+    "Segment 25 (Gartengehölz (Strauch, Kleinbaum), Strauchreihe am Zaun): Klasse nach Bild nicht eindeutig",
+    "Segment 30 (Gartenausstattung, Paletten/Sandkasten im Garten): Art des Gegenstands unsicher",
+    "Segment 33 (Ziergarten gemischt, Gartenstreifen östlich Haus): Klasse nach Bild nicht eindeutig",
+    "Segment 34 (Gartengehölz (Strauch, Kleinbaum), Gartengehölz östlich Haus): Klasse nach Bild nicht eindeutig",
+    "Segment 37 (Mauer / Einfassung (linear), Mauerkante mit Schattenband): niedrige Mauer vermutet",
+    "Segment 38 (Mauer / Einfassung (linear), Mauerkante mit Schattenband): niedrige Mauer vermutet",
+    "Segment 41 (Nebengebäude / Anbau / Gartenhaus, Gartenhaus/Spielhaus): kleines Dach, Art unsicher",
+    "Segment 43 (Ziergarten gemischt, Gartenstreifen südlich Haus mit Möbeln): Klasse nach Bild nicht eindeutig",
+    "Segment 44 (Ziergarten gemischt, Garten mit befestigter Fläche): überwiegend Rand",
+    "Segment 54 (Nebengebäude / Anbau / Gartenhaus, Anbau/Pergola rotbraun am Haus): Dach eines Anbaus oder Markise",
+    "Segment 55 (Ziergarten gemischt, Gartenstreifen südlich Haus mit Möbeln): Klasse nach Bild nicht eindeutig",
+    "Segment 57 (Gartengehölz (Strauch, Kleinbaum), Gartenbaum dunkel): Baum oder Großstrauch",
+    "Segment 64 (Hof / Zufahrt / Platz / Randstreifen, Randstreifen/Gehsteig Südrand der Straße): mit kleinen Sträuchern",
+    "Segment 65 (Gartenhecke (geschnitten, linear), Hecke nördlich Flachdachhaus): Hecke im Hausschatten",
+    "Segment 66 (Gartengehölz (Strauch, Kleinbaum), Gartenstrauch NO-Ecke Haus): Klasse nach Bild nicht eindeutig",
+    "Segment 67 (Gartengehölz (Strauch, Kleinbaum), Gartengehölz dunkel): Klasse nach Bild nicht eindeutig",
+    "Segment 69 (Baum (Einzelkrone), Baum in der Wiese): Baum oder großer Strauch",
+    "Segment 73 (Schlagschatten, Hausschatten an der Westwand): Klasse nach Bild nicht eindeutig",
+    "Segment 75 (Gartengehölz (Strauch, Kleinbaum), Gartenbaum dunkel (Nadel?)): Klasse nach Bild nicht eindeutig",
+    "Segment 77 (Gebüsch / Strauch, Gebüsch in der Wiese): Klasse nach Bild nicht eindeutig",
+    "Segment 78 (Gartenausstattung, runder heller Gegenstand im Rasen): Schachtdeckel, Tisch oder Becken",
+    "Segment 81 (Gartengehölz (Strauch, Kleinbaum), Gartengehölz): Klasse nach Bild nicht eindeutig",
+    "Segment 82 (Gartengehölz (Strauch, Kleinbaum), Gartenkonifere bläulich): Klasse nach Bild nicht eindeutig",
+    "Segment 85 (Gebüsch / Strauch, Gebüsch in der Wiese): Klasse nach Bild nicht eindeutig",
+    "Segment 86 (Gebüsch / Strauch, Gebüsch): Klasse nach Bild nicht eindeutig",
+    "Segment 87 (Mauer / Einfassung (linear), Mauer/Randstein an der Gartengrenze Süd): schmal, Lage geschätzt",
+    "Segment 88 (Gartengehölz (Strauch, Kleinbaum), Sträucher SW-Ecke Garten): Klasse nach Bild nicht eindeutig",
+    "Segment 89 (Gartengehölz (Strauch, Kleinbaum), Strauch an der Gartengrenze): Klasse nach Bild nicht eindeutig",
+    "Segment 90 (Gartengehölz (Strauch, Kleinbaum), Strauch an der Gartengrenze): Klasse nach Bild nicht eindeutig",
+    "Segment 91 (Schwimmbecken, Schwimmbecken abgedeckt): Abdeckung grau; Becken vermutet",
+    "Segment 92 (Baum (Einzelkrone), Baum dunkel am Gartenrand): Klasse nach Bild nicht eindeutig",
+    "Segment 96 (Baum (Einzelkrone), Baum dunkel): Klasse nach Bild nicht eindeutig",
+    "Segment 97 (Baum (Einzelkrone), Baum dunkel): Klasse nach Bild nicht eindeutig",
+    "Segment 102 (Gebüsch / Strauch, Gebüsch): Klasse nach Bild nicht eindeutig",
+    "Segment 104 (Wiese ungemäht (Altgras, Kräuter), Wiese zwischen Garten und Feld): Wiese oder ungepflegter Gartenteil",
+    "Segment 107 (Baum (Einzelkrone), Baum dunkel, große Krone): Krone oder Krone mit Schlagschatten",
+    "Segment 108 (Baum (Einzelkrone), Baum dunkel): Klasse nach Bild nicht eindeutig",
+    "Segment 109 (Gebüsch / Strauch, Gebüsch): Klasse nach Bild nicht eindeutig",
+    "Segment 111 (Gebüsch / Strauch, Strauch hell): Klasse nach Bild nicht eindeutig",
+    "Segment 112 (Baum (Einzelkrone), Baum dunkel): Klasse nach Bild nicht eindeutig",
+    "Segment 113 (Baum (Einzelkrone), Baum dunkel): Baum oder Gebüsch",
+    "Segment 114 (Baum (Einzelkrone), Baum dunkel): Klasse nach Bild nicht eindeutig",
+    "Segment 115 (Baum (Einzelkrone), Baum dunkel): Klasse nach Bild nicht eindeutig",
+    "Segment 116 (Gebüsch / Strauch, Gebüsch klein): Klasse nach Bild nicht eindeutig",
+    "Segment 117 (Baumgruppe / Gehölzbestand, Gehölzrand, dunkle Kronen): dunkle Kronen oder Schatten des Bestands",
+    "Segment 118 (Baumgruppe / Gehölzbestand, Gehölzrand, dunkle Kronen): dunkle Kronen oder Schatten des Bestands",
+    "Segment 119 (Wiese gleichmäßig niedrig, Wiese gleichmäßig, niedrig): gemäht oder nur kurzrasig, nicht sicher",
+    "Segment 123 (Baumgruppe / Gehölzbestand, Gehölz dunkel SO): Klasse nach Bild nicht eindeutig",
+    "Dunkle Kronen (viele 4.1/4.2): wahrscheinlich Nadelbäume oder beschattete Kronen; Nadel/Laub bewusst nicht vergeben, bei Segmenten im Gehölzrand südlich der Wiese auch Schlagschatten des Bestands möglich.",
+    "Grenze zwischen offener Wiese (3.1.1) und verbuschter Wiese (3.3) von Hand als Linienzug gezogen; dort gibt es keine scharfe Bildkante.",
+    "In der verbuschten Wiese ein schmaler heller Trampelpfad (etwa 2 Bildpunkte breit) sichtbar, nicht als eigenes Segment ausgeschieden.",
+    "Schwaden-Fläche (3.2): ob Getreide-Stoppel mit Stroh oder gemähte Wiese mit Heu, ist im Bild nicht zu entscheiden.",
+    "Kontextrand (außerhalb des Kerns) nur grob nachgesehen; Klassen dort zählen nicht."
+  ],
+  "nicht_geprueft": [],
+  "stand": "Abgabe C r0c0, Codes nach kategorien-a.json, ID + 100000",
+  "segmente": [
+    {
+      "id": 100001,
+      "klasse": "2.1.1",
+      "grob": "2",
+      "name": "Straße West (Rand, unter Baumschatten)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 728,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100035,
+        100025
+      ],
+      "id_abgabe": 1,
+      "klasse_teil": "1.2.1",
+      "klasse_teil_name": "Straße (Asphalt)"
+    },
+    {
+      "id": 100002,
+      "klasse": "3.1",
+      "grob": "3",
+      "name": "Gartenrasen NW (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 1915,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100002,
+        100001,
+        100023
+      ],
+      "notiz": "nur Rand",
+      "id_abgabe": 2,
+      "klasse_teil": "2.1",
+      "klasse_teil_name": "Rasen (gepflegt)"
+    },
+    {
+      "id": 100003,
+      "klasse": "6.4",
+      "grob": "6",
+      "name": "Hecke/Zaunlinie NW (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 114,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100026
+      ],
+      "notiz": "Hecke oder Zaun mit Schatten",
+      "id_abgabe": 3,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Gartenhecke (geschnitten, linear)"
+    },
+    {
+      "id": 100004,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "rotlaubiger Gartenstrauch (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 222,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100003
+      ],
+      "id_abgabe": 4,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100005,
+      "klasse": "2.1.3",
+      "grob": "2",
+      "name": "Beckenumrandung / Terrasse am Pool (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 731,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100004
+      ],
+      "id_abgabe": 5,
+      "klasse_teil": "1.2.3",
+      "klasse_teil_name": "Terrasse / Gartenweg / Beckenumrandung"
+    },
+    {
+      "id": 100006,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "name": "Schwimmbecken offen (Rand)",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 2029,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100005,
+        100037
+      ],
+      "id_abgabe": 6,
+      "klasse_teil": "1.3.1",
+      "klasse_teil_name": "Schwimmbecken"
+    },
+    {
+      "id": 100007,
+      "klasse": "3.2",
+      "grob": "3",
+      "name": "Ziergarten N (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 538,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100007,
+        100008,
+        100006
+      ],
+      "id_abgabe": 7,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Ziergarten gemischt"
+    },
+    {
+      "id": 100008,
+      "klasse": "2.1.3",
+      "grob": "2",
+      "name": "Beckenumrandung / Terrasse am Pool (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 528,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100020
+      ],
+      "id_abgabe": 8,
+      "klasse_teil": "1.2.3",
+      "klasse_teil_name": "Terrasse / Gartenweg / Beckenumrandung"
+    },
+    {
+      "id": 100009,
+      "klasse": "0.1",
+      "grob": "0",
+      "name": "Schatten zwischen Pool und Haus (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 399,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100009
+      ],
+      "id_abgabe": 9,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Schlagschatten"
+    },
+    {
+      "id": 100010,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "name": "Wohnhaus rotes Ziegeldach",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 5251,
+      "flaeche_kern": 158,
+      "vorstufe": [
+        100010
+      ],
+      "id_abgabe": 10,
+      "klasse_teil": "1.1.1",
+      "klasse_teil_name": "Wohngebäude (Hauptdach)"
+    },
+    {
+      "id": 100011,
+      "klasse": "0.1",
+      "grob": "0",
+      "name": "Schatten am Haus (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 689,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100012
+      ],
+      "id_abgabe": 11,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Schlagschatten"
+    },
+    {
+      "id": 100012,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "name": "Wohnhaus mit Solaranlage (Rand)",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 3532,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100013
+      ],
+      "id_abgabe": 12,
+      "klasse_teil": "1.1.1",
+      "klasse_teil_name": "Wohngebäude (Hauptdach)"
+    },
+    {
+      "id": 100013,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartenstrauch (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 314,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100030
+      ],
+      "id_abgabe": 13,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100014,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 643,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100015
+      ],
+      "id_abgabe": 14,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100015,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartenstrauch (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 259,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100032
+      ],
+      "id_abgabe": 15,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100016,
+      "klasse": "3.1",
+      "grob": "3",
+      "name": "Gartenrasen NO (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 2765,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100016,
+        100029,
+        100018
+      ],
+      "id_abgabe": 16,
+      "klasse_teil": "2.1",
+      "klasse_teil_name": "Rasen (gepflegt)"
+    },
+    {
+      "id": 100017,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "name": "Wohnhaus rotes Dach (Rand)",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 1588,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100017
+      ],
+      "id_abgabe": 17,
+      "klasse_teil": "1.1.1",
+      "klasse_teil_name": "Wohngebäude (Hauptdach)"
+    },
+    {
+      "id": 100018,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Baumgruppe an der Straße, dunkle Kronen",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 11103,
+      "flaeche_kern": 5987,
+      "vorstufe": [
+        100048,
+        100027,
+        100072,
+        100049
+      ],
+      "notiz": "Nadel/Laub nicht sicher",
+      "id_abgabe": 18,
+      "klasse_teil": "4.2",
+      "klasse_teil_name": "Baumgruppe / Gehölzbestand"
+    },
+    {
+      "id": 100019,
+      "klasse": "6.4",
+      "grob": "6",
+      "name": "Hecke/Zaun an der Grundgrenze",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 115,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100041
+      ],
+      "notiz": "Hecke oder Zaun mit Schatten",
+      "id_abgabe": 19,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Gartenhecke (geschnitten, linear)"
+    },
+    {
+      "id": 100020,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Grasböschung zwischen Hecke und Straße",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 2060,
+      "flaeche_kern": 1272,
+      "vorstufe": [
+        100038,
+        100044
+      ],
+      "id_abgabe": 20,
+      "klasse_teil": "3.1.3",
+      "klasse_teil_name": "Böschung / Straßenbegleitgrün"
+    },
+    {
+      "id": 100021,
+      "klasse": "6.4",
+      "grob": "6",
+      "name": "Hecke/Zaun an der Grundgrenze",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 255,
+      "flaeche_kern": 179,
+      "vorstufe": [
+        100051
+      ],
+      "notiz": "Hecke oder Zaun mit Schatten",
+      "id_abgabe": 21,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Gartenhecke (geschnitten, linear)"
+    },
+    {
+      "id": 100022,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Garten am Hang mit Sträuchern",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 3581,
+      "flaeche_kern": 1268,
+      "vorstufe": [
+        100011
+      ],
+      "notiz": "Rasen und Gehölz gemischt, Grenze zur Böschung geschätzt",
+      "id_abgabe": 22,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Ziergarten gemischt"
+    },
+    {
+      "id": 100023,
+      "klasse": "3.2",
+      "grob": "3",
+      "name": "Garten (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 991,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100024
+      ],
+      "id_abgabe": 23,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Ziergarten gemischt"
+    },
+    {
+      "id": 100024,
+      "klasse": "2.1.3",
+      "grob": "2",
+      "name": "Gartenweg/Treppe, Pflaster rötlich",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 521,
+      "flaeche_kern": 488,
+      "vorstufe": [
+        100052
+      ],
+      "notiz": "Weg oder Mauerkrone",
+      "id_abgabe": 24,
+      "klasse_teil": "1.2.3",
+      "klasse_teil_name": "Terrasse / Gartenweg / Beckenumrandung"
+    },
+    {
+      "id": 100025,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Strauchreihe am Zaun",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 580,
+      "flaeche_kern": 234,
+      "vorstufe": [
+        100046
+      ],
+      "id_abgabe": 25,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100026,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartenstrauch (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 147,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100042
+      ],
+      "id_abgabe": 26,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100027,
+      "klasse": "2.1.3",
+      "grob": "2",
+      "name": "Pflaster am Haus (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 162,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100034
+      ],
+      "id_abgabe": 27,
+      "klasse_teil": "1.2.3",
+      "klasse_teil_name": "Terrasse / Gartenweg / Beckenumrandung"
+    },
+    {
+      "id": 100028,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "name": "Hof-/Platzfläche an der Einmündung",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 9277,
+      "flaeche_kern": 3881,
+      "vorstufe": [
+        100014,
+        100019,
+        100021,
+        100022,
+        100028,
+        100039
+      ],
+      "notiz": "enthält ein abgestelltes helles Fahrzeug",
+      "id_abgabe": 28,
+      "klasse_teil": "1.2.2",
+      "klasse_teil_name": "Hof / Zufahrt / Platz / Randstreifen"
+    },
+    {
+      "id": 100029,
+      "klasse": "6.4",
+      "grob": "6",
+      "name": "Rundhecke um den Garten",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 204,
+      "flaeche_kern": 138,
+      "vorstufe": [
+        100050,
+        100058
+      ],
+      "id_abgabe": 29,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Gartenhecke (geschnitten, linear)"
+    },
+    {
+      "id": 100030,
+      "klasse": "1.2.3",
+      "grob": "1",
+      "name": "Paletten/Sandkasten im Garten",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 270,
+      "flaeche_kern": 270,
+      "vorstufe": [
+        100057
+      ],
+      "notiz": "Art des Gegenstands unsicher",
+      "id_abgabe": 30,
+      "klasse_teil": "2.5",
+      "klasse_teil_name": "Gartenausstattung"
+    },
+    {
+      "id": 100031,
+      "klasse": "0.1",
+      "grob": "0",
+      "name": "Schatten (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 123,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100045
+      ],
+      "id_abgabe": 31,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Schlagschatten"
+    },
+    {
+      "id": 100032,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "name": "Wohnhaus Satteldach mit Gauben",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 7448,
+      "flaeche_kern": 5136,
+      "vorstufe": [
+        100033,
+        100031
+      ],
+      "id_abgabe": 32,
+      "klasse_teil": "1.1.1",
+      "klasse_teil_name": "Wohngebäude (Hauptdach)"
+    },
+    {
+      "id": 100033,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Gartenstreifen östlich Haus",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 689,
+      "flaeche_kern": 121,
+      "vorstufe": [
+        100036,
+        100053
+      ],
+      "id_abgabe": 33,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Ziergarten gemischt"
+    },
+    {
+      "id": 100034,
+      "klasse": "6",
+      "grob": "6",
+      "name": "Gartengehölz östlich Haus",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 2062,
+      "flaeche_kern": 178,
+      "vorstufe": [
+        100040
+      ],
+      "id_abgabe": 34,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)",
+      "einigung": [
+        {
+          "paar": "r0c0:100034|r0c1:200055",
+          "mit": "r0c1:200055",
+          "entscheidung": "gleich",
+          "grund": "Am Nordrand (y 0–1) läuft dieselbe dunkelgrüne Gehölzmasse ohne Kante über die Naht; r0c0 hat die Fläche von 200055 in ihrem Kontextrand selbst zu 100034 gezählt (595 Bildpunkte Überdeckung), Baum oder Großstrauch ist bei rund 25 m² Krone auf 20 cm nicht sicher, daher die gemeinsame Elternklasse Gehölz.",
+          "bearbeiter": "agent:einigung-A-02:20261118e",
+          "buendel": "A-02",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6"
+        },
+        {
+          "paar": "r0c0:100034|r0c1:200208",
+          "mit": "r0c1:200208",
+          "entscheidung": "unklar",
+          "grund": "Entlang der Naht (y 2–30) zeigen beide Seiten dasselbe mittelgrüne, teils beschattete Gartengrün ohne Bildkante, aber ob das der Rand des Gehölzes (100034) oder schon das gemischte Gartenmosaik (200208, das weiter östlich graugrün und offen wird) ist, lässt sich auf 20 cm nicht entscheiden, und eine gemeinsame Klasse würde die Hauptfläche eines der beiden Segmente falsch einordnen.",
+          "bearbeiter": "agent:einigung-A-02:20261118e",
+          "buendel": "A-02",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100035,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartenbaum dunkel (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 239,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100043
+      ],
+      "id_abgabe": 35,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100036,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 237,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100060,
+        100064
+      ],
+      "id_abgabe": 36,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100037,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "name": "Mauerkante mit Schattenband",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 117,
+      "flaeche_kern": 117,
+      "vorstufe": [
+        100068
+      ],
+      "notiz": "niedrige Mauer vermutet",
+      "id_abgabe": 37,
+      "klasse_teil": "1.3.2",
+      "klasse_teil_name": "Mauer / Einfassung (linear)"
+    },
+    {
+      "id": 100038,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "name": "Mauerkante mit Schattenband",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 302,
+      "flaeche_kern": 302,
+      "vorstufe": [
+        100066,
+        100063
+      ],
+      "notiz": "niedrige Mauer vermutet",
+      "id_abgabe": 38,
+      "klasse_teil": "1.3.2",
+      "klasse_teil_name": "Mauer / Einfassung (linear)"
+    },
+    {
+      "id": 100039,
+      "klasse": "6.4",
+      "grob": "6",
+      "name": "Rundhecke um den Garten",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 160,
+      "flaeche_kern": 160,
+      "vorstufe": [
+        100065
+      ],
+      "id_abgabe": 39,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Gartenhecke (geschnitten, linear)"
+    },
+    {
+      "id": 100040,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Gartenrasen hinter Rundhecke",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 3183,
+      "flaeche_kern": 2986,
+      "vorstufe": [
+        100047
+      ],
+      "id_abgabe": 40,
+      "klasse_teil": "2.1",
+      "klasse_teil_name": "Rasen (gepflegt)"
+    },
+    {
+      "id": 100041,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "name": "Gartenhaus/Spielhaus",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 198,
+      "flaeche_kern": 198,
+      "vorstufe": [
+        100070,
+        100047
+      ],
+      "notiz": "kleines Dach, Art unsicher",
+      "id_abgabe": 41,
+      "klasse_teil": "1.1.2",
+      "klasse_teil_name": "Nebengebäude / Anbau / Gartenhaus"
+    },
+    {
+      "id": 100042,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartengehölz am Haus",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 789,
+      "flaeche_kern": 789,
+      "vorstufe": [
+        100073,
+        100071,
+        100070
+      ],
+      "id_abgabe": 42,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100043,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Gartenstreifen südlich Haus mit Möbeln",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 102,
+      "flaeche_kern": 100,
+      "vorstufe": [
+        100074
+      ],
+      "id_abgabe": 43,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Ziergarten gemischt"
+    },
+    {
+      "id": 100044,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Garten mit befestigter Fläche",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 2329,
+      "flaeche_kern": 577,
+      "vorstufe": [
+        100061,
+        100075
+      ],
+      "notiz": "überwiegend Rand",
+      "id_abgabe": 44,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Ziergarten gemischt"
+    },
+    {
+      "id": 100045,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "name": "befestigte Fläche (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 150,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100069
+      ],
+      "id_abgabe": 45,
+      "klasse_teil": "1.2.2",
+      "klasse_teil_name": "Hof / Zufahrt / Platz / Randstreifen"
+    },
+    {
+      "id": 100046,
+      "klasse": "6.4",
+      "grob": "6",
+      "name": "Hecke (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 212,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100055
+      ],
+      "id_abgabe": 46,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Gartenhecke (geschnitten, linear)"
+    },
+    {
+      "id": 100047,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "name": "Wohnhaus (Rand)",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 138,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100062
+      ],
+      "id_abgabe": 47,
+      "klasse_teil": "1.1.1",
+      "klasse_teil_name": "Wohngebäude (Hauptdach)"
+    },
+    {
+      "id": 100048,
+      "klasse": "1.2.4",
+      "grob": "1",
+      "name": "Holzhaufen / Schnittgut",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 2126,
+      "flaeche_kern": 2126,
+      "vorstufe": [
+        100086,
+        100080,
+        100081
+      ],
+      "notiz": "Rand mit Kraut und Schatten einbezogen",
+      "id_abgabe": 48,
+      "klasse_teil": "5.1",
+      "klasse_teil_name": "Holzhaufen / Schnittgut"
+    },
+    {
+      "id": 100049,
+      "klasse": "2.1.1",
+      "grob": "2",
+      "name": "Straße (Asphalt)",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 10019,
+      "flaeche_kern": 8785,
+      "vorstufe": [
+        100059,
+        100054,
+        100097
+      ],
+      "id_abgabe": 49,
+      "klasse_teil": "1.2.1",
+      "klasse_teil_name": "Straße (Asphalt)",
+      "einigung": [
+        {
+          "paar": "r0c0:100049|r0c1:200100",
+          "mit": "r0c1:200100",
+          "entscheidung": "grenze",
+          "grund": "Der graue Asphalt der Straße endet an der Bordkante, südlich davon liegt das dunkle Band aus Gehölz bzw. dessen Schatten; die beiden berühren sich nur an einem Eckpunkt.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100050,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Ziergarten mit Spielgeräten",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 2276,
+      "flaeche_kern": 2276,
+      "vorstufe": [
+        100070,
+        100076
+      ],
+      "id_abgabe": 50,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Ziergarten gemischt"
+    },
+    {
+      "id": 100051,
+      "klasse": "4.2",
+      "grob": "4",
+      "name": "Grünstreifen Nordrand der Straße",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 100,
+      "flaeche_kern": 100,
+      "vorstufe": [
+        100093
+      ],
+      "id_abgabe": 51,
+      "klasse_teil": "3.1.3",
+      "klasse_teil_name": "Böschung / Straßenbegleitgrün"
+    },
+    {
+      "id": 100052,
+      "klasse": "4.2",
+      "grob": "4",
+      "name": "Grünstreifen Nordrand der Straße",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 600,
+      "flaeche_kern": 600,
+      "vorstufe": [
+        100095,
+        100100
+      ],
+      "id_abgabe": 52,
+      "klasse_teil": "3.1.3",
+      "klasse_teil_name": "Böschung / Straßenbegleitgrün"
+    },
+    {
+      "id": 100053,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartensträucher",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 1066,
+      "flaeche_kern": 1066,
+      "vorstufe": [
+        100089
+      ],
+      "id_abgabe": 53,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100054,
+      "klasse": "1.1.2",
+      "grob": "1",
+      "name": "Anbau/Pergola rotbraun am Haus",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 179,
+      "flaeche_kern": 179,
+      "vorstufe": [
+        100082
+      ],
+      "notiz": "Dach eines Anbaus oder Markise",
+      "id_abgabe": 54,
+      "klasse_teil": "1.1.2",
+      "klasse_teil_name": "Nebengebäude / Anbau / Gartenhaus"
+    },
+    {
+      "id": 100055,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Gartenstreifen südlich Haus mit Möbeln",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 296,
+      "flaeche_kern": 296,
+      "vorstufe": [
+        100078
+      ],
+      "id_abgabe": 55,
+      "klasse_teil": "2.2",
+      "klasse_teil_name": "Ziergarten gemischt"
+    },
+    {
+      "id": 100056,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartenbaum hell",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 768,
+      "flaeche_kern": 768,
+      "vorstufe": [
+        100091,
+        100096
+      ],
+      "id_abgabe": 56,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100057,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Gartenbaum dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1153,
+      "flaeche_kern": 795,
+      "vorstufe": [
+        100077
+      ],
+      "notiz": "Baum oder Großstrauch",
+      "id_abgabe": 57,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)",
+      "einigung": [
+        {
+          "paar": "r0c0:100057|r0c1:200071",
+          "mit": "r0c1:200071",
+          "entscheidung": "gleich",
+          "grund": "Eine dunkle, gelappte Einzelkrone von rund 8 m Durchmesser (x 471–513, y 51–91) wird von der Naht senkrecht ohne Bildkante durchschnitten, beide Teilkacheln haben sie jeweils im Kontextrand bis zur selben Außenkante gezogen; für einen Strauch ist sie zu groß, Laub- oder Nadelbaum ist bei der dunklen Krone nicht sicher, daher Einzelbaum.",
+          "bearbeiter": "agent:einigung-A-02:20261118e",
+          "buendel": "A-02",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.3"
+        }
+      ]
+    },
+    {
+      "id": 100058,
+      "klasse": "4.2",
+      "grob": "4",
+      "name": "Grünstreifen Nordrand der Straße",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 315,
+      "flaeche_kern": 173,
+      "vorstufe": [
+        100099
+      ],
+      "id_abgabe": 58,
+      "klasse_teil": "3.1.3",
+      "klasse_teil_name": "Böschung / Straßenbegleitgrün",
+      "einigung": [
+        {
+          "paar": "r0c0:100058|r0c1:200071",
+          "mit": "r0c1:200071",
+          "entscheidung": "grenze",
+          "grund": "Die beiden Segmente berühren sich nur über Eck an einem Punkt (x 500, y 89): oben endet die dunkle Baumkrone, darunter beginnt der helle, niedrige Grünstreifen am Nordrand der Straße, also zwei verschiedene Flächen.",
+          "bearbeiter": "agent:einigung-A-02:20261118e",
+          "buendel": "A-02",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100058|r0c1:200087",
+          "mit": "r0c1:200087",
+          "entscheidung": "gleich",
+          "grund": "200087 liegt mit 109 von 114 Bildpunkten genau auf dem Grünstreifen 100058 und ragt nur mit 4 Bildpunkten (x 500–502, y 90–91) in den Kern, wo das Bild denselben hellgrünen, niedrigen Straßenrandstreifen zeigt; die Baumgruppen-Klasse war nur grob aus der Vorstufe übernommen.",
+          "bearbeiter": "agent:einigung-A-02:20261118e",
+          "buendel": "A-02",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.2"
+        },
+        {
+          "paar": "r0c0:100058|r0c1:200082",
+          "mit": "r0c1:200082",
+          "entscheidung": "grenze",
+          "grund": "Links liegt der helle Grünstreifen am Nordrand der Straße, rechts die dunkle Asphaltstraße; beide Klassen stimmen für ihre Hauptfläche, nur reicht der Grünstreifen an der Naht noch etwa 5 Zeilen (y 91–95) in das Straßensegment hinein, was eine Grenzfrage und keine Klassenfrage ist.",
+          "bearbeiter": "agent:einigung-A-02:20261118e",
+          "buendel": "A-02",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100059,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartengehölz (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 589,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100083,
+        100085
+      ],
+      "id_abgabe": 59,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100060,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "name": "Zufahrt (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 814,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100090
+      ],
+      "id_abgabe": 60,
+      "klasse_teil": "1.2.2",
+      "klasse_teil_name": "Hof / Zufahrt / Platz / Randstreifen"
+    },
+    {
+      "id": 100061,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartengehölz (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 445,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100088
+      ],
+      "id_abgabe": 61,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100062,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartengehölz zwischen Hecke und Zufahrt",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 2366,
+      "flaeche_kern": 2366,
+      "vorstufe": [
+        100098,
+        100119
+      ],
+      "id_abgabe": 62,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100063,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "name": "Zufahrt/Vorplatz hell",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 2033,
+      "flaeche_kern": 2033,
+      "vorstufe": [
+        100102,
+        100094,
+        100101
+      ],
+      "id_abgabe": 63,
+      "klasse_teil": "1.2.2",
+      "klasse_teil_name": "Hof / Zufahrt / Platz / Randstreifen"
+    },
+    {
+      "id": 100064,
+      "klasse": "2.1.2",
+      "grob": "2",
+      "name": "Randstreifen/Gehsteig Südrand der Straße",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 441,
+      "flaeche_kern": 441,
+      "vorstufe": [
+        100104,
+        100107,
+        100105
+      ],
+      "notiz": "mit kleinen Sträuchern",
+      "id_abgabe": 64,
+      "klasse_teil": "1.2.2",
+      "klasse_teil_name": "Hof / Zufahrt / Platz / Randstreifen"
+    },
+    {
+      "id": 100065,
+      "klasse": "6.4",
+      "grob": "6",
+      "name": "Hecke nördlich Flachdachhaus",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1243,
+      "flaeche_kern": 1243,
+      "vorstufe": [
+        100106,
+        100111
+      ],
+      "notiz": "Hecke im Hausschatten",
+      "id_abgabe": 65,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Gartenhecke (geschnitten, linear)"
+    },
+    {
+      "id": 100066,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartenstrauch NO-Ecke Haus",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 440,
+      "flaeche_kern": 440,
+      "vorstufe": [
+        100108
+      ],
+      "id_abgabe": 66,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100067,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartengehölz dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 746,
+      "flaeche_kern": 178,
+      "vorstufe": [
+        100110,
+        100109
+      ],
+      "id_abgabe": 67,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)",
+      "einigung": [
+        {
+          "paar": "r0c0:100067|r0c1:200100",
+          "mit": "r0c1:200100",
+          "entscheidung": "unklar",
+          "grund": "Beide Seiten zeigen dasselbe gleichmäßig dunkle Band an der Bordkante, das auch auf die Fahrbahn ausgreift; ob es dunkles Gehölz oder der Schlagschatten des hellen Gartenbaums südlich davon ist, lässt das Bild nicht sicher erkennen.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100067|r0c1:200105",
+          "mit": "r0c1:200105",
+          "entscheidung": "unklar",
+          "grund": "An der Stelle liegt nur ein abgetrennter Splitter von 100067 von wenigen Bildpunkten mitten in der hellen Laubkrone, während 100067 sonst das dunkle Band an der Straße ist; dieselbe Klasse würde falsch auf das Band übertragen, eine Grenzkorrektur darf die Einigung nicht machen.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100068,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 1389,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100103
+      ],
+      "id_abgabe": 68,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100069,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum in der Wiese",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 2019,
+      "flaeche_kern": 1238,
+      "vorstufe": [
+        100112
+      ],
+      "notiz": "Baum oder großer Strauch",
+      "id_abgabe": 69,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100070,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "name": "Wiese ungemäht (Altgras, Kräuter)",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 45439,
+      "flaeche_kern": 41510,
+      "vorstufe": [
+        100056,
+        100167,
+        100079,
+        100067,
+        100084,
+        100092
+      ],
+      "id_abgabe": 70,
+      "klasse_teil": "3.1.1",
+      "klasse_teil_name": "Wiese ungemäht (Altgras, Kräuter)",
+      "einigung": [
+        {
+          "paar": "r0c0:100070|r0c0:100103",
+          "mit": "r0c0:100103",
+          "entscheidung": "grenze",
+          "grund": "Offene ungemähte Wiese im Norden und Wiese mit vielen dunklen Kronen im Süden; der Übergang ist ohne Kante von Hand gezogen, aber die Dichte der Sträucher unterscheidet zwei Zonen.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100070|r0c0:100098",
+          "mit": "r0c0:100098",
+          "entscheidung": "grenze",
+          "grund": "Dunkle große Baumkrone gegen helle Wiese mit deutlichem Helligkeitswechsel am Kronenrand.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100071,
+      "klasse": "0.1",
+      "grob": "0",
+      "name": "Schlagschatten der hohen Hecke auf der Wiese",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 867,
+      "flaeche_kern": 867,
+      "vorstufe": [
+        100116,
+        100097,
+        100098,
+        100119,
+        100056
+      ],
+      "id_abgabe": 71,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Schlagschatten"
+    },
+    {
+      "id": 100072,
+      "klasse": "6.4",
+      "grob": "6",
+      "name": "hohe geschnittene Hecke an der Grundgrenze",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 1239,
+      "flaeche_kern": 1239,
+      "vorstufe": [
+        100119,
+        100098,
+        100120,
+        100116,
+        100097
+      ],
+      "notiz": "Breite geschätzt",
+      "id_abgabe": 72,
+      "klasse_teil": "2.3",
+      "klasse_teil_name": "Gartenhecke (geschnitten, linear)"
+    },
+    {
+      "id": 100073,
+      "klasse": "0.1",
+      "grob": "0",
+      "name": "Hausschatten an der Westwand",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 147,
+      "flaeche_kern": 147,
+      "vorstufe": [
+        100117
+      ],
+      "id_abgabe": 73,
+      "klasse_teil": "5.2",
+      "klasse_teil_name": "Schlagschatten"
+    },
+    {
+      "id": 100074,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "name": "Flachdachhaus",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 7905,
+      "flaeche_kern": 7905,
+      "vorstufe": [
+        100113
+      ],
+      "notiz": "dunkle Dachfläche Westteil mitgezählt",
+      "id_abgabe": 74,
+      "klasse_teil": "1.1.1",
+      "klasse_teil_name": "Wohngebäude (Hauptdach)"
+    },
+    {
+      "id": 100075,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartenbaum dunkel (Nadel?)",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1064,
+      "flaeche_kern": 1064,
+      "vorstufe": [
+        100115
+      ],
+      "id_abgabe": 75,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100076,
+      "klasse": "6.3.1",
+      "grob": "6",
+      "name": "Gartenbaum hell",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 883,
+      "flaeche_kern": 745,
+      "vorstufe": [
+        100114
+      ],
+      "id_abgabe": 76,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)",
+      "einigung": [
+        {
+          "paar": "r0c0:100076|r0c1:200092",
+          "mit": "r0c1:200092",
+          "entscheidung": "grenze",
+          "grund": "Die helle, grob gekörnte Krone des Gartenbaums stößt am oberen Kronenrand nur in einem Punkt an die dunkelgrüne, glattere Baumgruppe im Nordosten; es sind zwei verschiedene Kronen.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100076|r0c1:200105",
+          "mit": "r0c1:200105",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe runde, hellgrüne, grob gekörnte Laubkrone von etwa 7 m Durchmesser läuft ohne Kante über die Naht bis an das Dach; ein Laubbaum, beide Seiten nennen ihn Baum.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.3.1"
+        }
+      ]
+    },
+    {
+      "id": 100077,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch in der Wiese",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 454,
+      "flaeche_kern": 454,
+      "vorstufe": [
+        100123
+      ],
+      "id_abgabe": 77,
+      "klasse_teil": "4.3",
+      "klasse_teil_name": "Gebüsch / Strauch"
+    },
+    {
+      "id": 100078,
+      "klasse": "1.2.3",
+      "grob": "1",
+      "name": "runder heller Gegenstand im Rasen",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 68,
+      "flaeche_kern": 68,
+      "vorstufe": [
+        100124
+      ],
+      "notiz": "Schachtdeckel, Tisch oder Becken",
+      "id_abgabe": 78,
+      "klasse_teil": "2.5",
+      "klasse_teil_name": "Gartenausstattung"
+    },
+    {
+      "id": 100079,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Gartenrasen Flachdachhaus",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 7056,
+      "flaeche_kern": 7056,
+      "vorstufe": [
+        100120,
+        100124,
+        100132,
+        100119
+      ],
+      "id_abgabe": 79,
+      "klasse_teil": "2.1",
+      "klasse_teil_name": "Rasen (gepflegt)"
+    },
+    {
+      "id": 100080,
+      "klasse": "2.1.3",
+      "grob": "2",
+      "name": "Terrasse mit Rundelement",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 1514,
+      "flaeche_kern": 1514,
+      "vorstufe": [
+        100113
+      ],
+      "id_abgabe": 80,
+      "klasse_teil": "1.2.3",
+      "klasse_teil_name": "Terrasse / Gartenweg / Beckenumrandung"
+    },
+    {
+      "id": 100081,
+      "klasse": "6",
+      "grob": "6",
+      "name": "Gartengehölz",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1885,
+      "flaeche_kern": 1167,
+      "vorstufe": [
+        100122
+      ],
+      "id_abgabe": 81,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)",
+      "einigung": [
+        {
+          "paar": "r0c0:100081|r0c1:200100",
+          "mit": "r0c1:200100",
+          "entscheidung": "gleich",
+          "grund": "Entlang der Naht zeigen beide Seiten dasselbe dunkelgrüne, teils beschattete Gartengehölz zwischen Konifere und Hauswand, das nach Süden in dunkle Kronen übergeht; ob Strauch oder Baumgruppe, ist nicht sicher, daher die Elternklasse Gehölz.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6"
+        },
+        {
+          "paar": "r0c0:100081|r0c1:200127",
+          "mit": "r0c1:200127",
+          "entscheidung": "grenze",
+          "grund": "Am Südende des grünen Gartengehölzes beginnt die violettgraue Krone der Blutbuche, deren Oberrand auf beiden Seiten der Naht auf gleicher Höhe liegt; zwei verschiedene Gehölze.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100082,
+      "klasse": "6.3.3",
+      "grob": "6",
+      "name": "Gartenkonifere bläulich",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 777,
+      "flaeche_kern": 681,
+      "vorstufe": [
+        100121
+      ],
+      "id_abgabe": 82,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)",
+      "einigung": [
+        {
+          "paar": "r0c0:100082|r0c1:200114",
+          "mit": "r0c1:200114",
+          "entscheidung": "gleich",
+          "grund": "Beide Seiten zeigen dieselbe bläulich-graue, sternförmig verzweigte Krone mit ihrem grünen Randbereich ohne Kante an der Naht; beide Teilkacheln deuten sie als bläuliche Konifere.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.3.3"
+        }
+      ]
+    },
+    {
+      "id": 100083,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gartengehölz (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 168,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100128
+      ],
+      "id_abgabe": 83,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100084,
+      "klasse": "1.1.1",
+      "grob": "1",
+      "name": "Wohnhaus (Rand)",
+      "im_kern": false,
+      "sicher": "ja",
+      "flaeche": 4020,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100118
+      ],
+      "id_abgabe": 84,
+      "klasse_teil": "1.1.1",
+      "klasse_teil_name": "Wohngebäude (Hauptdach)"
+    },
+    {
+      "id": 100085,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch in der Wiese",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 603,
+      "flaeche_kern": 603,
+      "vorstufe": [
+        100125
+      ],
+      "id_abgabe": 85,
+      "klasse_teil": "4.3",
+      "klasse_teil_name": "Gebüsch / Strauch"
+    },
+    {
+      "id": 100086,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 331,
+      "flaeche_kern": 331,
+      "vorstufe": [
+        100138
+      ],
+      "id_abgabe": 86,
+      "klasse_teil": "4.3",
+      "klasse_teil_name": "Gebüsch / Strauch"
+    },
+    {
+      "id": 100087,
+      "klasse": "1.2.2",
+      "grob": "1",
+      "name": "Mauer/Randstein an der Gartengrenze Süd",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 257,
+      "flaeche_kern": 257,
+      "vorstufe": [
+        100119,
+        100056
+      ],
+      "notiz": "schmal, Lage geschätzt",
+      "id_abgabe": 87,
+      "klasse_teil": "1.3.2",
+      "klasse_teil_name": "Mauer / Einfassung (linear)"
+    },
+    {
+      "id": 100088,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Sträucher SW-Ecke Garten",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 511,
+      "flaeche_kern": 511,
+      "vorstufe": [
+        100119,
+        100133
+      ],
+      "id_abgabe": 88,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100089,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Strauch an der Gartengrenze",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 147,
+      "flaeche_kern": 147,
+      "vorstufe": [
+        100131
+      ],
+      "id_abgabe": 89,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100090,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Strauch an der Gartengrenze",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 400,
+      "flaeche_kern": 400,
+      "vorstufe": [
+        100134
+      ],
+      "id_abgabe": 90,
+      "klasse_teil": "2.4",
+      "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+    },
+    {
+      "id": 100091,
+      "klasse": "1.2.1",
+      "grob": "1",
+      "name": "Schwimmbecken abgedeckt",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1344,
+      "flaeche_kern": 1344,
+      "vorstufe": [
+        100129,
+        100139
+      ],
+      "notiz": "Abdeckung grau; Becken vermutet",
+      "id_abgabe": 91,
+      "klasse_teil": "1.3.1",
+      "klasse_teil_name": "Schwimmbecken"
+    },
+    {
+      "id": 100092,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel am Gartenrand",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1689,
+      "flaeche_kern": 1689,
+      "vorstufe": [
+        100127,
+        100141
+      ],
+      "id_abgabe": 92,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100093,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 2931,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100130
+      ],
+      "id_abgabe": 93,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100094,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 183,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100126
+      ],
+      "id_abgabe": 94,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100095,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 599,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100144
+      ],
+      "id_abgabe": 95,
+      "klasse_teil": "4.3",
+      "klasse_teil_name": "Gebüsch / Strauch"
+    },
+    {
+      "id": 100096,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1503,
+      "flaeche_kern": 1503,
+      "vorstufe": [
+        100140
+      ],
+      "id_abgabe": 96,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100097,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1936,
+      "flaeche_kern": 1936,
+      "vorstufe": [
+        100145,
+        100056
+      ],
+      "id_abgabe": 97,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100098,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum mit großer Krone",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 4855,
+      "flaeche_kern": 4855,
+      "vorstufe": [
+        100135,
+        100146
+      ],
+      "id_abgabe": 98,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)",
+      "einigung": [
+        {
+          "paar": "r0c0:100070|r0c0:100098",
+          "mit": "r0c0:100070",
+          "entscheidung": "grenze",
+          "grund": "Dunkle große Baumkrone gegen helle Wiese mit deutlichem Helligkeitswechsel am Kronenrand.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100099,
+      "klasse": "4.4",
+      "grob": "4",
+      "name": "Gartenrasen unterhalb Pool",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 2628,
+      "flaeche_kern": 2628,
+      "vorstufe": [
+        100137
+      ],
+      "id_abgabe": 99,
+      "klasse_teil": "2.1",
+      "klasse_teil_name": "Rasen (gepflegt)"
+    },
+    {
+      "id": 100100,
+      "klasse": "6.3.2",
+      "grob": "6",
+      "name": "Blutbuche (rotlaubiger Laubbaum)",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 4186,
+      "flaeche_kern": 3482,
+      "vorstufe": [
+        100136
+      ],
+      "id_abgabe": 100,
+      "klasse_teil": "4.1.1",
+      "klasse_teil_name": "Laubbaum",
+      "einigung": [
+        {
+          "paar": "r0c0:100100|r0c1:200127",
+          "mit": "r0c1:200127",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe große violettgraue Krone der Blutbuche läuft ohne Kante über die Naht; beide Seiten nennen sie Blutbuche, also rotlaubiger Laubbaum.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.3.2"
+        }
+      ]
+    },
+    {
+      "id": 100101,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 110,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100142
+      ],
+      "id_abgabe": 101,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100102,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 630,
+      "flaeche_kern": 630,
+      "vorstufe": [
+        100151
+      ],
+      "id_abgabe": 102,
+      "klasse_teil": "4.3",
+      "klasse_teil_name": "Gebüsch / Strauch"
+    },
+    {
+      "id": 100103,
+      "klasse": "4.3",
+      "grob": "4",
+      "name": "verbuschte Wiese, Gebüsch-Hochstauden-Mosaik",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 74755,
+      "flaeche_kern": 53752,
+      "vorstufe": [
+        100056,
+        100166,
+        100172,
+        100195,
+        100193,
+        100176
+      ],
+      "notiz": "Grenze zur offenen Wiese geschätzt; Trampelpfad nicht ausgeschieden",
+      "id_abgabe": 103,
+      "klasse_teil": "3.3",
+      "klasse_teil_name": "Verbuschte Wiese (Gebüsch-Hochstauden-Mosaik)",
+      "einigung": [
+        {
+          "paar": "r0c0:100070|r0c0:100103",
+          "mit": "r0c0:100070",
+          "entscheidung": "grenze",
+          "grund": "Offene ungemähte Wiese im Norden und Wiese mit vielen dunklen Kronen im Süden; der Übergang ist ohne Kante von Hand gezogen, aber die Dichte der Sträucher unterscheidet zwei Zonen.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100103|r1c0:300016",
+          "mit": "r1c0:300016",
+          "entscheidung": "unklar",
+          "grund": "An der Naht liegt beidseits dieselbe raue Wiese mit verstreuten Sträuchern, aber das Segment unten umfasst auch die glatte Wiese im Westen, sodass weder Verbuschte Wiese noch Wiese für beide ganzen Segmente sicher passt.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100103|r1c0:300006",
+          "mit": "r1c0:300006",
+          "entscheidung": "gleich",
+          "grund": "Der kleine Fleck unten zeigt keine abgrenzbare Strauchkrone, sondern dieselbe raue Wiese mit Gebüschflecken wie die Fläche darüber.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.3"
+        }
+      ]
+    },
+    {
+      "id": 100104,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "name": "Wiese zwischen Garten und Feld",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 6132,
+      "flaeche_kern": 6132,
+      "vorstufe": [
+        100143,
+        100158,
+        100148,
+        100154
+      ],
+      "notiz": "Wiese oder ungepflegter Gartenteil",
+      "id_abgabe": 104,
+      "klasse_teil": "3.1.1",
+      "klasse_teil_name": "Wiese ungemäht (Altgras, Kräuter)"
+    },
+    {
+      "id": 100105,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Baumgruppe dunkel östlich der Blutbuche",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 4332,
+      "flaeche_kern": 1880,
+      "vorstufe": [
+        100149,
+        100155,
+        100150,
+        100152
+      ],
+      "id_abgabe": 105,
+      "klasse_teil": "4.2",
+      "klasse_teil_name": "Baumgruppe / Gehölzbestand"
+    },
+    {
+      "id": 100106,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Baumgruppe (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 1630,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100147
+      ],
+      "id_abgabe": 106,
+      "klasse_teil": "4.2",
+      "klasse_teil_name": "Baumgruppe / Gehölzbestand"
+    },
+    {
+      "id": 100107,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel, große Krone",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 2949,
+      "flaeche_kern": 2780,
+      "vorstufe": [
+        100165,
+        100168
+      ],
+      "notiz": "Krone oder Krone mit Schlagschatten",
+      "id_abgabe": 107,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100108,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1396,
+      "flaeche_kern": 1396,
+      "vorstufe": [
+        100157
+      ],
+      "id_abgabe": 108,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100109,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 645,
+      "flaeche_kern": 645,
+      "vorstufe": [
+        100161
+      ],
+      "id_abgabe": 109,
+      "klasse_teil": "4.3",
+      "klasse_teil_name": "Gebüsch / Strauch"
+    },
+    {
+      "id": 100110,
+      "klasse": "5.1",
+      "grob": "5",
+      "name": "gemähte Fläche mit Schwaden",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 17776,
+      "flaeche_kern": 12022,
+      "vorstufe": [
+        100159,
+        100163,
+        100156,
+        100169,
+        100170,
+        100164
+      ],
+      "notiz": "Heu oder Stroh, Acker oder Wiese offen",
+      "id_abgabe": 110,
+      "klasse_teil": "3.2",
+      "klasse_teil_name": "Gemähte Fläche mit Schwaden",
+      "einigung": [
+        {
+          "paar": "r0c0:100110|r0c1:200143",
+          "mit": "r0c1:200143",
+          "entscheidung": "grenze",
+          "grund": "Das braune Feld mit Schwaden und der dunkelgrüne Gehölzbestand berühren sich nur an einem Eckpunkt; Farbe und Textur sind klar verschieden.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100110|r0c1:200160",
+          "mit": "r0c1:200160",
+          "entscheidung": "unklar",
+          "grund": "Der kleine bräunlich-grüne Fleck am Nordrand des Felds liegt im Schatten der Bäume; ob es beschatteter Feldrand oder ein schmaler Grassaum ist, lässt sich auf 2 bis 3 m Breite nicht erkennen.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100110|r0c1:200269",
+          "mit": "r0c1:200269",
+          "entscheidung": "grenze",
+          "grund": "Westlich der Naht reicht das braune Feld bis an die grüne Wiese, östlich beginnt an der Naht ein heller, weißlicher Streifen am Feldrand, der heller ist als die Schwaden und bis zum Gehölz im Osten läuft; beide Klassen bleiben.",
+          "bearbeiter": "agent:einigung-A-03:20261118e",
+          "buendel": "A-03",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100111,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Strauch hell",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 712,
+      "flaeche_kern": 712,
+      "vorstufe": [
+        100178
+      ],
+      "id_abgabe": 111,
+      "klasse_teil": "4.3",
+      "klasse_teil_name": "Gebüsch / Strauch"
+    },
+    {
+      "id": 100112,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1344,
+      "flaeche_kern": 1344,
+      "vorstufe": [
+        100171
+      ],
+      "id_abgabe": 112,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100113,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 879,
+      "flaeche_kern": 879,
+      "vorstufe": [
+        100184
+      ],
+      "notiz": "Baum oder Gebüsch",
+      "id_abgabe": 113,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100114,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 2179,
+      "flaeche_kern": 2179,
+      "vorstufe": [
+        100181
+      ],
+      "id_abgabe": 114,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100115,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum dunkel",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 1647,
+      "flaeche_kern": 1647,
+      "vorstufe": [
+        100180,
+        100192
+      ],
+      "id_abgabe": 115,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100116,
+      "klasse": "6.5",
+      "grob": "6",
+      "name": "Gebüsch klein",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 176,
+      "flaeche_kern": 176,
+      "vorstufe": [
+        100186
+      ],
+      "id_abgabe": 116,
+      "klasse_teil": "4.3",
+      "klasse_teil_name": "Gebüsch / Strauch"
+    },
+    {
+      "id": 100117,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Gehölzrand, dunkle Kronen",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 5884,
+      "flaeche_kern": 5884,
+      "vorstufe": [
+        100177
+      ],
+      "notiz": "dunkle Kronen oder Schatten des Bestands",
+      "id_abgabe": 117,
+      "klasse_teil": "4.2",
+      "klasse_teil_name": "Baumgruppe / Gehölzbestand"
+    },
+    {
+      "id": 100118,
+      "klasse": "6.2",
+      "grob": "6",
+      "name": "Gehölzrand, dunkle Kronen",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 3373,
+      "flaeche_kern": 3373,
+      "vorstufe": [
+        100185,
+        100190
+      ],
+      "notiz": "dunkle Kronen oder Schatten des Bestands",
+      "id_abgabe": 118,
+      "klasse_teil": "4.2",
+      "klasse_teil_name": "Baumgruppe / Gehölzbestand"
+    },
+    {
+      "id": 100119,
+      "klasse": "4.1",
+      "grob": "4",
+      "name": "Wiese gleichmäßig, niedrig",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 29218,
+      "flaeche_kern": 4015,
+      "vorstufe": [
+        100166,
+        100056,
+        100182,
+        100188
+      ],
+      "notiz": "gemäht oder nur kurzrasig, nicht sicher",
+      "id_abgabe": 119,
+      "klasse_teil": "3.1.2",
+      "klasse_teil_name": "Wiese gleichmäßig niedrig",
+      "einigung": [
+        {
+          "paar": "r0c0:100119|r1c0:300016",
+          "mit": "r1c0:300016",
+          "entscheidung": "gleich",
+          "grund": "Beidseits der Naht dieselbe hellere, glatte Wiese; das Segment unten reicht auch in raueres Gras, daher die Klasse Wiese / Grünland.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.1"
+        }
+      ]
+    },
+    {
+      "id": 100120,
+      "klasse": "4.1.1",
+      "grob": "4",
+      "name": "Wiese ungemäht südlich der Schwaden",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 18274,
+      "flaeche_kern": 10108,
+      "vorstufe": [
+        100175,
+        100197,
+        100198,
+        100196,
+        100174,
+        100173
+      ],
+      "id_abgabe": 120,
+      "klasse_teil": "3.1.1",
+      "klasse_teil_name": "Wiese ungemäht (Altgras, Kräuter)",
+      "einigung": [
+        {
+          "paar": "r0c0:100120|r1c0:300051",
+          "mit": "r1c0:300051",
+          "entscheidung": "grenze",
+          "grund": "Waldrand gegen ungemähte Wiese; das Waldsegment reicht an der Naht wenige Bildpunkte in die Wiese, die Flächen sind aber verschieden.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        },
+        {
+          "paar": "r0c0:100120|r1c0:300009",
+          "mit": "r1c0:300009",
+          "entscheidung": "gleich",
+          "grund": "Dieselbe raue, ungemähte Wiese beidseits der Naht ohne Kante.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "4.1.1"
+        },
+        {
+          "paar": "r0c0:100120|r1c0:300008",
+          "mit": "r1c0:300008",
+          "entscheidung": "grenze",
+          "grund": "Heller schmaler Trampelpfad gegen Wiese, der Pfad ist als helle Spur sichtbar.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100121,
+      "klasse": "4.1.2",
+      "grob": "4",
+      "name": "Wiese gleichmäßig, niedrig",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 158,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100166
+      ],
+      "notiz": "gemäht oder nur kurzrasig, nicht sicher",
+      "id_abgabe": 121,
+      "klasse_teil": "3.1.2",
+      "klasse_teil_name": "Wiese gleichmäßig niedrig"
+    },
+    {
+      "id": 100122,
+      "klasse": "6.1",
+      "grob": "6",
+      "name": "Laubholz-Bestand, helle Kronen",
+      "im_kern": true,
+      "sicher": "ja",
+      "flaeche": 15318,
+      "flaeche_kern": 6149,
+      "vorstufe": [
+        100056,
+        100191,
+        100189,
+        100183,
+        100179,
+        100206
+      ],
+      "id_abgabe": 122,
+      "klasse_teil": "4.2.1",
+      "klasse_teil_name": "Laubholz-Bestand",
+      "einigung": [
+        {
+          "paar": "r0c0:100122|r1c0:300051",
+          "mit": "r1c0:300051",
+          "entscheidung": "gleich",
+          "grund": "Geschlossenes Kronendach desselben Gehölzbestands läuft ohne Kante über die Naht.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.1"
+        },
+        {
+          "paar": "r0c0:100122|r1c0:300016",
+          "mit": "r1c0:300016",
+          "entscheidung": "grenze",
+          "grund": "Oben Kronen des Gehölzbestands, unten eine helle Wiesenzunge zwischen den Kronen; sie berühren sich nur an einer Ecke.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": 100123,
+      "klasse": "6.1",
+      "grob": "6",
+      "name": "Gehölz dunkel SO",
+      "im_kern": true,
+      "sicher": "nein",
+      "flaeche": 3945,
+      "flaeche_kern": 552,
+      "vorstufe": [
+        100194,
+        100200
+      ],
+      "id_abgabe": 123,
+      "klasse_teil": "4.2",
+      "klasse_teil_name": "Baumgruppe / Gehölzbestand",
+      "einigung": [
+        {
+          "paar": "r0c0:100123|r1c0:300051",
+          "mit": "r1c0:300051",
+          "entscheidung": "gleich",
+          "grund": "Die dunklen Kronen am Rand des Bestands setzen sich ohne Kante über die Naht in den Wald fort; dunkel, aber derselbe Bestand.",
+          "bearbeiter": "agent:einigung-A-01:20261118e",
+          "buendel": "A-01",
+          "zeit": "2026-11-18T00:53:57+00:00",
+          "klasse": "6.1"
+        }
+      ]
+    },
+    {
+      "id": 100124,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 299,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100199
+      ],
+      "id_abgabe": 124,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100125,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 533,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100202
+      ],
+      "id_abgabe": 125,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100126,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 298,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100203
+      ],
+      "id_abgabe": 126,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100127,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 601,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100201
+      ],
+      "id_abgabe": 127,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    },
+    {
+      "id": 100128,
+      "klasse": "6.3",
+      "grob": "6",
+      "name": "Baum (Rand)",
+      "im_kern": false,
+      "sicher": "nein",
+      "flaeche": 190,
+      "flaeche_kern": 0,
+      "vorstufe": [
+        100205
+      ],
+      "id_abgabe": 128,
+      "klasse_teil": "4.1",
+      "klasse_teil_name": "Baum (Einzelkrone)"
+    }
+  ]
+}

@@ -1,0 +1,1029 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "A",
+  "buendel": "A-14",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/a-alles-frei/kategorien-a.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schatten (Untergrund nicht erkennbar)",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2",
+      "name": "Sehr dunkle Fläche unklar",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.3",
+      "name": "Kleinobjekt unklar",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Gebäude und Hofstellen",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Hauptgebäude / Längsbau (Streckhof)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Querbau",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Großbau / Halle",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.4",
+      "name": "Dachfläche im Eigenschatten",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle ungetrennt (Dach oder Hof)",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.3",
+      "name": "Mauer / Einfriedung",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof- und Freifläche im Grundstück",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2",
+      "name": "Garten / Grün im Ort",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Gartenland mit Reihen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Straße im Ort",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.1.2",
+      "name": "Landstraße außerorts",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Weg / Gasse",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand (Bankett, Gehweg, Vorplatz)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Offene Fläche (nicht Acker)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Anger / Dorfplatz",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Brache / Ödland / Weide",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Rain / Graben / Saum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Landwirtschaftliche Fläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Feld / Acker (Streifenflur)",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feld, dunkler Bestand",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Feld, mittelgrau",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.3",
+      "name": "Feld, hell (offener Boden, Stoppel)",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Einzelbaum / Busch / Baumgruppe",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2",
+      "name": "Baumreihe / Hecke",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r1c1:400783|r1c1:400787",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            857
+          ],
+          "bis": [
+            750,
+            857
+          ],
+          "laenge": 1,
+          "kante_max": 11.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400783",
+          "teilkachel": "r1c1",
+          "id": 400783,
+          "klasse": "1.1.4",
+          "grob": "1",
+          "name": "Dach im Eigenschatten (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 125,
+          "grauwert": 79.6,
+          "id_abgabe": 783,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Dachfläche, im Eigenschatten",
+          "flaeche_kern": 125
+        },
+        {
+          "segment": "r1c1:400787",
+          "teilkachel": "r1c1",
+          "id": 400787,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten mit Gehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "mitteldunkel, fleckig, ohne gerade Kanten",
+          "quelle": "korrektur",
+          "flaeche": 3224,
+          "grauwert": 100.5,
+          "id_abgabe": 787,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Garten, Grün im Grundstück",
+          "flaeche_kern": 3224
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r1c1:400781|r1c1:400787",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            876
+          ],
+          "bis": [
+            750,
+            876
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400781",
+          "teilkachel": "r1c1",
+          "id": 400781,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schattenfuge zwischen Gebäuden",
+          "im_kern": true,
+          "sicher": "ja",
+          "grund": "",
+          "quelle": "fuge",
+          "flaeche": 90,
+          "grauwert": 46.8,
+          "id_abgabe": 781,
+          "klasse_teil": "5",
+          "klasse_teil_name": "Schlagschatten (Untergrund verdeckt)",
+          "flaeche_kern": 90
+        },
+        {
+          "segment": "r1c1:400787",
+          "teilkachel": "r1c1",
+          "id": 400787,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten mit Gehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "mitteldunkel, fleckig, ohne gerade Kanten",
+          "quelle": "korrektur",
+          "flaeche": 3224,
+          "grauwert": 100.5,
+          "id_abgabe": 787,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Garten, Grün im Grundstück",
+          "flaeche_kern": 3224
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r1c1:400787|r1c1:400840",
+      "art": "viertel",
+      "bild": "paar_03.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            890
+          ],
+          "bis": [
+            750,
+            890
+          ],
+          "laenge": 1,
+          "kante_max": 11.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400787",
+          "teilkachel": "r1c1",
+          "id": 400787,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten mit Gehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "mitteldunkel, fleckig, ohne gerade Kanten",
+          "quelle": "korrektur",
+          "flaeche": 3224,
+          "grauwert": 100.5,
+          "id_abgabe": 787,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Garten, Grün im Grundstück",
+          "flaeche_kern": 3224
+        },
+        {
+          "segment": "r1c1:400840",
+          "teilkachel": "r1c1",
+          "id": 400840,
+          "klasse": "1.1.4",
+          "grob": "1",
+          "name": "Dach im Eigenschatten (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 33,
+          "grauwert": 89.7,
+          "id_abgabe": 840,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Dachfläche, im Eigenschatten",
+          "flaeche_kern": 33
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r1c1:400787|r1c1:400838",
+      "art": "viertel",
+      "bild": "paar_04.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            901
+          ],
+          "bis": [
+            750,
+            901
+          ],
+          "laenge": 1,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400787",
+          "teilkachel": "r1c1",
+          "id": 400787,
+          "klasse": "2.2",
+          "grob": "2",
+          "name": "Garten mit Gehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "mitteldunkel, fleckig, ohne gerade Kanten",
+          "quelle": "korrektur",
+          "flaeche": 3224,
+          "grauwert": 100.5,
+          "id_abgabe": 787,
+          "klasse_teil": "1.3",
+          "klasse_teil_name": "Garten, Grün im Grundstück",
+          "flaeche_kern": 3224
+        },
+        {
+          "segment": "r1c1:400838",
+          "teilkachel": "r1c1",
+          "id": 400838,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 37,
+          "grauwert": 120.8,
+          "id_abgabe": 838,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude",
+          "flaeche_kern": 37
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r1c1:400901|r1c1:400905",
+      "art": "viertel",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            940
+          ],
+          "bis": [
+            750,
+            940
+          ],
+          "laenge": 1,
+          "kante_max": 20.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400901",
+          "teilkachel": "r1c1",
+          "id": 400901,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schattenfuge zwischen Gebäuden",
+          "im_kern": true,
+          "sicher": "ja",
+          "grund": "",
+          "quelle": "fuge",
+          "flaeche": 153,
+          "grauwert": 57.4,
+          "id_abgabe": 901,
+          "klasse_teil": "5",
+          "klasse_teil_name": "Schlagschatten (Untergrund verdeckt)",
+          "flaeche_kern": 153
+        },
+        {
+          "segment": "r1c1:400905",
+          "teilkachel": "r1c1",
+          "id": 400905,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 373,
+          "grauwert": 103.5,
+          "id_abgabe": 905,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude",
+          "flaeche_kern": 373
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r1c1:400900|r1c1:400905",
+      "art": "viertel",
+      "bild": "paar_06.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            945
+          ],
+          "bis": [
+            750,
+            945
+          ],
+          "laenge": 1,
+          "kante_max": 20.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400900",
+          "teilkachel": "r1c1",
+          "id": 400900,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schlagschatten",
+          "im_kern": true,
+          "sicher": "ja",
+          "grund": "schwarz, an der Nordostseite der Gebäude",
+          "quelle": "korrektur",
+          "flaeche": 29,
+          "grauwert": 85.3,
+          "id_abgabe": 900,
+          "klasse_teil": "5",
+          "klasse_teil_name": "Schlagschatten (Untergrund verdeckt)",
+          "flaeche_kern": 29
+        },
+        {
+          "segment": "r1c1:400905",
+          "teilkachel": "r1c1",
+          "id": 400905,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 373,
+          "grauwert": 103.5,
+          "id_abgabe": 905,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude",
+          "flaeche_kern": 373
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r1c1:400963|r1c1:400964",
+      "art": "viertel",
+      "bild": "paar_07.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            963
+          ],
+          "bis": [
+            750,
+            963
+          ],
+          "laenge": 1,
+          "kante_max": 15.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400963",
+          "teilkachel": "r1c1",
+          "id": 400963,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schattenfuge zwischen Gebäuden",
+          "im_kern": true,
+          "sicher": "ja",
+          "grund": "",
+          "quelle": "fuge",
+          "flaeche": 52,
+          "grauwert": 40.1,
+          "id_abgabe": 963,
+          "klasse_teil": "5",
+          "klasse_teil_name": "Schlagschatten (Untergrund verdeckt)",
+          "flaeche_kern": 52
+        },
+        {
+          "segment": "r1c1:400964",
+          "teilkachel": "r1c1",
+          "id": 400964,
+          "klasse": "1.1.4",
+          "grob": "1",
+          "name": "Dach im Eigenschatten (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 195,
+          "grauwert": 85.7,
+          "id_abgabe": 964,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Dachfläche, im Eigenschatten",
+          "flaeche_kern": 158
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r1c1:400961|r1c1:400964",
+      "art": "viertel",
+      "bild": "paar_08.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            978
+          ],
+          "bis": [
+            750,
+            978
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400961",
+          "teilkachel": "r1c1",
+          "id": 400961,
+          "klasse": "3.1.1",
+          "grob": "3",
+          "name": "Dorfstraße West, Fortsetzung nach Süden",
+          "im_kern": true,
+          "sicher": "ja",
+          "grund": "",
+          "quelle": "objekt",
+          "flaeche": 437,
+          "grauwert": 171.7,
+          "id_abgabe": 961,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Straße im Ort (Belag auf SW nicht bestimmbar)",
+          "flaeche_kern": 434
+        },
+        {
+          "segment": "r1c1:400964",
+          "teilkachel": "r1c1",
+          "id": 400964,
+          "klasse": "1.1.4",
+          "grob": "1",
+          "name": "Dach im Eigenschatten (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 195,
+          "grauwert": 85.7,
+          "id_abgabe": 964,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Dachfläche, im Eigenschatten",
+          "flaeche_kern": 158
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r1c1:400602|r1c1:400604",
+      "art": "viertel",
+      "bild": "paar_09.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            788,
+            750
+          ],
+          "bis": [
+            788,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 15.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400602",
+          "teilkachel": "r1c1",
+          "id": 400602,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 875,
+          "grauwert": 131.4,
+          "id_abgabe": 602,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude",
+          "flaeche_kern": 875
+        },
+        {
+          "segment": "r1c1:400604",
+          "teilkachel": "r1c1",
+          "id": 400604,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schattenfuge zwischen Gebäuden",
+          "im_kern": true,
+          "sicher": "ja",
+          "grund": "",
+          "quelle": "fuge",
+          "flaeche": 24,
+          "grauwert": 66.7,
+          "id_abgabe": 604,
+          "klasse_teil": "5",
+          "klasse_teil_name": "Schlagschatten (Untergrund verdeckt)",
+          "flaeche_kern": 24
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r1c1:400605|r1c1:400607",
+      "art": "viertel",
+      "bild": "paar_10.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            799,
+            750
+          ],
+          "bis": [
+            799,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 21.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400605",
+          "teilkachel": "r1c1",
+          "id": 400605,
+          "klasse": "1.1",
+          "grob": "1",
+          "name": "Gebäude (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 60,
+          "grauwert": 95.5,
+          "id_abgabe": 605,
+          "klasse_teil": "1.1",
+          "klasse_teil_name": "Gebäude",
+          "flaeche_kern": 60
+        },
+        {
+          "segment": "r1c1:400607",
+          "teilkachel": "r1c1",
+          "id": 400607,
+          "klasse": "1.1.4",
+          "grob": "1",
+          "name": "Dach im Eigenschatten (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 723,
+          "grauwert": 53.1,
+          "id_abgabe": 607,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Dachfläche, im Eigenschatten",
+          "flaeche_kern": 723
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r1c1:400606|r1c1:400607",
+      "art": "viertel",
+      "bild": "paar_11.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            805,
+            750
+          ],
+          "bis": [
+            806,
+            750
+          ],
+          "laenge": 2,
+          "kante_max": 16.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400606",
+          "teilkachel": "r1c1",
+          "id": 400606,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schattenfuge zwischen Gebäuden",
+          "im_kern": true,
+          "sicher": "ja",
+          "grund": "",
+          "quelle": "fuge",
+          "flaeche": 19,
+          "grauwert": 28.2,
+          "id_abgabe": 606,
+          "klasse_teil": "5",
+          "klasse_teil_name": "Schlagschatten (Untergrund verdeckt)",
+          "flaeche_kern": 19
+        },
+        {
+          "segment": "r1c1:400607",
+          "teilkachel": "r1c1",
+          "id": 400607,
+          "klasse": "1.1.4",
+          "grob": "1",
+          "name": "Dach im Eigenschatten (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 723,
+          "grauwert": 53.1,
+          "id_abgabe": 607,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Dachfläche, im Eigenschatten",
+          "flaeche_kern": 723
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r1c1:400607|r1c1:400609",
+      "art": "viertel",
+      "bild": "paar_12.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            811,
+            750
+          ],
+          "bis": [
+            811,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 21.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400607",
+          "teilkachel": "r1c1",
+          "id": 400607,
+          "klasse": "1.1.4",
+          "grob": "1",
+          "name": "Dach im Eigenschatten (Grauregel)",
+          "im_kern": true,
+          "sicher": "nein",
+          "grund": "nur nach Grauton vorklassifiziert",
+          "quelle": "grauregel",
+          "flaeche": 723,
+          "grauwert": 53.1,
+          "id_abgabe": 607,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Dachfläche, im Eigenschatten",
+          "flaeche_kern": 723
+        },
+        {
+          "segment": "r1c1:400609",
+          "teilkachel": "r1c1",
+          "id": 400609,
+          "klasse": "0.1",
+          "grob": "0",
+          "name": "Schattenfuge zwischen Gebäuden",
+          "im_kern": true,
+          "sicher": "ja",
+          "grund": "",
+          "quelle": "fuge",
+          "flaeche": 35,
+          "grauwert": 30.5,
+          "id_abgabe": 609,
+          "klasse_teil": "5",
+          "klasse_teil_name": "Schlagschatten (Untergrund verdeckt)",
+          "flaeche_kern": 35
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "A",
+    "buendel": "A-14",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r1c1:400783|r1c1:400787",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400781|r1c1:400787",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400787|r1c1:400840",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400787|r1c1:400838",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400901|r1c1:400905",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400900|r1c1:400905",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400963|r1c1:400964",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400961|r1c1:400964",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400602|r1c1:400604",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400605|r1c1:400607",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400606|r1c1:400607",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400607|r1c1:400609",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

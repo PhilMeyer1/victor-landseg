@@ -1,0 +1,12 @@
+T0 A: umbenennen [('4', 'Dauergrünland (Krautige Vegetation)', 'Dauergrünland')]
+T0 A: neue Klassen [('4.4.1', 'Gartenrasen'), ('4.4.2', 'Gemischte Gartenfläche'), ('4.4.3', 'Gemüse- und Nutzbeete')]
+T0 A: Umstellung {'3.1': '4.4.1 (45 Segmente)', '3.2': '4.4.2 (23 Segmente)', '3.3': '4.4.3 (2 Segmente)'} je Teilkachel {'r0c0': 4, 'r0c1': 43, 'r1c0': 5, 'r1c1': 18}
+T0 B: umbenennen [('2', 'Dauergrünland (Grünland)', 'Dauergrünland'), ('3', 'Feld, Garten und offener Boden', 'Feld und offener Boden')]
+T0 B: neue Klassen [('2.4.1', 'Beete'), ('2.4.2', 'Parzelle gemischt')]
+T0 B: Umstellung {'3.3.1': '2.4.1 (4 Segmente)', '3.3.2': '2.4.2 (8 Segmente)', '3.3': '2.4 (0 Segmente)'} je Teilkachel {'r0c0': 2, 'r0c1': 0, 'r1c0': 4, 'r1c1': 6}
+H0 A: umbenennen [('4', 'Dauergrünland (Offene Fläche (nicht Acker))', 'Dauergrünland')]
+H0 A: neue Klassen [('4.4.1', 'Garten / Grün im Ort'), ('4.4.2', 'Gartenland mit Reihen')]
+H0 A: Umstellung {'2.2': '4.4.1 (138 Segmente)', '2.3': '4.4.2 (0 Segmente)'} je Teilkachel {'r0c0': 2, 'r0c1': 129, 'r1c0': 0, 'r1c1': 7}
+H0 B: umbenennen [('5', 'Dauergrünland (Grünfläche)', 'Dauergrünland'), ('2', 'Hof und Garten', 'Hof')]
+H0 B: neue Klassen []
+H0 B: Umstellung {'2.2': '5.3 (20 Segmente)'} je Teilkachel {'r0c0': 5, 'r0c1': 11, 'r1c0': 1, 'r1c1': 3}

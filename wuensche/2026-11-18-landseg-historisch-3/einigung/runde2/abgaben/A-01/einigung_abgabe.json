@@ -1,0 +1,36 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "A",
+  "buendel": "A-01",
+  "bearbeiter": "agent:einigung-A-01:20261118i-r2",
+  "paare": [
+    {
+      "paar": "r0c0:100095|r0c1:200785",
+      "entscheidung": "gleich",
+      "klasse": "1.2",
+      "grund": "Der kleine helle Fleck (Grau 150-186, rund 7 x 5 Bildpunkte) liegt quer über der Naht und gehört auf beiden Seiten zur mittelgrauen Hofstelle von Haus B4 7, ohne Kante und zu kurz für einen Dachstreifen; gemeinsame Klasse Hofstelle ungetrennt wie in den schon geeinigten Paaren mit r0c1:200689 und r0c1:200787."
+    },
+    {
+      "paar": "r0c0:100096|r0c1:200876",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Magenta ist der helle Dachstreifen des Längsbaus (Grau 145-176), türkis die mittelgraue Fläche darunter (Grau 123-148); beide berühren sich nur an einem Eckpunkt, der helle Streifen läuft links in einem anderen Segment weiter, also zwei verschiedene Flächen."
+    },
+    {
+      "paar": "r0c0:100059|r0c1:201164",
+      "entscheidung": "gleich",
+      "klasse": "3.1.1",
+      "grund": "Dasselbe helle Fahrbahnband der Straße C läuft auf 11 Randpunkten ohne Kante über die Naht, zwischen Höfen im Ort; Straße im Ort wie in der schon geeinigten Kette r0c1:201164 mit r1c1:400419."
+    },
+    {
+      "paar": "r0c1:201169|r1c1:400103",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "Türkis ist ein heller Hofflecken (Grau um 150-170), magenta nur der 3-4 Bildpunkte breite Übergangssaum (Grau von 160 auf 75 fallend) am Rand einer fast schwarzen Fläche; ob darunter Hofboden im Schlagschatten oder die Traufe eines Dachs im Eigenschatten liegt, gibt der Scan nicht her, und die Klasse Gebäude stammt nur aus der Grauregel."
+    }
+  ],
+  "offen": [
+    "r0c1:201169|r1c1:400103: Saum am dunklen Band bei x 547-555, y 500-511 – Hof im Schlagschatten oder Dachrand im Eigenschatten; klären würde ein Bild mit anderem Sonnenstand oder die Klärung, ob das dunkle Band Schlagschatten oder Dachhang ist."
+  ],
+  "nicht_geprueft": []
+}

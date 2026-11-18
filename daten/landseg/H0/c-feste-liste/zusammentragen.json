@@ -1,0 +1,267 @@
+{
+ "schema": "landseg-zusammentragen/1",
+ "manifest": "../manifest.json",
+ "einheiten": [
+  {
+   "teilkachel": "r0c0",
+   "labels": "r0c0/labels.tif",
+   "segmente": "r0c0/segmente.json",
+   "runde": 0,
+   "name": "c-r0c0"
+  },
+  {
+   "teilkachel": "r0c1",
+   "labels": "r0c1/labels.tif",
+   "segmente": "r0c1/segmente.json",
+   "runde": 0,
+   "name": "c-r0c1"
+  },
+  {
+   "teilkachel": "r1c0",
+   "labels": "r1c0/labels.tif",
+   "segmente": "r1c0/segmente.json",
+   "runde": 0,
+   "name": "c-r1c0"
+  },
+  {
+   "teilkachel": "r1c1",
+   "labels": "r1c1/labels.tif",
+   "segmente": "r1c1/segmente.json",
+   "runde": 0,
+   "name": "c-r1c1"
+  }
+ ],
+ "ziel": "zusammen",
+ "naht_bestaetigt": [
+  {
+   "naht": "r0c0|r0c1",
+   "ids": [
+    100042,
+    200004
+   ],
+   "grund": "Helles Dach endet 1–2 Bildpunkte links der Naht, rechts liegt dunkle Fläche; echte Dachkante knapp außerhalb des Prüfbands.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r0c1",
+   "ids": [
+    100111,
+    200042
+   ],
+   "grund": "Dunkle Hoffläche gegen helle Straße; die Kante kreuzt die Naht an dieser Stelle schräg.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r0c1",
+   "ids": [
+    100215,
+    200047
+   ],
+   "grund": "Heller Straßenrand gegen dunkles Dach; die Kante kreuzt die Naht schräg.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r0c1",
+   "ids": [
+    100218,
+    200100
+   ],
+   "grund": "Dunkle Gehölz- bzw. Schattenfläche gegen hellen Weg; die Kante liegt 2–3 Bildpunkte rechts der Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100223,
+    300002
+   ],
+   "grund": "Rand des Feldrains gegen den Acker; die Kante kreuzt die Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100154,
+    300080
+   ],
+   "grund": "Acker gegen den dunklen Streifen; dessen Oberkante kreuzt die Naht schräg.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100224,
+    300080
+   ],
+   "grund": "Graue Ackerfläche gegen den dunklen Streifen; dessen Oberkante liegt auf der Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100224,
+    300075
+   ],
+   "grund": "Graue Fläche gegen das dunkle Gebäude; dessen Oberkante liegt auf der Naht, unscharf.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100220,
+    300075
+   ],
+   "grund": "Heller offener Boden gegen das dunkle Gebäude; dessen Oberkante liegt auf der Naht, unscharf.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100225,
+    300006
+   ],
+   "grund": "Dunkler Gehölzstreifen gegen Acker; die Kante kreuzt die Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100195,
+    300004
+   ],
+   "grund": "Dunkler Acker gegen hellen Acker; die Schlaggrenze kreuzt die Naht schräg.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100229,
+    300004
+   ],
+   "grund": "Dunkle Fläche gegen hellen Acker; die Kante kreuzt die Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c0|r1c0",
+   "ids": [
+    100219,
+    300079
+   ],
+   "grund": "Acker gegen dunkles Gehölz; die Gehölzkante kreuzt die Naht schräg.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200100,
+    400037
+   ],
+   "grund": "Heller Weg gegen dunkles Gehölz; die Gehölzkante kreuzt die Naht steil, 1–3 Bildpunkte daneben.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200121,
+    400006
+   ],
+   "grund": "Helles Dach gegen den dunklen Gebäudeblock; Dachecken liegen auf der Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200063,
+    400011
+   ],
+   "grund": "Dunkler Fleck (Baum oder Schatten) gegen graue Straße; die Kante kreuzt die Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200063,
+    400042
+   ],
+   "grund": "Dunkle Gasse gegen helles Dach; die Kante kreuzt die Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200111,
+    400042
+   ],
+   "grund": "Ecke des hellen Dachs an der dunklen Gasse; die Kante kreuzt die Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r0c1|r1c1",
+   "ids": [
+    200124,
+    400029
+   ],
+   "grund": "Rand des dunklen Flecks gegen graue Straße; die Kante kreuzt die Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r1c0|r1c1",
+   "ids": [
+    300010,
+    400072
+   ],
+   "grund": "Unterkante der hellen Straße gegen dunklen Streifen; die Kante kreuzt die Naht schräg.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r1c0|r1c1",
+   "ids": [
+    300011,
+    400110
+   ],
+   "grund": "Dunkler Acker gegen helle Fläche an der Straße; die Kante kreuzt die Naht schräg.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r1c0|r1c1",
+   "ids": [
+    300030,
+    400118
+   ],
+   "grund": "Unterkante der hellen Straße gegen den dunklen Acker; die Kante kreuzt die Naht.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  },
+  {
+   "naht": "r1c0|r1c1",
+   "ids": [
+    300023,
+    400118
+   ],
+   "grund": "Heller Feldrain gegen dunklen Acker; die Kante läuft steil an der Naht entlang.",
+   "bearbeiter": "agent:naht-C:20261118i",
+   "runde": 1
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+# Erkenntnisse fürs Profil: landseg (aus Ermittlung landseg-effiz, 2026-11-18)
+
+Erkenntnisse fürs Profil:
+- Kosten eines Agent-Laufs messen: Transkripte liegen unter `C:/Users/Phil/.claude/projects/C--Users-Phil-Developement-Victor/<session>/subagents/workflows/<runId>/agent-*.jsonl`, je mit `agent-*.meta.json` (`description` = Label, `workflowPhase`, `model`). Tokens je `message.id` einmal zählen (`usage.input_tokens`, `cache_read_input_tokens`, `cache_creation_input_tokens`, `output_tokens`). Preise: `wunsch-system/plugins/wunsch/server/kern_auswertung.py:73` (Opus 4 / Cache-Schreiben 1 h 8 / Cache-Lesen 0,20 / Ausgabe 20 USD je Mio.; Workflow-Agents schreiben den Cache mit 1 h). Eine Auswertung liegt unter `wuensche/2026-11-18-landseg-effiz/roh/transkripte.txt`.
+- Kostentreiber ist das Wiederlesen des Verlaufs samt Bildern in jeder Runde (H0: 403 Mio. gelesen gegen 9,9 Mio. neu). Zahlen wie „3,30 Mio. Tokens“ aus der Workflow-Anzeige enthalten das Wiederlesen vermutlich nicht.
+- Falle in `wuensche/2026-11-18-landseg-historisch-3/workflow.js:404`: Die Nachhol-Prüfung vergleicht die gemeldete Segmentzahl mit der geplanten (`r.segmente !== r.e.n`). Nachsegmentieren ändert die Zahl, deshalb wird ein korrektes Viertel nachgeholt (H0: 8 Agents, rund 20 USD).
+- Urteils- und Einigungs-Agents schreiben wiederkehrende Hilfsskripte selbst (urteil.json bauen, `abgabe_bauen.py`, Ausschnitt- und Zoombilder), weil die Aufträge „Eigene Skripte als Datei“ erlauben und es dafür keinen `landseg`-Befehl gibt.

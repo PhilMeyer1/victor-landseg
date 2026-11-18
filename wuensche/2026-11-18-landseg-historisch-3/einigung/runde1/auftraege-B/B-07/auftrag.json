@@ -1,0 +1,1506 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-07",
+  "uebergross": true,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Hof und Garten",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Garten",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Grünfläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c1:200095|r0c1:200098",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            420
+          ],
+          "bis": [
+            750,
+            420
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200095",
+          "teilkachel": "r0c1",
+          "id": 200095,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.404
+          },
+          "instanz": {
+            "text": "road",
+            "eingerastet": true
+          },
+          "flaeche": 2874,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 2353,
+          "urteil": "sauber",
+          "was_ist_es": "Helle Fahrbahn der Straße, die vom Anger nach Süden führt.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        },
+        {
+          "segment": "r0c1:200098",
+          "teilkachel": "r0c1",
+          "id": 200098,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.425,
+            "abstand": 0.135
+          },
+          "flaeche": 149,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 149,
+          "urteil": "sauber",
+          "was_ist_es": "Schmaler mittelgrauer Streifen zwischen Straße 49 und dem Anger 97: Straßenrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c1:200097|r0c1:200098",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            422
+          ],
+          "bis": [
+            750,
+            423
+          ],
+          "laenge": 2,
+          "kante_max": 17.0
+        },
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            425
+          ],
+          "bis": [
+            750,
+            425
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        },
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            427
+          ],
+          "bis": [
+            750,
+            427
+          ],
+          "laenge": 1,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200097",
+          "teilkachel": "r0c1",
+          "id": 200097,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.347,
+            "abstand": 0.178
+          },
+          "flaeche": 8612,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3049,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Dreiecksfläche zwischen Straße 49 und der Straße nach Süden mit hellem Innenrand: Grasfläche des Angers.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Grünfläche",
+            "fein": "Anger (Gras)"
+          }
+        },
+        {
+          "segment": "r0c1:200098",
+          "teilkachel": "r0c1",
+          "id": 200098,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.425,
+            "abstand": 0.135
+          },
+          "flaeche": 149,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 149,
+          "urteil": "sauber",
+          "was_ist_es": "Schmaler mittelgrauer Streifen zwischen Straße 49 und dem Anger 97: Straßenrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c1:200120|r0c1:200122",
+      "art": "viertel",
+      "bild": "paar_03.jpg",
+      "randpunkte": 8,
+      "strecken": [
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            488
+          ],
+          "bis": [
+            750,
+            489
+          ],
+          "laenge": 2,
+          "kante_max": 23.0
+        },
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            492
+          ],
+          "bis": [
+            750,
+            492
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        },
+        {
+          "linie": "r0c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            494
+          ],
+          "bis": [
+            750,
+            498
+          ],
+          "laenge": 5,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200120",
+          "teilkachel": "r0c1",
+          "id": 200120,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.447,
+            "abstand": 0.145
+          },
+          "flaeche": 134,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 76,
+          "urteil": "sauber",
+          "was_ist_es": "Heller Rest der Fahrbahn 49 am unteren Kernrand.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        },
+        {
+          "segment": "r0c1:200122",
+          "teilkachel": "r0c1",
+          "id": 200122,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.229,
+            "abstand": 0.08
+          },
+          "flaeche": 186,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 95,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner mittelgrauer Fleck an der unteren linken Ecke von v4: Straßenrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c1:200122|r1c1:400051",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 14,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            749,
+            500
+          ],
+          "bis": [
+            762,
+            500
+          ],
+          "laenge": 14,
+          "kante_max": 15.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200122",
+          "teilkachel": "r0c1",
+          "id": 200122,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.229,
+            "abstand": 0.08
+          },
+          "flaeche": 186,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 95,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner mittelgrauer Fleck an der unteren linken Ecke von v4: Straßenrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        },
+        {
+          "segment": "r1c1:400051",
+          "teilkachel": "r1c1",
+          "id": 400051,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.356,
+            "abstand": 0.143
+          },
+          "flaeche": 878,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 792,
+          "urteil": "sauber",
+          "was_ist_es": "Heller Streifen der östlichen Dorfstraße am Nordrand zwischen zwei Schattenbändern, mit Randanteilen.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c1:200122|r1c1:400033",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            763,
+            500
+          ],
+          "bis": [
+            763,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 9.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200122",
+          "teilkachel": "r0c1",
+          "id": 200122,
+          "klasse": "3.3",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.229,
+            "abstand": 0.08
+          },
+          "flaeche": 186,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 95,
+          "urteil": "sauber",
+          "was_ist_es": "Kleiner mittelgrauer Fleck an der unteren linken Ecke von v4: Straßenrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Verkehrsfläche",
+            "mittel": "Straßenrand",
+            "fein": "Randstreifen (Bankett oder Gehweg)"
+          }
+        },
+        {
+          "segment": "r1c1:400033",
+          "teilkachel": "r1c1",
+          "id": 400033,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.208,
+            "abstand": 0.092
+          },
+          "flaeche": 2368,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1596,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nach dem Teilen der lange helle Dachstreifen zwischen den Schatten 400061 und 400045.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 7,
+              "art": "trennen",
+              "text": "Mehrere Dachstreifen und Hofteile waren ein Segment; in 4 Teile geteilt (379/109).",
+              "flaeche_px": 2314
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude mit mittelgrauem Dach"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c1:200097|r1c1:400033",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 15,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            764,
+            500
+          ],
+          "bis": [
+            765,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 17.0
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            767,
+            500
+          ],
+          "bis": [
+            773,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            778,
+            500
+          ],
+          "bis": [
+            780,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 20.0
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            782,
+            500
+          ],
+          "bis": [
+            784,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200097",
+          "teilkachel": "r0c1",
+          "id": 200097,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.347,
+            "abstand": 0.178
+          },
+          "flaeche": 8612,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3049,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Dreiecksfläche zwischen Straße 49 und der Straße nach Süden mit hellem Innenrand: Grasfläche des Angers.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Grünfläche",
+            "fein": "Anger (Gras)"
+          }
+        },
+        {
+          "segment": "r1c1:400033",
+          "teilkachel": "r1c1",
+          "id": 400033,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.208,
+            "abstand": 0.092
+          },
+          "flaeche": 2368,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 1596,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nach dem Teilen der lange helle Dachstreifen zwischen den Schatten 400061 und 400045.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 7,
+              "art": "trennen",
+              "text": "Mehrere Dachstreifen und Hofteile waren ein Segment; in 4 Teile geteilt (379/109).",
+              "flaeche_px": 2314
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude mit mittelgrauem Dach"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c1:200097|r1c1:400053",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 13,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            785,
+            500
+          ],
+          "bis": [
+            797,
+            500
+          ],
+          "laenge": 13,
+          "kante_max": 18.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200097",
+          "teilkachel": "r0c1",
+          "id": 200097,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.347,
+            "abstand": 0.178
+          },
+          "flaeche": 8612,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3049,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Dreiecksfläche zwischen Straße 49 und der Straße nach Süden mit hellem Innenrand: Grasfläche des Angers.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Grünfläche",
+            "fein": "Anger (Gras)"
+          }
+        },
+        {
+          "segment": "r1c1:400053",
+          "teilkachel": "r1c1",
+          "id": 400053,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.301,
+            "abstand": 0.127
+          },
+          "flaeche": 228,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 125,
+          "urteil": "sauber",
+          "was_ist_es": "Sehr dunkle Fläche neben einem hellen Dachstreifen: Schlagschatten.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Gebäudeschatten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c1:200097|r1c1:400049",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 7,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            801,
+            500
+          ],
+          "bis": [
+            807,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200097",
+          "teilkachel": "r0c1",
+          "id": 200097,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.347,
+            "abstand": 0.178
+          },
+          "flaeche": 8612,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3049,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Dreiecksfläche zwischen Straße 49 und der Straße nach Süden mit hellem Innenrand: Grasfläche des Angers.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Grünfläche",
+            "fein": "Anger (Gras)"
+          }
+        },
+        {
+          "segment": "r1c1:400049",
+          "teilkachel": "r1c1",
+          "id": 400049,
+          "klasse": "1.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.222,
+            "abstand": 0.049
+          },
+          "flaeche": 196,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 80,
+          "urteil": "sauber",
+          "was_ist_es": "Heller schmaler Dachstreifen zwischen zwei Schatten am Nordrand (80 px im Kern).",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Gebäude",
+            "fein": "Gebäude mit hellem Dach"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c1:200097|r1c1:400045",
+      "art": "naht",
+      "bild": "paar_09.jpg",
+      "randpunkte": 16,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            813,
+            500
+          ],
+          "bis": [
+            828,
+            500
+          ],
+          "laenge": 16,
+          "kante_max": 19.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200097",
+          "teilkachel": "r0c1",
+          "id": 200097,
+          "klasse": "5.2.1",
+          "grob": "5",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.347,
+            "abstand": 0.178
+          },
+          "flaeche": 8612,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 3049,
+          "urteil": "sauber",
+          "was_ist_es": "Mittelgraue Dreiecksfläche zwischen Straße 49 und der Straße nach Süden mit hellem Innenrand: Grasfläche des Angers.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Freifläche",
+            "mittel": "Grünfläche",
+            "fein": "Anger (Gras)"
+          }
+        },
+        {
+          "segment": "r1c1:400045",
+          "teilkachel": "r1c1",
+          "id": 400045,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.67,
+            "abstand": 0.449
+          },
+          "flaeche": 839,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 489,
+          "urteil": "sauber",
+          "was_ist_es": "Langes dunkles Band an der Ostseite eines Dachstreifens: Schlagschatten.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Gebäudeschatten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r1c1:400051|r1c1:400060",
+      "art": "viertel",
+      "bild": "paar_10.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            541
+          ],
+          "bis": [
+            750,
+            541
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            546
+          ],
+          "bis": [
+            750,
+            546
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400051",
+          "teilkachel": "r1c1",
+          "id": 400051,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.356,
+            "abstand": 0.143
+          },
+          "flaeche": 878,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 792,
+          "urteil": "sauber",
+          "was_ist_es": "Heller Streifen der östlichen Dorfstraße am Nordrand zwischen zwei Schattenbändern, mit Randanteilen.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Straße",
+            "fein": "Dorfstraße"
+          }
+        },
+        {
+          "segment": "r1c1:400060",
+          "teilkachel": "r1c1",
+          "id": 400060,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.563,
+            "abstand": 0.346
+          },
+          "flaeche": 3390,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 3390,
+          "urteil": "sauber",
+          "was_ist_es": "Langes dunkles Band an der Ostseite der Häuserzeile zur östlichen Dorfstraße: Schlagschatten.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Gebäudeschatten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r1c1:400060|r1c1:400105",
+      "art": "viertel",
+      "bild": "paar_11.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            606
+          ],
+          "bis": [
+            750,
+            606
+          ],
+          "laenge": 1,
+          "kante_max": 23.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400060",
+          "teilkachel": "r1c1",
+          "id": 400060,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.563,
+            "abstand": 0.346
+          },
+          "flaeche": 3390,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 3390,
+          "urteil": "sauber",
+          "was_ist_es": "Langes dunkles Band an der Ostseite der Häuserzeile zur östlichen Dorfstraße: Schlagschatten.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Gebäudeschatten"
+          }
+        },
+        {
+          "segment": "r1c1:400105",
+          "teilkachel": "r1c1",
+          "id": 400105,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.222,
+            "abstand": 0.07
+          },
+          "flaeche": 214,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 214,
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Unregelmäßige graue Fläche am Ostende der Häuserzeile vor dem Schattenband: Hof- oder Vorgartenfläche.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "klasse",
+              "text": "Vorstufe Baustelle; Hof/Vorgarten (303/163).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hof/Freifläche",
+            "fein": "Hof/Freifläche"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r1c1:400060|r1c1:400111",
+      "art": "viertel",
+      "bild": "paar_12.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            628
+          ],
+          "bis": [
+            750,
+            630
+          ],
+          "laenge": 3,
+          "kante_max": 17.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400060",
+          "teilkachel": "r1c1",
+          "id": 400060,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.563,
+            "abstand": 0.346
+          },
+          "flaeche": 3390,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 3390,
+          "urteil": "sauber",
+          "was_ist_es": "Langes dunkles Band an der Ostseite der Häuserzeile zur östlichen Dorfstraße: Schlagschatten.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Gebäudeschatten"
+          }
+        },
+        {
+          "segment": "r1c1:400111",
+          "teilkachel": "r1c1",
+          "id": 400111,
+          "klasse": "0.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.29,
+            "abstand": 0.112
+          },
+          "flaeche": 73,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.2",
+          "sicher_vorstufe": "nein",
+          "flaeche_kern": 73,
+          "urteil": "sauber",
+          "was_ist_es": "Kleines dunkelgraues Stück am Rand des Schattenbands an der Viertelgrenze.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Schlagschatten"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 13,
+      "paar": "r1c1:400060|r1c1:400260",
+      "art": "viertel",
+      "bild": "paar_13.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            632
+          ],
+          "bis": [
+            750,
+            633
+          ],
+          "laenge": 2,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400060",
+          "teilkachel": "r1c1",
+          "id": 400060,
+          "klasse": "0.1.1",
+          "grob": "0",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.563,
+            "abstand": 0.346
+          },
+          "flaeche": 3390,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "flaeche_kern": 3390,
+          "urteil": "sauber",
+          "was_ist_es": "Langes dunkles Band an der Ostseite der Häuserzeile zur östlichen Dorfstraße: Schlagschatten.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schlagschatten",
+            "fein": "Gebäudeschatten"
+          }
+        },
+        {
+          "segment": "r1c1:400260",
+          "teilkachel": "r1c1",
+          "id": 400260,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "eingriff:polygon_zuweisen",
+          "klasse_vorstufe": "1.1.1",
+          "sicher_vorstufe": null,
+          "im_kern": true,
+          "flaeche": 1170,
+          "flaeche_kern": 1170,
+          "sicher": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Ostende mit dunklen Teilen am Schattenband. Streifen eines Streckhofs aus dem Nachsegmentieren von 400006: Dach und Hof zwischen zwei dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+          "viertel": "v1",
+          "klasse_frei": {
+            "grob": "Siedlung",
+            "mittel": "Hofstelle",
+            "fein": "Streckhof-Streifen"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-07",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c1:200095|r0c1:200098",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200097|r0c1:200098",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200120|r0c1:200122",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200122|r1c1:400051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200122|r1c1:400033",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200097|r1c1:400033",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200097|r1c1:400053",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200097|r1c1:400049",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200097|r1c1:400045",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400051|r1c1:400060",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400060|r1c1:400105",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400060|r1c1:400111",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400060|r1c1:400260",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

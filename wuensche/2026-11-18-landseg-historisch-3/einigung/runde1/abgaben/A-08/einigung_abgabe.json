@@ -1,0 +1,31 @@
+{"schema": "landseg-einigung-abgabe/1", "fassung": "A", "buendel": "A-08",
+ "bearbeiter": "agent:einigung-A-08:20261118i-r1",
+ "paare": [
+  {"paar": "r0c1:201173|r1c1:400105", "entscheidung": "unklar", "klasse": null,
+   "grund": "400105 ist ein ein bis zwei Bildpunkte schmaler Saum (Grauwert um 101) zwischen der fast schwarzen Fläche 201173 (Grauwert 54) und dem hellen Dach; Mischbildpunkte, ob Dachtraufe oder Rand des Schattens, ist bei 0,45 m nicht zu entscheiden."},
+  {"paar": "r0c1:201067|r1c1:400105", "entscheidung": "grenze", "klasse": null,
+   "grund": "Das helle Dach 201067 (Grauwert 195) berührt den dunklen Saum 400105 (Grauwert um 101) nur an einem Eckpunkt; dort liegt der Helligkeitssprung vom besonnten Dach zur dunklen Seite, also verschiedene Flächen."},
+  {"paar": "r0c1:201067|r1c1:400106", "entscheidung": "grenze", "klasse": null,
+   "grund": "400106 ist der dunkle Ring (Grauwert um 90) um den schwarzen Schattenfleck unter dem Dach und berührt das helle Dach 201067 (Grauwert 195) nur an der Ecke; deutlicher Helligkeitsunterschied, verschiedene Flächen."},
+  {"paar": "r0c1:201067|r1c1:400107", "entscheidung": "gleich", "klasse": "1.1",
+   "grund": "Dasselbe helle, rechteckige Dach mit Schlagschatten daneben, von der Naht nur zerschnitten (Grauwert 195 und 194, keine Kante); sicher ein Gebäude, ob Haupt- oder Nebengebäude ist auf dem Scan nicht zu sehen, darum die Elternklasse."},
+  {"paar": "r0c1:201067|r1c1:400109", "entscheidung": "gleich", "klasse": "1.1",
+   "grund": "400109 ist der etwas dunklere Unterrand (Grauwert 160) desselben hellen Dachs, ohne Kante zum Dach; gleiche Klasse wie die übrigen Teile dieses Dachs."},
+  {"paar": "r0c1:201182|r1c1:400110", "entscheidung": "grenze", "klasse": null,
+   "grund": "Unter der Naht liegt ein kleiner, deutlich dunklerer Fleck (Grauwert 89) in der mittelgrauen Hoffläche (Grauwert 118); er hebt sich im Bild ab und ist nicht dieselbe Fläche."},
+  {"paar": "r0c1:201184|r1c1:400113", "entscheidung": "gleich", "klasse": "2",
+   "grund": "Dieselbe mittelgraue, leicht fleckige Fläche ohne Dachform zwischen Dachschatten und Straße (Grauwert 124 und 108, keine Kante); kein Gebäude, Hof oder Garten ist auf Schwarz-Weiß nicht zu trennen, darum die Elternklasse."},
+  {"paar": "r0c1:201189|r1c1:400113", "entscheidung": "gleich", "klasse": "2",
+   "grund": "Dieselbe mittelgraue Freifläche wie im Nachbarpaar (Grauwert 115 und 108), ohne Kante über die Naht; gleiche Klasse wie die Kette über 400113."},
+  {"paar": "r0c1:201196|r1c1:400117", "entscheidung": "grenze", "klasse": null,
+   "grund": "400117 ist ein kleiner fast schwarzer Fleck (Grauwert 49) am Rand der mittelgrauen Fläche 201196 (Grauwert 114); klarer Helligkeitssprung, verschiedene Flächen."},
+  {"paar": "r0c1:201196|r1c1:400120", "entscheidung": "gleich", "klasse": "2",
+   "grund": "Derselbe mittelgraue Streifen zwischen Häuserzeile und heller Straße läuft ohne Kante über die Naht (Grauwert 114 und 113); keine Dachform, also kein Gebäude, Hof oder Garten nicht trennbar, darum die Elternklasse."},
+  {"paar": "r0c1:201093|r1c1:400120", "entscheidung": "unklar", "klasse": null,
+   "grund": "Die beiden berühren sich nur an einem Eckpunkt; 201093 gehört zum etwas dunkleren, weichen Band (Grauwert 96), 400120 zum helleren Streifen an der Straße (113), ohne sichtbare Kante; ob das zwei Flächen sind, ist am Bild nicht zu entscheiden."}
+ ],
+ "offen": [
+  "r0c1:201173|r1c1:400105: schmaler Mischsaum zwischen Schatten und Dach, Zuordnung nur mit schärferem Bild oder Farbbild zu klären",
+  "r0c1:201093|r1c1:400120: Eckkontakt zwischen dunklerem Band und hellerem Streifen an der Straße, ob Garten oder Hof bzw. eine Fläche, nur mit Farbbild zu klären"
+ ],
+ "nicht_geprueft": []}

@@ -1,0 +1,39 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-03",
+ "bearbeiter": "agent:einigung-B-03:20261118i-r1",
+ "paare": [
+  {"paar": "r0c0:100032|r0c1:200019", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Bei y 23–24 liegt beiderseits derselbe dunkle Schlagschatten unter der Traufe des hellen Dachs 100042 (Grauwerte um 60–70, keine Kante); der Kernteil von 200019 ist nach dem Urteil von r0c1 selbst nur Schatten, kein Dach, und unter dem Schatten ist der Boden nicht zu erkennen (U1), darum die Elternklasse Schlagschatten für die ganze Kette."},
+  {"paar": "r0c0:100032|r0c1:200004", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Bei y 25–28 und 38–41 läuft das dunkle Schattenkreuz zwischen den Langhäusern ohne Tonsprung über die Naht (beiderseits 30–50, am Rand 60–90); links als Hof im Schatten, rechts als Schatten zwischen Gebäuden benannt, der Untergrund ist nicht sichtbar, darum gemeinsam Schlagschatten."},
+  {"paar": "r0c0:100056|r0c1:200004", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Bei y 29–37 setzt sich das fast schwarze Schattenband zwischen Dach 100042 und dem nächsten Dachstreifen genau fort (beiderseits 20–40), gleiche Fläche; Hof darunter ist nicht zu sehen, darum Schlagschatten wie die übrige Kette."},
+  {"paar": "r0c0:100063|r0c1:200004", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Am einen Randpunkt y 39 berühren sich beide Seiten im selben dunklen Schattenkreuz (52 gegen 55), keine Kante; gleiche Schattenfläche, Klasse Schlagschatten wie die Kette."},
+  {"paar": "r0c0:100070|r0c1:200004", "entscheidung": "unklar", "klasse": null,
+   "grund": "Bei y 42–47 zeigen beide Seiten dasselbe Mittelgrau (um 100) am Giebelende des hellen Dachstreifens 200170, also Halbschatten; 200004 ist aber im Ganzen ein dunkles Schattenband und 100070 ein mittelgraues Stück, der Übergang Halbschatten–Schatten liegt innerhalb von 200004 und nicht an der Naht, mit einer Klasse nicht zu lösen."},
+  {"paar": "r0c0:100070|r0c1:200186", "entscheidung": "gleich", "klasse": "0.2.1",
+   "grund": "Bei y 48 und 52 liegt beiderseits dieselbe mittelgraue Fläche (78/106 gegen 56/101) zwischen dem hellen Dachstreifen 200170 und dem dunklen Schatten; der 45 Bildpunkte kleine Kernteil von 100070 ist kein helles Dach, sondern dieser Halbschatten, Dachseite oder Hof nicht zu trennen."},
+  {"paar": "r0c0:100032|r0c1:200186", "entscheidung": "unklar", "klasse": null,
+   "grund": "Bei y 53–55 sind beide Seiten gleich mittelgrau (um 70–105) ohne Kante, aber 100032 ist im Ganzen zur Hälfte dunkler Schatten und hängt an der Schattenkette, 200186 ein mittelgrauer Halbschattenfleck; ob die Stelle zum Schatten oder zum Halbschatten gehört, gibt der Scan nicht her."},
+  {"paar": "r0c0:100032|r0c1:200169", "entscheidung": "gleich", "klasse": "0.1",
+   "grund": "Bei y 56–62 geht das dunkle Schattenband unter dem Dachstreifen 200170 ohne Sprung über die Naht (beiderseits 45–95, nach rechts dunkler), gleiche Schattenfläche; Klasse Schlagschatten wie die Kette."},
+  {"paar": "r0c0:100081|r0c1:200180", "entscheidung": "grenze", "klasse": null,
+   "grund": "Bei y 77–83 liegt der weiche Abfall vom hellen Dachstreifen (100081, rechts fortgesetzt als Dach 200171) zur mittelgrauen Fläche darunter (125 auf 80); die Kante Dach–Halbschatten läuft schräg über die Naht und ist links nur einige Bildpunkte tiefer gezogen, es sind zwei verschiedene Flächen."},
+  {"paar": "r0c0:100032|r0c1:200180", "entscheidung": "unklar", "klasse": null,
+   "grund": "Bei y 88–91 läuft ein schmaler dunkler Streifen (50–76) über die Naht, der links in 100032 und rechts im unteren Teil von 200180 liegt; 200180 ist im Ganzen mittelgrau (Halbschatten), 100032 Schatten, welche Klasse die Stelle trägt, ist am Scan nicht zu entscheiden."},
+  {"paar": "r0c0:100092|r0c1:200180", "entscheidung": "grenze", "klasse": null,
+   "grund": "Bei y 92–96 trifft der mittelgraue Randstreifen an der Straße (100092, rechts fortgesetzt als 200031) auf den dunklen Streifen und die Halbschattenfläche 200180 darüber; die Grenze Randstreifen–Schatten läuft schräg über die Naht, zwei verschiedene Flächen."},
+  {"paar": "r0c0:100092|r0c1:200031", "entscheidung": "gleich", "klasse": "3.3",
+   "grund": "Bei y 97–103 setzt sich derselbe schmale mittelgraue Streifen zwischen Häuserblock und heller Fahrbahn ohne Kante fort (beiderseits 75–100); er ist deutlich dunkler als die Fahrbahn 100030/200049 (Median um 150–177) und bandförmig an ihrem Rand, darum Straßenrand für beide."}
+ ],
+ "offen": [
+  "100070|200004 (y 42–47): mittelgrauer Halbschattenrand am Giebelende von Dach 200170 steckt in 200004 (Schatten); nur eine Grenzänderung in r0c1 (Rand von 200004 zu 200186) löst das, keine Klasse.",
+  "100032|200186 und 100032|200180: 100032 ist ein gemischtes Segment (47 % dunkel, 49 % mittelgrau); Trennung Schatten gegen Halbschatten innerhalb von 100032 wäre nötig; Farbbild oder Stereo entscheidet, ob Dachseite, Hof oder Schatten.",
+  "Schattenkette 100032, 100056, 100063, 200004, 200019, 200169 bekommt die Elternklasse 0.1 Schlagschatten: ob darunter Hof (2.1.2) oder die Schattenseite der Dächer liegt, zeigt der Schwarz-Weiß-Scan nicht (U1).",
+  "200019 hat nach der Einigung im Kern Klasse 0.1; der Dachteil liegt im Kontext von r0c1 bzw. im Kern von r0c0 (100042), die Trennung an der Traufkante x 57–62 aus dem Urteil von r0c1 bleibt dort offen."
+ ],
+ "nicht_geprueft": []
+}
