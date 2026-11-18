@@ -1,0 +1,96 @@
+/* Platz d: Schrittleiste unter dem Kopf. Kopf (72 px) und Schrittleiste (78 px) zusammen als feste
+   Kopfhöhe, in allen Zuständen gleich: das Bild springt beim Umschalten nicht. */
+:root { --d-kopf: 72px; --d-schritte: 78px; --kopf-hoehe: calc(var(--d-kopf) + var(--d-schritte)); }
+
+.d-oben { display: grid; grid-template-rows: var(--d-kopf) var(--d-schritte); min-width: 0; min-height: 0; overflow: hidden; }
+.d-oben .c-kopf { border-bottom: 0; }
+
+/* Schrittleiste: vorige | Ganzer Ausschnitt | 1 2 3 4 | nächste */
+.d-schritte { display: flex; align-items: stretch; gap: 8px; padding: 8px 14px; background: var(--detail); border-top: 1px solid var(--linie); border-bottom: 1px solid var(--linie); min-width: 0; overflow: hidden; }
+.d-spur { flex: 1 1 auto; min-width: 0; display: flex; align-items: stretch; gap: 8px; }
+.d-vier { flex: 1 1 auto; min-width: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.d-trenner { flex: none; width: 1px; margin: 6px 0; background: var(--grau-4); }
+
+/* vorige / nächste an den Enden */
+.d-pfeil { flex: 0 0 118px; display: flex; align-items: center; gap: 8px; padding: 0 12px; border: 1px solid var(--linie); border-radius: var(--radius); background: var(--grau-2); color: var(--text); text-decoration: none; min-width: 0; height: auto; }
+.d-pfeil:hover { border-color: var(--grau-4); background: var(--grau-3); }
+.d-pfeil-vor { justify-content: flex-end; text-align: right; }
+.d-zeichen { font-size: 28px; line-height: 1; color: var(--akzent); flex: none; }
+.d-pfeil:disabled .d-zeichen { color: var(--text-leise); }
+.d-pfeil:disabled { opacity: .45; }
+.d-pfeiltext { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.d-pfeiltext b { font-size: 14px; font-weight: 600; }
+.d-pfeiltext small { font-size: var(--gr-mini); color: var(--text-leise); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Reiter: Miniatur mit Nummer, Raster-Symbol, Lage, Stand */
+.d-reiter { position: relative; display: flex; align-items: center; gap: 10px; padding: 6px 10px 6px 6px; min-width: 0; border: 1px solid var(--linie); border-radius: var(--radius); background: var(--flaeche); color: var(--text); text-decoration: none; }
+.d-reiter-ganz { flex: 0 0 190px; }
+.d-reiter:hover { border-color: var(--grau-4); background: var(--grau-2); }
+.d-reiter.d-aktiv { border-color: var(--akzent); background: var(--grau-3); box-shadow: inset 0 -3px 0 var(--akzent); }
+.d-bild { position: relative; flex: none; width: 48px; height: 48px; }
+.d-mini { width: 48px; height: 48px; border-radius: 4px; }
+.d-mini-ganz { position: relative; display: block; background-color: #000; background-size: 100% 100%; }
+.d-mini-ganz::after { content: ""; position: absolute; inset: 0; background:
+  linear-gradient(var(--grund), var(--grund)) 50% 0 / 1px 100% no-repeat,
+  linear-gradient(var(--grund), var(--grund)) 0 50% / 100% 1px no-repeat; }
+.d-nr { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--grund); color: var(--text); border: 1px solid var(--grau-4); font-size: var(--gr-mini); font-weight: 700; flex: none; }
+.d-bild .d-nr { position: absolute; left: -5px; bottom: -5px; }
+.d-aktiv .d-nr { background: var(--akzent); color: var(--akzent-text); border-color: var(--akzent); }
+.d-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.d-ober { display: flex; align-items: center; gap: 6px; font-size: var(--gr-mini); color: var(--text-leise); white-space: nowrap; overflow: hidden; }
+.d-text b { font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.d-aktiv .d-text b { color: var(--akzent); }
+.d-stand { font-size: var(--gr-mini); color: var(--text-leise); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.d-kennung { font-size: var(--gr-mini); color: var(--text-leise); opacity: .8; }
+
+/* Teilkachel ohne Daten: ausgegraut, bleibt wählbar */
+.d-reiter.d-ohne { border-style: dashed; }
+.d-reiter.d-ohne .d-mini { filter: grayscale(1) brightness(.55); }
+.d-reiter.d-ohne .d-text b, .d-reiter.d-ohne .d-stand { color: var(--text-leise); }
+
+/* Raster-Symbol: 2 × 2 in Lage der Teilkacheln */
+.d-raster { display: inline-grid; grid-template-columns: 6px 6px; gap: 1px; flex: none; }
+.d-raster i { width: 6px; height: 6px; border-radius: 1px; background: var(--grau-4); }
+.d-raster i.d-an { background: var(--text); }
+.d-aktiv .d-raster i.d-an { background: var(--akzent); }
+
+/* Zeile über dem Bild */
+.c-tafel figcaption .d-kennung { margin-left: -8px; }
+
+/* Hinweis im Bild: Teilkachel n von 4, Fortschritt, nächster Schritt */
+.d-fortschritt { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 2; display: flex; align-items: center; gap: 12px; max-width: calc(100% - 24px); padding: 6px 6px 6px 14px; border: 1px solid var(--grau-4); border-radius: 8px; background: rgba(14, 15, 17, .88); font-size: var(--gr-klein); white-space: nowrap; cursor: default; }
+.d-fz { color: var(--text-leise); flex: none; }
+.d-fz b { color: var(--akzent); font-size: 15px; }
+.d-punkte { display: inline-flex; gap: 5px; flex: none; }
+.d-punkte i { width: 8px; height: 8px; border-radius: 50%; background: var(--grau-4); }
+.d-punkte i.d-war { background: var(--text-leise); }
+.d-punkte i.d-hier { background: var(--akzent); }
+.d-weiter { min-width: 0; overflow: hidden; text-overflow: ellipsis; padding: 4px 12px; border-radius: var(--radius); background: var(--akzent); color: var(--akzent-text); font-weight: 600; text-decoration: none; }
+.d-weiter:hover { filter: brightness(1.08); }
+.d-tasten { display: inline-flex; gap: 3px; flex: none; }
+kbd { display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 4px; border: 1px solid var(--grau-4); border-bottom-width: 2px; border-radius: 4px; color: var(--text-leise); font: var(--gr-mini)/1 var(--schrift); }
+
+/* Ganzer Ausschnitt: Nummer und Lage in jedem Viertel */
+.c-viertel { text-decoration: none; color: var(--text); }
+.d-marke { position: absolute; left: 10px; top: 10px; display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px 4px 4px; border-radius: 999px; background: rgba(14, 15, 17, .85); font-size: var(--gr-text); white-space: nowrap; }
+.c-viertel:hover .d-marke { color: var(--akzent); }
+.c-viertel:hover .d-marke .d-nr { background: var(--akzent); color: var(--akzent-text); border-color: var(--akzent); }
+.d-marke.d-ohne { color: var(--text-leise); }
+
+/* Handy: Reiter nur als Miniatur mit Nummer, Pfeile nur als Zeichen */
+@media (max-width: 760px) {
+  :root { --d-kopf: 64px; --d-schritte: 60px; }
+  .d-schritte { gap: 6px; padding: 6px 8px; }
+  .d-spur { gap: 6px; }
+  .d-vier { gap: 4px; }
+  .d-pfeil { flex: 0 0 40px; padding: 0; justify-content: center; }
+  .d-pfeiltext { display: none; }
+  .d-reiter, .d-reiter-ganz { flex: 0 0 auto; justify-content: center; gap: 0; padding: 3px; }
+  .d-vier .d-reiter { flex: 1 1 auto; }
+  .d-text { display: none; }
+  .d-bild, .d-mini { width: 38px; height: 38px; }
+  .d-bild .d-nr { left: -3px; bottom: -3px; width: 18px; height: 18px; }
+  .d-fortschritt { gap: 8px; bottom: 8px; padding: 4px 4px 4px 10px; }
+  .d-punkte, .d-tasten { display: none; }
+  .d-marke { font-size: var(--gr-klein); left: 6px; top: 6px; }
+}

@@ -1,0 +1,112 @@
+/* Platz b: Lageplan in der linken Leiste. Der Kopf behält seine 72 px; die Wahl sitzt oben in der festen
+   Leiste (320 px) und hat in allen Zuständen dieselbe Höhe. Größe des Lageplans hängt nur an der
+   Fensterhöhe, nie am Zustand. */
+:root {
+  --plan: clamp(184px, calc(100vh - 560px), 296px);
+  --maus-hoehe: 118px;
+  --schatten-grund: rgba(14, 15, 17, .8);
+}
+
+/* Kopf: Ort statt der kleinen Textlinks */
+.b-ort { display: inline-flex; align-items: center; gap: 8px; min-width: 0; color: var(--text-leise); font-size: var(--gr-klein); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.b-symbol { display: inline-grid; grid-template-columns: 6px 6px; grid-template-rows: 6px 6px; gap: 1px; flex: none; }
+.b-symbol i { background: var(--grau-4); border-radius: 1px; }
+.b-symbol i.b-an { background: var(--akzent); }
+
+/* Leiste links: Wahl oben, darunter wie heute; bei sehr niedrigem Fenster rollt die Leiste */
+.c-info.b-info { grid-template-rows: auto var(--maus-hoehe) minmax(0, 1fr) auto auto; overflow-y: auto; }
+.c-info.b-info .c-komm textarea { height: 52px; }
+
+.b-wahl { display: grid; gap: 8px; padding-bottom: 12px; border-bottom: 1px solid var(--linie); }
+.b-titel { margin: 0; color: var(--text); }
+
+/* Lageplan: die vier Teilkacheln in ihrer Lage, quadratisch wie der Ausschnitt */
+.b-plan { justify-self: center; width: min(var(--plan), 100%); aspect-ratio: 1; max-width: 100%; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4px; padding: 4px; background: var(--grund); border: 1px solid var(--linie); border-radius: var(--radius); }
+.b-zelle { position: relative; display: block; min-width: 0; min-height: 0; overflow: hidden; border-radius: 3px; text-decoration: none; color: var(--text); container-type: inline-size; }
+.b-zelle .c-mini { position: absolute; inset: 0; width: 100%; height: 100%; filter: brightness(.6) saturate(.85); transition: filter .12s; }
+.b-zelle:hover .c-mini, .b-zelle.b-aktiv .c-mini { filter: none; }
+.b-zelle::after { content: ""; position: absolute; inset: 0; border: 3px solid transparent; border-radius: 3px; pointer-events: none; }
+.b-zelle:hover::after { border-color: var(--grau-4); }
+.b-zelle.b-aktiv::after { border-color: var(--akzent); }
+.b-zelle:focus-visible { outline-offset: -2px; }
+.b-nr { position: absolute; top: 6px; left: 6px; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: var(--schatten-grund); color: var(--text); font-size: var(--gr-klein); font-weight: 600; }
+.b-aktiv .b-nr { background: var(--akzent); color: var(--akzent-text); }
+.b-name { position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: baseline; justify-content: space-between; gap: 6px; padding: 4px 8px 5px; background: var(--schatten-grund); font-size: var(--gr-klein); white-space: nowrap; overflow: hidden; }
+.b-name b { font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
+.b-name small { color: var(--text-leise); font-size: var(--gr-mini); }
+.b-aktiv .b-name { background: var(--akzent); color: var(--akzent-text); }
+.b-aktiv .b-name small { color: var(--akzent-text); opacity: .7; }
+.b-ohne .c-mini { filter: grayscale(1) brightness(.4); }
+.b-ohne .b-name { color: var(--text-leise); }
+.b-keine { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); text-align: center; font-size: var(--gr-mini); color: var(--text); }
+@container (max-width: 110px) { .b-name small { display: none; } }
+
+/* Ganzer Ausschnitt: eigene, gleich sichtbare Wahl */
+.b-ganz { display: grid; grid-template-columns: 34px minmax(0, 1fr); align-items: center; gap: 10px; height: 46px; padding: 0 10px 0 5px; background: var(--grau-2); border: 1px solid var(--linie); border-radius: var(--radius); text-decoration: none; color: var(--text); }
+.b-ganz:hover { border-color: var(--grau-4); }
+.b-ganz.b-aktiv { background: var(--grau-3); border-color: var(--akzent); }
+.b-ganz.b-aktiv b { color: var(--akzent); }
+.b-ganz-bild { position: relative; width: 34px; height: 34px; border-radius: 3px; background-color: #000; background-size: cover; }
+.b-ganz-bild::before, .b-ganz-bild::after { content: ""; position: absolute; }
+.b-ganz-bild::before { left: 50%; top: 0; bottom: 0; border-left: 1px dashed rgba(255, 255, 255, .85); }
+.b-ganz-bild::after { top: 50%; left: 0; right: 0; border-top: 1px dashed rgba(255, 255, 255, .85); }
+.b-ganz-text { display: grid; line-height: 1.25; min-width: 0; }
+.b-ganz-text b { font-weight: 600; }
+.b-ganz-text small { color: var(--text-leise); font-size: var(--gr-mini); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* vorige · Teilkachel n von 4 · nächste */
+.b-schritt { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 8px; height: 40px; }
+.b-schritt button { height: 34px; padding: 0 10px; }
+.b-schritt kbd { display: inline-block; min-width: 18px; padding: 0 3px; border: 1px solid var(--grau-4); border-radius: 3px; font: var(--gr-mini)/16px var(--schrift); color: var(--text-leise); text-align: center; }
+.b-schritt button:not(:disabled):hover kbd { color: var(--text); }
+.b-zaehler { display: grid; text-align: center; line-height: 1.2; white-space: nowrap; overflow: hidden; }
+.b-zaehler b { color: var(--akzent); font-size: 15px; }
+.b-zaehler small { color: var(--text-leise); font-size: var(--gr-mini); overflow: hidden; text-overflow: ellipsis; }
+
+/* Im Bild: Ort und Weiter-Knopf im abgedunkelten Rand */
+.b-marke, .b-weiter { position: absolute; display: inline-flex; align-items: center; gap: 8px; height: 26px; padding: 0 10px; border-radius: 13px; font-size: var(--gr-klein); white-space: nowrap; z-index: 2; }
+.b-marke { top: 8px; left: 8px; background: var(--schatten-grund); color: var(--text); pointer-events: none; }
+.b-marke b { color: var(--akzent); }
+.b-weiter { right: 8px; bottom: 8px; background: var(--akzent); color: var(--akzent-text); text-decoration: none; font-weight: 500; cursor: pointer; }
+.b-weiter b { font-weight: 700; }
+.b-weiter:hover { filter: brightness(1.08); }
+
+/* Ganzer Ausschnitt: Nummer und Lage in jedem Viertel */
+.b-viertel { position: absolute; top: 8px; left: 8px; display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px 2px 3px; border-radius: 12px; background: var(--schatten-grund); color: var(--text); font-size: var(--gr-klein); white-space: nowrap; }
+.b-viertel i { width: 18px; height: 18px; display: grid; place-items: center; border-radius: 50%; background: var(--grau-3); font-style: normal; font-weight: 600; font-size: var(--gr-mini); }
+.c-viertel:hover .b-viertel i { background: var(--akzent); color: var(--akzent-text); }
+
+/* rechte Liste im ganzen Ausschnitt */
+.b-zeile { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; align-items: center; gap: 8px; padding: 6px 4px; border-radius: 4px; text-decoration: none; color: var(--text); }
+.b-zeile:hover { background: var(--grau-2); }
+.b-zeile i { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 50%; background: var(--grau-3); font-style: normal; font-weight: 600; font-size: var(--gr-mini); }
+.b-zeile span { display: grid; line-height: 1.25; min-width: 0; }
+.b-zeile small { color: var(--text-leise); font-size: var(--gr-mini); }
+.b-zeile .c-za { color: var(--text-leise); font-size: var(--gr-mini); white-space: nowrap; }
+.b-zeile.b-ohne b { color: var(--text-leise); }
+
+/* Handy: die Leiste links schrumpft auf eine feste Zeile über dem Bild (Lageplan klein, Knöpfe daneben) */
+@media (max-width: 760px) {
+  .c-mitte { grid-template-rows: auto minmax(0, 1fr); }
+  .c-info, .c-info.b-info { display: block; padding: 8px 10px; border-right: 0; border-bottom: 1px solid var(--linie); overflow: hidden; }
+  .c-info > :not(.b-wahl) { display: none; }
+  .b-ort { display: none; }
+  .b-wahl { grid-template-columns: 76px minmax(0, 1fr); grid-template-areas: "plan schritt" "plan ganz"; gap: 6px 10px; padding: 0; border: 0; }
+  .b-titel { display: none; }
+  .b-plan { grid-area: plan; width: 76px; height: 76px; aspect-ratio: auto; padding: 2px; gap: 2px; }
+  .b-name, .b-keine { display: none; }
+  .b-zelle::after { border-width: 2px; }
+  .b-nr { top: 3px; left: 3px; width: 16px; height: 16px; font-size: 10px; }
+  .b-schritt { grid-area: schritt; height: 36px; gap: 6px; }
+  .b-zaehler { font-size: var(--gr-klein); }
+  .b-zaehler b { font-size: var(--gr-text); }
+  .b-schritt button { height: 34px; padding: 0 8px; }
+  .b-schritt kbd { border: 0; min-width: 0; padding: 0; color: inherit; }
+  .b-ganz { grid-area: ganz; height: 34px; grid-template-columns: 24px minmax(0, 1fr); gap: 8px; padding: 0 8px 0 4px; }
+  .b-ganz-bild { width: 24px; height: 24px; }
+  .b-ganz-text small { display: none; }
+  .b-marke, .b-weiter { height: 22px; padding: 0 8px; font-size: var(--gr-mini); gap: 6px; }
+  .b-marke { top: 5px; left: 5px; }
+  .b-weiter { right: 5px; bottom: 5px; }
+  .b-viertel { top: 4px; left: 4px; font-size: var(--gr-mini); }
+}

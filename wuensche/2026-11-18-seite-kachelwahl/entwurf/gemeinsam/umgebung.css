@@ -1,0 +1,134 @@
+/* Nachbau der Prüfseite (landseg seite, ergebnisse/T0.html) nach landseg/seite_vorlage/seite.css:
+   oben der Kopf mit den Fassungen, links eine feste Leiste, in der Mitte das große Bild, rechts die
+   Kategorienliste, unten die Schalter. Kopf und Leisten haben feste Maße: Umschalten ändert nie die Lage
+   des Bildes. Dunkel, ganze Fensterhöhe, kein Seitenscrollen.
+   Gegenstand des Entwurfs ist die Wahl der Teilkacheln im Kopf: die Entwürfe ersetzen Seite.kopf und
+   dürfen --kopf-hoehe ändern (gleich in allen Zuständen). */
+:root {
+  color-scheme: dark;
+  --grund: #0e0f11; --flaeche: #16181b; --detail: #131518; --linie: #2a2d32;
+  --text: #d6d8dc; --text-leise: #8b9099; --akzent: #ffeb3c; --akzent-text: #16181b;
+  --ok: #4cc27a; --warn: #e0a83a; --fehler: #ef6461; --kommentar: #4fc3f7;
+  --schrift: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --gr-text: 13px; --gr-klein: 12px; --gr-mini: 11px; --radius: 6px;
+  --grau-2: #25292e; --grau-3: #30353b; --grau-4: #454b53;
+  --info-breite: 320px; --kat-breite: 290px; --kopf-hoehe: 72px; --leiste-hoehe: 52px; --maus-hoehe: 150px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--grund); color: var(--text); font: var(--gr-text)/1.45 var(--schrift); font-variant-numeric: tabular-nums; overflow: hidden; }
+#app { height: 100%; }
+button { font: inherit; color: var(--text); background: var(--grau-2); border: 1px solid var(--linie); border-radius: var(--radius); padding: 4px 10px; cursor: pointer; white-space: nowrap; }
+button:hover { border-color: var(--grau-4); }
+button[aria-pressed="true"] { background: var(--grau-3); border-color: var(--akzent); color: var(--akzent); }
+button:disabled { opacity: .4; cursor: not-allowed; border-style: dashed; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid var(--akzent); outline-offset: 2px; }
+a { color: var(--text); }
+input, textarea { font: inherit; color: var(--text); background: var(--detail); border: 1px solid var(--linie); border-radius: var(--radius); padding: 5px 8px; }
+textarea { resize: none; }
+textarea:disabled { opacity: .5; }
+input[type="range"] { padding: 0; width: 90px; vertical-align: middle; accent-color: var(--akzent); }
+summary { cursor: pointer; color: var(--text-leise); font-size: var(--gr-mini); }
+h2, h3 { margin: 0 0 6px; font-size: var(--gr-mini); font-weight: 400; color: var(--text-leise); text-transform: uppercase; letter-spacing: .06em; }
+h3 { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+h3 span { text-transform: none; letter-spacing: 0; overflow: hidden; text-overflow: ellipsis; }
+
+/* Seitenraster: Kopf, Mitte, untere Leiste */
+.c-seite { display: grid; grid-template-rows: var(--kopf-hoehe) minmax(0, 1fr) var(--leiste-hoehe); height: 100%; min-width: 0; }
+
+/* Kopf wie heute: Name, Fassungen, kleine Textlinks der Teilkacheln, Kommentare, darunter die Beschreibung */
+.c-kopf { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; grid-template-rows: auto auto; align-items: center; gap: 4px 18px; padding: 8px 14px; background: var(--flaeche); border-bottom: 1px solid var(--linie); overflow: hidden; min-width: 0; }
+.c-kopf nav { display: flex; gap: 2px; min-width: 0; overflow: hidden; }
+.c-kopf a { text-decoration: none; color: var(--text-leise); padding: 4px 10px; border-radius: var(--radius); white-space: nowrap; }
+.c-kopf a:hover { color: var(--text); background: var(--grau-2); }
+.c-kopf a[aria-current="page"] { color: var(--text); background: var(--grau-3); }
+.c-kopf .c-ohne { opacity: .5; }
+.c-rechts { justify-self: end; }
+.c-fassungen { display: flex; gap: 4px; }
+.c-fassungen button span { color: var(--text-leise); }
+.c-fassungen button[aria-pressed="true"] span { color: inherit; }
+.c-beschr { grid-column: 1 / -1; margin: 0; color: var(--text-leise); font-size: var(--gr-klein); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.c-beschr b { color: var(--text); margin-right: 6px; }
+
+/* Mitte: linke Leiste | Bildtafel | Kategorienliste */
+.c-mitte { display: grid; grid-template-columns: var(--info-breite) minmax(0, 1fr) auto; min-height: 0; min-width: 0; }
+.c-tafel { margin: 0; display: grid; grid-template-rows: 30px minmax(0, 1fr); min-width: 0; min-height: 0; background: var(--grund); position: relative; }
+.c-tafel figcaption { display: flex; flex-wrap: nowrap; align-items: center; gap: 14px; padding: 0 12px; background: var(--detail); border-bottom: 1px solid var(--linie); font-size: var(--gr-klein); white-space: nowrap; overflow: hidden; min-width: 0; }
+.c-tafel figcaption b { font-size: var(--gr-text); }
+.c-tafel figcaption span { color: var(--text-leise); }
+.c-ok { color: var(--ok); } .c-warn { color: var(--warn); } .c-fehler { color: var(--fehler); }
+.c-tafel figcaption .c-ok { color: var(--ok); } .c-tafel figcaption .c-warn { color: var(--warn); } .c-tafel figcaption .c-fehler { color: var(--fehler); }
+
+/* Bühne: das Bild bleibt quadratisch, mittig und so groß wie möglich (Maß hängt nur an der Tafel) */
+.c-buehne { position: relative; min-width: 0; min-height: 0; container-type: size; display: grid; place-items: center; overflow: hidden; }
+.c-bildfeld { position: relative; width: min(100cqw, 100cqh); aspect-ratio: 1; max-width: 100%; overflow: hidden; background: #000; cursor: crosshair; }
+.c-luftbild { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: auto; }
+/* Kern der Teilkachel: Segmente der Fassung über dem Luftbild, Rand außen abgedunkelt */
+.c-kern { position: absolute; left: 10.191%; top: 10.191%; width: 79.618%; height: 79.618%; background-size: 200% 200%; background-repeat: no-repeat;
+  outline: 1.5px solid rgba(214, 216, 220, .9); box-shadow: 0 0 0 2000px rgba(8, 9, 11, .5); }
+.c-kern.c-roh { background: none; }
+.c-leer { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; color: var(--text); padding: 24px; background: rgba(14, 15, 17, .62); font-size: var(--gr-text); }
+
+/* linke Leiste: feste Breite, Bereiche mit fester Höhe und eigenem Rollbalken */
+.c-info { display: grid; grid-template-rows: var(--maus-hoehe) minmax(0, 1fr) auto auto; gap: 10px; min-height: 0; overflow: hidden; padding: 10px 12px; background: var(--flaeche); border-right: 1px solid var(--linie); }
+.c-mausfeld { overflow: hidden; border-bottom: 1px solid var(--linie); padding-bottom: 6px; }
+.c-wahl { overflow-y: auto; min-height: 0; }
+.c-z { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: var(--gr-klein); line-height: 19px; color: var(--text-leise); }
+.c-z b { color: var(--text); }
+.c-komm { display: grid; gap: 6px; }
+.c-komm textarea { height: 62px; }
+.c-knoepfe { display: flex; gap: 6px; }
+.c-status { margin: 0; height: 34px; overflow: hidden; color: var(--text-leise); font-size: var(--gr-mini); }
+.c-legende { font-size: var(--gr-mini); max-height: 40vh; overflow-y: auto; }
+.c-legende dl { margin: 6px 0 0; }
+.c-legende dt { color: var(--text); }
+.c-legende dd { margin: 0 0 4px; color: var(--text-leise); }
+.c-leise { color: var(--text-leise); }
+.c-info p { margin: 0 0 6px; font-size: var(--gr-klein); }
+
+/* rechte Kategorienliste */
+.c-kat { width: var(--kat-breite); background: var(--flaeche); border-left: 1px solid var(--linie); overflow-y: auto; padding: 8px 12px 14px; min-height: 0; }
+.c-kl { display: flex; align-items: center; gap: 8px; padding: 3px 4px; border-radius: 4px; cursor: pointer; width: 100%; background: none; border: 1px solid transparent; text-align: left; white-space: normal; }
+.c-kl:hover { background: var(--grau-2); }
+.c-kl[aria-pressed="true"] { background: var(--grau-3); border-color: var(--akzent); color: var(--text); }
+.c-kl .c-za { margin-left: auto; color: var(--text-leise); white-space: nowrap; font-size: var(--gr-mini); }
+.c-aufheben { width: 100%; margin-bottom: 6px; border-color: var(--akzent); }
+.c-kat .c-quelle { margin-top: 12px; color: var(--text-leise); font-size: var(--gr-mini); }
+.c-punkt { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; border: 1px solid #0006; flex: none; }
+
+/* untere Leiste: eine Zeile, feste Höhe */
+.c-leiste { display: flex; flex-wrap: nowrap; align-items: center; gap: 22px; padding: 0 14px; background: var(--flaeche); border-top: 1px solid var(--linie); min-width: 0; overflow-x: auto; overflow-y: hidden; }
+.c-gruppe { display: flex; flex-wrap: nowrap; align-items: center; gap: 4px; }
+.c-etikett { color: var(--text-leise); font-size: var(--gr-mini); text-transform: uppercase; letter-spacing: .06em; margin-right: 4px; }
+button[data-schalter][aria-pressed="true"]::before { content: "✓ "; }
+.c-regler { display: inline-flex; align-items: center; gap: 6px; color: var(--text-leise); font-size: var(--gr-klein); }
+.c-regler span { display: inline-block; width: 96px; text-align: right; }
+.c-zoomwert { display: inline-block; width: 84px; color: var(--text-leise); font-size: var(--gr-klein); margin-left: 6px; }
+.c-karte { display: flex; flex-direction: column; padding: 3px 10px; background: var(--detail); border: 1px solid var(--linie); border-radius: var(--radius); font-size: var(--gr-klein); text-decoration: none; }
+.c-karte span { color: var(--text-leise); }
+
+/* Ganzer Ausschnitt: ein Bild, die vier Kerne gestrichelt, ein Klick öffnet die Teilkachel */
+.c-uebersicht { display: grid; grid-template-columns: minmax(0, 1fr); min-height: 0; min-width: 0; }
+.c-ganz { position: absolute; inset: 0; background-size: 100% 100%; }
+.c-viertel { position: absolute; width: 50%; height: 50%; border: 1.5px dashed rgba(255, 255, 255, .8); display: block; }
+.c-viertel:hover { background: rgba(255, 235, 60, .08); }
+
+/* Miniatur einer Teilkachel: der Kern des Luftbilds (für die Kachel-Wahl der Entwürfe) */
+.c-mini { position: relative; display: block; aspect-ratio: 1; max-width: 100%; overflow: hidden; background-color: #000; background-repeat: no-repeat; background-size: 125.6% 125.6%; background-position: 50% 50%; }
+
+/* Kommentare (nicht Gegenstand) */
+.c-liste { padding: 20px 24px; max-width: 760px; overflow: auto; height: 100%; }
+
+/* schmaler Bildschirm (Handy): nur Kopf, Bild und Schalter; Leisten links und rechts entfallen */
+@media (max-width: 760px) {
+  :root { --kopf-hoehe: 64px; --leiste-hoehe: 48px; }
+  .c-mitte { grid-template-columns: minmax(0, 1fr); }
+  .c-info, .c-kat { display: none; }
+  .c-kopf { grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 10px; padding: 6px 10px; }
+  .c-kopf > b { display: none; }
+  .c-fname { display: none; }
+  .c-kopf nav { overflow-x: auto; }
+  .c-tafel figcaption { gap: 10px; }
+  .c-leiste { gap: 14px; padding: 0 10px; }
+}

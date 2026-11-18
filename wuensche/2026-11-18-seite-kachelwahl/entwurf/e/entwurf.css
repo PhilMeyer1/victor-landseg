@@ -1,0 +1,140 @@
+/* Platz e: Nachbarn am Bildrand. Kopf etwas höher (in allen Zuständen gleich), kleine Kachel-Wahl im Kopf,
+   gelbe Laschen der Nachbar-Teilkacheln im abgedunkelten Rand des Bildes. */
+:root { --kopf-hoehe: 76px; }
+
+/* --- Kopf ------------------------------------------------------------------------------------------------ */
+.c-kopf.e-kopf { grid-template-columns: auto auto minmax(0, 1fr) auto; grid-template-rows: minmax(0, 1fr) auto; gap: 2px 16px; padding: 7px 14px; }
+.e-kopf > .e-name { grid-row: 1; grid-column: 1; }
+.e-kopf .c-fassungen { grid-row: 1; grid-column: 2; }
+.e-kopf .c-rechts { grid-row: 1; grid-column: 3; justify-self: end; white-space: nowrap; }
+.e-kopf .c-beschr { grid-row: 2; grid-column: 1 / 4; }
+.e-kopf .e-wahl { grid-row: 1 / 3; grid-column: 4; }
+@media (min-width: 761px) and (max-width: 1240px) { .e-kopf .c-fname { display: none; } }
+
+.e-wahl { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.e-trenn { width: 1px; align-self: stretch; margin: 6px 0; background: var(--linie); }
+
+/* Ganzer Ausschnitt: eigene Wahl mit Vorschau, gleich groß wie das Raster */
+.e-kopf .e-wahl a.e-ganz { display: flex; align-items: center; gap: 8px; padding: 3px 12px 3px 3px; color: var(--text); background: var(--grau-2); border: 1px solid var(--linie); border-radius: var(--radius); text-decoration: none; }
+.e-kopf .e-wahl a.e-ganz:hover { border-color: var(--grau-4); background: var(--grau-2); }
+.e-kopf .e-wahl a.e-ganz.e-aktiv { border-color: var(--akzent); color: var(--akzent); background: var(--grau-3); }
+.e-ganzbild { display: block; width: 50px; height: 50px; border-radius: 4px; background-color: #000; background-size: cover; background-position: center; flex: none; }
+.e-gtext { font-size: var(--gr-text); line-height: 1.2; width: 70px; }
+
+/* kleines 2 × 2-Raster in der Lage der Teilkacheln */
+.e-raster { display: grid; grid-template-columns: repeat(2, 25px); grid-template-rows: repeat(2, 25px); gap: 2px; padding: 2px; background: var(--detail); border: 1px solid var(--linie); border-radius: var(--radius); flex: none; }
+.e-kopf .e-wahl a.e-zelle { position: relative; display: block; padding: 0; border-radius: 3px; overflow: hidden; background: #000; }
+.e-zelle .c-mini { width: 100%; height: 100%; opacity: .5; transition: opacity .12s; }
+.e-zelle::after { content: ""; position: absolute; inset: 0; border-radius: 3px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .14); }
+.e-kopf .e-wahl a.e-zelle:hover .c-mini, .e-imganz .e-zelle .c-mini { opacity: 1; }
+.e-zelle.e-aktiv .c-mini { opacity: 1; }
+.e-zelle.e-aktiv::after { box-shadow: inset 0 0 0 2px var(--akzent); }
+.e-zelle.e-ohne .c-mini { opacity: .18; }
+.e-zelle.e-ohne::after { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .3); border: 1px dashed rgba(255, 255, 255, .35); }
+
+/* „Teilkachel n von 4“ und vorige/nächste */
+.e-stand { display: flex; flex-direction: column; justify-content: center; line-height: 1.25; width: 134px; }
+.e-stand b { font-size: 15px; font-weight: 600; color: var(--text); white-space: nowrap; }
+.e-stand span { color: var(--text-leise); font-size: var(--gr-klein); white-space: nowrap; }
+.e-schritt { display: flex; gap: 4px; }
+.e-schritt button { padding: 4px 10px; }
+
+/* --- Zeile über dem Bild ------------------------------------------------------------------------------------ */
+.c-tafel figcaption .e-kenn { color: var(--text-leise); font-size: var(--gr-mini); margin-left: -8px; }
+
+/* --- Laschen der Nachbarn im Rand des Bildes --------------------------------------------------------------- */
+.e-feld { --rand: calc(min(100cqw, 100cqh) * .10191); --mini: calc(var(--rand) - 16px); }
+.e-streifen { position: absolute; z-index: 2; pointer-events: none; background: rgba(255, 235, 60, .16); box-shadow: inset 0 0 0 1.5px rgba(255, 235, 60, .75); opacity: 0; transition: opacity .15s; }
+.e-streifen.e-an { opacity: 1; }
+
+.c-bildfeld a.e-lasche { position: absolute; z-index: 3; display: flex; align-items: center; gap: 6px; padding: 4px; color: var(--akzent-text); background: var(--akzent); border-radius: var(--radius); text-decoration: none; cursor: pointer; box-shadow: 0 2px 12px rgba(0, 0, 0, .5); font-size: var(--gr-klein); line-height: 1.2; }
+.c-bildfeld a.e-lasche:hover { background: #fff27a; }
+.c-bildfeld a.e-lasche:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+.e-lasche .e-lmini { width: var(--mini); height: var(--mini); flex: none; border-radius: 3px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .45); }
+.e-lasche .e-pfeil { font-size: 16px; font-weight: 700; line-height: 1; flex: none; }
+.e-ltext { display: flex; flex-direction: column; white-space: nowrap; }
+.e-ltext b { font-weight: 600; }
+.e-ltext small { font-size: var(--gr-mini); opacity: .75; }
+
+/* Kanten: links/rechts senkrecht, oben/unten waagrecht, je mittig auf dem Kern */
+.e-kante.e-rechts, .e-kante.e-links { top: 50%; translate: 0 -50%; width: calc(var(--rand) - 8px); flex-direction: column; padding: 4px 4px 8px; }
+.e-kante.e-rechts { right: 4px; --wx: -7px; }
+.e-kante.e-links { left: 4px; --wx: 7px; }
+.e-kante.e-rechts .e-ltext, .e-kante.e-links .e-ltext { writing-mode: vertical-rl; gap: 1px; }
+.e-kante.e-links .e-ltext { transform: rotate(180deg); }
+.e-kante.e-links .e-pfeil { order: -1; }
+.e-kante.e-links .e-lmini { order: -2; }
+.e-kante.e-oben, .e-kante.e-unten { left: 50%; translate: -50% 0; height: calc(var(--rand) - 8px); padding: 4px 12px 4px 4px; }
+.e-kante.e-unten { bottom: 4px; --wy: -7px; }
+.e-kante.e-oben { top: 4px; --wy: 7px; }
+
+/* Ecken: schräger Nachbar, nur Miniatur mit Pfeil */
+.c-bildfeld a.e-ecke { width: calc(var(--rand) - 8px); height: calc(var(--rand) - 8px); padding: 0; background: #000; border: 2px solid var(--akzent); overflow: hidden; }
+.c-bildfeld a.e-ecke:hover { background: #000; border-color: #fff27a; }
+.e-ecke .e-lmini { width: 100%; height: 100%; border-radius: 0; box-shadow: none; }
+.e-ecke .e-pfeil { position: absolute; right: 2px; bottom: 2px; padding: 2px 3px; font-size: 12px; color: var(--akzent-text); background: var(--akzent); border-radius: 3px; }
+.e-ecke.e-oben-links { left: 4px; top: 4px; } .e-ecke.e-oben-links .e-pfeil { left: 2px; top: 2px; right: auto; bottom: auto; }
+.e-ecke.e-oben-rechts { right: 4px; top: 4px; } .e-ecke.e-oben-rechts .e-pfeil { top: 2px; bottom: auto; }
+.e-ecke.e-unten-links { left: 4px; bottom: 4px; } .e-ecke.e-unten-links .e-pfeil { left: 2px; right: auto; }
+.e-ecke.e-unten-rechts { right: 4px; bottom: 4px; }
+
+/* Nachbar ohne Daten in dieser Fassung */
+.c-bildfeld a.e-lasche.e-ohne { background: var(--grau-3); color: var(--text); box-shadow: 0 0 0 1px var(--grau-4), 0 2px 12px rgba(0, 0, 0, .5); }
+.c-bildfeld a.e-lasche.e-ohne:hover { background: var(--grau-4); }
+.c-bildfeld a.e-ecke.e-ohne { border: 2px dashed var(--grau-4); background: #000; }
+.e-lasche.e-ohne .e-lmini { opacity: .35; }
+.e-ecke.e-ohne .e-pfeil { background: var(--grau-3); color: var(--text); }
+
+/* erster Aufruf: die Laschen winken einmal nach innen */
+.e-erst .e-kante { animation: e-winken .7s ease-in-out .4s 2; }
+@keyframes e-winken { 50% { transform: translate(var(--wx, 0), var(--wy, 0)); } }
+@media (prefers-reduced-motion: reduce) { .e-erst .e-kante { animation: none; } }
+
+/* schmales Bild: Laschen knapper */
+@container (max-width: 560px) {
+  .e-lasche .e-pfeil { font-size: 13px; }
+  .c-bildfeld a.e-lasche { font-size: var(--gr-mini); gap: 3px; }
+  .e-kante.e-rechts .e-ltext small, .e-kante.e-links .e-ltext small { display: none; }
+  .e-kante.e-oben, .e-kante.e-unten { padding-right: 8px; }
+  .e-ltext small { font-size: 10px; }
+  .e-feld { --mini: calc(var(--rand) - 12px); }
+  .e-kante.e-rechts, .e-kante.e-links, .e-kante.e-oben, .e-kante.e-unten { padding: 2px; }
+  .e-kante.e-rechts, .e-kante.e-links { padding-bottom: 6px; width: calc(var(--rand) - 6px); }
+  .e-kante.e-oben, .e-kante.e-unten { height: calc(var(--rand) - 6px); padding-right: 8px; }
+  .e-kante.e-rechts { right: 3px; } .e-kante.e-links { left: 3px; } .e-kante.e-unten { bottom: 3px; } .e-kante.e-oben { top: 3px; }
+}
+
+/* --- Ganzer Ausschnitt: Schilder in den Vierteln ------------------------------------------------------------ */
+.c-viertel { display: grid; place-items: center; text-decoration: none; }
+.e-schild { display: flex; align-items: center; gap: 10px; padding: 8px 14px 8px 8px; color: var(--text); background: rgba(14, 15, 17, .82); border: 1px solid var(--grau-4); border-radius: var(--radius); box-shadow: 0 2px 12px rgba(0, 0, 0, .5); }
+.e-schild > b { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--grau-3); color: var(--text); font-size: 15px; }
+.e-schild > span { display: flex; flex-direction: column; font-size: var(--gr-text); line-height: 1.25; white-space: nowrap; }
+.e-schild small { color: var(--text-leise); font-size: var(--gr-mini); }
+.c-viertel:hover .e-schild, .c-viertel:focus-visible .e-schild { background: var(--akzent); color: var(--akzent-text); border-color: var(--akzent); }
+.c-viertel:hover .e-schild small, .c-viertel:focus-visible .e-schild small { color: inherit; opacity: .75; }
+.c-viertel.e-zuletzt { border-color: var(--akzent); border-style: solid; }
+.c-viertel.e-zuletzt .e-schild > b { background: var(--akzent); color: var(--akzent-text); }
+.c-viertel.e-ohne .e-schild { opacity: .7; border-style: dashed; }
+
+/* --- schmaler Bildschirm (Handy): Fassungen und Kommentare oben, Kachel-Wahl darunter --------------------- */
+@media (max-width: 760px) {
+  :root { --kopf-hoehe: 96px; }
+  .c-kopf.e-kopf { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-rows: auto minmax(0, 1fr); gap: 6px 8px; padding: 6px 10px; }
+  .e-kopf .c-fassungen { grid-row: 1; grid-column: 1; }
+  .e-kopf .c-rechts { grid-row: 1; grid-column: 3; }
+  .e-kopf .c-rechts a { padding: 4px 6px; }
+  .e-kopf .e-wahl { grid-row: 2; grid-column: 1 / -1; gap: 8px; }
+  .e-kopf .c-beschr { display: none; }
+  .e-ganzbild { width: 40px; height: 40px; }
+  .e-kopf .e-wahl a.e-ganz { padding: 2px 8px 2px 2px; gap: 6px; }
+  .e-gtext { white-space: normal; width: 64px; font-size: var(--gr-klein); line-height: 1.15; }
+  .e-trenn { display: none; }
+  .e-raster { grid-template-columns: repeat(2, 20px); grid-template-rows: repeat(2, 20px); }
+  .e-stand { width: auto; min-width: 0; flex: 1 1 auto; overflow: hidden; }
+  .e-stand b { font-size: var(--gr-text); }
+  .e-wort { display: none; }
+  .e-schritt button { padding: 6px 12px; font-size: 15px; line-height: 1; }
+  .e-schild { padding: 4px 8px 4px 4px; gap: 6px; }
+  .e-schild > b { width: 22px; height: 22px; font-size: var(--gr-klein); }
+  .e-schild > span { font-size: var(--gr-klein); }
+}

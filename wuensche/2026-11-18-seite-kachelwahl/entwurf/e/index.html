@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- Seite eines Platzes im Vergleichsrahmen. Der Rahmen-Schritt legt sie als vorlage/ an, jeder Entwerfer
+     kopiert sie in seinen Platz (a/ … e/) und ändert dort nur entwurf.css und entwurf.js (dazu eigene Dateien
+     im Platz). Reihenfolge der Skripte nicht ändern; ohne anschluss.js und daten.js gilt der Entwurf als
+     nicht angeschlossen. -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entwurf</title>
+<link rel="stylesheet" href="../gemeinsam/umgebung.css">
+<link rel="stylesheet" href="entwurf.css">
+</head>
+<body>
+<div id="app"></div>
+<script src="../rahmen.js"></script>
+<script src="../gemeinsam/daten.js"></script>
+<script src="../gemeinsam/anschluss.js"></script>
+<script src="../gemeinsam/umgebung.js"></script>
+<script src="entwurf.js"></script>
+<script>Entwurf.start()</script>
+</body>
+</html>

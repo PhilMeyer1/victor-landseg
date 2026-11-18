@@ -26,9 +26,15 @@ ohne Rückfrage und bevor du etwas anderes tust:
      Kategorien und Arbeitsweise selbst), **B „Kategorien frei“** (die KI benennt und stuft die
      Klassen selbst), **C „Feste Kategorienliste“** (unsere feste, gestufte Liste mit 58 Klassen).
      Die Seite öffnet mit A; Umschalt + A/B/C wechselt ebenfalls.
-   - Daneben die Wahl der Bildstücke: die vier Teilkacheln `r0c0`, `r0c1`, `r1c0`, `r1c1`
-     (r = Zeile, c = Spalte) und „Ganzer Ausschnitt“. Die Seite beginnt mit der ersten Teilkachel:
-     Luftbild, darüber die Segmente in Klassenfarben.
+   - Wichtig, ausdrücklich sagen: Der Ausschnitt besteht aus **vier Teilkacheln** (Bildstücken),
+     und die Seite zeigt immer nur eine davon. Darunter liegt deshalb die breite **Kachel-Wahl**:
+     „Ganzer Ausschnitt“ und die vier Teilkacheln als große Reiter im Raster ihrer Lage,
+     1 „oben links“, 2 „oben rechts“, 3 „unten links“, 4 „unten rechts“ (je mit kleinem Luftbild;
+     die Kennungen `r0c0` … `r1c1` stehen klein dabei, r = Zeile, c = Spalte). Die gezeigte
+     Teilkachel ist gelb umrandet. Die Seite beginnt mit Teilkachel 1 (oben links): Luftbild,
+     darüber die Segmente in Klassenfarben; im Bild steht „Teilkachel 1 von 4“ mit dem Knopf
+     „weiter“. Zu den anderen drei kommt er über die Reiter, die Knöpfe „vorige“ und „nächste“
+     an den Enden der Kachel-Wahl oder die Pfeiltasten ← → (nicht beim Schreiben im Kommentarfeld).
    - Ein Klick auf ein Segment zeigt Klasse, Sicherheit und Urteil der KI. Mausrad vergrößert,
      Ziehen verschiebt; Schalter für Ebene (grob/mittel/fein), Umriss, Lücken, Nähte, Kategorien.
    - Zu einem angeklickten Segment kann er einen Kommentar schreiben („Vormerken“) und alle

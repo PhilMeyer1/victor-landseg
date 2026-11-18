@@ -1,0 +1,105 @@
+/* Platz c: Lageplan im Bild. Kopfhöhe bleibt wie heute; die Zeile über dem Bild ist in allen Zuständen
+   (Teilkachel, ohne Daten, Ganzer Ausschnitt) gleich hoch, das Bild springt nicht. */
+:root { --zeile-hoehe: 58px; --lp-mini: 64px; }
+
+/* Kopf ohne die kleinen Textlinks: Name, Fassungen, Kommentare */
+.c-kopf.c-kopf-c { grid-template-columns: auto auto minmax(0, 1fr); }
+
+/* große Zeile über dem Bild: ‹ vorige | Teilkachel n von 4 | nächste › */
+.c-tafel { grid-template-rows: var(--zeile-hoehe) minmax(0, 1fr); }
+.c-tafel figcaption.c-zeile { display: grid; grid-template-columns: 104px minmax(0, 1fr) 104px; align-items: center; gap: 14px;
+  padding: 0 12px; background: var(--detail); border-bottom: 1px solid var(--linie); white-space: nowrap; overflow: hidden; min-width: 0; }
+.c-titel { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-width: 0; overflow: hidden; }
+.c-tafel figcaption .c-gross { font-size: 19px; font-weight: 600; line-height: 1.15; color: var(--text); letter-spacing: .005em; }
+.c-tafel figcaption .c-gross em { font-style: normal; color: var(--akzent); }
+.c-unter { display: flex; gap: 12px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; font-size: var(--gr-klein); color: var(--text-leise); }
+.c-unter > span { flex: none; }
+.c-unter .c-lage { color: var(--text); }
+.c-unter .c-kenn { font-size: var(--gr-mini); color: var(--text-leise); }
+.c-tafel figcaption.c-zeile .c-ok { color: var(--ok); }
+.c-tafel figcaption.c-zeile .c-warn { color: var(--warn); }
+.c-tafel figcaption.c-zeile .c-fehler { color: var(--fehler); }
+
+.c-schritt { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 36px; padding: 0 12px;
+  border: 1px solid var(--grau-4); border-radius: var(--radius); background: var(--grau-2); color: var(--text); text-decoration: none; font-size: var(--gr-text); }
+.c-tafel figcaption .c-schritt span { color: inherit; }
+.c-schritt span[aria-hidden] { font-size: 18px; line-height: 1; margin-top: -2px; }
+a.c-schritt:hover { border-color: var(--akzent); color: var(--akzent); }
+.c-schritt[aria-disabled="true"] { opacity: .35; border-style: dashed; cursor: default; }
+
+/* Lageplan: Einblendung in der rechten oberen Bildecke */
+.c-lp { position: absolute; top: 10px; right: 10px; z-index: 3; cursor: default; color: var(--text); }
+.c-lp-offen { width: calc(var(--lp-mini) * 2 + 4px + 20px); padding: 8px 10px 9px; background: rgba(14, 15, 17, .92);
+  border: 1px solid var(--grau-4); border-radius: 8px; box-shadow: 0 4px 16px rgba(0, 0, 0, .55); }
+.c-lp-kopf { display: flex; align-items: center; gap: 6px; height: 24px; margin-bottom: 6px; }
+.c-lp-kopf span { flex: 1; min-width: 0; font-size: var(--gr-mini); color: var(--text-leise); text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.c-lp-kopf b { color: var(--akzent); font-size: var(--gr-klein); white-space: nowrap; }
+.c-lp-knopf { width: 22px; height: 22px; padding: 0; line-height: 1; font-size: 15px; background: transparent; border-color: transparent; color: var(--text-leise); }
+.c-lp-knopf:hover { color: var(--text); border-color: var(--grau-4); }
+
+.c-lp-raster { display: grid; grid-template-columns: repeat(2, var(--lp-mini)); grid-template-rows: repeat(2, var(--lp-mini)); gap: 4px; }
+.c-lp-zelle { position: relative; display: block; width: var(--lp-mini); height: var(--lp-mini); border-radius: 4px; overflow: hidden; text-decoration: none;
+  outline: 1px solid rgba(214, 216, 220, .25); outline-offset: 0; }
+.c-lp-zelle .c-mini { width: 100%; height: 100%; filter: brightness(.85); }
+.c-lp-zelle:hover .c-mini { filter: none; }
+.c-lp-zelle:hover { outline-color: var(--text); }
+.c-lp-zelle[aria-current="page"] { outline: 2px solid var(--akzent); outline-offset: 1px; }
+.c-lp-zelle[aria-current="page"] .c-mini { filter: none; }
+.c-lp-nr { position: absolute; top: 3px; left: 3px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 3px; background: rgba(14, 15, 17, .82);
+  font-size: var(--gr-mini); line-height: 16px; text-align: center; color: var(--text); font-weight: 600; }
+.c-lp-zelle[aria-current="page"] .c-lp-nr { background: var(--akzent); color: var(--akzent-text); }
+.c-lp-name { position: absolute; left: 0; right: 0; bottom: 0; padding: 1px 3px; background: rgba(14, 15, 17, .82); font-size: 10.5px; line-height: 15px;
+  text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); }
+.c-lp-zelle[aria-current="page"] .c-lp-name { background: var(--akzent); color: var(--akzent-text); font-weight: 600; }
+.c-lp-ohne .c-mini { filter: grayscale(1) brightness(.45); }
+.c-lp-ohne { outline-style: dashed; }
+.c-lp-leer { position: absolute; left: 0; right: 0; top: 22px; text-align: center; font-size: 10px; color: var(--text); }
+
+.c-lp-ganz { display: block; margin-top: 7px; height: 28px; line-height: 26px; border: 1px solid var(--grau-4); border-radius: var(--radius);
+  background: var(--grau-2); text-align: center; text-decoration: none; font-size: var(--gr-klein); white-space: nowrap; }
+.c-lp-ganz:hover { border-color: var(--text); }
+.c-lp-ganz[aria-current="page"] { border: 2px solid var(--akzent); line-height: 24px; color: var(--akzent); background: var(--grau-3); font-weight: 600; }
+.c-lp-tasten { margin: 6px 0 0; text-align: center; font-size: var(--gr-mini); color: var(--text-leise); }
+.c-lp-tasten kbd { display: inline-block; min-width: 18px; margin-right: 3px; padding: 0 4px; border: 1px solid var(--grau-4); border-radius: 3px;
+  font: inherit; line-height: 16px; color: var(--text); background: var(--grau-2); }
+
+/* eingeklappt: ein kleiner Knopf mit 2 × 2-Symbol und „n / 4“ */
+.c-lp-auf { display: none; align-items: center; gap: 8px; height: 34px; padding: 0 10px; background: rgba(14, 15, 17, .92); border-color: var(--grau-4);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .55); }
+.c-lp-auf b { color: var(--akzent); font-size: var(--gr-klein); }
+.c-lp-zu .c-lp-offen { display: none; }
+.c-lp-zu .c-lp-auf { display: inline-flex; }
+.c-lp-symbol { display: grid; grid-template-columns: repeat(2, 8px); grid-template-rows: repeat(2, 8px); gap: 2px; }
+.c-lp-symbol i { display: block; border: 1px solid var(--text-leise); border-radius: 1px; }
+.c-lp-symbol i.c-an { background: var(--akzent); border-color: var(--akzent); }
+
+/* Ganzer Ausschnitt: jedes Viertel trägt Nummer und Lage */
+.c-viertel { text-decoration: none; }
+.c-marke { position: absolute; left: 12px; bottom: 12px; display: flex; align-items: baseline; gap: 6px; padding: 4px 9px 4px 4px; border-radius: var(--radius);
+  background: rgba(14, 15, 17, .85); color: var(--text); font-size: var(--gr-text); white-space: nowrap; }
+.c-marke b { display: inline-block; min-width: 20px; padding: 0 5px; border-radius: 3px; background: var(--grau-3); text-align: center; }
+.c-marke small { color: var(--text-leise); font-size: var(--gr-mini); }
+.c-viertel:hover .c-marke b { background: var(--akzent); color: var(--akzent-text); }
+.c-viertel-ohne .c-marke { opacity: .7; }
+
+/* Handy: Lageplan kleiner, Beschriftung der Lage steht in der Zeile über dem Bild */
+@media (max-width: 760px) {
+  :root { --zeile-hoehe: 54px; --lp-mini: 46px; }
+  .c-kopf.c-kopf-c { grid-template-columns: auto minmax(0, 1fr); }
+  .c-tafel figcaption.c-zeile { grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 8px; padding: 0 8px; }
+  .c-schritt { padding: 0; height: 36px; }
+  .c-schritt .c-wort { display: none; }
+  .c-tafel figcaption .c-gross { font-size: 17px; }
+  .c-unter { gap: 8px; justify-content: center; }
+  .c-unter > span:nth-child(n+3) { display: none; }
+  .c-lp { top: 6px; right: 6px; }
+  .c-lp-offen { padding: 6px 7px 7px; width: calc(var(--lp-mini) * 2 + 4px + 14px); }
+  .c-lp-kopf { height: 20px; margin-bottom: 4px; }
+  .c-lp-kopf span { display: none; }
+  .c-lp-kopf b { flex: 1; }
+  .c-lp-name, .c-lp-leer, .c-lp-tasten { display: none; }
+  .c-lp-ganz { height: 26px; line-height: 24px; font-size: var(--gr-mini); }
+  .c-lp-ganz[aria-current="page"] { line-height: 22px; }
+  .c-marke { left: 6px; bottom: 6px; font-size: var(--gr-klein); }
+  .c-marke small { display: none; }
+}

@@ -1,0 +1,106 @@
+/* Platz a: Raster im Kopf. Der Kopf wird höher (140 px, Handy 146 px) und bleibt in allen Zuständen
+   gleich hoch: links Name, Fassungen, Beschreibung; rechts die Kachel-Wahl als gerahmte Gruppe
+   („Ganzer Ausschnitt“ | 2 × 2-Raster in Lage | Teilkachel n von 4 mit vorige/nächste). */
+:root { --kopf-hoehe: 140px; --zelle-h: 49px; --zelle-b: 172px; --mini: 41px; }
+
+/* Kopf */
+.k-kopf { grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: minmax(0, 1fr); gap: 20px; padding: 10px 14px; align-items: center; }
+.k-links { display: grid; grid-template-areas: "zeile" "fass" "beschr"; gap: 8px; min-width: 0; align-content: center; }
+.k-zeile { grid-area: zeile; display: flex; align-items: baseline; gap: 18px; min-width: 0; }
+.k-zeile b { font-size: 14px; }
+.k-zeile .c-rechts { margin-left: auto; }
+.k-links .c-fassungen { grid-area: fass; min-width: 0; overflow: hidden; }
+.k-links .c-beschr { grid-area: beschr; white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 16px; max-height: 32px; }
+
+/* Kachel-Wahl: gerahmte Gruppe, feste Maße */
+.k-wahl { display: grid; grid-template-columns: auto auto 168px; gap: 8px; align-items: stretch; padding: 6px; background: var(--grund); border: 1px solid var(--grau-4); border-radius: 8px; height: calc(var(--zelle-h) * 2 + 6px + 14px); }
+.k-wahl a { text-decoration: none; color: var(--text); }
+
+/* „Ganzer Ausschnitt“ */
+.k-ganz { display: grid; grid-template-rows: auto auto; justify-items: center; align-content: center; gap: 4px; width: 104px; padding: 4px; background: var(--grau-2); border: 1px solid var(--linie); border-radius: var(--radius); }
+.k-ganzbild { position: relative; display: block; width: 74px; height: 74px; background: #000 no-repeat center / 100% 100%; border-radius: 3px; overflow: hidden; }
+.k-ganzbild i { position: absolute; width: 50%; height: 50%; border: 1px dashed rgba(255, 255, 255, .75); font: 600 10px/1 var(--schrift); font-style: normal; color: #fff; display: grid; place-items: center; text-shadow: 0 0 3px #000, 0 0 2px #000; }
+.k-ganztext { font-size: var(--gr-klein); font-weight: 600; white-space: nowrap; }
+
+/* Raster der Teilkacheln */
+.k-raster { display: grid; grid-template-columns: repeat(2, var(--zelle-b)); grid-template-rows: repeat(2, var(--zelle-h)); gap: 6px; }
+.k-zelle { display: grid; grid-template-columns: var(--mini) minmax(0, 1fr); align-items: center; gap: 9px; padding: 3px 8px 3px 3px; background: var(--grau-2); border: 1px solid var(--linie); border-radius: var(--radius); min-width: 0; }
+.k-mini { position: relative; display: block; width: var(--mini); height: var(--mini); border-radius: 3px; overflow: hidden; }
+.k-mini .c-mini { width: 100%; height: 100%; }
+.k-mini i { position: absolute; left: 2px; top: 2px; min-width: 14px; height: 14px; padding: 0 3px; border-radius: 3px; background: rgba(14, 15, 17, .82); color: var(--text); font: 600 10px/14px var(--schrift); font-style: normal; text-align: center; }
+.k-ztext { display: grid; gap: 1px; min-width: 0; }
+.k-ztext b { font-size: var(--gr-text); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.k-ztext small { font-size: var(--gr-mini); color: var(--text-leise); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Hervorhebung wie die Fassungsknöpfe: gelber Rand, helle Fläche; ohne Daten ausgegraut */
+.k-zelle:hover, .k-ganz:hover { border-color: var(--grau-4); background: var(--grau-3); }
+.k-zelle.ist-an, .k-ganz.ist-an { background: var(--grau-3); border-color: var(--akzent); box-shadow: inset 0 0 0 1px var(--akzent); }
+.k-zelle.ist-an .k-ztext b, .k-ganz.ist-an .k-ganztext { color: var(--akzent); }
+.k-zelle.ist-an .k-mini i { background: var(--akzent); color: var(--akzent-text); }
+.k-zelle.ist-ohne { border-style: dashed; }
+.k-zelle.ist-ohne .k-mini { opacity: .4; filter: grayscale(1); }
+.k-zelle.ist-ohne .k-ztext b { color: var(--text-leise); }
+
+/* Teilkachel n von 4, vorige/nächste */
+.k-schritt { display: grid; align-content: center; gap: 3px; padding: 0 4px 0 10px; border-left: 1px solid var(--linie); min-width: 0; }
+.k-schritt p { margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.k-stelle { font-size: 14px; font-weight: 600; }
+.k-stelle b { font-size: 18px; color: var(--akzent); }
+.k-lage { font-size: var(--gr-klein); color: var(--text-leise); }
+.k-blaettern { display: flex; gap: 4px; margin-top: 3px; }
+.k-knopf { display: inline-flex; align-items: center; justify-content: center; gap: 3px; flex: 1; height: 28px; padding: 0 6px; background: var(--grau-2); border: 1px solid var(--linie); border-radius: var(--radius); font-size: var(--gr-klein); }
+.k-knopf:hover { border-color: var(--grau-4); background: var(--grau-3); }
+.k-pfeil { width: 14px; height: 14px; flex: none; }
+.k-tasten { font-size: var(--gr-mini); color: var(--text-leise); }
+kbd { display: inline-block; min-width: 18px; padding: 0 4px; border: 1px solid var(--grau-4); border-bottom-width: 2px; border-radius: 3px; font: 10px/14px var(--schrift); text-align: center; color: var(--text); }
+
+/* Zeile über dem Bild */
+.c-tafel figcaption .k-kennung { color: var(--text-leise); font-size: var(--gr-mini); margin-left: -6px; }
+
+/* Hinweis im Bild: unten im abgedunkelten Rand, führt zur nächsten Teilkachel */
+.k-weiter { position: absolute; left: 50%; bottom: 2.2%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 8px; max-width: 94%; padding: 5px 12px 5px 8px; border-radius: 999px; background: rgba(14, 15, 17, .86); border: 1px solid var(--akzent); color: var(--text); font-size: var(--gr-klein); text-decoration: none; white-space: nowrap; cursor: pointer; z-index: 2; }
+.k-weiter:hover { background: rgba(37, 41, 46, .95); }
+.k-weiter span { overflow: hidden; text-overflow: ellipsis; }
+.k-trenn { width: 1px; height: 14px; background: var(--grau-4); flex: none; }
+.k-weitertext { color: var(--akzent); font-weight: 600; }
+.k-lageplan { display: grid; grid-template-columns: repeat(2, 7px); grid-template-rows: repeat(2, 7px); gap: 2px; flex: none; }
+.k-lageplan i { border: 1px solid var(--text-leise); border-radius: 1px; }
+.k-lageplan i.ist-an { background: var(--akzent); border-color: var(--akzent); }
+
+/* Ganzer Ausschnitt: Viertel beschriftet */
+.k-viertelname { position: absolute; padding: 3px 8px; border-radius: 4px; background: rgba(14, 15, 17, .8); color: var(--text); font-size: var(--gr-klein); pointer-events: none; white-space: nowrap; }
+.k-viertelname b { color: var(--akzent); margin-right: 6px; }
+.k-viertelname.ist-ohne { color: var(--text-leise); }
+
+/* mittlere Breite: Fassungsnamen und Zusatzzeile der Zellen weg */
+@media (max-width: 1180px) {
+  :root { --zelle-b: 140px; }
+  .k-links .c-fname, .k-zahl { display: none; }
+}
+
+/* Handy: Kopf in zwei Zeilen (Fassungen, darunter die Wahl über die ganze Breite) */
+@media (max-width: 760px) {
+  :root { --kopf-hoehe: 146px; --zelle-h: 30px; --mini: 26px; }
+  .k-kopf { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; gap: 6px; padding: 6px 10px; align-content: start; }
+  .k-links { grid-template-areas: "fass zeile" "beschr beschr"; grid-template-columns: auto minmax(0, 1fr); gap: 4px 10px; }
+  .k-zeile b { display: none; }
+  .k-links .c-beschr { -webkit-line-clamp: 1; max-height: 16px; white-space: nowrap; display: block; }
+  .k-wahl { grid-template-columns: 60px minmax(0, 1fr) 64px; gap: 5px; padding: 4px; height: calc(var(--zelle-h) * 2 + 5px + 10px); }
+  .k-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
+  .k-ganz { width: 60px; padding: 2px; gap: 2px; }
+  .k-ganzbild { width: 36px; height: 36px; }
+  .k-ganzbild i { font-size: 9px; }
+  .k-ganztext { white-space: normal; text-align: center; font-size: 10px; line-height: 11px; }
+  .k-zelle { gap: 4px; padding: 1px 3px 1px 1px; }
+  .k-ztext b { font-size: var(--gr-mini); }
+  .k-ztext small, .k-mini i { display: none; }
+  .k-schritt { padding: 0 0 0 5px; gap: 2px; }
+  .k-schritt p { white-space: normal; }
+  .k-stelle { font-size: 10px; line-height: 13px; }
+  .k-stelle b { font-size: 13px; }
+  .k-lage, .k-tasten, .k-knopf span { display: none; }
+  .k-knopf { height: 26px; padding: 0; margin-top: 0; }
+  .k-blaettern { margin-top: 1px; }
+  .k-weiter { font-size: var(--gr-mini); padding: 3px 10px 3px 6px; gap: 6px; }
+  .k-viertelname { font-size: var(--gr-mini); padding: 2px 6px; }
+}
