@@ -7,7 +7,10 @@ Rand des Quellbilds. Die Kerne zerlegen den Ausschnitt lückenlos und ohne Über
 
 Das Manifest (``manifest.json``) nennt alle Pfade relativ zu seinem Ordner und die Georeferenz
 (Weltdatei ``.tfw`` bzw. GeoTIFF-Tags, Lagebezug aus ``.prj``) für Quelle, Ausschnitt und jede
-Teilkachel.
+Teilkachel; ohne Weltdatei und GeoTIFF-Tags (etwa ein gescanntes Luftbild) ist ``georeferenz`` ``null`` und
+es entstehen keine ``.pgw``. Graustufenbilder bleiben einkanalig (``kanaele: 1``); ein Palettenbild wird über
+seine Farbtafel in Farben bzw., wenn die Tafel nur Grautöne hat, in Graustufen übersetzt, nicht als Indizes
+geschrieben.
 """
 
 from __future__ import annotations
@@ -103,7 +106,19 @@ def _lese_quelle(bild: Path):
             daten = tifffile.memmap(bild, page=0, mode="r")
         except ValueError:  # komprimiert oder gekachelt: ganz lesen
             daten = seite.asarray()
-        return daten, seite
+        return daten, seite, farbtafel(seite)  # Farbtafel lesen, solange die Datei offen ist
+
+
+def farbtafel(seite) -> np.ndarray | None:
+    """Farbtafel eines Palettenbilds als uint8, Index -> Grauwert (Tafel nur aus Grautönen) bzw. Index -> RGB;
+    ``None`` bei anderen Bildern."""
+    if seite.photometric != tifffile.PHOTOMETRIC.PALETTE or seite.colormap is None:
+        return None
+    tafel = np.asarray(seite.colormap).T  # (Einträge, 3)
+    if tafel.max() > 255:  # TIFF speichert 16 Bit je Kanal
+        tafel = tafel >> 8
+    tafel = tafel.astype(np.uint8)
+    return tafel[:, 0].copy() if (tafel == tafel[:, :1]).all() else tafel
 
 
 def raster(breite: int, hoehe: int, kern: int) -> list[tuple[int, int, int, int, int, int]]:
@@ -128,7 +143,7 @@ def kacheln(bild: str | Path, x: int, y: int, breite: int, hoehe: int, ziel: str
     if manifest_pfad.exists() and not ueberschreiben:
         raise KachelFehler(f"{manifest_pfad} gibt es schon (--ueberschreiben, um es zu ersetzen)")
 
-    daten, seite = _lese_quelle(bild)
+    daten, seite, tafel = _lese_quelle(bild)
     q_hoehe, q_breite = daten.shape[:2]
     if x < 0 or y < 0 or breite <= 0 or hoehe <= 0 or x + breite > q_breite or y + hoehe > q_hoehe:
         raise KachelFehler(
@@ -142,7 +157,8 @@ def kacheln(bild: str | Path, x: int, y: int, breite: int, hoehe: int, ziel: str
             alt.unlink()
 
     def speichern(pfad: Path, x0: int, y0: int, b: int, h: int) -> None:
-        Image.fromarray(np.ascontiguousarray(daten[y0:y0 + h, x0:x0 + b])).save(pfad)
+        stueck = np.ascontiguousarray(daten[y0:y0 + h, x0:x0 + b])
+        Image.fromarray(stueck if tafel is None else tafel[stueck]).save(pfad)
         if geo:
             _schreibe_weltdatei(pfad.with_suffix(".pgw"), verschoben(geo["transform"], x0, y0))
 
@@ -171,7 +187,8 @@ def kacheln(bild: str | Path, x: int, y: int, breite: int, hoehe: int, ziel: str
         "schema": MANIFEST_SCHEMA,
         "erstellt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "quelle": {"bild": _relativ(bild, ziel), "breite": q_breite, "hoehe": q_hoehe,
-                   "kanaele": 1 if daten.ndim == 2 else int(daten.shape[2])},
+                   "kanaele": (1 if daten.ndim == 2 else int(daten.shape[2])) if tafel is None
+                   else (1 if tafel.ndim == 1 else 3)},
         "ausschnitt": {"name": name, "x": x, "y": y, "breite": breite, "hoehe": hoehe,
                        "bild": f"{name}.png"},
         "raster": {"kern": kern, "rand": rand,

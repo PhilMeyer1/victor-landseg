@@ -15,7 +15,7 @@ from PIL import Image
 from landseg import dateien, einigung, einstellungen, naht
 from landseg.__main__ import main
 from landseg.kacheln import kacheln
-from landseg.seite import SeiteFehler, labels_als_rgb, lage_in_worten, seite, seite_daten
+from landseg.seite import SeiteFehler, bilder_aus_einstellungen, labels_als_rgb, lage_in_worten, seite, seite_daten
 from tests.hilfe import beispiel_kategorien
 from tests.test_kacheln import PRJ
 
@@ -84,7 +84,8 @@ class SeiteTest(unittest.TestCase):
         for platz in ("/*CSS*/", "/*JS*/", "/*DATEN*/", "<!--TITEL-->"):
             self.assertNotIn(platz, html)
         self.assertIn("<title>Übersicht TX</title>", html)
-        d = daten_aus_html(html)
+        d = daten_aus_html(html)["bilder"][0]
+        self.assertEqual((d["kennung"], d["titel"], d["vorhanden"]), ("TX", "Ausschnitt TX", True))
         self.assertEqual([t["id"] for t in d["teilkacheln"]], ["r0c0", "r0c1"])
         self.assertNotIn("nachher", json.dumps(d))
         a, b, c = d["fassungen"]
@@ -113,7 +114,7 @@ class SeiteTest(unittest.TestCase):
         self.assertTrue(b["kategorien_quelle"].endswith("b-kategorien-frei/kategorien-b.json"))
         self.assertTrue(b["teilkacheln"]["r0c0"]["pruefen"]["ok"])
         self.assertTrue((ids_aus_png(b["gesamt"]) == 7).all())
-        self.assertEqual([(f["kennung"], f["vorhanden"], f.get("naht")) for f in erg["fassungen"]],
+        self.assertEqual([(f["kennung"], f["vorhanden"], f.get("naht")) for f in erg["bilder"][0]["fassungen"]],
                          [("A", False, None), ("B", True, 0), ("C", True, 1)])
 
     def test_kachel_wahl(self):
@@ -122,7 +123,7 @@ class SeiteTest(unittest.TestCase):
         ziel = self.t / "seite" / "TX.html"
         seite(self.t / "manifest.json", ziel, self.kat)
         html = ziel.read_text(encoding="utf-8")
-        d = daten_aus_html(html)
+        d = daten_aus_html(html)["bilder"][0]
         self.assertEqual([(t["id"], t["nummer"], t["lage"]) for t in d["teilkacheln"]],
                          [("r0c0", 1, "links"), ("r0c1", 2, "rechts")])
         self.assertEqual([lage_in_worten(z, s, 2, 2) for z in (0, 1) for s in (0, 1)],
@@ -136,10 +137,132 @@ class SeiteTest(unittest.TestCase):
         # Miniaturen entstehen im Browser aus denselben Bildern: keine zweite Kopie in der Datei
         self.assertEqual(html.count(d["teilkacheln"][0]["bild"]), 1)
 
+    def historisch(self, name: str = "HX") -> Path:
+        """Zweites Bild wie ein Scan: Graustufen, ohne Weltdatei und GeoTIFF-Tags, mit Fassung C."""
+        tif = self.ordner / "quelle" / "scan.tif"
+        grau = np.tile(np.linspace(20, 230, 100).astype(np.uint8), (60, 1))
+        tifffile.imwrite(tif, grau, photometric="minisblack")
+        h = self.ordner / "H"
+        manifest = kacheln(tif, 10, 10, 80, 40, h, kern=40, rand=8, name=name)
+        for t in manifest["teilkacheln"]:
+            k = t["kontext"]
+            ziel = h / "c-feste-liste" / t["id"]
+            ziel.mkdir(parents=True)
+            dateien.schreibe_labels(ziel / "labels.tif", np.full((k["hoehe"], k["breite"]), 5, np.uint32))
+            dateien.schreibe_json(ziel / "segmente.json", {"schema": "landseg-segmente/1", "segmente": [
+                {"id": 5, "klasse": "1.1", "grob": "1", "sicher": "ja"}]})
+        return h
+
+    def test_mehrere_bilder_in_einer_seite(self):
+        """Zwei Bilder mit Daten und eines ohne Manifest in einer Datei; jedes mit eigenen Fassungen und Zahlen."""
+        self.feste_liste()
+        self.fassung_b()
+        h = self.historisch()
+        werte = {**einstellungen.laden("seite"), "bilder": [
+            {"kennung": "T", "name": "Orthofoto", "beschreibung": "Farbe", "manifest": "T/manifest.json"},
+            {"kennung": "H", "name": "Scan", "manifest": "H/manifest.json"},
+            {"kennung": "X", "name": "fehlt", "manifest": "X/manifest.json"}]}
+        bilder = bilder_aus_einstellungen(self.ordner, werte)
+        ziel = self.ordner / "seite.html"
+        erg = seite(bilder, ziel, self.kat, werte=werte)
+        html = ziel.read_text(encoding="utf-8")
+        self.assertIn("<title>Übersicht TX, HX</title>", html)
+        d = daten_aus_html(html)
+        self.assertEqual(d["schema"], "landseg-seite/3")
+        self.assertNotIn("bilder", d["einstellungen"])
+        t, hb, x = d["bilder"]
+        self.assertEqual([(b["kennung"], b["titel"], b["vorhanden"]) for b in d["bilder"]],
+                         [("T", "Orthofoto", True), ("H", "Scan", True), ("X", "fehlt", False)])
+        self.assertIn("X/manifest.json fehlt", x["grund"])
+        self.assertEqual(t["beschreibung"], "Farbe")
+        self.assertEqual([f["vorhanden"] for f in t["fassungen"]], [False, True, True])
+        self.assertEqual([f["vorhanden"] for f in hb["fassungen"]], [False, False, True])
+        # ohne Lage: kein transform, keine Weltdatei; Graustufen bleiben Graustufen
+        m = dateien.lese_json(h / "manifest.json")
+        self.assertIsNone(m["georeferenz"])
+        self.assertEqual(m["quelle"]["kanaele"], 1)
+        self.assertEqual(list(h.rglob("*.pgw")), [])
+        for uri in [hb["ausschnitt"]["bild"]] + [tk["bild"] for tk in hb["teilkacheln"]]:
+            self.assertEqual(Image.open(io.BytesIO(base64.b64decode(uri.split(",", 1)[1]))).mode, "L")
+        # Nähte-Zahlen und Einigung je Bild aus dessen eigenen Daten: ein Segment je Teilkachel, gleiche Klasse
+        c = hb["fassungen"][2]
+        self.assertIsNotNone(c["naht"])
+        self.assertEqual(c["einigung"]["stellen"], 0)
+        self.assertEqual(t["fassungen"][2]["einigung"]["stellen"], 1)
+        self.assertTrue((ids_aus_png(c["gesamt"]) == 5).all())
+        self.assertEqual([(b["kennung"], b["vorhanden"], [f["vorhanden"] for f in b["fassungen"]])
+                          for b in erg["bilder"]], [("T", True, [False, True, True]), ("H", True, [False, False, True]),
+                                                    ("X", False, [])])
+        for teil in ("data-bild", "c-bilder", "bildWahl(D.kennung)", "'#/' + ERSTES", "AKTUELL.taste(ev)"):
+            self.assertIn(teil, html)
+
+    def test_t0_unveraendert_neben_zweitem_bild(self):
+        """Die Daten eines Bildes sind dieselben, ob es allein oder neben einem zweiten Bild auf der Seite steht."""
+        self.feste_liste()
+        self.historisch()
+        allein = seite_daten(self.t / "manifest.json", self.kat)["bilder"][0]
+        beide = seite_daten([{"kennung": "TX", "name": "Ausschnitt TX", "manifest": self.t / "manifest.json"},
+                             {"kennung": "H", "manifest": self.ordner / "H" / "manifest.json"}], self.kat)
+        self.assertEqual(json.dumps(beide["bilder"][0], sort_keys=True), json.dumps(allein, sort_keys=True))
+        self.assertEqual(beide["bilder"][1]["titel"], "H")
+
+    def test_bild_ohne_daten_und_eigene_ordner(self):
+        h = self.historisch()
+        (h / "c-feste-liste").rename(h / "c-scan")
+        bilder = [{"kennung": "T", "manifest": self.t / "manifest.json"},
+                  {"kennung": "H", "manifest": h / "manifest.json", "ordner": {"C": "c-scan"}}]
+        d = seite_daten(bilder, self.kat)
+        self.assertEqual([b["vorhanden"] for b in d["bilder"]], [False, True])
+        self.assertIn("keine Fassung mit Daten", d["bilder"][0]["grund"])
+        self.assertTrue(d["bilder"][1]["fassungen"][2]["vorhanden"])
+        self.assertTrue(d["bilder"][1]["fassungen"][2]["quelle"].endswith("H/c-scan"))
+        bilder[1]["ordner"] = {}
+        with self.assertRaises(SeiteFehler):  # kein Bild mit Daten
+            seite_daten(bilder, self.kat)
+        with self.assertRaises(SeiteFehler):
+            seite_daten([bilder[0], {**bilder[1], "kennung": "T"}], self.kat)
+        with self.assertRaises(SeiteFehler):
+            bilder_aus_einstellungen(self.ordner, {"bilder": [{"kennung": "H"}]})
+
+    def test_kommentare_je_bild(self):
+        self.feste_liste()
+        self.historisch()
+        k_h = self.ordner / "k-h.json"
+        k_h.write_text(json.dumps({"bild": "H", "ausschnitt": "HX", "kommentare": [
+            {"nr": 1, "fassung": "C", "teilkachel": "r0c0", "segment": 5, "text": "Scan"}]}), encoding="utf-8")
+        k_t = self.ordner / "k-t.json"
+        k_t.write_text(json.dumps({"ausschnitt": "TX", "kommentare": [
+            {"nr": 1, "fassung": "C", "teilkachel": "r0c0", "segment": 1001, "text": "Ortho"}]}), encoding="utf-8")
+        bilder = [{"kennung": "T", "manifest": self.t / "manifest.json"},
+                  {"kennung": "H", "manifest": self.ordner / "H" / "manifest.json"}]
+        d = seite_daten(bilder, self.kat, kommentare=[k_h, k_t])
+        self.assertEqual([[k["text"] for k in b["kommentare"]] for b in d["bilder"]], [["Ortho"], ["Scan"]])
+        ohne = self.ordner / "k.json"
+        ohne.write_text(json.dumps({"kommentare": []}), encoding="utf-8")
+        with self.assertRaises(SeiteFehler):  # mehrere Bilder: Zuordnung aus dem Export nötig
+            seite_daten(bilder, self.kat, kommentare=ohne)
+        self.assertEqual(seite_daten(self.t / "manifest.json", self.kat, kommentare=ohne)["bilder"][0]["kommentare"], [])
+
+    def test_befehl_mit_daten(self):
+        self.feste_liste()
+        self.historisch()
+        werte = self.ordner / "werte.json"
+        werte.write_text(json.dumps({"bilder": [{"kennung": "T", "name": "Orthofoto", "manifest": "T/manifest.json"},
+                                                {"kennung": "H", "name": "Scan", "manifest": "H/manifest.json"}]}),
+                         encoding="utf-8")
+        ziel = self.ordner / "aus" / "beide.html"
+        puffer = io.StringIO()
+        with redirect_stdout(puffer):
+            code = main(["seite", "--daten", str(self.ordner), "--einstellungen", str(werte), "--ziel", str(ziel)])
+        self.assertEqual(code, 0)
+        self.assertIn("Bild H (Scan):", puffer.getvalue())
+        self.assertEqual([b["kennung"] for b in daten_aus_html(ziel.read_text(encoding="utf-8"))["bilder"]], ["T", "H"])
+        self.assertEqual([b["kennung"] for b in einstellungen.laden("seite")["bilder"]], ["T0", "H0"])
+
     def test_luecke(self):
         self.feste_liste(luecke=True)
         d = seite_daten(self.t / "manifest.json", self.kat)
-        befund = d["fassungen"][2]["teilkacheln"]["r0c0"]["pruefen"]
+        befund = d["bilder"][0]["fassungen"][2]["teilkacheln"]["r0c0"]["pruefen"]
         self.assertFalse(befund["ok"])
         self.assertEqual(befund["ohne_segment"], 4)
 
@@ -163,7 +286,7 @@ class SeiteTest(unittest.TestCase):
         dateien.schreibe_json(rechts, daten)
         manifest_pfad = self.t / "manifest.json"
         d = seite_daten(manifest_pfad, self.kat)
-        c = d["fassungen"][2]
+        c = d["bilder"][0]["fassungen"][2]
         bild = naht.lese_bild(self.t / self.manifest["ausschnitt"]["bild"])
         karte = np.where(np.arange(80)[None, :] < 40, 1001, 2001).astype(np.uint32).repeat(40, axis=0)
         self.assertEqual(len(c["naht"]["verstoesse"]), len(naht.pruefe_naehte(karte, self.manifest, bild).verstoesse))
@@ -183,7 +306,7 @@ class SeiteTest(unittest.TestCase):
         self.fassung_b()
         ziel = self.t / "seite" / "TX.html"
         erg = seite(manifest_pfad, ziel, self.kat)
-        self.assertEqual([(f["kennung"], f.get("naht"), f.get("einigung")) for f in erg["fassungen"]],
+        self.assertEqual([(f["kennung"], f.get("naht"), f.get("einigung")) for f in erg["bilder"][0]["fassungen"]],
                          [("A", None, None), ("B", 0, {"stellen": 0, "unsicher": 0}),
                           ("C", 1, {"stellen": 1, "unsicher": 1})])
         html = ziel.read_text(encoding="utf-8")
@@ -198,7 +321,7 @@ class SeiteTest(unittest.TestCase):
         self.t = self.ordner / "T3"
         self.manifest = kacheln(grau, 0, 0, 80, 40, self.t, kern=40, rand=8, name="TX")
         self.feste_liste()
-        g = seite_daten(self.t / "manifest.json", self.kat)
+        g = seite_daten(self.t / "manifest.json", self.kat)["bilder"][0]
         self.assertEqual(g["fassungen"][2]["einigung"]["stellen"], 1)
         png = Image.open(io.BytesIO(base64.b64decode(g["ausschnitt"]["bild"].split(",", 1)[1])))
         self.assertEqual((png.size, int(np.asarray(png.convert("L")).max())), ((80, 40), 90))
@@ -206,7 +329,7 @@ class SeiteTest(unittest.TestCase):
     def test_fehlende_teilkachel_naht_nicht_geprueft(self):
         self.feste_liste()
         (self.t / "c-feste-liste" / "r0c1" / "labels.tif").unlink()
-        a = seite_daten(self.t / "manifest.json", self.kat)["fassungen"][2]
+        a = seite_daten(self.t / "manifest.json", self.kat)["bilder"][0]["fassungen"][2]
         self.assertIsNone(a["teilkacheln"]["r0c1"])
         self.assertIsNone(a["naht"])
         self.assertIsNone(a["einigung"])
@@ -218,8 +341,8 @@ class SeiteTest(unittest.TestCase):
             {"kennung": "A", "name": "fest", "ordner": "vorstufe"},
             {"kennung": "P", "name": "Probe", "beschreibung": "nur Probe", "ordner": str(b), "kategorien": "kategorien-b.json"}]}
         d = seite_daten(self.t / "manifest.json", self.kat, werte=werte)
-        self.assertEqual([(f["kennung"], f["vorhanden"]) for f in d["fassungen"]], [("A", False), ("P", True)])
-        self.assertEqual(d["fassungen"][1]["beschreibung"], "nur Probe")
+        self.assertEqual([(f["kennung"], f["vorhanden"]) for f in d["bilder"][0]["fassungen"]], [("A", False), ("P", True)])
+        self.assertEqual(d["bilder"][0]["fassungen"][1]["beschreibung"], "nur Probe")
 
     def test_einbettung_sicher(self):
         self.feste_liste()
@@ -230,7 +353,7 @@ class SeiteTest(unittest.TestCase):
         seite(self.t / "manifest.json", ziel, self.kat, kommentare=kommentare)
         html = ziel.read_text(encoding="utf-8")
         self.assertEqual(html.count("</script>"), 2)
-        self.assertEqual(daten_aus_html(html)["kommentare"][0]["text"], "</script><b>x</b>")
+        self.assertEqual(daten_aus_html(html)["bilder"][0]["kommentare"][0]["text"], "</script><b>x</b>")
 
     def test_fehler(self):
         with self.assertRaises(SeiteFehler):

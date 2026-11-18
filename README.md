@@ -181,8 +181,25 @@ Verlauf von `segmente.json`.
 ### seite
 
 ```
-PY -B -m landseg seite --manifest <manifest.json> --ziel <seite.html> [--einstellungen <datei.json>] [--kategorien <kategorien.json>] [--kommentare <kommentare.json>] [--oeffnen]
+PY -B -m landseg seite --manifest <manifest.json> --ziel <seite.html> [--einstellungen <datei.json>] [--kategorien <kategorien.json>] [--kommentare <kommentare.json>]... [--oeffnen]
+PY -B -m landseg seite --daten <ordner> --ziel <seite.html> [dieselben Schalter]
 ```
+
+Mehrere Bilder auf einer Seite: Mit `--daten <ordner>` nimmt die Seite alle Bilder unter `bilder` in
+`einstellungen/seite.json` (je Bild `kennung`, `name`, `beschreibung`, `manifest` relativ zu `--daten` oder
+absolut, wahlweise `ordner` = Kennung der Fassung -> eigener Ordner für dieses Bild). Voreingestellt sind
+`T0/manifest.json` (Orthofoto T0) und `H0/manifest.json` (historischer Ausschnitt H0, Scan 1968). Oben neben den
+Fassungen steht dann die Bildwahl; sie wechselt Bild, Teilkacheln, Nähte-Zahlen, Einigung und Kategorienliste
+ohne Neuladen und behält Fassung, Ansicht und Teilkachel, soweit es sie im anderen Bild gibt. Ein Bild ohne
+Manifest oder ohne Daten erscheint ausgegraut; erst wenn kein Bild Daten hat, bricht `seite` ab. Lage
+(Georeferenz) braucht die Seite nicht; ein Scan ohne Weltdatei (Manifest `georeferenz: null`) und Graustufen
+gehen wie ein Orthofoto. Links der Seite: `#/<Bild>/<Fassung>/kachel/<tk>` (alte Links ohne Bild gelten dem
+ersten Bild). Kommentare stehen je Bild getrennt im Browser; der Export nennt `bild`, `ausschnitt` und
+`manifest`, danach ordnet `--kommentare` (mehrfach möglich) jede Datei ihrem Bild zu. Mit `--manifest` entsteht
+eine Seite mit genau diesem Bild, ohne Bildwahl.
+
+`kacheln` liest Graustufen-Scans einkanalig (`kanaele: 1`) und übersetzt Palettenbilder über ihre Farbtafel
+(nur Grautöne: Graustufen), statt die Indizes zu schreiben.
 
 Schreibt eine HTML-Datei, die ohne Server im Browser aufgeht (Bilder und Daten stecken darin, für
 vier Teilkacheln und eine Fassung rund 7 MB). Sie zeigt je Teilkachel ein großes Bild mit dem

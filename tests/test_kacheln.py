@@ -99,6 +99,43 @@ class KachelnTest(unittest.TestCase):
             self.assertAlmostEqual(t["transform"]["c"], 1000.0 + gx * 0.2)
             self.assertAlmostEqual(t["transform"]["f"], 5001.0 - gy * 0.2)
 
+    def test_graustufen_ohne_lage_und_palette(self):
+        """Scan ohne Weltdatei: einkanalig, ohne transform und .pgw; Palettenbild über die Farbtafel."""
+        grau = np.random.default_rng(5).integers(0, 256, size=(120, 150), dtype=np.uint8)
+        scan = self.ordner / "scan.tif"
+        tifffile.imwrite(scan, grau, photometric="minisblack")
+        m = kacheln(scan, 10, 20, 100, 80, self.ordner / "g", kern=50, rand=8, name="g")
+        self.assertIsNone(m["georeferenz"])
+        self.assertEqual(m["quelle"]["kanaele"], 1)
+        self.assertNotIn("transform", m["ausschnitt"])
+        self.assertTrue(all("transform" not in t for t in m["teilkacheln"]))
+        self.assertEqual(list((self.ordner / "g").rglob("*.pgw")), [])
+        with Image.open(self.ordner / "g" / "g.png") as b:
+            self.assertEqual(b.mode, "L")
+            self.assertTrue((np.asarray(b) == grau[20:100, 10:110]).all())
+        # Palette mit Grautönen (Index i -> Grau 255 - i) und mit Farben
+        idx = np.random.default_rng(6).integers(0, 256, size=(60, 60), dtype=np.uint8)
+        stufen = (255 - np.arange(256, dtype=np.uint16)) * 257
+        for name, tafel, kanaele in (("pg", np.stack([stufen] * 3), 1),
+                                     ("pf", np.stack([stufen, np.zeros(256, np.uint16), stufen]), 3)):
+            pfad = self.ordner / f"{name}.tif"
+            tifffile.imwrite(pfad, idx, photometric="palette", colormap=tafel)
+            m = kacheln(pfad, 0, 0, 60, 60, self.ordner / name, kern=60, rand=0, name=name)
+            self.assertEqual(m["quelle"]["kanaele"], kanaele)
+            with Image.open(self.ordner / name / f"{name}.png") as b:
+                feld = np.asarray(b)
+            if kanaele == 1:
+                self.assertTrue((feld == 255 - idx).all())
+            else:
+                self.assertEqual(feld.shape, (60, 60, 3))
+                self.assertTrue((feld[..., 0] == 255 - idx).all() and (feld[..., 1] == 0).all())
+        # Ansicht liest die Graustufen-Teilkachel (als RGB mit gleichen Kanälen)
+        puffer = io.StringIO()
+        with redirect_stdout(puffer):
+            code = main(["ansicht", "--manifest", str(self.ordner / "g" / "manifest.json"), "--teilkachel", "r0c0",
+                         "--ziel", str(self.ordner / "g-ansicht")])
+        self.assertEqual(code, 0, puffer.getvalue())
+
     def test_ausschnitt_ausserhalb_und_vorhandenes_manifest(self):
         with self.assertRaises(KachelFehler):
             self.schneiden(100, x=300)

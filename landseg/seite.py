@@ -1,4 +1,4 @@
-"""W8 seite: Übersichtsseite eines Ausschnitts als eine HTML-Datei, die man direkt im Browser öffnet.
+"""W8 seite: Übersichtsseite eines oder mehrerer Ausschnitte als eine HTML-Datei, die man direkt im Browser öffnet.
 
 Je Bild ein Stand, das Ergebnis, in einem großen Bild: Ebene grob/mittel/fein umschaltbar, Klassifikation
 jedes Segments unter der Maus und per Klick, Kategorienliste mit Segmentzahl und Flächenanteil, Lückenkarte,
@@ -7,7 +7,10 @@ Naht-Ebene (Nahtregel auf den zusammengesetzten Kernen) mit zwei Zahlen: Schnitt
 belegt), Übersicht des ganzen Ausschnitts und Kommentare mit
 Export als JSON. Ein Umschalter wechselt zwischen den Fassungen desselben Ausschnitts (Einstellung
 ``fassungen``: Kennung, Name, Beschreibung, Ordner mit ``<teilkachel>/labels.tif`` und ``segmente.json``,
-eigene Kategorienliste); eine Fassung ohne Daten erscheint ausgegraut.
+eigene Kategorienliste); eine Fassung ohne Daten erscheint ausgegraut. Mehrere Bilder (Einstellung ``bilder``:
+Kennung, Name, Beschreibung, Manifest, wahlweise eigene Ordner je Fassung) stehen in derselben Datei; eine Bildwahl
+neben dem Umschalter der Fassungen wechselt zwischen ihnen, ein Bild ohne Manifest oder ohne Daten erscheint
+ausgegraut. Lage (Georeferenz) braucht die Seite nicht; Graustufenbilder zeigt sie als Graustufen.
 
 Alles steckt in der einen Datei (Bilder als PNG im Text); Klassen, Namen und Farben kommen je Fassung aus
 deren Kategorienliste (Format von ``kategorien.json``), Farben und Voreinstellungen der Seite aus
@@ -190,16 +193,35 @@ def lage_in_worten(zeile: int, spalte: int, zeilen: int, spalten: int) -> str:
     return " ".join(worte) or "ganzer Ausschnitt"
 
 
-def _kommentare_lesen(pfad: Path | None) -> list[dict]:
-    if pfad is None:
-        return []
+def _kommentare_lesen(pfad: Path) -> tuple[dict, list[dict]]:
+    """Kopf (``bild``, ``ausschnitt``, ``manifest`` des Exports, soweit vorhanden) und Liste einer Kommentar-Datei."""
     if not pfad.exists():
         raise SeiteFehler(f"{pfad}: Kommentar-Datei fehlt")
     daten = dateien.lese_json(pfad)
     liste = daten.get("kommentare") if isinstance(daten, dict) else daten
     if not isinstance(liste, list):
         raise SeiteFehler(f"{pfad}: Liste 'kommentare' erwartet")
-    return liste
+    kopf = {k: daten.get(k) for k in ("bild", "ausschnitt", "manifest")} if isinstance(daten, dict) else {}
+    return kopf, liste
+
+
+def _kommentare_zuordnen(pfade: list[Path], bilder: list[dict]) -> dict[str, list[dict]]:
+    """Kommentare je Bild-Kennung: bei einem Bild alle, sonst nach ``bild``, ``ausschnitt`` oder ``manifest`` des
+    Exports (so schreibt ihn die Seite)."""
+    je: dict[str, list[dict]] = {b["kennung"]: [] for b in bilder}
+    for pfad in pfade:
+        kopf, liste = _kommentare_lesen(pfad)
+        if len(bilder) == 1:
+            treffer = bilder
+        else:
+            treffer = [b for b in bilder if kopf.get("bild") == b["kennung"]] or [
+                b for b in bilder if b.get("name") and kopf.get("ausschnitt") == b["name"]] or [
+                b for b in bilder if kopf.get("manifest") and kopf.get("manifest") == b["manifest"]]
+        if len(treffer) != 1:
+            raise SeiteFehler(f"{pfad}: Kommentare keinem Bild eindeutig zuzuordnen (Felder 'bild', 'ausschnitt', "
+                              f"'manifest' des Exports; Bilder: {', '.join(b['kennung'] for b in bilder)})")
+        je[treffer[0]["kennung"]].extend(liste)
+    return je
 
 
 def _fassung_lesen(eintrag: dict, basis: Path, kat_standard: Kategorien, manifest: dict,
@@ -256,25 +278,52 @@ def _fassung_lesen(eintrag: dict, basis: Path, kat_standard: Kategorien, manifes
     }
 
 
-def seite_daten(manifest_pfad: str | Path, kat: Kategorien, kommentare: str | Path | None = None,
-                werte: dict | None = None) -> dict:
-    """Alles, was die Seite anzeigt, als ein JSON-fähiges Wörterbuch."""
-    manifest_pfad = Path(manifest_pfad)
+def bilder_aus_einstellungen(daten: str | Path, einst: dict) -> list[dict]:
+    """Bilder der Einstellung ``bilder``: ``manifest`` relativ zu ``daten`` (absolut bleibt absolut)."""
+    liste = einst.get("bilder")
+    if not isinstance(liste, list) or not liste:
+        raise SeiteFehler("Einstellung 'bilder' fehlt oder ist leer")
+    bilder = []
+    for e in liste:
+        kennung = str((e or {}).get("kennung") or "").strip()
+        if not kennung:
+            raise SeiteFehler(f"Bild ohne 'kennung' in den Einstellungen: {e!r}")
+        if not e.get("manifest"):
+            raise SeiteFehler(f"Bild {kennung}: 'manifest' fehlt in den Einstellungen")
+        manifest = Path(e["manifest"])
+        bilder.append({**e, "kennung": kennung,
+                       "manifest": manifest if manifest.is_absolute() else Path(daten) / manifest})
+    return bilder
+
+
+def _bild_daten(eintrag: dict, kat: Kategorien, einst: dict) -> dict:
+    """Ein Bild der Seite: Ausschnitt, Teilkacheln und Fassungen eines Manifests. Fehlt das Manifest oder hat keine
+    Fassung Daten, ist das Bild nicht ``vorhanden`` (mit ``grund``); die anderen Bilder bleiben wählbar."""
+    manifest_pfad = Path(eintrag["manifest"])
+    kopf = {"kennung": eintrag["kennung"], "titel": eintrag.get("name") or eintrag["kennung"],
+            "beschreibung": eintrag.get("beschreibung") or "", "manifest": _pfad_text(manifest_pfad)}
+    if not manifest_pfad.is_file():
+        return {**kopf, "vorhanden": False, "grund": f"{_pfad_text(manifest_pfad)} fehlt"}
     manifest = dateien.lese_json(manifest_pfad)
     basis = manifest_pfad.parent
-    einst = werte or einstellungen.laden("seite")
     liste = einst.get("fassungen")
     if not isinstance(liste, list) or not liste:
         raise SeiteFehler("Einstellung 'fassungen' fehlt oder ist leer")
+    ordner = eintrag.get("ordner") or {}
+    if not isinstance(ordner, dict):
+        raise SeiteFehler(f"Bild {eintrag['kennung']}: 'ordner' ist ein Wörterbuch Kennung der Fassung -> Ordner")
+    liste = [{**e, "ordner": ordner.get(str(e.get("kennung")), e.get("ordner"))} for e in liste]
     ausschnitt = manifest["ausschnitt"]
     ausschnitt_bild = naht.lese_bild(basis / ausschnitt["bild"])  # derselbe Leser wie naht und einigung
     fassungen = [_fassung_lesen(e, basis, kat, manifest, ausschnitt_bild, einst) for e in liste]
     kennungen = [f["kennung"] for f in fassungen]
     if len(set(kennungen)) != len(kennungen):
         raise SeiteFehler(f"Kennungen der Fassungen doppelt: {kennungen}")
+    name = ausschnitt.get("name", manifest_pfad.parent.name)
     if not any(f["vorhanden"] for f in fassungen):
-        raise SeiteFehler("keine Fassung mit Daten: " + "; ".join(
-            f"{f['kennung']}: {f['quelle']}/<teilkachel>/ ohne labels.tif und segmente.json" for f in fassungen))
+        return {**kopf, "name": name, "vorhanden": False, "fassungen": fassungen, "grund": "keine Fassung mit Daten: "
+                + "; ".join(f"{f['kennung']}: {f['quelle']}/<teilkachel>/ ohne labels.tif und segmente.json"
+                            for f in fassungen)}
 
     # Nummer (1 … n, zeilenweise von oben links) und Lage in Worten für die Kachel-Wahl
     zeilen = 1 + max(t["zeile"] for t in manifest["teilkacheln"])
@@ -286,17 +335,53 @@ def seite_daten(manifest_pfad: str | Path, kat: Kategorien, kommentare: str | Pa
                     "kern": t["kern"], "kontext": t["kontext"], "kern_im_bild": t["kern_im_bild"],
                     "bild": _png(_als_bild(naht.lese_bild(basis / t["bild"])))} for t in manifest["teilkacheln"]]
     return {
-        "schema": "landseg-seite/2",
-        "erstellt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "name": ausschnitt.get("name", manifest_pfad.parent.name),
-        "manifest": _pfad_text(manifest_pfad),
+        **kopf, "vorhanden": True,
+        "name": name,
         "ausschnitt": {"breite": ausschnitt["breite"], "hoehe": ausschnitt["hoehe"],
                        "bild": _png(_als_bild(ausschnitt_bild))},
         "teilkacheln": teilkacheln,
         "fassungen": fassungen,
-        "kommentare": _kommentare_lesen(Path(kommentare) if kommentare else None),
+    }
+
+
+def _bilder(bilder: str | Path | list[dict]) -> list[dict]:
+    """Ein Manifest (ein Bild, Kennung = Name des Ausschnitts) oder eine Liste von Bildern."""
+    if isinstance(bilder, (str, Path)):
+        manifest_pfad = Path(bilder)
+        if not manifest_pfad.is_file():
+            raise SeiteFehler(f"{manifest_pfad}: Manifest fehlt")
+        name = dateien.lese_json(manifest_pfad)["ausschnitt"].get("name", manifest_pfad.parent.name)
+        return [{"kennung": name, "name": f"Ausschnitt {name}", "manifest": manifest_pfad}]
+    if not bilder:
+        raise SeiteFehler("keine Bilder für die Seite")
+    kennungen = [str(b.get("kennung") or "") for b in bilder]
+    if len(set(kennungen)) != len(kennungen) or "" in kennungen:
+        raise SeiteFehler(f"Kennungen der Bilder fehlen oder sind doppelt: {kennungen}")
+    return [{**b, "manifest": Path(b["manifest"])} for b in bilder]
+
+
+def seite_daten(bilder: str | Path | list[dict], kat: Kategorien,
+                kommentare: str | Path | list[str | Path] | None = None, werte: dict | None = None) -> dict:
+    """Alles, was die Seite anzeigt, als ein JSON-fähiges Wörterbuch.
+
+    ``bilder``: ein ``manifest.json`` (Seite mit einem Bild) oder eine Liste von Bildern mit ``kennung``, ``name``,
+    ``beschreibung``, ``manifest`` und wahlweise ``ordner`` (Kennung der Fassung -> Ordner relativ zum Ordner des
+    Manifests; ersetzt für dieses Bild den Ordner aus ``fassungen``), etwa aus ``bilder_aus_einstellungen``."""
+    einst = werte or einstellungen.laden("seite")
+    daten = [_bild_daten(b, kat, einst) for b in _bilder(bilder)]
+    if not any(b["vorhanden"] for b in daten):
+        raise SeiteFehler("; ".join(f"{b['kennung']}: {b['grund']}" for b in daten))
+    pfade = [] if not kommentare else [Path(k) for k in (
+        [kommentare] if isinstance(kommentare, (str, Path)) else kommentare)]
+    je = _kommentare_zuordnen(pfade, daten)
+    for b in daten:
+        b["kommentare"] = je[b["kennung"]]
+    return {
+        "schema": "landseg-seite/3",
+        "erstellt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "bilder": daten,
         "kommentar_schema": KOMMENTAR_SCHEMA,
-        "einstellungen": {k: v for k, v in einst.items() if k not in ("beschreibung", "naht", "fassungen")},
+        "einstellungen": {k: v for k, v in einst.items() if k not in ("beschreibung", "naht", "fassungen", "bilder")},
     }
 
 
@@ -306,13 +391,14 @@ def _einbetten(daten: dict) -> str:
     return text.replace("</", "<\\/").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
-def seite(manifest_pfad: str | Path, ziel: str | Path, kat: Kategorien, kommentare: str | Path | None = None,
-          werte: dict | None = None) -> dict:
-    """Schreibt die Seite nach ``ziel`` (eine HTML-Datei) und gibt eine Zusammenfassung zurück."""
+def seite(bilder: str | Path | list[dict], ziel: str | Path, kat: Kategorien,
+          kommentare: str | Path | list[str | Path] | None = None, werte: dict | None = None) -> dict:
+    """Schreibt die Seite nach ``ziel`` (eine HTML-Datei) und gibt eine Zusammenfassung je Bild und Fassung zurück;
+    ``bilder`` wie bei ``seite_daten``."""
     ziel = Path(ziel)
     if ziel.suffix.lower() not in (".html", ".htm"):
         raise SeiteFehler(f"{ziel}: Ziel ist eine HTML-Datei (Endung .html)")
-    daten = seite_daten(manifest_pfad, kat, kommentare=kommentare, werte=werte)
+    daten = seite_daten(bilder, kat, kommentare=kommentare, werte=werte)
     html = (VORLAGEN / "seite.html").read_text(encoding="utf-8")
     for platz, inhalt in (("/*CSS*/", (VORLAGEN / "seite.css").read_text(encoding="utf-8")),
                           ("/*JS*/", (VORLAGEN / "seite.js").read_text(encoding="utf-8")),
@@ -320,18 +406,27 @@ def seite(manifest_pfad: str | Path, ziel: str | Path, kat: Kategorien, kommenta
         if platz not in html:
             raise SeiteFehler(f"Vorlage seite.html: Platzhalter {platz} fehlt")
         html = html.replace(platz, inhalt, 1)
-    html = html.replace("<!--TITEL-->", f"Übersicht {daten['name']}", 1)
+    titel = ", ".join(b["name"] for b in daten["bilder"] if b["vorhanden"])
+    html = html.replace("<!--TITEL-->", f"Übersicht {titel}", 1)
     ziel.parent.mkdir(parents=True, exist_ok=True)
     ziel.write_text(html, encoding="utf-8")
-    zusammenfassung = {"ziel": str(ziel), "groesse": ziel.stat().st_size, "fassungen": []}
-    for f in daten["fassungen"]:
-        zeile = {"kennung": f["kennung"], "name": f["name"], "vorhanden": f["vorhanden"], "quelle": f["quelle"]}
-        if f["vorhanden"]:
-            zeile["naht"] = None if f["naht"] is None else len(f["naht"]["verstoesse"])
-            e = f["einigung"]
-            zeile["einigung"] = None if e is None else {"stellen": e["stellen"], "unsicher": e["unsicher"]["paare"]}
-            zeile["teilkacheln"] = [
-                {"id": tk, "segmente": len(s["segmente"]), "pruefen_ok": s["pruefen"]["ok"], "naht": len(s["naht"])}
-                if s else {"id": tk} for tk, s in f["teilkacheln"].items()]
-        zusammenfassung["fassungen"].append(zeile)
+    zusammenfassung = {"ziel": str(ziel), "groesse": ziel.stat().st_size, "bilder": []}
+    for b in daten["bilder"]:
+        bild = {"kennung": b["kennung"], "titel": b["titel"], "vorhanden": b["vorhanden"], "manifest": b["manifest"]}
+        if not b["vorhanden"]:
+            bild["grund"] = b["grund"]
+        bild["fassungen"] = [_fassung_zusammenfassung(f) for f in b.get("fassungen", [])]
+        zusammenfassung["bilder"].append(bild)
     return zusammenfassung
+
+
+def _fassung_zusammenfassung(f: dict) -> dict:
+    zeile = {"kennung": f["kennung"], "name": f["name"], "vorhanden": f["vorhanden"], "quelle": f["quelle"]}
+    if f["vorhanden"]:
+        zeile["naht"] = None if f["naht"] is None else len(f["naht"]["verstoesse"])
+        e = f["einigung"]
+        zeile["einigung"] = None if e is None else {"stellen": e["stellen"], "unsicher": e["unsicher"]["paare"]}
+        zeile["teilkacheln"] = [
+            {"id": tk, "segmente": len(s["segmente"]), "pruefen_ok": s["pruefen"]["ok"], "naht": len(s["naht"])}
+            if s else {"id": tk} for tk, s in f["teilkacheln"].items()]
+    return zeile

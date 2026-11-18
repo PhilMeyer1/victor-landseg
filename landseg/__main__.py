@@ -24,7 +24,7 @@ from .einigung import EinigungFehler
 from .kacheln import KachelFehler, kacheln
 from .kante import einrasten
 from .pruefen import pruefen
-from .seite import SeiteFehler, seite
+from .seite import SeiteFehler, bilder_aus_einstellungen, seite
 from .vorstufe import Auftrag, VorstufeFehler, auftraege_aus_manifest, konfig_laden, vorstufe
 from .zusammentragen import ZusammenFehler, lese_auftrag, zusammentragen
 
@@ -213,29 +213,38 @@ def _rechteck(text: str) -> dict:
 
 def befehl_seite(a) -> int:
     kat = kategorien.laden(a.kategorien)
-    erg = seite(a.manifest, a.ziel, kat, kommentare=a.kommentare,
-                werte=einstellungen.laden("seite", a.einstellungen))
+    werte = einstellungen.laden("seite", a.einstellungen)
+    bilder = a.manifest if a.manifest else bilder_aus_einstellungen(a.daten, werte)
+    erg = seite(bilder, a.ziel, kat, kommentare=a.kommentare, werte=werte)
     if a.json:
         print(json.dumps(erg, ensure_ascii=False))
     else:
-        for f in erg["fassungen"]:
-            if not f["vorhanden"]:
-                print(f"Fassung {f['kennung']} ({f['name']}): keine Daten in {f['quelle']}")
+        for b in erg["bilder"]:
+            if not b["vorhanden"]:
+                print(f"Bild {b['kennung']} ({b['titel']}): keine Daten ({b['grund']})")
                 continue
-            teile = [f"{t['id']} –" if "segmente" not in t else
-                     f"{t['id']} {t['segmente']} Segmente, pruefen {'ok' if t['pruefen_ok'] else 'FEHLER'}"
-                     for t in f["teilkacheln"]]
-            naht_text = "nicht geprüft" if f["naht"] is None else f["naht"]
-            e = f["einigung"]
-            einigung_text = ("nicht gezählt" if e is None else
-                             f"{e['stellen']} (davon {e['unsicher']} unsicher belegt)")
-            print(f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Schnittlinien ohne Bildkante "
-                  f"{naht_text}; gleiche Fläche, verschiedene Klasse {einigung_text}")
+            if len(erg["bilder"]) > 1:
+                print(f"Bild {b['kennung']} ({b['titel']}):")
+            for f in b["fassungen"]:
+                print(_fassung_zeile(f))
         print(f"Seite: {erg['ziel']} ({erg['groesse'] // 1024} KiB)")
     if a.oeffnen:
         import webbrowser
         webbrowser.open(Path(erg["ziel"]).resolve().as_uri())
     return 0
+
+
+def _fassung_zeile(f: dict) -> str:
+    if not f["vorhanden"]:
+        return f"Fassung {f['kennung']} ({f['name']}): keine Daten in {f['quelle']}"
+    teile = [f"{t['id']} –" if "segmente" not in t else
+             f"{t['id']} {t['segmente']} Segmente, pruefen {'ok' if t['pruefen_ok'] else 'FEHLER'}"
+             for t in f["teilkacheln"]]
+    naht_text = "nicht geprüft" if f["naht"] is None else f["naht"]
+    e = f["einigung"]
+    einigung_text = "nicht gezählt" if e is None else f"{e['stellen']} (davon {e['unsicher']} unsicher belegt)"
+    return (f"Fassung {f['kennung']} ({f['name']}): " + "; ".join(teile) + f"; Schnittlinien ohne Bildkante "
+            f"{naht_text}; gleiche Fläche, verschiedene Klasse {einigung_text}")
 
 
 def befehl_ansicht(a) -> int:
@@ -414,11 +423,18 @@ def parser() -> argparse.ArgumentParser:
     z.add_argument("--json", action="store_true", help="Ergebnis als JSON")
     z.set_defaults(fn=befehl_zusammentragen)
 
-    se = befehle.add_parser("seite", help="W8: Übersichtsseite als eine HTML-Datei (Fassungen, Ebenen, "
+    se = befehle.add_parser("seite", help="W8: Übersichtsseite als eine HTML-Datei (Bilder, Fassungen, Ebenen, "
                                           "Lücken, Nähte, Kommentare)")
-    se.add_argument("--manifest", required=True,
-                    help="manifest.json von kacheln (Ordner der Fassungen relativ dazu, siehe einstellungen/seite.json)")
-    se.add_argument("--kommentare", help="schon exportierte Kommentare (JSON) zum Anzeigen")
+    quelle = se.add_mutually_exclusive_group(required=True)
+    quelle.add_argument("--manifest",
+                        help="manifest.json von kacheln: Seite mit diesem einen Bild (Ordner der Fassungen relativ "
+                             "dazu, siehe einstellungen/seite.json)")
+    quelle.add_argument("--daten",
+                        help="Ordner, zu dem die Manifeste unter 'bilder' in einstellungen/seite.json relativ sind: "
+                             "Seite mit allen Bildern und Bildwahl")
+    se.add_argument("--kommentare", action="append",
+                    help="schon exportierte Kommentare (JSON) zum Anzeigen; mehrfach möglich, je Datei dem Bild aus "
+                         "ihrem Export zugeordnet")
     se.add_argument("--kategorien", help="kategorien.json für Fassungen ohne eigene Liste (Standard: die des Repos)")
     se.add_argument("--einstellungen", help="JSON, überschreibt einstellungen/seite.json (etwa 'fassungen')")
     se.add_argument("--ziel", required=True, help="HTML-Datei (unter daten/landseg/)")
