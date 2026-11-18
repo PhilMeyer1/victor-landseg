@@ -1,0 +1,49 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "C",
+  "buendel": "C-01",
+  "bearbeiter": "agent:einigung-C-01:20261118e-r2",
+  "paare": [
+    {
+      "paar": "r0c0:100059|r0c1:200100",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Am einzigen Berührpunkt trifft die dunkelgraue Asphaltfahrbahn 100059 schräg auf den helleren graugrünen Randstreifen 200100 oberhalb der Fahrbahnkante (Fortsetzung von 100099, in C-02 als Krautsaum 3.4 geeinigt); Fahrbahn gegen Randstreifen ist eine echte Grenze (einigung_01.jpg)."
+    },
+    {
+      "paar": "r0c0:100175|r0c1:200189",
+      "entscheidung": "gleich",
+      "klasse": "3",
+      "grund": "Dieselbe grüne, etwas raue Wiese ohne Büsche läuft ohne Kante über die senkrechte Naht; 200189 ist über 400002 schon als Dauergrünland 3 verkettet (3.1 gegen 3.5), daher bekommt die ganze Kette mit 100175, 100197 und 300013 die Elternklasse 3."
+    },
+    {
+      "paar": "r0c0:100197|r1c0:300013",
+      "entscheidung": "gleich",
+      "klasse": "3",
+      "grund": "Das kleine Wiesenstück 100197 neben der dunklen Krone setzt sich unter der Naht ohne Farbsprung als dieselbe Grasfläche 300013 fort; Glied der Kette 100175–200189–300013, daher Dauergrünland 3."
+    },
+    {
+      "paar": "r0c0:100175|r1c0:300013",
+      "entscheidung": "gleich",
+      "klasse": "3",
+      "grund": "Dieselbe Hangwiese mit dem hellen Pfad zieht ohne Kante über die waagrechte Naht; Glied der Kette mit 200189 und 400002, daher Dauergrünland 3."
+    },
+    {
+      "paar": "r0c0:100166|r1c0:300015",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "An der Naht liegt beidseits dasselbe grüne Gras mit kleinen dunklen Büschen ohne Kante, aber 100166 ist als Ganzes die glatte, gemähte Wiese (3.1, in Runde 1 gegen die raue Fläche 100056 als Grenze bestätigt), während 300015 mit 100056 als verbuschende Fläche 3.5 verkettet ist; eine gemeinsame Klasse würde eine der beiden Flächen falsch benennen, der Übergang glatt/rau liegt innerhalb von 100166 und nicht auf der Naht (einigung_05.jpg)."
+    },
+    {
+      "paar": "r1c0:300015|r1c0:300024",
+      "entscheidung": "gleich",
+      "klasse": "3.5",
+      "grund": "Das kleine Stück 300024 liegt mitten in 300015 und zeigt dasselbe Gras ohne Kante (Urteil r1c0: verschmelzen); es übernimmt die Klasse seiner Kette 100056–300015, verbuschende Fläche 3.5."
+    }
+  ],
+  "offen": [
+    "r0c0:100166|r1c0:300015: Der Streifen von 100166 entlang der Naht (x 140-285, y 455-500) sieht aus wie die raue Fläche mit Büschen; klären würde ein Schnitt, der diesen Streifen von der glatten Wiese 100166 trennt (Grenze, nicht Klasse).",
+    "Kette 100056-300015-300024 (3.5) gegen Urteil r1c0, das 300015 als Wiese 3.1 mit einzelnen Büschen sieht: ob verstreute Büsche 3.5 rechtfertigen, ist eine Regelfrage (siehe auch r1c0 offen v3: 300038)."
+  ],
+  "nicht_geprueft": []
+}

@@ -1,0 +1,79 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-03",
+ "bearbeiter": "agent:einigung-B-03:20261118e",
+ "paare": [
+  {
+   "paar": "r0c0:100170|r0c1:200167",
+   "entscheidung": "gleich",
+   "klasse": "1",
+   "grund": "Türkis ist der untere Lappen derselben Gehölzmasse, die rechts der Naht als Magenta weiterläuft; ohne Kante, Sträucher und kleine Bäume gemischt, daher nur Gehölz sicher."
+  },
+  {
+   "paar": "r0c0:100170|r0c1:200185",
+   "entscheidung": "gleich",
+   "klasse": "1",
+   "grund": "Türkis und Magenta liegen beide auf dem dunkelgrünen Saum derselben Gehölzmasse am Feldrand, ohne Kante dazwischen; Kette mit Paar 1, daher dieselbe Klasse Gehölz."
+  },
+  {
+   "paar": "r0c0:100159|r0c1:200170",
+   "entscheidung": "gleich",
+   "klasse": "2.1.1",
+   "grund": "Dasselbe beige Feld mit bogenförmigen Schwaden läuft ohne Kante über die Naht; unregelmäßige Hangfläche zwischen Wiesen und Gärten mit Schwaden entlang der Höhenlinie, also gemähte Wiese mit Heu, kein Getreideacker."
+  },
+  {
+   "paar": "r0c0:100195|r1c0:300001",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Die dunklere Grasstelle geht ohne Kante in dieselbe Wiese unterhalb der Naht über; beides Wiese, ob gemäht oder nicht ist nicht sicher erkennbar."
+  },
+  {
+   "paar": "r0c0:100195|r1c0:300016",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Das Magenta-Stück unter der Naht ist dieselbe Wiese wie die dunklere Grasstelle darüber, ohne Kante; Kette mit Paar 4 über 100195, daher Wiese."
+  },
+  {
+   "paar": "r0c1:200019|r0c1:200081",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Helle Straßenfläche gegen grünen Streifen aus Sträuchern und Gras am Straßenrand: echte Grenze, nur an diesem einen Punkt schwacher Kontrast."
+  },
+  {
+   "paar": "r0c1:200143|r0c1:200171",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Gleichmäßiger kurzer Rasen gegen rauen Gras- und Krautsaum mit Zaunlinie am Feldrand; die Grenze folgt der dunklen Zaun- bzw. Schattenlinie."
+  },
+  {
+   "paar": "r0c1:200092|r0c1:200143",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Gartengehölz mit dunklen Strauchkronen oben gegen glatten Rasen unten: echter Wechsel der Oberfläche, nur schwache Helligkeitskante."
+  },
+  {
+   "paar": "r0c1:200143|r0c1:200146",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Glatter Rasen gegen den Rand einer dunklen, körnigen Baumkrone: echte Grenze Rasen zu Gehölz."
+  },
+  {
+   "paar": "r0c1:200134|r0c1:200150",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Fleckige Baumkrone links gegen glattes, helleres Gras, das in die Wiese rechts übergeht: Kronenrand ist eine echte Grenze."
+  },
+  {
+   "paar": "r0c1:200147|r0c1:200148",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Glatter heller Grasstreifen gegen fleckige dunkle Baumkronen: echter Wechsel von Wiese zu Gehölz."
+  }
+ ],
+ "offen": [
+  "Paar 3: Klasse 2.1.1 (Wiese gemäht) gegen 3.1.1 (Feld abgeerntet) nach Lage und Form entschieden; Feld 200170 kommt vermutlich auch in anderen Bündeln vor (Naht nach r1c1), dort sollte dieselbe Klasse gelten.",
+  "Paare 1 und 2: Kette 100170, 200167, 200185 auf Gehölz (1) gesetzt, weil Strauch oder kleiner Baum nicht sicher zu trennen ist; 100155 (Gebüsch, r0c0) gehört zur selben Masse, liegt aber nicht in diesem Bündel."
+ ],
+ "nicht_geprueft": []
+}

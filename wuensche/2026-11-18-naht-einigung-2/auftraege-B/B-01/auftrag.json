@@ -1,0 +1,4646 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-01",
+  "uebergross": true,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Gebäudeschatten",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Heckenschatten",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "1",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Baum",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Einzelbaum",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Baumgruppe",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Wald",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Wald belichtet",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Wald beschattet",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.3",
+      "name": "Gebüsch",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.4",
+      "name": "Hecke",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "2",
+      "name": "Grünland",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Wiese",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Wiese gemäht",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Wiese ungemäht",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Rasen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Saum und Randstreifen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Feld, Garten und offener Boden",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Feld",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Feld abgeerntet",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Offener Boden",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Gartenparzelle",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3.1",
+      "name": "Beete",
+      "parent": "3.3",
+      "level": 3
+    },
+    {
+      "code": "3.3.2",
+      "name": "Parzelle gemischt",
+      "parent": "3.3",
+      "level": 3
+    },
+    {
+      "code": "4",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Gebäude",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Wohnhaus",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Nebengebäude",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.3",
+      "name": "Gewächshaus",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Mauer",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Kleinobjekt",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3.1",
+      "name": "Frühbeet",
+      "parent": "4.3",
+      "level": 3
+    },
+    {
+      "code": "4.4",
+      "name": "Lagerfläche",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4.1",
+      "name": "Holzlager",
+      "parent": "4.4",
+      "level": 3
+    },
+    {
+      "code": "5",
+      "name": "Wasser",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Schwimmbecken",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Verkehr und befestigte Fläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Straße",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.1.1",
+      "name": "Asphaltstraße",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.1.2",
+      "name": "Betonstraße",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.2",
+      "name": "Weg",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2.1",
+      "name": "Gartenweg",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.2.2",
+      "name": "Feld- und Erdweg",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.2.3",
+      "name": "Trampelpfad",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.3",
+      "name": "Hof und Zufahrt",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.4",
+      "name": "Terrasse",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Randstein und Bankett",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100056|r0c0:100166",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            466
+          ],
+          "bis": [
+            250,
+            466
+          ],
+          "laenge": 1,
+          "kante_max": 22.2
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100056",
+          "teilkachel": "r0c0",
+          "id": 100056,
+          "klasse": "2.1.2",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.701
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 118149,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große ungemähte Wiese am Hang mit Altgras, kleinen Gebüschen und hellen Trockenstellen; reicht über alle vier Viertel.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fehlt",
+              "text": "Dunkles Gebüsch oberhalb von 100125 nicht abgegrenzt, eigenes Segment Gebüsch (108/261).",
+              "flaeche_px": 300
+            },
+            {
+              "nr": 2,
+              "art": "fehlt",
+              "text": "Dunkles Gebüsch rechts unterhalb von 100123 nicht abgegrenzt (195/288).",
+              "flaeche_px": 150
+            },
+            {
+              "nr": 3,
+              "art": "sonstiges",
+              "text": "Ein Segment über 90 000 Bildpunkte und alle Viertel, nicht zusammenhängend; Teile in v2 bis v4 gesondert prüfen (238/230).",
+              "flaeche_px": null
+            },
+            {
+              "nr": 4,
+              "art": "trennen",
+              "text": "Der Teil in v3 (rund 38 000 Bildpunkte zwischen den dunklen Kronen) ist dichtes, grob gekörntes Gebüsch mit Jungwuchs, keine Wiese; als eigenes Segment Gebüschfläche abtrennen, Grenze grob entlang des Übergangs zur glatten Wiese 100166 (200/420).",
+              "flaeche_px": 38000
+            },
+            {
+              "nr": 5,
+              "art": "fehlt",
+              "text": "Heller Trampelpfad schräg durch das Gebüsch in v3 von (234/437) bis (318/527) nicht abgegrenzt (260/470).",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese ungemäht",
+            "fein": "Altgras mit Gebüsch"
+          }
+        },
+        {
+          "segment": "r0c0:100166",
+          "teilkachel": "r0c0",
+          "id": 100166,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.411
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 37319,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Glatte, gleichmäßige Wiese am Südwestrand des Gebüschs, Fortsetzung der großen Hangwiese.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100056|r0c0:100135",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            282,
+            250
+          ],
+          "bis": [
+            282,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 7.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100056",
+          "teilkachel": "r0c0",
+          "id": 100056,
+          "klasse": "2.1.2",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.701
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 118149,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große ungemähte Wiese am Hang mit Altgras, kleinen Gebüschen und hellen Trockenstellen; reicht über alle vier Viertel.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fehlt",
+              "text": "Dunkles Gebüsch oberhalb von 100125 nicht abgegrenzt, eigenes Segment Gebüsch (108/261).",
+              "flaeche_px": 300
+            },
+            {
+              "nr": 2,
+              "art": "fehlt",
+              "text": "Dunkles Gebüsch rechts unterhalb von 100123 nicht abgegrenzt (195/288).",
+              "flaeche_px": 150
+            },
+            {
+              "nr": 3,
+              "art": "sonstiges",
+              "text": "Ein Segment über 90 000 Bildpunkte und alle Viertel, nicht zusammenhängend; Teile in v2 bis v4 gesondert prüfen (238/230).",
+              "flaeche_px": null
+            },
+            {
+              "nr": 4,
+              "art": "trennen",
+              "text": "Der Teil in v3 (rund 38 000 Bildpunkte zwischen den dunklen Kronen) ist dichtes, grob gekörntes Gebüsch mit Jungwuchs, keine Wiese; als eigenes Segment Gebüschfläche abtrennen, Grenze grob entlang des Übergangs zur glatten Wiese 100166 (200/420).",
+              "flaeche_px": 38000
+            },
+            {
+              "nr": 5,
+              "art": "fehlt",
+              "text": "Heller Trampelpfad schräg durch das Gebüsch in v3 von (234/437) bis (318/527) nicht abgegrenzt (260/470).",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese ungemäht",
+            "fein": "Altgras mit Gebüsch"
+          }
+        },
+        {
+          "segment": "r0c0:100135",
+          "teilkachel": "r0c0",
+          "id": 100135,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.741
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 4748,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Hohe dunkle Krone mit hellen Lichtflecken, Nord-Süd gestreckt (etwa 12 × 19 m), ein großer Baum oder zwei.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Einzelbaum",
+            "fein": "Einzelbaum"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100175|r0c1:200189",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 59,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            429
+          ],
+          "bis": [
+            500,
+            430
+          ],
+          "laenge": 2,
+          "kante_max": 20.7
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            432
+          ],
+          "bis": [
+            500,
+            440
+          ],
+          "laenge": 9,
+          "kante_max": 17.3
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            442
+          ],
+          "bis": [
+            500,
+            457
+          ],
+          "laenge": 16,
+          "kante_max": 23.2
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            462
+          ],
+          "bis": [
+            500,
+            463
+          ],
+          "laenge": 2,
+          "kante_max": 13.5
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            465
+          ],
+          "bis": [
+            500,
+            466
+          ],
+          "laenge": 2,
+          "kante_max": 18.4
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            468
+          ],
+          "bis": [
+            500,
+            469
+          ],
+          "laenge": 2,
+          "kante_max": 22.3
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            471
+          ],
+          "bis": [
+            500,
+            483
+          ],
+          "laenge": 13,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            485
+          ],
+          "bis": [
+            500,
+            488
+          ],
+          "laenge": 4,
+          "kante_max": 21.7
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            490
+          ],
+          "bis": [
+            500,
+            495
+          ],
+          "laenge": 6,
+          "kante_max": 22.8
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            497
+          ],
+          "bis": [
+            500,
+            499
+          ],
+          "laenge": 3,
+          "kante_max": 16.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100175",
+          "teilkachel": "r0c0",
+          "id": 100175,
+          "klasse": "2.1.2",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.422
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 17580,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Ungemähter Wiesenstreifen am Hang zwischen Heufeld und Gehölzen.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese ungemäht",
+            "fein": "Wiese ungemäht"
+          }
+        },
+        {
+          "segment": "r0c1:200189",
+          "teilkachel": "r0c1",
+          "id": 200189,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.627
+          },
+          "instanz": {
+            "text": "lawn",
+            "eingerastet": true
+          },
+          "flaeche": 20278,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Hohe, ungemähte Wiese südlich des Feldes.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grasland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100056|r1c0:300015",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            206,
+            500
+          ],
+          "bis": [
+            206,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            209,
+            500
+          ],
+          "bis": [
+            209,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            211,
+            500
+          ],
+          "bis": [
+            211,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 17.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100056",
+          "teilkachel": "r0c0",
+          "id": 100056,
+          "klasse": "2.1.2",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.701
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 118149,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große ungemähte Wiese am Hang mit Altgras, kleinen Gebüschen und hellen Trockenstellen; reicht über alle vier Viertel.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fehlt",
+              "text": "Dunkles Gebüsch oberhalb von 100125 nicht abgegrenzt, eigenes Segment Gebüsch (108/261).",
+              "flaeche_px": 300
+            },
+            {
+              "nr": 2,
+              "art": "fehlt",
+              "text": "Dunkles Gebüsch rechts unterhalb von 100123 nicht abgegrenzt (195/288).",
+              "flaeche_px": 150
+            },
+            {
+              "nr": 3,
+              "art": "sonstiges",
+              "text": "Ein Segment über 90 000 Bildpunkte und alle Viertel, nicht zusammenhängend; Teile in v2 bis v4 gesondert prüfen (238/230).",
+              "flaeche_px": null
+            },
+            {
+              "nr": 4,
+              "art": "trennen",
+              "text": "Der Teil in v3 (rund 38 000 Bildpunkte zwischen den dunklen Kronen) ist dichtes, grob gekörntes Gebüsch mit Jungwuchs, keine Wiese; als eigenes Segment Gebüschfläche abtrennen, Grenze grob entlang des Übergangs zur glatten Wiese 100166 (200/420).",
+              "flaeche_px": 38000
+            },
+            {
+              "nr": 5,
+              "art": "fehlt",
+              "text": "Heller Trampelpfad schräg durch das Gebüsch in v3 von (234/437) bis (318/527) nicht abgegrenzt (260/470).",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese ungemäht",
+            "fein": "Altgras mit Gebüsch"
+          }
+        },
+        {
+          "segment": "r1c0:300015",
+          "teilkachel": "r1c0",
+          "id": 300015,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.557
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 4209,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Wiese am oberen Rand rechts, mit einem kleinen dunklen Strauch bei 281/93; reicht nach r0c0 und v2.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "verschmelzen",
+              "text": "Grenzen zu 21, 24 und 18 ohne Bildkante; mit der Wiese verschmelzen (300/80)",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100056|r1c0:300008",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 52,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            214,
+            500
+          ],
+          "bis": [
+            216,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            219,
+            500
+          ],
+          "bis": [
+            222,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 21.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            225,
+            500
+          ],
+          "bis": [
+            225,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            227,
+            500
+          ],
+          "bis": [
+            227,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 19.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            229,
+            500
+          ],
+          "bis": [
+            229,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            283,
+            500
+          ],
+          "bis": [
+            283,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            376,
+            500
+          ],
+          "bis": [
+            385,
+            500
+          ],
+          "laenge": 10,
+          "kante_max": 17.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            387,
+            500
+          ],
+          "bis": [
+            390,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            392,
+            500
+          ],
+          "bis": [
+            399,
+            500
+          ],
+          "laenge": 8,
+          "kante_max": 21.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            403,
+            500
+          ],
+          "bis": [
+            403,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            406,
+            500
+          ],
+          "bis": [
+            410,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 19.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            417,
+            500
+          ],
+          "bis": [
+            426,
+            500
+          ],
+          "laenge": 10,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            428,
+            500
+          ],
+          "bis": [
+            428,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 14.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            438,
+            500
+          ],
+          "bis": [
+            438,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            440,
+            500
+          ],
+          "bis": [
+            440,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100056",
+          "teilkachel": "r0c0",
+          "id": 100056,
+          "klasse": "2.1.2",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.701
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 118149,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große ungemähte Wiese am Hang mit Altgras, kleinen Gebüschen und hellen Trockenstellen; reicht über alle vier Viertel.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fehlt",
+              "text": "Dunkles Gebüsch oberhalb von 100125 nicht abgegrenzt, eigenes Segment Gebüsch (108/261).",
+              "flaeche_px": 300
+            },
+            {
+              "nr": 2,
+              "art": "fehlt",
+              "text": "Dunkles Gebüsch rechts unterhalb von 100123 nicht abgegrenzt (195/288).",
+              "flaeche_px": 150
+            },
+            {
+              "nr": 3,
+              "art": "sonstiges",
+              "text": "Ein Segment über 90 000 Bildpunkte und alle Viertel, nicht zusammenhängend; Teile in v2 bis v4 gesondert prüfen (238/230).",
+              "flaeche_px": null
+            },
+            {
+              "nr": 4,
+              "art": "trennen",
+              "text": "Der Teil in v3 (rund 38 000 Bildpunkte zwischen den dunklen Kronen) ist dichtes, grob gekörntes Gebüsch mit Jungwuchs, keine Wiese; als eigenes Segment Gebüschfläche abtrennen, Grenze grob entlang des Übergangs zur glatten Wiese 100166 (200/420).",
+              "flaeche_px": 38000
+            },
+            {
+              "nr": 5,
+              "art": "fehlt",
+              "text": "Heller Trampelpfad schräg durch das Gebüsch in v3 von (234/437) bis (318/527) nicht abgegrenzt (260/470).",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese ungemäht",
+            "fein": "Altgras mit Gebüsch"
+          }
+        },
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c0:100166|r1c0:300008",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 19,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            235,
+            500
+          ],
+          "bis": [
+            238,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 22.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            242,
+            500
+          ],
+          "bis": [
+            246,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 18.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            265,
+            500
+          ],
+          "bis": [
+            267,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 14.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            269,
+            500
+          ],
+          "bis": [
+            272,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            274,
+            500
+          ],
+          "bis": [
+            274,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 19.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            278,
+            500
+          ],
+          "bis": [
+            278,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            280,
+            500
+          ],
+          "bis": [
+            280,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 8.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100166",
+          "teilkachel": "r0c0",
+          "id": 100166,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.411
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 37319,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Glatte, gleichmäßige Wiese am Südwestrand des Gebüschs, Fortsetzung der großen Hangwiese.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        },
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c0:100191|r1c0:300008",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 44,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            293,
+            500
+          ],
+          "bis": [
+            293,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 20.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            297,
+            500
+          ],
+          "bis": [
+            297,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            300,
+            500
+          ],
+          "bis": [
+            300,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            302,
+            500
+          ],
+          "bis": [
+            303,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 8.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            305,
+            500
+          ],
+          "bis": [
+            308,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 23.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            310,
+            500
+          ],
+          "bis": [
+            310,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 16.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            314,
+            500
+          ],
+          "bis": [
+            315,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            317,
+            500
+          ],
+          "bis": [
+            319,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 23.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            323,
+            500
+          ],
+          "bis": [
+            325,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 21.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            329,
+            500
+          ],
+          "bis": [
+            333,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 16.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            338,
+            500
+          ],
+          "bis": [
+            339,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 20.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            341,
+            500
+          ],
+          "bis": [
+            350,
+            500
+          ],
+          "laenge": 10,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            353,
+            500
+          ],
+          "bis": [
+            355,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 17.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            363,
+            500
+          ],
+          "bis": [
+            364,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            369,
+            500
+          ],
+          "bis": [
+            372,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 22.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100191",
+          "teilkachel": "r0c0",
+          "id": 100191,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.434
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 4409,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Mehrere hellere, besonnte Kronen südlich von 100177 und 100185 am Kernunterrand.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Mehrere Kronen statt eines Einzelbaums (410/548).",
+              "flaeche_px": 2872
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumgruppe",
+            "fein": "Baumgruppe"
+          }
+        },
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c0:100194|r1c0:300017",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 22,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            446,
+            500
+          ],
+          "bis": [
+            446,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 23.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            449,
+            500
+          ],
+          "bis": [
+            449,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 11.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            452,
+            500
+          ],
+          "bis": [
+            452,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            457,
+            500
+          ],
+          "bis": [
+            468,
+            500
+          ],
+          "laenge": 12,
+          "kante_max": 22.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            470,
+            500
+          ],
+          "bis": [
+            476,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 23.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100194",
+          "teilkachel": "r0c0",
+          "id": 100194,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.46
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 3784,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Baumkrone am Kernunterrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Einzelbaum",
+            "fein": "Einzelbaum"
+          }
+        },
+        {
+          "segment": "r1c0:300017",
+          "teilkachel": "r1c0",
+          "id": 300017,
+          "klasse": "1.2.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.468
+          },
+          "instanz": {
+            "text": "shadow",
+            "eingerastet": true
+          },
+          "flaeche": 4400,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkler Kronenbereich oben rechts mit gut erkennbaren einzelnen Kronen: beschatteter oder dunkler Waldteil; reicht nach oben aus dem Kern.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 6,
+              "art": "klasse",
+              "text": "Kronen erkennbar, kein Schatten ohne Grund (528/104)",
+              "flaeche_px": 3902
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald beschattet"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c0:100197|r1c0:300013",
+      "art": "naht",
+      "bild": "paar_09.jpg",
+      "randpunkte": 5,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            477,
+            500
+          ],
+          "bis": [
+            478,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 18.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            480,
+            500
+          ],
+          "bis": [
+            480,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 11.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            483,
+            500
+          ],
+          "bis": [
+            483,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            486,
+            500
+          ],
+          "bis": [
+            486,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 8.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100197",
+          "teilkachel": "r0c0",
+          "id": 100197,
+          "klasse": "2.1.2",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.701
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 234,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Kleiner Grassaum am Kernunterrand, Fortsetzung des Wiesenstreifens.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Gras ohne Bildkante, mit 100175 verschmelzen (544/557).",
+              "flaeche_px": 112
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese ungemäht",
+            "fein": "Wiese ungemäht"
+          }
+        },
+        {
+          "segment": "r1c0:300013",
+          "teilkachel": "r1c0",
+          "id": 300013,
+          "klasse": "2.3",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.477
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 11936,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Krautige Fläche am Nordostrand des Waldes, der Kernteil nur eine kleine Ecke oben rechts; Grenze zu 17 auf der dunklen Kronenkante.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Saum",
+            "fein": "Saum"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r0c0:100175|r1c0:300013",
+      "art": "naht",
+      "bild": "paar_10.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            487,
+            500
+          ],
+          "bis": [
+            489,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 18.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            491,
+            500
+          ],
+          "bis": [
+            493,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 22.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            496,
+            500
+          ],
+          "bis": [
+            499,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 23.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100175",
+          "teilkachel": "r0c0",
+          "id": 100175,
+          "klasse": "2.1.2",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.422
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 17580,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Ungemähter Wiesenstreifen am Hang zwischen Heufeld und Gehölzen.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese ungemäht",
+            "fein": "Wiese ungemäht"
+          }
+        },
+        {
+          "segment": "r1c0:300013",
+          "teilkachel": "r1c0",
+          "id": 300013,
+          "klasse": "2.3",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.477
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 11936,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Krautige Fläche am Nordostrand des Waldes, der Kernteil nur eine kleine Ecke oben rechts; Grenze zu 17 auf der dunklen Kronenkante.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Saum",
+            "fein": "Saum"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r0c1:200189|r1c1:400017",
+      "art": "naht",
+      "bild": "paar_11.jpg",
+      "randpunkte": 15,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            500,
+            500
+          ],
+          "bis": [
+            500,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 7.1
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            502,
+            500
+          ],
+          "bis": [
+            510,
+            500
+          ],
+          "laenge": 9,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            512,
+            500
+          ],
+          "bis": [
+            514,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 24.5
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            516,
+            500
+          ],
+          "bis": [
+            517,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 23.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200189",
+          "teilkachel": "r0c1",
+          "id": 200189,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.627
+          },
+          "instanz": {
+            "text": "lawn",
+            "eingerastet": true
+          },
+          "flaeche": 20278,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Hohe, ungemähte Wiese südlich des Feldes.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grasland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        },
+        {
+          "segment": "r1c1:400017",
+          "teilkachel": "r1c1",
+          "id": 400017,
+          "klasse": "6.2.3",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "dirt path",
+            "eingerastet": true
+          },
+          "flaeche": 1478,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "6.6",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Heller Trampelpfad, der in der Hangwiese von oben links nach unten zieht.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Segment ist mit 10–15 px breiter als der sichtbare Pfad (ca. 5–8 px); Ränder bei 70–100/90–140 gehören zur Wiese 2, Kante unscharf.",
+              "flaeche_px": 300
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Weg",
+            "fein": "Trampelpfad"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r0c1:200207|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_12.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            583,
+            500
+          ],
+          "bis": [
+            583,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200207",
+          "teilkachel": "r0c1",
+          "id": 200207,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.587
+          },
+          "instanz": {
+            "text": "shadow",
+            "eingerastet": true
+          },
+          "flaeche": 6838,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkle Baumkronen am unteren Kernrand, größtenteils im Kontextrand; kein Schatten ohne Grund.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Dunkle Kronen mit Sprenkeln (157/557): Baum statt Schatten.",
+              "flaeche_px": 416
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baum",
+            "fein": "Baumgruppe"
+          }
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.46
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 61427,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große, hochwüchsige Hangwiese (eher verbracht) mit vielen kleinen Sträuchern und einzelnen Baumkronen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Unsegmentierte dunkle Baumkronen im Wiesenteil v1, z. B. 232–258/109–132 und 205–220/129–142, als Gehölz abtrennen.",
+              "flaeche_px": 600
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Schmaler heller Pfad 340–344/171–185 und Pfadstück 529–539/110–115 nicht abgetrennt.",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 3,
+              "art": "grenze",
+              "text": "Über den ganzen Hang gezogen (61 427 px), Grenzen zu den Gehölzen meist ohne scharfe Bildkante; Klasse Wiese im Kern richtig, aber mit Strauchanteil.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese mit Gebüsch"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 13,
+      "paar": "r0c1:200189|r1c1:400018",
+      "art": "naht",
+      "bild": "paar_13.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            639,
+            500
+          ],
+          "bis": [
+            639,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200189",
+          "teilkachel": "r0c1",
+          "id": 200189,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.627
+          },
+          "instanz": {
+            "text": "lawn",
+            "eingerastet": true
+          },
+          "flaeche": 20278,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Hohe, ungemähte Wiese südlich des Feldes.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grasland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        },
+        {
+          "segment": "r1c1:400018",
+          "teilkachel": "r1c1",
+          "id": 400018,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.531
+          },
+          "instanz": {
+            "text": "shadow",
+            "eingerastet": true
+          },
+          "flaeche": 5703,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkle, gekörnte Baumkronen einer Baumgruppe am Wiesenhang, samt eigenem Schatten; kein Wolkenschatten.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Klasse 0.2 (Schatten ohne Grund) falsch: Kronenstruktur mit Lichtpunkten bei 194/86 ist klar Gehölz.",
+              "flaeche_px": 5308
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumgruppe",
+            "fein": "Baumgruppe"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 14,
+      "paar": "r0c1:200189|r1c1:400011",
+      "art": "naht",
+      "bild": "paar_14.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            721,
+            500
+          ],
+          "bis": [
+            721,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200189",
+          "teilkachel": "r0c1",
+          "id": 200189,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.627
+          },
+          "instanz": {
+            "text": "lawn",
+            "eingerastet": true
+          },
+          "flaeche": 20278,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Hohe, ungemähte Wiese südlich des Feldes.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Grasland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        },
+        {
+          "segment": "r1c1:400011",
+          "teilkachel": "r1c1",
+          "id": 400011,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.472
+          },
+          "instanz": {
+            "text": "shadow",
+            "eingerastet": true
+          },
+          "flaeche": 2548,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkle Baumkrone am oberen Rand rechts, im Kern nur ihr unterer Teil.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Klasse 0.2 falsch: Baumkrone mit Kronenstruktur bei 303/72 (Fortsetzung des Baums aus r0c1).",
+              "flaeche_px": 609
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumgruppe",
+            "fein": "Baumgruppe"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 15,
+      "paar": "r0c1:200197|r1c1:400011",
+      "art": "naht",
+      "bild": "paar_15.jpg",
+      "randpunkte": 36,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            722,
+            500
+          ],
+          "bis": [
+            757,
+            500
+          ],
+          "laenge": 36,
+          "kante_max": 24.7
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200197",
+          "teilkachel": "r0c1",
+          "id": 200197,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.515
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 2647,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle große Baumkrone am Südrand des Feldes, reicht nach v4.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baum",
+            "fein": "Einzelbaum"
+          }
+        },
+        {
+          "segment": "r1c1:400011",
+          "teilkachel": "r1c1",
+          "id": 400011,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.472
+          },
+          "instanz": {
+            "text": "shadow",
+            "eingerastet": true
+          },
+          "flaeche": 2548,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkle Baumkrone am oberen Rand rechts, im Kern nur ihr unterer Teil.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Klasse 0.2 falsch: Baumkrone mit Kronenstruktur bei 303/72 (Fortsetzung des Baums aus r0c1).",
+              "flaeche_px": 609
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumgruppe",
+            "fein": "Baumgruppe"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 16,
+      "paar": "r0c1:200197|r1c1:400019",
+      "art": "naht",
+      "bild": "paar_16.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            758,
+            500
+          ],
+          "bis": [
+            758,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 9.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200197",
+          "teilkachel": "r0c1",
+          "id": 200197,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.515
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 2647,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle große Baumkrone am Südrand des Feldes, reicht nach v4.",
+          "viertel": "v3",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baum",
+            "fein": "Einzelbaum"
+          }
+        },
+        {
+          "segment": "r1c1:400019",
+          "teilkachel": "r1c1",
+          "id": 400019,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.466
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 3465,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große dunkle Baumkrone bzw. Baumgruppe links oben mit eigenem Schatten.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Rechter oberer Teil 335–360/65–95 ist hellere Wiese ohne Kronenstruktur und gehört zu 2.",
+              "flaeche_px": 400
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumgruppe",
+            "fein": "Baumgruppe"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 17,
+      "paar": "r0c1:200206|r1c1:400019",
+      "art": "naht",
+      "bild": "paar_17.jpg",
+      "randpunkte": 8,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            759,
+            500
+          ],
+          "bis": [
+            760,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 13.7
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            762,
+            500
+          ],
+          "bis": [
+            762,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 7.0
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            767,
+            500
+          ],
+          "bis": [
+            771,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 21.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200206",
+          "teilkachel": "r0c1",
+          "id": 200206,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.499
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 3884,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Baumkrone am unteren Kernrand, größtenteils im Kontextrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baum",
+            "fein": "Einzelbaum"
+          }
+        },
+        {
+          "segment": "r1c1:400019",
+          "teilkachel": "r1c1",
+          "id": 400019,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.466
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 3465,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große dunkle Baumkrone bzw. Baumgruppe links oben mit eigenem Schatten.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Rechter oberer Teil 335–360/65–95 ist hellere Wiese ohne Kronenstruktur und gehört zu 2.",
+              "flaeche_px": 400
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumgruppe",
+            "fein": "Baumgruppe"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 18,
+      "paar": "r0c1:200206|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_18.jpg",
+      "randpunkte": 9,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            773,
+            500
+          ],
+          "bis": [
+            780,
+            500
+          ],
+          "laenge": 8,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            783,
+            500
+          ],
+          "bis": [
+            783,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 19.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200206",
+          "teilkachel": "r0c1",
+          "id": 200206,
+          "klasse": "1.1.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.499
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 3884,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Baumkrone am unteren Kernrand, größtenteils im Kontextrand.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baum",
+            "fein": "Einzelbaum"
+          }
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.46
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 61427,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große, hochwüchsige Hangwiese (eher verbracht) mit vielen kleinen Sträuchern und einzelnen Baumkronen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Unsegmentierte dunkle Baumkronen im Wiesenteil v1, z. B. 232–258/109–132 und 205–220/129–142, als Gehölz abtrennen.",
+              "flaeche_px": 600
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Schmaler heller Pfad 340–344/171–185 und Pfadstück 529–539/110–115 nicht abgetrennt.",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 3,
+              "art": "grenze",
+              "text": "Über den ganzen Hang gezogen (61 427 px), Grenzen zu den Gehölzen meist ohne scharfe Bildkante; Klasse Wiese im Kern richtig, aber mit Strauchanteil.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese mit Gebüsch"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 19,
+      "paar": "r1c0:300008|r1c0:300030",
+      "art": "viertel",
+      "bild": "paar_19.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            566
+          ],
+          "bis": [
+            250,
+            566
+          ],
+          "laenge": 1,
+          "kante_max": 2.4
+        },
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            578
+          ],
+          "bis": [
+            250,
+            578
+          ],
+          "laenge": 1,
+          "kante_max": 19.7
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          }
+        },
+        {
+          "segment": "r1c0:300030",
+          "teilkachel": "r1c0",
+          "id": 300030,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.557
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 176,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Helles, fein strukturiertes Stück am Waldrand rechts vom Wiesenstreifen in v1; setzt wohl die Wiese (24, 21) fort, könnte aber auch eine beleuchtete Randkrone sein.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "mit dem Wiesenstreifen 21/24 in v1 verschmelzen, falls Wiese; sonst mit Wald 8 (318/136)",
+              "flaeche_px": 176
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 20,
+      "paar": "r1c0:300008|r1c0:300027",
+      "art": "viertel",
+      "bild": "paar_20.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            592
+          ],
+          "bis": [
+            250,
+            592
+          ],
+          "laenge": 1,
+          "kante_max": 24.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          }
+        },
+        {
+          "segment": "r1c0:300027",
+          "teilkachel": "r1c0",
+          "id": 300027,
+          "klasse": "1.2.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.56
+          },
+          "instanz": {
+            "text": "shadow",
+            "eingerastet": true
+          },
+          "flaeche": 2040,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Langes dunkles Band am Waldrand: dunkle Kronen der Randbäume oder deren Schlagschatten nach Nordwesten auf den Saum; Gehölz in jedem Fall erkennbar.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 27,
+              "art": "klasse",
+              "text": "Kronenstruktur erkennbar, kein Schatten ohne Grund (300/164)",
+              "flaeche_px": 2040
+            },
+            {
+              "nr": 28,
+              "art": "grenze",
+              "text": "rechte Grenze zum Wald 8 ohne klare Kante; eher mit 8 verschmelzen (318/182)",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald beschattet"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 21,
+      "paar": "r1c0:300008|r1c0:300048",
+      "art": "viertel",
+      "bild": "paar_21.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            761
+          ],
+          "bis": [
+            250,
+            761
+          ],
+          "laenge": 1,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            270,
+            750
+          ],
+          "bis": [
+            270,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 18.1
+        },
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            336,
+            750
+          ],
+          "bis": [
+            336,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        },
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            342,
+            750
+          ],
+          "bis": [
+            342,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 8.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          }
+        },
+        {
+          "segment": "r1c0:300048",
+          "teilkachel": "r1c0",
+          "id": 300048,
+          "klasse": "1.2.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.47
+          },
+          "instanz": {
+            "text": "shadow",
+            "eingerastet": true
+          },
+          "flaeche": 4533,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Fläche im Wald oben links mit nur schwacher Kronenstruktur, Grenze auf der Hell-dunkel-Kante: Schatten auf Wald.",
+          "viertel": "v4",
+          "klasse_frei": {
+            "grob": "Schatten",
+            "mittel": "Schatten auf Gehölz",
+            "fein": "Schatten auf Wald"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 22,
+      "paar": "r1c0:300008|r1c0:300038",
+      "art": "viertel",
+      "bild": "paar_22.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            787
+          ],
+          "bis": [
+            250,
+            787
+          ],
+          "laenge": 1,
+          "kante_max": 16.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          }
+        },
+        {
+          "segment": "r1c0:300038",
+          "teilkachel": "r1c0",
+          "id": 300038,
+          "klasse": "2.3",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.424
+          },
+          "instanz": {
+            "text": "sports field",
+            "eingerastet": true
+          },
+          "flaeche": 26276,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.4",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grobe Kraut- und Hochstaudenfläche zwischen Wiese 19 und Wald mit vielen kleinen Sträuchern und einzelnen hellen Fehlstellen; kein Belag.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Krautsaum mit Sträuchern, kein Sport- oder Spielplatz (132/346)",
+              "flaeche_px": 21077
+            },
+            {
+              "nr": 2,
+              "art": "fehlt",
+              "text": "heller, gerader Streifen (x 274–330, y 348–356): Pfad oder liegender Stamm, nicht abgetrennt (300/351)",
+              "flaeche_px": 200
+            },
+            {
+              "nr": 3,
+              "art": "sonstiges",
+              "text": "helle Fehlstellen (offener Boden oder Totholz) bei 118/352 und 156/352, je unter der Mindestfläche (118/352)",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Saum",
+            "fein": "Saum verbuscht"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 23,
+      "paar": "r1c0:300019|r1c0:300038",
+      "art": "viertel",
+      "bild": "paar_23.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            73,
+            750
+          ],
+          "bis": [
+            73,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 20.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300019",
+          "teilkachel": "r1c0",
+          "id": 300019,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.407
+          },
+          "instanz": {
+            "text": "bare field",
+            "eingerastet": true
+          },
+          "flaeche": 30965,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große Wiese mit hellen, schräg verlaufenden Streifen und hellen Fehlstellen; feine Grasstruktur, keine Furchen.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 20,
+              "art": "klasse",
+              "text": "Wiese, kein gepflügter Acker (121/162)",
+              "flaeche_px": 25781
+            },
+            {
+              "nr": 21,
+              "art": "fehlt",
+              "text": "helle lückige Stellen wie in 41 (x 95–170, y 255–312) nicht abgetrennt (130/285)",
+              "flaeche_px": 1800
+            },
+            {
+              "nr": 22,
+              "art": "grenze",
+              "text": "Grenze zum Saum 38 unten links nur ungefähr auf dem Helligkeitswechsel (105/300)",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese"
+          }
+        },
+        {
+          "segment": "r1c0:300038",
+          "teilkachel": "r1c0",
+          "id": 300038,
+          "klasse": "2.3",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.424
+          },
+          "instanz": {
+            "text": "sports field",
+            "eingerastet": true
+          },
+          "flaeche": 26276,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.4",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grobe Kraut- und Hochstaudenfläche zwischen Wiese 19 und Wald mit vielen kleinen Sträuchern und einzelnen hellen Fehlstellen; kein Belag.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Krautsaum mit Sträuchern, kein Sport- oder Spielplatz (132/346)",
+              "flaeche_px": 21077
+            },
+            {
+              "nr": 2,
+              "art": "fehlt",
+              "text": "heller, gerader Streifen (x 274–330, y 348–356): Pfad oder liegender Stamm, nicht abgetrennt (300/351)",
+              "flaeche_px": 200
+            },
+            {
+              "nr": 3,
+              "art": "sonstiges",
+              "text": "helle Fehlstellen (offener Boden oder Totholz) bei 118/352 und 156/352, je unter der Mindestfläche (118/352)",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Saum",
+            "fein": "Saum verbuscht"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 24,
+      "paar": "r1c0:300038|r1c0:300045",
+      "art": "viertel",
+      "bild": "paar_24.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            98,
+            750
+          ],
+          "bis": [
+            98,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 24.8
+        },
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            116,
+            750
+          ],
+          "bis": [
+            117,
+            750
+          ],
+          "laenge": 2,
+          "kante_max": 21.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300038",
+          "teilkachel": "r1c0",
+          "id": 300038,
+          "klasse": "2.3",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.424
+          },
+          "instanz": {
+            "text": "sports field",
+            "eingerastet": true
+          },
+          "flaeche": 26276,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.3.4",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grobe Kraut- und Hochstaudenfläche zwischen Wiese 19 und Wald mit vielen kleinen Sträuchern und einzelnen hellen Fehlstellen; kein Belag.",
+          "viertel": "v3",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Krautsaum mit Sträuchern, kein Sport- oder Spielplatz (132/346)",
+              "flaeche_px": 21077
+            },
+            {
+              "nr": 2,
+              "art": "fehlt",
+              "text": "heller, gerader Streifen (x 274–330, y 348–356): Pfad oder liegender Stamm, nicht abgetrennt (300/351)",
+              "flaeche_px": 200
+            },
+            {
+              "nr": 3,
+              "art": "sonstiges",
+              "text": "helle Fehlstellen (offener Boden oder Totholz) bei 118/352 und 156/352, je unter der Mindestfläche (118/352)",
+              "flaeche_px": 250
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Saum",
+            "fein": "Saum verbuscht"
+          }
+        },
+        {
+          "segment": "r1c0:300045",
+          "teilkachel": "r1c0",
+          "id": 300045,
+          "klasse": "3.2",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.462
+          },
+          "instanz": {
+            "text": "bare soil",
+            "eingerastet": true
+          },
+          "flaeche": 2046,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "6.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Heller, rötlich-beiger Streifen von Nordost nach Südwest mit kleinen dunklen Sträuchern: offener oder vertrockneter Boden, vielleicht eine Rinne oder Aufschüttung.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 34,
+              "art": "klasse",
+              "text": "offener Boden wahrscheinlich, Art (Rinne, Aufschüttung, Streu) nicht erkennbar (220/268)",
+              "flaeche_px": 2046
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Offenboden",
+            "mittel": "Rohboden",
+            "fein": "Erdstreifen"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 25,
+      "paar": "r1c0:300013|r1c1:400017",
+      "art": "naht",
+      "bild": "paar_25.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            500
+          ],
+          "bis": [
+            500,
+            509
+          ],
+          "laenge": 10,
+          "kante_max": 23.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300013",
+          "teilkachel": "r1c0",
+          "id": 300013,
+          "klasse": "2.3",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.477
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 11936,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Krautige Fläche am Nordostrand des Waldes, der Kernteil nur eine kleine Ecke oben rechts; Grenze zu 17 auf der dunklen Kronenkante.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Saum",
+            "fein": "Saum"
+          }
+        },
+        {
+          "segment": "r1c1:400017",
+          "teilkachel": "r1c1",
+          "id": 400017,
+          "klasse": "6.2.3",
+          "grob": "6",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.41
+          },
+          "instanz": {
+            "text": "dirt path",
+            "eingerastet": true
+          },
+          "flaeche": 1478,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "6.6",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Heller Trampelpfad, der in der Hangwiese von oben links nach unten zieht.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Segment ist mit 10–15 px breiter als der sichtbare Pfad (ca. 5–8 px); Ränder bei 70–100/90–140 gehören zur Wiese 2, Kante unscharf.",
+              "flaeche_px": 300
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Verkehr",
+            "mittel": "Weg",
+            "fein": "Trampelpfad"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 26,
+      "paar": "r1c0:300013|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_26.jpg",
+      "randpunkte": 30,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            511
+          ],
+          "bis": [
+            500,
+            511
+          ],
+          "laenge": 1,
+          "kante_max": 15.2
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            513
+          ],
+          "bis": [
+            500,
+            521
+          ],
+          "laenge": 9,
+          "kante_max": 21.2
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            523
+          ],
+          "bis": [
+            500,
+            527
+          ],
+          "laenge": 5,
+          "kante_max": 24.1
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            529
+          ],
+          "bis": [
+            500,
+            533
+          ],
+          "laenge": 5,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            547
+          ],
+          "bis": [
+            500,
+            548
+          ],
+          "laenge": 2,
+          "kante_max": 23.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            550
+          ],
+          "bis": [
+            500,
+            553
+          ],
+          "laenge": 4,
+          "kante_max": 16.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            555
+          ],
+          "bis": [
+            500,
+            555
+          ],
+          "laenge": 1,
+          "kante_max": 17.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            557
+          ],
+          "bis": [
+            500,
+            557
+          ],
+          "laenge": 1,
+          "kante_max": 10.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            561
+          ],
+          "bis": [
+            500,
+            562
+          ],
+          "laenge": 2,
+          "kante_max": 23.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300013",
+          "teilkachel": "r1c0",
+          "id": 300013,
+          "klasse": "2.3",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.477
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 11936,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Krautige Fläche am Nordostrand des Waldes, der Kernteil nur eine kleine Ecke oben rechts; Grenze zu 17 auf der dunklen Kronenkante.",
+          "viertel": "v2",
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Saum",
+            "fein": "Saum"
+          }
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.46
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 61427,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große, hochwüchsige Hangwiese (eher verbracht) mit vielen kleinen Sträuchern und einzelnen Baumkronen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Unsegmentierte dunkle Baumkronen im Wiesenteil v1, z. B. 232–258/109–132 und 205–220/129–142, als Gehölz abtrennen.",
+              "flaeche_px": 600
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Schmaler heller Pfad 340–344/171–185 und Pfadstück 529–539/110–115 nicht abgetrennt.",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 3,
+              "art": "grenze",
+              "text": "Über den ganzen Hang gezogen (61 427 px), Grenzen zu den Gehölzen meist ohne scharfe Bildkante; Klasse Wiese im Kern richtig, aber mit Strauchanteil.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese mit Gebüsch"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 27,
+      "paar": "r1c0:300017|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_27.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            541
+          ],
+          "bis": [
+            500,
+            543
+          ],
+          "laenge": 3,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            545
+          ],
+          "bis": [
+            500,
+            545
+          ],
+          "laenge": 1,
+          "kante_max": 17.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300017",
+          "teilkachel": "r1c0",
+          "id": 300017,
+          "klasse": "1.2.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.468
+          },
+          "instanz": {
+            "text": "shadow",
+            "eingerastet": true
+          },
+          "flaeche": 4400,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkler Kronenbereich oben rechts mit gut erkennbaren einzelnen Kronen: beschatteter oder dunkler Waldteil; reicht nach oben aus dem Kern.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 6,
+              "art": "klasse",
+              "text": "Kronen erkennbar, kein Schatten ohne Grund (528/104)",
+              "flaeche_px": 3902
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald beschattet"
+          }
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.46
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 61427,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große, hochwüchsige Hangwiese (eher verbracht) mit vielen kleinen Sträuchern und einzelnen Baumkronen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Unsegmentierte dunkle Baumkronen im Wiesenteil v1, z. B. 232–258/109–132 und 205–220/129–142, als Gehölz abtrennen.",
+              "flaeche_px": 600
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Schmaler heller Pfad 340–344/171–185 und Pfadstück 529–539/110–115 nicht abgetrennt.",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 3,
+              "art": "grenze",
+              "text": "Über den ganzen Hang gezogen (61 427 px), Grenzen zu den Gehölzen meist ohne scharfe Bildkante; Klasse Wiese im Kern richtig, aber mit Strauchanteil.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese mit Gebüsch"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 28,
+      "paar": "r1c0:300008|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_28.jpg",
+      "randpunkte": 18,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            570
+          ],
+          "bis": [
+            500,
+            570
+          ],
+          "laenge": 1,
+          "kante_max": 16.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            573
+          ],
+          "bis": [
+            500,
+            575
+          ],
+          "laenge": 3,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            580
+          ],
+          "bis": [
+            500,
+            581
+          ],
+          "laenge": 2,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            587
+          ],
+          "bis": [
+            500,
+            588
+          ],
+          "laenge": 2,
+          "kante_max": 15.1
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            590
+          ],
+          "bis": [
+            500,
+            590
+          ],
+          "laenge": 1,
+          "kante_max": 12.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            598
+          ],
+          "bis": [
+            500,
+            600
+          ],
+          "laenge": 3,
+          "kante_max": 21.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            606
+          ],
+          "bis": [
+            500,
+            611
+          ],
+          "laenge": 6,
+          "kante_max": 20.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          }
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.46
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 61427,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große, hochwüchsige Hangwiese (eher verbracht) mit vielen kleinen Sträuchern und einzelnen Baumkronen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Unsegmentierte dunkle Baumkronen im Wiesenteil v1, z. B. 232–258/109–132 und 205–220/129–142, als Gehölz abtrennen.",
+              "flaeche_px": 600
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Schmaler heller Pfad 340–344/171–185 und Pfadstück 529–539/110–115 nicht abgetrennt.",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 3,
+              "art": "grenze",
+              "text": "Über den ganzen Hang gezogen (61 427 px), Grenzen zu den Gehölzen meist ohne scharfe Bildkante; Klasse Wiese im Kern richtig, aber mit Strauchanteil.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese mit Gebüsch"
+          }
+        }
+      ]
+    },
+    {
+      "nr": 29,
+      "paar": "r1c1:400002|r1c1:400019",
+      "art": "viertel",
+      "bild": "paar_29.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            563
+          ],
+          "bis": [
+            750,
+            563
+          ],
+          "laenge": 1,
+          "kante_max": 14.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "2.1",
+          "grob": "2",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.46
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 61427,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große, hochwüchsige Hangwiese (eher verbracht) mit vielen kleinen Sträuchern und einzelnen Baumkronen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Unsegmentierte dunkle Baumkronen im Wiesenteil v1, z. B. 232–258/109–132 und 205–220/129–142, als Gehölz abtrennen.",
+              "flaeche_px": 600
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Schmaler heller Pfad 340–344/171–185 und Pfadstück 529–539/110–115 nicht abgetrennt.",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 3,
+              "art": "grenze",
+              "text": "Über den ganzen Hang gezogen (61 427 px), Grenzen zu den Gehölzen meist ohne scharfe Bildkante; Klasse Wiese im Kern richtig, aber mit Strauchanteil.",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Grünland",
+            "mittel": "Wiese",
+            "fein": "Wiese mit Gebüsch"
+          }
+        },
+        {
+          "segment": "r1c1:400019",
+          "teilkachel": "r1c1",
+          "id": 400019,
+          "klasse": "1.1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.466
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 3465,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Große dunkle Baumkrone bzw. Baumgruppe links oben mit eigenem Schatten.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "grenze",
+              "text": "Rechter oberer Teil 335–360/65–95 ist hellere Wiese ohne Kronenstruktur und gehört zu 2.",
+              "flaeche_px": 400
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumgruppe",
+            "fein": "Baumgruppe"
+          }
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-01",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100056|r0c0:100166",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100056|r0c0:100135",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100175|r0c1:200189",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100056|r1c0:300015",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100056|r1c0:300008",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100166|r1c0:300008",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100191|r1c0:300008",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100194|r1c0:300017",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100197|r1c0:300013",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100175|r1c0:300013",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200189|r1c1:400017",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200207|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200189|r1c1:400018",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200189|r1c1:400011",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200197|r1c1:400011",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200197|r1c1:400019",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200206|r1c1:400019",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200206|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300008|r1c0:300030",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300008|r1c0:300027",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300008|r1c0:300048",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300008|r1c0:300038",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300019|r1c0:300038",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300038|r1c0:300045",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300013|r1c1:400017",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300013|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300017|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300008|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400002|r1c1:400019",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

@@ -1,0 +1,1735 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "C",
+  "buendel": "C-02",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/landseg/kategorien.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar (technisch)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Bildfehler / Scanrand / Rahmenmarke / Kratzer",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Versiegelt / bebaut (Siedlung und Verkehr)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Gewächshaus / Folientunnel",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Verkehrsfläche",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.4",
+      "name": "Platz / Parkplatz / Hoffläche versiegelt",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.5",
+      "name": "Bahnkörper",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.3",
+      "name": "Sonstige künstliche Fläche",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.3.1",
+      "name": "Lager-, Schotter-, Kiesfläche (künstlich, unversiegelt)",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.2",
+      "name": "Baustelle",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.3",
+      "name": "Schwimmbecken",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.4",
+      "name": "Sport-, Spielplatz (künstlicher Belag)",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Acker (und Dauerkulturen)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Acker mit Bewuchs",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2",
+      "name": "Acker ohne Bewuchs (gepflügt, Saatbett)",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Ackerbrache",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4",
+      "name": "Dauerkultur",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4.1",
+      "name": "Weingarten",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.2",
+      "name": "Obstanlage (intensiv, Reihen)",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.3",
+      "name": "Sonstige Dauerkultur (Beeren, Hopfen, Baumschule)",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "3",
+      "name": "Dauergrünland (krautig, nicht Acker)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Wiese (Mahdspuren sichtbar)",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.1.2",
+      "name": "Weide (Trittpfade, Zäune, Tiere)",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Trocken-/Magerrasen",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Grünlandbrache / Ruderalflur",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Krautsaum linear (Feldrain, Wegrand, Böschung)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.5",
+      "name": "Verbuschende Fläche (Grünland mit Gehölzanflug)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Wald und Gehölze",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Laubwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Nadelwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.3",
+      "name": "Mischwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.4",
+      "name": "Kahlschlag / Jungwuchs / Schlagflur",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Gehölz außerhalb Wald",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2.1",
+      "name": "Einzelbaum",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.2",
+      "name": "Baumgruppe / Feldgehölz",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.3",
+      "name": "Hecke / Baumreihe / Ufergehölz (linear)",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.4",
+      "name": "Gebüsch / Strauchfläche",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "5",
+      "name": "Gewässer / Feuchtgebiet",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Fließgewässer",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Fluss / Bach",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Graben / Kanal",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Stillgewässer (See, Teich, Weiher)",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.3",
+      "name": "Feuchtgebiet / Röhricht / Ufervegetation",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Offener Boden / Fels",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Offene Sand-, Löss-, Lehmstelle (Abbruch, Hohlweg, Grube)",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2",
+      "name": "Abbau, Halde, Deponie",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.3",
+      "name": "Fels / Geröll",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.4",
+      "name": "Kies-/Sandbank (Gewässerufer, unbewachsen)",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Schnee / Eis / Gletscher",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.6",
+      "name": "Weg, unbefestigt (Feld-, Wald-, Schotterweg)",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100040|r0c1:200058",
+      "art": "naht",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            0
+          ],
+          "bis": [
+            500,
+            0
+          ],
+          "laenge": 1,
+          "kante_max": 19.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100040",
+          "teilkachel": "r0c0",
+          "id": 100040,
+          "klasse": "4.2.4",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.406,
+            "abstand": 0.107
+          },
+          "flaeche": 2062,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.4",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Sträucher am rechten Kernrand, setzen sich nach r0c1 fort.",
+          "viertel": "v2",
+          "klasse_heute": "4.2.4",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r0c1:200058",
+          "teilkachel": "r0c1",
+          "id": 200058,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.563,
+            "abstand": 0.058
+          },
+          "flaeche": 621,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Gartenecke oben links mit Sträuchern, Heckenstücken und Rasen, keine einzelne Krone erkennbar",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Mehrere kleine Gehölze und Rasenstücke statt einer Baumkrone (bei 75/76); Elternklasse Gehölz außerhalb Wald",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "4.2.1",
+          "klasse_vorschlag": "4.2"
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100040|r0c1:200043",
+      "art": "naht",
+      "bild": "paar_02.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            2
+          ],
+          "bis": [
+            500,
+            2
+          ],
+          "laenge": 1,
+          "kante_max": 16.9
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            10
+          ],
+          "bis": [
+            500,
+            11
+          ],
+          "laenge": 2,
+          "kante_max": 20.5
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            17
+          ],
+          "bis": [
+            500,
+            17
+          ],
+          "laenge": 1,
+          "kante_max": 21.8
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            20
+          ],
+          "bis": [
+            500,
+            20
+          ],
+          "laenge": 1,
+          "kante_max": 23.2
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            22
+          ],
+          "bis": [
+            500,
+            25
+          ],
+          "laenge": 4,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            30
+          ],
+          "bis": [
+            500,
+            30
+          ],
+          "laenge": 1,
+          "kante_max": 12.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100040",
+          "teilkachel": "r0c0",
+          "id": 100040,
+          "klasse": "4.2.4",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.406,
+            "abstand": 0.107
+          },
+          "flaeche": 2062,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.4",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Sträucher am rechten Kernrand, setzen sich nach r0c1 fort.",
+          "viertel": "v2",
+          "klasse_heute": "4.2.4",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r0c1:200043",
+          "teilkachel": "r0c1",
+          "id": 200043,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.358,
+            "abstand": 0.156
+          },
+          "flaeche": 11828,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Großes Sammelsegment im Garten nördlich der Straße: Rasen, Sträucher, ein dunkles Flachdach, helle Terrassen und der Sandplatz am Pool, kein Wald",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Dunkelgraues Flachdach eines Gartenhauses bzw. Carports bei 90/110 (etwa x 77–102, y 99–122), als 1.1.2 abtrennen",
+              "flaeche_px": 500
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Helle Terrassen- bzw. Pflasterflächen westlich des roten Hauses bei 115/100 und 126/118, als 1.2.4 abtrennen",
+              "flaeche_px": 200
+            },
+            {
+              "nr": 3,
+              "art": "fremdes",
+              "text": "Kleines weißes Gartenhäuschen bzw. Gewächshaus bei 216/107, als 1.1.2 abtrennen",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 4,
+              "art": "fremdes",
+              "text": "Heller Sand- bzw. Kiesplatz mit kleinen Nadelbäumen um den Pool bei 255/95 (x 240–275, y 64–108), eigenes Segment",
+              "flaeche_px": 900
+            },
+            {
+              "nr": 5,
+              "art": "klasse",
+              "text": "Rest ist Hausgarten mit Rasen und Gehölzen (bei 100/130), kein geschlossener Wald; Rasenstücke als 3.1 trennen, Rest 4.2",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": "4.2"
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100061|r0c1:200043",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 5,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            31
+          ],
+          "bis": [
+            500,
+            31
+          ],
+          "laenge": 1,
+          "kante_max": 24.2
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            38
+          ],
+          "bis": [
+            500,
+            38
+          ],
+          "laenge": 1,
+          "kante_max": 15.8
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            42
+          ],
+          "bis": [
+            500,
+            42
+          ],
+          "laenge": 1,
+          "kante_max": 19.9
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            47
+          ],
+          "bis": [
+            500,
+            48
+          ],
+          "laenge": 2,
+          "kante_max": 24.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100061",
+          "teilkachel": "r0c0",
+          "id": 100061,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.146,
+            "abstand": 0.046
+          },
+          "flaeche": 2255,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Rasen hinter Haus 33 mit Gartenmöbeln.",
+          "viertel": "v2",
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r0c1:200043",
+          "teilkachel": "r0c1",
+          "id": 200043,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.358,
+            "abstand": 0.156
+          },
+          "flaeche": 11828,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Großes Sammelsegment im Garten nördlich der Straße: Rasen, Sträucher, ein dunkles Flachdach, helle Terrassen und der Sandplatz am Pool, kein Wald",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Dunkelgraues Flachdach eines Gartenhauses bzw. Carports bei 90/110 (etwa x 77–102, y 99–122), als 1.1.2 abtrennen",
+              "flaeche_px": 500
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Helle Terrassen- bzw. Pflasterflächen westlich des roten Hauses bei 115/100 und 126/118, als 1.2.4 abtrennen",
+              "flaeche_px": 200
+            },
+            {
+              "nr": 3,
+              "art": "fremdes",
+              "text": "Kleines weißes Gartenhäuschen bzw. Gewächshaus bei 216/107, als 1.1.2 abtrennen",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 4,
+              "art": "fremdes",
+              "text": "Heller Sand- bzw. Kiesplatz mit kleinen Nadelbäumen um den Pool bei 255/95 (x 240–275, y 64–108), eigenes Segment",
+              "flaeche_px": 900
+            },
+            {
+              "nr": 5,
+              "art": "klasse",
+              "text": "Rest ist Hausgarten mit Rasen und Gehölzen (bei 100/130), kein geschlossener Wald; Rasenstücke als 3.1 trennen, Rest 4.2",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": "4.2"
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100074|r0c1:200043",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            52
+          ],
+          "bis": [
+            500,
+            52
+          ],
+          "laenge": 1,
+          "kante_max": 23.7
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100074",
+          "teilkachel": "r0c0",
+          "id": 100074,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.237,
+            "abstand": 0.041
+          },
+          "flaeche": 102,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Helle Stelle mit Gartenmöbeln und Rasen am Rand von 61; keine Krone.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Rasen mit hellen Gegenständen (556/114), kein Baum.",
+              "flaeche_px": 100
+            },
+            {
+              "nr": 2,
+              "art": "verschmelzen",
+              "text": "Mit 100061 verschmelzen (556/114).",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_heute": "4.2.1",
+          "klasse_vorschlag": "3.1"
+        },
+        {
+          "segment": "r0c1:200043",
+          "teilkachel": "r0c1",
+          "id": 200043,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.358,
+            "abstand": 0.156
+          },
+          "flaeche": 11828,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Großes Sammelsegment im Garten nördlich der Straße: Rasen, Sträucher, ein dunkles Flachdach, helle Terrassen und der Sandplatz am Pool, kein Wald",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "fremdes",
+              "text": "Dunkelgraues Flachdach eines Gartenhauses bzw. Carports bei 90/110 (etwa x 77–102, y 99–122), als 1.1.2 abtrennen",
+              "flaeche_px": 500
+            },
+            {
+              "nr": 2,
+              "art": "fremdes",
+              "text": "Helle Terrassen- bzw. Pflasterflächen westlich des roten Hauses bei 115/100 und 126/118, als 1.2.4 abtrennen",
+              "flaeche_px": 200
+            },
+            {
+              "nr": 3,
+              "art": "fremdes",
+              "text": "Kleines weißes Gartenhäuschen bzw. Gewächshaus bei 216/107, als 1.1.2 abtrennen",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 4,
+              "art": "fremdes",
+              "text": "Heller Sand- bzw. Kiesplatz mit kleinen Nadelbäumen um den Pool bei 255/95 (x 240–275, y 64–108), eigenes Segment",
+              "flaeche_px": 900
+            },
+            {
+              "nr": 5,
+              "art": "klasse",
+              "text": "Rest ist Hausgarten mit Rasen und Gehölzen (bei 100/130), kein geschlossener Wald; Rasenstücke als 3.1 trennen, Rest 4.2",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": "4.2"
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100099|r0c1:200080",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            89
+          ],
+          "bis": [
+            500,
+            89
+          ],
+          "laenge": 1,
+          "kante_max": 23.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100099",
+          "teilkachel": "r0c0",
+          "id": 100099,
+          "klasse": "3.4",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.427,
+            "abstand": 0.101
+          },
+          "flaeche": 315,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grünstreifen am Nordrand der Straße am rechten Kernrand; keine Fahrbahn.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Grüner Saum (554/158) wie 100.",
+              "flaeche_px": 173
+            },
+            {
+              "nr": 2,
+              "art": "verschmelzen",
+              "text": "Mit 100100 verschmelzen (554/158).",
+              "flaeche_px": 173
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "3.4"
+        },
+        {
+          "segment": "r0c1:200080",
+          "teilkachel": "r0c1",
+          "id": 200080,
+          "klasse": "4.2.1",
+          "grob": "4",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.526
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 1194,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Dunkle Baumkrone am linken Kernrand",
+          "viertel": "v1",
+          "klasse_heute": "4.2.1",
+          "klasse_vorschlag": null
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c0:100099|r0c1:200099",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            90
+          ],
+          "bis": [
+            500,
+            90
+          ],
+          "laenge": 1,
+          "kante_max": 18.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100099",
+          "teilkachel": "r0c0",
+          "id": 100099,
+          "klasse": "3.4",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.427,
+            "abstand": 0.101
+          },
+          "flaeche": 315,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grünstreifen am Nordrand der Straße am rechten Kernrand; keine Fahrbahn.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Grüner Saum (554/158) wie 100.",
+              "flaeche_px": 173
+            },
+            {
+              "nr": 2,
+              "art": "verschmelzen",
+              "text": "Mit 100100 verschmelzen (554/158).",
+              "flaeche_px": 173
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "3.4"
+        },
+        {
+          "segment": "r0c1:200099",
+          "teilkachel": "r0c1",
+          "id": 200099,
+          "klasse": "4.1",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.255,
+            "abstand": 0.086
+          },
+          "flaeche": 114,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Winziger Rest am linken Kernrand am Straßenrand",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "zu_klein",
+              "text": "Nur 4 Kernbildpunkte bei 64/154; mit 200100 bzw. 200080 verschmelzen",
+              "flaeche_px": 4
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": null
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c0:100099|r0c1:200100",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            92
+          ],
+          "bis": [
+            500,
+            93
+          ],
+          "laenge": 2,
+          "kante_max": 18.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            95
+          ],
+          "bis": [
+            500,
+            96
+          ],
+          "laenge": 2,
+          "kante_max": 20.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100099",
+          "teilkachel": "r0c0",
+          "id": 100099,
+          "klasse": "3.4",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.427,
+            "abstand": 0.101
+          },
+          "flaeche": 315,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grünstreifen am Nordrand der Straße am rechten Kernrand; keine Fahrbahn.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Grüner Saum (554/158) wie 100.",
+              "flaeche_px": 173
+            },
+            {
+              "nr": 2,
+              "art": "verschmelzen",
+              "text": "Mit 100100 verschmelzen (554/158).",
+              "flaeche_px": 173
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": "3.4"
+        },
+        {
+          "segment": "r0c1:200100",
+          "teilkachel": "r0c1",
+          "id": 200100,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.522,
+            "abstand": 0.114
+          },
+          "flaeche": 161,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nordrand der Straße links mit Bankett",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Straßenrand bei 67/158 mit der Straße 200093 verschmelzen",
+              "flaeche_px": 151
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": null
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c0:100059|r0c1:200116",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            120
+          ],
+          "bis": [
+            500,
+            120
+          ],
+          "laenge": 1,
+          "kante_max": 15.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100059",
+          "teilkachel": "r0c0",
+          "id": 100059,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.758
+          },
+          "instanz": {
+            "text": "road",
+            "eingerastet": true
+          },
+          "flaeche": 9919,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Asphaltierte Straße durch das Viertel.",
+          "viertel": "v2",
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r0c1:200116",
+          "teilkachel": "r0c1",
+          "id": 200116,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.453
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 4881,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkle Gartengehölze am linken Kernrand",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Zwei getrennte Teile im Kern; das kleine Stück bei 70/185 (51 px) dem Nachbarn 200107 zuschlagen",
+              "flaeche_px": 51
+            },
+            {
+              "nr": 2,
+              "art": "klasse",
+              "text": "Gehölzstreifen zwischen Gärten bei 73/288, kein geschlossener Wald",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": "4.2"
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c0:100109|r0c1:200116",
+      "art": "naht",
+      "bild": "paar_09.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            121
+          ],
+          "bis": [
+            500,
+            122
+          ],
+          "laenge": 2,
+          "kante_max": 15.7
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100109",
+          "teilkachel": "r0c0",
+          "id": 100109,
+          "klasse": "4.2.4",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.779,
+            "abstand": 0.253
+          },
+          "flaeche": 170,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "0.2",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkler Strauch im Schatten an der Straße am rechten Kernrand neben Baum 114.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Gehölz im Schatten (555/185), keine 0.2.",
+              "flaeche_px": 164
+            }
+          ],
+          "klasse_heute": "0.2",
+          "klasse_vorschlag": "4.2.4"
+        },
+        {
+          "segment": "r0c1:200116",
+          "teilkachel": "r0c1",
+          "id": 200116,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.453
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 4881,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkle Gartengehölze am linken Kernrand",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Zwei getrennte Teile im Kern; das kleine Stück bei 70/185 (51 px) dem Nachbarn 200107 zuschlagen",
+              "flaeche_px": 51
+            },
+            {
+              "nr": 2,
+              "art": "klasse",
+              "text": "Gehölzstreifen zwischen Gärten bei 73/288, kein geschlossener Wald",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": "4.2"
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r0c0:100122|r0c1:200116",
+      "art": "naht",
+      "bild": "paar_10.jpg",
+      "randpunkte": 13,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            204
+          ],
+          "bis": [
+            500,
+            209
+          ],
+          "laenge": 6,
+          "kante_max": 17.1
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            211
+          ],
+          "bis": [
+            500,
+            213
+          ],
+          "laenge": 3,
+          "kante_max": 12.2
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            216
+          ],
+          "bis": [
+            500,
+            216
+          ],
+          "laenge": 1,
+          "kante_max": 13.7
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            221
+          ],
+          "bis": [
+            500,
+            223
+          ],
+          "laenge": 3,
+          "kante_max": 16.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100122",
+          "teilkachel": "r0c0",
+          "id": 100122,
+          "klasse": "4.2.4",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.618,
+            "abstand": 0.302
+          },
+          "flaeche": 1885,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grüne, strauchige Fläche östlich des Hauses zwischen Wand und Bäumen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Sträucher bzw. verbuschter Rasen (529/261), kein geschlossener Wald.",
+              "flaeche_px": 1167
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": "4.2.4"
+        },
+        {
+          "segment": "r0c1:200116",
+          "teilkachel": "r0c1",
+          "id": 200116,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.453
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 4881,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Dunkle Gartengehölze am linken Kernrand",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "trennen",
+              "text": "Zwei getrennte Teile im Kern; das kleine Stück bei 70/185 (51 px) dem Nachbarn 200107 zuschlagen",
+              "flaeche_px": 51
+            },
+            {
+              "nr": 2,
+              "art": "klasse",
+              "text": "Gehölzstreifen zwischen Gärten bei 73/288, kein geschlossener Wald",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": "4.2"
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r0c0:100122|r0c1:200145",
+      "art": "naht",
+      "bild": "paar_11.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            234
+          ],
+          "bis": [
+            500,
+            235
+          ],
+          "laenge": 2,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100122",
+          "teilkachel": "r0c0",
+          "id": 100122,
+          "klasse": "4.2.4",
+          "grob": "4",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.618,
+            "abstand": 0.302
+          },
+          "flaeche": 1885,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Grüne, strauchige Fläche östlich des Hauses zwischen Wand und Bäumen.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Sträucher bzw. verbuschter Rasen (529/261), kein geschlossener Wald.",
+              "flaeche_px": 1167
+            }
+          ],
+          "klasse_heute": "4.1",
+          "klasse_vorschlag": "4.2.4"
+        },
+        {
+          "segment": "r0c1:200145",
+          "teilkachel": "r0c1",
+          "id": 200145,
+          "klasse": "4.2.1",
+          "grob": "4",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.845
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 4081,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Rotlaubige Baumkrone (wohl Blutbuche) am linken Kernrand, größter Teil im Kontextrand",
+          "viertel": "v3",
+          "klasse_heute": "4.2.1",
+          "klasse_vorschlag": null
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r0c0:100114|r0c1:200107",
+      "art": "naht",
+      "bild": "paar_12.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            129
+          ],
+          "bis": [
+            500,
+            129
+          ],
+          "laenge": 1,
+          "kante_max": 9.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100114",
+          "teilkachel": "r0c0",
+          "id": 100114,
+          "klasse": "4.2.1",
+          "grob": "4",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.692
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 883,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Baumkrone an der Straße östlich des Hauses.",
+          "viertel": "v2",
+          "klasse_heute": "4.2.1",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r0c1:200107",
+          "teilkachel": "r0c1",
+          "id": 200107,
+          "klasse": "4.2",
+          "grob": "4",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.5
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 1934,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Gartengehölze mit mehreren Kronen und Sträuchern südlich der Straße",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Mehrere Kronen und Sträucher bei 107/191, keine Einzelkrone; Baumgruppe oder Elternklasse 4.2",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "4.2.1",
+          "klasse_vorschlag": "4.2"
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "C",
+    "buendel": "C-02",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100040|r0c1:200058",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100040|r0c1:200043",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100061|r0c1:200043",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100074|r0c1:200043",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100099|r0c1:200080",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100099|r0c1:200099",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100099|r0c1:200100",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100059|r0c1:200116",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100109|r0c1:200116",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100122|r0c1:200116",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100122|r0c1:200145",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100114|r0c1:200107",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

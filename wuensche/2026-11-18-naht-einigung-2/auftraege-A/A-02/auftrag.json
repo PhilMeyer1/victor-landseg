@@ -1,0 +1,823 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "A",
+  "buendel": "A-02",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/a-alles-frei/kategorien-a.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Schatten / nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schlagschatten von Gebäude",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schlagschatten von Gehölz",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "1",
+      "name": "Gebäude und bauliche Anlagen",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohnhaus (Hauptgebäude)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Anbau / Schuppen",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Gartenhaus / Laube",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.4",
+      "name": "Gewächshaus / Glas- oder Foliendach",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Bauliche Anlagen und Objekte",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Schwimmbecken",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Mauer / Stützmauer / Einfassung",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.3",
+      "name": "Kleinobjekt",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.4",
+      "name": "Holzhaufen / Schnittgut",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Wege und befestigte Flächen",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Befestigt",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Straße / Fahrweg",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof / Zufahrt / Terrasse / Vorplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Gartenweg / Stufen / Platten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Unbefestigt",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2.1",
+      "name": "Wiesenweg",
+      "parent": "2.2",
+      "level": 3
+    },
+    {
+      "code": "2.2.2",
+      "name": "Trampelpfad / Erdweg",
+      "parent": "2.2",
+      "level": 3
+    },
+    {
+      "code": "3",
+      "name": "Garten / Siedlungsgrün",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Gartenrasen",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Gemischte Gartenfläche",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Gemüse- und Nutzbeete",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Krautige Vegetation",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Wiese / Grünland",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Wiese ungemäht / langgrasig",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Wiese niedrig",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Saum / Feldrain / Böschung",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Verbuschte Wiese / Lichtung",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Feld und offener Boden",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Feld gemäht / abgeerntet",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2",
+      "name": "Offener Boden / vegetationsarm",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Wald / geschlossener Bestand",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.1.1",
+      "name": "Kronendach besonnt",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.1.2",
+      "name": "Kronendach beschattet",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.2",
+      "name": "Baumgruppe / Feldgehölz",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.3",
+      "name": "Einzelbaum",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.3.1",
+      "name": "Laubbaum",
+      "parent": "6.3",
+      "level": 3
+    },
+    {
+      "code": "6.3.2",
+      "name": "Laubbaum rotlaubig",
+      "parent": "6.3",
+      "level": 3
+    },
+    {
+      "code": "6.3.3",
+      "name": "Nadelbaum / Konifere",
+      "parent": "6.3",
+      "level": 3
+    },
+    {
+      "code": "6.4",
+      "name": "Hecke / Gehölzstreifen",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Strauch / Gebüsch",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100034|r0c1:200055",
+      "art": "naht",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            0
+          ],
+          "bis": [
+            500,
+            0
+          ],
+          "laenge": 1,
+          "kante_max": 19.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100034",
+          "teilkachel": "r0c0",
+          "id": 100034,
+          "klasse": "6.5",
+          "grob": "6",
+          "name": "Gartengehölz östlich Haus",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 2062,
+          "flaeche_kern": 178,
+          "vorstufe": [
+            100040
+          ],
+          "id_abgabe": 34,
+          "klasse_teil": "2.4",
+          "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+        },
+        {
+          "segment": "r0c1:200055",
+          "teilkachel": "r0c1",
+          "id": 200055,
+          "klasse": "6.3.1",
+          "grob": "6",
+          "name": "Baum/Großstrauch Garten West",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 621,
+          "flaeche_kern": 522,
+          "herkunft": "vorstufe:200058",
+          "offen": "Baum oder Großstrauch",
+          "id_abgabe": 55,
+          "klasse_teil": "4.1.1",
+          "klasse_teil_name": "Laubbaum"
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100034|r0c1:200208",
+      "art": "naht",
+      "bild": "paar_02.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            2
+          ],
+          "bis": [
+            500,
+            2
+          ],
+          "laenge": 1,
+          "kante_max": 16.9
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            10
+          ],
+          "bis": [
+            500,
+            11
+          ],
+          "laenge": 2,
+          "kante_max": 20.5
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            17
+          ],
+          "bis": [
+            500,
+            17
+          ],
+          "laenge": 1,
+          "kante_max": 21.8
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            20
+          ],
+          "bis": [
+            500,
+            20
+          ],
+          "laenge": 1,
+          "kante_max": 23.2
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            22
+          ],
+          "bis": [
+            500,
+            25
+          ],
+          "laenge": 4,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            30
+          ],
+          "bis": [
+            500,
+            30
+          ],
+          "laenge": 1,
+          "kante_max": 12.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100034",
+          "teilkachel": "r0c0",
+          "id": 100034,
+          "klasse": "6.5",
+          "grob": "6",
+          "name": "Gartengehölz östlich Haus",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 2062,
+          "flaeche_kern": 178,
+          "vorstufe": [
+            100040
+          ],
+          "id_abgabe": 34,
+          "klasse_teil": "2.4",
+          "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+        },
+        {
+          "segment": "r0c1:200208",
+          "teilkachel": "r0c1",
+          "id": 200208,
+          "klasse": "3.2",
+          "grob": "3",
+          "name": "Gartenvegetation gemischt (aus 43)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 4446,
+          "flaeche_kern": 2128,
+          "herkunft": "teilung/polygon",
+          "offen": "Teilung nach Farbe/Textur, Grenze und Klasse aus Regel",
+          "id_abgabe": 208,
+          "klasse_teil": "4.4",
+          "klasse_teil_name": "Gartenvegetation gemischt"
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100057|r0c1:200071",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 29,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            56
+          ],
+          "bis": [
+            500,
+            66
+          ],
+          "laenge": 11,
+          "kante_max": 18.5
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            68
+          ],
+          "bis": [
+            500,
+            68
+          ],
+          "laenge": 1,
+          "kante_max": 16.1
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            70
+          ],
+          "bis": [
+            500,
+            80
+          ],
+          "laenge": 11,
+          "kante_max": 22.5
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            83
+          ],
+          "bis": [
+            500,
+            88
+          ],
+          "laenge": 6,
+          "kante_max": 24.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100057",
+          "teilkachel": "r0c0",
+          "id": 100057,
+          "klasse": "6.5",
+          "grob": "6",
+          "name": "Gartenbaum dunkel",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 1153,
+          "flaeche_kern": 795,
+          "vorstufe": [
+            100077
+          ],
+          "notiz": "Baum oder Großstrauch",
+          "id_abgabe": 57,
+          "klasse_teil": "2.4",
+          "klasse_teil_name": "Gartengehölz (Strauch, Kleinbaum)"
+        },
+        {
+          "segment": "r0c1:200071",
+          "teilkachel": "r0c1",
+          "id": 200071,
+          "klasse": "6.3.1",
+          "grob": "6",
+          "name": "Laubbaum West",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 1194,
+          "flaeche_kern": 338,
+          "herkunft": "vorstufe:200080",
+          "id_abgabe": 71,
+          "klasse_teil": "4.1.1",
+          "klasse_teil_name": "Laubbaum"
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100058|r0c1:200071",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            89
+          ],
+          "bis": [
+            500,
+            89
+          ],
+          "laenge": 1,
+          "kante_max": 23.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100058",
+          "teilkachel": "r0c0",
+          "id": 100058,
+          "klasse": "4.2",
+          "grob": "4",
+          "name": "Grünstreifen Nordrand der Straße",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 315,
+          "flaeche_kern": 173,
+          "vorstufe": [
+            100099
+          ],
+          "id_abgabe": 58,
+          "klasse_teil": "3.1.3",
+          "klasse_teil_name": "Böschung / Straßenbegleitgrün"
+        },
+        {
+          "segment": "r0c1:200071",
+          "teilkachel": "r0c1",
+          "id": 200071,
+          "klasse": "6.3.1",
+          "grob": "6",
+          "name": "Laubbaum West",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 1194,
+          "flaeche_kern": 338,
+          "herkunft": "vorstufe:200080",
+          "id_abgabe": 71,
+          "klasse_teil": "4.1.1",
+          "klasse_teil_name": "Laubbaum"
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100058|r0c1:200087",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            90
+          ],
+          "bis": [
+            500,
+            90
+          ],
+          "laenge": 1,
+          "kante_max": 18.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100058",
+          "teilkachel": "r0c0",
+          "id": 100058,
+          "klasse": "4.2",
+          "grob": "4",
+          "name": "Grünstreifen Nordrand der Straße",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 315,
+          "flaeche_kern": 173,
+          "vorstufe": [
+            100099
+          ],
+          "id_abgabe": 58,
+          "klasse_teil": "3.1.3",
+          "klasse_teil_name": "Böschung / Straßenbegleitgrün"
+        },
+        {
+          "segment": "r0c1:200087",
+          "teilkachel": "r0c1",
+          "id": 200087,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Randsegment (Vorstufe übernommen)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 114,
+          "flaeche_kern": 4,
+          "herkunft": "vorstufe:200099",
+          "offen": "nur Kontextrand, grob nach Vorstufe",
+          "id_abgabe": 87,
+          "klasse_teil": "4.2",
+          "klasse_teil_name": "Baumgruppe, dichtes Gehölz"
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c0:100058|r0c1:200082",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            92
+          ],
+          "bis": [
+            500,
+            93
+          ],
+          "laenge": 2,
+          "kante_max": 18.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            95
+          ],
+          "bis": [
+            500,
+            96
+          ],
+          "laenge": 2,
+          "kante_max": 20.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100058",
+          "teilkachel": "r0c0",
+          "id": 100058,
+          "klasse": "4.2",
+          "grob": "4",
+          "name": "Grünstreifen Nordrand der Straße",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 315,
+          "flaeche_kern": 173,
+          "vorstufe": [
+            100099
+          ],
+          "id_abgabe": 58,
+          "klasse_teil": "3.1.3",
+          "klasse_teil_name": "Böschung / Straßenbegleitgrün"
+        },
+        {
+          "segment": "r0c1:200082",
+          "teilkachel": "r0c1",
+          "id": 200082,
+          "klasse": "2.1.1",
+          "grob": "2",
+          "name": "Straße Asphalt dunkel",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 4269,
+          "flaeche_kern": 2730,
+          "herkunft": "vorstufe:200093",
+          "id_abgabe": 82,
+          "klasse_teil": "1.2.1",
+          "klasse_teil_name": "Straße, Gehsteig"
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "A",
+    "buendel": "A-02",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100034|r0c1:200055",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100034|r0c1:200208",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100057|r0c1:200071",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100058|r0c1:200071",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100058|r0c1:200087",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100058|r0c1:200082",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

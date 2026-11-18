@@ -1,0 +1,50 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "A",
+  "buendel": "A-02",
+  "bearbeiter": "agent:einigung-A-02:20261118e",
+  "paare": [
+    {
+      "paar": "r0c0:100034|r0c1:200055",
+      "entscheidung": "gleich",
+      "klasse": "6",
+      "grund": "Am Nordrand (y 0–1) läuft dieselbe dunkelgrüne Gehölzmasse ohne Kante über die Naht; r0c0 hat die Fläche von 200055 in ihrem Kontextrand selbst zu 100034 gezählt (595 Bildpunkte Überdeckung), Baum oder Großstrauch ist bei rund 25 m² Krone auf 20 cm nicht sicher, daher die gemeinsame Elternklasse Gehölz."
+    },
+    {
+      "paar": "r0c0:100034|r0c1:200208",
+      "entscheidung": "unklar",
+      "klasse": null,
+      "grund": "Entlang der Naht (y 2–30) zeigen beide Seiten dasselbe mittelgrüne, teils beschattete Gartengrün ohne Bildkante, aber ob das der Rand des Gehölzes (100034) oder schon das gemischte Gartenmosaik (200208, das weiter östlich graugrün und offen wird) ist, lässt sich auf 20 cm nicht entscheiden, und eine gemeinsame Klasse würde die Hauptfläche eines der beiden Segmente falsch einordnen."
+    },
+    {
+      "paar": "r0c0:100057|r0c1:200071",
+      "entscheidung": "gleich",
+      "klasse": "6.3",
+      "grund": "Eine dunkle, gelappte Einzelkrone von rund 8 m Durchmesser (x 471–513, y 51–91) wird von der Naht senkrecht ohne Bildkante durchschnitten, beide Teilkacheln haben sie jeweils im Kontextrand bis zur selben Außenkante gezogen; für einen Strauch ist sie zu groß, Laub- oder Nadelbaum ist bei der dunklen Krone nicht sicher, daher Einzelbaum."
+    },
+    {
+      "paar": "r0c0:100058|r0c1:200071",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Die beiden Segmente berühren sich nur über Eck an einem Punkt (x 500, y 89): oben endet die dunkle Baumkrone, darunter beginnt der helle, niedrige Grünstreifen am Nordrand der Straße, also zwei verschiedene Flächen."
+    },
+    {
+      "paar": "r0c0:100058|r0c1:200087",
+      "entscheidung": "gleich",
+      "klasse": "4.2",
+      "grund": "200087 liegt mit 109 von 114 Bildpunkten genau auf dem Grünstreifen 100058 und ragt nur mit 4 Bildpunkten (x 500–502, y 90–91) in den Kern, wo das Bild denselben hellgrünen, niedrigen Straßenrandstreifen zeigt; die Baumgruppen-Klasse war nur grob aus der Vorstufe übernommen."
+    },
+    {
+      "paar": "r0c0:100058|r0c1:200082",
+      "entscheidung": "grenze",
+      "klasse": null,
+      "grund": "Links liegt der helle Grünstreifen am Nordrand der Straße, rechts die dunkle Asphaltstraße; beide Klassen stimmen für ihre Hauptfläche, nur reicht der Grünstreifen an der Naht noch etwa 5 Zeilen (y 91–95) in das Straßensegment hinein, was eine Grenzfrage und keine Klassenfrage ist."
+    }
+  ],
+  "offen": [
+    "r0c0:100058|r0c1:200082: Der Grünstreifen setzt sich östlich der Naht in den Zeilen y 91–95 etwa bis x 510 fort, liegt dort aber im Straßensegment 200082 (r0c0 hat ihn in ihrem Kontextrand bis x 524 gezogen); braucht eine Grenzkorrektur an der Naht, keine Klassenänderung.",
+    "r0c0:100034|r0c1:200208: Der schmale Streifen von 200208 direkt an der Naht (x 500–505, y 3–19) sieht aus wie Gehölz und gehört vermutlich zu 100034 bzw. 200055; Grenze an der Naht ohne Bildkante, braucht eine Grenzkorrektur.",
+    "r0c0:100057|r0c1:200071: Laub- oder Nadelbaum offen (dunkle Krone); feiner als 6.3 nur mit Schattenform oder einem zweiten Bild zu klären."
+  ],
+  "nicht_geprueft": []
+}

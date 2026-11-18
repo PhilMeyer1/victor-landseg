@@ -1,0 +1,471 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "C",
+  "buendel": "C-04",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/landseg/kategorien.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar (technisch)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Bildfehler / Scanrand / Rahmenmarke / Kratzer",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Versiegelt / bebaut (Siedlung und Verkehr)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Gewächshaus / Folientunnel",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Verkehrsfläche",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.4",
+      "name": "Platz / Parkplatz / Hoffläche versiegelt",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.5",
+      "name": "Bahnkörper",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.3",
+      "name": "Sonstige künstliche Fläche",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.3.1",
+      "name": "Lager-, Schotter-, Kiesfläche (künstlich, unversiegelt)",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.2",
+      "name": "Baustelle",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.3",
+      "name": "Schwimmbecken",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.4",
+      "name": "Sport-, Spielplatz (künstlicher Belag)",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Acker (und Dauerkulturen)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Acker mit Bewuchs",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2",
+      "name": "Acker ohne Bewuchs (gepflügt, Saatbett)",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Ackerbrache",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4",
+      "name": "Dauerkultur",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4.1",
+      "name": "Weingarten",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.2",
+      "name": "Obstanlage (intensiv, Reihen)",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.3",
+      "name": "Sonstige Dauerkultur (Beeren, Hopfen, Baumschule)",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "3",
+      "name": "Dauergrünland (krautig, nicht Acker)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Wiese (Mahdspuren sichtbar)",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.1.2",
+      "name": "Weide (Trittpfade, Zäune, Tiere)",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Trocken-/Magerrasen",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Grünlandbrache / Ruderalflur",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Krautsaum linear (Feldrain, Wegrand, Böschung)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.5",
+      "name": "Verbuschende Fläche (Grünland mit Gehölzanflug)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Wald und Gehölze",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Laubwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Nadelwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.3",
+      "name": "Mischwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.4",
+      "name": "Kahlschlag / Jungwuchs / Schlagflur",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Gehölz außerhalb Wald",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2.1",
+      "name": "Einzelbaum",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.2",
+      "name": "Baumgruppe / Feldgehölz",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.3",
+      "name": "Hecke / Baumreihe / Ufergehölz (linear)",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.4",
+      "name": "Gebüsch / Strauchfläche",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "5",
+      "name": "Gewässer / Feuchtgebiet",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Fließgewässer",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Fluss / Bach",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Graben / Kanal",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Stillgewässer (See, Teich, Weiher)",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.3",
+      "name": "Feuchtgebiet / Röhricht / Ufervegetation",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Offener Boden / Fels",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Offene Sand-, Löss-, Lehmstelle (Abbruch, Hohlweg, Grube)",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2",
+      "name": "Abbau, Halde, Deponie",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.3",
+      "name": "Fels / Geröll",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.4",
+      "name": "Kies-/Sandbank (Gewässerufer, unbewachsen)",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Schnee / Eis / Gletscher",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.6",
+      "name": "Weg, unbefestigt (Feld-, Wald-, Schotterweg)",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r1c1:400111|r1c1:400128",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            759,
+            750
+          ],
+          "bis": [
+            759,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 21.1
+        },
+        {
+          "linie": "r1c1:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            768,
+            750
+          ],
+          "bis": [
+            768,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 20.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400111",
+          "teilkachel": "r1c1",
+          "id": 400111,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.758
+          },
+          "instanz": {
+            "text": "lawn",
+            "eingerastet": true
+          },
+          "flaeche": 1315,
+          "im_kern": true,
+          "im_siedlung": "ja",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Rasen um den Baum 127 am Oberrand von v3/v4.",
+          "viertel": "v3",
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r1c1:400128",
+          "teilkachel": "r1c1",
+          "id": 400128,
+          "klasse": "2.2",
+          "grob": "2",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.127,
+            "abstand": 0.054
+          },
+          "flaeche": 794,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.4",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Gemüseparzelle mit rechteckigen Beeten aus offener Erde, einzelnen Pflanzen und schmalen Wegen; kein versiegelter Platz.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Gartenbeete mit offener Erde statt versiegelter Platz bei (340/320).",
+              "flaeche_px": 794
+            }
+          ],
+          "klasse_heute": "1.2.4",
+          "klasse_vorschlag": "2.2"
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "C",
+    "buendel": "C-04",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r1c1:400111|r1c1:400128",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

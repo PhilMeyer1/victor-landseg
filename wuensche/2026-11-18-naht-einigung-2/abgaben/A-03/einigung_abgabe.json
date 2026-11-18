@@ -1,0 +1,41 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "A",
+  "buendel": "A-03",
+  "bearbeiter": "agent:einigung-A-03:20261118e",
+  "paare": [
+    {"paar": "r0c0:100049|r0c1:200100", "entscheidung": "grenze", "klasse": null,
+     "grund": "Der graue Asphalt der Straße endet an der Bordkante, südlich davon liegt das dunkle Band aus Gehölz bzw. dessen Schatten; die beiden berühren sich nur an einem Eckpunkt."},
+    {"paar": "r0c0:100067|r0c1:200100", "entscheidung": "unklar", "klasse": null,
+     "grund": "Beide Seiten zeigen dasselbe gleichmäßig dunkle Band an der Bordkante, das auch auf die Fahrbahn ausgreift; ob es dunkles Gehölz oder der Schlagschatten des hellen Gartenbaums südlich davon ist, lässt das Bild nicht sicher erkennen."},
+    {"paar": "r0c0:100076|r0c1:200092", "entscheidung": "grenze", "klasse": null,
+     "grund": "Die helle, grob gekörnte Krone des Gartenbaums stößt am oberen Kronenrand nur in einem Punkt an die dunkelgrüne, glattere Baumgruppe im Nordosten; es sind zwei verschiedene Kronen."},
+    {"paar": "r0c0:100076|r0c1:200105", "entscheidung": "gleich", "klasse": "6.3.1",
+     "grund": "Dieselbe runde, hellgrüne, grob gekörnte Laubkrone von etwa 7 m Durchmesser läuft ohne Kante über die Naht bis an das Dach; ein Laubbaum, beide Seiten nennen ihn Baum."},
+    {"paar": "r0c0:100067|r0c1:200105", "entscheidung": "unklar", "klasse": null,
+     "grund": "An der Stelle liegt nur ein abgetrennter Splitter von 100067 von wenigen Bildpunkten mitten in der hellen Laubkrone, während 100067 sonst das dunkle Band an der Straße ist; dieselbe Klasse würde falsch auf das Band übertragen, eine Grenzkorrektur darf die Einigung nicht machen."},
+    {"paar": "r0c0:100081|r0c1:200100", "entscheidung": "gleich", "klasse": "6",
+     "grund": "Entlang der Naht zeigen beide Seiten dasselbe dunkelgrüne, teils beschattete Gartengehölz zwischen Konifere und Hauswand, das nach Süden in dunkle Kronen übergeht; ob Strauch oder Baumgruppe, ist nicht sicher, daher die Elternklasse Gehölz."},
+    {"paar": "r0c0:100081|r0c1:200127", "entscheidung": "grenze", "klasse": null,
+     "grund": "Am Südende des grünen Gartengehölzes beginnt die violettgraue Krone der Blutbuche, deren Oberrand auf beiden Seiten der Naht auf gleicher Höhe liegt; zwei verschiedene Gehölze."},
+    {"paar": "r0c0:100100|r0c1:200127", "entscheidung": "gleich", "klasse": "6.3.2",
+     "grund": "Dieselbe große violettgraue Krone der Blutbuche läuft ohne Kante über die Naht; beide Seiten nennen sie Blutbuche, also rotlaubiger Laubbaum."},
+    {"paar": "r0c0:100082|r0c1:200114", "entscheidung": "gleich", "klasse": "6.3.3",
+     "grund": "Beide Seiten zeigen dieselbe bläulich-graue, sternförmig verzweigte Krone mit ihrem grünen Randbereich ohne Kante an der Naht; beide Teilkacheln deuten sie als bläuliche Konifere."},
+    {"paar": "r0c0:100110|r0c1:200143", "entscheidung": "grenze", "klasse": null,
+     "grund": "Das braune Feld mit Schwaden und der dunkelgrüne Gehölzbestand berühren sich nur an einem Eckpunkt; Farbe und Textur sind klar verschieden."},
+    {"paar": "r0c0:100110|r0c1:200160", "entscheidung": "unklar", "klasse": null,
+     "grund": "Der kleine bräunlich-grüne Fleck am Nordrand des Felds liegt im Schatten der Bäume; ob es beschatteter Feldrand oder ein schmaler Grassaum ist, lässt sich auf 2 bis 3 m Breite nicht erkennen."},
+    {"paar": "r0c0:100110|r0c1:200269", "entscheidung": "grenze", "klasse": null,
+     "grund": "Westlich der Naht reicht das braune Feld bis an die grüne Wiese, östlich beginnt an der Naht ein heller, weißlicher Streifen am Feldrand, der heller ist als die Schwaden und bis zum Gehölz im Osten läuft; beide Klassen bleiben."}
+  ],
+  "offen": [
+    "r0c0:100067|r0c1:200100: dunkles Band an der Bordkante, Gehölz oder Schlagschatten des Gartenbaums (0.1.2); klären würde ein Bild mit anderem Sonnenstand oder ein Höhenmodell.",
+    "r0c0:100067|r0c1:200105: Splitter von 100067 (etwa x 497-499, y 145-149 im Ausschnitt) gehört zur hellen Laubkrone 100076/200105; er müsste per Grenzkorrektur an 100076 gehen, dann entfällt das Paar.",
+    "r0c0:100110|r0c1:200160: beschatteter Fleck am Nordrand des Felds, Feld (5.1) oder Saum (4.2); klären würde ein Bild ohne Baumschatten.",
+    "r0c0:100110|r0c1:200269: als Grenze belassen; nicht ganz auszuschließen ist, dass der helle Streifen der letzte Schwad des Felds ist statt eines Feldrains."
+  ],
+  "nicht_geprueft": [
+    "Fassung A hat keine urteil.json; statt dessen gelesen: arbeitsweise.md und segmente.json von r0c0 und r0c1."
+  ]
+}

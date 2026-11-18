@@ -1,0 +1,29 @@
+# Bericht landseg
+Status: eingereiht
+Für den Nutzer: Die Anleitung für Victor hat einen neuen Abschnitt „Einigung an den Übergängen“: warum es den Schritt gibt, wie die KI-Helfer zugeschnitten waren (ein Helfer je Bündel zusammenhängender Stellen), wie gezählt wird, vorher/nachher je Fassung (offen 68/59/52 → 0, unsicher belegt 9/6/9) und Kosten (15 Helfer, rund 1,9 Mio. Tokens, 13,5 Minuten). „Zahlen“ und „Bekannte Schwächen“ sind nachgezogen, die README sagt, dass `ergebnisse/` die Einigung trägt, die alten Arbeitsdaten nicht. Auf der Ergebnis-Seite zeigt ein angeklicktes Segment jetzt jeden Beschluss der Einigung sichtbar (gleiche Fläche / echte Grenze / unklar, Nachbarsegment, Klasse, Grund), nicht nur versteckt unter „Technische Angaben“. Das Bauwerkzeug holt die Ergebnisse jetzt bei jedem `bauen` selbst aus der Übergabe; niemand muss mehr von Hand kopieren. Die neu erzeugte Seite liegt im Berichtsordner (`T0.html`) und muss noch in die Übergabe-Grundlage eingecheckt werden (siehe Nacharbeit). Nicht im Browser angesehen.
+Commit: 8324894 "feat(gesamt): document the seam agreement and pull results from the handover on build"
+Abnahmekriterien:
+AK7: nicht prüfbar — Seite neu erzeugt: `landseg seite --manifest <Grundlage>/T0/manifest.json --ziel <D>/T0.html` → Exit 0, 8489 KiB; je Fassung „gleiche Fläche, verschiedene Klasse 9 / 6 / 9 (davon 9 / 6 / 9 unsicher belegt)“, Schnittlinien 309/312/312, pruefen ok auf allen 12 Teilkacheln; Daten mit `einigung` je Segment eingebettet, Anzeige im Feld „Gewählt“ (`einigungZeilen`, `node --check` ok). Foto über die Browser-Erweiterung nicht gemacht (keine Erweiterung in dieser Sitzung verfügbar); Ansicht Fassung A, r0c1, Nähte an steht für die Abnahme offen. Datei: C:/Users/Phil/Developement/Victor/wuensche/2026-11-18-naht-einigung-4/T0.html
+AK8: erfüllt — `gesamt/ANLEITUNG.md`: Stand, Kurz, neuer Abschnitt „Einigung an den Übergängen“ (warum, Zuschnitt, Zählung, Tabelle vorher/nachher, Kosten), Dateiformate (`einigung`), Zahlen (unsicher vor/nach, Klasse geändert, Schnittlinien 309/312/312), Bekannte Schwächen, Was fehlt, Prüfseite öffnen, Schritt 5b; `gesamt/README.md` (Aufbau-Absatz). `pruefen` bleibt ok: Testreihe `tests.test_gesamt_projekt` (6 Tests, pruefen auf Test-Ziel ok); Pfadprüfung der Seiten gegen die Quellen: alle neuen Pfade vorhanden (einziger fehlender, `daten/luftbilder/README.md`, entsteht erst beim Bauen, wie vorher)
+Prüfungen:
+`PY -B -m unittest tests.test_seite tests.test_gesamt_projekt tests.test_einigung` → 23 Tests OK (30 s)
+`PY -I tools/pruefe_kategorien.py kategorien.json` → ok
+`PY -B -m landseg einigung messen --manifest <Grundlage>/T0/manifest.json` → A offen 0, unsicher 9 (193), geklärt 59; B 0/6 (102)/58; C 0/9 (145)/49 (gleich wie messen-nachher.txt von Teil 2)
+`node --check landseg/seite_vorlage/seite.js` → ok
+Zählung aus den segmente.json der Grundlage (HEAD gegen 152b27e, Kern): unsicher 301→310 / 397→398 / 481→485; Klasse durch Einigung geändert 21 / 31 / 23; C Klasse ≠ Vorstufe 383→397; Beschlüsse je Paar 21/38/9, 31/28/6, 22/27/9 (deckt sich mit dem Bericht von Teil 2); Kontextrand unverändert
+volle Stufe: offen, läuft im Pflichtlauf des Einreihens
+Nicht geprüft: Browser-Ansicht von T0.html (AK7, kein Foto); echtes `gesamt_projekt.py bauen`/`pruefen` gegen `daten/gesamt/victor-landseg` (macht die Hauptsession; ich schreibe nur in W und D)
+Einstieg: stimmte (ANLEITUNG-Abschnitte; Zeilen leicht verschoben)
+Technische Entscheidungen:
+- Die Seite T0.html habe ich nach `D` erzeugt, nicht in die Übergabe-Grundlage geschrieben: Umsetzer schreiben nur in Arbeitskopie und Berichtsordner. Einchecken in die Grundlage ist Nacharbeit.
+- `bauen` holt `ergebnisse/` mit neuer Funktion `ergebnisse_nachziehen` aus dem HEAD der Grundlage (Git-Blobs per `cat-file`, nicht Arbeitsstand; nur abweichende Blobs gelesen; gelöschte Dateien entfernt), eigener Commit mit Klartext; fehlt die Grundlage, bricht `bauen` jetzt auch beim Auffrischen mit Exit 2 ab (vorher nur beim ersten Klonen gebraucht).
+- Sichtbare Einigungszeile im Feld „Gewählt“ ergänzt, weil AK7 „Klick zeigt Grund der Einigung“ verlangt und der Grund bisher nur als JSON in den zugeklappten technischen Angaben stand.
+- Alte Prüfseiten unter `daten/landseg/T0/kern500/seite/` nicht neu erzeugt: laut Entscheidung bekommen die alten Arbeitsdaten die Einigung nicht.
+Nacharbeit im Hauptordner: (1) `C:/Users/Phil/Developement/Victor/wuensche/2026-11-18-naht-einigung-4/T0.html` nach dem Einreihen neu erzeugen oder diese Datei übernehmen: nach `daten/landseg/uebergabe/landseg-t0/T0/T0.html` kopieren und dort mit `git -c core.autocrlf=false` committen (die Seite enthält die neue Einigungsanzeige erst ab diesem Commit); (2) danach `gesamt_projekt.py bauen` und `pruefen` (Hauptsession, Upload); (3) Profil landseg: Routine `bauen` zieht `ergebnisse/` jetzt selbst aus der Grundlage nach.
+Abräumen: offen (Auftrag umsetzen); keine repo-eigenen Reste
+Lagebild: fehlt (landseg hat kein LAGEBILD.md)
+Erkenntnisse fürs Profil:
+`gesamt_projekt.py bauen` zieht `ergebnisse/` jetzt bei jedem Lauf aus dem HEAD der Übergabe-Grundlage nach; neue Ergebnisse müssen dort committet sein (nicht nur im Arbeitsstand), mit `core.autocrlf=false`.
+Die Seite wird mit CRLF erzeugt, wenn die Vorlage aus einem Checkout mit `core.autocrlf=true` stammt (Byte-Vergleich gegen die Grundlage beachten).
+Abweichungen vom Zielbild: keine
+Einreihen (Skript): eingereiht 8324894 feat(gesamt): document the seam agreement and pull results from the handover on build in C:/Users/Phil/Developement/Victor/landseg (main); Prüfung nach Risiko (ohne Prüfschleuse, keine Zeile schnell: im Profil); voll grün (31 s); volle Prüfung offen (vermerkt in C:/Users/Phil/Developement/Victor/landseg/.git/wunsch-einreihen/pruefung-offen.jsonl); Abräumen WEG; Waisen 3 (testrest 1, server 1, sonstige 1), 2118 MB anderswo (aufraeumer.py melden; beenden nur mit Freigabe des Nutzers)

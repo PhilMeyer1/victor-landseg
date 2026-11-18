@@ -1,0 +1,177 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "C",
+ "buendel": "C-01",
+ "bearbeiter": "agent:einigung-C-01:20261118e",
+ "paare": [
+  {
+   "paar": "r0c0:100056|r0c0:100166",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die glatte, gleichmäßige Wiese 166 grenzt an die raue, ungemähte Fläche 56 mit Büschen; beide Viertel-Urteile trennen sie, die Grenze liegt bis auf einen Punkt auf einer Bildkante."
+  },
+  {
+   "paar": "r0c0:100056|r0c0:100135",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Links Grasfläche, rechts dunkle Gehölzkronen mit Lichtpunkten; klarer Wechsel von Gras zu Krone."
+  },
+  {
+   "paar": "r0c0:100056|r1c0:300015",
+   "entscheidung": "gleich",
+   "klasse": "3.5",
+   "grund": "Über die Naht läuft ohne Kante dieselbe hochwüchsige Grasfläche mit vielen kleinen dunklen Büschen; verbuschendes Grünland auf beiden Seiten."
+  },
+  {
+   "paar": "r0c0:100056|r1c0:300008",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "An der Naht geht verbuschtes Grasland in Waldrand über (helle Gebüsch- und Kronenteile gemischt); 300008 ist im Ganzen Wald, 56 Grasland, eine gemeinsame Klasse passt auf keines, eine echte Kante fehlt."
+  },
+  {
+   "paar": "r0c0:100166|r1c0:300008",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Unter der Wiese 166 setzt sich ein Gras- und Gebüschsaum fort, der im Segment Wald 300008 steckt (vom Urteil r1c0 zum Abtrennen gemeldet); örtlich gleiche Fläche, als Ganzes nicht."
+  },
+  {
+   "paar": "r0c0:100191|r1c0:300008",
+   "entscheidung": "gleich",
+   "klasse": "4.1",
+   "grund": "Die hellen Laubkronen von 191 bilden ein durchgehendes Kronendach mit dem Wald 300008 jenseits der Naht; Ausläufer des geschlossenen Bestands."
+  },
+  {
+   "paar": "r0c0:100194|r1c0:300017",
+   "entscheidung": "gleich",
+   "klasse": "4.1",
+   "grund": "Dieselbe dunkle Kronenzone läuft ohne Kante über die Naht; 300017 grenzt an den Wald 300008 und soll laut Urteil r1c0 mit ihm verschmolzen werden, also Waldrand."
+  },
+  {
+   "paar": "r0c1:200189|r1c1:400017",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der helle Trampelpfad 17 läuft an der Ecke nach Nordwesten weiter, nicht in die Wiese 189; nördlich der Naht nur Gras, also Pfad gegen Wiese."
+  },
+  {
+   "paar": "r0c1:200189|r1c1:400002",
+   "entscheidung": "gleich",
+   "klasse": "3",
+   "grund": "Dieselbe hohe Hangwiese zieht sich ohne Kante über die Naht; oben gleichmäßig, unten mit einzelnen Sträuchern, Urteile 3.1 gegen 3.5, daher Elternklasse Dauergrünland nach U1."
+  },
+  {
+   "paar": "r0c1:200207|r1c1:400002",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Am einzigen Berührpunkt trifft der Kronenrand von 207 auf die Grasfläche 400002; Wechsel Krone zu Gras."
+  },
+  {
+   "paar": "r0c1:200207|r1c1:400018",
+   "entscheidung": "gleich",
+   "klasse": "4.2.2",
+   "grund": "Die dunklen Kronen von 207 setzen sich ohne Kante in der Gehölzgruppe 400018 fort; mehrere Kronen mit Lichtpunkten, flächige Baumgruppe."
+  },
+  {
+   "paar": "r0c1:200189|r1c1:400018",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Am einzigen Berührpunkt grenzt die Wiese 189 an den Kronenrand der Gehölzgruppe 400018; Wechsel Gras zu Krone."
+  },
+  {
+   "paar": "r0c1:200189|r1c1:400011",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Am einzigen Berührpunkt grenzt die Wiese 189 an die dunkle Krone 400011; Wechsel Gras zu Krone."
+  },
+  {
+   "paar": "r0c1:200197|r1c1:400011",
+   "entscheidung": "gleich",
+   "klasse": "4.2",
+   "grund": "Dieselbe langgestreckte dunkle Krone am Feldrand läuft ohne Kante über die Naht; ob ein Baum oder zwei, ist nicht sicher (Urteile 4.2.1 gegen 4.2.2), daher Gehölz außerhalb Wald."
+  },
+  {
+   "paar": "r0c1:200197|r1c1:400019",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Am einzigen Berührpunkt stößt die dunkle Krone 197 an die hellere Kronengruppe 400019; zwei verschiedene Gehölze mit Helligkeitswechsel."
+  },
+  {
+   "paar": "r0c1:200206|r1c1:400019",
+   "entscheidung": "gleich",
+   "klasse": "4.2",
+   "grund": "Das kleine Kronenstück 206 ist der obere Rand der hellgrünen Kronengruppe 400019, ohne Kante über die Naht; Einzelbaum oder Gruppe ist uneinig (4.2.1 gegen 4.2.2), daher Gehölz außerhalb Wald."
+  },
+  {
+   "paar": "r0c1:200206|r1c1:400002",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Kronenstück 206 grenzt an die helle Grasfläche 400002; Wechsel Krone zu Gras."
+  },
+  {
+   "paar": "r0c1:200211|r1c1:400002",
+   "entscheidung": "gleich",
+   "klasse": "3",
+   "grund": "Das kleine Wiesenstück 211 am Feldrand ist dieselbe Grasfläche wie 400002 jenseits der Naht; Kette mit Paar 9 und 24, gemeinsame Klasse Dauergrünland."
+  },
+  {
+   "paar": "r1c0:300008|r1c0:300030",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Das Graskrautstück 300030 liegt in einem Grassaum, der im Segment Wald 300008 steckt (Urteil r1c0: abtrennen); örtlich gleiche Fläche, als Ganzes Wald gegen Gras."
+  },
+  {
+   "paar": "r1c0:300008|r1c0:300038",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die verbuschte Grasfläche 300038 grenzt an einen gröber texturierten Gebüsch- und Jungwuchsstreifen von 300008; bis auf einen Punkt auf Bildkante."
+  },
+  {
+   "paar": "r1c0:300019|r1c0:300038",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Oben gestreifte Hangwiese mit trockenen Mahdresten, unten gleichmäßigeres Gras mit dunklen Büschen; Wechsel der Nutzung, sonst auf Bildkante."
+  },
+  {
+   "paar": "r1c0:300038|r1c0:300045",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Grau-beiger Streifen offener Boden gegen grüne Grasfläche mit Büschen; deutlicher Farbwechsel bis auf drei Punkte."
+  },
+  {
+   "paar": "r1c0:300013|r1c1:400017",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Der helle Trampelpfad quert die Naht: links steckt er in der Grasfläche 300013, rechts ist er eigenes Segment 6.6; gleiche Klasse für beide Segmente passt nicht, Grenze auch nicht."
+  },
+  {
+   "paar": "r1c0:300013|r1c1:400002",
+   "entscheidung": "gleich",
+   "klasse": "3",
+   "grund": "Dieselbe Hangwiese mit hellem Pfad setzt sich ohne Kante über die Naht fort; Kette mit Paar 9 und 18, Elternklasse Dauergrünland wegen 3.1 gegen 3.5."
+  },
+  {
+   "paar": "r1c0:300017|r1c1:400002",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der dunkle Kronenrand von 300017 grenzt an die Grasfläche 400002; Wechsel Krone zu Gras."
+  },
+  {
+   "paar": "r1c0:300008|r1c1:400002",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "An der Naht liegt die offene Graslichtung im Segment Wald 300008 (Urteil r1c0: abtrennen) neben der Grasfläche 400002; örtlich dieselbe Wiese, als Ganzes Wald gegen Gras."
+  },
+  {
+   "paar": "r1c1:400002|r1c1:400019",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die Kronengruppe 400019 grenzt an die Grasfläche 400002; bis auf einen Punkt auf der Kronenkante."
+  }
+ ],
+ "offen": [
+  "r1c0:300008 enthält eine Graslichtung (x 440–560, y 130–205 im Teilkachelbild) und Gras-/Gebüschsäume am Westrand; Paare 4, 5, 19 und 26 sind erst nach Abtrennen dieser Teile (Grenzen, nicht Klassen) sauber zu einigen.",
+  "Trampelpfad r1c1:400017 quert die Naht in r1c0:300013 (Paar 23): als eigenes Segment 6.6 auf beiden Seiten abtrennen oder ins Grasland aufnehmen ist eine Regelfrage (r0c0 lässt solche Pfade in der Fläche).",
+  "Hangwiese 200189/200211/300013/400002: 3.1 oder 3.5 nicht sicher (Sträucher nur in Teilen, Urteile uneinig), daher Elternklasse 3; eine Regel, ob einzeln abgetrennte Büsche die Restfläche zu 3.5 machen, würde es klären.",
+  "Kronen 200197/400011 und 200206/400019: Einzelbaum oder Baumgruppe nicht sicher, daher 4.2; ein Höhenmodell würde es klären."
+ ],
+ "nicht_geprueft": []
+}

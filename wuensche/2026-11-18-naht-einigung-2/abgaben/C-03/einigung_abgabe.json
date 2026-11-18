@@ -1,0 +1,38 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "C",
+  "buendel": "C-03",
+  "bearbeiter": "agent:einigung-C-03:20261118e",
+  "paare": [
+    {"paar": "r0c0:100170|r0c1:200167", "entscheidung": "grenze", "klasse": null,
+     "grund": "Magenta ist das grob strukturierte Kronendach der Bäume, Türkis der olivgrüne Streifen an seinem Fuß zum Feld; sie berühren sich nur in einem Eckpunkt, wo die Krone endet, also echte Grenze Gehölz gegen Saum (100170 bekommt über Paar 2 die Klasse 3.4)."},
+    {"paar": "r0c0:100170|r0c1:200185", "entscheidung": "gleich", "klasse": "3.4",
+     "grund": "Beide Stücke liegen im selben schmalen, olivgrünen, ungemähten Streifen zwischen Kronenrand und gemähten Schwaden, der ohne Kante über die Naht läuft; Krautsaum zwischen Gehölz und Feld (Glied der Kette mit Paar 1)."},
+    {"paar": "r0c0:100159|r0c1:200170", "entscheidung": "gleich", "klasse": "3.1.1",
+     "grund": "Dieselbe große gemähte Hangfläche mit gebogenen, der Feldform folgenden Heuschwaden läuft ohne Kante über die Naht; Mahdspuren sichtbar, daher Wiese 3.1.1 für die ganze Kette 100159–200170–400006 (Getreidestoppel nicht ganz ausgeschlossen)."},
+    {"paar": "r0c1:200170|r1c1:400006", "entscheidung": "gleich", "klasse": "3.1.1",
+     "grund": "Die gebogenen Schwaden laufen über die waagrechte Naht ungebrochen in den Unterrand derselben gemähten Fläche weiter; gleiche Klasse wie die ganze Kette 100159–200170–400006."},
+    {"paar": "r0c1:200019|r0c1:200081", "entscheidung": "grenze", "klasse": null,
+     "grund": "Heller Asphalt der Wohnstraße gegen den grünen Gras- und Buschstreifen der Böschung daneben; die Kante ist fast überall deutlich, nur an diesem einen Punkt schwach."},
+    {"paar": "r0c1:200143|r0c1:200171", "entscheidung": "grenze", "klasse": null,
+     "grund": "Gleichmäßiger Gartenrasen gegen den rauheren Streifen mit Heckenzeile, Zaun und Gras unterhalb; die Grenze folgt der dunklen Heckenlinie, die Berührung liegt in einer Lücke dieser Linie."},
+    {"paar": "r0c1:200092|r0c1:200143", "entscheidung": "grenze", "klasse": null,
+     "grund": "Glatter Gartenrasen gegen die Gartengehölze, Sträucher und Staudenbeete nördlich davon; an der Berührung ist der Übergang weich, die Flächen sind aber verschieden."},
+    {"paar": "r0c1:200143|r0c1:200146", "entscheidung": "grenze", "klasse": null,
+     "grund": "Hellgrüner Rasen gegen das dunkle Randstück der Baumkrone 200134; klarer Übergang Krone gegen Rasen."},
+    {"paar": "r0c1:200147|r0c1:200148", "entscheidung": "grenze", "klasse": null,
+     "grund": "Glattes hellgrünes Rasenstück gegen die dunkle, grob strukturierte runde Krone daneben; echte Grenze Rasen gegen Gehölz."},
+    {"paar": "r1c1:400054|r1c1:400067", "entscheidung": "grenze", "klasse": null,
+     "grund": "Dunkle Baum- bzw. Strauchkrone gegen den hellgrünen Rasen darunter; der Punkt liegt am unteren Kronenrand."},
+    {"paar": "r1c1:400067|r1c1:400189", "entscheidung": "unklar", "klasse": null,
+     "grund": "An der Berührung zeigen beide Seiten dunkle Gartensträucher um ein blaues Objekt, 400067 ist aber ein Sammelsegment aus überwiegend Rasen, 400189 ein Strauch-Garten mit Rahmenbeet; eine gemeinsame Klasse wäre für eines falsch, die Stelle lässt sich nur durch Trennen von 400067 klären."},
+    {"paar": "r1c1:400151|r1c1:400152", "entscheidung": "grenze", "klasse": null,
+     "grund": "Rosabraunes Satteldach des Gartenhauses mit hellem Randstück gegen den Rasen der Parzelle; echte Grenze Gebäude gegen Rasen."}
+  ],
+  "offen": [
+    "r1c1:400067|r1c1:400189: 400067 schließt Sträucher um das blaue Objekt bei etwa x 750, y 873 (Ausschnitt) ein; erst nach Trennen von 400067 (Urteil r1c1, Punkte trennen) ist die Klasse an dieser Stelle zu entscheiden.",
+    "Kette 100159–200170–400006: 3.1.1 nach Schwadenbild und Lage; ob es doch ein abgeernteter Getreideacker ist (2.2), zeigt das Bild nicht sicher, nur Fremddaten (INVEKOS) würden es klären.",
+    "r0c0:100170: Das Urteil r0c0 wollte das Stück mit dem Feld 100159 verschmelzen; hier nur Klasse 3.4 wie 200185, Grenzen bleiben."
+  ],
+  "nicht_geprueft": []
+}

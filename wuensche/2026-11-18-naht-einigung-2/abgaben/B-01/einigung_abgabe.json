@@ -1,0 +1,192 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-01",
+ "bearbeiter": "agent:einigung-B-01:20261118e",
+ "paare": [
+  {
+   "paar": "r0c0:100056|r0c0:100166",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Beide Seiten der Viertelgrenze zeigen dieselbe hellgrüne, feinkörnige Hangwiese mit kleinen dunklen Büschen ohne Kante; gemäht oder ungemäht ist nicht sicher, daher Wiese wie in der Kette mit 300015."
+  },
+  {
+   "paar": "r0c0:100056|r0c0:100135",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Links Wiese, rechts die dunkle, gekörnte Baumkrone mit Lichtflecken: echte Grenze Wiese/Baum, nur an einem Punkt ohne Farbsprung."
+  },
+  {
+   "paar": "r0c0:100175|r0c1:200189",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Derselbe grüne Wiesenstreifen zwischen Heufeld und Gehölz läuft gerade über die Naht ohne jede Bildkante; beide Teilkacheln beschreiben ihn als hohe Wiese, gemäht/ungemäht ist nicht sicher, daher Wiese für die ganze Kette mit 300013 und 400002."
+  },
+  {
+   "paar": "r0c0:100056|r1c0:300015",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Oberhalb und unterhalb der Naht dieselbe hellgrüne Hangwiese mit kleinen Strauchflecken, keine Kante; Wiese wie 300015 und 100166."
+  },
+  {
+   "paar": "r0c0:100056|r1c0:300008",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "An der Naht liegen oben im Wiesen-Segment 100056 dieselben hellen, knolligen Laubkronen bzw. dichtes Jungwuchs-Gebüsch wie im Wald 300008 darunter (einigung_05.jpg); 100056 ist als Ganzes aber Wiese, 300008 Wald, keine gemeinsame Klasse passt, bevor der Gebüschteil von 100056 abgetrennt ist (Punkt 4 im Urteil r0c0)."
+  },
+  {
+   "paar": "r0c0:100166|r1c0:300008",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "An der Naht setzt sich die glatte Wiese 100166 ohne Kante in einen Zipfel des Wald-Segments 300008 fort (einigung_06.jpg); als Ganzes sind es Wiese und Wald, eine gemeinsame Klasse wäre für eines der beiden falsch, die Grenze von 300008 muss erst nach Westen auf die Kronenkante."
+  },
+  {
+   "paar": "r0c0:100191|r1c0:300008",
+   "entscheidung": "gleich",
+   "klasse": "1.2.1",
+   "grund": "Die hellen, besonnten Laubkronen von 100191 setzen sich ohne Kante im belichteten Kronendach des Waldes 300008 fort; es ist der Nordrand desselben Waldes, daher Wald belichtet."
+  },
+  {
+   "paar": "r0c0:100194|r1c0:300017",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Dieselbe dunkle, gekörnte Kronenmasse zieht über die Naht; ob ein Einzelbaum oder eine dunkle Baumgruppe am Waldrand, ist nicht sicher, Baumkronen sind es sicher, daher Baum."
+  },
+  {
+   "paar": "r0c0:100197|r1c0:300013",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Das kleine Grasstück 100197 und die krautige Fläche 300013 sind dieselbe grüne Wiese am Kronenrand, ohne Kante; Wiese wie die ganze Kette 100175-200189-300013-400002."
+  },
+  {
+   "paar": "r0c0:100175|r1c0:300013",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Der Wiesenstreifen 100175 läuft ohne Kante in 300013 weiter, beide zeigen dasselbe grüne, grob gekörnte Gras; 300013 ist kein schmaler Saum, sondern der Kernzipfel der großen Hangwiese, daher Wiese."
+  },
+  {
+   "paar": "r0c1:200189|r1c1:400017",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Unten beginnt der helle Trampelpfad 400017, oben liegt reine Wiese ohne Pfadspur; Pfad und Wiese sind verschiedene Flächen, das Pfad-Segment ist an der Naht nur einige Bildpunkte zu breit (Punkt 1 im Urteil r1c1)."
+  },
+  {
+   "paar": "r0c1:200207|r1c1:400002",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "An der einzigen Berührstelle stößt die dunkle Baumkrone 200207 an die helle Wiese 400002; echte Grenze Gehölz/Wiese."
+  },
+  {
+   "paar": "r0c1:200189|r1c1:400018",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "An der einen Eckstelle trifft die helle Wiese 200189 auf den dunklen, gekörnten Kronenrand der Baumgruppe 400018; echte Grenze."
+  },
+  {
+   "paar": "r0c1:200189|r1c1:400011",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Oben links helle Wiese 200189, unten rechts die dunkle Baumkrone 400011; sie berühren sich nur an einer Ecke, echte Grenze Wiese/Baum."
+  },
+  {
+   "paar": "r0c1:200197|r1c1:400011",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Dieselbe dunkle, längliche Baumkrone am Feldrand läuft ohne Kante über die Naht (r1c1 nennt 400011 ausdrücklich die Fortsetzung des Baums aus r0c1); Einzelbaum oder Gruppe strittig, daher Baum für die Kette 200197-400011-400019-200206."
+  },
+  {
+   "paar": "r0c1:200197|r1c1:400019",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "An der Eckstelle setzt sich die dunkle Krone 200197 in den dunklen oberen Teil von 400019 fort; derselbe Gehölzkörper, daher Baum wie die Kette."
+  },
+  {
+   "paar": "r0c1:200206|r1c1:400019",
+   "entscheidung": "gleich",
+   "klasse": "1.1",
+   "grund": "Der Kronenrand 200206 (Hauptteil im Kontextrand) setzt sich unten in 400019 fort, ohne Kante; derselbe Baum bzw. dieselbe Baumgruppe, daher Baum."
+  },
+  {
+   "paar": "r0c1:200206|r1c1:400002",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Links oben der dunklere Kronenrand 200206, rechts die hellere Wiese 400002; weicher, aber echter Übergang Gehölz/Wiese."
+  },
+  {
+   "paar": "r1c0:300008|r1c0:300030",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Das kleine helle Stück 300030 ist von der umgebenden hellen, fein strukturierten Fläche im Wald-Segment 300008 nicht zu unterscheiden (einigung_19.jpg); ob das Wiese oder beleuchteter Jungwuchs bzw. Randkrone ist, gibt das Bild nicht her."
+  },
+  {
+   "paar": "r1c0:300008|r1c0:300027",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Das dunkle Band 300027 (Randkronen oder deren Schatten) hebt sich bis auf einen Punkt mit einer Hell-dunkel-Kante vom heller belichteten Teil von 300008 ab; belichtet und beschattet bleiben getrennt."
+  },
+  {
+   "paar": "r1c0:300008|r1c0:300048",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die dunkle, kaum strukturierte Fläche 300048 grenzt mit klarer Hell-dunkel-Kante an das belichtete Kronendach 300008; Schatten auf Wald gegen belichteten Wald."
+  },
+  {
+   "paar": "r1c0:300008|r1c0:300038",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die helle, gelbgrüne Krautfläche 300038 berührt nur an einer Ecke den dunkleren Waldrand 300008; verschiedene Flächen."
+  },
+  {
+   "paar": "r1c0:300019|r1c0:300038",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Oben die Wiese mit hellen Schrägstreifen, unten die gleichmäßigere, dunkler gefleckte Kraut- und Strauchfläche; Strukturwechsel als echte Grenze, nur ein Punkt ohne Kante."
+  },
+  {
+   "paar": "r1c0:300038|r1c0:300045",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der helle, rötlich-beige Streifen 300045 hebt sich deutlich von der grünen Krautfläche 300038 ab; echte Grenze, nur wenige Punkte ohne Kante."
+  },
+  {
+   "paar": "r1c0:300013|r1c1:400017",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Rechts der helle Trampelpfad 400017, links die grüne Fläche 300013, in die nur das westliche Pfadende einige Bildpunkte hineinreicht; Pfad und Wiese bleiben verschiedene Flächen."
+  },
+  {
+   "paar": "r1c0:300013|r1c1:400002",
+   "entscheidung": "gleich",
+   "klasse": "2.1",
+   "grund": "Dieselbe grüne Hangwiese läuft ohne Kante von 300013 in 400002 über die Naht; Wiese für die ganze Kette."
+  },
+  {
+   "paar": "r1c0:300017|r1c1:400002",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "An der Berührstelle geht die dunkle Kronenmasse 300017 weich in die helle Wiese 400002 über; Gehölz gegen Wiese, echte Grenze."
+  },
+  {
+   "paar": "r1c0:300008|r1c1:400002",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Der Teil von 300008 an der Naht ist keine Krone, sondern dieselbe hellgrüne Wiese mit Pfad wie 400002 rechts (die krautige Lichtung aus Punkt 9 im Urteil r1c0, einigung_28.jpg); als Ganzes ist 300008 Wald, eine gemeinsame Klasse passt erst, wenn die Lichtung abgetrennt ist."
+  },
+  {
+   "paar": "r1c1:400002|r1c1:400019",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die dunkle, gekörnte Krone 400019 hebt sich mit Kante von der hellen Hangwiese 400002 ab; nur ein Punkt ohne Kante, echte Grenze."
+  }
+ ],
+ "offen": [
+  "Paar 5 (100056|300008): Der Gebüsch-/Jungwuchsteil von 100056 in v3 von r0c0 muss erst abgetrennt werden (Punkt 4 im Urteil r0c0); danach ist der Teil an der Naht mit 300008 bzw. 100191 zu einigen.",
+  "Paar 6 und 28 (300008 mit 100166 bzw. 400002): 300008 enthält Wiesenflächen (Zipfel an der Naht bei x 250-300 und die Lichtung bei x 436-500, y 570-640 im Ausschnitt); erst nach dem Abtrennen lässt sich die Wiese über die Naht einigen.",
+  "Paar 19 (300008|300030): Wiese oder beleuchteter Jungwuchs/Randkrone ist im Luftbild nicht zu trennen; eine Höhenkarte würde es klären.",
+  "Ketten mit Wiese (100056-100166-300015 und 100175-200189-100197-300013-400002) stehen auf 2.1; 2.1.2 Wiese ungemäht ist wahrscheinlich (drei Urteile beschreiben hohes Gras), aber r0c0 hält gemäht/ungemäht für nicht sicher.",
+  "Ketten mit Bäumen (200197-400011-400019-200206 und 100194-300017) stehen auf 1.1 Baum, weil Einzelbaum, Baumgruppe und Wald beschattet strittig sind."
+ ],
+ "nicht_geprueft": [
+  "Grenzlagen selbst (zu breites Pfad-Segment 400017, Wiesenecke in 300017, Pfadende in 300013) nur gesehen, nicht vermessen; Grenzen sind nicht Gegenstand der Einigung."
+ ]
+}

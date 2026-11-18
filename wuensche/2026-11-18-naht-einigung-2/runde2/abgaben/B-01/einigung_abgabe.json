@@ -1,0 +1,45 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "B",
+ "buendel": "B-01",
+ "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+ "paare": [
+  {
+   "paar": "r0c0:100040|r0c1:200043",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Die dunklen Sträucher von 100040 laufen bei y 0–30 ohne Kante in das Gartensammelsegment 200043 weiter (einigung_01.jpg), doch 200043 ist als Ganzes eine gemischte Gartenfläche mit Flachdach, Terrassen und Gartenboden und hängt über 100061/100074 an Parzelle gemischt, 100040 über 200058 an Gehölz; eine gemeinsame Klasse für die ganze Kette wäre für eine Seite falsch, bevor 200043 nach den Punkten 1–4 im Urteil r0c1 getrennt ist."
+  },
+  {
+   "paar": "r0c0:100149|r0c1:200167",
+   "entscheidung": "gleich",
+   "klasse": "1",
+   "grund": "Ein und dieselbe dunkle Gehölzmasse über dem Feld wird von der geraden Naht ohne Bildkante halbiert; ob Baumgruppe oder Sträucher mit kleinen Bäumen, ist nicht sicher zu trennen, daher Gehölz wie in der Kette 100170–200167."
+  },
+  {
+   "paar": "r0c1:200170|r1c1:400006",
+   "entscheidung": "gleich",
+   "klasse": "2.1.1",
+   "grund": "Dasselbe beige Feld mit bogenförmigen, dem Hang folgenden Schwaden läuft über die Naht y 500 ohne Kante weiter (einigung_03.jpg); unregelmäßige Hangfläche zwischen Gärten und Gehölz ohne Fahrgassen, also gemähte Wiese mit Heuschwaden wie in der Kette 100159–200170."
+  },
+  {
+   "paar": "r1c0:300008|r1c1:400034",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "Das geschlossene Laubkronendach läuft auf ganzer Länge der Naht (y 613–999) ohne Bildkante weiter, auf beiden Seiten mit hellen und dunklen Kronen im Wechsel (einigung_04.jpg); derselbe Wald, Licht und Schatten wechseln im Bestand, daher Wald wie in der Kette 300042/300072/400034/400052."
+  },
+  {
+   "paar": "r1c0:300008|r1c1:400052",
+   "entscheidung": "gleich",
+   "klasse": "1.2",
+   "grund": "An den vier Berührungspunkten (y 757–759, 796) liegen beiderseits der Naht dieselben mittelhellen Kronen des Waldes (einigung_05.jpg); 400052 ist Wald im Eigenschatten und hängt über die Kette an 400034, daher Wald wie in Paar 4."
+  }
+ ],
+ "offen": [
+  "r0c0:100040|r0c1:200043: erst nach dem Trennen von 200043 (Urteil r0c1, Punkte 1–4) lässt sich die Kette 200058–100040–200043–100061–100074 einheitlich klassieren.",
+  "Kettenkonflikt 300008: Paare 4 und 5 setzen 300008 auf Wald (1.2), die frühere Einigung r0c0:100191|r1c0:300008 (Runde 1, B-01) hatte Wald belichtet (1.2.1); 100191 müsste für eine Kette ebenfalls 1.2 bekommen.",
+  "Kettenkonflikt 200043: die frühere Einigung (Runde 1, B-02) hatte 200043 auf Parzelle gemischt (3.3.2), während das Urteil r0c1 den Rest als Gartengehölz beschreibt.",
+  "r0c1:200170|r1c1:400006: Wiese gemäht gegen Feld abgeerntet ist am Bild nicht ganz sicher (Urteil r1c1 nennt beides); gewählt nach Form, Hanglage und fehlenden Fahrgassen."
+ ],
+ "nicht_geprueft": []
+}

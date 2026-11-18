@@ -1,6 +1,6 @@
 # Teil 1 von naht-einigung: Einigungs-Werkzeug mit Vorlage
 
-Kurzname: naht-einigung-1 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: bereit | Mutterwunsch: naht-einigung
+Kurzname: naht-einigung-1 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: eingereiht | Mutterwunsch: naht-einigung
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben

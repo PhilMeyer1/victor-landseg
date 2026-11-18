@@ -1,0 +1,147 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "A",
+  "ordner": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/a-alles-frei",
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/a-alles-frei/kategorien-a.json",
+  "zahlen": {
+    "offen": {
+      "paare": 68,
+      "strecken": 260,
+      "randpunkte": 896
+    },
+    "unsicher": {
+      "paare": 0,
+      "strecken": 0,
+      "randpunkte": 0
+    },
+    "geklaert": {
+      "paare": 0,
+      "strecken": 0,
+      "randpunkte": 0
+    },
+    "nach_art": {
+      "naht": {
+        "offen": 45,
+        "unsicher": 0,
+        "geklaert": 0
+      },
+      "viertel": {
+        "offen": 23,
+        "unsicher": 0,
+        "geklaert": 0
+      }
+    },
+    "ohne_kante": {
+      "paare": 83,
+      "randpunkte": 1309
+    }
+  },
+  "buendel": [
+    {
+      "buendel": "A-01",
+      "paare": 38,
+      "uebergross": true,
+      "segmente": [
+        "r0c0:100070",
+        "r0c0:100098",
+        "r0c0:100103",
+        "r0c0:100119",
+        "r0c0:100120",
+        "r0c0:100122",
+        "r0c0:100123",
+        "r0c1:200164",
+        "r0c1:200170",
+        "r0c1:200175",
+        "r0c1:200176",
+        "r1c0:300006",
+        "r1c0:300008",
+        "r1c0:300009",
+        "r1c0:300014",
+        "r1c0:300016",
+        "r1c0:300021",
+        "r1c0:300022",
+        "r1c0:300034",
+        "r1c0:300038",
+        "r1c0:300041",
+        "r1c0:300042",
+        "r1c0:300045",
+        "r1c0:300049",
+        "r1c0:300051",
+        "r1c0:300054",
+        "r1c1:400002",
+        "r1c1:400011",
+        "r1c1:400017",
+        "r1c1:400018",
+        "r1c1:400019",
+        "r1c1:400034",
+        "r1c1:400052"
+      ]
+    },
+    {
+      "buendel": "A-02",
+      "paare": 6,
+      "uebergross": false,
+      "segmente": [
+        "r0c0:100034",
+        "r0c0:100057",
+        "r0c0:100058",
+        "r0c1:200055",
+        "r0c1:200071",
+        "r0c1:200082",
+        "r0c1:200087",
+        "r0c1:200208"
+      ]
+    },
+    {
+      "buendel": "A-03",
+      "paare": 12,
+      "uebergross": false,
+      "segmente": [
+        "r0c0:100049",
+        "r0c0:100067",
+        "r0c0:100076",
+        "r0c0:100081",
+        "r0c0:100082",
+        "r0c0:100100",
+        "r0c0:100110",
+        "r0c1:200092",
+        "r0c1:200100",
+        "r0c1:200105",
+        "r0c1:200114",
+        "r0c1:200127",
+        "r0c1:200143",
+        "r0c1:200160",
+        "r0c1:200269"
+      ]
+    },
+    {
+      "buendel": "A-04",
+      "paare": 12,
+      "uebergross": false,
+      "segmente": [
+        "r0c1:200019",
+        "r0c1:200116",
+        "r0c1:200125",
+        "r0c1:200128",
+        "r0c1:200129",
+        "r0c1:200214",
+        "r0c1:200221",
+        "r0c1:200223",
+        "r0c1:200256",
+        "r0c1:200258",
+        "r1c1:400054",
+        "r1c1:400111",
+        "r1c1:400128",
+        "r1c1:400131",
+        "r1c1:400151",
+        "r1c1:400152",
+        "r1c1:400189",
+        "r1c1:400232",
+        "r1c1:400347",
+        "r1c1:400409",
+        "r1c1:400411",
+        "r1c1:400413"
+      ]
+    }
+  ]
+}

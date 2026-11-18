@@ -1,0 +1,36 @@
+{
+  "schema": "landseg-einigung-abgabe/1",
+  "fassung": "A",
+  "buendel": "A-04",
+  "bearbeiter": "agent:einigung-A-04:20261118e",
+  "paare": [
+    {"paar": "r0c1:200019|r0c1:200258", "entscheidung": "grenze", "klasse": null,
+     "grund": "Hell graue Betonstraße oben und gemähter grüner Grünstreifen darunter sind klar verschiedene Flächen; der Übergang liegt am Straßenrand."},
+    {"paar": "r0c1:200214|r0c1:200221", "entscheidung": "grenze", "klasse": null,
+     "grund": "Oben grobkörnige Kronen einer Baumgruppe mit Schattenlöchern, darunter eine glattere, niedrigere Gartenvegetation; Texturwechsel ohne Farbsprung, zwei verschiedene Flächen (eigene Zoomansicht einigung_02.jpg)."},
+    {"paar": "r0c1:200125|r0c1:200256", "entscheidung": "grenze", "klasse": null,
+     "grund": "Glatter gemähter Rasen oben, darunter der rauere Saum- und Heckenstreifen am Gartenende mit dunkler Schattenlinie; verschiedene Flächen."},
+    {"paar": "r0c1:200125|r0c1:200223", "entscheidung": "grenze", "klasse": null,
+     "grund": "Glatter Rasen unten rechts, oben links ein körniges Mosaik aus Sträuchern und Stauden am Hang; deutlicher Texturwechsel, verschiedene Flächen."},
+    {"paar": "r0c1:200116|r0c1:200125", "entscheidung": "grenze", "klasse": null,
+     "grund": "Dunkle, grob strukturierte Laubbaumkrone rechts gegen hellen glatten Rasen links; klare Grenze Krone/Rasen."},
+    {"paar": "r0c1:200128|r0c1:200129", "entscheidung": "grenze", "klasse": null,
+     "grund": "Heller, glatter Rasenfleck (Dreieck) neben einer dunklen runden Laubbaumkrone mit fleckigem Gehölz darunter; verschiedene Flächen."},
+    {"paar": "r1c1:400054|r1c1:400409", "entscheidung": "grenze", "klasse": null,
+     "grund": "Dunkle Krone eines Einzelbaums oben gegen das hellere, gleichmäßige Rasenband darunter; Grenze Krone/Rasen."},
+    {"paar": "r1c1:400151|r1c1:400152", "entscheidung": "grenze", "klasse": null,
+     "grund": "Rötlich-graues Dach des Gartenhauses links gegen grünen Gartenrasen rechts; klar verschiedene Flächen."},
+    {"paar": "r1c1:400189|r1c1:400413", "entscheidung": "unklar", "klasse": null,
+     "grund": "An der Berührstelle zeigen beide Seiten dasselbe dunkelgrüne Mosaik aus Sträuchern und Gras ohne Kante (eigene Zoomansicht einigung_09.jpg), aber 400189 ist oben ein Beetmosaik mit hellen Wegen und 400413 weiter unten eher Rasen; eine gemeinsame Klasse für beide ganzen Segmente ist am Bild nicht sicher zu wählen."},
+    {"paar": "r1c1:400232|r1c1:400347", "entscheidung": "grenze", "klasse": null,
+     "grund": "Glattes hellgrünes Band des begrünten Hauptwegs gegen die Gartenparzelle darunter mit Sträuchern und Rasen; der Wegrand ist eine echte Nutzungsgrenze (400347 liegt fast ganz im Rand unterhalb des Ausschnitts, eigene Ansicht der Teilkachel einigung_10.jpg)."},
+    {"paar": "r1c1:400111|r1c1:400128", "entscheidung": "grenze", "klasse": null,
+     "grund": "Glatter Gartenrasen links gegen die hellen, in Reihen gegliederten Nutzbeete rechts; verschiedene Flächen."},
+    {"paar": "r1c1:400131|r1c1:400411", "entscheidung": "gleich", "klasse": "3.1",
+     "grund": "Das kleine Stück 400131 ist dasselbe hellgrüne, glatte Grasband wie der anschließende Gartenrasen 400411, ohne Kante dazwischen (eigene Zoomansicht einigung_12.jpg, 14-fach); daher beide Gartenrasen."}
+  ],
+  "offen": [
+    "r1c1:400189|r1c1:400413: gemeinsame Klasse nicht entscheidbar; klären würde eine Teilung von 400413 bzw. 400189 an der Kante Beetmosaik/Rasen, die über eine reine Klassen-Einigung hinausgeht."
+  ],
+  "nicht_geprueft": []
+}

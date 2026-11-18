@@ -1,0 +1,735 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "buendel": "B-01",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/b-kategorien-frei/kategorien-b.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Gebäudeschatten",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Heckenschatten",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "1",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Baum",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Einzelbaum",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Baumgruppe",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Wald",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Wald belichtet",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Wald beschattet",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.3",
+      "name": "Gebüsch",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.4",
+      "name": "Hecke",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "2",
+      "name": "Grünland",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Wiese",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Wiese gemäht",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Wiese ungemäht",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Rasen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Saum und Randstreifen",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "3",
+      "name": "Feld, Garten und offener Boden",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Feld",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Feld abgeerntet",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Offener Boden",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Gartenparzelle",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3.1",
+      "name": "Beete",
+      "parent": "3.3",
+      "level": 3
+    },
+    {
+      "code": "3.3.2",
+      "name": "Parzelle gemischt",
+      "parent": "3.3",
+      "level": 3
+    },
+    {
+      "code": "4",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Gebäude",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Wohnhaus",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Nebengebäude",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.3",
+      "name": "Gewächshaus",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Mauer",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Kleinobjekt",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3.1",
+      "name": "Frühbeet",
+      "parent": "4.3",
+      "level": 3
+    },
+    {
+      "code": "4.4",
+      "name": "Lagerfläche",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.4.1",
+      "name": "Holzlager",
+      "parent": "4.4",
+      "level": 3
+    },
+    {
+      "code": "5",
+      "name": "Wasser",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Schwimmbecken",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Verkehr und befestigte Fläche",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Straße",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.1.1",
+      "name": "Asphaltstraße",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.1.2",
+      "name": "Betonstraße",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.2",
+      "name": "Weg",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2.1",
+      "name": "Gartenweg",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.2.2",
+      "name": "Feld- und Erdweg",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.2.3",
+      "name": "Trampelpfad",
+      "parent": "6.2",
+      "level": 3
+    },
+    {
+      "code": "6.3",
+      "name": "Hof und Zufahrt",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.4",
+      "name": "Terrasse",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Randstein und Bankett",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100191|r1c0:300008",
+      "art": "naht",
+      "bild": "paar_01.jpg",
+      "randpunkte": 44,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            293,
+            500
+          ],
+          "bis": [
+            293,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 20.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            297,
+            500
+          ],
+          "bis": [
+            297,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            300,
+            500
+          ],
+          "bis": [
+            300,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            302,
+            500
+          ],
+          "bis": [
+            303,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 8.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            305,
+            500
+          ],
+          "bis": [
+            308,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 23.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            310,
+            500
+          ],
+          "bis": [
+            310,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 16.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            314,
+            500
+          ],
+          "bis": [
+            315,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            317,
+            500
+          ],
+          "bis": [
+            319,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 23.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            323,
+            500
+          ],
+          "bis": [
+            325,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 21.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            329,
+            500
+          ],
+          "bis": [
+            333,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 16.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            338,
+            500
+          ],
+          "bis": [
+            339,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 20.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            341,
+            500
+          ],
+          "bis": [
+            350,
+            500
+          ],
+          "laenge": 10,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            353,
+            500
+          ],
+          "bis": [
+            355,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 17.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            363,
+            500
+          ],
+          "bis": [
+            364,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            369,
+            500
+          ],
+          "bis": [
+            372,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 22.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100191",
+          "teilkachel": "r0c0",
+          "id": 100191,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.434
+          },
+          "instanz": {
+            "text": "tree",
+            "eingerastet": true
+          },
+          "flaeche": 4409,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Mehrere hellere, besonnte Kronen südlich von 100177 und 100185 am Kernunterrand.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Mehrere Kronen statt eines Einzelbaums (410/548).",
+              "flaeche_px": 2872
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Baumgruppe",
+            "fein": "Baumgruppe"
+          },
+          "einigung": [
+            {
+              "paar": "r0c0:100191|r1c0:300008",
+              "mit": "r1c0:300008",
+              "entscheidung": "gleich",
+              "grund": "Die hellen, besonnten Laubkronen von 100191 setzen sich ohne Kante im belichteten Kronendach des Waldes 300008 fort; es ist der Nordrand desselben Waldes, daher Wald belichtet.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "1.2.1"
+            }
+          ]
+        },
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "1.2",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.89
+          },
+          "instanz": {
+            "text": "forest",
+            "eingerastet": true
+          },
+          "flaeche": 196372,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "4.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Laubreicher Wald mit unterschiedlich hellen Kronen über die ganze Teilkachel; enthält eine krautige Lichtung und Pfadstücke.",
+          "viertel": "v2",
+          "punkte": [
+            {
+              "nr": 9,
+              "art": "trennen",
+              "text": "krautige Lichtung östlich des Pfads 29 (x 500–555, y 135–200) ohne Kronen, fein strukturiert; eigenes Segment Saum (528/165)",
+              "flaeche_px": 3000
+            },
+            {
+              "nr": 10,
+              "art": "fehlt",
+              "text": "zweiter Pfad in der Lichtung (x 546–551, y 170–190), nur schwach sichtbar, nicht abgetrennt (551/182)",
+              "flaeche_px": 80
+            },
+            {
+              "nr": 11,
+              "art": "sonstiges",
+              "text": "kleiner beiger Fleck (Totholz oder offener Boden) am Waldrand, unter der Mindestfläche (326/150)",
+              "flaeche_px": 100
+            }
+          ],
+          "klasse_frei": {
+            "grob": "Gehölz",
+            "mittel": "Wald",
+            "fein": "Wald"
+          },
+          "einigung": [
+            {
+              "paar": "r0c0:100056|r1c0:300008",
+              "mit": "r0c0:100056",
+              "entscheidung": "unklar",
+              "grund": "An der Naht liegen oben im Wiesen-Segment 100056 dieselben hellen, knolligen Laubkronen bzw. dichtes Jungwuchs-Gebüsch wie im Wald 300008 darunter (einigung_05.jpg); 100056 ist als Ganzes aber Wiese, 300008 Wald, keine gemeinsame Klasse passt, bevor der Gebüschteil von 100056 abgetrennt ist (Punkt 4 im Urteil r0c0).",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r0c0:100166|r1c0:300008",
+              "mit": "r0c0:100166",
+              "entscheidung": "unklar",
+              "grund": "An der Naht setzt sich die glatte Wiese 100166 ohne Kante in einen Zipfel des Wald-Segments 300008 fort (einigung_06.jpg); als Ganzes sind es Wiese und Wald, eine gemeinsame Klasse wäre für eines der beiden falsch, die Grenze von 300008 muss erst nach Westen auf die Kronenkante.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r0c0:100191|r1c0:300008",
+              "mit": "r0c0:100191",
+              "entscheidung": "gleich",
+              "grund": "Die hellen, besonnten Laubkronen von 100191 setzen sich ohne Kante im belichteten Kronendach des Waldes 300008 fort; es ist der Nordrand desselben Waldes, daher Wald belichtet.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00",
+              "klasse": "1.2.1"
+            },
+            {
+              "paar": "r1c0:300008|r1c0:300030",
+              "mit": "r1c0:300030",
+              "entscheidung": "unklar",
+              "grund": "Das kleine helle Stück 300030 ist von der umgebenden hellen, fein strukturierten Fläche im Wald-Segment 300008 nicht zu unterscheiden (einigung_19.jpg); ob das Wiese oder beleuchteter Jungwuchs bzw. Randkrone ist, gibt das Bild nicht her.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r1c0:300008|r1c0:300027",
+              "mit": "r1c0:300027",
+              "entscheidung": "grenze",
+              "grund": "Das dunkle Band 300027 (Randkronen oder deren Schatten) hebt sich bis auf einen Punkt mit einer Hell-dunkel-Kante vom heller belichteten Teil von 300008 ab; belichtet und beschattet bleiben getrennt.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r1c0:300008|r1c0:300048",
+              "mit": "r1c0:300048",
+              "entscheidung": "grenze",
+              "grund": "Die dunkle, kaum strukturierte Fläche 300048 grenzt mit klarer Hell-dunkel-Kante an das belichtete Kronendach 300008; Schatten auf Wald gegen belichteten Wald.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r1c0:300008|r1c0:300038",
+              "mit": "r1c0:300038",
+              "entscheidung": "grenze",
+              "grund": "Die helle, gelbgrüne Krautfläche 300038 berührt nur an einer Ecke den dunkleren Waldrand 300008; verschiedene Flächen.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r1c0:300008|r1c1:400002",
+              "mit": "r1c1:400002",
+              "entscheidung": "unklar",
+              "grund": "Der Teil von 300008 an der Naht ist keine Krone, sondern dieselbe hellgrüne Wiese mit Pfad wie 400002 rechts (die krautige Lichtung aus Punkt 9 im Urteil r1c0, einigung_28.jpg); als Ganzes ist 300008 Wald, eine gemeinsame Klasse passt erst, wenn die Lichtung abgetrennt ist.",
+              "bearbeiter": "agent:einigung-B-01:20261118e",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:53:58+00:00"
+            },
+            {
+              "paar": "r1c0:300008|r1c1:400034",
+              "mit": "r1c1:400034",
+              "entscheidung": "gleich",
+              "grund": "Das geschlossene Laubkronendach läuft auf ganzer Länge der Naht (y 613–999) ohne Bildkante weiter, auf beiden Seiten mit hellen und dunklen Kronen im Wechsel (einigung_04.jpg); derselbe Wald, Licht und Schatten wechseln im Bestand, daher Wald wie in der Kette 300042/300072/400034/400052.",
+              "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:59:09+00:00",
+              "klasse": "1.2"
+            },
+            {
+              "paar": "r1c0:300008|r1c1:400052",
+              "mit": "r1c1:400052",
+              "entscheidung": "gleich",
+              "grund": "An den vier Berührungspunkten (y 757–759, 796) liegen beiderseits der Naht dieselben mittelhellen Kronen des Waldes (einigung_05.jpg); 400052 ist Wald im Eigenschatten und hängt über die Kette an 400034, daher Wald wie in Paar 4.",
+              "bearbeiter": "agent:einigung-B-01:20261118e-r2",
+              "buendel": "B-01",
+              "zeit": "2026-11-18T00:59:09+00:00",
+              "klasse": "1.2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "B",
+    "buendel": "B-01",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100191|r1c0:300008",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

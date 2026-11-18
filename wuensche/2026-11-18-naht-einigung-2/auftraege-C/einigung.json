@@ -1,0 +1,129 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "C",
+  "ordner": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/c-feste-liste",
+  "kategorien": "C:/Users/Phil/Developement/Victor/landseg/kategorien.json",
+  "zahlen": {
+    "offen": {
+      "paare": 52,
+      "strecken": 178,
+      "randpunkte": 625
+    },
+    "unsicher": {
+      "paare": 0,
+      "strecken": 0,
+      "randpunkte": 0
+    },
+    "geklaert": {
+      "paare": 0,
+      "strecken": 0,
+      "randpunkte": 0
+    },
+    "nach_art": {
+      "naht": {
+        "offen": 36,
+        "unsicher": 0,
+        "geklaert": 0
+      },
+      "viertel": {
+        "offen": 16,
+        "unsicher": 0,
+        "geklaert": 0
+      }
+    },
+    "ohne_kante": {
+      "paare": 84,
+      "randpunkte": 1306
+    }
+  },
+  "buendel": [
+    {
+      "buendel": "C-01",
+      "paare": 27,
+      "uebergross": true,
+      "segmente": [
+        "r0c0:100056",
+        "r0c0:100135",
+        "r0c0:100166",
+        "r0c0:100191",
+        "r0c0:100194",
+        "r0c1:200189",
+        "r0c1:200197",
+        "r0c1:200206",
+        "r0c1:200207",
+        "r0c1:200211",
+        "r1c0:300008",
+        "r1c0:300013",
+        "r1c0:300015",
+        "r1c0:300017",
+        "r1c0:300019",
+        "r1c0:300030",
+        "r1c0:300038",
+        "r1c0:300045",
+        "r1c1:400002",
+        "r1c1:400011",
+        "r1c1:400017",
+        "r1c1:400018",
+        "r1c1:400019"
+      ]
+    },
+    {
+      "buendel": "C-02",
+      "paare": 12,
+      "uebergross": false,
+      "segmente": [
+        "r0c0:100040",
+        "r0c0:100059",
+        "r0c0:100061",
+        "r0c0:100074",
+        "r0c0:100099",
+        "r0c0:100109",
+        "r0c0:100114",
+        "r0c0:100122",
+        "r0c1:200043",
+        "r0c1:200058",
+        "r0c1:200080",
+        "r0c1:200099",
+        "r0c1:200100",
+        "r0c1:200107",
+        "r0c1:200116",
+        "r0c1:200145"
+      ]
+    },
+    {
+      "buendel": "C-03",
+      "paare": 12,
+      "uebergross": false,
+      "segmente": [
+        "r0c0:100159",
+        "r0c0:100170",
+        "r0c1:200019",
+        "r0c1:200081",
+        "r0c1:200092",
+        "r0c1:200143",
+        "r0c1:200146",
+        "r0c1:200147",
+        "r0c1:200148",
+        "r0c1:200167",
+        "r0c1:200170",
+        "r0c1:200171",
+        "r0c1:200185",
+        "r1c1:400006",
+        "r1c1:400054",
+        "r1c1:400067",
+        "r1c1:400151",
+        "r1c1:400152",
+        "r1c1:400189"
+      ]
+    },
+    {
+      "buendel": "C-04",
+      "paare": 1,
+      "uebergross": false,
+      "segmente": [
+        "r1c1:400111",
+        "r1c1:400128"
+      ]
+    }
+  ]
+}

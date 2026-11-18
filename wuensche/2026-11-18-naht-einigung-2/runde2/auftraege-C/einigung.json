@@ -1,0 +1,57 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "C",
+  "ordner": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/c-feste-liste",
+  "kategorien": "C:/Users/Phil/Developement/Victor/landseg/kategorien.json",
+  "zahlen": {
+    "offen": {
+      "paare": 6,
+      "strecken": 33,
+      "randpunkte": 113
+    },
+    "unsicher": {
+      "paare": 8,
+      "strecken": 38,
+      "randpunkte": 108
+    },
+    "geklaert": {
+      "paare": 44,
+      "strecken": 140,
+      "randpunkte": 517
+    },
+    "nach_art": {
+      "naht": {
+        "offen": 5,
+        "unsicher": 6,
+        "geklaert": 30
+      },
+      "viertel": {
+        "offen": 1,
+        "unsicher": 2,
+        "geklaert": 14
+      }
+    },
+    "ohne_kante": {
+      "paare": 84,
+      "randpunkte": 1306
+    }
+  },
+  "buendel": [
+    {
+      "buendel": "C-01",
+      "paare": 6,
+      "uebergross": false,
+      "segmente": [
+        "r0c0:100059",
+        "r0c0:100166",
+        "r0c0:100175",
+        "r0c0:100197",
+        "r0c1:200100",
+        "r0c1:200189",
+        "r1c0:300013",
+        "r1c0:300015",
+        "r1c0:300024"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Teil 2 von naht-einigung: Einigung auf T0 für A, B, C
 
-Kurzname: naht-einigung-2 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: bereit | Mutterwunsch: naht-einigung
+Kurzname: naht-einigung-2 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: eingereiht (ohne Commit) | Mutterwunsch: naht-einigung | Ergebnis: ohne Commit
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben
@@ -30,3 +30,7 @@ AK6: Auf T0 ist die Einigung für alle drei Fassungen gefahren: Agents je Bünde
 Einstieg, Bausteine, Entscheidungen: siehe Mutterwunsch
 
 Vorbedingungen: keine
+
+## Nachweis
+
+- 2026-11-18: Einigung auf T0 gefahren (3 Runden, 15 Opus-Agents, 1,89 Mio. Tokens, 13,5 min): offen A 68→0, B 59→0, C 52→0; unsicher belegt A 9, B 6, C 9; landseg pruefen auf 12 Teilkacheln ok; Daten in der Übergabe committet 3988411; Bericht wuensche/2026-11-18-naht-einigung-2/bericht-landseg.md, Endstand messen-nachher.txt

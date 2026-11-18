@@ -1,0 +1,1436 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "C",
+  "buendel": "C-01",
+  "uebergross": false,
+  "kategorien": "C:/Users/Phil/Developement/Victor/landseg/kategorien.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar (technisch)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Bildfehler / Scanrand / Rahmenmarke / Kratzer",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.2",
+      "name": "Wolke / Wolkenschatten / Schatten ohne erkennbaren Grund",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "1",
+      "name": "Versiegelt / bebaut (Siedlung und Verkehr)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Hauptgebäude (Wohn-, Betriebsgebäude)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Schuppen / Stadel",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Gewächshaus / Folientunnel",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Verkehrsfläche",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Straße (versiegelt)",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Weg, befestigt (Asphalt, Pflaster)",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.4",
+      "name": "Platz / Parkplatz / Hoffläche versiegelt",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.5",
+      "name": "Bahnkörper",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.3",
+      "name": "Sonstige künstliche Fläche",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.3.1",
+      "name": "Lager-, Schotter-, Kiesfläche (künstlich, unversiegelt)",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.2",
+      "name": "Baustelle",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.3",
+      "name": "Schwimmbecken",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "1.3.4",
+      "name": "Sport-, Spielplatz (künstlicher Belag)",
+      "parent": "1.3",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Acker (und Dauerkulturen)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Acker mit Bewuchs",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2",
+      "name": "Acker ohne Bewuchs (gepflügt, Saatbett)",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.3",
+      "name": "Ackerbrache",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4",
+      "name": "Dauerkultur",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.4.1",
+      "name": "Weingarten",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.2",
+      "name": "Obstanlage (intensiv, Reihen)",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "2.4.3",
+      "name": "Sonstige Dauerkultur (Beeren, Hopfen, Baumschule)",
+      "parent": "2.4",
+      "level": 3
+    },
+    {
+      "code": "3",
+      "name": "Dauergrünland (krautig, nicht Acker)",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Wiese / Weide (gemeinsam)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.1.1",
+      "name": "Wiese (Mahdspuren sichtbar)",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.1.2",
+      "name": "Weide (Trittpfade, Zäune, Tiere)",
+      "parent": "3.1",
+      "level": 3
+    },
+    {
+      "code": "3.2",
+      "name": "Trocken-/Magerrasen",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Grünlandbrache / Ruderalflur",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.4",
+      "name": "Krautsaum linear (Feldrain, Wegrand, Böschung)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.5",
+      "name": "Verbuschende Fläche (Grünland mit Gehölzanflug)",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Wald und Gehölze",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Wald (geschlossener Bestand)",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Laubwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Nadelwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.3",
+      "name": "Mischwald",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.4",
+      "name": "Kahlschlag / Jungwuchs / Schlagflur",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Gehölz außerhalb Wald",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.2.1",
+      "name": "Einzelbaum",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.2",
+      "name": "Baumgruppe / Feldgehölz",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.3",
+      "name": "Hecke / Baumreihe / Ufergehölz (linear)",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "4.2.4",
+      "name": "Gebüsch / Strauchfläche",
+      "parent": "4.2",
+      "level": 3
+    },
+    {
+      "code": "5",
+      "name": "Gewässer / Feuchtgebiet",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Fließgewässer",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.1.1",
+      "name": "Fluss / Bach",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.1.2",
+      "name": "Graben / Kanal",
+      "parent": "5.1",
+      "level": 3
+    },
+    {
+      "code": "5.2",
+      "name": "Stillgewässer (See, Teich, Weiher)",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.3",
+      "name": "Feuchtgebiet / Röhricht / Ufervegetation",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Offener Boden / Fels",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Offene Sand-, Löss-, Lehmstelle (Abbruch, Hohlweg, Grube)",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.2",
+      "name": "Abbau, Halde, Deponie",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.3",
+      "name": "Fels / Geröll",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.4",
+      "name": "Kies-/Sandbank (Gewässerufer, unbewachsen)",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Schnee / Eis / Gletscher",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.6",
+      "name": "Weg, unbefestigt (Feld-, Wald-, Schotterweg)",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100059|r0c1:200100",
+      "art": "naht",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            97
+          ],
+          "bis": [
+            500,
+            97
+          ],
+          "laenge": 1,
+          "kante_max": 4.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100059",
+          "teilkachel": "r0c0",
+          "id": 100059,
+          "klasse": "1.2.1",
+          "grob": "1",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.758
+          },
+          "instanz": {
+            "text": "road",
+            "eingerastet": true
+          },
+          "flaeche": 9919,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Asphaltierte Straße durch das Viertel.",
+          "viertel": "v2",
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": null,
+          "einigung": [
+            {
+              "paar": "r0c0:100059|r0c1:200116",
+              "mit": "r0c1:200116",
+              "entscheidung": "grenze",
+              "grund": "Die asphaltierte Straße 100059 endet am hellen Bordstein; darunter beginnt der dunkle Gehölzstreifen 200116, eine echte Grenze Straße/Gehölz, die sich nur an einem Punkt berührt.",
+              "bearbeiter": "agent:einigung-C-02:20261118e",
+              "buendel": "C-02",
+              "zeit": "2026-11-18T00:53:59+00:00"
+            }
+          ]
+        },
+        {
+          "segment": "r0c1:200100",
+          "teilkachel": "r0c1",
+          "id": 200100,
+          "klasse": "3.4",
+          "grob": "3",
+          "herkunft": "semantik",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.522,
+            "abstand": 0.114
+          },
+          "flaeche": 161,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "1.2.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Nordrand der Straße links mit Bankett",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Straßenrand bei 67/158 mit der Straße 200093 verschmelzen",
+              "flaeche_px": 151
+            }
+          ],
+          "klasse_heute": "1.2.1",
+          "klasse_vorschlag": null,
+          "einigung": [
+            {
+              "paar": "r0c0:100099|r0c1:200100",
+              "mit": "r0c0:100099",
+              "entscheidung": "gleich",
+              "grund": "Der graugrüne Randstreifen zwischen Baumkrone und Asphalt setzt sich bei y 92–96 ohne Kante von 100099 in 200100 fort; es ist derselbe bewachsene Wegrand (Krautsaum), nicht die Fahrbahn.",
+              "bearbeiter": "agent:einigung-C-02:20261118e",
+              "buendel": "C-02",
+              "zeit": "2026-11-18T00:53:59+00:00",
+              "klasse": "3.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100175|r0c1:200189",
+      "art": "naht",
+      "bild": "paar_02.jpg",
+      "randpunkte": 59,
+      "strecken": [
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            429
+          ],
+          "bis": [
+            500,
+            430
+          ],
+          "laenge": 2,
+          "kante_max": 20.7
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            432
+          ],
+          "bis": [
+            500,
+            440
+          ],
+          "laenge": 9,
+          "kante_max": 17.3
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            442
+          ],
+          "bis": [
+            500,
+            457
+          ],
+          "laenge": 16,
+          "kante_max": 23.2
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            462
+          ],
+          "bis": [
+            500,
+            463
+          ],
+          "laenge": 2,
+          "kante_max": 13.5
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            465
+          ],
+          "bis": [
+            500,
+            466
+          ],
+          "laenge": 2,
+          "kante_max": 18.4
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            468
+          ],
+          "bis": [
+            500,
+            469
+          ],
+          "laenge": 2,
+          "kante_max": 22.3
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            471
+          ],
+          "bis": [
+            500,
+            483
+          ],
+          "laenge": 13,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            485
+          ],
+          "bis": [
+            500,
+            488
+          ],
+          "laenge": 4,
+          "kante_max": 21.7
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            490
+          ],
+          "bis": [
+            500,
+            495
+          ],
+          "laenge": 6,
+          "kante_max": 22.8
+        },
+        {
+          "linie": "r0c0|r0c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            497
+          ],
+          "bis": [
+            500,
+            499
+          ],
+          "laenge": 3,
+          "kante_max": 16.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100175",
+          "teilkachel": "r0c0",
+          "id": 100175,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.422
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 17580,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Wiese zwischen Feld und Gehölzen, etwas rau, ohne Büsche.",
+          "viertel": "v4",
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r0c1:200189",
+          "teilkachel": "r0c1",
+          "id": 200189,
+          "klasse": "3",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.627
+          },
+          "instanz": {
+            "text": "lawn",
+            "eingerastet": true
+          },
+          "flaeche": 20278,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "sauber",
+          "was_ist_es": "Grüne Wiese mit höherem Gras südlich des Felds",
+          "viertel": "v3",
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null,
+          "einigung": [
+            {
+              "paar": "r0c1:200189|r1c1:400017",
+              "mit": "r1c1:400017",
+              "entscheidung": "grenze",
+              "grund": "Der helle Trampelpfad 17 läuft an der Ecke nach Nordwesten weiter, nicht in die Wiese 189; nördlich der Naht nur Gras, also Pfad gegen Wiese.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00"
+            },
+            {
+              "paar": "r0c1:200189|r1c1:400002",
+              "mit": "r1c1:400002",
+              "entscheidung": "gleich",
+              "grund": "Dieselbe hohe Hangwiese zieht sich ohne Kante über die Naht; oben gleichmäßig, unten mit einzelnen Sträuchern, Urteile 3.1 gegen 3.5, daher Elternklasse Dauergrünland nach U1.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00",
+              "klasse": "3"
+            },
+            {
+              "paar": "r0c1:200189|r1c1:400018",
+              "mit": "r1c1:400018",
+              "entscheidung": "grenze",
+              "grund": "Am einzigen Berührpunkt grenzt die Wiese 189 an den Kronenrand der Gehölzgruppe 400018; Wechsel Gras zu Krone.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00"
+            },
+            {
+              "paar": "r0c1:200189|r1c1:400011",
+              "mit": "r1c1:400011",
+              "entscheidung": "grenze",
+              "grund": "Am einzigen Berührpunkt grenzt die Wiese 189 an die dunkle Krone 400011; Wechsel Gras zu Krone.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100197|r1c0:300013",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 5,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            477,
+            500
+          ],
+          "bis": [
+            478,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 18.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            480,
+            500
+          ],
+          "bis": [
+            480,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 11.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            483,
+            500
+          ],
+          "bis": [
+            483,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            486,
+            500
+          ],
+          "bis": [
+            486,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 8.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100197",
+          "teilkachel": "r0c0",
+          "id": 100197,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.701
+          },
+          "instanz": {
+            "text": "meadow",
+            "eingerastet": true
+          },
+          "flaeche": 234,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Wiesenstück am unteren Kernrand neben Krone 194.",
+          "viertel": "v4",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Mit 100175 verschmelzen (545/556).",
+              "flaeche_px": 112
+            }
+          ],
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r1c0:300013",
+          "teilkachel": "r1c0",
+          "id": 300013,
+          "klasse": "3",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 11936,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Grasfläche mit hellem Pfad in der oberen rechten Ecke des Kerns, Fortsetzung der offenen Hangwiese nach Norden.",
+          "viertel": "v2",
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null,
+          "einigung": [
+            {
+              "paar": "r1c0:300013|r1c1:400017",
+              "mit": "r1c1:400017",
+              "entscheidung": "unklar",
+              "grund": "Der helle Trampelpfad quert die Naht: links steckt er in der Grasfläche 300013, rechts ist er eigenes Segment 6.6; gleiche Klasse für beide Segmente passt nicht, Grenze auch nicht.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00"
+            },
+            {
+              "paar": "r1c0:300013|r1c1:400002",
+              "mit": "r1c1:400002",
+              "entscheidung": "gleich",
+              "grund": "Dieselbe Hangwiese mit hellem Pfad setzt sich ohne Kante über die Naht fort; Kette mit Paar 9 und 18, Elternklasse Dauergrünland wegen 3.1 gegen 3.5.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00",
+              "klasse": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100175|r1c0:300013",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            487,
+            500
+          ],
+          "bis": [
+            489,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 18.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            491,
+            500
+          ],
+          "bis": [
+            493,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 22.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            496,
+            500
+          ],
+          "bis": [
+            499,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 23.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100175",
+          "teilkachel": "r0c0",
+          "id": 100175,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.422
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 17580,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Wiese zwischen Feld und Gehölzen, etwas rau, ohne Büsche.",
+          "viertel": "v4",
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null
+        },
+        {
+          "segment": "r1c0:300013",
+          "teilkachel": "r1c0",
+          "id": 300013,
+          "klasse": "3",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.477
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 11936,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Grasfläche mit hellem Pfad in der oberen rechten Ecke des Kerns, Fortsetzung der offenen Hangwiese nach Norden.",
+          "viertel": "v2",
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null,
+          "einigung": [
+            {
+              "paar": "r1c0:300013|r1c1:400017",
+              "mit": "r1c1:400017",
+              "entscheidung": "unklar",
+              "grund": "Der helle Trampelpfad quert die Naht: links steckt er in der Grasfläche 300013, rechts ist er eigenes Segment 6.6; gleiche Klasse für beide Segmente passt nicht, Grenze auch nicht.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00"
+            },
+            {
+              "paar": "r1c0:300013|r1c1:400002",
+              "mit": "r1c1:400002",
+              "entscheidung": "gleich",
+              "grund": "Dieselbe Hangwiese mit hellem Pfad setzt sich ohne Kante über die Naht fort; Kette mit Paar 9 und 18, Elternklasse Dauergrünland wegen 3.1 gegen 3.5.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00",
+              "klasse": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100166|r1c0:300015",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 37,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            141,
+            500
+          ],
+          "bis": [
+            141,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 20.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            143,
+            500
+          ],
+          "bis": [
+            145,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 22.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            149,
+            500
+          ],
+          "bis": [
+            150,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            164,
+            500
+          ],
+          "bis": [
+            165,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 21.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            173,
+            500
+          ],
+          "bis": [
+            173,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 16.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            175,
+            500
+          ],
+          "bis": [
+            175,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 6.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            177,
+            500
+          ],
+          "bis": [
+            179,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 22.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            181,
+            500
+          ],
+          "bis": [
+            184,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 12.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            188,
+            500
+          ],
+          "bis": [
+            193,
+            500
+          ],
+          "laenge": 6,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            195,
+            500
+          ],
+          "bis": [
+            195,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            197,
+            500
+          ],
+          "bis": [
+            197,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 9.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            247,
+            500
+          ],
+          "bis": [
+            248,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            250,
+            500
+          ],
+          "bis": [
+            255,
+            500
+          ],
+          "laenge": 6,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            257,
+            500
+          ],
+          "bis": [
+            260,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 15.7
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100166",
+          "teilkachel": "r0c0",
+          "id": 100166,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "nein",
+          "sicherheit": {
+            "wert": 0.411
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 37319,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "sauber",
+          "was_ist_es": "Gleichmäßige, glattere Wiese links und unten im Viertel, deutlich anders als die raue Fläche 56.",
+          "viertel": "v3",
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null,
+          "einigung": [
+            {
+              "paar": "r0c0:100056|r0c0:100166",
+              "mit": "r0c0:100056",
+              "entscheidung": "grenze",
+              "grund": "Die glatte, gleichmäßige Wiese 166 grenzt an die raue, ungemähte Fläche 56 mit Büschen; beide Viertel-Urteile trennen sie, die Grenze liegt bis auf einen Punkt auf einer Bildkante.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00"
+            },
+            {
+              "paar": "r0c0:100166|r1c0:300008",
+              "mit": "r1c0:300008",
+              "entscheidung": "unklar",
+              "grund": "Unter der Wiese 166 setzt sich ein Gras- und Gebüschsaum fort, der im Segment Wald 300008 steckt (vom Urteil r1c0 zum Abtrennen gemeldet); örtlich gleiche Fläche, als Ganzes nicht.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00"
+            }
+          ]
+        },
+        {
+          "segment": "r1c0:300015",
+          "teilkachel": "r1c0",
+          "id": 300015,
+          "klasse": "3.5",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.557
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 4209,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Wiese mit einzelnen kleinen Büschen im Nordosten des Viertels, zwischen Baumkronen 300027 und dem oberen Rand.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Klasse stimmt; Grenzen zu 300021, 300024, 300025 ohne Bildkante, dieselbe Wiese (295/86).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null,
+          "einigung": [
+            {
+              "paar": "r0c0:100056|r1c0:300015",
+              "mit": "r0c0:100056",
+              "entscheidung": "gleich",
+              "grund": "Über die Naht läuft ohne Kante dieselbe hochwüchsige Grasfläche mit vielen kleinen dunklen Büschen; verbuschendes Grünland auf beiden Seiten.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00",
+              "klasse": "3.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r1c0:300015|r1c0:300024",
+      "art": "viertel",
+      "bild": "paar_06.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            541
+          ],
+          "bis": [
+            250,
+            541
+          ],
+          "laenge": 1,
+          "kante_max": 19.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300015",
+          "teilkachel": "r1c0",
+          "id": 300015,
+          "klasse": "3.5",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.557
+          },
+          "instanz": {
+            "text": "grassland",
+            "eingerastet": true
+          },
+          "flaeche": 4209,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "3.1",
+          "sicher_vorstufe": "nein",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Wiese mit einzelnen kleinen Büschen im Nordosten des Viertels, zwischen Baumkronen 300027 und dem oberen Rand.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "verschmelzen",
+              "text": "Klasse stimmt; Grenzen zu 300021, 300024, 300025 ohne Bildkante, dieselbe Wiese (295/86).",
+              "flaeche_px": null
+            }
+          ],
+          "klasse_heute": "3.1",
+          "klasse_vorschlag": null,
+          "einigung": [
+            {
+              "paar": "r0c0:100056|r1c0:300015",
+              "mit": "r0c0:100056",
+              "entscheidung": "gleich",
+              "grund": "Über die Naht läuft ohne Kante dieselbe hochwüchsige Grasfläche mit vielen kleinen dunklen Büschen; verbuschendes Grünland auf beiden Seiten.",
+              "bearbeiter": "agent:einigung-C-01:20261118e",
+              "buendel": "C-01",
+              "zeit": "2026-11-18T00:53:59+00:00",
+              "klasse": "3.5"
+            }
+          ]
+        },
+        {
+          "segment": "r1c0:300024",
+          "teilkachel": "r1c0",
+          "id": 300024,
+          "klasse": "3.1",
+          "grob": "3",
+          "herkunft": "sam3-instanz",
+          "sicher": "ja",
+          "sicherheit": {
+            "wert": 0.636
+          },
+          "instanz": {
+            "text": "crop field",
+            "eingerastet": true
+          },
+          "flaeche": 132,
+          "im_kern": true,
+          "im_siedlung": "nein",
+          "klasse_vorstufe": "2.1",
+          "sicher_vorstufe": "ja",
+          "urteil": "nicht_sauber",
+          "was_ist_es": "Kleines Wiesenstück am Ostrand des Viertels, Gras; kein Acker.",
+          "viertel": "v1",
+          "punkte": [
+            {
+              "nr": 1,
+              "art": "klasse",
+              "text": "Gras, keine Ackerstruktur (306/103).",
+              "flaeche_px": 132
+            },
+            {
+              "nr": 2,
+              "art": "verschmelzen",
+              "text": "Ohne Bildkante zu 300015; verschmelzen (304/100).",
+              "flaeche_px": 132
+            }
+          ],
+          "klasse_heute": "2.1",
+          "klasse_vorschlag": "3.1"
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "C",
+    "buendel": "C-01",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100059|r0c1:200100",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100175|r0c1:200189",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100197|r1c0:300013",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100175|r1c0:300013",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100166|r1c0:300015",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300015|r1c0:300024",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

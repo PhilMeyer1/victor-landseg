@@ -1,6 +1,6 @@
 # Landschafts-Segmente: Einigungsschritt an den Übergängen der Teilkacheln, damit gleiche Flächen über eine Naht hinweg dieselbe Klasse bekommen; auf T0 anwenden und Victors Projekt aktualisieren
 
-Kurzname: naht-einigung | Datum: 2026-11-18 | Größe: gross | Bereich: victor | Repos: landseg | Status: bereit
+Kurzname: naht-einigung | Datum: 2026-11-18 | Größe: gross | Bereich: victor | Repos: landseg | Status: eingereiht
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben

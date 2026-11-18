@@ -1,0 +1,5126 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "A",
+  "buendel": "A-01",
+  "uebergross": true,
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/a-alles-frei/kategorien-a.json",
+  "klassen": [
+    {
+      "code": "0",
+      "name": "Schatten / nicht bestimmbar",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schlagschatten von Gebäude",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schlagschatten von Gehölz",
+      "parent": "0.1",
+      "level": 3
+    },
+    {
+      "code": "1",
+      "name": "Gebäude und bauliche Anlagen",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohnhaus (Hauptgebäude)",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude / Anbau / Schuppen",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.3",
+      "name": "Gartenhaus / Laube",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.1.4",
+      "name": "Gewächshaus / Glas- oder Foliendach",
+      "parent": "1.1",
+      "level": 3
+    },
+    {
+      "code": "1.2",
+      "name": "Bauliche Anlagen und Objekte",
+      "parent": "1",
+      "level": 2
+    },
+    {
+      "code": "1.2.1",
+      "name": "Schwimmbecken",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.2",
+      "name": "Mauer / Stützmauer / Einfassung",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.3",
+      "name": "Kleinobjekt",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "1.2.4",
+      "name": "Holzhaufen / Schnittgut",
+      "parent": "1.2",
+      "level": 3
+    },
+    {
+      "code": "2",
+      "name": "Wege und befestigte Flächen",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "2.1",
+      "name": "Befestigt",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.1.1",
+      "name": "Straße / Fahrweg",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof / Zufahrt / Terrasse / Vorplatz",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.1.3",
+      "name": "Gartenweg / Stufen / Platten",
+      "parent": "2.1",
+      "level": 3
+    },
+    {
+      "code": "2.2",
+      "name": "Unbefestigt",
+      "parent": "2",
+      "level": 2
+    },
+    {
+      "code": "2.2.1",
+      "name": "Wiesenweg",
+      "parent": "2.2",
+      "level": 3
+    },
+    {
+      "code": "2.2.2",
+      "name": "Trampelpfad / Erdweg",
+      "parent": "2.2",
+      "level": 3
+    },
+    {
+      "code": "3",
+      "name": "Garten / Siedlungsgrün",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "3.1",
+      "name": "Gartenrasen",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.2",
+      "name": "Gemischte Gartenfläche",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "3.3",
+      "name": "Gemüse- und Nutzbeete",
+      "parent": "3",
+      "level": 2
+    },
+    {
+      "code": "4",
+      "name": "Krautige Vegetation",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "4.1",
+      "name": "Wiese / Grünland",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.1.1",
+      "name": "Wiese ungemäht / langgrasig",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.1.2",
+      "name": "Wiese niedrig",
+      "parent": "4.1",
+      "level": 3
+    },
+    {
+      "code": "4.2",
+      "name": "Saum / Feldrain / Böschung",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "4.3",
+      "name": "Verbuschte Wiese / Lichtung",
+      "parent": "4",
+      "level": 2
+    },
+    {
+      "code": "5",
+      "name": "Feld und offener Boden",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "5.1",
+      "name": "Feld gemäht / abgeerntet",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "5.2",
+      "name": "Offener Boden / vegetationsarm",
+      "parent": "5",
+      "level": 2
+    },
+    {
+      "code": "6",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1
+    },
+    {
+      "code": "6.1",
+      "name": "Wald / geschlossener Bestand",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.1.1",
+      "name": "Kronendach besonnt",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.1.2",
+      "name": "Kronendach beschattet",
+      "parent": "6.1",
+      "level": 3
+    },
+    {
+      "code": "6.2",
+      "name": "Baumgruppe / Feldgehölz",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.3",
+      "name": "Einzelbaum",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.3.1",
+      "name": "Laubbaum",
+      "parent": "6.3",
+      "level": 3
+    },
+    {
+      "code": "6.3.2",
+      "name": "Laubbaum rotlaubig",
+      "parent": "6.3",
+      "level": 3
+    },
+    {
+      "code": "6.3.3",
+      "name": "Nadelbaum / Konifere",
+      "parent": "6.3",
+      "level": 3
+    },
+    {
+      "code": "6.4",
+      "name": "Hecke / Gehölzstreifen",
+      "parent": "6",
+      "level": 2
+    },
+    {
+      "code": "6.5",
+      "name": "Strauch / Gebüsch",
+      "parent": "6",
+      "level": 2
+    }
+  ],
+  "paare": [
+    {
+      "nr": 1,
+      "paar": "r0c0:100070|r0c0:100103",
+      "art": "viertel",
+      "bild": "paar_01.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            207,
+            250
+          ],
+          "bis": [
+            207,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 15.2
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100070",
+          "teilkachel": "r0c0",
+          "id": 100070,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese ungemäht (Altgras, Kräuter)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 45439,
+          "flaeche_kern": 41510,
+          "vorstufe": [
+            100056,
+            100167,
+            100079,
+            100067,
+            100084,
+            100092
+          ],
+          "id_abgabe": 70,
+          "klasse_teil": "3.1.1",
+          "klasse_teil_name": "Wiese ungemäht (Altgras, Kräuter)"
+        },
+        {
+          "segment": "r0c0:100103",
+          "teilkachel": "r0c0",
+          "id": 100103,
+          "klasse": "4.3",
+          "grob": "4",
+          "name": "verbuschte Wiese, Gebüsch-Hochstauden-Mosaik",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 74755,
+          "flaeche_kern": 53752,
+          "vorstufe": [
+            100056,
+            100166,
+            100172,
+            100195,
+            100193,
+            100176
+          ],
+          "notiz": "Grenze zur offenen Wiese geschätzt; Trampelpfad nicht ausgeschieden",
+          "id_abgabe": 103,
+          "klasse_teil": "3.3",
+          "klasse_teil_name": "Verbuschte Wiese (Gebüsch-Hochstauden-Mosaik)"
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "paar": "r0c0:100070|r0c0:100098",
+      "art": "viertel",
+      "bild": "paar_02.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            282,
+            250
+          ],
+          "bis": [
+            282,
+            250
+          ],
+          "laenge": 1,
+          "kante_max": 7.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100070",
+          "teilkachel": "r0c0",
+          "id": 100070,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese ungemäht (Altgras, Kräuter)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 45439,
+          "flaeche_kern": 41510,
+          "vorstufe": [
+            100056,
+            100167,
+            100079,
+            100067,
+            100084,
+            100092
+          ],
+          "id_abgabe": 70,
+          "klasse_teil": "3.1.1",
+          "klasse_teil_name": "Wiese ungemäht (Altgras, Kräuter)"
+        },
+        {
+          "segment": "r0c0:100098",
+          "teilkachel": "r0c0",
+          "id": 100098,
+          "klasse": "6.3",
+          "grob": "6",
+          "name": "Baum mit großer Krone",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 4855,
+          "flaeche_kern": 4855,
+          "vorstufe": [
+            100135,
+            100146
+          ],
+          "id_abgabe": 98,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Baum (Einzelkrone)"
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "paar": "r0c0:100119|r1c0:300016",
+      "art": "naht",
+      "bild": "paar_03.jpg",
+      "randpunkte": 60,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            0,
+            500
+          ],
+          "bis": [
+            6,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 24.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            11,
+            500
+          ],
+          "bis": [
+            11,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 15.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            16,
+            500
+          ],
+          "bis": [
+            16,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            18,
+            500
+          ],
+          "bis": [
+            22,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 23.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            24,
+            500
+          ],
+          "bis": [
+            24,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 20.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            27,
+            500
+          ],
+          "bis": [
+            29,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 15.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            31,
+            500
+          ],
+          "bis": [
+            67,
+            500
+          ],
+          "laenge": 37,
+          "kante_max": 24.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            71,
+            500
+          ],
+          "bis": [
+            75,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 16.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100119",
+          "teilkachel": "r0c0",
+          "id": 100119,
+          "klasse": "4.1.2",
+          "grob": "4",
+          "name": "Wiese gleichmäßig, niedrig",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 29218,
+          "flaeche_kern": 4015,
+          "vorstufe": [
+            100166,
+            100056,
+            100182,
+            100188
+          ],
+          "notiz": "gemäht oder nur kurzrasig, nicht sicher",
+          "id_abgabe": 119,
+          "klasse_teil": "3.1.2",
+          "klasse_teil_name": "Wiese gleichmäßig niedrig"
+        },
+        {
+          "segment": "r1c0:300016",
+          "teilkachel": "r1c0",
+          "id": 300016,
+          "klasse": "4.1",
+          "grob": "4",
+          "name": "Wiese / Grünland",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 68591,
+          "bbox": [
+            0,
+            0,
+            379,
+            317
+          ],
+          "id_abgabe": 16,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Wiese / Grünland"
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "paar": "r0c0:100103|r1c0:300016",
+      "art": "naht",
+      "bild": "paar_04.jpg",
+      "randpunkte": 130,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            68,
+            500
+          ],
+          "bis": [
+            68,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            70,
+            500
+          ],
+          "bis": [
+            70,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 12.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            76,
+            500
+          ],
+          "bis": [
+            82,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            85,
+            500
+          ],
+          "bis": [
+            97,
+            500
+          ],
+          "laenge": 13,
+          "kante_max": 21.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            100,
+            500
+          ],
+          "bis": [
+            106,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 20.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            111,
+            500
+          ],
+          "bis": [
+            111,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 16.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            113,
+            500
+          ],
+          "bis": [
+            126,
+            500
+          ],
+          "laenge": 14,
+          "kante_max": 14.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            128,
+            500
+          ],
+          "bis": [
+            138,
+            500
+          ],
+          "laenge": 11,
+          "kante_max": 19.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            141,
+            500
+          ],
+          "bis": [
+            141,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 20.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            143,
+            500
+          ],
+          "bis": [
+            145,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 22.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            149,
+            500
+          ],
+          "bis": [
+            150,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            152,
+            500
+          ],
+          "bis": [
+            154,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 23.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            156,
+            500
+          ],
+          "bis": [
+            156,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            161,
+            500
+          ],
+          "bis": [
+            165,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 21.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            175,
+            500
+          ],
+          "bis": [
+            175,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 6.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            177,
+            500
+          ],
+          "bis": [
+            179,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 22.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            181,
+            500
+          ],
+          "bis": [
+            184,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 12.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            188,
+            500
+          ],
+          "bis": [
+            193,
+            500
+          ],
+          "laenge": 6,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            195,
+            500
+          ],
+          "bis": [
+            195,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            197,
+            500
+          ],
+          "bis": [
+            197,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 9.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            206,
+            500
+          ],
+          "bis": [
+            206,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            209,
+            500
+          ],
+          "bis": [
+            209,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            211,
+            500
+          ],
+          "bis": [
+            211,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 17.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            214,
+            500
+          ],
+          "bis": [
+            216,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            219,
+            500
+          ],
+          "bis": [
+            222,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 21.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            225,
+            500
+          ],
+          "bis": [
+            225,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            227,
+            500
+          ],
+          "bis": [
+            227,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 19.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            229,
+            500
+          ],
+          "bis": [
+            229,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            235,
+            500
+          ],
+          "bis": [
+            238,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 22.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            242,
+            500
+          ],
+          "bis": [
+            248,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 22.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            250,
+            500
+          ],
+          "bis": [
+            255,
+            500
+          ],
+          "laenge": 6,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            257,
+            500
+          ],
+          "bis": [
+            260,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 15.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            265,
+            500
+          ],
+          "bis": [
+            267,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 14.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            269,
+            500
+          ],
+          "bis": [
+            272,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            274,
+            500
+          ],
+          "bis": [
+            274,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 19.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            278,
+            500
+          ],
+          "bis": [
+            278,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            280,
+            500
+          ],
+          "bis": [
+            280,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 8.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100103",
+          "teilkachel": "r0c0",
+          "id": 100103,
+          "klasse": "4.3",
+          "grob": "4",
+          "name": "verbuschte Wiese, Gebüsch-Hochstauden-Mosaik",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 74755,
+          "flaeche_kern": 53752,
+          "vorstufe": [
+            100056,
+            100166,
+            100172,
+            100195,
+            100193,
+            100176
+          ],
+          "notiz": "Grenze zur offenen Wiese geschätzt; Trampelpfad nicht ausgeschieden",
+          "id_abgabe": 103,
+          "klasse_teil": "3.3",
+          "klasse_teil_name": "Verbuschte Wiese (Gebüsch-Hochstauden-Mosaik)"
+        },
+        {
+          "segment": "r1c0:300016",
+          "teilkachel": "r1c0",
+          "id": 300016,
+          "klasse": "4.1",
+          "grob": "4",
+          "name": "Wiese / Grünland",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 68591,
+          "bbox": [
+            0,
+            0,
+            379,
+            317
+          ],
+          "id_abgabe": 16,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Wiese / Grünland"
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "paar": "r0c0:100103|r1c0:300006",
+      "art": "naht",
+      "bild": "paar_05.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            173,
+            500
+          ],
+          "bis": [
+            173,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 16.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100103",
+          "teilkachel": "r0c0",
+          "id": 100103,
+          "klasse": "4.3",
+          "grob": "4",
+          "name": "verbuschte Wiese, Gebüsch-Hochstauden-Mosaik",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 74755,
+          "flaeche_kern": 53752,
+          "vorstufe": [
+            100056,
+            100166,
+            100172,
+            100195,
+            100193,
+            100176
+          ],
+          "notiz": "Grenze zur offenen Wiese geschätzt; Trampelpfad nicht ausgeschieden",
+          "id_abgabe": 103,
+          "klasse_teil": "3.3",
+          "klasse_teil_name": "Verbuschte Wiese (Gebüsch-Hochstauden-Mosaik)"
+        },
+        {
+          "segment": "r1c0:300006",
+          "teilkachel": "r1c0",
+          "id": 300006,
+          "klasse": "6.5",
+          "grob": "6",
+          "name": "Gebüsch / Strauchgruppe",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 133,
+          "bbox": [
+            228,
+            56,
+            239,
+            74
+          ],
+          "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+          "id_abgabe": 6,
+          "klasse_teil": "1.4",
+          "klasse_teil_name": "Gebüsch / Strauchgruppe"
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "paar": "r0c0:100122|r1c0:300051",
+      "art": "naht",
+      "bild": "paar_06.jpg",
+      "randpunkte": 85,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            283,
+            500
+          ],
+          "bis": [
+            283,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            293,
+            500
+          ],
+          "bis": [
+            293,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 20.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            297,
+            500
+          ],
+          "bis": [
+            297,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 18.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            300,
+            500
+          ],
+          "bis": [
+            300,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            302,
+            500
+          ],
+          "bis": [
+            303,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 8.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            305,
+            500
+          ],
+          "bis": [
+            308,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 23.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            314,
+            500
+          ],
+          "bis": [
+            315,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            317,
+            500
+          ],
+          "bis": [
+            319,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 23.4
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            323,
+            500
+          ],
+          "bis": [
+            325,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 21.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            329,
+            500
+          ],
+          "bis": [
+            333,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 16.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            338,
+            500
+          ],
+          "bis": [
+            339,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 20.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            341,
+            500
+          ],
+          "bis": [
+            350,
+            500
+          ],
+          "laenge": 10,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            353,
+            500
+          ],
+          "bis": [
+            355,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 17.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            363,
+            500
+          ],
+          "bis": [
+            364,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            369,
+            500
+          ],
+          "bis": [
+            372,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 22.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            376,
+            500
+          ],
+          "bis": [
+            385,
+            500
+          ],
+          "laenge": 10,
+          "kante_max": 17.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            387,
+            500
+          ],
+          "bis": [
+            390,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            392,
+            500
+          ],
+          "bis": [
+            399,
+            500
+          ],
+          "laenge": 8,
+          "kante_max": 21.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            403,
+            500
+          ],
+          "bis": [
+            403,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.1
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            406,
+            500
+          ],
+          "bis": [
+            410,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 19.8
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            417,
+            500
+          ],
+          "bis": [
+            426,
+            500
+          ],
+          "laenge": 10,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            428,
+            500
+          ],
+          "bis": [
+            428,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 14.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            438,
+            500
+          ],
+          "bis": [
+            438,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.6
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            440,
+            500
+          ],
+          "bis": [
+            440,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100122",
+          "teilkachel": "r0c0",
+          "id": 100122,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Laubholz-Bestand, helle Kronen",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 15318,
+          "flaeche_kern": 6149,
+          "vorstufe": [
+            100056,
+            100191,
+            100189,
+            100183,
+            100179,
+            100206
+          ],
+          "id_abgabe": 122,
+          "klasse_teil": "4.2.1",
+          "klasse_teil_name": "Laubholz-Bestand"
+        },
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "paar": "r0c0:100122|r1c0:300016",
+      "art": "naht",
+      "bild": "paar_07.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            310,
+            500
+          ],
+          "bis": [
+            310,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 16.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100122",
+          "teilkachel": "r0c0",
+          "id": 100122,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Laubholz-Bestand, helle Kronen",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 15318,
+          "flaeche_kern": 6149,
+          "vorstufe": [
+            100056,
+            100191,
+            100189,
+            100183,
+            100179,
+            100206
+          ],
+          "id_abgabe": 122,
+          "klasse_teil": "4.2.1",
+          "klasse_teil_name": "Laubholz-Bestand"
+        },
+        {
+          "segment": "r1c0:300016",
+          "teilkachel": "r1c0",
+          "id": 300016,
+          "klasse": "4.1",
+          "grob": "4",
+          "name": "Wiese / Grünland",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 68591,
+          "bbox": [
+            0,
+            0,
+            379,
+            317
+          ],
+          "id_abgabe": 16,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Wiese / Grünland"
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "paar": "r0c0:100123|r1c0:300051",
+      "art": "naht",
+      "bild": "paar_08.jpg",
+      "randpunkte": 22,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            446,
+            500
+          ],
+          "bis": [
+            446,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 23.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            449,
+            500
+          ],
+          "bis": [
+            449,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 11.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            452,
+            500
+          ],
+          "bis": [
+            452,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            457,
+            500
+          ],
+          "bis": [
+            468,
+            500
+          ],
+          "laenge": 12,
+          "kante_max": 22.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            470,
+            500
+          ],
+          "bis": [
+            476,
+            500
+          ],
+          "laenge": 7,
+          "kante_max": 23.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100123",
+          "teilkachel": "r0c0",
+          "id": 100123,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Gehölz dunkel SO",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 3945,
+          "flaeche_kern": 552,
+          "vorstufe": [
+            100194,
+            100200
+          ],
+          "id_abgabe": 123,
+          "klasse_teil": "4.2",
+          "klasse_teil_name": "Baumgruppe / Gehölzbestand"
+        },
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "paar": "r0c0:100120|r1c0:300051",
+      "art": "naht",
+      "bild": "paar_09.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            477,
+            500
+          ],
+          "bis": [
+            478,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 18.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            480,
+            500
+          ],
+          "bis": [
+            480,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 11.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100120",
+          "teilkachel": "r0c0",
+          "id": 100120,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese ungemäht südlich der Schwaden",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 18274,
+          "flaeche_kern": 10108,
+          "vorstufe": [
+            100175,
+            100197,
+            100198,
+            100196,
+            100174,
+            100173
+          ],
+          "id_abgabe": 120,
+          "klasse_teil": "3.1.1",
+          "klasse_teil_name": "Wiese ungemäht (Altgras, Kräuter)"
+        },
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "paar": "r0c0:100120|r1c0:300009",
+      "art": "naht",
+      "bild": "paar_10.jpg",
+      "randpunkte": 10,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            483,
+            500
+          ],
+          "bis": [
+            483,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 22.2
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            486,
+            500
+          ],
+          "bis": [
+            488,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 18.5
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            492,
+            500
+          ],
+          "bis": [
+            493,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 19.3
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            496,
+            500
+          ],
+          "bis": [
+            499,
+            500
+          ],
+          "laenge": 4,
+          "kante_max": 23.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100120",
+          "teilkachel": "r0c0",
+          "id": 100120,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese ungemäht südlich der Schwaden",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 18274,
+          "flaeche_kern": 10108,
+          "vorstufe": [
+            100175,
+            100197,
+            100198,
+            100196,
+            100174,
+            100173
+          ],
+          "id_abgabe": 120,
+          "klasse_teil": "3.1.1",
+          "klasse_teil_name": "Wiese ungemäht (Altgras, Kräuter)"
+        },
+        {
+          "segment": "r1c0:300009",
+          "teilkachel": "r1c0",
+          "id": 300009,
+          "klasse": "4.1",
+          "grob": "4",
+          "name": "Wiese / Grünland",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 10530,
+          "bbox": [
+            504,
+            0,
+            627,
+            142
+          ],
+          "id_abgabe": 9,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Wiese / Grünland"
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "paar": "r0c0:100120|r1c0:300008",
+      "art": "naht",
+      "bild": "paar_11.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            489,
+            500
+          ],
+          "bis": [
+            489,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 3.7
+        },
+        {
+          "linie": "r0c0|r1c0",
+          "richtung": "waagrecht",
+          "von": [
+            491,
+            500
+          ],
+          "bis": [
+            491,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 22.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c0:100120",
+          "teilkachel": "r0c0",
+          "id": 100120,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese ungemäht südlich der Schwaden",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 18274,
+          "flaeche_kern": 10108,
+          "vorstufe": [
+            100175,
+            100197,
+            100198,
+            100196,
+            100174,
+            100173
+          ],
+          "id_abgabe": 120,
+          "klasse_teil": "3.1.1",
+          "klasse_teil_name": "Wiese ungemäht (Altgras, Kräuter)"
+        },
+        {
+          "segment": "r1c0:300008",
+          "teilkachel": "r1c0",
+          "id": 300008,
+          "klasse": "2.2.2",
+          "grob": "2",
+          "name": "Trampelpfad, unbefestigt",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 62,
+          "bbox": [
+            552,
+            62,
+            573,
+            74
+          ],
+          "offen": "Pfad von Hand nachgezeichnet, Verlauf nur stellenweise sichtbar",
+          "id_abgabe": 8,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Trampelpfad, unbefestigt"
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "paar": "r0c1:200164|r1c1:400017",
+      "art": "naht",
+      "bild": "paar_12.jpg",
+      "randpunkte": 15,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            500,
+            500
+          ],
+          "bis": [
+            500,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 7.1
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            502,
+            500
+          ],
+          "bis": [
+            510,
+            500
+          ],
+          "laenge": 9,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            512,
+            500
+          ],
+          "bis": [
+            514,
+            500
+          ],
+          "laenge": 3,
+          "kante_max": 24.5
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            516,
+            500
+          ],
+          "bis": [
+            517,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 23.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200164",
+          "teilkachel": "r0c1",
+          "id": 200164,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese langgrasig Süd",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 20278,
+          "flaeche_kern": 8251,
+          "herkunft": "vorstufe:200189",
+          "id_abgabe": 164,
+          "klasse_teil": "3.2",
+          "klasse_teil_name": "Wiese langgrasig"
+        },
+        {
+          "segment": "r1c1:400017",
+          "teilkachel": "r1c1",
+          "id": 400017,
+          "klasse": "2.2.2",
+          "grob": "2",
+          "name": "Trampelpfad / Erdweg",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 1478,
+          "vorstufe_klasse": "6.6",
+          "notiz": "nur schwache helle Spur; Segment breiter als der Pfad, evtl. nur Wiese",
+          "id_abgabe": 400017,
+          "klasse_teil": "2.2.2",
+          "klasse_teil_name": "Trampelpfad / Erdweg"
+        }
+      ]
+    },
+    {
+      "nr": 13,
+      "paar": "r0c1:200176|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_13.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            583,
+            500
+          ],
+          "bis": [
+            583,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 22.0
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200176",
+          "teilkachel": "r0c1",
+          "id": 200176,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Gehölz dunkel Süd",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 6838,
+          "flaeche_kern": 416,
+          "herkunft": "vorstufe:200207",
+          "offen": "Vorstufe: Schatten; wirkt wie Kronen",
+          "id_abgabe": 176,
+          "klasse_teil": "4.2",
+          "klasse_teil_name": "Baumgruppe, dichtes Gehölz"
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese am Hang (extensiv)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 61427,
+          "vorstufe_klasse": "3.1",
+          "id_abgabe": 400002,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Wiese am Hang (extensiv)"
+        }
+      ]
+    },
+    {
+      "nr": 14,
+      "paar": "r0c1:200164|r1c1:400018",
+      "art": "naht",
+      "bild": "paar_14.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            639,
+            500
+          ],
+          "bis": [
+            639,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200164",
+          "teilkachel": "r0c1",
+          "id": 200164,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese langgrasig Süd",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 20278,
+          "flaeche_kern": 8251,
+          "herkunft": "vorstufe:200189",
+          "id_abgabe": 164,
+          "klasse_teil": "3.2",
+          "klasse_teil_name": "Wiese langgrasig"
+        },
+        {
+          "segment": "r1c1:400018",
+          "teilkachel": "r1c1",
+          "id": 400018,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Baumgruppe / Feldgehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 5703,
+          "vorstufe_klasse": "0.2",
+          "notiz": "Kronen und Schlagschatten nicht trennbar",
+          "id_abgabe": 400018,
+          "klasse_teil": "6.2",
+          "klasse_teil_name": "Baumgruppe / Feldgehölz"
+        }
+      ]
+    },
+    {
+      "nr": 15,
+      "paar": "r0c1:200164|r1c1:400011",
+      "art": "naht",
+      "bild": "paar_15.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            721,
+            500
+          ],
+          "bis": [
+            721,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 21.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200164",
+          "teilkachel": "r0c1",
+          "id": 200164,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese langgrasig Süd",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 20278,
+          "flaeche_kern": 8251,
+          "herkunft": "vorstufe:200189",
+          "id_abgabe": 164,
+          "klasse_teil": "3.2",
+          "klasse_teil_name": "Wiese langgrasig"
+        },
+        {
+          "segment": "r1c1:400011",
+          "teilkachel": "r1c1",
+          "id": 400011,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Baumgruppe / Feldgehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 2548,
+          "vorstufe_klasse": "0.2",
+          "notiz": "Kronen und Schlagschatten nicht trennbar",
+          "id_abgabe": 400011,
+          "klasse_teil": "6.2",
+          "klasse_teil_name": "Baumgruppe / Feldgehölz"
+        }
+      ]
+    },
+    {
+      "nr": 16,
+      "paar": "r0c1:200170|r1c1:400011",
+      "art": "naht",
+      "bild": "paar_16.jpg",
+      "randpunkte": 36,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            722,
+            500
+          ],
+          "bis": [
+            757,
+            500
+          ],
+          "laenge": 36,
+          "kante_max": 24.7
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200170",
+          "teilkachel": "r0c1",
+          "id": 200170,
+          "klasse": "6.3.1",
+          "grob": "6",
+          "name": "Laubbaum",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 2647,
+          "flaeche_kern": 1980,
+          "herkunft": "vorstufe:200197",
+          "id_abgabe": 170,
+          "klasse_teil": "4.1.1",
+          "klasse_teil_name": "Laubbaum"
+        },
+        {
+          "segment": "r1c1:400011",
+          "teilkachel": "r1c1",
+          "id": 400011,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Baumgruppe / Feldgehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 2548,
+          "vorstufe_klasse": "0.2",
+          "notiz": "Kronen und Schlagschatten nicht trennbar",
+          "id_abgabe": 400011,
+          "klasse_teil": "6.2",
+          "klasse_teil_name": "Baumgruppe / Feldgehölz"
+        }
+      ]
+    },
+    {
+      "nr": 17,
+      "paar": "r0c1:200170|r1c1:400019",
+      "art": "naht",
+      "bild": "paar_17.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            758,
+            500
+          ],
+          "bis": [
+            758,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 9.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200170",
+          "teilkachel": "r0c1",
+          "id": 200170,
+          "klasse": "6.3.1",
+          "grob": "6",
+          "name": "Laubbaum",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 2647,
+          "flaeche_kern": 1980,
+          "herkunft": "vorstufe:200197",
+          "id_abgabe": 170,
+          "klasse_teil": "4.1.1",
+          "klasse_teil_name": "Laubbaum"
+        },
+        {
+          "segment": "r1c1:400019",
+          "teilkachel": "r1c1",
+          "id": 400019,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Baumgruppe / Feldgehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 3465,
+          "vorstufe_klasse": "4.2.1",
+          "notiz": "Kronen und Schlagschatten nicht trennbar",
+          "id_abgabe": 400019,
+          "klasse_teil": "6.2",
+          "klasse_teil_name": "Baumgruppe / Feldgehölz"
+        }
+      ]
+    },
+    {
+      "nr": 18,
+      "paar": "r0c1:200175|r1c1:400019",
+      "art": "naht",
+      "bild": "paar_18.jpg",
+      "randpunkte": 8,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            759,
+            500
+          ],
+          "bis": [
+            760,
+            500
+          ],
+          "laenge": 2,
+          "kante_max": 13.7
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            762,
+            500
+          ],
+          "bis": [
+            762,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 7.0
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            767,
+            500
+          ],
+          "bis": [
+            771,
+            500
+          ],
+          "laenge": 5,
+          "kante_max": 21.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200175",
+          "teilkachel": "r0c1",
+          "id": 200175,
+          "klasse": "6.3.1",
+          "grob": "6",
+          "name": "Laubbaum Süd",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 3998,
+          "flaeche_kern": 310,
+          "herkunft": "vorstufe:200206",
+          "id_abgabe": 175,
+          "klasse_teil": "4.1.1",
+          "klasse_teil_name": "Laubbaum"
+        },
+        {
+          "segment": "r1c1:400019",
+          "teilkachel": "r1c1",
+          "id": 400019,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Baumgruppe / Feldgehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 3465,
+          "vorstufe_klasse": "4.2.1",
+          "notiz": "Kronen und Schlagschatten nicht trennbar",
+          "id_abgabe": 400019,
+          "klasse_teil": "6.2",
+          "klasse_teil_name": "Baumgruppe / Feldgehölz"
+        }
+      ]
+    },
+    {
+      "nr": 19,
+      "paar": "r0c1:200175|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_19.jpg",
+      "randpunkte": 9,
+      "strecken": [
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            773,
+            500
+          ],
+          "bis": [
+            780,
+            500
+          ],
+          "laenge": 8,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r0c1|r1c1",
+          "richtung": "waagrecht",
+          "von": [
+            783,
+            500
+          ],
+          "bis": [
+            783,
+            500
+          ],
+          "laenge": 1,
+          "kante_max": 19.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r0c1:200175",
+          "teilkachel": "r0c1",
+          "id": 200175,
+          "klasse": "6.3.1",
+          "grob": "6",
+          "name": "Laubbaum Süd",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 3998,
+          "flaeche_kern": 310,
+          "herkunft": "vorstufe:200206",
+          "id_abgabe": 175,
+          "klasse_teil": "4.1.1",
+          "klasse_teil_name": "Laubbaum"
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese am Hang (extensiv)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 61427,
+          "vorstufe_klasse": "3.1",
+          "id_abgabe": 400002,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Wiese am Hang (extensiv)"
+        }
+      ]
+    },
+    {
+      "nr": 20,
+      "paar": "r1c0:300016|r1c0:300051",
+      "art": "viertel",
+      "bild": "paar_20.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            525
+          ],
+          "bis": [
+            250,
+            525
+          ],
+          "laenge": 1,
+          "kante_max": 20.7
+        },
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            533
+          ],
+          "bis": [
+            250,
+            533
+          ],
+          "laenge": 1,
+          "kante_max": 21.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300016",
+          "teilkachel": "r1c0",
+          "id": 300016,
+          "klasse": "4.1",
+          "grob": "4",
+          "name": "Wiese / Grünland",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 68591,
+          "bbox": [
+            0,
+            0,
+            379,
+            317
+          ],
+          "id_abgabe": 16,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Wiese / Grünland"
+        },
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        }
+      ]
+    },
+    {
+      "nr": 21,
+      "paar": "r1c0:300051|r1c0:300054",
+      "art": "viertel",
+      "bild": "paar_21.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            831
+          ],
+          "bis": [
+            250,
+            831
+          ],
+          "laenge": 1,
+          "kante_max": 8.6
+        },
+        {
+          "linie": "r1c0:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            250,
+            902
+          ],
+          "bis": [
+            250,
+            902
+          ],
+          "laenge": 1,
+          "kante_max": 12.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        },
+        {
+          "segment": "r1c0:300054",
+          "teilkachel": "r1c0",
+          "id": 300054,
+          "klasse": "6.1.2",
+          "grob": "6",
+          "name": "Kronendach beschattet / dunkler Bestand",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 13981,
+          "bbox": [
+            142,
+            391,
+            377,
+            493
+          ],
+          "offen": "dunkle Fläche: Schlagschatten im Bestand oder dunkle Baumart (Nadelholz?) nicht unterscheidbar; Wald selbst sicher",
+          "id_abgabe": 54,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Kronendach beschattet / dunkler Bestand"
+        }
+      ]
+    },
+    {
+      "nr": 22,
+      "paar": "r1c0:300038|r1c0:300045",
+      "art": "viertel",
+      "bild": "paar_22.jpg",
+      "randpunkte": 4,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            44,
+            750
+          ],
+          "bis": [
+            47,
+            750
+          ],
+          "laenge": 4,
+          "kante_max": 16.2
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300038",
+          "teilkachel": "r1c0",
+          "id": 300038,
+          "klasse": "5.2",
+          "grob": "5",
+          "name": "vegetationsarme Stelle (Boden / Trockengras / Streu)",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 2213,
+          "bbox": [
+            85,
+            258,
+            151,
+            314
+          ],
+          "offen": "offener Boden, Trockengras, Mähgut oder Trittstelle nicht unterscheidbar",
+          "id_abgabe": 38,
+          "klasse_teil": "3.1",
+          "klasse_teil_name": "vegetationsarme Stelle (Boden / Trockengras / Streu)"
+        },
+        {
+          "segment": "r1c0:300045",
+          "teilkachel": "r1c0",
+          "id": 300045,
+          "klasse": "4.2",
+          "grob": "4",
+          "name": "Saum / verbuschende Krautflur",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 22641,
+          "bbox": [
+            0,
+            231,
+            356,
+            443
+          ],
+          "offen": "Grenze Wiese/Saum von Hand gezogen (Übergang fließend)",
+          "id_abgabe": 45,
+          "klasse_teil": "2.3",
+          "klasse_teil_name": "Saum / verbuschende Krautflur"
+        }
+      ]
+    },
+    {
+      "nr": 23,
+      "paar": "r1c0:300016|r1c0:300045",
+      "art": "viertel",
+      "bild": "paar_23.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            108,
+            750
+          ],
+          "bis": [
+            108,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 15.4
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300016",
+          "teilkachel": "r1c0",
+          "id": 300016,
+          "klasse": "4.1",
+          "grob": "4",
+          "name": "Wiese / Grünland",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 68591,
+          "bbox": [
+            0,
+            0,
+            379,
+            317
+          ],
+          "id_abgabe": 16,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Wiese / Grünland"
+        },
+        {
+          "segment": "r1c0:300045",
+          "teilkachel": "r1c0",
+          "id": 300045,
+          "klasse": "4.2",
+          "grob": "4",
+          "name": "Saum / verbuschende Krautflur",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 22641,
+          "bbox": [
+            0,
+            231,
+            356,
+            443
+          ],
+          "offen": "Grenze Wiese/Saum von Hand gezogen (Übergang fließend)",
+          "id_abgabe": 45,
+          "klasse_teil": "2.3",
+          "klasse_teil_name": "Saum / verbuschende Krautflur"
+        }
+      ]
+    },
+    {
+      "nr": 24,
+      "paar": "r1c0:300045|r1c0:300049",
+      "art": "viertel",
+      "bild": "paar_24.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            160,
+            750
+          ],
+          "bis": [
+            160,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 23.8
+        },
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            175,
+            750
+          ],
+          "bis": [
+            175,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 23.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300045",
+          "teilkachel": "r1c0",
+          "id": 300045,
+          "klasse": "4.2",
+          "grob": "4",
+          "name": "Saum / verbuschende Krautflur",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 22641,
+          "bbox": [
+            0,
+            231,
+            356,
+            443
+          ],
+          "offen": "Grenze Wiese/Saum von Hand gezogen (Übergang fließend)",
+          "id_abgabe": 45,
+          "klasse_teil": "2.3",
+          "klasse_teil_name": "Saum / verbuschende Krautflur"
+        },
+        {
+          "segment": "r1c0:300049",
+          "teilkachel": "r1c0",
+          "id": 300049,
+          "klasse": "6.3",
+          "grob": "6",
+          "name": "Einzelbaum, freistehend",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 863,
+          "bbox": [
+            222,
+            310,
+            250,
+            355
+          ],
+          "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+          "id_abgabe": 49,
+          "klasse_teil": "1.2",
+          "klasse_teil_name": "Einzelbaum, freistehend"
+        }
+      ]
+    },
+    {
+      "nr": 25,
+      "paar": "r1c0:300041|r1c0:300045",
+      "art": "viertel",
+      "bild": "paar_25.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            216,
+            750
+          ],
+          "bis": [
+            216,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 18.1
+        },
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            238,
+            750
+          ],
+          "bis": [
+            238,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 19.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300041",
+          "teilkachel": "r1c0",
+          "id": 300041,
+          "klasse": "6.3",
+          "grob": "6",
+          "name": "Einzelbaum, freistehend",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 914,
+          "bbox": [
+            265,
+            276,
+            302,
+            318
+          ],
+          "offen": "freistehende Krone; Baum oder hoher Strauch nicht sicher getrennt",
+          "id_abgabe": 41,
+          "klasse_teil": "1.2",
+          "klasse_teil_name": "Einzelbaum, freistehend"
+        },
+        {
+          "segment": "r1c0:300045",
+          "teilkachel": "r1c0",
+          "id": 300045,
+          "klasse": "4.2",
+          "grob": "4",
+          "name": "Saum / verbuschende Krautflur",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 22641,
+          "bbox": [
+            0,
+            231,
+            356,
+            443
+          ],
+          "offen": "Grenze Wiese/Saum von Hand gezogen (Übergang fließend)",
+          "id_abgabe": 45,
+          "klasse_teil": "2.3",
+          "klasse_teil_name": "Saum / verbuschende Krautflur"
+        }
+      ]
+    },
+    {
+      "nr": 26,
+      "paar": "r1c0:300034|r1c0:300051",
+      "art": "viertel",
+      "bild": "paar_26.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            381,
+            750
+          ],
+          "bis": [
+            381,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 17.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300034",
+          "teilkachel": "r1c0",
+          "id": 300034,
+          "klasse": "4.3",
+          "grob": "4",
+          "name": "Lichtung / Krautflur im Gehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 3839,
+          "bbox": [
+            392,
+            212,
+            469,
+            331
+          ],
+          "offen": "helle Fläche im Gehölz; Krautflur/Lichtung oder sehr helle, niedrige Gehölzkronen",
+          "id_abgabe": 34,
+          "klasse_teil": "2.2",
+          "klasse_teil_name": "Lichtung / Krautflur im Gehölz"
+        },
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        }
+      ]
+    },
+    {
+      "nr": 27,
+      "paar": "r1c0:300042|r1c0:300051",
+      "art": "viertel",
+      "bild": "paar_27.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            453,
+            750
+          ],
+          "bis": [
+            453,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 15.6
+        },
+        {
+          "linie": "r1c0:viertel-waagrecht",
+          "richtung": "waagrecht",
+          "von": [
+            482,
+            750
+          ],
+          "bis": [
+            482,
+            750
+          ],
+          "laenge": 1,
+          "kante_max": 14.5
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300042",
+          "teilkachel": "r1c0",
+          "id": 300042,
+          "klasse": "6.1.2",
+          "grob": "6",
+          "name": "Kronendach beschattet / dunkler Bestand",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 5853,
+          "bbox": [
+            478,
+            241,
+            584,
+            380
+          ],
+          "offen": "dunkle Fläche: Schlagschatten im Bestand oder dunkle Baumart (Nadelholz?) nicht unterscheidbar; Wald selbst sicher",
+          "id_abgabe": 42,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Kronendach beschattet / dunkler Bestand"
+        },
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        }
+      ]
+    },
+    {
+      "nr": 28,
+      "paar": "r1c0:300009|r1c1:400017",
+      "art": "naht",
+      "bild": "paar_28.jpg",
+      "randpunkte": 7,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            500
+          ],
+          "bis": [
+            500,
+            504
+          ],
+          "laenge": 5,
+          "kante_max": 14.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            508
+          ],
+          "bis": [
+            500,
+            509
+          ],
+          "laenge": 2,
+          "kante_max": 18.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300009",
+          "teilkachel": "r1c0",
+          "id": 300009,
+          "klasse": "4.1",
+          "grob": "4",
+          "name": "Wiese / Grünland",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 10530,
+          "bbox": [
+            504,
+            0,
+            627,
+            142
+          ],
+          "id_abgabe": 9,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Wiese / Grünland"
+        },
+        {
+          "segment": "r1c1:400017",
+          "teilkachel": "r1c1",
+          "id": 400017,
+          "klasse": "2.2.2",
+          "grob": "2",
+          "name": "Trampelpfad / Erdweg",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 1478,
+          "vorstufe_klasse": "6.6",
+          "notiz": "nur schwache helle Spur; Segment breiter als der Pfad, evtl. nur Wiese",
+          "id_abgabe": 400017,
+          "klasse_teil": "2.2.2",
+          "klasse_teil_name": "Trampelpfad / Erdweg"
+        }
+      ]
+    },
+    {
+      "nr": 29,
+      "paar": "r1c0:300009|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_29.jpg",
+      "randpunkte": 15,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            511
+          ],
+          "bis": [
+            500,
+            511
+          ],
+          "laenge": 1,
+          "kante_max": 15.2
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            516
+          ],
+          "bis": [
+            500,
+            521
+          ],
+          "laenge": 6,
+          "kante_max": 21.2
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            523
+          ],
+          "bis": [
+            500,
+            527
+          ],
+          "laenge": 5,
+          "kante_max": 24.1
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            529
+          ],
+          "bis": [
+            500,
+            531
+          ],
+          "laenge": 3,
+          "kante_max": 14.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300009",
+          "teilkachel": "r1c0",
+          "id": 300009,
+          "klasse": "4.1",
+          "grob": "4",
+          "name": "Wiese / Grünland",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 10530,
+          "bbox": [
+            504,
+            0,
+            627,
+            142
+          ],
+          "id_abgabe": 9,
+          "klasse_teil": "2.1",
+          "klasse_teil_name": "Wiese / Grünland"
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese am Hang (extensiv)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 61427,
+          "vorstufe_klasse": "3.1",
+          "id_abgabe": 400002,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Wiese am Hang (extensiv)"
+        }
+      ]
+    },
+    {
+      "nr": 30,
+      "paar": "r1c0:300014|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_30.jpg",
+      "randpunkte": 3,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            513
+          ],
+          "bis": [
+            500,
+            515
+          ],
+          "laenge": 3,
+          "kante_max": 18.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300014",
+          "teilkachel": "r1c0",
+          "id": 300014,
+          "klasse": "6.5",
+          "grob": "6",
+          "name": "Gebüsch / Strauchgruppe",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 79,
+          "bbox": [
+            561,
+            76,
+            575,
+            85
+          ],
+          "offen": "kleiner dunkler Fleck; Strauch, Jungbaum oder dichter Krautbult nicht sicher getrennt",
+          "id_abgabe": 14,
+          "klasse_teil": "1.4",
+          "klasse_teil_name": "Gebüsch / Strauchgruppe"
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese am Hang (extensiv)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 61427,
+          "vorstufe_klasse": "3.1",
+          "id_abgabe": 400002,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Wiese am Hang (extensiv)"
+        }
+      ]
+    },
+    {
+      "nr": 31,
+      "paar": "r1c0:300051|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_31.jpg",
+      "randpunkte": 32,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            532
+          ],
+          "bis": [
+            500,
+            533
+          ],
+          "laenge": 2,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            541
+          ],
+          "bis": [
+            500,
+            543
+          ],
+          "laenge": 3,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            545
+          ],
+          "bis": [
+            500,
+            545
+          ],
+          "laenge": 1,
+          "kante_max": 17.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            547
+          ],
+          "bis": [
+            500,
+            548
+          ],
+          "laenge": 2,
+          "kante_max": 23.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            550
+          ],
+          "bis": [
+            500,
+            553
+          ],
+          "laenge": 4,
+          "kante_max": 16.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            555
+          ],
+          "bis": [
+            500,
+            555
+          ],
+          "laenge": 1,
+          "kante_max": 17.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            557
+          ],
+          "bis": [
+            500,
+            557
+          ],
+          "laenge": 1,
+          "kante_max": 10.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            561
+          ],
+          "bis": [
+            500,
+            562
+          ],
+          "laenge": 2,
+          "kante_max": 23.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            570
+          ],
+          "bis": [
+            500,
+            570
+          ],
+          "laenge": 1,
+          "kante_max": 16.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            573
+          ],
+          "bis": [
+            500,
+            575
+          ],
+          "laenge": 3,
+          "kante_max": 24.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            587
+          ],
+          "bis": [
+            500,
+            588
+          ],
+          "laenge": 2,
+          "kante_max": 15.1
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            590
+          ],
+          "bis": [
+            500,
+            590
+          ],
+          "laenge": 1,
+          "kante_max": 12.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            598
+          ],
+          "bis": [
+            500,
+            600
+          ],
+          "laenge": 3,
+          "kante_max": 21.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            606
+          ],
+          "bis": [
+            500,
+            611
+          ],
+          "laenge": 6,
+          "kante_max": 20.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese am Hang (extensiv)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 61427,
+          "vorstufe_klasse": "3.1",
+          "id_abgabe": 400002,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Wiese am Hang (extensiv)"
+        }
+      ]
+    },
+    {
+      "nr": 32,
+      "paar": "r1c0:300021|r1c1:400002",
+      "art": "naht",
+      "bild": "paar_32.jpg",
+      "randpunkte": 2,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            580
+          ],
+          "bis": [
+            500,
+            581
+          ],
+          "laenge": 2,
+          "kante_max": 24.9
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300021",
+          "teilkachel": "r1c0",
+          "id": 300021,
+          "klasse": "4.3",
+          "grob": "4",
+          "name": "Lichtung / Krautflur im Gehölz",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 9912,
+          "bbox": [
+            421,
+            112,
+            605,
+            234
+          ],
+          "begruendung": "deutliche Gras-Lichtung mit Pfad, ringsum Gehölz",
+          "id_abgabe": 21,
+          "klasse_teil": "2.2",
+          "klasse_teil_name": "Lichtung / Krautflur im Gehölz"
+        },
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese am Hang (extensiv)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 61427,
+          "vorstufe_klasse": "3.1",
+          "id_abgabe": 400002,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Wiese am Hang (extensiv)"
+        }
+      ]
+    },
+    {
+      "nr": 33,
+      "paar": "r1c0:300051|r1c1:400034",
+      "art": "naht",
+      "bild": "paar_33.jpg",
+      "randpunkte": 152,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            613
+          ],
+          "bis": [
+            500,
+            613
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            640
+          ],
+          "bis": [
+            500,
+            640
+          ],
+          "laenge": 1,
+          "kante_max": 7.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            643
+          ],
+          "bis": [
+            500,
+            643
+          ],
+          "laenge": 1,
+          "kante_max": 19.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            647
+          ],
+          "bis": [
+            500,
+            648
+          ],
+          "laenge": 2,
+          "kante_max": 21.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            650
+          ],
+          "bis": [
+            500,
+            651
+          ],
+          "laenge": 2,
+          "kante_max": 20.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            653
+          ],
+          "bis": [
+            500,
+            653
+          ],
+          "laenge": 1,
+          "kante_max": 21.1
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            656
+          ],
+          "bis": [
+            500,
+            656
+          ],
+          "laenge": 1,
+          "kante_max": 12.8
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            659
+          ],
+          "bis": [
+            500,
+            660
+          ],
+          "laenge": 2,
+          "kante_max": 18.8
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            662
+          ],
+          "bis": [
+            500,
+            662
+          ],
+          "laenge": 1,
+          "kante_max": 12.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            664
+          ],
+          "bis": [
+            500,
+            667
+          ],
+          "laenge": 4,
+          "kante_max": 23.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            739
+          ],
+          "bis": [
+            500,
+            743
+          ],
+          "laenge": 5,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            745
+          ],
+          "bis": [
+            500,
+            746
+          ],
+          "laenge": 2,
+          "kante_max": 17.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            774
+          ],
+          "bis": [
+            500,
+            778
+          ],
+          "laenge": 5,
+          "kante_max": 20.8
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            784
+          ],
+          "bis": [
+            500,
+            784
+          ],
+          "laenge": 1,
+          "kante_max": 22.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            798
+          ],
+          "bis": [
+            500,
+            798
+          ],
+          "laenge": 1,
+          "kante_max": 15.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            801
+          ],
+          "bis": [
+            500,
+            801
+          ],
+          "laenge": 1,
+          "kante_max": 19.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            804
+          ],
+          "bis": [
+            500,
+            806
+          ],
+          "laenge": 3,
+          "kante_max": 21.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            808
+          ],
+          "bis": [
+            500,
+            810
+          ],
+          "laenge": 3,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            816
+          ],
+          "bis": [
+            500,
+            819
+          ],
+          "laenge": 4,
+          "kante_max": 23.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            822
+          ],
+          "bis": [
+            500,
+            824
+          ],
+          "laenge": 3,
+          "kante_max": 20.2
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            827
+          ],
+          "bis": [
+            500,
+            829
+          ],
+          "laenge": 3,
+          "kante_max": 19.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            831
+          ],
+          "bis": [
+            500,
+            831
+          ],
+          "laenge": 1,
+          "kante_max": 23.2
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            837
+          ],
+          "bis": [
+            500,
+            848
+          ],
+          "laenge": 12,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            851
+          ],
+          "bis": [
+            500,
+            855
+          ],
+          "laenge": 5,
+          "kante_max": 22.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            857
+          ],
+          "bis": [
+            500,
+            859
+          ],
+          "laenge": 3,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            862
+          ],
+          "bis": [
+            500,
+            864
+          ],
+          "laenge": 3,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            866
+          ],
+          "bis": [
+            500,
+            866
+          ],
+          "laenge": 1,
+          "kante_max": 12.8
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            868
+          ],
+          "bis": [
+            500,
+            871
+          ],
+          "laenge": 4,
+          "kante_max": 19.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            875
+          ],
+          "bis": [
+            500,
+            878
+          ],
+          "laenge": 4,
+          "kante_max": 20.1
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            880
+          ],
+          "bis": [
+            500,
+            881
+          ],
+          "laenge": 2,
+          "kante_max": 17.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            883
+          ],
+          "bis": [
+            500,
+            887
+          ],
+          "laenge": 5,
+          "kante_max": 23.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            890
+          ],
+          "bis": [
+            500,
+            890
+          ],
+          "laenge": 1,
+          "kante_max": 16.4
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            905
+          ],
+          "bis": [
+            500,
+            905
+          ],
+          "laenge": 1,
+          "kante_max": 22.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            913
+          ],
+          "bis": [
+            500,
+            914
+          ],
+          "laenge": 2,
+          "kante_max": 21.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            918
+          ],
+          "bis": [
+            500,
+            928
+          ],
+          "laenge": 11,
+          "kante_max": 22.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            930
+          ],
+          "bis": [
+            500,
+            930
+          ],
+          "laenge": 1,
+          "kante_max": 20.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            932
+          ],
+          "bis": [
+            500,
+            941
+          ],
+          "laenge": 10,
+          "kante_max": 22.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            944
+          ],
+          "bis": [
+            500,
+            960
+          ],
+          "laenge": 17,
+          "kante_max": 21.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            970
+          ],
+          "bis": [
+            500,
+            970
+          ],
+          "laenge": 1,
+          "kante_max": 21.2
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            973
+          ],
+          "bis": [
+            500,
+            983
+          ],
+          "laenge": 11,
+          "kante_max": 24.7
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            985
+          ],
+          "bis": [
+            500,
+            992
+          ],
+          "laenge": 8,
+          "kante_max": 22.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            997
+          ],
+          "bis": [
+            500,
+            997
+          ],
+          "laenge": 1,
+          "kante_max": 19.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            999
+          ],
+          "bis": [
+            500,
+            999
+          ],
+          "laenge": 1,
+          "kante_max": 20.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        },
+        {
+          "segment": "r1c1:400034",
+          "teilkachel": "r1c1",
+          "id": 400034,
+          "klasse": "6.1",
+          "grob": "6",
+          "name": "Wald (geschlossener Bestand)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 39923,
+          "vorstufe_klasse": "4.1",
+          "id_abgabe": 400034,
+          "klasse_teil": "6.1",
+          "klasse_teil_name": "Wald (geschlossener Bestand)"
+        }
+      ]
+    },
+    {
+      "nr": 34,
+      "paar": "r1c0:300021|r1c1:400034",
+      "art": "naht",
+      "bild": "paar_34.jpg",
+      "randpunkte": 14,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            614
+          ],
+          "bis": [
+            500,
+            623
+          ],
+          "laenge": 10,
+          "kante_max": 21.5
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            627
+          ],
+          "bis": [
+            500,
+            627
+          ],
+          "laenge": 1,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            630
+          ],
+          "bis": [
+            500,
+            631
+          ],
+          "laenge": 2,
+          "kante_max": 24.9
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            638
+          ],
+          "bis": [
+            500,
+            638
+          ],
+          "laenge": 1,
+          "kante_max": 12.7
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300021",
+          "teilkachel": "r1c0",
+          "id": 300021,
+          "klasse": "4.3",
+          "grob": "4",
+          "name": "Lichtung / Krautflur im Gehölz",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 9912,
+          "bbox": [
+            421,
+            112,
+            605,
+            234
+          ],
+          "begruendung": "deutliche Gras-Lichtung mit Pfad, ringsum Gehölz",
+          "id_abgabe": 21,
+          "klasse_teil": "2.2",
+          "klasse_teil_name": "Lichtung / Krautflur im Gehölz"
+        },
+        {
+          "segment": "r1c1:400034",
+          "teilkachel": "r1c1",
+          "id": 400034,
+          "klasse": "6.1",
+          "grob": "6",
+          "name": "Wald (geschlossener Bestand)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 39923,
+          "vorstufe_klasse": "4.1",
+          "id_abgabe": 400034,
+          "klasse_teil": "6.1",
+          "klasse_teil_name": "Wald (geschlossener Bestand)"
+        }
+      ]
+    },
+    {
+      "nr": 35,
+      "paar": "r1c0:300022|r1c1:400034",
+      "art": "naht",
+      "bild": "paar_35.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            625
+          ],
+          "bis": [
+            500,
+            625
+          ],
+          "laenge": 1,
+          "kante_max": 21.6
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300022",
+          "teilkachel": "r1c0",
+          "id": 300022,
+          "klasse": "2.2.2",
+          "grob": "2",
+          "name": "Trampelpfad, unbefestigt",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 191,
+          "bbox": [
+            525,
+            185,
+            589,
+            202
+          ],
+          "offen": "Pfad von Hand nachgezeichnet, Verlauf nur stellenweise sichtbar",
+          "id_abgabe": 22,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Trampelpfad, unbefestigt"
+        },
+        {
+          "segment": "r1c1:400034",
+          "teilkachel": "r1c1",
+          "id": 400034,
+          "klasse": "6.1",
+          "grob": "6",
+          "name": "Wald (geschlossener Bestand)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 39923,
+          "vorstufe_klasse": "4.1",
+          "id_abgabe": 400034,
+          "klasse_teil": "6.1",
+          "klasse_teil_name": "Wald (geschlossener Bestand)"
+        }
+      ]
+    },
+    {
+      "nr": 36,
+      "paar": "r1c0:300051|r1c1:400052",
+      "art": "naht",
+      "bild": "paar_36.jpg",
+      "randpunkte": 52,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            673
+          ],
+          "bis": [
+            500,
+            677
+          ],
+          "laenge": 5,
+          "kante_max": 21.8
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            679
+          ],
+          "bis": [
+            500,
+            682
+          ],
+          "laenge": 4,
+          "kante_max": 15.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            685
+          ],
+          "bis": [
+            500,
+            691
+          ],
+          "laenge": 7,
+          "kante_max": 24.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            696
+          ],
+          "bis": [
+            500,
+            700
+          ],
+          "laenge": 5,
+          "kante_max": 12.0
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            727
+          ],
+          "bis": [
+            500,
+            735
+          ],
+          "laenge": 9,
+          "kante_max": 16.6
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            752
+          ],
+          "bis": [
+            500,
+            764
+          ],
+          "laenge": 13,
+          "kante_max": 19.8
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            766
+          ],
+          "bis": [
+            500,
+            767
+          ],
+          "laenge": 2,
+          "kante_max": 17.3
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            771
+          ],
+          "bis": [
+            500,
+            771
+          ],
+          "laenge": 1,
+          "kante_max": 7.8
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            773
+          ],
+          "bis": [
+            500,
+            773
+          ],
+          "laenge": 1,
+          "kante_max": 17.8
+        },
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            792
+          ],
+          "bis": [
+            500,
+            796
+          ],
+          "laenge": 5,
+          "kante_max": 19.8
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300051",
+          "teilkachel": "r1c0",
+          "id": 300051,
+          "klasse": "6.1.1",
+          "grob": "6",
+          "name": "Kronendach besonnt",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 224429,
+          "bbox": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "id_abgabe": 51,
+          "klasse_teil": "1.1.1",
+          "klasse_teil_name": "Kronendach besonnt"
+        },
+        {
+          "segment": "r1c1:400052",
+          "teilkachel": "r1c1",
+          "id": 400052,
+          "klasse": "6.1",
+          "grob": "6",
+          "name": "Wald (geschlossener Bestand)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 10887,
+          "vorstufe_klasse": "0.2",
+          "id_abgabe": 400052,
+          "klasse_teil": "6.1",
+          "klasse_teil_name": "Wald (geschlossener Bestand)"
+        }
+      ]
+    },
+    {
+      "nr": 37,
+      "paar": "r1c0:300042|r1c1:400052",
+      "art": "naht",
+      "bild": "paar_37.jpg",
+      "randpunkte": 26,
+      "strecken": [
+        {
+          "linie": "r1c0|r1c1",
+          "richtung": "senkrecht",
+          "von": [
+            500,
+            701
+          ],
+          "bis": [
+            500,
+            726
+          ],
+          "laenge": 26,
+          "kante_max": 16.1
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c0:300042",
+          "teilkachel": "r1c0",
+          "id": 300042,
+          "klasse": "6.1.2",
+          "grob": "6",
+          "name": "Kronendach beschattet / dunkler Bestand",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 5853,
+          "bbox": [
+            478,
+            241,
+            584,
+            380
+          ],
+          "offen": "dunkle Fläche: Schlagschatten im Bestand oder dunkle Baumart (Nadelholz?) nicht unterscheidbar; Wald selbst sicher",
+          "id_abgabe": 42,
+          "klasse_teil": "1.1.2",
+          "klasse_teil_name": "Kronendach beschattet / dunkler Bestand"
+        },
+        {
+          "segment": "r1c1:400052",
+          "teilkachel": "r1c1",
+          "id": 400052,
+          "klasse": "6.1",
+          "grob": "6",
+          "name": "Wald (geschlossener Bestand)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 10887,
+          "vorstufe_klasse": "0.2",
+          "id_abgabe": 400052,
+          "klasse_teil": "6.1",
+          "klasse_teil_name": "Wald (geschlossener Bestand)"
+        }
+      ]
+    },
+    {
+      "nr": 38,
+      "paar": "r1c1:400002|r1c1:400019",
+      "art": "viertel",
+      "bild": "paar_38.jpg",
+      "randpunkte": 1,
+      "strecken": [
+        {
+          "linie": "r1c1:viertel-senkrecht",
+          "richtung": "senkrecht",
+          "von": [
+            750,
+            563
+          ],
+          "bis": [
+            750,
+            563
+          ],
+          "laenge": 1,
+          "kante_max": 14.3
+        }
+      ],
+      "segmente": [
+        {
+          "segment": "r1c1:400002",
+          "teilkachel": "r1c1",
+          "id": 400002,
+          "klasse": "4.1.1",
+          "grob": "4",
+          "name": "Wiese am Hang (extensiv)",
+          "im_kern": true,
+          "sicher": "ja",
+          "flaeche": 61427,
+          "vorstufe_klasse": "3.1",
+          "id_abgabe": 400002,
+          "klasse_teil": "4.1",
+          "klasse_teil_name": "Wiese am Hang (extensiv)"
+        },
+        {
+          "segment": "r1c1:400019",
+          "teilkachel": "r1c1",
+          "id": 400019,
+          "klasse": "6.2",
+          "grob": "6",
+          "name": "Baumgruppe / Feldgehölz",
+          "im_kern": true,
+          "sicher": "nein",
+          "flaeche": 3465,
+          "vorstufe_klasse": "4.2.1",
+          "notiz": "Kronen und Schlagschatten nicht trennbar",
+          "id_abgabe": 400019,
+          "klasse_teil": "6.2",
+          "klasse_teil_name": "Baumgruppe / Feldgehölz"
+        }
+      ]
+    }
+  ],
+  "abgabe_muster": {
+    "schema": "landseg-einigung-abgabe/1",
+    "fassung": "A",
+    "buendel": "A-01",
+    "bearbeiter": "",
+    "paare": [
+      {
+        "paar": "r0c0:100070|r0c0:100103",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100070|r0c0:100098",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100119|r1c0:300016",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100103|r1c0:300016",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100103|r1c0:300006",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100122|r1c0:300051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100122|r1c0:300016",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100123|r1c0:300051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100120|r1c0:300051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100120|r1c0:300009",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c0:100120|r1c0:300008",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200164|r1c1:400017",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200176|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200164|r1c1:400018",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200164|r1c1:400011",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200170|r1c1:400011",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200170|r1c1:400019",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200175|r1c1:400019",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r0c1:200175|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300016|r1c0:300051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300051|r1c0:300054",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300038|r1c0:300045",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300016|r1c0:300045",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300045|r1c0:300049",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300041|r1c0:300045",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300034|r1c0:300051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300042|r1c0:300051",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300009|r1c1:400017",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300009|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300014|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300051|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300021|r1c1:400002",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300051|r1c1:400034",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300021|r1c1:400034",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300022|r1c1:400034",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300051|r1c1:400052",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c0:300042|r1c1:400052",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      },
+      {
+        "paar": "r1c1:400002|r1c1:400019",
+        "entscheidung": "",
+        "klasse": null,
+        "grund": ""
+      }
+    ],
+    "offen": [],
+    "nicht_geprueft": []
+  }
+}

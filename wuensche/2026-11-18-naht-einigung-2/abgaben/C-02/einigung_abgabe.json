@@ -1,0 +1,85 @@
+{
+ "schema": "landseg-einigung-abgabe/1",
+ "fassung": "C",
+ "buendel": "C-02",
+ "bearbeiter": "agent:einigung-C-02:20261118e",
+ "paare": [
+  {
+   "paar": "r0c0:100040|r0c1:200058",
+   "entscheidung": "gleich",
+   "klasse": "4.2",
+   "grund": "An der Ecke oben (500/0) setzen sich die dunklen Sträucher von 100040 ohne Kante in die Gartenecke 200058 fort; gemeinsame Klasse Gehölz außerhalb Wald, weil 200058 Sträucher, Heckenstücke und Rasen mischt und die Kette 100040–200043 dieselbe Klasse braucht."
+  },
+  {
+   "paar": "r0c0:100040|r0c1:200043",
+   "entscheidung": "gleich",
+   "klasse": "4.2",
+   "grund": "Zwischen y 2 und 30 liegen auf beiden Seiten der Naht dieselben dunkelgrünen Sträucher ohne Farbsprung; Elternklasse Gehölz außerhalb Wald, weil 200043 ein gemischtes Gartensegment ist und 4.2 schon trägt."
+  },
+  {
+   "paar": "r0c0:100061|r0c1:200043",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Bei y 31–48 läuft der Rasen von 100061 mit den hellen Gartenmöbeln ohne Kante über die Naht in 200043, das aber als Sammelsegment Rasen, Sträucher, Flachdach und Terrassen umfasst und in der Kette mit den Sträuchern von 100040 steht; eine Klasse für beide ist ohne Abtrennen von 200043 nicht richtig."
+  },
+  {
+   "paar": "r0c0:100074|r0c1:200043",
+   "entscheidung": "unklar",
+   "klasse": null,
+   "grund": "Bei y 52 reicht die helle Stelle mit Gartenmöbeln und Rasen (100074) ohne Kante in 200043 hinein; dort ist es Rasen, das Sammelsegment 200043 als Ganzes aber Gehölz und Garten gemischt, deshalb ohne Abtrennen keine gemeinsame Klasse."
+  },
+  {
+   "paar": "r0c0:100099|r0c1:200080",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Der hellgrüne Grasstreifen 100099 am Straßenrand berührt nur mit einer Ecke den unteren Rand der dunklen Baumkrone 200080; Saum und Krone sind verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100099|r0c1:200099",
+   "entscheidung": "gleich",
+   "klasse": "3.4",
+   "grund": "Der winzige Rest 200099 (4 Bildpunkte bei 500/90) liegt auf demselben hell graugrünen Randstreifen unter der Krone wie 100099; der Saum läuft ohne Kante durch, Wald ist dort nicht zu sehen."
+  },
+  {
+   "paar": "r0c0:100099|r0c1:200100",
+   "entscheidung": "gleich",
+   "klasse": "3.4",
+   "grund": "Der graugrüne Randstreifen zwischen Baumkrone und Asphalt setzt sich bei y 92–96 ohne Kante von 100099 in 200100 fort; es ist derselbe bewachsene Wegrand (Krautsaum), nicht die Fahrbahn."
+  },
+  {
+   "paar": "r0c0:100059|r0c1:200116",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die asphaltierte Straße 100059 endet am hellen Bordstein; darunter beginnt der dunkle Gehölzstreifen 200116, eine echte Grenze Straße/Gehölz, die sich nur an einem Punkt berührt."
+  },
+  {
+   "paar": "r0c0:100109|r0c1:200116",
+   "entscheidung": "gleich",
+   "klasse": "4.2",
+   "grund": "Der dunkle Strauch 100109 unter dem Bordstein setzt sich ohne Kante als dunkler Gehölzstreifen 200116 nach rechts fort; dieselbe Fläche, Elternklasse wie für die ganze Kette mit 100122."
+  },
+  {
+   "paar": "r0c0:100122|r0c1:200116",
+   "entscheidung": "gleich",
+   "klasse": "4.2",
+   "grund": "Bei y 204–223 gehen die grünen Sträucher von 100122 ohne Kante in die beschatteten Gartengehölze 200116 neben dem Haus über, der belichtete Strauch reicht sogar über die Naht; dieselbe Gehölzfläche, Elternklasse wegen der gemischten Gehölze in 200116."
+  },
+  {
+   "paar": "r0c0:100122|r0c1:200145",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Bei y 234–235 trifft die graugrüne Strauchfläche 100122 auf den Rand der rotlaubigen Einzelkrone 200145 (Blutbuche); Strauchfläche und Baumkrone sind verschiedene Flächen."
+  },
+  {
+   "paar": "r0c0:100114|r0c1:200107",
+   "entscheidung": "grenze",
+   "klasse": null,
+   "grund": "Die hell olivgrüne, grob gemusterte Baumkrone 100114 berührt nur an einem Punkt (500/129) die dunklen Gartengehölze 200107; Textur und Farbe zeigen zwei verschiedene Gehölze."
+  }
+ ],
+ "offen": [
+  "r0c1:200043 ist ein Sammelsegment (Rasen, Sträucher, Flachdach, Terrassen, Sandplatz); an der Naht bei y 31–52 setzt sich der Rasen von r0c0:100061 und r0c0:100074 darin fort. Paare 3 und 4 unklar, bis 200043 durch einen Eingriff in Rasen und Gehölz getrennt ist; danach Rasenteil 3.1 mit 100061/100074, Gehölzteil 4.2 mit 100040.",
+  "r0c1:200100 enthält rechts auch einige Bildpunkte Asphalt; der überwiegende Teil an der Naht ist bewachsener Randstreifen (3.4). Die Grenze zur Straße wäre per Eingriff nachzuziehen."
+ ],
+ "nicht_geprueft": []
+}

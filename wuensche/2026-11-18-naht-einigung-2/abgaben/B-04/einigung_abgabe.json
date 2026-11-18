@@ -1,0 +1,20 @@
+{"schema": "landseg-einigung-abgabe/1", "fassung": "B", "buendel": "B-04",
+ "bearbeiter": "agent:einigung-B-04:20261118e",
+ "paare": [
+  {"paar": "r1c0:300042|r1c1:400034", "entscheidung": "gleich", "klasse": "1.2",
+   "grund": "Dasselbe geschlossene Kronendach läuft über die gerade Naht ohne Bildkante weiter, links nur stärker beschattet; Kette 300042/300072/400034/400052 bekommt einheitlich Wald (1.2), weil Licht und Schatten innerhalb des Bestands wechseln."},
+  {"paar": "r1c0:300042|r1c1:400052", "entscheidung": "gleich", "klasse": "1.2",
+   "grund": "Dunkler Waldbestand im Schatten setzt sich links und rechts der geraden Naht ohne Kante fort (beide Teilkacheln nennen ihn Wald bzw. Schatten auf Wald); gleiche Kette, daher Wald (1.2)."},
+  {"paar": "r1c0:300072|r1c1:400034", "entscheidung": "gleich", "klasse": "1.2",
+   "grund": "Dunkle Kronen links und hellere Laubkronen rechts gehören zum selben Waldbestand, die Grenze ist nur die gerade Naht ohne Bildkante; Kette mit 300042 und 400052, daher Wald (1.2)."},
+  {"paar": "r1c1:400054|r1c1:400067", "entscheidung": "grenze", "klasse": null,
+   "grund": "Oben dunkle, gekörnte Strauchkronen, unten heller grüner Gras- bzw. Parzellenstreifen; zwei verschiedene Flächen, die sich nur an einem Punkt der Viertelgrenze berühren."},
+  {"paar": "r1c1:400067|r1c1:400131", "entscheidung": "unklar", "klasse": null,
+   "grund": "Am Berührungspunkt liegt auf beiden Seiten Gras ohne Kante; ob der kleine hellere Rasenfleck eine eigene Rasenfläche oder nur Teil der gemischten Gartenparzelle ist, lässt das Bild nicht sicher erkennen, und keine gemeinsame Klasse passt beiden."},
+  {"paar": "r1c1:400151|r1c1:400152", "entscheidung": "grenze", "klasse": null,
+   "grund": "Grau-rosa Satteldach des Gartenhauses mit heller Kante grenzt an die grüne Rasenfläche; echte Grenze zwischen Gebäude und Rasen."},
+  {"paar": "r1c1:400111|r1c1:400128", "entscheidung": "grenze", "klasse": null,
+   "grund": "Gleichmäßiger grüner Rasen links, rechts Gemüsebeete mit Reihen aus offenem Boden und hellen Wegen; zwei verschiedene Flächen."}
+ ],
+ "offen": ["r1c1:400067|r1c1:400131: Rasenfleck 400131 (187 px) gegen Mischsegment 400067 nicht entscheidbar; klärt sich erst, wenn 400067 in Rasen, Wege und Parzellen geteilt ist (Urteil r1c1, Punkte 1-5)."],
+ "nicht_geprueft": []}

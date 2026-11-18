@@ -1,0 +1,57 @@
+{
+  "schema": "landseg-einigung-auftrag/1",
+  "fassung": "B",
+  "ordner": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/b-kategorien-frei",
+  "kategorien": "C:/Users/Phil/Developement/Victor/daten/landseg/uebergabe/landseg-t0/T0/b-kategorien-frei/kategorien-b.json",
+  "zahlen": {
+    "offen": {
+      "paare": 5,
+      "strecken": 81,
+      "randpunkte": 241
+    },
+    "unsicher": {
+      "paare": 5,
+      "strecken": 32,
+      "randpunkte": 92
+    },
+    "geklaert": {
+      "paare": 54,
+      "strecken": 143,
+      "randpunkte": 500
+    },
+    "nach_art": {
+      "naht": {
+        "offen": 5,
+        "unsicher": 3,
+        "geklaert": 37
+      },
+      "viertel": {
+        "offen": 0,
+        "unsicher": 2,
+        "geklaert": 17
+      }
+    },
+    "ohne_kante": {
+      "paare": 84,
+      "randpunkte": 1306
+    }
+  },
+  "buendel": [
+    {
+      "buendel": "B-01",
+      "paare": 5,
+      "uebergross": false,
+      "segmente": [
+        "r0c0:100040",
+        "r0c0:100149",
+        "r0c1:200043",
+        "r0c1:200167",
+        "r0c1:200170",
+        "r1c0:300008",
+        "r1c1:400006",
+        "r1c1:400034",
+        "r1c1:400052"
+      ]
+    }
+  ]
+}
