@@ -4,7 +4,8 @@ Befehle: ``kacheln`` (W1), ``vorstufe`` (W2), ``ansicht`` (W3), ``kante`` (W4), 
 ``pruefen`` (W6), ``zusammentragen`` (W7), ``seite`` (W8, Übersichtsseite), ``naht`` (Nahtregel allein),
 ``einigung`` (Klassen an den Übergängen der Teilkacheln: ``finden``, ``anwenden``, ``abgabe``, ``messen``),
 ``urteil`` (``urteil.json`` aus kurzer Liste bauen, prüfen), ``zoom`` (Ausschnitt einer Stelle mit Umriss und
-Nummern), ``messung`` (Kosten eines Agent-Laufs aus den Transkripten). Exit-Code 0 = ok, 1 = Befund,
+Nummern), ``messung`` (Kosten eines Agent-Laufs aus den Transkripten), ``plan`` (Urteils-Agents eines Laufs:
+ein Agent je Viertel, Fassung A je Teilkachel, mit Prompt). Exit-Code 0 = ok, 1 = Befund,
 Nahtverstoß, offene Stellen oder Eingriff/Abgabe/Urteil abgelehnt, 2 = Aufruf- oder Lesefehler.
 """
 
@@ -28,6 +29,7 @@ from .einigung import EinigungFehler
 from .kacheln import KachelFehler, kacheln
 from .kante import einrasten
 from .messung import messung_befehl, tabelle
+from . import plan as plan_modul
 from .pruefen import pruefen
 from .seite import SeiteFehler, bilder_aus_einstellungen, seite
 from .vorstufe import Auftrag, VorstufeFehler, auftraege_aus_manifest, konfig_laden, vorstufe
@@ -98,6 +100,11 @@ def befehl_pruefen(a) -> int:
 
 
 def befehl_eingriff(a) -> int:
+    with dateien.karte_sperren(a.labels):   # mehrere Agents je Karte (ein Agent je Viertel)
+        return _eingriff(a)
+
+
+def _eingriff(a) -> int:
     karte = dateien.lese_labels(a.labels)
     segmente = dateien.lese_segmente(a.segmente)
     kat = kategorien.laden(a.kategorien)
@@ -362,6 +369,13 @@ def befehl_ansicht(a) -> int:
 
 
 def befehl_kante(a) -> int:
+    if a.trocken:
+        return _kante(a)
+    with dateien.karte_sperren(a.labels):   # mehrere Agents je Karte (ein Agent je Viertel)
+        return _kante(a)
+
+
+def _kante(a) -> int:
     karte = dateien.lese_labels(a.labels)
     bild = _rgb_bild(a.bild)
     vorgaben = einstellungen.laden("kante", a.einstellungen)
@@ -388,6 +402,19 @@ def befehl_kante(a) -> int:
     dateien.schreibe_labels(a.labels, arbeit.karte)
     dateien.schreibe_json(a.segmente, arbeit.segmente)
     return _befund_ausgeben(pruefen(arbeit.karte, arbeit.segmente, kat), False)
+
+
+def befehl_plan(a) -> int:
+    p = plan_modul.plan(a.auftraege, a.repo or Path(__file__).resolve().parent.parent, a.py or sys.executable,
+                        hinweis=a.hinweis or "", teilkacheln=a.teilkachel, viertel=a.viertel)
+    zeilen = plan_modul.log_zeilen(p)
+    if a.ziel:
+        dateien.schreibe_json(a.ziel, p)
+        zeilen.append(f"Plan geschrieben: {a.ziel}")
+    else:
+        zeilen.append("trocken: nichts geschrieben (ohne --ziel)")
+    print(json.dumps(p, ensure_ascii=False) if a.json else "\n".join(zeilen))
+    return 0
 
 
 def befehl_messung(a) -> int:
@@ -578,6 +605,19 @@ def parser() -> argparse.ArgumentParser:
     me.add_argument("--ziel", help="Ordner für messung.json und messung.md (sonst nur Ausgabe)")
     me.add_argument("--json", action="store_true", help="Ergebnis als JSON statt Tabelle")
     me.set_defaults(fn=befehl_messung)
+
+    pl = befehle.add_parser("plan", help="Urteils-Agents eines Laufs bilden: ein Agent je Viertel (B, C, "
+                                          "Gegenprobe), Fassung A je Teilkachel; je Agent ein Auftrag und Prompt")
+    pl.add_argument("--auftraege", required=True, help="auftraege.json der Vorbereitung (einheiten, Übersichtsbilder)")
+    pl.add_argument("--repo", help="Ordner des Repos im Prompt (Standard: dieses Repo)")
+    pl.add_argument("--py", help="Python für die Agents im Prompt (Standard: dieses Python)")
+    pl.add_argument("--hinweis", help="Satz zum Bild für alle Agents, z. B. Schwarz-Weiß-Scan (Standard: keiner)")
+    pl.add_argument("--teilkachel", nargs="+", help="nur diese Teilkacheln (Trockenlauf auf wenig Daten)")
+    pl.add_argument("--viertel", nargs="+", type=int, choices=[1, 2, 3, 4],
+                    help="nur diese Viertel (Fassung A fällt dann weg)")
+    pl.add_argument("--ziel", help="Plan als JSON (landseg-urteil-plan/1); ohne: nur Ausgabe, nichts geschrieben")
+    pl.add_argument("--json", action="store_true", help="ganzen Plan als JSON ausgeben (mit Prompts)")
+    pl.set_defaults(fn=befehl_plan)
 
     ur = befehle.add_parser("urteil", help="urteil.json aus einer kurzen Liste bauen und prüfen (bauen, pruefen)")
     schritte = ur.add_subparsers(dest="schritt", required=True)

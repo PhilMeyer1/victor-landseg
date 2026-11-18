@@ -7,7 +7,7 @@ from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 
 from landseg.__main__ import main
-from landseg.messung import messung_befehl, preis, tabelle
+from landseg.messung import agents_lesen, messung, messung_befehl, preis, tabelle
 
 
 def _zeile(typ: str, zeit: str, **message) -> str:
@@ -125,6 +125,14 @@ class MessungTest(unittest.TestCase):
         self.assertIn("| zusammen |  | 3 | 5,0 | 7,0 | 4 | 6,10 | 1,21 | 0,160 | 10,96 | 1 | 1 |", md)
         with self.assertRaises(ValueError):
             messung_befehl(self.lauf, ziel=self.lauf)
+
+    def test_urteile_je_fassung(self):
+        m = messung(agents_lesen(self.lauf), "probe")
+        a1 = next(a for a in m["agents"] if a["agent"] == "a1")
+        self.assertEqual(list(m["urteile_je_fassung"]), ["A"])
+        fa = m["urteile_je_fassung"]["A"]
+        self.assertEqual((fa["agents"], fa["gelesen"], fa["gelesen_je_agent"]), (1, a1["gelesen"], a1["gelesen"]))
+        self.assertIn("Urteils-Agents je Fassung", tabelle(m))
 
     def test_befehlszeile(self):
         aus = io.StringIO()

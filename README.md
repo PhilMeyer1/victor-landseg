@@ -26,8 +26,9 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `landseg/naht.py` | Nahtregel: an jeder Kerngrenze gleiche ID oder echte Bildkante, gleiche Klasse |
 | `landseg/einigung.py` | `einigung`: Klassen an den Übergängen der Teilkacheln abgleichen (`finden`: offene Stellen bündeln, je Bündel Agent-Auftrag mit Bildern beider Seiten; `anwenden`: Abgaben umsetzen, nur Klassen und Vermerke; `abgabe`: `einigung_abgabe.json` aus der kurzen Liste eines Agents bauen und prüfen; `messen`: Stellen gleicher Fläche mit verschiedener Klasse, offen/unsicher/geklärt); Einstellungen `einstellungen/einigung.json` |
 | `landseg/urteil.py` | `urteil`: `urteil.json` eines Urteils-Agents aus einer kurzen Liste bauen (`bauen`) und prüfen (`pruefen`), je Teilkachel oder Viertel |
+| `landseg/plan.py` | `plan`: Urteils-Agents eines Laufs aus der Auftragsliste der Vorbereitung bilden: ein Agent je Viertel (B, C, Gegenprobe), Fassung A je Teilkachel, je Agent genau ein Auftrag und sein Prompt aus `vorlagen/agent-urteil-*.md` |
 | `landseg/zoom.py` | `zoom`: Ausschnitt einer Stelle (Punkt mit Radius, Rechteck, Segmente) vergrößert, mit Umriss und Segmentnummern, auf Wunsch neben dem Luftbild (JPEG); Einstellungen `einstellungen/zoom.json` |
-| `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht, Einigung) mit Platzhaltern, erklärt in `vorlagen/README.md` |
+| `vorlagen/` | Auftragsvorlagen für Agents (Urteil, Umsetzen, Korrektur, Naht, Einigung) und Prompts der Urteils-Agents (`agent-urteil-viertel.md`, `agent-urteil-teilkachel.md`) mit Platzhaltern, erklärt in `vorlagen/README.md` |
 | `.claude/skills/landseg-agent/SKILL.md` | Agent-Skill mit den Arbeitsregeln für diese Aufträge |
 | `landseg/messung.py` | `messung`: Kosten eines Agent-Laufs je Phase aus den Transkripten (Agents, Minuten, Runden, Tokens, USD nach Listenpreis, Bilder, eigene .py); nur Standardbibliothek |
 | `landseg/kategorien.py`, `landseg/dateien.py` | Kategorienliste laden; Lesen und Schreiben von Label-Karte, `segmente.json`, Manifest |
@@ -214,6 +215,28 @@ rechts, v3 unten links, v4 unten rechts, Teilung in der Kernmitte) verlangt nur 
 Kern-Bildpunkte im Viertel liegen; so steht jedes Kernsegment in genau einem Viertel. Exit 0 ok, 1 bei
 Fehlern (nichts geschrieben), 2 bei Lesefehlern.
 
+### plan
+
+```
+PY -B -m landseg plan --auftraege <auftraege.json> [--repo <Ordner>] [--py <Python>] [--hinweis "<Satz>"] [--teilkachel r0c0 ...] [--viertel 1 2 ...] [--ziel <urteil-plan.json>] [--json]
+```
+
+Bildet die Urteils-Agents eines Laufs (Entscheidung des Nutzers vom 18.11.2026): **ein Agent je Viertel** für die
+Fassungen B, C und die Gegenprobe (vier je Teilkachel, Label `<art>:<tk>-v<n>`), **ein Agent je Teilkachel** für
+Fassung A „Alles frei“ (ohne Viertel, Label `a:<tk>`). Jeder Agent bekommt genau einen Auftrag und sieht zuerst den
+ganzen Ausschnitt, dann seine ganze Teilkachel, dann nur seinen Auftrag; den Prompt baut der Befehl aus
+`vorlagen/agent-urteil-viertel.md` bzw. `agent-urteil-teilkachel.md`, jedes Übersichtsbild genau einmal. Eingabe ist
+die Auftragsliste der Vorbereitung: `einheiten` (`art` a/b/c/z, `tk`, `v`, `n`, `auftrag`, `ergebnis`), `viertel`
+und `gegenprobe` mit den Segmenten je Auftrag, `manifest`, `ganz_raster` (sonst `ganz_ausschnitt`) und
+`ganz_teilkachel.<tk>.nummern`. Abgelehnt (Exit 2): doppelter Auftrag, ein Segment in zwei Aufträgen derselben Art und
+Teilkachel, Fassung A mit Viertel, Teilkachel nicht im Manifest. Ausgabe: zuerst die Zahl der Agents je Fassung, dann
+je Agent sein Auftrag; `--ziel` schreibt den Plan (`landseg-urteil-plan/1`: `agents`, `je_art`, `gruppen` mit
+`label`, `art`, `tk`, `v`, `n`, `teile` (ein Auftrag in der Form der Einheiten) und `prompt`), ohne `--ziel` wird
+nichts geschrieben (Trockenlauf). `--teilkachel`/`--viertel` grenzen den Plan ein (Fassung A fällt bei `--viertel`
+weg). Die Quittung je Agent bleibt `teile` mit einem Eintrag; Nachholen, Vereinheitlichen, Nähte und Einigung
+arbeiten mit dem Ergebnis je Viertel wie bisher. Die vier Agents einer Teilkachel teilen sich die Karte zum
+Nachsegmentieren; `eingriff` und `kante` schreiben darauf nacheinander (Sperre, siehe „eingriff“).
+
 ### kante
 
 ```
@@ -314,6 +337,11 @@ Koordinaten sind Bildpunkte der Label-Karte (`x` Spalte, `y` Zeile). Ein Eingrif
 Segment-Nummern auf vorhandene Bildpunkte um, Lücken entstehen also nie. Ist er nicht ausführbar
 (Segmente nicht benachbart, Linie trennt nicht, Klasse unbekannt), bleibt alles unverändert. Danach
 läuft `pruefen` von selbst und meldet den Befund.
+
+Mehrere Agents dürfen dieselbe Karte gleichzeitig bearbeiten (ein Agent je Viertel): `eingriff` und `kante` (ohne
+`--trocken`) halten vom Lesen bis zum Schreiben die Sperrdatei `<labels>.sperre` und lesen die Karte erst danach,
+so geht kein Eingriff eines anderen verloren. Wer die Sperre nicht bekommt, wartet bis zu 10 Minuten (dann Exit 2);
+eine Sperrdatei älter als 5 Minuten stammt von einem abgebrochenen Aufruf und wird entfernt.
 
 ### zusammentragen
 
@@ -422,6 +450,9 @@ Bilddateien), geschriebene `.py` (`Write`). USD ist ein Rechenwert nach Listenpr
 Cache-Schreiben 5 min, 8 Cache-Schreiben 1 h, 0,20 Cache-Lesen, 20 Ausgabe USD je Mio.; Sonnet die Hälfte),
 keine Abo-Kosten. Mit `--ziel` entstehen dort `messung.json` (Form `landseg-messung/1`, dazu jede
 Agent-Zeile) und `messung.md` (dieselbe Tabelle wie auf der Konsole); kaputte Zeilen werden übersprungen.
+Dazu je Fassung die Urteils-Agents (Label `urteil:<art>:…`, `messung.json` unter
+`urteile_je_fassung`, in `messung.md` eine zweite Tabelle): Agents, gelesene Tokens gesamt und je Agent, Runden, USD,
+Bilder; damit lässt sich die Aufteilung (ein Agent je Viertel) mit dem Lauf H0 (ein Agent je Teilkachel) vergleichen.
 Exit 2, wenn der Ordner fehlt oder keine `agent-*.jsonl` enthält.
 
 ## Auftragsvorlagen

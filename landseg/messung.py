@@ -4,7 +4,8 @@ Quelle ist der Protokollordner eines Workflow-Laufs von Claude Code: je Agent ``
 (Transkript) und ``agent-<id>.meta.json`` (``workflowPhase``, ``model``). Gezählt wird je Phase und
 für den ganzen Lauf: Agents, Wand-Minuten, Agent-Minuten, Runden (API-Antworten), gelesene Tokens
 (Cache-Lesen), neue Tokens (Eingabe + Cache-Schreiben), ausgegebene Tokens, USD, gelesene Bilder und
-geschriebene ``.py``-Dateien.
+geschriebene ``.py``-Dateien. Dazu je Fassung die Urteils-Agents (Label ``urteil:<art>:…``, Art ``a``, ``b``,
+``c``, ``z`` = Gegenprobe) mit gelesenen Tokens je Agent, um die Aufteilung (ein Agent je Viertel) zu vergleichen.
 
 Zählregeln wie ``kachellauf messung`` im Stitcher und die Kostenauswertung des Plugins ``wunsch``:
 Eine API-Antwort steht im Transkript einmal je Inhaltsblock mit derselben ``usage``; sie zählt nur
@@ -33,6 +34,8 @@ PREIS = {
 }
 BILD_ENDUNGEN = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp", ".tif", ".tiff")
 OHNE_PHASE = "?"
+URTEIL_LABEL = re.compile(r"^urteil:([abcz]):")
+FASSUNG_NAME = {"a": "A", "b": "B", "c": "C", "z": "Gegenprobe"}
 
 
 def preis(modell: str | None, prompt: int) -> tuple[float, ...] | None:
@@ -159,8 +162,19 @@ def messung(agents: list[dict], lauf: str = "") -> dict:
         je.setdefault(a["phase"], []).append(a)
     frueh = lambda xs: min((a["start"] for a in xs if a["start"]), default=float("inf"))
     phasen = {name: _zeile(xs) for name, xs in sorted(je.items(), key=lambda kv: (frueh(kv[1]), kv[0]))}
+    urteile: dict[str, list[dict]] = {}
+    for a in agents:
+        treffer = URTEIL_LABEL.match(a["label"])
+        if treffer:
+            urteile.setdefault(FASSUNG_NAME[treffer.group(1)], []).append(a)
+    fassungen = {}
+    for name in FASSUNG_NAME.values():
+        if name in urteile:
+            z = _zeile(urteile[name])
+            z["gelesen_je_agent"] = round(z["gelesen"] / z["agents"])
+            fassungen[name] = z
     return {"form": FORM, "lauf": lauf, "preise_stand": PREIS_STAND, "phasen": phasen,
-            "zusammen": _zeile(agents),
+            "zusammen": _zeile(agents), "urteile_je_fassung": fassungen,
             "agents": [{k: (round(v, 4) if k == "usd" else _iso(v) if k in ("start", "ende") and v else v)
                         for k, v in a.items()} for a in agents]}
 
@@ -179,6 +193,14 @@ def tabelle(m: dict) -> str:
                  f"| {_zahl(r['wand_min'], 1)} | {_zahl(r['agent_min'], 1)} | {r['runden']} "
                  f"| {_zahl(r['gelesen'] / 1e6, 2)} | {_zahl(r['neu'] / 1e6, 2)} | {_zahl(r['ausgabe'] / 1e6, 3)} "
                  f"| {_zahl(r['usd'], 2)} | {r['bilder']} | {r['py_geschrieben']} |")
+    fassungen = m.get("urteile_je_fassung") or {}
+    if fassungen:
+        z += ["", "Urteils-Agents je Fassung (Label `urteil:<art>:…`):", "",
+              "| Fassung | Agents | gelesen (Mio.) | gelesen je Agent (Mio.) | Runden | USD | Bilder gelesen |",
+              "|---|---|---|---|---|---|---|"]
+        for name, r in fassungen.items():
+            z.append(f"| {name} | {r['agents']} | {_zahl(r['gelesen'] / 1e6, 2)} | {_zahl(r['gelesen_je_agent'] / 1e6, 2)} "
+                     f"| {r['runden']} | {_zahl(r['usd'], 2)} | {r['bilder']} |")
     zeitraum = f" ({m['zusammen']['beginn']} bis {m['zusammen']['schluss']})" if m["zusammen"]["beginn"] else ""
     return (f"# Messung {m['lauf']}\n\n"
             f"USD: Rechenwert nach Listenpreis (Stand {m['preise_stand']}), keine Abo-Kosten. "

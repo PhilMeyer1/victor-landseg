@@ -1,6 +1,6 @@
 # Auftragsvorlagen für Agents
 
-Fünf Vorlagen für die Agent-Schritte der Landschafts-Segmentierung, je eine Datei mit Platzhaltern
+Vorlagen für die Agent-Schritte der Landschafts-Segmentierung (fünf Aufträge, zwei Prompts der Urteils-Agents), je eine Datei mit Platzhaltern
 `{{NAME}}`. Die Hauptsession kopiert die Vorlage, setzt alle Platzhalter ein (es darf keiner übrig
 bleiben) und gibt den Text als Auftrag weiter. Die Regeln, die für alle Schritte gelten, stehen im
 Agent-Skill `landseg-agent` (`.claude/skills/landseg-agent/SKILL.md`); die Vorlagen verweisen darauf
@@ -12,7 +12,13 @@ und wiederholen sie nicht.
 | `umsetzen.md` | ein Agent je Teilkachel setzt das bestätigte Urteil auf der Label-Karte um | `labels.tif`, `segmente.json`, `abgabe.json`, Bilder |
 | `korrektur.md` | ein Agent je Teilkachel setzt genau die Kommentare des Nutzers um (Runde n) | wie `umsetzen.md` |
 | `naht.md` | ein Agent klärt die Nahtverstöße aus `zusammentragen` | geänderte Teilkacheln (neue Runde), `naht_abgabe.json` |
+| `agent-urteil-viertel.md` | Prompt eines Urteils-Agents für genau ein Viertel (Fassungen B, C, Gegenprobe): zuerst der ganze Ausschnitt, dann die ganze Teilkachel, dann nur sein Viertel-Auftrag; die Karte zum Nachsegmentieren teilen sich die vier Agents einer Teilkachel | Quittung mit einem Eintrag unter `teile` |
+| `agent-urteil-teilkachel.md` | Prompt eines Urteils-Agents für eine ganze Teilkachel (Fassung A „Alles frei“, ohne Viertel) | Quittung mit einem Eintrag unter `teile` (v 0) |
 | `einigung.md` | ein Agent je Bündel aus `einigung finden` einigt die Klassen an den Übergängen der Teilkacheln (Urteil im Verbund: Bilder beider Seiten, ein Urteil je Stelle für alle Beteiligten, nur Klassen im Kern) | `einigung_abgabe.json` |
+
+Die beiden `agent-urteil-*.md` füllt nicht die Hauptsession, sondern `python -m landseg plan` (README, „plan“):
+er bildet aus der Auftragsliste der Vorbereitung einen Agent je Viertel (B, C, Gegenprobe) bzw. je Teilkachel (A)
+und setzt den Auftrag des Agents ein, der seinerseits nach `urteil.md` gebaut ist.
 
 Die Vorlagen enthalten keine Pfade dieses Rechners und keinen Einzelfall: Alles Fallbezogene kommt
 über die Platzhalter. Für wiederkehrende Schritte nennen sie fertige Befehle als Standardweg
@@ -40,6 +46,14 @@ Agents nur für Fälle, die kein Befehl deckt.
 | `{{AUFTRAEGE}}` | Ordner, in den `einigung finden` die Bündel-Aufträge geschrieben hat | `…/T0/<lauf>/einigung-a` |
 | `{{BUENDEL}}` | Name des Bündels (Unterordner von `{{AUFTRAEGE}}`) | `A-02` |
 | `{{URTEILE}}` | Ordner mit `<teilkachel>/urteil.json` der Fassung (relativ zu `{{DATEN}}`) | `urteil` |
+| `{{FASSUNG_NAME}}` | Name der Fassung im Prompt eines Urteils-Agents (`plan`) | `Fassung C „Feste Kategorienliste“` |
+| `{{AUSSCHNITT}}` | Name des Ausschnitts | `H0` |
+| `{{AUSSCHNITT_BILD}}` | Übersichtsbild des ganzen Ausschnitts (mit Teilkachelgitter, sonst ohne) | `…/H0/ganz/H0_raster.jpg` |
+| `{{TEILKACHEL_BILD}}` | Übersichtsbild der ganzen Teilkachel mit Grenzen, Nummern und Vierteln | `…/H0/ganz/r0c0/ganz_nummern.jpg` |
+| `{{AUFTRAG}}` | der eine Auftrag des Agents (nach `urteil.md` gebaut) | `…/auftraege/c/r0c0/v2/auftrag.md` |
+| `{{VIERTEL}}`, `{{VIERTEL_LAGE}}`, `{{V}}` | Viertel des Agents, seine Lage im Kern, Nummer in der Quittung (A: `{{V}}` 0) | `v2`, `oben rechts`, `2` |
+| `{{SEGMENTZAHL}}` | Zahl der Segmente im Viertel-Auftrag | `67` |
+| `{{HINWEIS}}` | Satz zum Bild für alle Agents des Laufs, sonst „keiner“ | „Schwarz-Weiß-Scan von 1968“ |
 | `{{ZUSAMMEN}}` | Ordner des zusammengetragenen Stands mit `labels.tif`, `segmente.json`, `naht.json` (relativ zu `{{DATEN}}`) | `zusammen` |
 
 Nach dem Rücklauf trägt die Hauptsession jede Abgabe als Einheit in `zusammentragen.json` ein
