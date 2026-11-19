@@ -20,6 +20,7 @@ keine (siehe Mutterwunsch)
 ## Entscheidungen
 
 siehe Mutterwunsch
+- 2026-11-19 (Nutzer, nach der Durchsicht der Seite T0-H0 mit gröberem H0 und Gärten): „passt alles, pushe“ — Push des Gesamtprojekts victor-landseg ist angesagt; die Hauptsession pusht nach dem Einreihen selbst. Stand der Daten: H0 vergröbert (landseg-garten-3), Gärten T0/H0 (landseg-garten-3/-4, garten-h0-unsicher), Seite daten/landseg/seiten/T0-H0.html; Gesamtprojekt nach dem Commit von wuensche/ mit gesamt_projekt.py neu bauen, pruefen (--luftbilder), durchsicht.
 
 ## Arbeitsauftrag
 

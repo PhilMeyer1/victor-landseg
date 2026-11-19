@@ -1,6 +1,6 @@
 # Teil 4 von landseg-historisch: Prüfen, Seite mit H0 und Messbericht
 
-Kurzname: landseg-historisch-4 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: frage-offen | Mutterwunsch: landseg-historisch | Ergebnis: ohne Commit
+Kurzname: landseg-historisch-4 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: eingereiht (ohne Commit) | Mutterwunsch: landseg-historisch | Ergebnis: ohne Commit
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben
@@ -37,3 +37,7 @@ Einstieg, Bausteine, Entscheidungen: siehe Mutterwunsch
 Vorbedingungen: keine
 
 Halt: Durchsicht
+
+## Nachweis
+
+- 2026-11-19: Prüfung, Seite und Messbericht H0 (Bericht wuensche/2026-11-18-landseg-historisch-4/bericht-landseg.md); Durchsicht am umgebauten Stand (gröber, Gärten) durch den Nutzer am 2026-11-19: „passt alles“ — Urteil je Klasse ohne Einwände, keine Kommentare; Seite T0-H0 über 127.0.0.1 im Chrome des Nutzers gezeigt.

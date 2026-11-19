@@ -42,7 +42,7 @@ Commit. Ablauf: Skill `wunsch`.
 | 2026-11-18 | landseg-historisch-1 | Teil 1 von landseg-historisch: Seite mit Bildwahl und Graustufen-Eingang | landseg | eingereiht | 2026-11-18-landseg-historisch-1.md |
 | 2026-11-18 | landseg-historisch-2 | Teil 2 von landseg-historisch: Ausschnitt H0: kacheln, Vorstufe, Aufträge | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-historisch-2.md |
 | 2026-11-18 | landseg-historisch-3 | Teil 3 von landseg-historisch: Urteile A, B, C, Gegenprobe und Einigung | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-historisch-3.md |
-| 2026-11-18 | landseg-historisch-4 | Teil 4 von landseg-historisch: Prüfen, Seite mit H0 und Messbericht | landseg | frage-offen | 2026-11-18-landseg-historisch-4.md |
+| 2026-11-18 | landseg-historisch-4 | Teil 4 von landseg-historisch: Prüfen, Seite mit H0 und Messbericht | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-historisch-4.md |
 | 2026-11-18 | landseg-historisch-5 | Teil 5 von landseg-historisch: Ergebnisse ins Repo und Gesamtprojekt | landseg | bereit | 2026-11-18-landseg-historisch-5.md |
 | 2026-11-18 | landseg-historisch | Historisches Luftbild genauso verarbeiten wie T0 (Vorstufe, vier Teilkacheln, Fassungen A/B/C, Einigung an den Grenzen) und im Gesamtprojekt sowie in der Ergebnis-Ansicht ergänzen | landseg | bereit | 2026-11-18-landseg-historisch.md |
 | 2026-11-18 | landseg-sw-grob | Auf alten, niedrig aufgelösten Schwarz-Weiß-Luftbildern gröbere Flächen ziehen als auf Farb-Orthofotos, in allen Fassungen und Läufen | landseg | eingereiht | 2026-11-18-landseg-sw-grob.md |
@@ -52,4 +52,4 @@ Commit. Ablauf: Skill `wunsch`.
 | 2026-11-18 | naht-einigung-4 | Teil 4 von naht-einigung: Seiten neu erzeugen und ANLEITUNG | landseg | eingereiht | 2026-11-18-naht-einigung-4.md |
 | 2026-11-18 | naht-einigung | Landschafts-Segmente: Einigungsschritt an den Übergängen der Teilkacheln, damit gleiche Flächen über eine Naht hinweg dieselbe Klasse bekommen; auf T0 anwenden und Victors Projekt aktualisieren | landseg | eingereiht | 2026-11-18-naht-einigung.md |
 | 2026-11-18 | seite-kachelwahl | Ergebnis-Ansicht: Wahl der vier Teilkacheln viel sichtbarer machen, damit niemand nur die erste Teilkachel sieht | landseg | eingereiht | 2026-11-18-seite-kachelwahl.md |
-| 2026-11-19 | garten-h0-unsicher | Auf dem Bild von 1968 die als „unklar“ bewerteten Garten-Stellen als Garten mit Vermerk unsicher eintragen und die Prüfseite neu bauen | landseg | bereit | 2026-11-19-garten-h0-unsicher.md |
+| 2026-11-19 | garten-h0-unsicher | Auf dem Bild von 1968 die als „unklar“ bewerteten Garten-Stellen als Garten mit Vermerk unsicher eintragen und die Prüfseite neu bauen | landseg | eingereiht (ohne Commit) | 2026-11-19-garten-h0-unsicher.md |

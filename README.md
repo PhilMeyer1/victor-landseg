@@ -2,14 +2,16 @@
 
 Hier liegt alles zum Vorhaben „Luftbilder lückenlos in Flächen zerlegen und jede Fläche einer
 Kategorie zuordnen“: das Programm mit seiner ganzen Entstehungsgeschichte, alle Aufträge und
-Berichte, aus denen es entstanden ist, die vollständigen Arbeitsdaten des ersten Tests (T0) und
-dessen Ergebnisse. Nur die Original-Luftbilder fehlen, weil sie zu groß für GitHub sind; sie kommen
+Berichte, aus denen es entstanden ist, die vollständigen Arbeitsdaten der ersten Tests und deren
+Ergebnisse: T0 (Ausschnitt aus dem heutigen Orthofoto, Farbe) und H0 (Ausschnitt aus dem
+Luftbild-Scan von 1968, Schwarz-Weiß). Nur die Original-Luftbilder fehlen, weil sie zu groß für GitHub sind; sie kommen
 getrennt (`daten/luftbilder/README.md`).
 
 ## In dieser Reihenfolge lesen
 
 1. **Ergebnis ansehen**: `ANLEITUNG.md` (was getestet wurde, Zahlen, Schwächen, wie man es
-   nachrechnet) und die Prüfseite `ergebnisse/T0.html` (doppelklicken, kein Server nötig). Wer den
+   nachrechnet) und die Prüfseite `ergebnisse/T0-H0.html` (doppelklicken, kein Server nötig; oben
+   wählst du das Bild, T0 oder H0, daneben die Fassung). Wer den
    Projektordner mit Claude Code öffnet, bekommt die Seite zu Beginn der Sitzung von Claude im
    Browser geöffnet und kurz erklärt (Anweisungen in `CLAUDE.md`).
 2. **Wie ist es entstanden?** Die Aufträge und Berichte in `wuensche/`, in zeitlicher Reihenfolge:
@@ -24,6 +26,7 @@ getrennt (`daten/luftbilder/README.md`).
    | Testlauf T0 (fünf Teile, drei davon gelaufen) | `wuensche/2026-11-17-landseg-test-t0.md` | `wuensche/2026-11-17-landseg-test-t0-1/` (Vorstufe, Aufträge je Agent), `wuensche/2026-11-17-landseg-test-t0-2/` (Urteile), `wuensche/2026-11-17-landseg-test-t0-3/` (Zusammenführen); Teile 4 und 5 ruhen |
    | Übergabe der Ergebnisse | `wuensche/2026-11-17-landseg-uebergabe.md` | `wuensche/2026-11-17-landseg-uebergabe/` |
    | Dieses Gesamtprojekt | `wuensche/2026-11-17-landseg-gesamt.md` | `wuensche/2026-11-17-landseg-gesamt/` |
+   | Historischer Ausschnitt H0 (fünf Teile) | `wuensche/2026-11-18-landseg-historisch.md` | `wuensche/2026-11-18-landseg-historisch-1/` (Seite mit Bildwahl), `wuensche/2026-11-18-landseg-historisch-2/` (Ausschnitt, Vorstufe), `wuensche/2026-11-18-landseg-historisch-3/` (Urteile A, B, C und Einigung), `wuensche/2026-11-18-landseg-historisch-4/` (Prüfung, Seite, Messbericht mit Vergleich zu T0), `wuensche/2026-11-18-landseg-historisch-5/` (Übernahme hierher) |
 
    Jede Auftragsdatei beginnt mit dem Wunsch in unseren Worten, dann den Entscheidungen und dem
    Arbeitsauftrag; die Berichte (`bericht-*.md`) sagen, was gebaut und geprüft wurde, die Abnahmen
@@ -33,7 +36,7 @@ getrennt (`daten/luftbilder/README.md`).
 3. **Das Programm**: `programm/README.md` (Werkzeuge, Befehle, Dateiformate) und
    `programm/KATEGORIEN.md` (die feste Kategorienliste in Alltagssprache).
 4. **Deine Unterlagen**: `unterlagen/README.md` mit den gelieferten Berichten 41, 46, 47 und 48.
-5. **Die Arbeitsdaten**: `daten/landseg/T0/`, wenn du einem Bericht bis in die einzelne Datei folgen
+5. **Die Arbeitsdaten**: `daten/landseg/T0/` und `daten/landseg/H0/`, wenn du einem Bericht bis in die einzelne Datei folgen
    willst.
 
 ## Mitarbeiten: eigener Zweig und Pull-Request
@@ -66,25 +69,26 @@ dazu, den wir gemeinsam ansehen und dann zusammenführen.
 | Pfad | Inhalt |
 |---|---|
 | `README.md` | diese Seite |
-| `ANLEITUNG.md` | Anleitung zum Test T0: Ergebnis, Zahlen, Dateiformate, Befehle |
-| `CLAUDE.md` | Anweisungen für Claude Code: öffnet zu Beginn jeder Sitzung `ergebnisse/T0.html` im Browser |
+| `ANLEITUNG.md` | Anleitung zu den Tests T0 und H0: Ergebnis, Zahlen, Dateiformate, Befehle |
+| `CLAUDE.md` | Anweisungen für Claude Code: öffnet zu Beginn jeder Sitzung `ergebnisse/T0-H0.html` im Browser |
 | `programm/` | das Programm `landseg` mit seinem vollen Git-Verlauf (Python-Paket, Tests, Werkzeuge, Kategorienliste, Vorlagen für die KI-Agents) |
 | `unterlagen/` | deine gelieferten Berichte, mit ihrem Git-Verlauf |
 | `wuensche/` | alle Aufträge, Berichte, Abnahmen, die Methoden-Ermittlung und die Aufträge an die einzelnen KI-Agents |
-| `ergebnisse/` | die Übergabe-Auswahl von T0 mit neuer Benennung: Prüfseite, Gesamtbilder, Karten und Urteile je Fassung |
-| `daten/landseg/` | die vollen Arbeitsdaten von T0 mit den alten Ordnernamen (`daten/landseg/T0/kern500/`, `daten/landseg/T0/fassung-b/`, `daten/landseg/T0/fassung-c/`): Zwischenbilder, Nahansichten der Agents, Rohwerte der Vorstufe, Probeläufe, einzelne Viertel-Urteile |
+| `ergebnisse/` | die Übergabe-Auswahl: die Prüfseite `ergebnisse/T0-H0.html` mit beiden Bildern, `ergebnisse/T0/` (T0 mit neuer Benennung: Seite nur für T0, Gesamtbilder, Karten und Urteile je Fassung) und `ergebnisse/H0/` (H0: Ausschnitt, Teilkacheln, Karten, Urteile und Kategorienlisten je Fassung) |
+| `daten/landseg/` | die vollen Arbeitsdaten: von T0 mit den alten Ordnernamen (`daten/landseg/T0/kern500/`, `daten/landseg/T0/fassung-b/`, `daten/landseg/T0/fassung-c/`), von H0 unter `daten/landseg/H0/` (dazu die feine erste Vorstufe in den Ordnern `…-fein`); Zwischenbilder, Nahansichten der Agents, Rohwerte der Vorstufe, Probeläufe, einzelne Viertel-Urteile |
 | `daten/luftbilder/` | Platz für die Original-Luftbilder; welche es sind, mit Größe und Prüfsumme, steht in `daten/luftbilder/README.md` |
 
 `ergebnisse/` und `daten/landseg/` überschneiden sich: `ergebnisse/` ist die aufbereitete Auswahl,
 die zuerst übergeben wurde (umbenannt, ohne Zwischenbilder), seit dem 18.11.2026 mit der Einigung
 der Klassen an den Übergängen der Teilkacheln (`ANLEITUNG.md`, „Einigung an den Übergängen“);
 `daten/landseg/` ist der Arbeitsstand, so wie die Berichte ihn nennen, ohne diese Einigung.
+Für H0 gilt dasselbe: `ergebnisse/H0/` ist die Auswahl, `daten/landseg/H0/` der Arbeitsstand.
 `programm/tools/gesamt_projekt.py bauen` holt `ergebnisse/` jedes Mal Byte für Byte aus dem
 eingecheckten Stand der Übergabe.
 
 ## Benennung der Fassungen
 
-Der Test hat T0 in drei Fassungen eingeordnet. Es gilt:
+Die Tests haben T0 und H0 je in drei Fassungen eingeordnet. Es gilt:
 
 - **A = Alles frei**: Die KI bestimmt Grenzen, Kategorien und Arbeitsweise selbst.
 - **B = Kategorien frei**: Die KI benennt und stuft die Klassen selbst; Grenzen und Arbeitsweise wie C.

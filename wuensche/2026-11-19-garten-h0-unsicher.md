@@ -1,6 +1,6 @@
 # Auf dem Bild von 1968 die als „unklar“ bewerteten Garten-Stellen als Garten mit Vermerk unsicher eintragen und die Prüfseite neu bauen
 
-Kurzname: garten-h0-unsicher | Datum: 2026-11-19 | Größe: klein | Bereich: victor | Repos: landseg | Status: bereit
+Kurzname: garten-h0-unsicher | Datum: 2026-11-19 | Größe: klein | Bereich: victor | Repos: landseg | Status: eingereiht (ohne Commit) | Ergebnis: ohne Commit
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben
@@ -22,6 +22,7 @@ Präzisierung: In landseg-garten-3 nannten die Bestätiger auf H0 65 Kandidaten 
 <Antworten des Nutzers mit Datum. Der Prüfer übernimmt beim Klären die Zeilen aus
 `entscheidungen.md`, die für diesen Wunsch gelten, je mit „(aus entscheidungen.md, <Datum>)",
 oder schreibt „entscheidungen.md: nichts für diesen Wunsch".>
+- 2026-11-19 (Nutzer): AK3 nicht durch die Abnahme belegt (keine Browser-Erweiterung); der Nutzer sieht die Seite selbst durch („Ich sehe sie jetzt durch“) — seine Durchsicht ist der Beleg für AK3.
 
 ## Arbeitsauftrag
 
@@ -52,3 +53,7 @@ Freigabe; ohne Entwurf bauen zwei Umsetzer parallel. Die Wahl steht danach unter
 zeigt: Ansichten, Zustände, Desktop/Handy, Nachbarn, Beispieldaten, Varianten. Der Workflow
 `wunsch:entwurf` zeichnet daraus fünf Entwürfe nach `entwurf/` im Berichtsordner; die Freigabe des
 Nutzers steht danach unter „Entscheidungen".>
+
+## Nachweis
+
+- 2026-11-19: Datenlauf ohne Commit im Repo (Lauf 20261119a, abgenommen): 65 unklare Garten-Kandidaten auf H0 als Garten mit sicher: false eingetragen, pruefen und einigung messen ok, Prüfseite T0-H0 neu gebaut (11:38); AK3 per Durchsicht des Nutzers belegt („passt alles“, 2026-11-19).

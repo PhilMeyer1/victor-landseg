@@ -1,32 +1,37 @@
 # Anweisungen für Claude Code in diesem Projekt
 
 Dieses Projekt gehört Victor: Luftbilder lückenlos in Flächen (Segmente) zerlegen und jede Fläche
-einer Kategorie zuordnen. Ergebnis des ersten Tests ist der Ausschnitt T0 in drei Fassungen.
+einer Kategorie zuordnen. Ergebnis der ersten Tests sind zwei Ausschnitte in je drei Fassungen:
+T0 aus dem heutigen Orthofoto (Farbe) und H0 aus einem Luftbild-Scan von 1968 (Schwarz-Weiß).
 
 ## Zuerst, in jeder Session: Ergebnis-Ansicht öffnen
 
 Bei deiner ersten Antwort in einer Session, egal was Victor geschrieben hat (auch nur „hallo“),
 ohne Rückfrage und bevor du etwas anderes tust:
 
-1. Prüfen, ob die Seite da ist: `ergebnisse/T0.html` im Projektordner (rund 8 MB).
+1. Prüfen, ob die Seite da ist: `ergebnisse/T0-H0.html` im Projektordner (rund 14 MB).
 2. Sie im Standard-Browser öffnen, mit dem Befehl für das Betriebssystem, vom Projektordner aus:
 
    | System | Befehl |
    |---|---|
-   | Windows, Bash-Werkzeug (Git Bash) | `cmd //c start "" "ergebnisse\T0.html"` |
-   | Windows, PowerShell | `Start-Process -FilePath (Resolve-Path "ergebnisse/T0.html")` |
-   | Windows, Eingabeaufforderung | `start "" "ergebnisse\T0.html"` |
-   | macOS | `open "ergebnisse/T0.html"` |
-   | Linux | `xdg-open "ergebnisse/T0.html"` |
+   | Windows, Bash-Werkzeug (Git Bash) | `cmd //c start "" "ergebnisse\T0-H0.html"` |
+   | Windows, PowerShell | `Start-Process -FilePath (Resolve-Path "ergebnisse/T0-H0.html")` |
+   | Windows, Eingabeaufforderung | `start "" "ergebnisse\T0-H0.html"` |
+   | macOS | `open "ergebnisse/T0-H0.html"` |
+   | Linux | `xdg-open "ergebnisse/T0-H0.html"` |
 
 3. Prüfen, dass der Befehl ohne Fehler lief (Exit-Code 0, keine Fehlermeldung). Wenn nicht: die
-   Meldung wörtlich nennen und Victor bitten, `ergebnisse/T0.html` per Doppelklick zu öffnen.
+   Meldung wörtlich nennen und Victor bitten, `ergebnisse/T0-H0.html` per Doppelklick zu öffnen.
 4. Victor in wenigen Sätzen sagen, was er sieht:
-   - Oben der Umschalter der drei Fassungen: **A „Alles frei“** (die KI bestimmt Grenzen,
+   - Ganz oben die **Bildwahl**: „Orthofoto T0“ (Farbe, heute) und „Historischer Ausschnitt H0“
+     (Scan von 1968, Schwarz-Weiß, ohne Lage). Die Seite öffnet mit T0; die Wahl wechselt Bild,
+     Teilkacheln, Nähte-Zahlen, Einigung und Kategorienliste ohne Neuladen und behält Fassung und
+     Teilkachel. Auf H0 sind die Flächen gröber gezogen und weit öfter „unsicher“ als auf T0.
+   - Daneben der Umschalter der drei Fassungen: **A „Alles frei“** (die KI bestimmt Grenzen,
      Kategorien und Arbeitsweise selbst), **B „Kategorien frei“** (die KI benennt und stuft die
      Klassen selbst), **C „Feste Kategorienliste“** (unsere feste, gestufte Liste mit 59 Klassen).
      Die Seite öffnet mit A; Umschalt + A/B/C wechselt ebenfalls.
-   - Wichtig, ausdrücklich sagen: Der Ausschnitt besteht aus **vier Teilkacheln** (Bildstücken),
+   - Wichtig, ausdrücklich sagen: Jeder Ausschnitt besteht aus **vier Teilkacheln** (Bildstücken),
      und die Seite zeigt immer nur eine davon. Darunter liegt deshalb die breite **Kachel-Wahl**:
      „Ganzer Ausschnitt“ und die vier Teilkacheln als große Reiter im Raster ihrer Lage,
      1 „oben links“, 2 „oben rechts“, 3 „unten links“, 4 „unten rechts“ (je mit kleinem Luftbild;
@@ -42,26 +47,27 @@ ohne Rückfrage und bevor du etwas anderes tust:
    - Weiterlesen: `ANLEITUNG.md` (was getestet wurde, Zahlen, Schwächen, Befehle) und `README.md`
      (Aufbau des Projekts, Vorgeschichte, Benennung der Fassungen).
 
-Fehlt `ergebnisse/T0.html` (etwa weil der Download unvollständig ist): das offen sagen, nichts
+Fehlt `ergebnisse/T0-H0.html` (etwa weil der Download unvollständig ist): das offen sagen, nichts
 anderes öffnen und nicht raten. Vorschlag an Victor: `git status` und `git pull` im Projektordner,
 oder das Projekt neu klonen.
 
 Nicht die älteren Seiten öffnen: `daten/landseg/T0/kern500/seite/T0.html`,
 `daten/landseg/T0/kern500/seite/T0-urteil.html` und `daten/landseg/T0/kern500/seite/T0-probe.html`
 sind Arbeitsstand mit alter Benennung (dort heißt die feste Liste noch „A“). Die gültige Ansicht ist
-nur `ergebnisse/T0.html`.
+nur `ergebnisse/T0-H0.html`; `ergebnisse/T0/T0.html` zeigt nur T0 (ohne Bildwahl),
+`daten/landseg/seiten/T0-H0.html` ist die Arbeitskopie derselben Seite.
 
 ## Projekt-Aufbau
 
 | Pfad | Inhalt |
 |---|---|
 | `README.md` | Einstieg: Aufbau, Lesereihenfolge, Benennung der Fassungen, Arbeiten auf eigenem Zweig |
-| `ANLEITUNG.md` | Test T0: Ergebnis, Zahlen, Dateiformate, Befehle, Python-Umgebung |
-| `ergebnisse/` | aufbereitete Ergebnisse von T0 mit neuer Benennung (`ergebnisse/T0.html`, `ergebnisse/gesamtbilder/`, je Fassung ein Ordner) |
+| `ANLEITUNG.md` | Tests T0 und H0: Ergebnis, Zahlen, Dateiformate, Befehle, Python-Umgebung |
+| `ergebnisse/` | aufbereitete Ergebnisse: die Seite `ergebnisse/T0-H0.html` mit Bildwahl, `ergebnisse/T0/` (T0 mit neuer Benennung, Gesamtbilder in `ergebnisse/T0/gesamtbilder/`, je Fassung ein Ordner) und `ergebnisse/H0/` (H0, je Fassung ein Ordner) |
 | `programm/` | das Programm `landseg` (Python-Paket, Tests, Werkzeuge, Kategorienliste) mit Verlauf |
 | `unterlagen/` | Victors gelieferte Berichte |
 | `wuensche/` | Aufträge, Berichte und Abnahmen, aus denen alles entstanden ist |
-| `daten/landseg/` | volle Arbeitsdaten von T0 mit alten Ordnernamen |
+| `daten/landseg/` | volle Arbeitsdaten: `daten/landseg/T0/` mit alten Ordnernamen, `daten/landseg/H0/` samt Bildern der KI-Läufe |
 | `daten/luftbilder/` | Platz für die Original-Luftbilder (kommen getrennt, Liste in `daten/luftbilder/README.md`) |
 
 ## Nur lesen
