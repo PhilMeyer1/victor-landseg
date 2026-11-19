@@ -36619,6 +36619,44 @@
         "alt": "2.2",
         "neu": "5.3"
       }
+    },
+    {
+      "nr": 301,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "vermerk",
+      "parameter": {
+        "id": 400069,
+        "felder": [
+          "grund",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "sicher": "nein",
+          "grund": null
+        }
+      }
+    },
+    {
+      "nr": 302,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "vermerk",
+      "parameter": {
+        "id": 400304,
+        "felder": [
+          "grund",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "sicher": "nein",
+          "grund": null
+        }
+      }
     }
   ],
   "segmente": [
@@ -38341,7 +38379,8 @@
         "grob": "Siedlung",
         "mittel": "Garten",
         "fein": "Garten"
-      }
+      },
+      "grund": "Garten wahrscheinlich, auf SW nicht sicher (Nutzer 2026-11-18)"
     },
     {
       "id": 400070,
@@ -41966,7 +42005,8 @@
           "buendel": "B-12",
           "zeit": "2026-11-18T13:45:05+00:00"
         }
-      ]
+      ],
+      "grund": "Garten wahrscheinlich, auf SW nicht sicher (Nutzer 2026-11-18)"
     },
     {
       "id": 400305,

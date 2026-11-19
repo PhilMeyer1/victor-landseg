@@ -1,6 +1,6 @@
 # Teil 4 von landseg-garten: Seite und Gesamtprojekt neu bauen
 
-Kurzname: landseg-garten-4 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: bereit | Mutterwunsch: landseg-garten
+Kurzname: landseg-garten-4 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: eingereiht (ohne Commit) | Mutterwunsch: landseg-garten | Ergebnis: ohne Commit
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben
@@ -37,3 +37,7 @@ AK8: Weg des Nutzers: Auf der Seite in T0 ein Haus mit Garten wählen und sehen,
 Einstieg, Bausteine, Entscheidungen: siehe Mutterwunsch
 
 Vorbedingungen: keine
+
+## Nachweis
+
+- 2026-11-19: Datenlauf ohne Commit im Repo (Lauf 20261118o): freie Listen A/B mit Garten unter Dauergrünland (pruefen --frei ok), zerfallene Segmente behoben (0), Einigung offen 0, Seite daten/landseg/seiten/T0-H0.html und Gesamtprojekt lokal neu gebaut und geprüft, nicht hochgeladen; T0-Ergebnisse in der Übergabe als 297ae4a committet. Bericht wuensche/2026-11-18-landseg-garten-4/bericht-landseg.md.

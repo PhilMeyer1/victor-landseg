@@ -1,6 +1,6 @@
 # Gärten überall als Dauergrünland mit Unterklasse „Garten“ führen: Kategorienliste, Regeln und Aufträge der Agents für alle Fassungen, vorhandene Ergebnisse T0 und H0 und Victors Projekt
 
-Kurzname: landseg-garten | Datum: 2026-11-18 | Größe: gross | Bereich: victor | Repos: landseg | Status: bereit
+Kurzname: landseg-garten | Datum: 2026-11-18 | Größe: gross | Bereich: victor | Repos: landseg | Status: eingereiht
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben

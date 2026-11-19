@@ -1,0 +1,4163 @@
+{
+  "schema": "landseg-segmente/1",
+  "vorstufe": {
+    "teilkachel": "r1c0",
+    "bild": "r1c0.png",
+    "konfig": "a059681f03fe",
+    "sam3": "70eb88e22347",
+    "modell": "facebook/sam3",
+    "erstellt": "2026-11-18T12:15:13+00:00",
+    "messung": {
+      "segmente": 65,
+      "segmente_im_kern": 38,
+      "superpixel": 2597,
+      "instanzen": 24,
+      "segmente_instanz": 65,
+      "sicher_nein": 61,
+      "anteil_sicher_nein": 0.9385,
+      "flaeche_sicher_nein": 0.9986,
+      "kandidaten": {
+        "klasse_unsicher": 61,
+        "nicht_zusammenhaengend": 7,
+        "grenze_ohne_bildkante": 77
+      },
+      "im_siedlung_ja": 13,
+      "hoehe": 628,
+      "breite": 628,
+      "laufzeit_s": {
+        "sam3": 3.3,
+        "verschmelzen": 0.26,
+        "gesamt": 3.57
+      }
+    },
+    "pruefen": {
+      "ok": true,
+      "hoehe": 628,
+      "breite": 628,
+      "bildpunkte": 394384,
+      "ohne_segment": 0,
+      "segmentzahl": 65,
+      "nicht_zusammenhaengend": [],
+      "maengel": []
+    }
+  },
+  "fassung": "B",
+  "teilkachel": "r1c0",
+  "stand": "Fassung B, Urteil Runde 0 (Karte nach den Eingriffen der Urteils-Agents, Klassen aus urteil/r1c0/v1..v4/urteil.json)",
+  "urteil": {
+    "viertel": [
+      {
+        "viertel": "v1",
+        "bearbeiter": "urt-b-r1c0-v1",
+        "segmente": 6,
+        "eingriffe": 10,
+        "quelle": "urteil/r1c0/v1/urteil.json"
+      },
+      {
+        "viertel": "v2",
+        "bearbeiter": "urt-b-r1c0-v2",
+        "segmente": 9,
+        "eingriffe": 15,
+        "quelle": "urteil/r1c0/v2/urteil.json"
+      },
+      {
+        "viertel": "v3",
+        "bearbeiter": "urt-b-r1c0-v3",
+        "segmente": 3,
+        "eingriffe": 7,
+        "quelle": "urteil/r1c0/v3/urteil.json"
+      },
+      {
+        "viertel": "v4",
+        "bearbeiter": "urt-b-r1c0-v4",
+        "segmente": 3,
+        "eingriffe": 2,
+        "quelle": "urteil/r1c0/v4/urteil.json"
+      }
+    ],
+    "eingriffe_urteil": 34,
+    "eingriffe_verlauf": 34,
+    "nicht_im_kern": []
+  },
+  "verlauf": [
+    {
+      "zeit": "2026-11-18T12:15:13+00:00",
+      "bearbeiter": "vorstufe",
+      "op": "vorstufe",
+      "konfig": "a059681f03fe"
+    },
+    {
+      "nr": 2,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300015,
+          300019
+        ],
+        "ziel": 300015
+      },
+      "ergebnis": {
+        "ziel": 300015,
+        "entfernt": [
+          300019
+        ]
+      }
+    },
+    {
+      "nr": 3,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300015,
+          300018
+        ],
+        "ziel": 300015
+      },
+      "ergebnis": {
+        "ziel": 300015,
+        "entfernt": [
+          300018
+        ]
+      }
+    },
+    {
+      "nr": 4,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300015,
+          300014
+        ],
+        "ziel": 300015
+      },
+      "ergebnis": {
+        "ziel": 300015,
+        "entfernt": [
+          300014
+        ]
+      }
+    },
+    {
+      "nr": 5,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300001,
+          300012
+        ],
+        "ziel": 300001
+      },
+      "ergebnis": {
+        "ziel": 300001,
+        "entfernt": [
+          300012
+        ]
+      }
+    },
+    {
+      "nr": 6,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300001,
+          300022
+        ],
+        "ziel": 300001
+      },
+      "ergebnis": {
+        "ziel": 300001,
+        "entfernt": [
+          300022
+        ]
+      }
+    },
+    {
+      "nr": 7,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300027,
+          300039
+        ],
+        "ziel": 300027
+      },
+      "ergebnis": {
+        "ziel": 300027,
+        "entfernt": [
+          300039
+        ]
+      }
+    },
+    {
+      "nr": 8,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300026,
+          300034
+        ],
+        "ziel": 300026
+      },
+      "ergebnis": {
+        "ziel": 300026,
+        "entfernt": [
+          300034
+        ]
+      }
+    },
+    {
+      "nr": 9,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300026,
+          300037
+        ],
+        "ziel": 300026
+      },
+      "ergebnis": {
+        "ziel": 300026,
+        "entfernt": [
+          300037
+        ]
+      }
+    },
+    {
+      "nr": 10,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "teilen",
+      "parameter": {
+        "id": 300001,
+        "linie": [
+          [
+            210,
+            126
+          ],
+          [
+            200,
+            130
+          ],
+          [
+            190,
+            133
+          ],
+          [
+            180,
+            134
+          ],
+          [
+            170,
+            132
+          ],
+          [
+            160,
+            133
+          ],
+          [
+            150,
+            137
+          ],
+          [
+            140,
+            141
+          ],
+          [
+            134,
+            150
+          ],
+          [
+            133,
+            165
+          ],
+          [
+            135,
+            180
+          ],
+          [
+            138,
+            198
+          ],
+          [
+            147,
+            214
+          ],
+          [
+            160,
+            230
+          ],
+          [
+            174,
+            246
+          ],
+          [
+            182,
+            264
+          ],
+          [
+            187,
+            282
+          ],
+          [
+            190,
+            296
+          ],
+          [
+            193,
+            306
+          ],
+          [
+            197,
+            314
+          ],
+          [
+            201,
+            322
+          ]
+        ]
+      },
+      "ergebnis": {
+        "behalten": 300001,
+        "neu": [
+          300066
+        ]
+      }
+    },
+    {
+      "nr": 11,
+      "zeit": "2026-11-18T12:27:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v1",
+      "op": "polygon_zuweisen",
+      "parameter": {
+        "id": 300027,
+        "klasse": null,
+        "flaeche": [
+          [
+            182,
+            306
+          ],
+          [
+            190,
+            301
+          ],
+          [
+            198,
+            302
+          ],
+          [
+            198,
+            310
+          ],
+          [
+            197,
+            313
+          ],
+          [
+            193,
+            317
+          ],
+          [
+            185,
+            315
+          ],
+          [
+            182,
+            311
+          ]
+        ]
+      },
+      "ergebnis": {
+        "ziel": 300027,
+        "bildpunkte": 223,
+        "entfernt": [],
+        "aufgeteilt_neu": [
+          300067
+        ]
+      }
+    },
+    {
+      "nr": 12,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300011,
+          300021
+        ],
+        "ziel": 300011
+      },
+      "ergebnis": {
+        "ziel": 300011,
+        "entfernt": [
+          300021
+        ]
+      }
+    },
+    {
+      "nr": 13,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300011,
+          300028
+        ],
+        "ziel": 300011
+      },
+      "ergebnis": {
+        "ziel": 300011,
+        "entfernt": [
+          300028
+        ]
+      }
+    },
+    {
+      "nr": 14,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300015,
+          300025
+        ],
+        "ziel": 300015
+      },
+      "ergebnis": {
+        "ziel": 300015,
+        "entfernt": [
+          300025
+        ]
+      }
+    },
+    {
+      "nr": 15,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300026,
+          300031
+        ],
+        "ziel": 300026
+      },
+      "ergebnis": {
+        "ziel": 300026,
+        "entfernt": [
+          300031
+        ]
+      }
+    },
+    {
+      "nr": 16,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300036,
+          300030,
+          300024
+        ],
+        "ziel": 300036
+      },
+      "ergebnis": {
+        "ziel": 300036,
+        "entfernt": [
+          300024,
+          300030
+        ]
+      }
+    },
+    {
+      "nr": 17,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "teilen",
+      "parameter": {
+        "id": 300004,
+        "linie": [
+          [
+            362,
+            56
+          ],
+          [
+            366,
+            62
+          ],
+          [
+            372,
+            63
+          ],
+          [
+            397,
+            63
+          ],
+          [
+            399,
+            70
+          ],
+          [
+            399,
+            80
+          ],
+          [
+            398,
+            95
+          ],
+          [
+            401,
+            104
+          ],
+          [
+            402,
+            112
+          ],
+          [
+            401,
+            118
+          ]
+        ]
+      },
+      "ergebnis": {
+        "behalten": 300004,
+        "neu": [
+          300068,
+          300069
+        ]
+      }
+    },
+    {
+      "nr": 18,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "teilen",
+      "parameter": {
+        "id": 300004,
+        "linie": [
+          [
+            416,
+            96
+          ],
+          [
+            420,
+            102
+          ],
+          [
+            425,
+            110
+          ],
+          [
+            431,
+            120
+          ],
+          [
+            440,
+            130
+          ],
+          [
+            446,
+            138
+          ],
+          [
+            450,
+            146
+          ]
+        ]
+      },
+      "ergebnis": {
+        "behalten": 300004,
+        "neu": [
+          300070,
+          300071,
+          300072
+        ]
+      }
+    },
+    {
+      "nr": 19,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "polygon_zuweisen",
+      "parameter": {
+        "id": null,
+        "klasse": "2.1",
+        "flaeche": [
+          [
+            333,
+            82
+          ],
+          [
+            345,
+            74
+          ],
+          [
+            358,
+            66
+          ],
+          [
+            364,
+            63
+          ],
+          [
+            397,
+            63
+          ],
+          [
+            397,
+            86
+          ],
+          [
+            392,
+            92
+          ],
+          [
+            382,
+            96
+          ],
+          [
+            372,
+            101
+          ],
+          [
+            362,
+            105
+          ],
+          [
+            350,
+            104
+          ],
+          [
+            340,
+            96
+          ]
+        ]
+      },
+      "ergebnis": {
+        "ziel": 300073,
+        "bildpunkte": 2049,
+        "entfernt": [],
+        "aufgeteilt_neu": [
+          300074,
+          300075,
+          300076,
+          300077
+        ]
+      }
+    },
+    {
+      "nr": 20,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300070,
+          300071,
+          300072
+        ],
+        "ziel": 300070
+      },
+      "ergebnis": {
+        "ziel": 300070,
+        "entfernt": [
+          300071,
+          300072
+        ]
+      }
+    },
+    {
+      "nr": 21,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300002,
+          300074
+        ],
+        "ziel": 300002
+      },
+      "ergebnis": {
+        "ziel": 300002,
+        "entfernt": [
+          300074
+        ]
+      }
+    },
+    {
+      "nr": 22,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300002,
+          300076
+        ],
+        "ziel": 300002
+      },
+      "ergebnis": {
+        "ziel": 300002,
+        "entfernt": [
+          300076
+        ]
+      }
+    },
+    {
+      "nr": 23,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300002,
+          300077
+        ],
+        "ziel": 300002
+      },
+      "ergebnis": {
+        "ziel": 300002,
+        "entfernt": [
+          300077
+        ]
+      }
+    },
+    {
+      "nr": 24,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300068,
+          300075
+        ],
+        "ziel": 300068
+      },
+      "ergebnis": {
+        "ziel": 300068,
+        "entfernt": [
+          300075
+        ]
+      }
+    },
+    {
+      "nr": 25,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "polygon_zuweisen",
+      "parameter": {
+        "id": 300070,
+        "klasse": null,
+        "flaeche": [
+          [
+            398,
+            64
+          ],
+          [
+            409,
+            64
+          ],
+          [
+            410,
+            72
+          ],
+          [
+            411,
+            82
+          ],
+          [
+            414,
+            92
+          ],
+          [
+            418,
+            100
+          ],
+          [
+            421,
+            104
+          ],
+          [
+            412,
+            104
+          ],
+          [
+            403,
+            100
+          ],
+          [
+            398,
+            94
+          ]
+        ]
+      },
+      "ergebnis": {
+        "ziel": 300070,
+        "bildpunkte": 589,
+        "entfernt": [],
+        "aufgeteilt_neu": []
+      }
+    },
+    {
+      "nr": 26,
+      "zeit": "2026-11-18T12:36:48+00:00",
+      "bearbeiter": "urt-b-r1c0-v2",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300070,
+          300068
+        ],
+        "ziel": 300070
+      },
+      "ergebnis": {
+        "ziel": 300070,
+        "entfernt": [
+          300068
+        ]
+      }
+    },
+    {
+      "nr": 27,
+      "zeit": "2026-11-18T12:40:41+00:00",
+      "bearbeiter": "urt-b-r1c0-v3",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300042,
+          300043
+        ],
+        "ziel": 300042
+      },
+      "ergebnis": {
+        "ziel": 300042,
+        "entfernt": [
+          300043
+        ]
+      }
+    },
+    {
+      "nr": 28,
+      "zeit": "2026-11-18T12:40:41+00:00",
+      "bearbeiter": "urt-b-r1c0-v3",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300042,
+          300044
+        ],
+        "ziel": 300042
+      },
+      "ergebnis": {
+        "ziel": 300042,
+        "entfernt": [
+          300044
+        ]
+      }
+    },
+    {
+      "nr": 29,
+      "zeit": "2026-11-18T12:40:41+00:00",
+      "bearbeiter": "urt-b-r1c0-v3",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300042,
+          300045
+        ],
+        "ziel": 300042
+      },
+      "ergebnis": {
+        "ziel": 300042,
+        "entfernt": [
+          300045
+        ]
+      }
+    },
+    {
+      "nr": 30,
+      "zeit": "2026-11-18T12:40:41+00:00",
+      "bearbeiter": "urt-b-r1c0-v3",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300042,
+          300049
+        ],
+        "ziel": 300042
+      },
+      "ergebnis": {
+        "ziel": 300042,
+        "entfernt": [
+          300049
+        ]
+      }
+    },
+    {
+      "nr": 31,
+      "zeit": "2026-11-18T12:40:41+00:00",
+      "bearbeiter": "urt-b-r1c0-v3",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300032,
+          300040
+        ],
+        "ziel": 300032
+      },
+      "ergebnis": {
+        "ziel": 300032,
+        "entfernt": [
+          300040
+        ]
+      }
+    },
+    {
+      "nr": 32,
+      "zeit": "2026-11-18T12:40:41+00:00",
+      "bearbeiter": "urt-b-r1c0-v3",
+      "op": "polygon_zuweisen",
+      "parameter": {
+        "id": 300038,
+        "klasse": null,
+        "flaeche": [
+          [
+            283,
+            466
+          ],
+          [
+            289,
+            466
+          ],
+          [
+            289,
+            477
+          ],
+          [
+            286,
+            478
+          ],
+          [
+            283,
+            472
+          ]
+        ]
+      },
+      "ergebnis": {
+        "ziel": 300038,
+        "bildpunkte": 80,
+        "entfernt": [],
+        "aufgeteilt_neu": []
+      }
+    },
+    {
+      "nr": 33,
+      "zeit": "2026-11-18T12:40:41+00:00",
+      "bearbeiter": "urt-b-r1c0-v3",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300038,
+          300046
+        ],
+        "ziel": 300038
+      },
+      "ergebnis": {
+        "ziel": 300038,
+        "entfernt": [
+          300046
+        ]
+      }
+    },
+    {
+      "nr": 34,
+      "zeit": "2026-11-18T12:42:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v4",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300036,
+          300041
+        ],
+        "ziel": 300036
+      },
+      "ergebnis": {
+        "ziel": 300036,
+        "entfernt": [
+          300041
+        ]
+      }
+    },
+    {
+      "nr": 35,
+      "zeit": "2026-11-18T12:42:21+00:00",
+      "bearbeiter": "urt-b-r1c0-v4",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300026,
+          300047
+        ],
+        "ziel": 300026
+      },
+      "ergebnis": {
+        "ziel": 300026,
+        "entfernt": [
+          300047
+        ]
+      }
+    },
+    {
+      "nr": 36,
+      "zeit": "2026-11-18T13:12:45+00:00",
+      "bearbeiter": "h0-fassungen",
+      "op": "klassen_aus_urteil",
+      "parameter": {
+        "quelle": "urteil/r1c0/v1..v4/urteil.json",
+        "regel": "klasse = Code aus vereinheitlichung/codes.json"
+      },
+      "ergebnis": {
+        "kern": 21,
+        "kontext_nachbar": 11,
+        "kontext_ausserhalb": 16
+      }
+    },
+    {
+      "nr": 37,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300004,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 38,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300004,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100229|r1c0:300004",
+              "mit": "r0c0:100229",
+              "entscheidung": "gleich",
+              "grund": "Das Kernstück von 100229 (19 Bildpunkte, x 480–487, y 497–499) liegt gut 15 Bildpunkte nördlich der Straße in derselben mittelgrauen Feldfläche, die unterhalb der Naht als Feld 300004 weiterläuft; kein Helligkeitssprung, also kein Straßenrand, sondern Feld.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "6.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 39,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300027,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 40,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300032,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 41,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300027,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300027|r1c0:300032",
+              "mit": "r1c0:300032",
+              "entscheidung": "grenze",
+              "grund": "Unterkante des hellen, schmalen Feldwegs gegen das mittelgraue Feld darunter; weicher, aber sichtbarer Hell-Dunkel-Übergang zwischen Weg und Feld.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 42,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300066,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 43,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300010,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 44,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300066,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300027|r1c0:300066",
+              "mit": "r1c0:300027",
+              "entscheidung": "grenze",
+              "grund": "Ende des hellen Feldwegs an der Landstraße gegen die fleckige, mittelgraue Brache nördlich davon; die Segmente berühren sich nur an einem Punkt in der Einmündung.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 45,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300004,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100229|r1c0:300004",
+              "mit": "r0c0:100229",
+              "entscheidung": "gleich",
+              "grund": "Das Kernstück von 100229 (19 Bildpunkte, x 480–487, y 497–499) liegt gut 15 Bildpunkte nördlich der Straße in derselben mittelgrauen Feldfläche, die unterhalb der Naht als Feld 300004 weiterläuft; kein Helligkeitssprung, also kein Straßenrand, sondern Feld.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100218|r1c0:300004",
+              "mit": "r0c0:100218",
+              "entscheidung": "grenze",
+              "grund": "Gehölzmasse an der Feldecke gegen das mittelgraue Feld; an der Naht selbst liegt das untere Ende der dunklen Masse noch im Feldsegment 300004 (dessen Urteil nennt das Gehölz an der Ecke selbst), die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 46,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300004,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100229|r1c0:300004",
+              "mit": "r0c0:100229",
+              "entscheidung": "gleich",
+              "grund": "Das Kernstück von 100229 (19 Bildpunkte, x 480–487, y 497–499) liegt gut 15 Bildpunkte nördlich der Straße in derselben mittelgrauen Feldfläche, die unterhalb der Naht als Feld 300004 weiterläuft; kein Helligkeitssprung, also kein Straßenrand, sondern Feld.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100218|r1c0:300004",
+              "mit": "r0c0:100218",
+              "entscheidung": "grenze",
+              "grund": "Gehölzmasse an der Feldecke gegen das mittelgraue Feld; an der Naht selbst liegt das untere Ende der dunklen Masse noch im Feldsegment 300004 (dessen Urteil nennt das Gehölz an der Ecke selbst), die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300004|r1c1:400037",
+              "mit": "r1c1:400037",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Gehölzmasse an der Kreuzung gegen das Feld 300004; die Naht schneidet durch das dunkle Ende, das fälschlich im Feldsegment steckt, die Segmente meinen aber Feld und Gehölz.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 47,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300010,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300010|r1c0:300066",
+              "mit": "r1c0:300066",
+              "entscheidung": "grenze",
+              "grund": "Breites, sehr helles Band der Landstraße gegen die fleckige, mittelgraue Brache nördlich davon; klare Straßenkante.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 48,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300004,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100229|r1c0:300004",
+              "mit": "r0c0:100229",
+              "entscheidung": "gleich",
+              "grund": "Das Kernstück von 100229 (19 Bildpunkte, x 480–487, y 497–499) liegt gut 15 Bildpunkte nördlich der Straße in derselben mittelgrauen Feldfläche, die unterhalb der Naht als Feld 300004 weiterläuft; kein Helligkeitssprung, also kein Straßenrand, sondern Feld.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "6.1"
+            },
+            {
+              "paar": "r0c0:100218|r1c0:300004",
+              "mit": "r0c0:100218",
+              "entscheidung": "grenze",
+              "grund": "Gehölzmasse an der Feldecke gegen das mittelgraue Feld; an der Naht selbst liegt das untere Ende der dunklen Masse noch im Feldsegment 300004 (dessen Urteil nennt das Gehölz an der Ecke selbst), die Flächen sind aber verschieden.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300004|r1c1:400037",
+              "mit": "r1c1:400037",
+              "entscheidung": "grenze",
+              "grund": "Dunkle Gehölzmasse an der Kreuzung gegen das Feld 300004; die Naht schneidet durch das dunkle Ende, das fälschlich im Feldsegment steckt, die Segmente meinen aber Feld und Gehölz.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300004|r1c1:400064",
+              "mit": "r1c1:400064",
+              "entscheidung": "grenze",
+              "grund": "Helle Landstraße an der Kreuzung gegen das mittelgraue Feld; die Feldecke reicht an der Naht in die hellen Straßenpixel hinein, die Flächen sind aber klar verschieden.",
+              "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+              "buendel": "B-04",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 49,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300001,
+        "felder": [
+          "einigung",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null,
+          "sicher": "nein"
+        }
+      }
+    },
+    {
+      "nr": 50,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300001,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100202|r1c0:300001",
+              "mit": "r0c0:100202",
+              "entscheidung": "unklar",
+              "grund": "An der Naht läuft derselbe helle Streifen westlich des dunklen Grabenbandes ohne Kante weiter (oben mit dunklen Buschflecken, unten mit heller Stelle bei y 515–540); 300001 ist aber weiter südlich ein Streifenfeld, der Übergang Brache–Feld liegt etwa bei y 555 mitten in 300001, und ob die helle Ecke noch Brache oder ein hellerer Feldteil ist, lässt das Bild nicht sicher erkennen.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 51,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300001,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100202|r1c0:300001",
+              "mit": "r0c0:100202",
+              "entscheidung": "unklar",
+              "grund": "An der Naht läuft derselbe helle Streifen westlich des dunklen Grabenbandes ohne Kante weiter (oben mit dunklen Buschflecken, unten mit heller Stelle bei y 515–540); 300001 ist aber weiter südlich ein Streifenfeld, der Übergang Brache–Feld liegt etwa bei y 555 mitten in 300001, und ob die helle Ecke noch Brache oder ein hellerer Feldteil ist, lässt das Bild nicht sicher erkennen.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r0c0:100221|r1c0:300001",
+              "mit": "r0c0:100221",
+              "entscheidung": "grenze",
+              "grund": "100221 ist ein Stück des dunklen Rain- bzw. Grabenbandes (Grauwert um 70) zwischen hellem Brachestreifen und großem Feld, 300001 ist der hellere Streifen bzw. das Streifenfeld westlich davon (um 91); das Band läuft unter der Naht in 300001 hinein weiter, die Grenze Band–Fläche liegt dort im Segment, nicht an der Naht.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 52,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300002,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 53,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300002,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100223|r1c0:300002",
+              "mit": "r0c0:100223",
+              "entscheidung": "grenze",
+              "grund": "Berührung an einem Bildpunkt (x 43): westlich das dunkle Rainband (100223), östlich beginnt das gleichmäßig dunkelgraue große Feld 300002; schwacher, aber vorhandener Übergang vom Band zur Feldfläche.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 54,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300073,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 55,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300073,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100224|r1c0:300073",
+              "mit": "r0c0:100224",
+              "entscheidung": "grenze",
+              "grund": "Oben die mittelgraue Feldecke links des Weges, zwei bis drei Bildpunkte unter der Naht beginnt die dunkle Oberkante der Feldscheune (Grauwerte fallen von etwa 70 auf 40); echte Grenze Feld–Gebäude knapp unter der Naht.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 56,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300073,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100224|r1c0:300073",
+              "mit": "r0c0:100224",
+              "entscheidung": "grenze",
+              "grund": "Oben die mittelgraue Feldecke links des Weges, zwei bis drei Bildpunkte unter der Naht beginnt die dunkle Oberkante der Feldscheune (Grauwerte fallen von etwa 70 auf 40); echte Grenze Feld–Gebäude knapp unter der Naht.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r0c0:100220|r1c0:300073",
+              "mit": "r0c0:100220",
+              "entscheidung": "grenze",
+              "grund": "Das helle Band des Feldwegs (Grauwert um 110) endet an der Naht, direkt darunter liegt der fast schwarze Block der Feldscheune (unter 40); deutlicher Helligkeitssprung einen Bildpunkt unter der Naht, also Weg gegen Gebäude.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 57,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300070,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 58,
+      "zeit": "2026-11-18T13:45:06+00:00",
+      "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300070,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100225|r1c0:300070",
+              "mit": "r0c0:100225",
+              "entscheidung": "grenze",
+              "grund": "Der dunkle Fleck (Grauwert um 43) setzt sich unter der Naht noch etwa 7 Bildpunkte als dunkle Spitze von 300070 fort, erst darunter beginnt das helle Band des Feldwegs; Gebüschfleck und Weg sind verschiedene Flächen, die Grenze liegt knapp unter der Naht in 300070.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 59,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300026,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 60,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300038,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 61,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300038,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300026|r1c0:300038",
+              "mit": "r1c0:300026",
+              "entscheidung": "grenze",
+              "grund": "Die schmale helle Linie mit dunkler Furche (Feldrain 38) hebt sich als eigenes Band vom gleichmäßig gestreiften Feld 26 ab; zwei verschiedene Flächen.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 62,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300042,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 63,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300023,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 64,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300026,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300026|r1c0:300038",
+              "mit": "r1c0:300038",
+              "entscheidung": "grenze",
+              "grund": "Die schmale helle Linie mit dunkler Furche (Feldrain 38) hebt sich als eigenes Band vom gleichmäßig gestreiften Feld 26 ab; zwei verschiedene Flächen.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 65,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300011,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 66,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300036,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 67,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300011,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300011|r1c0:300036",
+              "mit": "r1c0:300036",
+              "entscheidung": "grenze",
+              "grund": "Das mittelgraue Feld 11 grenzt nur an einer Ecke an das deutlich hellere, geradrandige Band des Feldwegs 36; Weg gegen Acker.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 68,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300036,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300011|r1c0:300036",
+              "mit": "r1c0:300011",
+              "entscheidung": "grenze",
+              "grund": "Das mittelgraue Feld 11 grenzt nur an einer Ecke an das deutlich hellere, geradrandige Band des Feldwegs 36; Weg gegen Acker.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 69,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300023,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300023|r1c0:300026",
+              "mit": "r1c0:300026",
+              "entscheidung": "grenze",
+              "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 70,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300023,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300023|r1c0:300026",
+              "mit": "r1c0:300026",
+              "entscheidung": "grenze",
+              "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400118",
+              "mit": "r1c1:400118",
+              "entscheidung": "grenze",
+              "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 71,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300023,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300023|r1c0:300026",
+              "mit": "r1c0:300026",
+              "entscheidung": "grenze",
+              "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400118",
+              "mit": "r1c1:400118",
+              "entscheidung": "grenze",
+              "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400202",
+              "mit": "r1c1:400202",
+              "entscheidung": "gleich",
+              "grund": "Der 3-Bildpunkte-Rest 400202 sitzt direkt an der Naht auf demselben schmalen hell-dunklen Linienband wie Rain 23 und ist dessen Fortsetzung, kein eigener Wegrand (Linie liegt zwischen Feldern, nicht an einem Weg).",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 72,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300023,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300023|r1c0:300026",
+              "mit": "r1c0:300026",
+              "entscheidung": "grenze",
+              "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400118",
+              "mit": "r1c1:400118",
+              "entscheidung": "grenze",
+              "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400202",
+              "mit": "r1c1:400202",
+              "entscheidung": "gleich",
+              "grund": "Der 3-Bildpunkte-Rest 400202 sitzt direkt an der Naht auf demselben schmalen hell-dunklen Linienband wie Rain 23 und ist dessen Fortsetzung, kein eigener Wegrand (Linie liegt zwischen Feldern, nicht an einem Weg).",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400209",
+              "mit": "r1c1:400209",
+              "entscheidung": "gleich",
+              "grund": "In der eigenen Vergrößerung (einigung_09.jpg) setzt sich die helle Linie mit dunkler Furche des Rains 23 bei y 950-975 ohne Unterbrechung über die Naht fort; 400209 ist dieses Stück, also derselbe Feldrain zwischen zwei Feldern.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 73,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300023,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300023|r1c0:300026",
+              "mit": "r1c0:300026",
+              "entscheidung": "grenze",
+              "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400118",
+              "mit": "r1c1:400118",
+              "entscheidung": "grenze",
+              "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400202",
+              "mit": "r1c1:400202",
+              "entscheidung": "gleich",
+              "grund": "Der 3-Bildpunkte-Rest 400202 sitzt direkt an der Naht auf demselben schmalen hell-dunklen Linienband wie Rain 23 und ist dessen Fortsetzung, kein eigener Wegrand (Linie liegt zwischen Feldern, nicht an einem Weg).",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400209",
+              "mit": "r1c1:400209",
+              "entscheidung": "gleich",
+              "grund": "In der eigenen Vergrößerung (einigung_09.jpg) setzt sich die helle Linie mit dunkler Furche des Rains 23 bei y 950-975 ohne Unterbrechung über die Naht fort; 400209 ist dieses Stück, also derselbe Feldrain zwischen zwei Feldern.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400211",
+              "mit": "r1c1:400211",
+              "entscheidung": "gleich",
+              "grund": "400211 liegt auf derselben über die Naht durchlaufenden Rainlinie wie 23 und 400209 (einigung_09.jpg), ein Feldrain zwischen Feldern, kein Wegrand.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 74,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-12:20261118i-r1",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300035,
+        "klasse": "0.3"
+      },
+      "ergebnis": {
+        "alt": "1.1.2",
+        "neu": "0.3"
+      }
+    },
+    {
+      "nr": 75,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-12:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300035,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 76,
+      "zeit": "2026-11-18T13:45:07+00:00",
+      "bearbeiter": "agent:einigung-B-12:20261118i-r1",
+      "op": "einigung",
+      "parameter": {
+        "id": 300029,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": null
+        }
+      }
+    },
+    {
+      "nr": 77,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300036,
+          300033
+        ],
+        "ziel": 300036
+      },
+      "ergebnis": {
+        "ziel": 300036,
+        "entfernt": [
+          300033
+        ]
+      }
+    },
+    {
+      "nr": 78,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300026,
+          300051
+        ],
+        "ziel": 300026
+      },
+      "ergebnis": {
+        "ziel": 300026,
+        "entfernt": [
+          300051
+        ]
+      }
+    },
+    {
+      "nr": 79,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300002,
+          300003
+        ],
+        "ziel": 300002
+      },
+      "ergebnis": {
+        "ziel": 300002,
+        "entfernt": [
+          300003
+        ]
+      }
+    },
+    {
+      "nr": 80,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300006,
+          300005
+        ],
+        "ziel": 300006
+      },
+      "ergebnis": {
+        "ziel": 300006,
+        "entfernt": [
+          300005
+        ]
+      }
+    },
+    {
+      "nr": 81,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300050,
+          300052
+        ],
+        "ziel": 300050
+      },
+      "ergebnis": {
+        "ziel": 300050,
+        "entfernt": [
+          300052
+        ]
+      }
+    },
+    {
+      "nr": 82,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300054,
+          300059
+        ],
+        "ziel": 300054
+      },
+      "ergebnis": {
+        "ziel": 300054,
+        "entfernt": [
+          300059
+        ]
+      }
+    },
+    {
+      "nr": 83,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300011,
+          300020
+        ],
+        "ziel": 300011
+      },
+      "ergebnis": {
+        "ziel": 300011,
+        "entfernt": [
+          300020
+        ]
+      }
+    },
+    {
+      "nr": 84,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300050,
+          300055
+        ],
+        "ziel": 300050
+      },
+      "ergebnis": {
+        "ziel": 300050,
+        "entfernt": [
+          300055
+        ]
+      }
+    },
+    {
+      "nr": 85,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300050,
+          300048
+        ],
+        "ziel": 300050
+      },
+      "ergebnis": {
+        "ziel": 300050,
+        "entfernt": [
+          300048
+        ]
+      }
+    },
+    {
+      "nr": 86,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300011,
+          300013
+        ],
+        "ziel": 300011
+      },
+      "ergebnis": {
+        "ziel": 300011,
+        "entfernt": [
+          300013
+        ]
+      }
+    },
+    {
+      "nr": 87,
+      "zeit": "2026-11-18T17:15:54+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "verschmelzen",
+      "parameter": {
+        "ids": [
+          300050,
+          300056
+        ],
+        "ziel": 300050
+      },
+      "ergebnis": {
+        "ziel": 300050,
+        "entfernt": [
+          300056
+        ]
+      }
+    },
+    {
+      "nr": 88,
+      "zeit": "2026-11-18T17:15:55+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "einigung",
+      "parameter": {
+        "id": 300001,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100202|r1c0:300001",
+              "mit": "r0c0:100202",
+              "entscheidung": "unklar",
+              "grund": "An der Naht läuft derselbe helle Streifen westlich des dunklen Grabenbandes ohne Kante weiter (oben mit dunklen Buschflecken, unten mit heller Stelle bei y 515–540); 300001 ist aber weiter südlich ein Streifenfeld, der Übergang Brache–Feld liegt etwa bei y 555 mitten in 300001, und ob die helle Ecke noch Brache oder ein hellerer Feldteil ist, lässt das Bild nicht sicher erkennen.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r0c0:100221|r1c0:300001",
+              "mit": "r0c0:100221",
+              "entscheidung": "grenze",
+              "grund": "100221 ist ein Stück des dunklen Rain- bzw. Grabenbandes (Grauwert um 70) zwischen hellem Brachestreifen und großem Feld, 300001 ist der hellere Streifen bzw. das Streifenfeld westlich davon (um 91); das Band läuft unter der Naht in 300001 hinein weiter, die Grenze Band–Fläche liegt dort im Segment, nicht an der Naht.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r0c0:100223|r1c0:300001",
+              "mit": "r0c0:100223",
+              "entscheidung": "grenze",
+              "grund": "100223 liegt wie 100221 auf dem dunklen Rainband am Westrand des großen Feldes, 300001 ist der hellere Streifen bzw. das Streifenfeld westlich davon; verschiedene Flächen, nur dass das Band unter der Naht ein paar Bildpunkte in 300001 hineinläuft.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 89,
+      "zeit": "2026-11-18T17:15:55+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "einigung",
+      "parameter": {
+        "id": 300002,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100223|r1c0:300002",
+              "mit": "r0c0:100223",
+              "entscheidung": "grenze",
+              "grund": "Berührung an einem Bildpunkt (x 43): westlich das dunkle Rainband (100223), östlich beginnt das gleichmäßig dunkelgraue große Feld 300002; schwacher, aber vorhandener Übergang vom Band zur Feldfläche.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r0c0:100224|r1c0:300002",
+              "mit": "r0c0:100224",
+              "entscheidung": "gleich",
+              "grund": "Beide Seiten zeigen dieselbe gleichmäßig mittelgraue, feinkörnige Feldfläche (Grauwert 72 gegen 76, wie das Nachbarfeld 100154 mit 77); einen eigenen Randstreifen zwischen Feld und hellem Weg zeigt das Bild an dieser Stelle nicht, also Feld.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "6.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 90,
+      "zeit": "2026-11-18T17:15:55+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "einigung",
+      "parameter": {
+        "id": 300023,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300023|r1c0:300026",
+              "mit": "r1c0:300026",
+              "entscheidung": "grenze",
+              "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400118",
+              "mit": "r1c1:400118",
+              "entscheidung": "grenze",
+              "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400202",
+              "mit": "r1c1:400202",
+              "entscheidung": "gleich",
+              "grund": "Der 3-Bildpunkte-Rest 400202 sitzt direkt an der Naht auf demselben schmalen hell-dunklen Linienband wie Rain 23 und ist dessen Fortsetzung, kein eigener Wegrand (Linie liegt zwischen Feldern, nicht an einem Weg).",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400209",
+              "mit": "r1c1:400209",
+              "entscheidung": "gleich",
+              "grund": "In der eigenen Vergrößerung (einigung_09.jpg) setzt sich die helle Linie mit dunkler Furche des Rains 23 bei y 950-975 ohne Unterbrechung über die Naht fort; 400209 ist dieses Stück, also derselbe Feldrain zwischen zwei Feldern.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400211",
+              "mit": "r1c1:400211",
+              "entscheidung": "gleich",
+              "grund": "400211 liegt auf derselben über die Naht durchlaufenden Rainlinie wie 23 und 400209 (einigung_09.jpg), ein Feldrain zwischen Feldern, kein Wegrand.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400176",
+              "mit": "r1c1:400176",
+              "entscheidung": "grenze",
+              "grund": "400176 ist die gleichmäßig graue Ackerfläche westlich der Rainlinie (fast ganz im Kontextrand), der Rain 23 ein schmales Linienband; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 91,
+      "zeit": "2026-11-18T17:15:55+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "einigung",
+      "parameter": {
+        "id": 300029,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300029|r1c1:400136",
+              "mit": "r1c1:400136",
+              "entscheidung": "gleich",
+              "grund": "Die 13 Kernpunkte von 400136 sind dasselbe gleichmäßig mittelgraue, feinkörnige Feld wie 300029 westlich der Naht, das bis an den Wegrand reicht; ein eigener Rainstreifen ist am Bild nicht abgesetzt.",
+              "bearbeiter": "agent:einigung-B-12:20261118i-r1",
+              "buendel": "B-12",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "6.1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 92,
+      "zeit": "2026-11-18T17:15:55+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "einigung",
+      "parameter": {
+        "id": 300073,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r0c0:100224|r1c0:300073",
+              "mit": "r0c0:100224",
+              "entscheidung": "grenze",
+              "grund": "Oben die mittelgraue Feldecke links des Weges, zwei bis drei Bildpunkte unter der Naht beginnt die dunkle Oberkante der Feldscheune (Grauwerte fallen von etwa 70 auf 40); echte Grenze Feld–Gebäude knapp unter der Naht.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r0c0:100220|r1c0:300073",
+              "mit": "r0c0:100220",
+              "entscheidung": "grenze",
+              "grund": "Das helle Band des Feldwegs (Grauwert um 110) endet an der Naht, direkt darunter liegt der fast schwarze Block der Feldscheune (unter 40); deutlicher Helligkeitssprung einen Bildpunkt unter der Naht, also Weg gegen Gebäude.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r0c0:100225|r1c0:300073",
+              "mit": "r0c0:100225",
+              "entscheidung": "grenze",
+              "grund": "Berührung an einem Bildpunkt (x 333): oben der dunkle Fleck rechts des Weges, unten die rechte Oberecke der Scheune, wo der Weg mit helleren Bildpunkten (65–80) zwischen Fleck und dunklem Block vorbeiführt; zwei verschiedene Dinge.",
+              "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+              "buendel": "B-05",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 93,
+      "zeit": "2026-11-18T17:15:55+00:00",
+      "bearbeiter": "wf:vergroebern:20261118n",
+      "op": "einigung",
+      "parameter": {
+        "id": 300074,
+        "felder": [
+          "einigung"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "einigung": [
+            {
+              "paar": "r1c0:300023|r1c0:300026",
+              "mit": "r1c0:300026",
+              "entscheidung": "grenze",
+              "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400118",
+              "mit": "r1c1:400118",
+              "entscheidung": "grenze",
+              "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400202",
+              "mit": "r1c1:400202",
+              "entscheidung": "gleich",
+              "grund": "Der 3-Bildpunkte-Rest 400202 sitzt direkt an der Naht auf demselben schmalen hell-dunklen Linienband wie Rain 23 und ist dessen Fortsetzung, kein eigener Wegrand (Linie liegt zwischen Feldern, nicht an einem Weg).",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400209",
+              "mit": "r1c1:400209",
+              "entscheidung": "gleich",
+              "grund": "In der eigenen Vergrößerung (einigung_09.jpg) setzt sich die helle Linie mit dunkler Furche des Rains 23 bei y 950-975 ohne Unterbrechung über die Naht fort; 400209 ist dieses Stück, also derselbe Feldrain zwischen zwei Feldern.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400211",
+              "mit": "r1c1:400211",
+              "entscheidung": "gleich",
+              "grund": "400211 liegt auf derselben über die Naht durchlaufenden Rainlinie wie 23 und 400209 (einigung_09.jpg), ein Feldrain zwischen Feldern, kein Wegrand.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00",
+              "klasse": "5.1.1"
+            },
+            {
+              "paar": "r1c0:300023|r1c1:400176",
+              "mit": "r1c1:400176",
+              "entscheidung": "grenze",
+              "grund": "400176 ist die gleichmäßig graue Ackerfläche westlich der Rainlinie (fast ganz im Kontextrand), der Rain 23 ein schmales Linienband; Rain gegen Feld.",
+              "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T13:45:05+00:00"
+            },
+            {
+              "paar": "r1c0:300074|r1c1:400176",
+              "mit": "r1c1:400176",
+              "entscheidung": "grenze",
+              "grund": "400176 ist die gleichmäßig graue Ackerfläche westlich der Rainlinie (fast ganz im Kontextrand), der Rain 23 ein schmales Linienband; Rain gegen Feld. [übernommen aus Paar r1c0:300023|r1c1:400176: Kernteil nach Zerfall eigene Fläche bzw. an gleichklassigen Nachbarn]",
+              "bearbeiter": "umsetzer:landseg-historisch-4",
+              "buendel": "B-11",
+              "zeit": "2026-11-18T14:04:13+00:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nr": 94,
+      "zeit": "2026-11-18T17:42:44+00:00",
+      "bearbeiter": "umsetzer:landseg-garten-4",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 300008,
+        "klasse": "5.3"
+      },
+      "ergebnis": {
+        "alt": "2.2",
+        "neu": "5.3"
+      }
+    }
+  ],
+  "segmente": [
+    {
+      "id": 300001,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 38266,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 20660,
+      "urteil": "sauber",
+      "was_ist_es": "Nach der Teilung: Feld links mit hellen und dunklen Streifen in Richtung Nordwest–Südost (Streifenflur), zwischen Graben oben, Brache 66 rechts und Feldweg 27 unten; oben links eine hellere Ecke ohne Kante.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100202|r1c0:300001",
+          "mit": "r0c0:100202",
+          "entscheidung": "unklar",
+          "grund": "An der Naht läuft derselbe helle Streifen westlich des dunklen Grabenbandes ohne Kante weiter (oben mit dunklen Buschflecken, unten mit heller Stelle bei y 515–540); 300001 ist aber weiter südlich ein Streifenfeld, der Übergang Brache–Feld liegt etwa bei y 555 mitten in 300001, und ob die helle Ecke noch Brache oder ein hellerer Feldteil ist, lässt das Bild nicht sicher erkennen.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r0c0:100223|r1c0:300001",
+          "mit": "r0c0:100223",
+          "entscheidung": "grenze",
+          "grund": "100221 ist ein Stück des dunklen Rain- bzw. Grabenbandes (Grauwert um 70) zwischen hellem Brachestreifen und großem Feld, 300001 ist der hellere Streifen bzw. das Streifenfeld westlich davon (um 91); das Band läuft unter der Naht in 300001 hinein weiter, die Grenze Band–Fläche liegt dort im Segment, nicht an der Naht.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r0c0:100223|r1c0:300001",
+          "mit": "r0c0:100223",
+          "entscheidung": "grenze",
+          "grund": "100223 liegt wie 100221 auf dem dunklen Rainband am Westrand des großen Feldes, 300001 ist der hellere Streifen bzw. das Streifenfeld westlich davon; verschiedene Flächen, nur dass das Band unter der Naht ein paar Bildpunkte in 300001 hineinläuft.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300002,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.583
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 27138,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 10060,
+      "urteil": "sauber",
+      "was_ist_es": "Dunkles, gleichmäßiges Feld oben im Viertel mit schwachen Bearbeitungsstreifen Richtung Südwest–Nordost, links vom Graben (x 95–125) begrenzt; Teil des großen Feldes nördlich in r0c0.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100223|r1c0:300002",
+          "mit": "r0c0:100223",
+          "entscheidung": "grenze",
+          "grund": "Berührung an einem Bildpunkt (x 43): westlich das dunkle Rainband (100223), östlich beginnt das gleichmäßig dunkelgraue große Feld 300002; schwacher, aber vorhandener Übergang vom Band zur Feldfläche.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r0c0:100154|r1c0:300002",
+          "mit": "r0c0:100154",
+          "entscheidung": "gleich",
+          "grund": "Beide Seiten zeigen dieselbe gleichmäßig mittelgraue, feinkörnige Feldfläche (Grauwert 72 gegen 76, wie das Nachbarfeld 100154 mit 77); einen eigenen Randstreifen zwischen Feld und hellem Weg zeigt das Bild an dieser Stelle nicht, also Feld.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "6.1"
+        }
+      ]
+    },
+    {
+      "id": 300004,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 7577,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 5100,
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Nach den Teilungen: helleres Rechteckfeld zwischen der Hecke im Nordwesten, dem Graben im Südwesten und der Straße; die schmalen dunklen Ränder (Hecke, Gehölz an der Nordostecke) stecken noch darin.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "trennen",
+          "text": "Schmale dunkle Hecke am Nordwestrand (x 425–550, y 64–105) liegt im Feld; nicht abgetrennt, weil nur 4–6 Bildpunkte breit.",
+          "flaeche_px": null
+        },
+        {
+          "nr": 2,
+          "art": "trennen",
+          "text": "Gehölz und Ecke der Dorfstraße im Nordosten (x 545–563, y 64–83) gehören nicht zum Feld; Hauptteil im Kontextrand.",
+          "flaeche_px": 250
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100229|r1c0:300004",
+          "mit": "r0c0:100229",
+          "entscheidung": "gleich",
+          "grund": "Das Kernstück von 100229 (19 Bildpunkte, x 480–487, y 497–499) liegt gut 15 Bildpunkte nördlich der Straße in derselben mittelgrauen Feldfläche, die unterhalb der Naht als Feld 300004 weiterläuft; kein Helligkeitssprung, also kein Straßenrand, sondern Feld.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "6.1"
+        },
+        {
+          "paar": "r0c0:100218|r1c0:300004",
+          "mit": "r0c0:100218",
+          "entscheidung": "grenze",
+          "grund": "Gehölzmasse an der Feldecke gegen das mittelgraue Feld; an der Naht selbst liegt das untere Ende der dunklen Masse noch im Feldsegment 300004 (dessen Urteil nennt das Gehölz an der Ecke selbst), die Flächen sind aber verschieden.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300004|r1c1:400037",
+          "mit": "r1c1:400037",
+          "entscheidung": "grenze",
+          "grund": "Dunkle Gehölzmasse an der Kreuzung gegen das Feld 300004; die Naht schneidet durch das dunkle Ende, das fälschlich im Feldsegment steckt, die Segmente meinen aber Feld und Gehölz.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300004|r1c1:400064",
+          "mit": "r1c1:400064",
+          "entscheidung": "grenze",
+          "grund": "Helle Landstraße an der Kreuzung gegen das mittelgraue Feld; die Feldecke reicht an der Naht in die hellen Straßenpixel hinein, die Flächen sind aber klar verschieden.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300004|r1c1:400072",
+          "mit": "r1c1:400072",
+          "entscheidung": "grenze",
+          "grund": "Das Feld 300004 liegt nördlich der Landstraße; an der Naht berührt nur ein abgetrenntes Stückchen von ihm südlich der Straße den dunklen Rain 400072 – das Stückchen gehört zum Rain, das Feldsegment als Ganzes aber nicht.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300006,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.6
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 11041,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 1904,
+      "urteil": "sauber",
+      "was_ist_es": "Dunkles Feld nördlich der Hecke, im Kern nur ein schmaler Rest am oberen Rand (Hauptteil in r0c0/Kontextrand).",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      }
+    },
+    {
+      "id": 300007,
+      "klasse": "0.2.1",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "construction site",
+        "eingerastet": true
+      },
+      "flaeche": 4555,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.3.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300008,
+      "klasse": "5.3",
+      "grob": "5",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.501
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 680,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300009,
+      "klasse": "4.3",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.662
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 136,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "ja",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300010,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.556
+      },
+      "instanz": {
+        "text": "paved path",
+        "eingerastet": true
+      },
+      "flaeche": 9386,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 8305,
+      "urteil": "sauber",
+      "was_ist_es": "Helles, gleichmäßig breites Band (etwa 12 Bildpunkte, gut 5 m) quer durch die Teilkachel: Landstraße vom Dorf nach Südwesten.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Straße",
+        "fein": "Landstraße"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300010|r1c0:300066",
+          "mit": "r1c0:300066",
+          "entscheidung": "grenze",
+          "grund": "Breites, sehr helles Band der Landstraße gegen die fleckige, mittelgraue Brache nördlich davon; klare Straßenkante.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300010|r1c1:400072",
+          "mit": "r1c1:400072",
+          "entscheidung": "grenze",
+          "grund": "Südkante der hellen Landstraße gegen den dunkleren, fleckigen Rain südlich davon; heller Belag und Saum sind verschiedene Flächen.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300011,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.593
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 29792,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 21614,
+      "urteil": "sauber",
+      "was_ist_es": "Großes mittelgraues Feld südöstlich der Straße zwischen dem Rain 23 und dem hellen Weg 36, mit schwachen Streifen parallel zur Straße; Kleinstücke 21 und 28 jetzt darin.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300011|r1c0:300036",
+          "mit": "r1c0:300036",
+          "entscheidung": "grenze",
+          "grund": "Das mittelgraue Feld 11 grenzt nur an einer Ecke an das deutlich hellere, geradrandige Band des Feldwegs 36; Weg gegen Acker.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300011|r1c1:400110",
+          "mit": "r1c1:400110",
+          "entscheidung": "grenze",
+          "grund": "Das dunkle Feld 11 berührt an der Naht nur in einem Punkt das helle, fleckige Wegband 400110; deutlicher Helligkeitssprung zwischen Acker und Weg.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300011|r1c1:400072",
+          "mit": "r1c1:400072",
+          "entscheidung": "grenze",
+          "grund": "Das Feld 300004 liegt nördlich der Landstraße; an der Naht berührt nur ein abgetrenntes Stückchen von ihm südlich der Straße den dunklen Rain 400072 – das Stückchen gehört zum Rain, das Feldsegment als Ganzes aber nicht. [übernommen aus Paar r1c0:300004|r1c1:400072: Kernteil nach Zerfall eigene Fläche bzw. an gleichklassigen Nachbarn]",
+          "bearbeiter": "umsetzer:landseg-historisch-4",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T14:04:13+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300015,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.565
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 19246,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 19246,
+      "urteil": "sauber",
+      "was_ist_es": "Mittelgraues, gleichmäßiges Feld rechts vom Graben bis zur Straße und unter der hellen Fläche 4 (reicht nach v2); Kleinstücke 19, 18, 14 sind jetzt darin.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      }
+    },
+    {
+      "id": 300016,
+      "klasse": "3.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.491
+      },
+      "instanz": {
+        "text": "construction site",
+        "eingerastet": true
+      },
+      "flaeche": 205,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.3.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300017,
+      "klasse": "4.4",
+      "grob": "4",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.608
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 140,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "ja",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand: Klasse aus dem Urteil der Nachbarkachel (Mehrheit der Bildpunkte)",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300023,
+      "klasse": "5.1.1",
+      "grob": "5",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 4357,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 4105,
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "fremdes",
+          "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.",
+          "flaeche_px": 300
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Rain",
+        "fein": "Feldrain"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300023|r1c0:300026",
+          "mit": "r1c0:300026",
+          "entscheidung": "grenze",
+          "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400118",
+          "mit": "r1c1:400118",
+          "entscheidung": "grenze",
+          "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400191",
+          "mit": "r1c1:400191",
+          "entscheidung": "gleich",
+          "grund": "Der 3-Bildpunkte-Rest 400202 sitzt direkt an der Naht auf demselben schmalen hell-dunklen Linienband wie Rain 23 und ist dessen Fortsetzung, kein eigener Wegrand (Linie liegt zwischen Feldern, nicht an einem Weg).",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "5.1.1"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400209",
+          "mit": "r1c1:400209",
+          "entscheidung": "gleich",
+          "grund": "In der eigenen Vergrößerung (einigung_09.jpg) setzt sich die helle Linie mit dunkler Furche des Rains 23 bei y 950-975 ohne Unterbrechung über die Naht fort; 400209 ist dieses Stück, also derselbe Feldrain zwischen zwei Feldern.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "5.1.1"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400209",
+          "mit": "r1c1:400209",
+          "entscheidung": "gleich",
+          "grund": "400211 liegt auf derselben über die Naht durchlaufenden Rainlinie wie 23 und 400209 (einigung_09.jpg), ein Feldrain zwischen Feldern, kein Wegrand.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "5.1.1"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400176",
+          "mit": "r1c1:400176",
+          "entscheidung": "grenze",
+          "grund": "400176 ist die gleichmäßig graue Ackerfläche westlich der Rainlinie (fast ganz im Kontextrand), der Rain 23 ein schmales Linienband; Rain gegen Feld.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300026,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.511
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 87943,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 73424,
+      "urteil": "sauber",
+      "was_ist_es": "Großes Feld zwischen den Rainen 38 und 23 südlich der Straße (über alle vier Viertel), mit mehreren parallelen hellen und dunklen Streifen (Streifenflur) ohne scharfe Kanten; Kleinstücke 34, 37, 31, 47 jetzt darin.",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300026|r1c0:300038",
+          "mit": "r1c0:300038",
+          "entscheidung": "grenze",
+          "grund": "Die schmale helle Linie mit dunkler Furche (Feldrain 38) hebt sich als eigenes Band vom gleichmäßig gestreiften Feld 26 ab; zwei verschiedene Flächen.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300023|r1c0:300026",
+          "mit": "r1c0:300023",
+          "entscheidung": "grenze",
+          "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300027,
+      "klasse": "3.2.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.422
+      },
+      "instanz": {
+        "text": "paved path",
+        "eingerastet": true
+      },
+      "flaeche": 3744,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "1.2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 1789,
+      "urteil": "sauber",
+      "was_ist_es": "Helles, etwa 6–8 Bildpunkte (3 m) breites Band zwischen den Feldern, das von Westen auf die Straße trifft: Feldweg; jetzt bis an die Straße verlängert.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "fehlt",
+          "text": "Der Weg endete bei x 191 vor der Straße; das Stück bis zur Straße (x 186–198, y 302–317) gehörte zu Acker 1 und verband zwei Felder, jetzt dem Weg zugewiesen.",
+          "flaeche_px": 223
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Weg",
+        "fein": "Feldweg"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300027|r1c0:300032",
+          "mit": "r1c0:300032",
+          "entscheidung": "grenze",
+          "grund": "Unterkante des hellen, schmalen Feldwegs gegen das mittelgraue Feld darunter; weicher, aber sichtbarer Hell-Dunkel-Übergang zwischen Weg und Feld.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300027|r1c0:300066",
+          "mit": "r1c0:300066",
+          "entscheidung": "grenze",
+          "grund": "Ende des hellen Feldwegs an der Landstraße gegen die fleckige, mittelgraue Brache nördlich davon; die Segmente berühren sich nur an einem Punkt in der Einmündung.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300029,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.42
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 29578,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 8970,
+      "urteil": "sauber",
+      "was_ist_es": "Feld östlich des Rains 23 und südlich des hellen Wegs 36, mittelgrau mit hellen runden Flecken (Haufen oder kahle Stellen) bei (520–575, 355–410).",
+      "viertel": "v4",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300029|r1c1:400118",
+          "mit": "r1c1:400118",
+          "entscheidung": "gleich",
+          "grund": "Die 13 Kernpunkte von 400136 sind dasselbe gleichmäßig mittelgraue, feinkörnige Feld wie 300029 westlich der Naht, das bis an den Wegrand reicht; ein eigener Rainstreifen ist am Bild nicht abgesetzt.",
+          "bearbeiter": "agent:einigung-B-12:20261118i-r1",
+          "buendel": "B-12",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "6.1"
+        }
+      ]
+    },
+    {
+      "id": 300032,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.475
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 6366,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 298,
+      "urteil": "sauber",
+      "was_ist_es": "Mittelgraues Feld westlich des dunklen Feldes 67 und südlich des Feldwegs, im Kern nur eine kleine Ecke (Hauptteil im Kontextrand); Kleinstück 40 am Wegrand jetzt darin.",
+      "viertel": "v3",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300027|r1c0:300032",
+          "mit": "r1c0:300027",
+          "entscheidung": "grenze",
+          "grund": "Unterkante des hellen, schmalen Feldwegs gegen das mittelgraue Feld darunter; weicher, aber sichtbarer Hell-Dunkel-Übergang zwischen Weg und Feld.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300035,
+      "klasse": "0.3",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.409
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 87,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 55,
+      "urteil": "sauber",
+      "was_ist_es": "Kleiner, sehr dunkler, länglicher Gegenstand (etwa 14 × 5 Bildpunkte, 6 × 2 m) am Südostrand des hellen Wegs: Hütte, Wagen oder dessen Schatten.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Bebauung",
+        "mittel": "Kleinbau",
+        "fein": "Kleinbau oder Fahrzeug"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300035|r1c1:400137",
+          "mit": "r1c1:400137",
+          "entscheidung": "gleich",
+          "grund": "Beide Seiten zeigen denselben fast schwarzen, länglichen Fleck (etwa 6 × 2 m) am Südrand des hellen Wegs ohne Textur und ohne hohen Körper daneben; ob Hütte, Wagen oder Schatten, ist bei 0,45 m nicht zu sehen, daher Dunkle Fläche statt Nebengebäude oder Schlagschatten.",
+          "bearbeiter": "agent:einigung-B-12:20261118i-r1",
+          "buendel": "B-12",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "0.3"
+        }
+      ]
+    },
+    {
+      "id": 300036,
+      "klasse": "3.2.1",
+      "grob": "3",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.409
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 4788,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 2968,
+      "urteil": "sauber",
+      "was_ist_es": "Heller, fleckiger Streifen mit geraden, parallelen Rändern (15–18 Bildpunkte, 7–8 m breit) vom Dorfrand nach Südwesten; jetzt mit 30 und 24 vereint: breiter Feldweg oder Viehtrift.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "30, 24 und 36 zeigten denselben hellen Streifen ohne Kante dazwischen (x 474–563, y 243–349); verschmolzen. Das Stück 41 (v4) gehört ebenfalls dazu.",
+          "flaeche_px": null
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Weg",
+        "fein": "breiter Feldweg"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300011|r1c0:300036",
+          "mit": "r1c0:300011",
+          "entscheidung": "grenze",
+          "grund": "Das mittelgraue Feld 11 grenzt nur an einer Ecke an das deutlich hellere, geradrandige Band des Feldwegs 36; Weg gegen Acker.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300036|r1c1:400118",
+          "mit": "r1c1:400118",
+          "entscheidung": "grenze",
+          "grund": "Der helle Feldweg 36 und das mittelgraue gestreifte Feld 400118 berühren sich an der Naht nur in einem Punkt neben dem dunklen Schattenstrich; Weg gegen Acker.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300038,
+      "klasse": "5.1.1",
+      "grob": "5",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 4224,
+      "im_kern": true,
+      "im_siedlung": "ja",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 3882,
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schmale helle Linie (3–5 Bildpunkte, etwa 2 m) mit dunkler Furche an der Westseite von der Straße schräg nach Süden bis an den Bildrand: Feldrain zwischen Feld 42 und Feld 26; jetzt mit 46 vereint.",
+      "viertel": "v3",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "verschmelzen",
+          "text": "38 und 46 waren derselbe Rain, getrennt durch eine Lücke in Feld 42 bei (286/471); Lücke dem Rain zugewiesen und vereint.",
+          "flaeche_px": 80
+        },
+        {
+          "nr": 2,
+          "art": "fremdes",
+          "text": "Oben enthält 38 einen Streifen am Südostrand der Straße (x 187–255, y 294–345), der kein Rain ist (Straßenrand oder Feldrand); nicht abgetrennt.",
+          "flaeche_px": 600
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Rain",
+        "fein": "Feldrain"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300026|r1c0:300038",
+          "mit": "r1c0:300026",
+          "entscheidung": "grenze",
+          "grund": "Die schmale helle Linie mit dunkler Furche (Feldrain 38) hebt sich als eigenes Band vom gleichmäßig gestreiften Feld 26 ab; zwei verschiedene Flächen.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300038|r1c0:300042",
+          "mit": "r1c0:300042",
+          "entscheidung": "grenze",
+          "grund": "Der helle schmale Rainstreifen 38 läuft schräg durch und trennt ihn vom mittelgrauen, fleckigen Feld 42; echte Grenze Rain gegen Acker.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300042,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.482
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 62368,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 39711,
+      "urteil": "sauber",
+      "was_ist_es": "Großes Feld südöstlich der Straße bis zum Rain 38, mittelgrau mit einer hellen Spur parallel zur Straße und einer helleren, fleckigen Zone im Süden; Kleinstücke 43, 44, 45, 49 jetzt darin.",
+      "viertel": "v3",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300038|r1c0:300042",
+          "mit": "r1c0:300038",
+          "entscheidung": "grenze",
+          "grund": "Der helle schmale Rainstreifen 38 läuft schräg durch und trennt ihn vom mittelgrauen, fleckigen Feld 42; echte Grenze Rain gegen Acker.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300050,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 4208,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300053,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.458
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 161,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300054,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 929,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300057,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.469
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 167,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300058,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 180,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300060,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.458
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 161,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300061,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.469
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 132,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300062,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.458
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 132,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300063,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.469
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 119,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300064,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.469
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 136,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300065,
+      "klasse": "0",
+      "grob": "0",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.458
+      },
+      "instanz": {
+        "text": "bare field",
+        "eingerastet": true
+      },
+      "flaeche": 115,
+      "im_kern": false,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.2",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 0,
+      "herkunft_klasse": "Kontextrand außerhalb H0: ohne Urteil, 0 Nicht bestimmbar",
+      "urteil": "kontextrand"
+    },
+    {
+      "id": 300066,
+      "klasse": "5.2.2",
+      "grob": "5",
+      "herkunft": "eingriff:teilen aus 300001",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 11756,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 11756,
+      "urteil": "sauber",
+      "was_ist_es": "Neu aus 1: helle, fleckige Fläche ohne Bearbeitungsstreifen mit einzelnen dunklen Flecken (Büsche oder kleine Gruben), rechts der Graben zu Feld 15, unten bis an die Straße.",
+      "viertel": "v1",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "grenze",
+          "text": "Grenze zu 1 links (x 133–190, y 135–315) von Hand auf den weichen Hell-dunkel-Übergang gesetzt, Strecke geschätzt.",
+          "flaeche_px": null
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Brache",
+        "fein": "Brache mit Gebüsch"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300027|r1c0:300066",
+          "mit": "r1c0:300027",
+          "entscheidung": "grenze",
+          "grund": "Ende des hellen Feldwegs an der Landstraße gegen die fleckige, mittelgraue Brache nördlich davon; die Segmente berühren sich nur an einem Punkt in der Einmündung.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300010|r1c0:300066",
+          "mit": "r1c0:300010",
+          "entscheidung": "grenze",
+          "grund": "Breites, sehr helles Band der Landstraße gegen die fleckige, mittelgraue Brache nördlich davon; klare Straßenkante.",
+          "bearbeiter": "agent:einigung-B-04:20261118i-r1",
+          "buendel": "B-04",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300067,
+      "klasse": "6.1",
+      "grob": "6",
+      "herkunft": "eingriff:polygon_zuweisen aus 300001",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 12871,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 7276,
+      "urteil": "sauber",
+      "was_ist_es": "Neu aus 1 (liegt in v3): Feld zwischen Feldweg 27 und Straße, links dunkel, zur Straße hin heller, ohne klare Kante dazwischen.",
+      "viertel": "v1",
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Acker",
+        "fein": "Acker"
+      }
+    },
+    {
+      "id": 300069,
+      "klasse": "2.1.3",
+      "grob": "2",
+      "herkunft": "eingriff:teilen aus 300004",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 5354,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 5354,
+      "urteil": "sauber",
+      "was_ist_es": "Neu aus 4: sehr helle, fleckige Fläche mit hellen Streifen westlich und südlich der Scheune, reicht nach v1: offener Boden, wohl Lager- oder Hofplatz der Scheune.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Bebauung",
+        "mittel": "Hoffläche",
+        "fein": "Lagerplatz"
+      }
+    },
+    {
+      "id": 300070,
+      "klasse": "3.2.1",
+      "grob": "3",
+      "herkunft": "eingriff:teilen aus 300004",
+      "sicher": "ja",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 2762,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 1503,
+      "urteil": "sauber",
+      "was_ist_es": "Neu aus 4 (mit Mittelstück aus 6): helles, etwa 8–10 Bildpunkte breites Band von Norden an der Scheune vorbei zur Landstraße: Feldweg bzw. Zufahrt.",
+      "viertel": "v2",
+      "klasse_frei": {
+        "grob": "Verkehrsfläche",
+        "mittel": "Weg",
+        "fein": "Feldweg"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100225|r1c0:300070",
+          "mit": "r0c0:100225",
+          "entscheidung": "grenze",
+          "grund": "Der dunkle Fleck (Grauwert um 43) setzt sich unter der Naht noch etwa 7 Bildpunkte als dunkle Spitze von 300070 fort, erst darunter beginnt das helle Band des Feldwegs; Gebüschfleck und Weg sind verschiedene Flächen, die Grenze liegt knapp unter der Naht in 300070.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r0c0:100195|r1c0:300070",
+          "mit": "r0c0:100195",
+          "entscheidung": "grenze",
+          "grund": "Oben der dunklere Südrand des großen gleichmäßig grauen Feldes 100195, unten die dunkle Spitze von 300070, an die nach etwa 7 Bildpunkten das helle Band des Feldwegs anschließt; Feld und Weg sind verschiedene Flächen, die Grenze liegt knapp unter der Naht.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300073,
+      "klasse": "1.1",
+      "grob": "1",
+      "herkunft": "eingriff:polygon_zuweisen",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": null,
+      "im_kern": true,
+      "flaeche": 2049,
+      "flaeche_kern": 2015,
+      "sicher": "nein",
+      "urteil": "sauber",
+      "was_ist_es": "Neu aus 4 und einer Ecke von 2: mittelgraues Rechteck mit geraden Kanten und hellem Fleck, daneben sehr dunkler Block: kleines Gebäude (Feldscheune); der dunkle Teil ist dunkles Dach, Schlagschatten oder Bäume.",
+      "viertel": "v2",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "grenze",
+          "text": "Umriss von Hand nach den geraden Kanten gesetzt (x 333–397, y 63–105), Strecke an der Südseite geschätzt.",
+          "flaeche_px": null
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Bebauung",
+        "mittel": "Gebäude",
+        "fein": "Gebäude"
+      },
+      "einigung": [
+        {
+          "paar": "r0c0:100154|r1c0:300073",
+          "mit": "r0c0:100154",
+          "entscheidung": "grenze",
+          "grund": "Oben die mittelgraue Feldecke links des Weges, zwei bis drei Bildpunkte unter der Naht beginnt die dunkle Oberkante der Feldscheune (Grauwerte fallen von etwa 70 auf 40); echte Grenze Feld–Gebäude knapp unter der Naht.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r0c0:100220|r1c0:300073",
+          "mit": "r0c0:100220",
+          "entscheidung": "grenze",
+          "grund": "Das helle Band des Feldwegs (Grauwert um 110) endet an der Naht, direkt darunter liegt der fast schwarze Block der Feldscheune (unter 40); deutlicher Helligkeitssprung einen Bildpunkt unter der Naht, also Weg gegen Gebäude.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r0c0:100225|r1c0:300073",
+          "mit": "r0c0:100225",
+          "entscheidung": "grenze",
+          "grund": "Berührung an einem Bildpunkt (x 333): oben der dunkle Fleck rechts des Weges, unten die rechte Oberecke der Scheune, wo der Weg mit helleren Bildpunkten (65–80) zwischen Fleck und dunklem Block vorbeiführt; zwei verschiedene Dinge.",
+          "bearbeiter": "agent:einigung-B-05:20261118i-r1",
+          "buendel": "B-05",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        }
+      ]
+    },
+    {
+      "id": 300074,
+      "klasse": "5.1.1",
+      "grob": "5",
+      "herkunft": "sam3-instanz",
+      "sicher": "nein",
+      "sicherheit": {
+        "wert": 0.41
+      },
+      "instanz": {
+        "text": "crop field",
+        "eingerastet": true
+      },
+      "flaeche": 1535,
+      "im_kern": true,
+      "im_siedlung": "nein",
+      "klasse_vorstufe": "2.1",
+      "sicher_vorstufe": "nein",
+      "flaeche_kern": 5,
+      "urteil": "nicht_sauber",
+      "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+      "viertel": "v4",
+      "punkte": [
+        {
+          "nr": 1,
+          "art": "fremdes",
+          "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.",
+          "flaeche_px": 300
+        }
+      ],
+      "klasse_frei": {
+        "grob": "Offenland",
+        "mittel": "Rain",
+        "fein": "Feldrain"
+      },
+      "einigung": [
+        {
+          "paar": "r1c0:300023|r1c0:300026",
+          "mit": "r1c0:300026",
+          "entscheidung": "grenze",
+          "grund": "Die helle Rainlinie 23 ist als schmales Band klar vom dunkleren Feld 26 westlich davon zu unterscheiden; Rain gegen Feld.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400118",
+          "mit": "r1c1:400118",
+          "entscheidung": "grenze",
+          "grund": "Die schmale Rainlinie 23 läuft schräg an die Naht heran, östlich davon liegt die gleichmäßig graue Ackerfläche 400118; Rain gegen Feld.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400191",
+          "mit": "r1c1:400191",
+          "entscheidung": "gleich",
+          "grund": "Der 3-Bildpunkte-Rest 400202 sitzt direkt an der Naht auf demselben schmalen hell-dunklen Linienband wie Rain 23 und ist dessen Fortsetzung, kein eigener Wegrand (Linie liegt zwischen Feldern, nicht an einem Weg).",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "5.1.1"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400209",
+          "mit": "r1c1:400209",
+          "entscheidung": "gleich",
+          "grund": "In der eigenen Vergrößerung (einigung_09.jpg) setzt sich die helle Linie mit dunkler Furche des Rains 23 bei y 950-975 ohne Unterbrechung über die Naht fort; 400209 ist dieses Stück, also derselbe Feldrain zwischen zwei Feldern.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "5.1.1"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400209",
+          "mit": "r1c1:400209",
+          "entscheidung": "gleich",
+          "grund": "400211 liegt auf derselben über die Naht durchlaufenden Rainlinie wie 23 und 400209 (einigung_09.jpg), ein Feldrain zwischen Feldern, kein Wegrand.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00",
+          "klasse": "5.1.1"
+        },
+        {
+          "paar": "r1c0:300023|r1c1:400176",
+          "mit": "r1c1:400176",
+          "entscheidung": "grenze",
+          "grund": "400176 ist die gleichmäßig graue Ackerfläche westlich der Rainlinie (fast ganz im Kontextrand), der Rain 23 ein schmales Linienband; Rain gegen Feld.",
+          "bearbeiter": "agent:einigung-B-11:20261118i-r1",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T13:45:05+00:00"
+        },
+        {
+          "paar": "r1c0:300074|r1c1:400176",
+          "mit": "r1c1:400176",
+          "entscheidung": "grenze",
+          "grund": "400176 ist die gleichmäßig graue Ackerfläche westlich der Rainlinie (fast ganz im Kontextrand), der Rain 23 ein schmales Linienband; Rain gegen Feld. [übernommen aus Paar r1c0:300023|r1c1:400176: Kernteil nach Zerfall eigene Fläche bzw. an gleichklassigen Nachbarn]",
+          "bearbeiter": "umsetzer:landseg-historisch-4",
+          "buendel": "B-11",
+          "zeit": "2026-11-18T14:04:13+00:00"
+        }
+      ],
+      "zerfall_teil_von": 300023
+    }
+  ]
+}

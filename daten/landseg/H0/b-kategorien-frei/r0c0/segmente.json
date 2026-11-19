@@ -6811,6 +6811,162 @@
         "alt": "2.2",
         "neu": "5.3"
       }
+    },
+    {
+      "nr": 283,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100077,
+        "klasse": "5.3"
+      },
+      "ergebnis": {
+        "alt": "5.2.1",
+        "neu": "5.3"
+      }
+    },
+    {
+      "nr": 284,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100104,
+        "klasse": "5.3"
+      },
+      "ergebnis": {
+        "alt": "5.2.1",
+        "neu": "5.3"
+      }
+    },
+    {
+      "nr": 285,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "klasse_setzen",
+      "parameter": {
+        "id": 100160,
+        "klasse": "5.3"
+      },
+      "ergebnis": {
+        "alt": "5.2.2",
+        "neu": "5.3"
+      }
+    },
+    {
+      "nr": 286,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "vermerk",
+      "parameter": {
+        "id": 100012,
+        "felder": [
+          "grund",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "sicher": "nein",
+          "grund": null
+        }
+      }
+    },
+    {
+      "nr": 287,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "vermerk",
+      "parameter": {
+        "id": 100062,
+        "felder": [
+          "grund",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "sicher": "nein",
+          "grund": null
+        }
+      }
+    },
+    {
+      "nr": 288,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "vermerk",
+      "parameter": {
+        "id": 100066,
+        "felder": [
+          "grund",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "sicher": "nein",
+          "grund": null
+        }
+      }
+    },
+    {
+      "nr": 289,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "vermerk",
+      "parameter": {
+        "id": 100077,
+        "felder": [
+          "grund",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "sicher": "nein",
+          "grund": null
+        }
+      }
+    },
+    {
+      "nr": 290,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "vermerk",
+      "parameter": {
+        "id": 100104,
+        "felder": [
+          "grund",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "sicher": "nein",
+          "grund": null
+        }
+      }
+    },
+    {
+      "nr": 291,
+      "zeit": "2026-11-19T10:37:10+00:00",
+      "bearbeiter": "umsetzer:garten-h0-unsicher",
+      "op": "vermerk",
+      "parameter": {
+        "id": 100160,
+        "felder": [
+          "grund",
+          "sicher"
+        ]
+      },
+      "ergebnis": {
+        "alt": {
+          "sicher": "nein",
+          "grund": null
+        }
+      }
     }
   ],
   "segmente": [
@@ -7028,7 +7184,8 @@
         "grob": "Hof und Garten",
         "mittel": "Garten",
         "fein": "Garten"
-      }
+      },
+      "grund": "Garten wahrscheinlich, auf SW nicht sicher (Nutzer 2026-11-18)"
     },
     {
       "id": 100014,
@@ -8040,7 +8197,8 @@
         "grob": "Hof und Garten",
         "mittel": "Garten",
         "fein": "Garten"
-      }
+      },
+      "grund": "Garten wahrscheinlich, auf SW nicht sicher (Nutzer 2026-11-18)"
     },
     {
       "id": 100063,
@@ -8180,7 +8338,8 @@
         "grob": "Hof und Garten",
         "mittel": "Garten",
         "fein": "Garten"
-      }
+      },
+      "grund": "Garten wahrscheinlich, auf SW nicht sicher (Nutzer 2026-11-18)"
     },
     {
       "id": 100067,
@@ -8406,7 +8565,7 @@
     },
     {
       "id": 100077,
-      "klasse": "5.2.1",
+      "klasse": "5.3",
       "grob": "5",
       "herkunft": "semantik",
       "sicher": "nein",
@@ -8438,7 +8597,8 @@
           "buendel": "B-01",
           "zeit": "2026-11-18T13:45:05+00:00"
         }
-      ]
+      ],
+      "grund": "Garten wahrscheinlich, auf SW nicht sicher (Nutzer 2026-11-18)"
     },
     {
       "id": 100078,
@@ -8779,7 +8939,7 @@
     },
     {
       "id": 100104,
-      "klasse": "5.2.1",
+      "klasse": "5.3",
       "grob": "5",
       "herkunft": "semantik",
       "sicher": "nein",
@@ -8834,7 +8994,8 @@
           "buendel": "B-01",
           "zeit": "2026-11-18T13:45:05+00:00"
         }
-      ]
+      ],
+      "grund": "Garten wahrscheinlich, auf SW nicht sicher (Nutzer 2026-11-18)"
     },
     {
       "id": 100105,
@@ -9983,7 +10144,7 @@
     },
     {
       "id": 100160,
-      "klasse": "5.2.2",
+      "klasse": "5.3",
       "grob": "5",
       "herkunft": "sam3-instanz",
       "sicher": "nein",
@@ -10018,7 +10179,8 @@
           "buendel": "B-01",
           "zeit": "2026-11-18T13:45:05+00:00"
         }
-      ]
+      ],
+      "grund": "Garten wahrscheinlich, auf SW nicht sicher (Nutzer 2026-11-18)"
     },
     {
       "id": 100163,

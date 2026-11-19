@@ -37,8 +37,8 @@ Commit. Ablauf: Skill `wunsch`.
 | 2026-11-18 | landseg-garten-1 | Teil 1 von landseg-garten: Kategorienliste, Prüfskript und Bericht-48-Abbildung | landseg | eingereiht | 2026-11-18-landseg-garten-1.md |
 | 2026-11-18 | landseg-garten-2 | Teil 2 von landseg-garten: Regeln und Aufträge der Agents, Prüfung der freien Fassungen | landseg | eingereiht | 2026-11-18-landseg-garten-2.md |
 | 2026-11-18 | landseg-garten-3 | Teil 3 von landseg-garten: Umstellen der Ergebnisse T0 und H0 in allen drei Fassungen (ohne Commit) | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-garten-3.md |
-| 2026-11-18 | landseg-garten-4 | Teil 4 von landseg-garten: Seite und Gesamtprojekt neu bauen | landseg | bereit | 2026-11-18-landseg-garten-4.md |
-| 2026-11-18 | landseg-garten | Gärten überall als Dauergrünland mit Unterklasse „Garten“ führen: Kategorienliste, Regeln und Aufträge der Agents für alle Fassungen, vorhandene Ergebnisse T0 und H0 und Victors Projekt | landseg | bereit | 2026-11-18-landseg-garten.md |
+| 2026-11-18 | landseg-garten-4 | Teil 4 von landseg-garten: Seite und Gesamtprojekt neu bauen | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-garten-4.md |
+| 2026-11-18 | landseg-garten | Gärten überall als Dauergrünland mit Unterklasse „Garten“ führen: Kategorienliste, Regeln und Aufträge der Agents für alle Fassungen, vorhandene Ergebnisse T0 und H0 und Victors Projekt | landseg | eingereiht | 2026-11-18-landseg-garten.md |
 | 2026-11-18 | landseg-historisch-1 | Teil 1 von landseg-historisch: Seite mit Bildwahl und Graustufen-Eingang | landseg | eingereiht | 2026-11-18-landseg-historisch-1.md |
 | 2026-11-18 | landseg-historisch-2 | Teil 2 von landseg-historisch: Ausschnitt H0: kacheln, Vorstufe, Aufträge | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-historisch-2.md |
 | 2026-11-18 | landseg-historisch-3 | Teil 3 von landseg-historisch: Urteile A, B, C, Gegenprobe und Einigung | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-historisch-3.md |
@@ -52,3 +52,4 @@ Commit. Ablauf: Skill `wunsch`.
 | 2026-11-18 | naht-einigung-4 | Teil 4 von naht-einigung: Seiten neu erzeugen und ANLEITUNG | landseg | eingereiht | 2026-11-18-naht-einigung-4.md |
 | 2026-11-18 | naht-einigung | Landschafts-Segmente: Einigungsschritt an den Übergängen der Teilkacheln, damit gleiche Flächen über eine Naht hinweg dieselbe Klasse bekommen; auf T0 anwenden und Victors Projekt aktualisieren | landseg | eingereiht | 2026-11-18-naht-einigung.md |
 | 2026-11-18 | seite-kachelwahl | Ergebnis-Ansicht: Wahl der vier Teilkacheln viel sichtbarer machen, damit niemand nur die erste Teilkachel sieht | landseg | eingereiht | 2026-11-18-seite-kachelwahl.md |
+| 2026-11-19 | garten-h0-unsicher | Auf dem Bild von 1968 die als „unklar“ bewerteten Garten-Stellen als Garten mit Vermerk unsicher eintragen und die Prüfseite neu bauen | landseg | bereit | 2026-11-19-garten-h0-unsicher.md |

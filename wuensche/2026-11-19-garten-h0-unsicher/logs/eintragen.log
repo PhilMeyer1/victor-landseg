@@ -1,0 +1,107 @@
+A r0c0: unklar 1, schon Garten 1, umstellen []
+vermerk A r0c0 100007: sicher 'nein' -> 'nein'
+A r0c1: unklar 29, schon Garten 29, umstellen []
+vermerk A r0c1 200090: sicher 'nein' -> 'nein'
+vermerk A r0c1 200133: sicher 'nein' -> 'nein'
+vermerk A r0c1 200167: sicher 'nein' -> 'nein'
+vermerk A r0c1 200186: sicher 'nein' -> 'nein'
+vermerk A r0c1 200265: sicher 'nein' -> 'nein'
+vermerk A r0c1 200283: sicher 'nein' -> 'nein'
+vermerk A r0c1 200325: sicher 'nein' -> 'nein'
+vermerk A r0c1 200373: sicher 'nein' -> 'nein'
+vermerk A r0c1 200415: sicher 'nein' -> 'nein'
+vermerk A r0c1 200429: sicher 'nein' -> 'nein'
+vermerk A r0c1 200438: sicher 'nein' -> 'nein'
+vermerk A r0c1 200529: sicher 'nein' -> 'nein'
+vermerk A r0c1 200543: sicher 'nein' -> 'nein'
+vermerk A r0c1 200585: sicher 'nein' -> 'nein'
+vermerk A r0c1 200607: sicher 'nein' -> 'nein'
+vermerk A r0c1 200612: sicher 'nein' -> 'nein'
+vermerk A r0c1 200639: sicher 'nein' -> 'nein'
+vermerk A r0c1 200650: sicher 'nein' -> 'nein'
+vermerk A r0c1 200704: sicher 'nein' -> 'nein'
+vermerk A r0c1 200724: sicher 'nein' -> 'nein'
+vermerk A r0c1 200744: sicher 'nein' -> 'nein'
+vermerk A r0c1 200838: sicher 'nein' -> 'nein'
+vermerk A r0c1 200890: sicher 'nein' -> 'nein'
+vermerk A r0c1 200907: sicher 'nein' -> 'nein'
+vermerk A r0c1 200941: sicher 'nein' -> 'nein'
+vermerk A r0c1 201022: sicher 'nein' -> 'nein'
+vermerk A r0c1 201027: sicher 'nein' -> 'nein'
+vermerk A r0c1 201061: sicher 'nein' -> 'nein'
+vermerk A r0c1 201141: sicher 'nein' -> 'nein'
+A r1c1: unklar 5, schon Garten 5, umstellen []
+vermerk A r1c1 400274: sicher 'nein' -> 'nein'
+vermerk A r1c1 400404: sicher 'nein' -> 'nein'
+vermerk A r1c1 400467: sicher 'nein' -> 'nein'
+vermerk A r1c1 400471: sicher 'nein' -> 'nein'
+vermerk A r1c1 400787: sicher 'nein' -> 'nein'
+B r0c0: unklar 6, schon Garten 3, umstellen [100077, 100104, 100160]
+$ eingriff --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r0c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\r0c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\b-kategorien-frei\kategorien-b.json --bearbeiter umsetzer:garten-h0-unsicher stapel --datei C:\Users\Phil\Developement\Victor\wuensche\2026-11-19-garten-h0-unsicher\logs\schritte-H0-B-r0c0.json
+1. klasse_setzen: {"alt": "5.2.1", "neu": "5.3"}
+2. klasse_setzen: {"alt": "5.2.1", "neu": "5.3"}
+3. klasse_setzen: {"alt": "5.2.2", "neu": "5.3"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 156, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+vermerk B r0c0 100012: sicher 'nein' -> 'nein'
+vermerk B r0c0 100062: sicher 'nein' -> 'nein'
+vermerk B r0c0 100066: sicher 'nein' -> 'nein'
+vermerk B r0c0 100077: sicher 'nein' -> 'nein'
+vermerk B r0c0 100104: sicher 'nein' -> 'nein'
+vermerk B r0c0 100160: sicher 'nein' -> 'nein'
+B r0c1: unklar 9, schon Garten 9, umstellen []
+vermerk B r0c1 200058: sicher 'nein' -> 'nein'
+vermerk B r0c1 200071: sicher 'nein' -> 'nein'
+vermerk B r0c1 200199: sicher 'nein' -> 'nein'
+vermerk B r0c1 200202: sicher 'nein' -> 'nein'
+vermerk B r0c1 200218: sicher 'nein' -> 'nein'
+vermerk B r0c1 200225: sicher 'nein' -> 'nein'
+vermerk B r0c1 200226: sicher 'nein' -> 'nein'
+vermerk B r0c1 200273: sicher 'nein' -> 'nein'
+vermerk B r0c1 200274: sicher 'nein' -> 'nein'
+B r1c1: unklar 2, schon Garten 2, umstellen []
+vermerk B r1c1 400069: sicher 'nein' -> 'nein'
+vermerk B r1c1 400304: sicher 'nein' -> 'nein'
+C r0c0: unklar 13, schon Garten 0, umstellen [100035, 100051, 100062, 100066, 100077, 100078, 100083, 100105, 100138, 100160, 100173, 100178, 100251]
+$ eingriff --labels C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r0c0\labels.tif --segmente C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\r0c0\segmente.json --kategorien C:\Users\Phil\Developement\Victor\daten\landseg\H0\c-feste-liste\kategorien-c.json --bearbeiter umsetzer:garten-h0-unsicher stapel --datei C:\Users\Phil\Developement\Victor\wuensche\2026-11-19-garten-h0-unsicher\logs\schritte-H0-C-r0c0.json
+1. klasse_setzen: {"alt": "3", "neu": "3.6"}
+2. klasse_setzen: {"alt": "3", "neu": "3.6"}
+3. klasse_setzen: {"alt": "3", "neu": "3.6"}
+4. klasse_setzen: {"alt": "3", "neu": "3.6"}
+5. klasse_setzen: {"alt": "3", "neu": "3.6"}
+6. klasse_setzen: {"alt": "3", "neu": "3.6"}
+7. klasse_setzen: {"alt": "2", "neu": "3.6"}
+8. klasse_setzen: {"alt": "6", "neu": "3.6"}
+9. klasse_setzen: {"alt": "2", "neu": "3.6"}
+10. klasse_setzen: {"alt": "3", "neu": "3.6"}
+11. klasse_setzen: {"alt": "3", "neu": "3.6"}
+12. klasse_setzen: {"alt": "3", "neu": "3.6"}
+13. klasse_setzen: {"alt": "2", "neu": "3.6"}
+H × W: 628 × 628 = 394384 Bildpunkte, ohne Segment (ID 0): 0
+Segmente: 148, nicht zusammenhängend: 0
+ok
+[exit 0]
+
+vermerk C r0c0 100035: sicher 'nein' -> 'nein'
+vermerk C r0c0 100051: sicher 'nein' -> 'nein'
+vermerk C r0c0 100062: sicher 'nein' -> 'nein'
+vermerk C r0c0 100066: sicher 'nein' -> 'nein'
+vermerk C r0c0 100077: sicher 'nein' -> 'nein'
+vermerk C r0c0 100078: sicher 'nein' -> 'nein'
+vermerk C r0c0 100083: sicher 'nein' -> 'nein'
+vermerk C r0c0 100105: sicher 'nein' -> 'nein'
+vermerk C r0c0 100138: sicher 'nein' -> 'nein'
+vermerk C r0c0 100160: sicher 'nein' -> 'nein'
+vermerk C r0c0 100173: sicher 'nein' -> 'nein'
+vermerk C r0c0 100178: sicher 'nein' -> 'nein'
+vermerk C r0c0 100251: sicher 'nein' -> 'nein'
+A r0c0 1 eingetragen
+A r0c1 29 eingetragen
+A r1c1 5 eingetragen
+B r0c0 6 eingetragen
+B r0c1 9 eingetragen
+B r1c1 2 eingetragen
+C r0c0 13 eingetragen
