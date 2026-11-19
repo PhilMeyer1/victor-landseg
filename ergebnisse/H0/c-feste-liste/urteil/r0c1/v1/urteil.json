@@ -1,0 +1,653 @@
+{
+ "teilkachel": "r0c1",
+ "viertel": "v1",
+ "bearbeiter": "urt-c-r0c1-v1",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/H0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/H0_raster.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r0c1/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r0c1/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_2.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_3.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_5.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_6.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_7.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_8.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/umriss.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 200019,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Haus im Nachbarkern r0c0 (Dach x 30–62); sein Teil in diesem Kern (x 64–77, y 64–88) war nur der Schlagschatten auf dem Hof.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Kernteil x 64–77, y 64–88 (70/76) ist Schatten neben dem Dach, an 200004 (Hof) gegeben.",
+     "flaeche_px": 146
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg"
+   ]
+  },
+  {
+   "id": 200025,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Rand der Straßenkreuzung im Nordosten (x 290–310, y 80–100) mit schmalem Schwanz entlang einer hellen Dachkante.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Schwanz entlang der Dachkante x 300–325, y 100–125 (312/112) gehört zum Haus in 200016.",
+     "flaeche_px": 60
+    },
+    {
+     "nr": 2,
+     "art": "verschmelzen",
+     "text": "Grenze zu Weg 200005 bei 296/89 ohne Bildkante; Fahrbahnstück gehört zu 200005.",
+     "flaeche_px": 225
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 200004,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Rest des Häuserblocks nordwestlich von Weg 5 nach dem Abtrennen von sieben Dächern: Höfe und Gärten zwischen den Streckhöfen, fast ganz im Schlagschatten, dazu oben rechts schmale Dachstreifen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Häuserzeile samt Höfen war ein Segment; sieben Dächer als 200160–200166 abgetrennt (130/100).",
+     "flaeche_px": 5312
+    },
+    {
+     "nr": 2,
+     "art": "trennen",
+     "text": "Oben rechts (235/80, x 210–270, y 64–100) liegen weitere Dächer, deren helle Kante nur 3–4 px breit ist; nicht sicher abgrenzbar, nicht geteilt.",
+     "flaeche_px": 1200
+    },
+    {
+     "nr": 3,
+     "art": "klasse",
+     "text": "Rest ist Hof oder Garten im Schatten (150/120); Belag oder Bewuchs auf dem Scan nicht erkennbar, darum Elternklasse 1 nach U2.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_6.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_7.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg"
+   ]
+  },
+  {
+   "id": 200027,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Graue, gerundete Fläche mit dunklem Kern nordwestlich von Weg 5 (x 234–263, y 85–121): vermutlich Baum oder Strauch vor dem Hof, sonst Vorplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "4.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Straße: rundliche, dunklere Fläche mit Schatten (245/112), eher Gehölz; im Farbbild prüfen.",
+     "flaeche_px": 456
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 200043,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Zwei Bildpunkte der Straße am Westrand (64/178), Splitter der Straße 200042/200033.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "zu_klein",
+     "text": "Splitter mit 2 px im Kern (64/178), ohne Bildkante zu 200042; mit ihm zusammenlegen.",
+     "flaeche_px": 2
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 200042,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Stück der Straße, die von Nordwesten (r0c0, 200033) nach Südosten (200049) läuft, am Westrand (x 64–78, y 165–202).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gleiche Fahrbahn wie 200049 ohne Bildkante (70/190); zusammenlegen, Belag auf dem Scan offen.",
+     "flaeche_px": 138
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200031,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Mittelgrauer Streifen zwischen den Hofschatten von 200004 und der Straße 200042/200049 (x 64–100, y 160–200), wohl Gehweg oder Straßenrand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah1_roh.jpg"
+   ]
+  },
+  {
+   "id": 200052,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Fahrbahn an der Einmündung von Weg 5 in die Straße 200049 (142/198).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Ohne Bildkante zu 200005 und 200049 (142/198); zur Fahrbahn legen.",
+     "flaeche_px": 107
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200040,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Etwas dunklerer Rand von Weg 5 vor den Häusern (x 131–154, y 160–179).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Gleiche Fahrbahn wie 200005, nur leicht dunkler (146/172); zusammenlegen.",
+     "flaeche_px": 167
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200005,
+   "klasse_heute": "1.2.2",
+   "was_ist_es": "Hauptstraße von Südwest (100/200) nach Nordost (384/0), 18–22 px (8–10 m) breit, gleichmäßig hell, Grenzen auf den Kanten zu Höfen und Dächern.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/nah2_nummern.jpg"
+   ]
+  },
+  {
+   "id": 200038,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Ausbuchtung südlich von Weg 5 (x 201–230, y 157–182): Vorplatz vor einem Haus und Kopf einer hellen Dachkante.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "grenze",
+     "text": "Schwanz x 218–230, y 168–182 (225/176) liegt auf der Dachkante eines Hauses in 200016.",
+     "flaeche_px": 70
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200053,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Dunklerer Fleck am Kopf des Streifens 200056 an der Straße 200049 (x 113–133, y 206–220): Schatten oder Hausecke, keine Baustelle.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Keine Erdbewegung zu sehen (122/213); eher Schatten oder Hausecke am Kopf des Streifens 200056.",
+     "flaeche_px": 122
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200048,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Heller, rechteckiger Block südlich der Einmündung (x 141–179, y 180–225): Dach eines Vorderhauses oder gepflasterter Vorplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Helligkeit wie die Straße, Form rechteckig (162/200); Dach oder Platz auf dem Scan nicht zu trennen.",
+     "flaeche_px": 800
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg"
+   ]
+  },
+  {
+   "id": 200062,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Hellerer Streifen am Südwestrand der Straße 200049 vor dem Schattenband 200054 (x 106–133, y 247–275).",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1.2",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "verschmelzen",
+     "text": "Nur ein Helligkeitsverlauf zur Fahrbahn 200049 (120/258), keine echte Kante.",
+     "flaeche_px": 262
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg"
+   ]
+  },
+  {
+   "id": 200056,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Langer grauer Streifen nordöstlich der Straße 200049 (x 110–235, y 211–366), 4–5 m breit, zwischen Fahrbahn und der hellen Dachkante der ersten Häuserreihe (200180, aus 16): Gehweg, Vorgarten oder Randstreifen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Dunkler als die Fahrbahn und durch eine dünne dunkle Linie von ihr getrennt (150/260); ob Gehweg oder Vorgarten, ist auf dem Scan nicht zu sehen.",
+     "flaeche_px": 1610
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_4.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v2/nah_8.jpg"
+   ]
+  },
+  {
+   "id": 200065,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Nach dem Abtrennen des hellen Dachs 200167 bleibt der Schlagschatten nordöstlich davon (x 285–326, y 254–301) auf Hof oder Garten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": "1",
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "trennen",
+     "text": "Helles Dach und Schatten waren ein Segment; Dach als 200167 abgetrennt (294/280).",
+     "flaeche_px": 445
+    },
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Rest ist Schatten (312/270); darunter Hof oder Garten, nach U2 Elternklasse 1.",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_5.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_8.jpg"
+   ]
+  },
+  {
+   "id": 200160,
+   "klasse_heute": "1.1",
+   "was_ist_es": "Hakenförmiges Dach: Längsbau x 133–192, y 67–122 mit Querbau an Weg 5 (x 183–210, y 118–147).",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_6.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg"
+   ]
+  },
+  {
+   "id": 200161,
+   "klasse_heute": "1.1",
+   "was_ist_es": "Dachstreifen x 165–197, y 64–92; das Haus läuft über den Ausschnittrand nach oben weiter.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_6.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg"
+   ]
+  },
+  {
+   "id": 200162,
+   "klasse_heute": "1.1",
+   "was_ist_es": "Langes Dach eines Streckhofs von 98/68 bis 178/145.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_6.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg"
+   ]
+  },
+  {
+   "id": 200163,
+   "klasse_heute": "1.1",
+   "was_ist_es": "Dach eines Streckhofs von 78/90 bis 155/152, vorne heller, hinten grauer.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_6.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg"
+   ]
+  },
+  {
+   "id": 200164,
+   "klasse_heute": "1.1",
+   "was_ist_es": "Heller rechteckiger Bau (x 200–222, y 96–118) zwischen den Dachreihen nahe Weg 5.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_7.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg"
+   ]
+  },
+  {
+   "id": 200165,
+   "klasse_heute": "1.1",
+   "was_ist_es": "Dach eines Streckhofs von 68/103 bis 125/155.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_6.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg"
+   ]
+  },
+  {
+   "id": 200166,
+   "klasse_heute": "1.1",
+   "was_ist_es": "Unregelmäßige helle Fläche am Westrand (x 65–108, y 128–172), wohl Dach mit Anbau.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_6.jpg"
+   ]
+  },
+  {
+   "id": 200167,
+   "klasse_heute": "1.1",
+   "was_ist_es": "Helles Dach (x 283–306, y 262–300), aus 200065 abgetrennt.",
+   "urteil": "sauber",
+   "klasse_vorschlag": "1.1",
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r0c1/v1/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_8.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r0c1/v1/nah_9.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 200019,
+   "seite": "links",
+   "text": "Kernteil von 19 an 200004 gegeben; die Grenze liegt jetzt auf x 64 und damit etwa auf der Dachkante von 19 (hell/dunkel bei x 62–64); in r0c0 bleibt 19 das Haus."
+  },
+  {
+   "id": 200166,
+   "seite": "links",
+   "text": "Dach 200166 beginnt bei x 65; ob es in r0c0 weiterläuft (dort Teil von 200004 oder 200033), in r0c0 prüfen."
+  },
+  {
+   "id": 200042,
+   "seite": "links",
+   "text": "Straßenstück reicht über die Naht (x 55–78); Vorschlag 1.2 muss in r0c0 gleich lauten (Kette 200033–200042–200049)."
+  },
+  {
+   "id": 200043,
+   "seite": "links",
+   "text": "Splitter von 2 px im Kern, Rest in r0c0; Klasse 1.2 wie 200042."
+  },
+  {
+   "id": 200031,
+   "seite": "links",
+   "text": "Streifen reicht bis x 0 in r0c0; Vorschlag 1.2 gilt für beide Seiten."
+  }
+ ],
+ "unsicher": [
+  "200016 (v2): riesiges Segment über vier Viertel; im Auftrag v2 sind seine Dächer in diesem Viertel (200175–200180, 200183) abgetrennt und dort geurteilt.",
+  "200049 (v3): Straße, Klasse 1.2.2; gleiche Fahrbahn wie 200042, 200052 und 200062.",
+  "200054 (v3): Klasse 0.2 für das Schattenband südwestlich der Straße; nach U2 eher Klasse der Umgebung mit sicher: false.",
+  "Neue Segmente aus dem Stapel tragen in segmente.json kein Feld im_kern (das Werkzeug setzt es nicht); sie liegen alle im Kern."
+ ],
+ "nicht_geprueft": [
+  "Teile von 200004 im Kontextrand (x < 64 bzw. y < 64) nicht geteilt und nicht geurteilt (L2).",
+  "Vorbereitete Bilder uebersicht_vorschlag, uebersicht_maengel, uebersicht_kontrast, uebersicht_gitter, nah1_nummern, nah2_roh, nah3_*, nah4_* nicht einzeln angesehen; stattdessen eigene Nahansichten nah_1 bis nah_9 mit Gitter."
+ ],
+ "offen": [
+  "Belag aller Verkehrsflächen (200005, 200025, 200031, 200040, 200042, 200043, 200052, 200062, 200038): asphaltiert oder nicht, im Farbbild entscheiden; darum nur 1.2.",
+  "200004 und 200065 (Rest): Hof oder Garten unter dem Schlagschatten; im Farbbild Belag oder Bewuchs prüfen.",
+  "200027: Baum/Strauch oder Vorplatz? Im Farbbild Krone und Grün prüfen.",
+  "200048: Dach oder gepflasterter Platz? Im Farbbild Dachdeckung oder Belag und Schatten prüfen.",
+  "200056: Gehweg (1.2) oder Vorgarten (Grünland/Gehölz)? Im Farbbild Belag oder Grün prüfen; darum nur Elternklasse 1.",
+  "200053: Hausecke oder Schatten? Im Farbbild prüfen.",
+  "Neue Dächer 200160–200167: Haupt- oder Nebengebäude (1.1.1/1.1.2) auf dem Scan nicht trennbar, darum 1.1.",
+  "Oben rechts in 200004 (x 210–270, y 64–100) weitere Dächer nicht abgetrennt."
+ ],
+ "eingriffe": [
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200019,
+    200004
+   ],
+   "nachher": [
+    200019,
+    200004
+   ],
+   "grund": "Der Kernteil von 19 (146 px) war Schlagschatten auf dem Hof und ging an 200004."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200004
+   ],
+   "nachher": [
+    200004,
+    200160
+   ],
+   "grund": "Hakenförmiges Dach aus dem Häuserblock gelöst."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200004
+   ],
+   "nachher": [
+    200004,
+    200161
+   ],
+   "grund": "Dachstreifen am Oberrand aus dem Häuserblock gelöst."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200004
+   ],
+   "nachher": [
+    200004,
+    200162
+   ],
+   "grund": "Langes Streckhofdach aus dem Häuserblock gelöst."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200004
+   ],
+   "nachher": [
+    200004,
+    200163
+   ],
+   "grund": "Streckhofdach aus dem Häuserblock gelöst."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200004
+   ],
+   "nachher": [
+    200004,
+    200164
+   ],
+   "grund": "Heller rechteckiger Bau aus dem Häuserblock gelöst."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200004
+   ],
+   "nachher": [
+    200004,
+    200165
+   ],
+   "grund": "Streckhofdach aus dem Häuserblock gelöst."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200004
+   ],
+   "nachher": [
+    200004,
+    200166
+   ],
+   "grund": "Dach am Westrand aus dem Häuserblock gelöst."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    200065
+   ],
+   "nachher": [
+    200065,
+    200167,
+    200168
+   ],
+   "grund": "Helles Dach vom Schlagschatten getrennt; dabei fiel ein Splitter von 2 px ab."
+  },
+  {
+   "schritt": "verschmelzen",
+   "vorher": [
+    200167,
+    200168
+   ],
+   "nachher": [
+    200167
+   ],
+   "grund": "Splitter von 2 px gehört zum Dach 200167."
+  }
+ ]
+}

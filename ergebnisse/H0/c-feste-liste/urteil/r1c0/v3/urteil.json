@@ -1,0 +1,54 @@
+{"teilkachel": "r1c0", "viertel": "v3", "bearbeiter": "urt-c-r1c0-v3",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/H0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/H0_raster.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_roh.jpg"],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/nah_2.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/nah_3.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/nah_4.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/kontrast_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/kontrast_2.jpg"]},
+ "segmente": [
+  {"id": 300032, "klasse_heute": "2.1", "was_ist_es": "Mittelgrauer Acker nordwestlich des dunklen Streifens 300074, fast ganz im Kontextrand; im Kern nur ein Keil zwischen Feldweg 300027 und dem dunklen Streifen (64-86/312-335); 300040 eingegliedert.",
+   "urteil": "nicht_sauber", "klasse_vorschlag": "2", "sicher": false,
+   "punkte": [{"nr": 1, "art": "verschmelzen", "text": "300040 (68-86/312-326) ist dieselbe mittelgraue Fläche unter dem Weg, ohne eigenes Objekt.", "flaeche_px": 150},
+              {"nr": 2, "art": "grenze", "text": "Grenze zu 300071 bei etwa 70-90/314-328 ohne Bildkante; beide Acker, daher kein Klassenkonflikt, nicht verschmolzen.", "flaeche_px": null},
+              {"nr": 3, "art": "klasse", "text": "Kein Belag erkennbar, Bewuchs nicht entscheidbar: Elternklasse 2.", "flaeche_px": null}],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/nah_2.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/kontrast_1.jpg"]},
+  {"id": 300038, "klasse_heute": "2.1", "was_ist_es": "Schmaler Rain (helle Linie, 2-3 px, mit dunklerer Seite) von der Straße nach Süd-Südost zwischen den Äckern 300042 und 300026, oben mit dem Straßenrand; 300046 und 300049 jetzt angeschlossen.",
+   "urteil": "nicht_sauber", "klasse_vorschlag": "3.4", "sicher": false,
+   "punkte": [{"nr": 1, "art": "klasse", "text": "Linienförmiger Saum zwischen zwei Äckern und an der Straße: Krautsaum 3.4 statt Acker; Feldweg mit Spur (6.6) nicht ganz auszuschließen.", "flaeche_px": null},
+              {"nr": 2, "art": "verschmelzen", "text": "Lücke 281-293/462-479 per Polygon geschlossen und 300046 (Fortsetzung bis zum Kernrand unten) samt Fleck 300049 angeschlossen.", "flaeche_px": 142},
+              {"nr": 3, "art": "grenze", "text": "Segment ist stellenweise 5-10 px breiter als die sichtbare Linie (etwa 245-290/400-460); kein Feinschliff, Grenze geschätzt.", "flaeche_px": null}],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/nah_3.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/kontrast_2.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/nah_4.jpg"]},
+  {"id": 300042, "klasse_heute": "2.1", "was_ist_es": "Großer Acker südöstlich der Straße bis zum Rain 300038, mittelgrau mit einem schwachen hellen Streifen und einer helleren, fleckigen Zone im Süden; Randflecken 300043, 300044, 300045 eingegliedert.",
+   "urteil": "nicht_sauber", "klasse_vorschlag": "2", "sicher": false,
+   "punkte": [{"nr": 1, "art": "zu_klein", "text": "300043 (143-175/355-380), 300044 (92-127/396-432), 300045 (16-85/434-493) waren Randflecken an der Straße ohne eigenes Objekt.", "flaeche_px": 699},
+              {"nr": 2, "art": "sonstiges", "text": "Schwacher heller Streifen 109-172/422-469 (Fahrspur oder Drän?) und hellere Flecken 175-285/475-562 ohne klare Kante: nicht geteilt.", "flaeche_px": null},
+              {"nr": 3, "art": "klasse", "text": "Acker, Bewuchs im SW nicht entscheidbar: Elternklasse 2 (Punkt 184/473).", "flaeche_px": null}],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_roh.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/nah_1.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/c-feste-liste/urteil/r1c0/v3/kontrast_2.jpg"]}
+ ],
+ "naht": [],
+ "unsicher": [
+  "300071 und 300074 (in v1 geurteilt) liegen größtenteils in v3; Klassen dort, nicht hier.",
+  "300026 (v4): an der Ostseite von 300038 Acker; ein dunkler Strich bei 305-335/478-500 liegt in v4."],
+ "nicht_geprueft": [
+  "Vorbereitete Nahansichten und Kontrastbild von v3 nicht angesehen; statt dessen eigene Nahansichten nah_1 bis nah_4 und kontrast_1, kontrast_2.",
+  "Kontextrand links und unten (außerhalb von H0) nur angesehen."],
+ "offen": [
+  "300042: ob der helle Streifen und die fleckige Zone eigene Objekte sind (alter Weg, Bodenunterschied), zeigt das Farbbild.",
+  "300038: Krautsaum oder Feldweg: Farbbild.",
+  "Mit oder ohne Bewuchs (2.1/2.2) bei allen Äckern im SW nicht entscheidbar."],
+ "eingriffe": [
+  {"schritt": "verschmelzen", "vorher": [300032, 300040], "nachher": [300032], "grund": "300040 ist dieselbe mittelgraue Fläche ohne eigenes Objekt."},
+  {"schritt": "verschmelzen", "vorher": [300042, 300043, 300044, 300045], "nachher": [300042], "grund": "Randflecken an der Straße ohne eigenes Objekt gehören zum Acker."},
+  {"schritt": "verschmelzen", "vorher": [300046, 300049], "nachher": [300046], "grund": "Fleck auf dem Rain ohne eigenes Objekt."},
+  {"schritt": "polygon_zuweisen", "vorher": [300038, 300042, 300026], "nachher": [300038, 300042, 300026], "grund": "Lücke im Rain zwischen 300038 und 300046 geschlossen."},
+  {"schritt": "verschmelzen", "vorher": [300038, 300046], "nachher": [300038], "grund": "300046 ist die Fortsetzung desselben Rains."}
+ ]}

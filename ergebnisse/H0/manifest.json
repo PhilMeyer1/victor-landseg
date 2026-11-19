@@ -1,0 +1,124 @@
+{
+  "schema": "landseg-manifest/1",
+  "erstellt": "2026-11-18T11:39:31+00:00",
+  "quelle": {
+    "bild": "../../luftbilder/historisch/1968105_0014_0228.tif",
+    "breite": 16283,
+    "hoehe": 15750,
+    "kanaele": 1
+  },
+  "ausschnitt": {
+    "name": "H0",
+    "x": 1500,
+    "y": 2000,
+    "breite": 1000,
+    "hoehe": 1000,
+    "bild": "H0.png"
+  },
+  "raster": {
+    "kern": 500,
+    "rand": 64,
+    "zeilen": 2,
+    "spalten": 2
+  },
+  "koordinaten": "Bildpunkte; kern und kontext relativ zum Ausschnitt, kern_im_bild relativ zum Bild der Teilkachel; transform: X = a·x + b·y + c, Y = d·x + e·y + f für die Ecke oben links des Bildpunkts (x, y)",
+  "georeferenz": null,
+  "teilkacheln": [
+    {
+      "id": "r0c0",
+      "zeile": 0,
+      "spalte": 0,
+      "bild": "teilkacheln/r0c0.png",
+      "kern": {
+        "x": 0,
+        "y": 0,
+        "breite": 500,
+        "hoehe": 500
+      },
+      "kontext": {
+        "x": -64,
+        "y": -64,
+        "breite": 628,
+        "hoehe": 628
+      },
+      "kern_im_bild": {
+        "x": 64,
+        "y": 64,
+        "breite": 500,
+        "hoehe": 500
+      }
+    },
+    {
+      "id": "r0c1",
+      "zeile": 0,
+      "spalte": 1,
+      "bild": "teilkacheln/r0c1.png",
+      "kern": {
+        "x": 500,
+        "y": 0,
+        "breite": 500,
+        "hoehe": 500
+      },
+      "kontext": {
+        "x": 436,
+        "y": -64,
+        "breite": 628,
+        "hoehe": 628
+      },
+      "kern_im_bild": {
+        "x": 64,
+        "y": 64,
+        "breite": 500,
+        "hoehe": 500
+      }
+    },
+    {
+      "id": "r1c0",
+      "zeile": 1,
+      "spalte": 0,
+      "bild": "teilkacheln/r1c0.png",
+      "kern": {
+        "x": 0,
+        "y": 500,
+        "breite": 500,
+        "hoehe": 500
+      },
+      "kontext": {
+        "x": -64,
+        "y": 436,
+        "breite": 628,
+        "hoehe": 628
+      },
+      "kern_im_bild": {
+        "x": 64,
+        "y": 64,
+        "breite": 500,
+        "hoehe": 500
+      }
+    },
+    {
+      "id": "r1c1",
+      "zeile": 1,
+      "spalte": 1,
+      "bild": "teilkacheln/r1c1.png",
+      "kern": {
+        "x": 500,
+        "y": 500,
+        "breite": 500,
+        "hoehe": 500
+      },
+      "kontext": {
+        "x": 436,
+        "y": 436,
+        "breite": 628,
+        "hoehe": 628
+      },
+      "kern_im_bild": {
+        "x": 64,
+        "y": 64,
+        "breite": 500,
+        "hoehe": 500
+      }
+    }
+  ]
+}

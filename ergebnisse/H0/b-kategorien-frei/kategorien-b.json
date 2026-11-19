@@ -1,0 +1,700 @@
+{
+  "schema": "landseg-kategorien/1",
+  "title": "Gestufte Kategorienliste H0, Fassung B (Vereinheitlichung der freien Viertel-Klassen)",
+  "date": "2026-11-18",
+  "source": [
+    "daten/landseg/H0/b-kategorien-frei/urteil/<teilkachel>/<viertel>/urteil.json (16 Viertel-Abgaben, klasse_frei und klassen_frei)",
+    "b-kategorien-frei/vereinheitlichung/kategorien-b-entwurf.json (unverändert übernommen; nur Titel und Quelle ergänzt)"
+  ],
+  "counts": {
+    "level_1": 7,
+    "level_2": 19,
+    "leaves": 26,
+    "rules_g": 1,
+    "rules_u": 1
+  },
+  "status": {
+    "bw": "VERMUTUNG: aus den Urteilen der Viertel-Agents am Schwarz-Weiß-Scan 1968 abgeleitet (ja = dort sicher benannt, eing. = feinere Stufe unsicher), nicht gegen eine Expertenliste geprüft.",
+    "mappings": "leer: Fassung B ordnet keine amtlichen Schemata (CORINE, CLC+, FLAIR, DKM) zu; die Spalte steht nur, weil das Format sie verlangt.",
+    "colors": "vom Vereinheitlicher festgelegt, Mindestabstand prüft tools/pruefe_kategorien.py"
+  },
+  "classes": [
+    {
+      "code": "0",
+      "name": "Nicht bestimmbar",
+      "parent": null,
+      "level": 1,
+      "color": "#808080",
+      "image_cue": "Fläche, deren Oberfläche im Scan nicht zu sehen oder nicht zu deuten ist: Schatten, Halbschatten, fast schwarze Stellen.",
+      "bw": "nein",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "0.1",
+      "name": "Schlagschatten",
+      "parent": "0",
+      "level": 2,
+      "color": "#3c3c3c",
+      "image_cue": "Sehr dunkles bis schwarzes Band oder Fleck neben einem hohen Körper, scharf zur Lichtseite hin begrenzt.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "0.1.1",
+      "name": "Schatten zwischen Gebäuden",
+      "parent": "0.1",
+      "level": 3,
+      "color": "#555a66",
+      "image_cue": "Dunkelgraue, schmale, gerade Streifen zwischen Dachflächen, Kanten parallel zu den Gebäuden.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "0.1.2",
+      "name": "Schatten von Gehölz oder Gebäude (unklar)",
+      "parent": "0.1",
+      "level": 3,
+      "color": "#2a2a33",
+      "image_cue": "Dunkler, unregelmäßig begrenzter Schattenfleck, Werfer (Baumreihe, Baumgruppe oder Bau) nicht eindeutig.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "0.2",
+      "name": "Halbschatten",
+      "parent": "0",
+      "level": 2,
+      "color": "#a0a0a0",
+      "image_cue": "Mittelgraues Band zwischen heller Dachseite und dunklem Schatten.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "0.2.1",
+      "name": "Dachseite oder Hof im Halbschatten",
+      "parent": "0.2",
+      "level": 3,
+      "color": "#b09878",
+      "image_cue": "Mittelgraue Fläche neben einem hellen Dachstreifen; Dach im Schatten oder Hof, nicht zu trennen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "0.3",
+      "name": "Dunkle Fläche",
+      "parent": "0",
+      "level": 2,
+      "color": "#1a1a1a",
+      "image_cue": "Fast schwarze, eckige Fläche ohne Textur: Schatten, dunkles Dach oder Gehölz.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "0.4",
+      "name": "Fläche unbestimmt",
+      "parent": "0",
+      "level": 2,
+      "color": "#c8c8c8",
+      "image_cue": "Fleck oder Fläche im Ort ohne eindeutiges Merkmal; Art nicht bestimmbar.",
+      "bw": "nein",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1",
+      "name": "Bebauung",
+      "parent": null,
+      "level": 1,
+      "color": "#c0392b",
+      "image_cue": "Gebäude und Hofstellen im Ort: helle Dachflächen mit scharfen geraden Kanten und harten Schatten.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.1",
+      "name": "Gebäude",
+      "parent": "1",
+      "level": 2,
+      "color": "#e0584a",
+      "image_cue": "Hell bis mittelgraue Dachfläche mit geraden Kanten und dunklem Schlagschatten an einer Seite.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.1.1",
+      "name": "Wohn- oder Langhaus",
+      "parent": "1.1",
+      "level": 3,
+      "color": "#a02a20",
+      "image_cue": "Lange, schmale Dachfläche, meist parallel zur Straße; auch quergestellter Block am Straßenende; Wohn- und Wirtschaftsteil im Schwarz-Weiß nicht zu trennen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.1.2",
+      "name": "Nebengebäude",
+      "parent": "1.1",
+      "level": 3,
+      "color": "#ff8a7a",
+      "image_cue": "Kleinere oder breite Dachfläche am hinteren Grundstücksende oder neben dem Haupthaus: Stadel, Scheune, Schuppen, Kleinbau.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.2",
+      "name": "Hofstelle",
+      "parent": "1",
+      "level": 2,
+      "color": "#7a1f4a",
+      "image_cue": "Zusammenhängende Fläche eines Hofes aus Haus, Stall und Hof, im Bild nicht in Dach und Hof zu trennen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "1.2.1",
+      "name": "Streckhof-Streifen",
+      "parent": "1.2",
+      "level": 3,
+      "color": "#b5457f",
+      "image_cue": "Langer schmaler Streifen quer zur Straße zwischen zwei dunklen Schattenlinien: Wohnhaus, Stall und Hof hintereinander.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "2",
+      "name": "Hof",
+      "parent": null,
+      "level": 1,
+      "color": "#d98a1c",
+      "image_cue": "Unbebaute, genutzte Flächen an den Gebäuden: gleichmäßig graue Fläche ohne Dachkanten, oft mit hellen Fahrspuren.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "2.1",
+      "name": "Hof",
+      "parent": "2",
+      "level": 2,
+      "color": "#f5c15a",
+      "image_cue": "Offene, meist helle bis mittelgraue Fläche zwischen und hinter den Gebäuden, ohne Dachkanten.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "2.1.1",
+      "name": "Hof (offen)",
+      "parent": "2.1",
+      "level": 3,
+      "color": "#f0cf8a",
+      "image_cue": "Gleichmäßig hell- bis mittelgraue Fläche, glatt, mit Fahrspuren, an Gebäuden oder an der Straße.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "2.1.2",
+      "name": "Hof im Schatten",
+      "parent": "2.1",
+      "level": 3,
+      "color": "#8a6a2a",
+      "image_cue": "Fast schwarze Hoffläche im Schlagschatten eines Nachbarbaus, Untergrund nicht sichtbar.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "2.1.3",
+      "name": "Lagerplatz",
+      "parent": "2.1",
+      "level": 3,
+      "color": "#fff4d6",
+      "image_cue": "Sehr helle, fleckige Fläche mit Streifen oder Haufen neben einem Gebäude.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "3",
+      "name": "Verkehrsfläche",
+      "parent": null,
+      "level": 1,
+      "color": "#3a6fb0",
+      "image_cue": "Helle, glatte Bänder oder ebene Flächen für Fahrzeuge und Fußgänger ohne Textur.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "3.1",
+      "name": "Straße",
+      "parent": "3",
+      "level": 2,
+      "color": "#2f4fa8",
+      "image_cue": "Breites, durchgehendes, sehr helles Band (um 10 Bildpunkte und mehr) mit glatten parallelen Rändern; Belag nicht erkennbar.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "3.2",
+      "name": "Weg",
+      "parent": "3",
+      "level": 2,
+      "color": "#6fa8dc",
+      "image_cue": "Schmales helles Band unter etwa 8 Bildpunkten Breite.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "3.2.1",
+      "name": "Feldweg",
+      "parent": "3.2",
+      "level": 3,
+      "color": "#a9cdf0",
+      "image_cue": "Schmaler bis mittelbreiter heller, fleckiger Weg hinter den Höfen oder am Feldrand.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "3.2.2",
+      "name": "Gasse oder Hofweg",
+      "parent": "3.2",
+      "level": 3,
+      "color": "#2a8fa0",
+      "image_cue": "Schmales helles Band zwischen oder in den Höfen, von der Straße abzweigend, kurz.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "3.3",
+      "name": "Straßenrand",
+      "parent": "3",
+      "level": 2,
+      "color": "#5b7a99",
+      "image_cue": "Schmaler mittelgrauer oder heller Streifen unmittelbar an der Fahrbahn, durch feine Linie abgesetzt (Bankett, Gehweg, Randstreifen).",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "3.4",
+      "name": "Platz oder Vorplatz",
+      "parent": "3",
+      "level": 2,
+      "color": "#0d3b66",
+      "image_cue": "Helle ebene, nicht bandförmige Fläche ohne Schattenwurf, offen an die Straße angeschlossen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4",
+      "name": "Gehölz",
+      "parent": null,
+      "level": 1,
+      "color": "#1f6b2e",
+      "image_cue": "Sehr dunkle, rundliche oder gereihte Flecken mit Schlagschatten.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4.1",
+      "name": "Baum",
+      "parent": "4",
+      "level": 2,
+      "color": "#14502a",
+      "image_cue": "Einzelne dunkle runde Krone mit Schatten.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4.2",
+      "name": "Gebüsch",
+      "parent": "4",
+      "level": 2,
+      "color": "#3fae7a",
+      "image_cue": "Dunkle, unregelmäßige, kleinere Flecken ohne klare Einzelkrone.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4.3",
+      "name": "Baumreihe oder Hecke",
+      "parent": "4",
+      "level": 2,
+      "color": "#04240a",
+      "image_cue": "Mehrere dunkle Kronen oder ein schmaler dunkler Streifen in einer Reihe, dazwischen heller Boden.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "4.4",
+      "name": "Baum oder Gebüsch (nicht trennbar)",
+      "parent": "4",
+      "level": 2,
+      "color": "#2e8b57",
+      "image_cue": "Dunkle Gehölzfläche oder -gruppe, Krone und Strauch im Schwarz-Weiß nicht zu trennen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5",
+      "name": "Dauergrünland",
+      "parent": null,
+      "level": 1,
+      "color": "#9bd36a",
+      "image_cue": "Mittelgraue, leicht fleckige unbebaute Flächen ohne Feldstruktur und ohne Bewirtschaftungsmuster.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.1",
+      "name": "Saum",
+      "parent": "5",
+      "level": 2,
+      "color": "#d2e8a8",
+      "image_cue": "Schmaler fleckiger Streifen zwischen Feld, Weg und Hof, oft mit dunklen Büschen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.1.1",
+      "name": "Feldrain",
+      "parent": "5.1",
+      "level": 3,
+      "color": "#e4f5a0",
+      "image_cue": "Dunkler oder heller fleckiger Randstreifen am Feldrand, ohne Weg daneben.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.1.2",
+      "name": "Wegrain",
+      "parent": "5.1",
+      "level": 3,
+      "color": "#7a9a2a",
+      "image_cue": "Schmaler grauer Streifen zwischen Weg und Feld oder Gehölz.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.2",
+      "name": "Anger und Brache",
+      "parent": "5",
+      "level": 2,
+      "color": "#5f9c3a",
+      "image_cue": "Offene, fleckig mittelgraue Fläche ohne Feldstreifen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.2.1",
+      "name": "Anger",
+      "parent": "5.2",
+      "level": 3,
+      "color": "#6c8f55",
+      "image_cue": "Breiter offener Streifen zwischen Hofenden und Feld mit hellen, diffusen Fahrspuren.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.2.2",
+      "name": "Brache",
+      "parent": "5.2",
+      "level": 3,
+      "color": "#4a5d2a",
+      "image_cue": "Fleckige, ungeordnete Fläche ohne Spuren und ohne Feldstreifen, auch mit einzelnen dunklen Büschen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "5.3",
+      "name": "Garten (Haus- und Hofgarten: Grünfläche, Beet)",
+      "parent": "5",
+      "level": 2,
+      "color": "#a6ffaf",
+      "image_cue": "krautige Grünfläche und Beete im Haus- oder Hofgarten, von Gebäude, Zaun oder Hecke eingefasst",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "6",
+      "name": "Landwirtschaft",
+      "parent": null,
+      "level": 1,
+      "color": "#c9b458",
+      "image_cue": "Große, gleichmäßig graue Flächen mit feinem Korn und parallelen Bearbeitungsstreifen.",
+      "bw": "ja",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    },
+    {
+      "code": "6.1",
+      "name": "Feld",
+      "parent": "6",
+      "level": 2,
+      "color": "#a89018",
+      "image_cue": "Große gleichmäßige Parzelle mit feinem Korn, geraden Grenzen und oft parallelen Streifen; Acker oder Grünland im Schwarz-Weiß nicht zu trennen.",
+      "bw": "eing.",
+      "mappings": {
+        "corine": [],
+        "clc_plus": [],
+        "flair": [],
+        "dkm": [],
+        "bericht48": []
+      }
+    }
+  ],
+  "rules": [
+    {
+      "id": "G1",
+      "kind": "grundsatz",
+      "text": "Namen stammen aus den Vierteln (freie Benennung); gleiche Dinge stehen unter einem Namen. Ein Segment bekommt die feinste Stufe, die sein Viertel benannt hat; Höfe (Klasse 2) und Gärten (Klasse 5.3) zählen für Auswertungen als Teil der Siedlung (Klasse 1).",
+      "source": "vereinheitlichung.md",
+      "bericht48": {
+        "im_siedlung_klassen": [
+          "2",
+          "5.3"
+        ],
+        "im_siedlung_ziel": "1"
+      }
+    },
+    {
+      "id": "U1",
+      "kind": "unsicherheit",
+      "text": "Schatten, Halbschatten und Dunkelflächen (Klasse 0) sind Bildzustände, keine Bodenbedeckung; die Fläche darunter wird nicht geraten.",
+      "source": "vereinheitlichung.md"
+    }
+  ]
+}

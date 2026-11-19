@@ -1,0 +1,74 @@
+{"teilkachel": "r1c0", "viertel": "v3", "bearbeiter": "urt-b-r1c0-v3",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/H0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/H0_raster.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/maengel.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/vorschlag.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/kontrast_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/kontrast_2.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_2.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_3.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_4.jpg"
+  ]},
+ "segmente": [
+  {"id": 300032, "klasse_heute": "2.1",
+   "was_ist_es": "Mittelgraues Feld westlich des dunklen Feldes 67 und südlich des Feldwegs, im Kern nur eine kleine Ecke (Hauptteil im Kontextrand); Kleinstück 40 am Wegrand jetzt darin.",
+   "urteil": "sauber", "klasse_vorschlag": null,
+   "klasse_frei": {"grob": "Offenland", "mittel": "Acker", "fein": "Acker"},
+   "sicher": false, "punkte": [],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_nummern.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_1.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/kontrast_2.jpg"]},
+  {"id": 300038, "klasse_heute": "2.1",
+   "was_ist_es": "Schmale helle Linie (3–5 Bildpunkte, etwa 2 m) mit dunkler Furche an der Westseite von der Straße schräg nach Süden bis an den Bildrand: Feldrain zwischen Feld 42 und Feld 26; jetzt mit 46 vereint.",
+   "urteil": "nicht_sauber", "klasse_vorschlag": null,
+   "klasse_frei": {"grob": "Offenland", "mittel": "Rain", "fein": "Feldrain"},
+   "sicher": false,
+   "punkte": [
+    {"nr": 1, "art": "verschmelzen", "text": "38 und 46 waren derselbe Rain, getrennt durch eine Lücke in Feld 42 bei (286/471); Lücke dem Rain zugewiesen und vereint.", "flaeche_px": 80},
+    {"nr": 2, "art": "fremdes", "text": "Oben enthält 38 einen Streifen am Südostrand der Straße (x 187–255, y 294–345), der kein Rain ist (Straßenrand oder Feldrand); nicht abgetrennt.", "flaeche_px": 600}],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_nummern.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_2.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_3.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_4.jpg"]},
+  {"id": 300042, "klasse_heute": "2.1",
+   "was_ist_es": "Großes Feld südöstlich der Straße bis zum Rain 38, mittelgrau mit einer hellen Spur parallel zur Straße und einer helleren, fleckigen Zone im Süden; Kleinstücke 43, 44, 45, 49 jetzt darin.",
+   "urteil": "sauber", "klasse_vorschlag": null,
+   "klasse_frei": {"grob": "Offenland", "mittel": "Acker", "fein": "Acker"},
+   "sicher": false, "punkte": [],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_nummern.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v3/uebersicht_roh.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/kontrast_1.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_4.jpg"]}
+ ],
+ "naht": [],
+ "unsicher": [
+  "300042: hellere, fleckige Zone im Süden (x 170–290, y 475–563) ohne klare Kante; vielleicht andere Nutzung (Garten, Brache) oder nur ungleicher Bewuchs; nicht geteilt.",
+  "300042: helle schmale Spur (x 105–170, y 420–470) parallel zur Straße, wohl Fahrspur; belassen.",
+  "300067 (geurteilt in v1): dunkles Feld (x 64–112, y 320–410) und hellerer Streifen zur Straße mit kleinen hellen Punkten; Übergang weich, nicht geteilt.",
+  "300026 (v4): dunkler, schräger Strich bei (318–338, 485–505) im Feld, vielleicht Graben oder Schatten."
+ ],
+ "nicht_geprueft": [
+  "Vorbereitete Nahansichten nah1–nah4 sowie uebersicht_kontrast, uebersicht_vorschlag, uebersicht_maengel und uebersicht_gitter von v3 nicht angesehen; stattdessen eigene Nahansichten und Kontrastbilder mit Gitter.",
+  "Werkzeug kante nicht benutzt."
+ ],
+ "offen": [
+  "Acker gegen Grünland ist auf dem Scan bei 32 und 42 nicht sicher zu trennen; im Farbbild entscheiden.",
+  "300038 Feldrain, Graben oder Grasweg: im Farbbild an Bewuchs und Wasser prüfen."
+ ],
+ "eingriffe": [
+  {"schritt": "verschmelzen", "vorher": [300042, 300043], "nachher": [300042], "grund": "Kleinstück am Straßenrand ohne eigenen Bildinhalt, Teil des Feldes."},
+  {"schritt": "verschmelzen", "vorher": [300042, 300044], "nachher": [300042], "grund": "Kleinstück am Straßenrand ohne eigenen Bildinhalt, Teil des Feldes."},
+  {"schritt": "verschmelzen", "vorher": [300042, 300045], "nachher": [300042], "grund": "Kleinstück am Straßenrand ohne eigenen Bildinhalt, Teil des Feldes."},
+  {"schritt": "verschmelzen", "vorher": [300042, 300049], "nachher": [300042], "grund": "Kleinstück neben dem Rain, gehört zum Feld."},
+  {"schritt": "verschmelzen", "vorher": [300032, 300040], "nachher": [300032], "grund": "Kleinstück am Wegrand mit gleichem Grauton wie Feld 32."},
+  {"schritt": "polygon_zuweisen", "vorher": [300042, 300038], "nachher": [300038, 300042], "grund": "Lücke im Rain bei (286/471) lag in Feld 42; dem Rain zugewiesen."},
+  {"schritt": "verschmelzen", "vorher": [300038, 300046], "nachher": [300038], "grund": "Derselbe Rain ohne Kante dazwischen."}
+ ],
+ "klassen_frei": [
+  {"name": "Offenland", "ebene": "grob", "eltern": null, "merkmal": "Unbebaute Fläche ohne Gehölz: Felder, Brachen, Wiesen, Raine."},
+  {"name": "Acker", "ebene": "mittel", "eltern": "Offenland", "merkmal": "Parzelle mit gleichmäßigem Grauton, oft parallele Bearbeitungsstreifen, gerade Grenzen."},
+  {"name": "Acker", "ebene": "fein", "eltern": "Acker", "merkmal": "Wie mittel; Frucht oder Bewuchs auf dem Scan nicht unterscheidbar."},
+  {"name": "Rain", "ebene": "mittel", "eltern": "Offenland", "merkmal": "Schmale, lange, gerade Linie zwischen zwei Feldern, heller oder dunkler als die Felder."},
+  {"name": "Feldrain", "ebene": "fein", "eltern": "Rain", "merkmal": "Helle Linie 2–3 m breit mit dunkler Furche daneben."}
+ ]}

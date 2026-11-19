@@ -1,0 +1,1143 @@
+{
+ "teilkachel": "r1c1",
+ "viertel": "v4",
+ "bearbeiter": "urt-b-r1c1-v4",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/H0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/H0_raster.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c1/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c1/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_roh.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+  ]
+ },
+ "segmente": [
+  {
+   "id": 400147,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Stück der östlichen Dorfstraße an der Viertelgrenze mit dunklem Rand.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg"
+   ]
+  },
+  {
+   "id": 400151,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche am Westrand der Dorfstraße: Schlagschatten der Häuser.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Gebäudeschatten"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg"
+   ]
+  },
+  {
+   "id": 400157,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Grauer Randstreifen am Westrand der Dorfstraße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Straßenrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg"
+   ]
+  },
+  {
+   "id": 400152,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Dunkle Fläche am Ostrand der Dorfstraße: Schatten oder Baumkrone.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 1,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; dunkel (425/346).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg"
+   ]
+  },
+  {
+   "id": 400156,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Kleine graue Fläche zwischen Streifen und hellem Dach 400149: Hof.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hof/Freifläche",
+    "fein": "Hof/Freifläche"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 2,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; Hoffläche (506/341).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400149,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Großes helles Rechteck am Nordostrand mit dunklem Saum: Gebäude mit hellem Dach.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Gebäude",
+    "fein": "Gebäude mit hellem Dach"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400144,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Sehr dunkle Fläche östlich des hellen Dachs 400149: Schlagschatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Gebäudeschatten"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400160,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche am Westrand der Dorfstraße: Schlagschatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Gebäudeschatten"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg"
+   ]
+  },
+  {
+   "id": 400159,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Kleine sehr dunkle Fläche zwischen den Höfen: Schatten.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 3,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; Schatten (498/353).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400161,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Sehr dunkle Fläche im Hof: Schatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400167,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche am rechten Kernrand (38 px im Kern).",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400138,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Nach dem Teilen der Rest des Häuserblocks östlich der Dorfstraße: Streifen am Ost- und Südrand, die über den Kernrand in den Kontext reichen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 4,
+     "art": "trennen",
+     "text": "Ganzer Block östlich der Dorfstraße war ein Segment; Innenteile abgetrennt, Randteile bleiben verbunden (494/413).",
+     "flaeche_px": 15045
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400184,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche am Ostrand: Schatten oder Bäume.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg"
+   ]
+  },
+  {
+   "id": 400188,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Kleines graues Stück an der Einmündung der Quergasse.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Straßenrand"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400192,
+   "klasse_heute": "1.2.2",
+   "was_ist_es": "Helle Quergasse zwischen den beiden Dorfstraßen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 5,
+     "art": "klasse",
+     "text": "Vorstufe Weg befestigt; Gasse/Straße im Ort (325/472).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400195,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkle Fläche an der Südseite der Quergasse: Schatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Gebäudeschatten"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400194,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Kleine helle Fläche an der Quergasse vor den Häusern.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hof/Freifläche",
+    "fein": "Vorplatz"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400172,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Langes dunkles Band an der Westseite der östlichen Dorfstraße: Schlagschatten der Häuserzeile, teils Bäume.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Gebäudeschatten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg"
+   ]
+  },
+  {
+   "id": 400212,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Sehr dunkle Fläche im Hof südlich der Quergasse: Schatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": true,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400204,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Mittelgraues Rechteck südlich der Quergasse: Gebäude.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Gebäude",
+    "fein": "Gebäude mit mittelgrauem Dach"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400196,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Nach dem Teilen die Hofstreifen südlich der Quergasse, die über den unteren Kernrand reichen.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 6,
+     "art": "trennen",
+     "text": "Mehrere Höfe in einem Segment; zwei Innenteile abgetrennt, Rest am Kernrand nicht trennbar (362/543).",
+     "flaeche_px": 1710
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400201,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Kleine graue Fläche zwischen Haus und Dorfstraße.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hof/Freifläche",
+    "fein": "Vorplatz"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400205,
+   "klasse_heute": "0.2",
+   "was_ist_es": "Dunkles Band südlich der Quergasse: Schatten mit Hofanteil.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400103,
+   "klasse_heute": "1.2.2",
+   "was_ist_es": "Die helle östliche Dorfstraße mit der breiten Gabel im Süden.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Verkehr",
+    "mittel": "Straße",
+    "fein": "Dorfstraße"
+   },
+   "sicher": true,
+   "punkte": [
+    {
+     "nr": 7,
+     "art": "klasse",
+     "text": "Vorstufe Weg befestigt; breite Dorfstraße (441/522).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_roh.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg"
+   ]
+  },
+  {
+   "id": 400206,
+   "klasse_heute": "1.3.2",
+   "was_ist_es": "Kleiner dunkler Fleck am Ostrand der Dorfstraße.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Schatten",
+    "mittel": "Schlagschatten",
+    "fein": "Schlagschatten"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 8,
+     "art": "klasse",
+     "text": "Vorstufe Baustelle; dunkel (481/527).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400213,
+   "klasse_heute": "1.2.1",
+   "was_ist_es": "Graue Fläche südlich der Straßengabel: Hof oder Vorplatz.",
+   "urteil": "nicht_sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hof/Freifläche",
+    "fein": "Hof/Freifläche"
+   },
+   "sicher": false,
+   "punkte": [
+    {
+     "nr": 9,
+     "art": "klasse",
+     "text": "Vorstufe Straße; dunkler als die Fahrbahn, Hof/Vorplatz (431/552).",
+     "flaeche_px": null
+    }
+   ],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400290,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Dunklerer Streifen am Nordrand des Blocks. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400291,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Kleiner Streifen im Norden. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400292,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen an der Dorfstraße im Norden. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400293,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen im Nordteil. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400294,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen an der Dorfstraße. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400295,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen in der Blockmitte. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400296,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen in der Blockmitte. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400297,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen mit hellem Dach (480/450). Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400299,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Schmaler Streifen an der Dorfstraße. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400300,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen im Südteil. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400301,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen im Südteil. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400302,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Streifen am Ostrand im Süden. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400305,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400138: Innenfläche des Blocks mit mehreren Dachteilen. Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_1.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_3.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/kontrast_1.jpg"
+   ]
+  },
+  {
+   "id": 400303,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400196: Streifen an der Einmündung mit kleinem hellem Dach (305/487). Streifen eines Streckhofs aus dem Nachsegmentieren: Dach und Hof zwischen dunklen Schattenlinien, bei 0,45 m nicht sicher trennbar.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Hofstelle",
+    "fein": "Streckhof-Streifen"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  },
+  {
+   "id": 400304,
+   "klasse_heute": "1.1.1",
+   "was_ist_es": "Aus 400196: dunkle fleckige Fläche zwischen Quergasse und Gebäude 400204: Garten mit Schatten.",
+   "urteil": "sauber",
+   "klasse_vorschlag": null,
+   "klasse_frei": {
+    "grob": "Siedlung",
+    "mittel": "Garten",
+    "fein": "Garten"
+   },
+   "sicher": false,
+   "punkte": [],
+   "bilder": [
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c1/v4/uebersicht_nummern.jpg",
+    "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c1/v4/nah_2.jpg"
+   ]
+  }
+ ],
+ "naht": [
+  {
+   "id": 400138,
+   "seite": "rechts",
+   "text": "Rest von 400138 reicht über den rechten und unteren Kernrand; die abgetrennten Innenteile berühren den Kernrand nicht, der Kontext blieb unverändert."
+  },
+  {
+   "id": 400196,
+   "seite": "unten",
+   "text": "Rest von 400196 reicht über den unteren Kernrand (Rand des Ausschnitts)."
+  },
+  {
+   "id": 400103,
+   "seite": "unten",
+   "text": "Straße läuft über den unteren Kernrand; dieselbe Klasse Dorfstraße erwarten."
+  }
+ ],
+ "unsicher": [
+  "400130 (v2): langes graues Dach nördlich von 400290; ob Häuserzeile oder ein Gebäude, im Verbund mit 400290 prüfen.",
+  "400234, 400236 (v1-Liste, aus 400006): Streifen westlich der Dorfstraße gegenüber; gleiche Klasse Hofstelle.",
+  "400187 (v3): Straßenfläche an der Einmündung der Quergasse 400192; gleiche Klasse Dorfstraße."
+ ],
+ "nicht_geprueft": [
+  "Vorbereitete Nahansichten nah1 bis nah4 von v4 nicht angesehen; das Viertel ist in den eigenen Nahansichten nah_1 bis nah_3 und kontrast_1 mit Grenzen und Gitter beurteilt.",
+  "uebersicht_vorschlag, uebersicht_maengel, uebersicht_kontrast, uebersicht_gitter nicht angesehen."
+ ],
+ "offen": [
+  "Hofstellen-Streifen aus 400138 und 400196: Dach gegen Hof im Schwarz-Weiß nicht trennbar; Farbbild würde trennen.",
+  "400138 und 400196 bleiben am Kernrand große Mischflächen, weil ein Teilen dort den Kontextrand verändert oder eine gerade Naht ohne Bildkante erzeugt hätte; beim Zusammentragen mit dem Kontext weiter teilen.",
+  "400172, 400205, 400184: Schatten oder Baumreihe; Farbbild würde entscheiden."
+ ],
+ "eingriffe": [
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400290
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400291
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400292
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400293
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400294
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400295
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400296
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400297,
+    400298
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138,
+    400298
+   ],
+   "nachher": [
+    400299
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400300
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400301
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400302
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400196
+   ],
+   "nachher": [
+    400303
+   ],
+   "grund": "Innenteil des Mischsegments 400196 per Wasserscheide auf dunklen Linien abgetrennt; Teile am Kernrand bleiben bei 400196."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400196
+   ],
+   "nachher": [
+    400304
+   ],
+   "grund": "Innenteil des Mischsegments 400196 per Wasserscheide auf dunklen Linien abgetrennt; Teile am Kernrand bleiben bei 400196."
+  },
+  {
+   "schritt": "polygon_zuweisen",
+   "vorher": [
+    400138
+   ],
+   "nachher": [
+    400305
+   ],
+   "grund": "Innenteil des Häuserblocks 400138 per Wasserscheide auf dunklen Schattenlinien abgetrennt; Teile am Kernrand bleiben bei 400138 (Kontext unverändert)."
+  }
+ ],
+ "klassen_frei": [
+  {
+   "name": "Schatten",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Sehr dunkle, glatte Flächen neben hohen Objekten; Untergrund nicht erkennbar."
+  },
+  {
+   "name": "Siedlung",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Bebaute Flächen und Hofflächen im Ort: Dächer, Höfe, Gärten in kleinteiligem Muster."
+  },
+  {
+   "name": "Verkehr",
+   "ebene": "grob",
+   "eltern": null,
+   "merkmal": "Helle, lange, gleichmäßige Bänder oder Flächen ohne Dachstruktur."
+  },
+  {
+   "name": "Garten",
+   "ebene": "mittel",
+   "eltern": "Siedlung",
+   "merkmal": "Kleinteilig gemusterte Fläche hinter den Häusern mit Flecken von Bewuchs."
+  },
+  {
+   "name": "Gebäude",
+   "ebene": "mittel",
+   "eltern": "Siedlung",
+   "merkmal": "Rechteckige Fläche mit scharfen Kanten, oft mit Schlagschatten an einer Seite."
+  },
+  {
+   "name": "Hof/Freifläche",
+   "ebene": "mittel",
+   "eltern": "Siedlung",
+   "merkmal": "Unbebaute helle bis mittelgraue Fläche zwischen Gebäuden oder an der Straße."
+  },
+  {
+   "name": "Hofstelle",
+   "ebene": "mittel",
+   "eltern": "Siedlung",
+   "merkmal": "Langer Streifen eines Streckhofs zwischen zwei dunklen Schattenlinien: Dach und Hof bei 0,45 m nicht sicher trennbar."
+  },
+  {
+   "name": "Schlagschatten",
+   "ebene": "mittel",
+   "eltern": "Schatten",
+   "merkmal": "Sehr dunkle Fläche an der Schattenseite von Gebäuden oder Bäumen."
+  },
+  {
+   "name": "Straße",
+   "ebene": "mittel",
+   "eltern": "Verkehr",
+   "merkmal": "Breites helles Band, durchgehend, verbindet Ortsteile."
+  },
+  {
+   "name": "Dorfstraße",
+   "ebene": "fein",
+   "eltern": "Straße",
+   "merkmal": "Helle Straße im Ort zwischen den Häuserzeilen."
+  },
+  {
+   "name": "Gebäude mit hellem Dach",
+   "ebene": "fein",
+   "eltern": "Gebäude",
+   "merkmal": "Sehr helle Rechteckfläche mit scharfen Kanten."
+  },
+  {
+   "name": "Gebäude mit mittelgrauem Dach",
+   "ebene": "fein",
+   "eltern": "Gebäude",
+   "merkmal": "Mittelgraue Rechteckfläche mit scharfen Kanten und Schatten."
+  },
+  {
+   "name": "Gebäudeschatten",
+   "ebene": "fein",
+   "eltern": "Schlagschatten",
+   "merkmal": "Schatten an der Schattenseite einer Häuserzeile oder eines Gebäudes."
+  },
+  {
+   "name": "Straßenrand",
+   "ebene": "fein",
+   "eltern": "Straße",
+   "merkmal": "Schmaler Saum am Straßenrand, etwas dunkler als die Fahrbahn."
+  },
+  {
+   "name": "Streckhof-Streifen",
+   "ebene": "fein",
+   "eltern": "Hofstelle",
+   "merkmal": "Langer schmaler Streifen quer zur Straße: Wohnhaus, Stall und Hof hintereinander."
+  },
+  {
+   "name": "Vorplatz",
+   "ebene": "fein",
+   "eltern": "Hof/Freifläche",
+   "merkmal": "Helle Fläche zwischen Straße und Hauswand."
+  }
+ ]
+}

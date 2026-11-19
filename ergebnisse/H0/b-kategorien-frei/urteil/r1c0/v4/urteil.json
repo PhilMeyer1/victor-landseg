@@ -1,0 +1,68 @@
+{"teilkachel": "r1c0", "viertel": "v4", "bearbeiter": "urt-b-r1c0-v4",
+ "bilder_angesehen": {
+  "uebersicht": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/H0.png",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/H0_raster.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c0/ganz_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/ganz/r1c0/ganz_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v4/uebersicht_nummern.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v4/uebersicht_roh.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/maengel.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/vorschlag.jpg"
+  ],
+  "nah": [
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/nah_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/kontrast_1.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v3/nah_3.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v2/nah_6.jpg",
+   "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v2/nah_7.jpg"
+  ]},
+ "segmente": [
+  {"id": 300023, "klasse_heute": "2.1",
+   "was_ist_es": "Schmale helle Linie mit dunkler Furche von der Straße schräg nach Süden bis an den Bildrand, zwischen Feld 26 und den Feldern 11 und 29: Feldrain wie 38; am Ende des hellen Wegs 36 verbreitert.",
+   "urteil": "nicht_sauber", "klasse_vorschlag": null,
+   "klasse_frei": {"grob": "Offenland", "mittel": "Rain", "fein": "Feldrain"},
+   "sicher": false,
+   "punkte": [{"nr": 1, "art": "fremdes", "text": "Bei (465–495, 318–350) ist der Rain verbreitert und enthält das Südwestende des hellen Wegs 36; nicht verschoben, weil die Grenze dort im Bild weich ist.", "flaeche_px": 300}],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v4/uebersicht_nummern.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/nah_1.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/kontrast_1.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v2/nah_7.jpg"]},
+  {"id": 300029, "klasse_heute": "2.1",
+   "was_ist_es": "Feld östlich des Rains 23 und südlich des hellen Wegs 36, mittelgrau mit hellen runden Flecken (Haufen oder kahle Stellen) bei (520–575, 355–410).",
+   "urteil": "sauber", "klasse_vorschlag": null,
+   "klasse_frei": {"grob": "Offenland", "mittel": "Acker", "fein": "Acker"},
+   "sicher": false, "punkte": [],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v4/uebersicht_nummern.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/nah_1.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/kontrast_1.jpg"]},
+  {"id": 300026, "klasse_heute": "2.1",
+   "was_ist_es": "Großes Feld zwischen den Rainen 38 und 23 südlich der Straße (über alle vier Viertel), mit mehreren parallelen hellen und dunklen Streifen (Streifenflur) ohne scharfe Kanten; Kleinstücke 34, 37, 31, 47 jetzt darin.",
+   "urteil": "sauber", "klasse_vorschlag": null,
+   "klasse_frei": {"grob": "Offenland", "mittel": "Acker", "fein": "Acker"},
+   "sicher": false, "punkte": [],
+   "bilder": ["C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v4/uebersicht_nummern.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/viertel/r1c0/v4/uebersicht_roh.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v4/kontrast_1.jpg", "C:/Users/Phil/Developement/Victor/daten/landseg/H0/b-kategorien-frei/urteil/r1c0/v2/nah_7.jpg"]}
+ ],
+ "naht": [],
+ "unsicher": [
+  "300026: die parallelen Streifen (etwa 20–30 Bildpunkte breit, z. B. heller Streifen von (392/535) nach (522/449)) können getrennte schmale Parzellen sein; Kanten zu weich zum Teilen.",
+  "300026: dunkler schräger Strich bei (315–342, 482–502), vielleicht Graben, Hecke oder Schatten; belassen.",
+  "300026: hat in v1 (34, 37), v2 (31) und v4 (47) Kleinstücke aufgenommen und in v3 rund 27 Bildpunkte bei (288/470) an den Rain 38 abgegeben.",
+  "Waagrechte helle Linie bei y etwa 462 quer durch die Teilkachel ist ein Kratzer im Scan, kein Objekt.",
+  "300036 (v2): Kleinstück 41 hier in den hellen Weg verschmolzen."
+ ],
+ "nicht_geprueft": [
+  "Vorbereitete Nahansichten nah1–nah4 sowie uebersicht_kontrast, uebersicht_vorschlag, uebersicht_maengel und uebersicht_gitter von v4 nicht angesehen; stattdessen eigene Nahansicht und Kontrastbild mit Gitter.",
+  "Werkzeug kante nicht benutzt."
+ ],
+ "offen": [
+  "Acker gegen Grünland ist auf dem Scan bei 26 und 29 nicht sicher zu trennen; im Farbbild entscheiden.",
+  "Helle Flecken in 29: Haufen (Mieten, Stroh) oder kahle Stellen; im Farbbild entscheiden.",
+  "300023 Feldrain, Graben oder Grasweg: im Farbbild prüfen."
+ ],
+ "eingriffe": [
+  {"schritt": "verschmelzen", "vorher": [300036, 300041], "nachher": [300036], "grund": "Kleinstück am Ende des hellen Wegs, derselbe helle Streifen."},
+  {"schritt": "verschmelzen", "vorher": [300026, 300047], "nachher": [300026], "grund": "Kleinstück neben dem Rain ohne eigenen Bildinhalt, Teil des Feldes."}
+ ],
+ "klassen_frei": [
+  {"name": "Offenland", "ebene": "grob", "eltern": null, "merkmal": "Unbebaute Fläche ohne Gehölz: Felder, Brachen, Wiesen, Raine."},
+  {"name": "Acker", "ebene": "mittel", "eltern": "Offenland", "merkmal": "Parzelle mit gleichmäßigem Grauton, oft parallele Bearbeitungsstreifen, gerade Grenzen."},
+  {"name": "Acker", "ebene": "fein", "eltern": "Acker", "merkmal": "Wie mittel; Frucht oder Bewuchs auf dem Scan nicht unterscheidbar."},
+  {"name": "Rain", "ebene": "mittel", "eltern": "Offenland", "merkmal": "Schmale, lange, gerade Linie zwischen zwei Feldern."},
+  {"name": "Feldrain", "ebene": "fein", "eltern": "Rain", "merkmal": "Helle Linie 2–3 m breit mit dunkler Furche daneben."}
+ ]}
