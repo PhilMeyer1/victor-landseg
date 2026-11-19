@@ -11,7 +11,7 @@ Grundlage ist die Ermittlung `landseg-methode` im Wunsch-System (Basisordner, `w
 | `kategorien.json` | Kategorienliste, maschinenlesbar: 7 grobe Klassen (Codes 0 bis 6), 26 auf Ebene 2, 44 feinste Klassen (insgesamt 59, darunter 3.6 Garten); je Klasse Code, Name, Elternklasse, Ebene, Farbe, SW-Kennzeichen und Abbildungen auf CORINE, CLC+, FLAIR, DKM und Bericht 48; dazu die Regeln G1–G5 und U1–U5 und die Abweichungen A1–A4 |
 | `KATEGORIEN.md` | Erklärung der Kategorienliste in Alltagssprache: Aufbau, Klassentabelle, Regeln, Abweichungen von Bericht 48, was noch ungesichert ist |
 | `tools/pruefe_kategorien.py` | Prüfskript für `kategorien.json` (nur Python-Standardbibliothek) |
-| `tools/gesamt_projekt.py`, `einstellungen/gesamt_projekt.json`, `gesamt/` | Gesamtprojekt für Victor (nur Standardbibliothek): `bauen` legt es aus dem Basisordner an oder frischt es auf (Programm und Unterlagen mit Verlauf per `git subtree`, Wünsche und Arbeitsdaten als Kopie, ohne Original-Luftbilder; committet nur bei Änderungen), `pruefen` (Vollständigkeit, Größen ab 50/100 MB, Pfade in README, ANLEITUNG und CLAUDE.md, `--luftbilder` mit SHA-256), `durchsicht` (Vertrauliches; jede Fundstelle braucht eine Regel in den Einstellungen); `gesamt/` enthält README, Anleitung, `CLAUDE.md` (Anweisung an Claude Code: zu Beginn jeder Session `ergebnisse/T0.html` im Browser öffnen) und Luftbild-Beschreibung des Gesamtprojekts |
+| `tools/gesamt_projekt.py`, `einstellungen/gesamt_projekt.json`, `gesamt/` | Gesamtprojekt für Victor (nur Standardbibliothek): `bauen` legt es aus dem Basisordner an oder frischt es auf (Programm und Unterlagen mit Verlauf per `git subtree`, Wünsche und Arbeitsdaten als Kopie, ohne Original-Luftbilder; committet nur bei Änderungen), `pruefen` (Vollständigkeit, Größen ab 50/100 MB, Pfade in README, ANLEITUNG und CLAUDE.md, `--luftbilder` mit SHA-256), `durchsicht` (Vertrauliches; jede Fundstelle braucht eine Regel in den Einstellungen); `gesamt/` enthält README, Anleitung, `CLAUDE.md` (Anweisung an Claude Code: zu Beginn jeder Session `ergebnisse/T0-H0.html` im Browser öffnen) und Luftbild-Beschreibung des Gesamtprojekts |
 | `landseg/` | Python-Paket mit den Werkzeugen, ein Modul je Werkzeug; Befehlszeile `python -m landseg <befehl>` |
 | `landseg/kacheln.py` | W1 `kacheln`: Arbeitsausschnitt aus einem Luftbild, Teilkacheln (Kern + Kontextrand), Manifest mit Georeferenz |
 | `landseg/vorstufe.py`, `landseg/sam3.py` | W2 `vorstufe`: lückenlose Vorbelegung einer Teilkachel (Superpixel, SAM 3 mit Text je Kategorie, Semantik-argmax), mit Sicherheit je Segment und Kandidatenliste |
@@ -105,6 +105,36 @@ Vorstufe hat noch keine Fassung Daten: Die Vorstufe ist der Ausgang von B und C 
 `vorstufe/<teilkachel>/` nach `c-feste-liste/<teilkachel>/`, dann das Urteil), oder man zeigt sie
 mit einer eigenen Fassungsliste. Liegt ein Ergebnis woanders, nennt eine eigene Datei mit dem
 Schlüssel `fassungen` die Ordner: `seite … --einstellungen <datei.json>`.
+
+## Weiteres Bild
+
+Ein weiteres Bild läuft genauso wie T0 und kommt als eigener Ordner neben `T0/` (Kennung = Ordnername);
+die Seite zeigt beide mit Bildwahl. Was dafür nötig ist:
+
+1. In `einstellungen/seite.json` unter `bilder` einen Eintrag mit `kennung`, `name`, `beschreibung` und
+   `manifest` (relativ zum Ordner, den `seite --daten` bekommt). Voreingestellt sind T0 und H0.
+2. Die Befehlsfolge, hier für den historischen Ausschnitt H0 aus dem Scan von 1968 (Schwarz-Weiß, ohne
+   Weltdatei; `<daten>` = `../daten/landseg`, `<bericht>` = Berichtsordner des Laufs):
+
+```
+PY -m landseg kacheln --bild ../daten/luftbilder/historisch/1968105_0014_0228.tif --x 1500 --y 2000 --breite 1000 --hoehe 1000 --kern 500 --rand 64 --name H0 --ziel <daten>/H0
+PY -B -m landseg bildart --manifest <daten>/H0/manifest.json            # zeigt die Feinheit (sw: gröber)
+PY -B -m landseg vorstufe --manifest <daten>/H0/manifest.json           # GPU, alle vier Teilkacheln
+PY -B -m landseg vorbereiten --manifest <daten>/H0/manifest.json --ziel <bericht> --hinweis <hinweis-sw.md>
+PY -B -m landseg plan --auftraege <bericht>/auftraege.json --ziel <bericht>/urteil-plan.json
+#   Urteils-Agents nach dem Plan (ein Agent je Viertel), Vereinheitlichung für B
+PY -B -m landseg zusammenfuehren --manifest <daten>/H0/manifest.json --ziel <bericht>
+#   Einigung je Fassung: einigung finden, je Bündel ein Agent (vorlagen/einigung.md), einigung anwenden
+PY -B -m landseg vergroebern --manifest <daten>/H0/manifest.json --ordner <daten>/H0/c-feste-liste   # je Fassung
+PY -B -m landseg einigung messen --manifest <daten>/H0/manifest.json
+PY -B -m landseg seite --daten <daten> --ziel <daten>/seiten/T0-H0.html
+```
+
+   Ohne Weltdatei schreibt `kacheln` `georeferenz: null`; Graustufen bleiben einkanalig (`kanaele: 1`, Bildart
+   `sw`). Die Vorstufe braucht dann `siedlung.bildpunkt_m` passend zum Scan (siehe „vorstufe“).
+3. Für das Gesamtprojekt: den Ordner des Bilds und die Seite in der Übergabe-Grundlage committen und den
+   Namen in `umbau.aus` von `einstellungen/gesamt_projekt.json` eintragen (heute `T0`, `H0`, `T0-H0.html`,
+   im Gesamtprojekt unter `ergebnisse/`).
 
 ## Befehle
 

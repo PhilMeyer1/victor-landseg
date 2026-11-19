@@ -79,7 +79,8 @@ class GesamtProjektTest(unittest.TestCase):
                  "|---|---:|---|\n| `x/bild.tif` | 3 | `" + hashlib.sha256(b"abc").hexdigest() + "` |\n\n"
                  "## anderes\n").encode("utf-8"))
         alt = repo(basis / "daten/landseg/uebergabe/landseg-t0",
-                   {"T0/manifest.json": b"{}\n", "landseg/__init__.py": b"alt\n", "README.md": b"alt\n",
+                   {"T0/manifest.json": b"{}\n", "H0/manifest.json": b"{\"h\": 0}\n", "T0-H0.html": b"<html></html>\n",
+                    "landseg/__init__.py": b"alt\n", "README.md": b"alt\n",
                     "ANLEITUNG.md": b"alt\n", ".gitignore": b"*.pyc\n", "kategorien.json": b"{}\n"})
         git(alt, "remote", "add", "origin", "https://beispiel.invalid/landseg-t0.git")
         return basis
@@ -104,14 +105,15 @@ class GesamtProjektTest(unittest.TestCase):
         self.assertEqual(git(ziel, "remote", "get-url", "origin").strip(), "https://beispiel.invalid/landseg-t0.git")
         self.assertEqual(git(ziel, "cat-file", "-t", alt).strip(), "commit")
         for pfad in ("README.md", "ANLEITUNG.md", "CLAUDE.md", "programm/landseg/__init__.py", "unterlagen/README.md",
-                     "ergebnisse/manifest.json", "daten/landseg/T0/kern500/a.bin", "daten/luftbilder/README.md"):
+                     "ergebnisse/T0/manifest.json", "ergebnisse/H0/manifest.json", "ergebnisse/T0-H0.html",
+                     "daten/landseg/T0/kern500/a.bin", "daten/luftbilder/README.md"):
             self.assertTrue((ziel / pfad).is_file(), pfad)
-        for pfad in ("landseg", "T0", "kategorien.json", "wuensche/.stand.json", "wuensche/2026-01-01-a/roh",
+        for pfad in ("landseg", "T0", "H0", "T0-H0.html", "ergebnisse/manifest.json", "kategorien.json", "wuensche/.stand.json", "wuensche/2026-01-01-a/roh",
                      "wuensche/2026-01-01-a/einreihen-landseg.json", "daten/landseg/uebergabe"):
             self.assertFalse((ziel / pfad).exists(), pfad)
         self.assertEqual((ziel / "wuensche/2026-01-01-a.md").read_bytes(), b"# Wunsch\r\nZeile mit CRLF\r\n")
         self.assertEqual((ziel / "CLAUDE.md").read_bytes(), (REPO / "gesamt/CLAUDE.md").read_bytes().replace(b"\r\n", b"\n"))
-        self.assertIn("ergebnisse/T0.html", (ziel / "CLAUDE.md").read_text(encoding="utf-8"))
+        self.assertIn("ergebnisse/T0-H0.html", (ziel / "CLAUDE.md").read_text(encoding="utf-8"))
         self.assertIn(hashlib.sha256(b"abc").hexdigest(), (ziel / "daten/luftbilder/README.md").read_text(encoding="utf-8"))
         commits = git(ziel, "rev-list", "--count", "HEAD").strip()
         self.klartext_in_neuen_commits(ziel, f"{alt}..HEAD")
@@ -136,9 +138,10 @@ class GesamtProjektTest(unittest.TestCase):
         self.klartext_in_neuen_commits(ziel, f"{stand}..HEAD")
 
         # neues Ergebnis in der Grundlage: bauen zieht ergebnisse/ aus deren HEAD nach (Byte für Byte, auch CRLF),
-        # nicht aus dem Arbeitsstand; was dort nicht mehr liegt, fällt weg
+        # nicht aus dem Arbeitsstand; was dort nicht mehr liegt, fällt weg; andere Ordner der Grundlage nicht
         grundlage = basis / "daten/landseg/uebergabe/landseg-t0"
         schreibe(grundlage / "T0/T0.html", b"<html>\r\nneu\r\n</html>\r\n")
+        schreibe(grundlage / "tests/neu.py", b"x\n")
         git(grundlage, "rm", "-q", "T0/manifest.json")
         git(grundlage, "add", "-A")
         git(grundlage, "commit", "-q", "-m", "feat: neue Seite")
@@ -146,9 +149,11 @@ class GesamtProjektTest(unittest.TestCase):
         stand = git(ziel, "rev-parse", "HEAD").strip()
         code, text = ausfuehren("bauen", "--basis", str(basis), "--ziel", str(ziel))
         self.assertEqual(code, 0, text)
-        self.assertIn("Ergebnisse: 1 Dateien aus der Grundlage", text)
-        self.assertEqual((ziel / "ergebnisse/T0.html").read_bytes(), b"<html>\r\nneu\r\n</html>\r\n")
-        self.assertFalse((ziel / "ergebnisse/manifest.json").exists())
+        self.assertIn("Ergebnisse: 3 Dateien aus der Grundlage", text)
+        self.assertEqual((ziel / "ergebnisse/T0/T0.html").read_bytes(), b"<html>\r\nneu\r\n</html>\r\n")
+        self.assertFalse((ziel / "ergebnisse/T0/manifest.json").exists())
+        self.assertTrue((ziel / "ergebnisse/H0/manifest.json").is_file())
+        self.assertFalse((ziel / "tests/neu.py").exists())
         self.assertIn("chore: update ergebnisse/ from the handover results", git(ziel, "log", "--oneline", f"{stand}..HEAD"))
         self.klartext_in_neuen_commits(ziel, f"{stand}..HEAD")
         code, text = ausfuehren("bauen", "--basis", str(basis), "--ziel", str(ziel))

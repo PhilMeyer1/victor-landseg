@@ -6,10 +6,11 @@ Usage (paths in Windows form ``C:/...``):
   python -B tools/gesamt_projekt.py pruefen [--basis <Victor>] --ziel <folder> [--luftbilder <folder>]
   python -B tools/gesamt_projekt.py durchsicht --ziel <folder> [--basis <Victor>] [--bericht <file.md>]
 
-``bauen`` clones the handover repo (``grundlage``) into ``--ziel`` once, moves its ``T0/`` to
-``ergebnisse/`` and drops the old root copy of the tools, brings the repos ``landseg`` and
-``unterlagen`` in with their full history (``git subtree``, no squash), on every run brings
-``ergebnisse/`` to the handover's committed ``T0/`` (HEAD, byte for byte), mirrors ``wuensche/`` and
+``bauen`` clones the handover repo (``grundlage``) into ``--ziel`` once, moves its result entries
+(``umbau.aus``: ``T0/``, ``H0/``, the page ``T0-H0.html``) into ``ergebnisse/`` and drops the old root copy of
+the tools, brings the repos ``landseg`` and ``unterlagen`` in with their full history (``git subtree``, no
+squash), on every run brings ``ergebnisse/`` to the handover's committed result entries (HEAD, byte for
+byte, each under its own name), mirrors ``wuensche/`` and
 ``daten/landseg/`` byte for byte and writes README, guide and the description of the original aerial
 images. It commits in ``--ziel`` only when something changed (a second run without changes adds no
 commit). ``pruefen`` checks completeness against the sources (with ``--basis``), forbidden paths,
@@ -196,14 +197,23 @@ def commit(ziel: Path, nachricht: str) -> bool:
     return True
 
 
+def ergebnisse_baum(grundlage: Path, umbau: dict) -> dict[str, str]:
+    """Files of the result entries ``umbau.aus`` (folders or files at the root of the handover's HEAD):
+    path below ``umbau.nach`` (same name as in the handover) -> blob hash."""
+    eintraege = umbau["aus"]
+    return {rel: h for rel, h in baum(grundlage, "HEAD").items()
+            if any(rel == e or rel.startswith(e + "/") for e in eintraege)}
+
+
 def ergebnisse_nachziehen(grundlage: Path, ziel: Path, umbau: dict, ausgabe=print) -> bool:
-    """Mirror ``umbau.aus`` of the handover's HEAD into ``umbau.nach`` byte for byte (Git blobs, not the
-    working tree of the handover); files no longer there are removed. Commits only when something changed."""
+    """Mirror the entries ``umbau.aus`` of the handover's HEAD into ``umbau.nach`` byte for byte (Git blobs,
+    not the working tree of the handover); files no longer there are removed. Commits only when something
+    changed."""
     if not (grundlage / ".git").exists():
         raise Fehler(f"Grundlage fehlt: {grundlage}")
-    soll = baum(grundlage, "HEAD", umbau["aus"])
+    soll = ergebnisse_baum(grundlage, umbau)
     if not soll:
-        raise Fehler(f"Grundlage ohne {umbau['aus']}/ im HEAD: {grundlage}")
+        raise Fehler(f"Grundlage ohne {', '.join(umbau['aus'])} im HEAD: {grundlage}")
     praefix = umbau["nach"] + "/"
     ist = {rel[len(praefix):]: h for rel, h in baum(ziel).items() if rel.startswith(praefix)}
     geaendert = 0
@@ -221,7 +231,7 @@ def ergebnisse_nachziehen(grundlage: Path, ziel: Path, umbau: dict, ausgabe=prin
         f"Ergebnisse in {praefix} auf den neuesten Stand gebracht",
         f"Die Ergebnisse im Ordner {praefix} sind wieder genau die der Übergabe, samt neu erzeugter "
         f"Ergebnis-Seite.",
-        f"Mirrored byte for byte from {umbau['aus']}/ at handover commit {stand}."))
+        f"Mirrored byte for byte from {', '.join(umbau['aus'])} at handover commit {stand}."))
     ausgabe(f"Ergebnisse: {len(soll)} Dateien aus der Grundlage ({stand}), {geaendert} geändert oder entfernt")
     return neu
 
@@ -255,9 +265,12 @@ def bauen(basis: Path, ziel: Path, einst: dict, ausgabe=print) -> list[str]:
 
     umbau = einst["umbau"]
     inhalt = {Path(p).parts[0] for p in baum(ziel)}
-    if umbau["aus"] in inhalt and umbau["nach"] not in inhalt:
-        git(ziel, "mv", umbau["aus"], umbau["nach"])
-        for eintrag in sorted(inhalt - {umbau["aus"], *umbau["behalten"]}):
+    vorhanden = [e for e in umbau["aus"] if e in inhalt]
+    if vorhanden and umbau["nach"] not in inhalt:
+        (ziel / umbau["nach"]).mkdir()
+        for eintrag in vorhanden:
+            git(ziel, "mv", eintrag, f"{umbau['nach']}/{eintrag}")
+        for eintrag in sorted(inhalt - {*vorhanden, *umbau["behalten"]}):
             git(ziel, "rm", "-r", "-q", "--", eintrag)
         for name in (".gitattributes", ".gitignore"):
             schreibe(ziel / name, seiten[name])
@@ -267,7 +280,7 @@ def bauen(basis: Path, ziel: Path, einst: dict, ausgabe=print) -> list[str]:
             "Die Ergebnisse der ersten Übergabe liegen jetzt in einem eigenen Ordner. Die alte Kopie des "
             "Programms ist weg; es kommt gleich mit allen früheren Änderungen zurück.",
             "The tools come back with their full history under the subtree prefixes."))
-        ausgabe(f"umgebaut: {umbau['aus']}/ -> {umbau['nach']}/")
+        ausgabe(f"umgebaut: {', '.join(vorhanden)} -> {umbau['nach']}/")
 
     for v in einst["verlauf"]:
         quelle = (basis / v["repo"]).as_posix()
@@ -410,7 +423,7 @@ def pruefen(ziel: Path, einst: dict, basis: Path | None = None, luftbilder: Path
         for v in einst["verlauf"]:
             soll.update({f"{v['prefix']}/{rel}": h for rel, h in baum(basis / v["repo"], v["branch"]).items()})
         grundlage = basis / einst["grundlage"]
-        ergebnisse = baum(grundlage, "HEAD", einst["umbau"]["aus"])
+        ergebnisse = ergebnisse_baum(grundlage, einst["umbau"])
         soll.update({f"{einst['umbau']['nach']}/{rel}": h for rel, h in ergebnisse.items()})
         fehlend = sorted(set(soll) - set(ist))
         abweichend = sorted(rel for rel in set(soll) & set(ist) if soll[rel] != ist[rel])

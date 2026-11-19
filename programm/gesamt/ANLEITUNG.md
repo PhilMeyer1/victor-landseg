@@ -1,7 +1,9 @@
-# Anleitung: Segmentierung und Klassifizierung des Testfensters T0
+# Anleitung: Segmentierung und Klassifizierung der Testfenster T0 und H0
 
 Für Victor. Hier steht, wie der erste Test an einem Luftbild-Ausschnitt (T0) gerechnet wurde, was
 in welcher Datei steht, was man den Zahlen glauben kann und wie man einen neuen Ausschnitt rechnet.
+Der zweite Test am historischen Luftbild von 1968 (H0) lief genauso; was dort anders war, steht im
+Abschnitt „Historischer Ausschnitt H0“.
 Wie das ganze Projekt aufgebaut ist und wo die Vorgeschichte steht, erklärt `README.md`.
 
 Stand: 18.11.2026. Abgegeben ist der Zwischenstand nach dem Urteil der KI und der Einigung an den
@@ -20,8 +22,11 @@ festen Liste durch uns und die beiden letzten Schritte (Grenzen umsetzen, Messbe
 - Danach haben sich KI-Helfer an allen Übergängen der vier Teilkacheln auf gemeinsame Klassen
   geeinigt: Keine Stelle ist mehr offen, an der dieselbe Fläche ohne Kante zwei Klassen trägt; was
   sich nicht klären ließ, ist als unsicher mit Grund belegt (A 9, B 6, C 9 Stellen).
-- Ansehen: `ergebnisse/T0.html` doppelklicken (eine Datei, kein Server). Oben schaltet man A, B, C um.
-- Bilder von ganz T0 je Fassung: `ergebnisse/gesamtbilder/`.
+- Derselbe Ablauf am Schwarz-Weiß-Scan von 1968: Ausschnitt H0 (gleich groß, ohne Lage), mit
+  gröberen Flächen; Ergebnis unter `ergebnisse/H0/`.
+- Ansehen: `ergebnisse/T0-H0.html` doppelklicken (eine Datei, kein Server). Oben wählt man das Bild
+  (T0 oder H0), daneben die Fassung A, B, C.
+- Bilder von ganz T0 je Fassung: `ergebnisse/T0/gesamtbilder/`.
 
 ## Zuerst: einrichten und ausprobieren
 
@@ -47,7 +52,7 @@ festen Liste durch uns und die beiden letzten Schritte (Grenzen umsetzen, Messbe
 3. Eine Karte aus den Ergebnissen prüfen lassen (Fassung C, Teilkachel r0c0), weiter in `programm/`:
 
    ```
-   python -B -m landseg pruefen --labels ../ergebnisse/c-feste-liste/r0c0/labels.tif --segmente ../ergebnisse/c-feste-liste/r0c0/segmente.json --kategorien ../ergebnisse/c-feste-liste/kategorien-c.json --bild ../ergebnisse/teilkacheln/r0c0.png
+   python -B -m landseg pruefen --labels ../ergebnisse/T0/c-feste-liste/r0c0/labels.tif --segmente ../ergebnisse/T0/c-feste-liste/r0c0/segmente.json --kategorien ../ergebnisse/T0/c-feste-liste/kategorien-c.json --bild ../ergebnisse/T0/teilkacheln/r0c0.png
    ```
 
    Exit-Code 0 heißt: lückenlos, jedes Segment zusammenhängend, alle Klassen gültig.
@@ -73,15 +78,18 @@ Alle Pfade gelten vom Projektordner aus.
 | `programm/landseg/`, `programm/tests/`, `programm/tools/`, `programm/einstellungen/`, `programm/vorlagen/`, `programm/.claude/skills/landseg-agent/` | Werkzeuge, Tests, Prüfskripte, Einstellungen, Auftragsvorlagen und Arbeitsregeln (L1–L12) für die KI-Agents |
 | `programm/kategorien.json`, `programm/KATEGORIEN.md` | feste Kategorienliste (Fassung C) und ihre Erklärung |
 | `programm/vorstufe.json` | Einstellungen der automatischen Vorstufe (SAM 3) |
-| `ergebnisse/T0.png`, `ergebnisse/T0.pgw` | Luftbild-Ausschnitt T0 mit Weltdatei |
-| `ergebnisse/manifest.json` | Lage von T0 und der Teilkacheln (Bildpunkte und Landeskoordinaten) |
-| `ergebnisse/teilkacheln/` | die vier Teilkacheln als PNG mit Weltdatei |
-| `ergebnisse/ganz/` | je Teilkachel die Übersichtsbilder, die jeder Agent zuerst gesehen hat (`ganz_roh.jpg`, mit Nummern `ganz_nummern.jpg`) |
-| `ergebnisse/T0.html` | Prüfseite mit allen drei Fassungen |
-| `ergebnisse/gesamtbilder/` | je Fassung ganz T0 in Klassenfarben (`…-klassen.png`) und über dem Luftbild mit weißen Grenzen (`…-ueber-luftbild.png`) |
-| `ergebnisse/a-alles-frei/` | Fassung A: `<teilkachel>/labels.tif` und `segmente.json`, `kategorien-a.json`, `zusammen/` (Karte von ganz T0, `naht.json`), `abgabe/<teilkachel>/arbeitsweise.md` und `kategorien-teil.json` (eigene Liste je Agent), `zusammentragen.json` |
-| `ergebnisse/b-kategorien-frei/` | Fassung B: `<teilkachel>/labels.tif` und `segmente.json`, `kategorien-b.json`, `urteil/<teilkachel>/urteil.json` |
-| `ergebnisse/c-feste-liste/` | Fassung C: `<teilkachel>/labels.tif` und `segmente.json`, `kategorien-c.json` (Kopie von `kategorien.json`), `urteil/<teilkachel>/urteil.json` |
+| `ergebnisse/T0/T0.png`, `ergebnisse/T0/T0.pgw` | Luftbild-Ausschnitt T0 mit Weltdatei |
+| `ergebnisse/T0/manifest.json` | Lage von T0 und der Teilkacheln (Bildpunkte und Landeskoordinaten) |
+| `ergebnisse/T0/teilkacheln/` | die vier Teilkacheln als PNG mit Weltdatei |
+| `ergebnisse/T0/ganz/` | je Teilkachel die Übersichtsbilder, die jeder Agent zuerst gesehen hat (`ganz_roh.jpg`, mit Nummern `ganz_nummern.jpg`) |
+| `ergebnisse/T0-H0.html` | Prüfseite mit beiden Bildern (T0 und H0) und allen drei Fassungen |
+| `ergebnisse/T0/T0.html` | Prüfseite nur für T0, mit allen drei Fassungen |
+| `ergebnisse/T0/gesamtbilder/` | je Fassung ganz T0 in Klassenfarben (`…-klassen.png`) und über dem Luftbild mit weißen Grenzen (`…-ueber-luftbild.png`) |
+| `ergebnisse/T0/a-alles-frei/` | Fassung A: `<teilkachel>/labels.tif` und `segmente.json`, `kategorien-a.json`, `zusammen/` (Karte von ganz T0, `naht.json`), `abgabe/<teilkachel>/arbeitsweise.md` und `kategorien-teil.json` (eigene Liste je Agent), `zusammentragen.json` |
+| `ergebnisse/T0/b-kategorien-frei/` | Fassung B: `<teilkachel>/labels.tif` und `segmente.json`, `kategorien-b.json`, `urteil/<teilkachel>/urteil.json` |
+| `ergebnisse/T0/c-feste-liste/` | Fassung C: `<teilkachel>/labels.tif` und `segmente.json`, `kategorien-c.json` (Kopie von `kategorien.json`), `urteil/<teilkachel>/urteil.json` |
+| `ergebnisse/H0/` | H0 in derselben Form wie T0: `H0.png`, `manifest.json` (ohne Lage), `teilkacheln/`, `ganz/`, je Fassung `a-alles-frei/`, `b-kategorien-frei/`, `c-feste-liste/` mit Karten, `kandidaten.json` (B, C), `zusammen/`, Kategorienliste und Urteilen je Viertel (`urteil/<teilkachel>/v<n>/urteil.json`) |
+| `daten/landseg/H0/` | alle Arbeitsdaten von H0 (schon mit neuen Ordnernamen): Vorstufe, Viertelbilder, Nahansichten und Abgaben der Agents, Gegenprobe; die verworfene feine Vorstufe in den Ordnern `…-fein` |
 | `daten/landseg/T0/` | alle Arbeitsdaten des Tests mit den alten Ordnernamen (siehe „Benennung“): Viertelbilder, Nahansichten der Agents, Rohwerte der Vorstufe (`sam3_roh.npz`), Probeläufe, einzelne Viertel-Urteile |
 | `daten/luftbilder/` | Platz für die Original-Luftbilder (kommen getrennt), Beschreibung in `daten/luftbilder/README.md` |
 
@@ -113,7 +121,7 @@ Inhalte und Zahlen sind unverändert.
   6250 × 5000 Bildpunkte, RGB, 8 Bit), 0,2 m je Bildpunkt, Lagebezug MGI / Austria GK Central,
   EPSG:31255. Das Originalbild kommt getrennt (`daten/luftbilder/README.md`).
 - T0: Ausschnitt ab Bildpunkt x 2000, y 2400, 1000 × 1000 Bildpunkte, also 200 × 200 m. Ecke oben
-  links in Landeskoordinaten: X 69150,0 m, Y 353520,0 m (`ergebnisse/manifest.json`, `ausschnitt.transform`).
+  links in Landeskoordinaten: X 69150,0 m, Y 353520,0 m (`ergebnisse/T0/manifest.json`, `ausschnitt.transform`).
 - Quelle und Rechte: Das Orthofoto kam mit einer Lieferung vom 17.11.2026 (Beispiel-Luftbilder zu
   Bericht 48 „Segmentierung von Luftbildern“). **Anbieter und Lizenz sind nicht dokumentiert**;
   auch Bericht 48 nennt für diese Datei keinen Anbieter. `T0.png` und die Teilkacheln sind daraus
@@ -152,7 +160,7 @@ Teilkachel, davon im Kern 141 / 147 / 52 / 301, zusammen **641 Segmente in T0**;
   Klassen zu einer Liste vereinheitlichte; dazu eine Gegenprobe auf r0c0, nicht in `ergebnisse/`).
   Insgesamt 15 Agents, 25 Minuten, rund **3,3 Mio. Tokens** (der Lauf der Urteile; vorbereitende
   und zusammenführende Schritte nicht mitgezählt).
-- Jeder Agent sah **zuerst ganz T0** (`T0.png`), dann seine ganze Teilkachel (`ergebnisse/ganz/`),
+- Jeder Agent sah **zuerst ganz T0** (`T0.png`), dann seine ganze Teilkachel (`ergebnisse/T0/ganz/`),
   und arbeitete danach die vier Viertel seiner Teilkachel nacheinander ab, **Segment für Segment**,
   mit Übersichts- und Nahbildern mit Nummern. Die Arbeitsregeln stehen in
   `programm/.claude/skills/landseg-agent/SKILL.md`, die Auftragsvorlagen in `programm/vorlagen/`;
@@ -204,7 +212,7 @@ werden **nur Klassen** abgeglichen; Grenzen, Karten und Segmentnummern bleiben, 
 
 **Wie gezählt wird.** Eine Stelle ist ein Paar zweier Segmente, die an einem Übergang ohne Kante im
 Luftbild aneinanderstoßen (dieselbe Regel wie das Werkzeug `naht`) und verschiedene Klassen tragen.
-`python -B -m landseg einigung messen --manifest ../ergebnisse/manifest.json` zählt je Fassung:
+`python -B -m landseg einigung messen --manifest ../ergebnisse/T0/manifest.json` zählt je Fassung:
 **offen** (noch nicht beurteilt), **unsicher belegt** (die KI konnte es nicht klären; beide Segmente
 `sicher: nein`, Grund dabei) und **geklärt**, je mit der Zahl der Randpunkte. Die Zahl der geraden
 Schnittlinien ohne Bildkante (die Grenzen selbst) steht getrennt daneben; sie ändert die Einigung nicht.
@@ -265,7 +273,7 @@ Gruppen mit den Codes 0–6.
 
 - **Label-Karte** `labels.tif`: einkanaliges TIFF (zlib), uint32, je Bildpunkt die ID seines
   Segments; 0 = kein Segment, darf nicht vorkommen. Je Teilkachel 628 × 628 (Kern plus Rand), in
-  `ergebnisse/a-alles-frei/zusammen/` 1000 × 1000 (ganz T0). Lesen: `tifffile.imread("labels.tif")`.
+  `ergebnisse/T0/a-alles-frei/zusammen/` 1000 × 1000 (ganz T0). Lesen: `tifffile.imread("labels.tif")`.
 - **IDs**: eindeutig im ganzen Ausschnitt, Teilkachel-Nummer × 100000 + laufende Nummer
   (r0c0 ab 100001, r0c1 ab 200001, r1c0 ab 300001, r1c1 ab 400001).
 - **`segmente.json`** (Schema `landseg-segmente/1`): unter `segmente` je Segment `id`, `klasse`
@@ -342,9 +350,44 @@ die Einigung.
 - Die alten Arbeitsdaten unter `daten/landseg/T0/` haben die Einigung nicht; sie gilt nur für
   `ergebnisse/`.
 
+## Historischer Ausschnitt H0 (Luftbild 1968)
+
+- **Bild**: der Scan `daten/luftbilder/historisch/1968105_0014_0228.tif` (Schwarz-Weiß, eine
+  Farbebene, ohne Weltdatei und damit ohne Lage), Fenster ab Bildpunkt x 1500, y 2000, 1000 × 1000
+  Bildpunkte, Kern 500, Rand 64 wie T0: Streifenflur, eine schräge Straße, Ortsrand mit Streckhöfen
+  und Anger. Der zweite Scan (1957) blieb ungenutzt.
+- **Wie bei T0**: Vorstufe (SAM 3), Urteile je Fassung A, B, C, Gegenprobe auf r0c0 (C), Zusammentragen,
+  Einigung an den Übergängen, Prüfungen.
+- **Anders als bei T0**: Die Vorstufe lief grob (705 Flächen auf den vier Teilkachelbildern); die KI
+  durfte verschmolzene Objekte (etwa Häuserzeilen) im Urteil selbst nachteilen. Geurteilt hat ein
+  Agent je Viertel einer Teilkachel; jeder sah zuerst den ganzen Ausschnitt, dann seine Teilkachel.
+  Danach wurden kleine Flächen mit dem Nachbarn zusammengelegt, weil feine Flächen auf dem alten
+  Bild nicht tragen (Werkzeug `vergroebern`), und Gärten tragen wie bei T0 die Klasse „Garten“;
+  die Stellen, an denen ein Garten nur vermutet ist, sind als unsicher belegt.
+- **Zahlen** (Karte des ganzen Ausschnitts, `ergebnisse/H0/<fassung>/zusammen/segmente.json`):
+
+  | | A Alles frei | B Kategorien frei | C Feste Liste |
+  |---|---:|---:|---:|
+  | Segmente | 566 | 468 | 297 |
+  | davon unsicher (`sicher: nein`) | 478 (84 %) | 380 (81 %) | 249 (84 %) |
+  | verwendete Klassen | 33 | 31 | 14 |
+  | T0 zum Vergleich: Segmente / unsicher | 626 / 51 % | 655 / 62 % | 656 / 76 % |
+
+  Gegenprobe auf r0c0 (C, zweiter Agent ohne Blick auf das erste Urteil): PQ 0,845, Boundary-PQ
+  0,818. Der Lauf der Urteile und der Einigung brauchte 71 Agents und rund 11,4 Mio. Tokens (T0:
+  30 Agents, rund 5,2 Mio.). Einzelheiten: `wuensche/2026-11-18-landseg-historisch-4/bericht-landseg.md`.
+- **Was auf Schwarz-Weiß trägt**: Gebäude, Verkehrsflächen und Acker als Ganzes (Streifenflur an
+  der Textur). Was nicht trägt: Acker gegen Grünland, Belag, Gehölzart; in C fällt fast jede
+  Fläche auf eine gröbere Stufe zurück. Die SW-Spalte der festen Liste bleibt eine Vermutung.
+- **Ansehen**: in `ergebnisse/T0-H0.html` oben „Historischer Ausschnitt H0“ wählen.
+- **Selbst nachrechnen**: Befehlsfolge in `programm/README.md`, Abschnitt „Weiteres Bild“.
+
 ## Prüfseite öffnen
 
-`ergebnisse/T0.html` doppelklicken (Chrome, Edge oder Firefox, ohne Internet). Die Seite öffnet mit
+`ergebnisse/T0-H0.html` doppelklicken (Chrome, Edge oder Firefox, ohne Internet). Ganz oben steht
+die Bildwahl: „Orthofoto T0“ und „Historischer Ausschnitt H0“; die Seite öffnet mit T0. Die Wahl
+wechselt Bild, Teilkacheln, Nähte-Zahlen, Einigung und Kategorienliste ohne Neuladen und behält
+Fassung und Teilkachel. Kommentare stehen je Bild getrennt. Die Fassung öffnet mit
 A „Alles frei“; oben schaltet man auf B und C um (auch Umschalt + A/B/C). Mausrad vergrößert,
 Ziehen verschiebt, Klick wählt ein Segment und zeigt alle Felder samt Urteil und `punkte`; ein
 Segment an einem Übergang zeigt dort auch jeden Beschluss der Einigung (gleiche Fläche, echte Grenze
@@ -357,10 +400,14 @@ Kategorien. Kommentare zu Segmenten lassen sich über „Export (JSON)“ speich
 Neu bauen (etwa nach einer Änderung an einer Karte), im Ordner `programm/`:
 
 ```
-python -B -m landseg seite --manifest ../ergebnisse/manifest.json --ziel ../ergebnisse/T0.html --kategorien ../ergebnisse/c-feste-liste/kategorien-c.json
+# Seite mit beiden Bildern (nimmt ergebnisse/T0/manifest.json und ergebnisse/H0/manifest.json)
+python -B -m landseg seite --daten ../ergebnisse --ziel ../ergebnisse/T0-H0.html
+# Seite nur für T0
+python -B -m landseg seite --manifest ../ergebnisse/T0/manifest.json --ziel ../ergebnisse/T0/T0.html --kategorien ../ergebnisse/T0/c-feste-liste/kategorien-c.json
 ```
 
-Welche Fassungen es gibt und in welcher Reihenfolge, steht in `programm/einstellungen/seite.json`.
+Welche Bilder und Fassungen es gibt und in welcher Reihenfolge, steht in
+`programm/einstellungen/seite.json` (`bilder`, `fassungen`).
 
 ## Umgebung
 
@@ -401,7 +448,7 @@ python -B -m landseg pruefen --labels <A>/c-feste-liste/r0c0/labels.tif --segmen
 python -B -m landseg eingriff --labels <A>/c-feste-liste/r0c0/labels.tif --segmente <A>/c-feste-liste/r0c0/segmente.json --bearbeiter <name> klasse --id 100010 --klasse 1.1.2
 
 # 5. Teilkacheln zur Karte des Ausschnitts zusammentragen, Nähte prüfen
-#    (Auftrag wie ergebnisse/a-alles-frei/zusammentragen.json, Pfade relativ zum Auftrag)
+#    (Auftrag wie ergebnisse/T0/a-alles-frei/zusammentragen.json, Pfade relativ zum Auftrag)
 python -B -m landseg zusammentragen --datei <A>/c-feste-liste/zusammentragen.json
 python -B -m landseg naht --manifest <A>/manifest.json --labels <A>/c-feste-liste/zusammen/labels.tif
 
@@ -424,7 +471,7 @@ python -B -m landseg seite --manifest <A>/manifest.json --ziel <A>/T0.html
 - Freie Listen (A, B) liegen als `kategorien-a.json` bzw. `kategorien-b.json` im Ordner der Fassung;
   `zusammentragen` und `pruefen` brauchen sie mit `--kategorien`, sonst gilt jede Klasse als ungültig.
 - Ohne GPU: Schritte 1, 3 bis 6 laufen auf der CPU. Zum Ausprobieren eine Karte aus `ergebnisse/`
-  als Ausgang nehmen, etwa `ergebnisse/c-feste-liste/<tk>/` in `<A>/c-feste-liste/` kopieren.
-  Nachrechnen der Karte von A: `python -B -m landseg zusammentragen --datei ../ergebnisse/a-alles-frei/zusammentragen.json --kategorien ../ergebnisse/a-alles-frei/kategorien-a.json --ziel <neuer Ordner>`
+  als Ausgang nehmen, etwa `ergebnisse/T0/c-feste-liste/<tk>/` in `<A>/c-feste-liste/` kopieren.
+  Nachrechnen der Karte von A: `python -B -m landseg zusammentragen --datei ../ergebnisse/T0/a-alles-frei/zusammentragen.json --kategorien ../ergebnisse/T0/a-alles-frei/kategorien-a.json --ziel <neuer Ordner>`
   ergibt dieselbe Karte und 309 Nahtverstöße (Exit-Code 1 heißt hier „Befund“, nicht Absturz).
 - Neue Teilkachelgröße: `--kern 250` ergibt 16 Teilkacheln statt 4.

@@ -1,7 +1,7 @@
 {
   "grundlage": "daten/landseg/uebergabe/landseg-t0",
   "umbau": {
-    "aus": "T0",
+    "aus": ["T0", "H0", "T0-H0.html"],
     "nach": "ergebnisse",
     "behalten": ["README.md", "ANLEITUNG.md", ".gitignore"]
   },
