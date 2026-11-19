@@ -1,6 +1,6 @@
 # Teil 5 von landseg-historisch: Ergebnisse ins Repo und Gesamtprojekt
 
-Kurzname: landseg-historisch-5 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: bereit | Mutterwunsch: landseg-historisch
+Kurzname: landseg-historisch-5 | Datum: 2026-11-18 | Größe: mittel | Bereich: victor | Repos: landseg | Status: eingereiht | Mutterwunsch: landseg-historisch
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben
@@ -21,6 +21,7 @@ keine (siehe Mutterwunsch)
 
 siehe Mutterwunsch
 - 2026-11-19 (Nutzer, nach der Durchsicht der Seite T0-H0 mit gröberem H0 und Gärten): „passt alles, pushe“ — Push des Gesamtprojekts victor-landseg ist angesagt; die Hauptsession pusht nach dem Einreihen selbst. Stand der Daten: H0 vergröbert (landseg-garten-3), Gärten T0/H0 (landseg-garten-3/-4, garten-h0-unsicher), Seite daten/landseg/seiten/T0-H0.html; Gesamtprojekt nach dem Commit von wuensche/ mit gesamt_projekt.py neu bauen, pruefen (--luftbilder), durchsicht.
+- 2026-11-19, Beleg AK7 (Hauptsession): Browser-Erweiterung nicht erreichbar; die Seite im Gesamtprojekt `ergebnisse/T0-H0.html` hat inhaltlich dieselben Daten wie die vom Nutzer durchgesehene `daten/landseg/seiten/T0-H0.html` (Vergleich von window.DATEN: nur Quellpfade und Erstellzeit verschieden). Der Nutzer hat diese Seite durchgesehen („passt alles, pushe“); das gilt als Beleg für AK7, freigegeben zum Einreihen.
 
 ## Arbeitsauftrag
 

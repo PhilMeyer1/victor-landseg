@@ -43,8 +43,8 @@ Commit. Ablauf: Skill `wunsch`.
 | 2026-11-18 | landseg-historisch-2 | Teil 2 von landseg-historisch: Ausschnitt H0: kacheln, Vorstufe, Aufträge | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-historisch-2.md |
 | 2026-11-18 | landseg-historisch-3 | Teil 3 von landseg-historisch: Urteile A, B, C, Gegenprobe und Einigung | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-historisch-3.md |
 | 2026-11-18 | landseg-historisch-4 | Teil 4 von landseg-historisch: Prüfen, Seite mit H0 und Messbericht | landseg | eingereiht (ohne Commit) | 2026-11-18-landseg-historisch-4.md |
-| 2026-11-18 | landseg-historisch-5 | Teil 5 von landseg-historisch: Ergebnisse ins Repo und Gesamtprojekt | landseg | bereit | 2026-11-18-landseg-historisch-5.md |
-| 2026-11-18 | landseg-historisch | Historisches Luftbild genauso verarbeiten wie T0 (Vorstufe, vier Teilkacheln, Fassungen A/B/C, Einigung an den Grenzen) und im Gesamtprojekt sowie in der Ergebnis-Ansicht ergänzen | landseg | bereit | 2026-11-18-landseg-historisch.md |
+| 2026-11-18 | landseg-historisch-5 | Teil 5 von landseg-historisch: Ergebnisse ins Repo und Gesamtprojekt | landseg | eingereiht | 2026-11-18-landseg-historisch-5.md |
+| 2026-11-18 | landseg-historisch | Historisches Luftbild genauso verarbeiten wie T0 (Vorstufe, vier Teilkacheln, Fassungen A/B/C, Einigung an den Grenzen) und im Gesamtprojekt sowie in der Ergebnis-Ansicht ergänzen | landseg | eingereiht | 2026-11-18-landseg-historisch.md |
 | 2026-11-18 | landseg-sw-grob | Auf alten, niedrig aufgelösten Schwarz-Weiß-Luftbildern gröbere Flächen ziehen als auf Farb-Orthofotos, in allen Fassungen und Läufen | landseg | eingereiht | 2026-11-18-landseg-sw-grob.md |
 | 2026-11-18 | naht-einigung-1 | Teil 1 von naht-einigung: Einigungs-Werkzeug mit Vorlage | landseg | eingereiht | 2026-11-18-naht-einigung-1.md |
 | 2026-11-18 | naht-einigung-2 | Teil 2 von naht-einigung: Einigung auf T0 für A, B, C | landseg | eingereiht (ohne Commit) | 2026-11-18-naht-einigung-2.md |

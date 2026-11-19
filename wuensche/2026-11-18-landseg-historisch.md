@@ -1,6 +1,6 @@
 # Historisches Luftbild genauso verarbeiten wie T0 (Vorstufe, vier Teilkacheln, Fassungen A/B/C, Einigung an den Grenzen) und im Gesamtprojekt sowie in der Ergebnis-Ansicht ergänzen
 
-Kurzname: landseg-historisch | Datum: 2026-11-18 | Größe: gross | Bereich: victor | Repos: landseg | Status: bereit | Ergebnis: ohne Commit (Teile 2 bis 4)
+Kurzname: landseg-historisch | Datum: 2026-11-18 | Größe: gross | Bereich: victor | Repos: landseg | Status: eingereiht | Ergebnis: ohne Commit (Teile 2 bis 4)
 
 <Diese Datei ist der Auftrag: Wer nach der Klärung hineinschreibt, regelt Kernregel 6 des Skills `wunsch`. Berichte
 und Abnahme der Agents liegen im Ordner mit demselben Namen ohne `.md` daneben

@@ -1,5 +1,5 @@
 # Bericht landseg
-Status: bereit-zur-pruefung
+Status: eingereiht
 Für den Nutzer: Das Gesamtprojekt victor-landseg (lokal, nicht hochgeladen) hat jetzt die Ergebnisse von H0 neben
   denen von T0: `ergebnisse/T0/`, `ergebnisse/H0/` und die Seite `ergebnisse/T0-H0.html` mit Bildwahl (dieselbe
   Seite, die Sie durchgesehen haben; nur die Quellpfade im Inneren sind andere). Achtung, neue Pfade: T0 liegt
@@ -20,6 +20,8 @@ Prüfungen:
 `gesamt_projekt.py bauen --basis <BASIS> --ziel <BASIS>/daten/gesamt/victor-landseg` → 0, 2 neue Commits (Ergebnisse 192 Dateien aus 172a019)
 `gesamt_projekt.py pruefen … --luftbilder <BASIS>/daten/luftbilder` (vor dem Bericht) → 1: einziger Befund „Pfade in README.md: fehlt wuensche/2026-11-18-landseg-historisch-5" (dieser Berichtsordner existierte noch nicht); sonst fehlend/abweichend/fremd 0, Luftbilder 8/8, größte Datei 17,5 MB
 `gesamt_projekt.py durchsicht … --bericht <Scratchpad>` → 0
+Zweite Runde nach diesem Bericht (leere Ordner der alten T0-Ablage in `ergebnisse/` vorher entfernt): `bauen` → 0 (67e7868), `pruefen --luftbilder` → 0 „Ergebnis: ok" (fehlend/abweichend/fremd 0, Pfade README 50/ANLEITUNG 46/CLAUDE 20 alle vorhanden, Luftbilder 8/8), `durchsicht` → 0. Diese Zeile kam danach; das Gesamtprojekt hat den Bericht darum ohne sie
+Aufruf-Budget: 90, knapp ausgeschöpft (rund 82 Aufrufe)
 Nicht geprüft: Ansicht der Seite (AK7) im Browser; volle Testreihe (Einreihen)
 Einstieg: stimmte (Einstieg des Mutterwunschs; `seite.json` hatte die Bilder schon)
 Technische Entscheidungen:
@@ -35,3 +37,4 @@ Erkenntnisse fürs Profil:
 - Bash-Heredocs verschlucken hier `\\` (auch in Python-Quelltext und sed-Mustern): Escapes über das Write-/Edit-Werkzeug.
 - `pruefen` meldet einen in README.md genannten Berichtsordner als fehlend, solange er in `wuensche/` noch nicht existiert.
 Abweichungen vom Zielbild: keine
+Einreihen (Skript): eingereiht 869593b feat(gesamt): results of the historical cut-out H0 next to T0 in the shared project in C:/Users/Phil/Developement/Victor/landseg (main); Prüfung nach Risiko (ohne Prüfschleuse, keine Zeile schnell: im Profil); voll grün (65 s); volle Prüfung offen (vermerkt in C:/Users/Phil/Developement/Victor/landseg/.git/wunsch-einreihen/pruefung-offen.jsonl); Abräumen WEG; Waisen 3 (server 2, testrest 1), 724 MB anderswo (aufraeumer.py melden; beenden nur mit Freigabe des Nutzers)
